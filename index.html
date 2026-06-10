@@ -5241,6 +5241,83 @@ footer {
 .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.7s ease, transform 0.7s ease; }
 .fade-in.visible { opacity: 1; transform: translateY(0); }
 </style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/openseadragon/4.1.0/openseadragon.min.js" defer></script>
+<style id="gt-osd-style">
+  .gt-osd-toolbar { display:flex; flex-wrap:wrap; align-items:center; gap:8px; margin:8px 0 4px; }
+  .gt-osd-btn { font-family:var(--font-mono); font-size:11px; letter-spacing:.04em; cursor:pointer;
+    background:var(--ink-soft,rgba(0,0,0,.04)); color:var(--cream,inherit); border:1px solid var(--cream-mute,rgba(120,120,120,.4));
+    border-radius:6px; padding:5px 11px; transition:background .15s,border-color .15s; }
+  .gt-osd-btn:hover { border-color:var(--accent,#b8860b); }
+  .gt-osd-btn[aria-pressed="true"] { background:var(--accent,#b8860b); color:#fff; border-color:var(--accent,#b8860b); }
+  .gt-osd-hint { font-family:var(--font-mono); font-size:10px; color:var(--cream-mute,#888); letter-spacing:.03em; }
+  .gt-osd-wrap { display:none; }
+  .gt-osd-wrap.active { display:block; }
+  .gt-osd { width:100%; height:62vh; min-height:340px; background:#15110c; border:1px solid var(--cream-mute,rgba(120,120,120,.35)); border-radius:8px; overflow:hidden; }
+  .gt-osd-band { box-sizing:border-box; cursor:pointer; border:1px solid transparent; background:transparent; transition:background .12s,border-color .12s; }
+  .gt-osd-band:hover { background:rgba(184,134,11,.16); border-color:rgba(184,134,11,.55); }
+  .gt-osd-band.active { background:rgba(184,134,11,.28); border-color:var(--accent,#b8860b); }
+  .gt-osd-band-tag { position:absolute; top:2px; left:6px; font-family:var(--font-mono); font-size:10px; font-weight:600;
+    color:#fff; background:rgba(20,15,8,.72); padding:1px 6px; border-radius:4px; pointer-events:none; white-space:nowrap; opacity:0; transition:opacity .12s; }
+  .gt-osd-band:hover .gt-osd-band-tag, .gt-osd-band.active .gt-osd-band-tag { opacity:1; }
+  .gt-osd-align { display:flex; flex-wrap:wrap; align-items:center; gap:6px 14px; margin:8px 0 2px; font-family:var(--font-mono); font-size:10px; color:var(--cream-mute,#888); }
+  .gt-osd-align label { display:flex; align-items:center; gap:6px; }
+  .gt-osd-align input[type=range] { width:120px; accent-color:var(--accent,#b8860b); }
+  .gt-osd-legend { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+  .gt-osd-legrow { font-family:var(--font-mono); font-size:10.5px; letter-spacing:.02em; cursor:pointer; user-select:none;
+    border:1px solid var(--cream-mute,rgba(120,120,120,.35)); border-radius:6px; padding:3px 9px; color:var(--cream,inherit);
+    background:var(--ink-soft,rgba(0,0,0,.03)); transition:background .12s,border-color .12s; }
+  .gt-osd-legrow:hover { border-color:var(--accent,#b8860b); }
+  .gt-osd-legrow.active { background:var(--accent,#b8860b); color:#fff; border-color:var(--accent,#b8860b); }
+  .gt-osd-legrow .k { opacity:.7; }
+  .gt-osd-fallback { font-family:var(--font-mono); font-size:10.5px; color:var(--cream-mute,#888); margin-top:6px; }
+</style>
+<style id="gt-paleo-kwic-style">
+  /* Paleographic-feature layer */
+  .gt-paleo-bar { display:flex; flex-wrap:wrap; align-items:center; gap:7px; margin:14px 0 4px; }
+  .gt-paleo-lbl { font-family:var(--font-mono); font-size:11px; letter-spacing:.05em; color:var(--cream,inherit); }
+  .gt-paleo-hint { font-family:var(--font-mono); font-size:10px; color:var(--cream-mute,#888); letter-spacing:.02em; }
+  .gt-pf-chip { font-family:var(--font-mono); font-size:10.5px; cursor:pointer; border-radius:6px; padding:3px 9px;
+    color:var(--cream,inherit); background:var(--ink-soft,rgba(0,0,0,.03)); border:1px solid var(--cream-mute,rgba(120,120,120,.35)); transition:.12s; }
+  .gt-pf-chip b { opacity:.65; font-weight:600; margin-left:3px; }
+  .gt-pf-chip:hover { border-color:var(--accent,#b8860b); }
+  .gt-pf-chip.on { color:#fff; }
+  .gt-pf-chip.pf-c-na.on { background:#b8860b; border-color:#b8860b; }
+  .gt-pf-chip.pf-c-zhala.on { background:#3fa7a0; border-color:#3fa7a0; }
+  .gt-pf-chip.pf-c-grantha.on { background:#b056b0; border-color:#b056b0; }
+  .gt-pf-chip.pf-c-aytam.on { background:#5fae5f; border-color:#5fae5f; }
+  .gt-pf-chip.pf-c-alapedai.on { background:#5b8dd6; border-color:#5b8dd6; }
+  .pf { border-radius:2px; padding:0; }
+  #gt-modal-body.pf-show-na .pf-na { background:rgba(184,134,11,.22); box-shadow:inset 0 -2px 0 #b8860b; }
+  #gt-modal-body.pf-show-zhala .pf-zhala { background:rgba(63,167,160,.22); box-shadow:inset 0 -2px 0 #3fa7a0; }
+  #gt-modal-body.pf-show-grantha .pf-grantha { background:rgba(176,86,176,.28); box-shadow:inset 0 -2px 0 #b056b0; }
+  #gt-modal-body.pf-show-aytam .pf-aytam { background:rgba(95,174,95,.30); box-shadow:inset 0 -2px 0 #5fae5f; }
+  #gt-modal-body.pf-show-alapedai .pf-alapedai { background:rgba(91,141,214,.28); box-shadow:inset 0 -2px 0 #5b8dd6; }
+  /* Corpus KWIC search */
+  .gt-kwic { margin:16px 0 6px; border:1px solid var(--cream-mute,rgba(120,120,120,.3)); border-radius:10px; padding:12px 14px; background:var(--ink-soft,rgba(0,0,0,.02)); }
+  .gt-kwic-head { display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
+  .gt-kwic-title { font-family:var(--font-mono); font-size:12px; letter-spacing:.04em; color:var(--cream,inherit); white-space:nowrap; }
+  .gt-kwic input { flex:1; min-width:200px; font-size:14px; padding:7px 11px; border-radius:7px;
+    border:1px solid var(--cream-mute,rgba(120,120,120,.4)); background:var(--bg,#fff); color:var(--ink,inherit); }
+  .gt-kwic-meta { font-family:var(--font-mono); font-size:10px; color:var(--cream-mute,#888); white-space:nowrap; }
+  .gt-kwic-results { margin-top:10px; display:flex; flex-direction:column; gap:1px; max-height:360px; overflow:auto; }
+  .gt-kwic-row { display:grid; grid-template-columns:200px 1fr; gap:12px; align-items:baseline; padding:5px 7px; border-radius:6px; cursor:pointer; }
+  .gt-kwic-row:hover { background:rgba(184,134,11,.10); }
+  .gt-kwic-ref { font-family:var(--font-mono); font-size:9.5px; color:var(--cream-mute,#888); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .gt-kwic-ctx { font-size:14px; line-height:1.5; }
+  .gt-kwic-ctx .l, .gt-kwic-ctx .r { opacity:.55; }
+  .gt-kwic-ctx mark { background:rgba(184,134,11,.32); color:inherit; border-radius:3px; padding:0 2px; }
+  .gt-kwic-empty { font-family:var(--font-mono); font-size:11px; color:var(--cream-mute,#888); padding:6px 2px; }
+  @media (max-width:640px){ .gt-kwic-row{ grid-template-columns:1fr; gap:1px; } }
+</style>
+<style id="gt-htr-style">
+  .gt-htr { margin:14px 0 6px; border:1px dashed var(--cream-mute,rgba(120,120,120,.35)); border-radius:10px; padding:11px 14px; background:var(--ink-soft,rgba(0,0,0,.02)); display:flex; flex-wrap:wrap; align-items:center; gap:8px 12px; }
+  .gt-htr-title { font-family:var(--font-mono); font-size:12px; letter-spacing:.04em; color:var(--cream,inherit); }
+  .gt-htr-btn { font-family:var(--font-mono); font-size:11px; cursor:pointer; border-radius:6px; padding:6px 12px;
+    color:var(--cream,inherit); background:var(--ink-soft,rgba(0,0,0,.04)); border:1px solid var(--cream-mute,rgba(120,120,120,.4)); transition:.13s; }
+  .gt-htr-btn:hover { border-color:var(--accent,#b8860b); color:var(--accent,#b8860b); }
+  .gt-htr-btn[disabled] { opacity:.5; cursor:wait; }
+  .gt-htr-meta { font-family:var(--font-mono); font-size:10px; color:var(--cream-mute,#888); }
+</style>
 </head>
 <body>
 
@@ -5892,6 +5969,26 @@ footer {
   <!-- Global progress bar -->
   <div class="gt-progress-track" aria-label="Corpus completion progress">
     <div class="gt-progress-fill" id="gt-progress-fill" style="width:0%"></div>
+  </div>
+
+  <!-- Corpus-wide KWIC search -->
+  <div class="gt-kwic" id="gt-kwic">
+    <div class="gt-kwic-head">
+      <span class="gt-kwic-title">🔎 <span class="t-en">Search the corpus</span><span class="t-ta">சேகரத்தில் தேடு</span></span>
+      <input id="gt-kwic-input" type="search" autocomplete="off" spellcheck="false"
+        placeholder="தமிழ்ச் சொல் / குறள் எண்  ·  e.g. கல்வி · மன · 481"
+        oninput="gtKwicSearch(this.value)">
+      <span class="gt-kwic-meta" id="gt-kwic-meta"></span>
+    </div>
+    <div class="gt-kwic-results" id="gt-kwic-results"></div>
+  </div>
+
+  <!-- HTR-ready export -->
+  <div class="gt-htr" id="gt-htr">
+    <span class="gt-htr-title">⬇ <span class="t-en">HTR-ready export</span><span class="t-ta">HTR-தயார் பதிவிறக்கம்</span></span>
+    <button type="button" class="gt-htr-btn" onclick="gtExportJSONL(this)">JSONL · TrOCR / VLM</button>
+    <button type="button" class="gt-htr-btn" onclick="gtExportPageXML(this)">PageXML .zip · Kraken / eScriptorium</button>
+    <span class="gt-htr-meta" id="gt-htr-meta"></span>
   </div>
 
   <!-- Featured Specimen container · most recently published -->
@@ -12524,6 +12621,22 @@ function renderSpecimenHTML(spec) {
         <div class="gt-image-caption">${dimCaption}</div>
       </div>
 
+      ${spec.iiifImage ? `
+      <div class="gt-osd-toolbar">
+        <button type="button" class="gt-osd-btn" id="gt-osd-toggle-${spec.id}" aria-pressed="false" onclick="gtToggleOSD('${spec.id}')">🔍 Deep zoom (IIIF)</button>
+        <span class="gt-osd-hint">tile-based pan / zoom · click a line band to map it to its kural</span>
+      </div>
+      <div class="gt-osd-wrap" id="gt-osd-wrap-${spec.id}">
+        <div class="gt-osd" id="gt-osd-${spec.id}"></div>
+        <div class="gt-osd-align">
+          <label>line top<input type="range" min="0" max="30" value="6" id="gt-osd-top-${spec.id}" oninput="gtLayoutBands('${spec.id}')"></label>
+          <label>line height<input type="range" min="50" max="130" value="100" id="gt-osd-scale-${spec.id}" oninput="gtLayoutBands('${spec.id}')"></label>
+          <span class="gt-osd-hint">nudge the bands to sit on the script lines</span>
+        </div>
+        <div class="gt-osd-legend" id="gt-osd-legend-${spec.id}"></div>
+        <div class="gt-osd-fallback">Image tiles served live from Zenodo IIIF (<code>${escapeHtml((spec.iiifImage||'').replace('https://zenodo.org','').replace('/info.json',''))}</code>). If tiles are still processing, use the static image above.</div>
+      </div>` : ''}
+
       <div class="gt-zones">
         <div class="gt-zone-card left-col">
           <div class="gt-zone-title">◉ ${escapeHtml(spec.zones.leftMargin.title)}</div>
@@ -12539,6 +12652,16 @@ function renderSpecimenHTML(spec) {
         </div>
       </div>
 
+      ${(() => { const pf = gtPaleoCounts(spec); return `
+      <div class="gt-paleo-bar" id="gt-paleo-bar-${spec.id}">
+        <span class="gt-paleo-lbl">◉ Paleographic layer</span>
+        <button type="button" class="gt-pf-chip pf-c-na" aria-pressed="false" onclick="gtPaleoToggle('na',this)">ந-for-ன<b>${pf.na}</b></button>
+        <button type="button" class="gt-pf-chip pf-c-zhala" aria-pressed="false" onclick="gtPaleoToggle('zhala',this)">ழ/ள<b>${pf.zhala}</b></button>
+        <button type="button" class="gt-pf-chip pf-c-grantha" aria-pressed="false" onclick="gtPaleoToggle('grantha',this)">grantha க்ஷ<b>${pf.grantha}</b></button>
+        <button type="button" class="gt-pf-chip pf-c-aytam" aria-pressed="false" onclick="gtPaleoToggle('aytam',this)">āytam ஃ<b>${pf.aytam}</b></button>
+        <button type="button" class="gt-pf-chip pf-c-alapedai" aria-pressed="false" onclick="gtPaleoToggle('alapedai',this)">alapeḍai<b>${pf.alapedai}</b></button>
+        <span class="gt-paleo-hint">grapheme loci in the transcription — toggle to colour-code</span>
+      </div>` ; })()}
       <div class="gt-table-wrap">
         <table class="gt-transcription">
           <thead>
@@ -12562,7 +12685,7 @@ function renderSpecimenHTML(spec) {
                 : `<td class="gt-left">${escapeHtml(ln.leftMargin) || '—'}</td>`;
               const bodyCell = muted
                 ? `<td class="gt-body" style="color:var(--cream-mute);font-style:italic">${escapeHtml(ln.body)}</td>`
-                : `<td class="gt-body">${applyHighlights(ln.body, ln.highlights)}</td>`;
+                : `<td class="gt-body">${gtPaleoMarkup(applyHighlights(ln.body, ln.highlights))}</td>`;
               const endCell = hasEndCol
                 ? `<td class="gt-numeral">${escapeHtml(ln.endChar) || '—'}</td>`
                 : '';
@@ -12715,6 +12838,438 @@ function renderSpecimenHTML(spec) {
 function toggleSpecZoom(specId) {
   const el = document.getElementById(`gt-img-${specId}`);
   if (el) el.classList.toggle('zoomed');
+}
+
+/* ── HTR-ready export ────────────────────────────────────────────────────────
+   Line-level training data from EMBEDDED_CORPUS. Geometry mirrors the
+   deep-zoom overlay's default bands: 6% top/bottom inset, equal-height bands
+   over the writing area. endOfLeaf marker lines and empty bodies are skipped. */
+const GT_HTR_TOP_PCT = 6.0, GT_HTR_BOTTOM_PCT = 6.0;
+
+function gtHtrSpecs() {
+  if (typeof EMBEDDED_CORPUS === 'undefined' || !EMBEDDED_CORPUS.specimens) return [];
+  const order = (EMBEDDED_CORPUS.index && EMBEDDED_CORPUS.index.specimens)
+    ? EMBEDDED_CORPUS.index.specimens.map(s => s.id)
+    : Object.keys(EMBEDDED_CORPUS.specimens);
+  return order.map(id => EMBEDDED_CORPUS.specimens[id]).filter(Boolean);
+}
+function gtHtrActiveLines(spec) {
+  return (spec.lines || []).filter(l => !l.endOfLeaf && l.body && l.body.trim());
+}
+function gtHtrIiifBase(spec) {
+  return spec.iiifImage ? spec.iiifImage.replace(/\/info\.json$/, '') : null;
+}
+function gtHtrLineRegionPct(i, n) {
+  const usable = 100 - GT_HTR_TOP_PCT - GT_HTR_BOTTOM_PCT;
+  const hh = usable / n;
+  const y = GT_HTR_TOP_PCT + i * hh;
+  return { y: +y.toFixed(2), h: +hh.toFixed(2) };
+}
+function gtHtrMeta() {
+  const specs = gtHtrSpecs();
+  let lines = 0;
+  specs.forEach(s => { lines += gtHtrActiveLines(s).length; });
+  return { specs: specs.length, lines };
+}
+
+function gtExportJSONL(btn) {
+  const rows = [];
+  gtHtrSpecs().forEach(spec => {
+    const act = gtHtrActiveLines(spec);
+    const n = act.length;
+    const base = gtHtrIiifBase(spec);
+    act.forEach((ln, i) => {
+      const r = gtHtrLineRegionPct(i, n);
+      rows.push(JSON.stringify({
+        specimen: spec.id,
+        chapter: spec.chapter.number,
+        chapter_title: spec.chapter.titleTamil,
+        line: ln.id,
+        kural: ln.kural ?? null,
+        margin: ln.leftMargin || '',
+        numeral: ln.numeral || '',
+        end_char: ln.endChar || '',
+        text: ln.body,
+        image_full: (spec.image && spec.image.fullResolution) || (spec.image && spec.image.filename) || null,
+        image_line: base ? `${base}/pct:0,${r.y},100,${r.h}/full/0/default.jpg` : null,
+        image_width: spec.image ? spec.image.width : null,
+        image_height: spec.image ? spec.image.height : null,
+        license: spec.license || 'CC BY 4.0',
+        doi: spec.doi || null,
+        source: 'CICT Tirukkural Ground Truth Corpus'
+      }));
+    });
+  });
+  const m = gtHtrMeta();
+  saveBlob(rows.join('\n') + '\n', `cict_tirukkural_gt_lines_${m.specs}spec_${m.lines}lines.jsonl`, 'application/x-ndjson;charset=utf-8');
+  const meta = document.getElementById('gt-htr-meta');
+  if (meta) meta.textContent = `JSONL: ${m.lines} lines · ${m.specs} specimens`;
+}
+
+function gtXmlEsc(s) {
+  return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+                  .replace(/"/g, '&quot;').replace(/'/g, '&apos;');
+}
+function gtHtrPageXML(spec) {
+  const act = gtHtrActiveLines(spec);
+  const n = act.length;
+  const W = spec.image ? spec.image.width : 0;
+  const H = spec.image ? spec.image.height : 0;
+  const now = new Date().toISOString();
+  const topPx = H * GT_HTR_TOP_PCT / 100;
+  const usablePx = H * (100 - GT_HTR_TOP_PCT - GT_HTR_BOTTOM_PCT) / 100;
+  const lineH = usablePx / n;
+  const lines = act.map((ln, i) => {
+    const y0 = Math.round(topPx + i * lineH);
+    const y1 = Math.round(topPx + (i + 1) * lineH);
+    const yb = Math.round(y0 + 0.8 * (y1 - y0));
+    const coords = `0,${y0} ${W},${y0} ${W},${y1} 0,${y1}`;
+    const custom = `structure {type:line;} cict {kural:${ln.kural ?? ''}; numeral:${gtXmlEsc(ln.numeral || '')}; margin:${gtXmlEsc(ln.leftMargin || '')};}`;
+    return `      <TextLine id="${gtXmlEsc(ln.id)}" custom="${custom}">
+        <Coords points="${coords}"/>
+        <Baseline points="0,${yb} ${W},${yb}"/>
+        <TextEquiv><Unicode>${gtXmlEsc(ln.body)}</Unicode></TextEquiv>
+      </TextLine>`;
+  }).join('\n');
+  const rTop = Math.round(topPx), rBot = Math.round(topPx + usablePx);
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+  <Metadata>
+    <Creator>CICT Digital Library · Tirukkural Ground Truth Corpus</Creator>
+    <Created>${now}</Created>
+    <LastChange>${now}</LastChange>
+    <Comments>Specimen ${gtXmlEsc(spec.id)} · ${gtXmlEsc(spec.chapter.titleTamil)} (ch ${spec.chapter.number}) · DOI ${gtXmlEsc(spec.doi || '')} · License ${gtXmlEsc(spec.license || 'CC BY 4.0')} · Line regions are equal-height bands (${GT_HTR_TOP_PCT}% top/bottom inset) pending pixel-exact alignment.</Comments>
+  </Metadata>
+  <Page imageFilename="${gtXmlEsc(spec.manuscriptId)}.jpg" imageWidth="${W}" imageHeight="${H}">
+    <TextRegion id="writing-area" custom="structure {type:paragraph;}">
+      <Coords points="0,${rTop} ${W},${rTop} ${W},${rBot} 0,${rBot}"/>
+${lines}
+    </TextRegion>
+  </Page>
+</PcGts>
+`;
+}
+function gtSaveBlobRaw(blob, filename) {
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url; a.download = filename;
+  document.body.appendChild(a); a.click();
+  setTimeout(() => { document.body.removeChild(a); URL.revokeObjectURL(url); }, 100);
+}
+function gtLoadJSZip() {
+  return new Promise((resolve, reject) => {
+    if (window.JSZip) return resolve(window.JSZip);
+    const s = document.createElement('script');
+    s.src = 'https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js';
+    s.onload = () => resolve(window.JSZip);
+    s.onerror = () => reject(new Error('JSZip load failed'));
+    document.head.appendChild(s);
+  });
+}
+async function gtExportPageXML(btn) {
+  const meta = document.getElementById('gt-htr-meta');
+  try {
+    if (btn) btn.disabled = true;
+    if (meta) meta.textContent = 'building PageXML…';
+    const JSZip = await gtLoadJSZip();
+    const zip = new JSZip();
+    const specs = gtHtrSpecs();
+    let lines = 0;
+    specs.forEach(spec => {
+      lines += gtHtrActiveLines(spec).length;
+      zip.file(`${spec.id}.xml`, gtHtrPageXML(spec));
+    });
+    zip.file('README.md',
+`# CICT Tirukkural Ground Truth Corpus — PageXML export
+
+- Specimens: ${specs.length} (one PAGE-XML per leaf, PRImA 2019-07-15 schema)
+- Transcribed lines: ${lines} · Scribal orthography preserved verbatim (ந-for-ன, ழ/ள merger, grantha க்ஷ, āytam, alapeḍai)
+- Line regions: equal-height bands over the writing area (${GT_HTR_TOP_PCT}% top/bottom inset); refine in eScriptorium as needed.
+- custom attribute per line carries: canonical kural number, right-margin Tamil numeral, left-margin (title/leaf-numeral) cell.
+- Images: full-resolution leaves via each record's Zenodo DOI / IIIF (see Comments in each file).
+- License: CC BY 4.0 · Curator: Kannan Krishnan · Central Institute of Classical Tamil (CICT)
+`);
+    const blob = await zip.generateAsync({ type: 'blob' });
+    gtSaveBlobRaw(blob, `cict_tirukkural_gt_pagexml_${specs.length}spec.zip`);
+    if (meta) meta.textContent = `PageXML: ${specs.length} files · ${lines} lines`;
+  } catch (e) {
+    if (meta) meta.textContent = 'PageXML export failed: ' + e.message;
+  } finally {
+    if (btn) btn.disabled = false;
+  }
+}
+
+/* ── Paleographic-feature layer ─────────────────────────────────────────────
+   Feature loci surfaced in the transcription; grapheme-level, clearly labelled.
+   ந-for-ன is matched as non-word-initial ந; ழ/ள as both merger glyphs;
+   க்ஷ / ஃ / doubled-vowel alapeḍai are exact. */
+const GT_PF_NA = (function () {
+  try { return new RegExp("(?<=[\u0B80-\u0BFF])\u0BA8", "g"); }  // ந after any Tamil char
+  catch (e) { return null; }                                      // engine without lookbehind
+})();
+/* Cluster-safe markup: Tamil combining marks must never be separated from
+   their base by an element boundary, or glyph shaping breaks. We therefore
+   tokenize into grapheme clusters (base + marks U+0BBE–U+0BCD, U+0BD7) and
+   wrap whole clusters only. */
+const GT_PF_MARK = /[\u0BBE-\u0BCD\u0BD7]/;
+function gtClusters(t) {
+  const out = [];
+  let cur = '';
+  for (const ch of t) {
+    if (cur && GT_PF_MARK.test(ch)) { cur += ch; continue; }
+    if (cur) out.push(cur);
+    cur = ch;
+  }
+  if (cur) out.push(cur);
+  return out;
+}
+function gtPaleoMarkup(html) {
+  const TAMIL_BASE = /[\u0B80-\u0BFF]/;
+  const ALAP = { '\u0BBE': '\u0B85', '\u0BC0': '\u0B87', '\u0BC2': '\u0B89' }; // ா→அ ீ→இ ூ→உ
+  return String(html).split(/(<[^>]+>)/).map((seg, i) => {
+    if (i % 2 === 1) return seg;                 // an HTML tag — leave untouched
+    const cl = gtClusters(seg);
+    let out = '';
+    for (let k = 0; k < cl.length; k++) {
+      const c = cl[k];
+      const base = c[0];
+      // grantha க்ஷ — க் cluster followed by ஷ-cluster (wrap both, marks included)
+      if (base === '\u0B95' && c.indexOf('\u0BCD') >= 0 && k + 1 < cl.length && cl[k + 1][0] === '\u0BB7') {
+        out += `<span class="pf pf-grantha">${c}${cl[k + 1]}</span>`; k++; continue;
+      }
+      // alapeḍai — cluster ending ‑ா/‑ீ/‑ூ followed by bare அ/இ/உ (wrap the pair)
+      const lastMark = c[c.length - 1];
+      if (ALAP[lastMark] && k + 1 < cl.length && cl[k + 1] === ALAP[lastMark]) {
+        out += `<span class="pf pf-alapedai">${c}${cl[k + 1]}</span>`; k++; continue;
+      }
+      // āytam ஃ
+      if (base === '\u0B83') { out += `<span class="pf pf-aytam">${c}</span>`; continue; }
+      // ழ / ள — whole cluster (e.g. ழ், ளி)
+      if (base === '\u0BB4' || base === '\u0BB3') { out += `<span class="pf pf-zhala">${c}</span>`; continue; }
+      // ந-for-ன — full ந-cluster, only when previous cluster's base is Tamil (non-word-initial)
+      if (base === '\u0BA8' && k > 0 && TAMIL_BASE.test(cl[k - 1][0])) {
+        out += `<span class="pf pf-na">${c}</span>`; continue;
+      }
+      out += c;
+    }
+    return out;
+  }).join('');
+}
+function gtPaleoCounts(spec) {
+  const j = (spec.lines || []).map(l => l.body || '').join('\n');
+  const c = (re) => (j.match(re) || []).length;
+  const naCount = GT_PF_NA ? c(GT_PF_NA) : c(/[\u0B80-\u0BFF]\u0BA8/g);
+  return {
+    na: naCount,
+    zhala: c(/[\u0BB4\u0BB3]/g),
+    grantha: c(/\u0B95\u0BCD\u0BB7/g),
+    aytam: c(/\u0B83/g),
+    alapedai: c(/(\u0BBE\u0B85|\u0BC0\u0B87|\u0BC2\u0B89)/g)
+  };
+}
+function gtPaleoToggle(f, btn) {
+  const scope = document.getElementById('gt-modal-body');
+  if (!scope) return;
+  const on = scope.classList.toggle('pf-show-' + f);
+  if (btn) { btn.classList.toggle('on', on); btn.setAttribute('aria-pressed', String(on)); }
+}
+
+/* ── Corpus-wide KWIC search ─────────────────────────────────────────────────
+   Indexes every line body across all specimens; keyword-in-context results. */
+let gtKwicIndex = null;
+function gtKwicBuildIndex() {
+  if (gtKwicIndex) return gtKwicIndex;
+  gtKwicIndex = [];
+  if (typeof EMBEDDED_CORPUS === 'undefined' || !EMBEDDED_CORPUS.specimens) return gtKwicIndex;
+  const order = (EMBEDDED_CORPUS.index && EMBEDDED_CORPUS.index.specimens)
+    ? EMBEDDED_CORPUS.index.specimens.map(s => s.id)
+    : Object.keys(EMBEDDED_CORPUS.specimens);
+  order.forEach(id => {
+    const sp = EMBEDDED_CORPUS.specimens[id];
+    if (!sp || !sp.lines) return;
+    sp.lines.forEach(ln => {
+      if (!ln.body) return;
+      gtKwicIndex.push({ id, title: sp.chapter.titleTamil, lineId: ln.id, kural: ln.kural, body: ln.body });
+    });
+  });
+  return gtKwicIndex;
+}
+function gtKwicSearch(q) {
+  const host = document.getElementById('gt-kwic-results');
+  const meta = document.getElementById('gt-kwic-meta');
+  if (!host) return;
+  q = (q || '').trim();
+  if (!q) { host.innerHTML = ''; if (meta) meta.textContent = ''; return; }
+  const idx = gtKwicBuildIndex();
+  const isNum = /^\d+$/.test(q);
+  const out = [];
+  for (const r of idx) {
+    if (isNum) { if (String(r.kural) === q) out.push({ r, pos: -1 }); }
+    else { const p = r.body.indexOf(q); if (p >= 0) out.push({ r, pos: p }); }
+    if (out.length >= 80) break;
+  }
+  if (meta) meta.textContent = `${out.length}${out.length >= 80 ? '+' : ''} line${out.length === 1 ? '' : 's'}`;
+  if (!out.length) { host.innerHTML = '<div class="gt-kwic-empty">No matching lines.</div>'; return; }
+  const W = 24;
+  host.innerHTML = out.map(({ r, pos }) => {
+    let ctx;
+    if (pos < 0) { ctx = `<span class="r">${escapeHtml(r.body)}</span>`; }
+    else {
+      const L = r.body.slice(Math.max(0, pos - W), pos);
+      const M = r.body.substr(pos, q.length);
+      const R = r.body.slice(pos + q.length, pos + q.length + W);
+      ctx = `<span class="l">${pos > W ? '…' : ''}${escapeHtml(L)}</span><mark>${escapeHtml(M)}</mark>`
+          + `<span class="r">${escapeHtml(R)}${pos + q.length + W < r.body.length ? '…' : ''}</span>`;
+    }
+    const ref = `${r.id.replace('CICT-PLM-', '')} · ${escapeHtml(r.title)} · ${escapeHtml(r.lineId)} · \u0B95\u0BC1\u0BB1\u0BB3\u0BCD ${r.kural}`;
+    return `<div class="gt-kwic-row" onclick="openSpecimenModal('${r.id}')" title="Open ${r.id}">`
+         + `<span class="gt-kwic-ref">${ref}</span><span class="gt-kwic-ctx">${ctx}</span></div>`;
+  }).join('');
+}
+
+/* ── Deep-zoom IIIF viewer + clickable line-region overlay ───────────────────
+   One specimen modal is open at a time, so a single viewer is kept in gtOSD. */
+const gtOSD = { viewer: null, specId: null, bands: [], aspect: 1 };
+
+function gtSpecById(specId) {
+  if (typeof gtCurrentModalSpec !== 'undefined' && gtCurrentModalSpec && gtCurrentModalSpec.id === specId) return gtCurrentModalSpec;
+  if (typeof gtSpecimensCache !== 'undefined' && gtSpecimensCache[specId]) return gtSpecimensCache[specId];
+  if (typeof EMBEDDED_CORPUS !== 'undefined' && EMBEDDED_CORPUS.specimens) return EMBEDDED_CORPUS.specimens[specId] || null;
+  return null;
+}
+
+function gtDestroyAllOSD() {
+  if (gtOSD.viewer) { try { gtOSD.viewer.destroy(); } catch (e) {} }
+  gtOSD.viewer = null; gtOSD.specId = null; gtOSD.bands = []; gtOSD.aspect = 1;
+}
+
+function gtToggleOSD(specId) {
+  const wrap = document.getElementById(`gt-osd-wrap-${specId}`);
+  const imgWrap = document.getElementById(`gt-img-${specId}`);
+  const btn = document.getElementById(`gt-osd-toggle-${specId}`);
+  if (!wrap) return;
+  const willOpen = !wrap.classList.contains('active');
+  wrap.classList.toggle('active', willOpen);
+  if (btn) btn.setAttribute('aria-pressed', String(willOpen));
+  if (imgWrap) imgWrap.style.display = willOpen ? 'none' : '';
+  if (willOpen) gtInitOSD(specId); else gtDestroyAllOSD();
+}
+
+function gtInitOSD(specId) {
+  if (typeof OpenSeadragon === 'undefined') {
+    const el = document.getElementById(`gt-osd-${specId}`);
+    if (el) el.innerHTML = '<div style="padding:18px;font-family:var(--font-mono);font-size:11px;color:#caa">Deep-zoom library still loading — try again in a moment.</div>';
+    return;
+  }
+  const spec = gtSpecById(specId);
+  if (!spec || !spec.iiifImage) return;
+  if (gtOSD.specId === specId && gtOSD.viewer) return;  // already up
+  gtDestroyAllOSD();
+  gtOSD.specId = specId;
+
+  gtOSD.viewer = OpenSeadragon({
+    id: `gt-osd-${specId}`,
+    prefixUrl: 'https://cdnjs.cloudflare.com/ajax/libs/openseadragon/4.1.0/images/',
+    tileSources: spec.iiifImage,           // Zenodo IIIF Image API info.json
+    showNavigator: true,
+    navigatorPosition: 'TOP_RIGHT',
+    navigatorHeight: '54px', navigatorWidth: '120px',
+    gestureSettingsMouse: { clickToZoom: false, dblClickToZoom: true },
+    minZoomImageRatio: 0.6, maxZoomPixelRatio: 4,
+    visibilityRatio: 1, constrainDuringPan: true,
+    crossOriginPolicy: 'Anonymous'
+  });
+
+  gtOSD.viewer.addHandler('open', () => {
+    const item = gtOSD.viewer.world.getItemAt(0);
+    const size = item ? item.getContentSize() : { x: spec.image.width, y: spec.image.height };
+    gtOSD.aspect = size.y / size.x;          // viewport height for image width = 1
+    gtBuildBands(specId, spec);
+    gtLayoutBands(specId);
+    gtBuildLegend(specId, spec);
+  });
+  gtOSD.viewer.addHandler('open-failed', () => {
+    const el = document.getElementById(`gt-osd-${specId}`);
+    if (el) el.innerHTML = '<div style="padding:18px;font-family:var(--font-mono);font-size:11px;color:#caa">IIIF tiles unavailable (may still be processing on Zenodo). The static image above remains available.</div>';
+  });
+}
+
+function gtBuildBands(specId, spec) {
+  gtOSD.bands = [];
+  const v = gtOSD.viewer;
+  (spec.lines || []).forEach((ln, i) => {
+    const el = document.createElement('div');
+    el.className = 'gt-osd-band';
+    el.dataset.i = i;
+    const tag = document.createElement('span');
+    tag.className = 'gt-osd-band-tag';
+    tag.textContent = `${ln.id} → குறள் ${ln.kural}`;
+    el.appendChild(tag);
+    el.addEventListener('click', (ev) => { ev.stopPropagation(); gtSelectLine(specId, i, true); });
+    el.addEventListener('mouseenter', () => gtHighlightLegend(specId, i, true));
+    el.addEventListener('mouseleave', () => gtHighlightLegend(specId, i, false));
+    // placeholder rect; real geometry set in gtLayoutBands
+    v.addOverlay({ element: el, location: new OpenSeadragon.Rect(0, i * 0.1, 1, 0.1) });
+    gtOSD.bands.push(el);
+  });
+}
+
+function gtLayoutBands(specId) {
+  if (!gtOSD.viewer || gtOSD.specId !== specId || !gtOSD.bands.length) return;
+  const H = gtOSD.aspect;                              // total image height in viewport units
+  const topEl = document.getElementById(`gt-osd-top-${specId}`);
+  const scaleEl = document.getElementById(`gt-osd-scale-${specId}`);
+  const topInset = (topEl ? +topEl.value : 6) / 100 * H;     // fraction of height
+  const scale = (scaleEl ? +scaleEl.value : 100) / 100;
+  const n = gtOSD.bands.length;
+  const usable = H - 2 * topInset;
+  const lineH = (usable / n) * scale;
+  gtOSD.bands.forEach((el, i) => {
+    const y = topInset + i * (usable / n) + ((usable / n) - lineH) / 2;
+    gtOSD.viewer.updateOverlay(el, new OpenSeadragon.Rect(0, y, 1, lineH));
+  });
+}
+
+function gtSelectLine(specId, i, pan) {
+  gtOSD.bands.forEach((el, j) => el.classList.toggle('active', j === i));
+  gtHighlightLegend(specId, i, 'select');
+  if (pan && gtOSD.viewer) {
+    const b = gtOSD.bands[i];
+    const loc = gtOSD.viewer.getOverlayById ? null : null;
+    // pan to band centre without over-zooming
+    const H = gtOSD.aspect, n = gtOSD.bands.length;
+    const topEl = document.getElementById(`gt-osd-top-${specId}`);
+    const topInset = (topEl ? +topEl.value : 6) / 100 * H;
+    const usable = H - 2 * topInset;
+    const yc = topInset + (i + 0.5) * (usable / n);
+    gtOSD.viewer.viewport.panTo(new OpenSeadragon.Point(0.5, yc), false);
+  }
+}
+
+function gtBuildLegend(specId, spec) {
+  const host = document.getElementById(`gt-osd-legend-${specId}`);
+  if (!host) return;
+  host.innerHTML = (spec.lines || []).map((ln, i) =>
+    `<span class="gt-osd-legrow" data-i="${i}" onclick="gtSelectLine('${specId}',${i},true)"
+       onmouseenter="gtHighlightLegend('${specId}',${i},true)" onmouseleave="gtHighlightLegend('${specId}',${i},false)">
+       ${escapeHtml(ln.id)} <span class="k">· குறள் ${ln.kural}</span></span>`).join('');
+}
+
+function gtHighlightLegend(specId, i, mode) {
+  const host = document.getElementById(`gt-osd-legend-${specId}`);
+  if (host) {
+    host.querySelectorAll('.gt-osd-legrow').forEach((r) => {
+      const ri = +r.dataset.i;
+      if (mode === 'select') r.classList.toggle('active', ri === i);
+      else if (ri === i) r.classList.toggle('active', !!mode);
+    });
+  }
+  if (mode === true || mode === false) {
+    const band = gtOSD.bands[i];
+    if (band && !band.classList.contains('active')) band.style.background = mode ? 'rgba(184,134,11,.16)' : '';
+  }
 }
 
 function saveBlob(text, filename, mime='text/plain;charset=utf-8') {
@@ -13046,6 +13601,7 @@ async function openSpecimenModal(specId) {
 function closeSpecimenModal() {
   // Stop any ongoing Tamil TTS playback before closing
   if (window.TamilTTS) window.TamilTTS.stopAll();
+  gtDestroyAllOSD();
   const modal = document.getElementById('gt-modal');
   modal.style.display = 'none';
   document.body.style.overflow = '';
