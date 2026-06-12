@@ -5307,6 +5307,9 @@ footer {
   .gt-kwic-ctx .l, .gt-kwic-ctx .r { opacity:.55; }
   .gt-kwic-ctx mark { background:rgba(184,134,11,.32); color:inherit; border-radius:3px; padding:0 2px; }
   .gt-kwic-empty { font-family:var(--font-mono); font-size:11px; color:var(--cream-mute,#888); padding:6px 2px; }
+  mark.gt-kwic-hit { background:rgba(184,134,11,.42); color:inherit; border-radius:3px; padding:0; box-shadow:inset 0 -2px 0 var(--accent,#b8860b); }
+  tr.gt-kwic-row-flash { animation:gtKwicRowFlash 1.4s ease-in-out 2; }
+  @keyframes gtKwicRowFlash { 0%,100% { background:transparent; } 40% { background:rgba(184,134,11,.18); } }
   @media (max-width:640px){ .gt-kwic-row{ grid-template-columns:1fr; gap:1px; } }
 </style>
 <style id="gt-htr-style">
@@ -13124,9 +13127,91 @@ function gtKwicSearch(q) {
           + `<span class="r">${escapeHtml(R)}${pos + q.length + W < r.body.length ? '…' : ''}</span>`;
     }
     const ref = `${r.id.replace('CICT-PLM-', '')} · ${escapeHtml(r.title)} · ${escapeHtml(r.lineId)} · \u0B95\u0BC1\u0BB1\u0BB3\u0BCD ${r.kural}`;
-    return `<div class="gt-kwic-row" onclick="openSpecimenModal('${r.id}')" title="Open ${r.id}">`
+    return `<div class="gt-kwic-row" data-spec="${r.id}" data-line="${escapeHtml(r.lineId)}" data-q="${escapeHtml(q)}" onclick="gtKwicOpen(this)" title="Open ${r.id} at ${escapeHtml(r.lineId)}">`
          + `<span class="gt-kwic-ref">${ref}</span><span class="gt-kwic-ctx">${ctx}</span></div>`;
   }).join('');
+}
+
+/* ── KWIC → specimen targeting ───────────────────────────────────────────────
+   Opens the specimen at the matched line: marks the query in that line's
+   transcription, flashes the row, and pre-selects the deep-zoom band. */
+let gtKwicTarget = null;   // { specId, lineId, q }
+
+async function gtKwicOpen(el) {
+  const specId = el.dataset.spec, lineId = el.dataset.line, q = el.dataset.q || '';
+  gtKwicTarget = { specId, lineId, q };
+  await openSpecimenModal(specId);
+  requestAnimationFrame(() => gtKwicHighlightInModal(specId, lineId, q));
+}
+
+function gtKwicFindRow(lineId) {
+  const body = document.getElementById('gt-modal-body');
+  if (!body) return null;
+  const cells = body.querySelectorAll('table.gt-transcription td.gt-row-num');
+  for (const td of cells) {
+    if (td.textContent.trim() === lineId) return td.parentElement;
+  }
+  return null;
+}
+
+function gtKwicHighlightInModal(specId, lineId, q) {
+  const row = gtKwicFindRow(lineId);
+  if (!row) return;
+  const cell = row.querySelector('td.gt-body');
+  if (cell && q) gtMarkTextInCell(cell, q);
+  row.classList.remove('gt-kwic-row-flash');
+  void row.offsetWidth;                       // restart animation
+  row.classList.add('gt-kwic-row-flash');
+  row.scrollIntoView({ behavior: 'smooth', block: 'center' });
+}
+
+/* Cluster-safe, markup-safe text marker.
+   Walks the cell's text nodes, maps each query match onto them, snaps match
+   boundaries to grapheme-cluster edges, and wraps every overlapped text
+   segment in its own <mark> — matches spanning the paleo-layer <span>s are
+   highlighted without disturbing that markup, and a <mark> never separates a
+   base character from its combining marks. */
+function gtMarkTextInCell(cell, q) {
+  if (!q) return;
+  const COMB = /[\u0BBE-\u0BCD\u0BD7]/;
+  // Collect text nodes + cumulative offsets
+  const walker = document.createTreeWalker(cell, NodeFilter.SHOW_TEXT, null);
+  const nodes = [], starts = [];
+  let full = '', n;
+  while ((n = walker.nextNode())) { nodes.push(n); starts.push(full.length); full += n.nodeValue; }
+  if (!full) return;
+  // Find matches (cap 50), then snap boundaries to cluster edges
+  const matches = [];
+  let pos = 0;
+  while (matches.length < 50) {
+    const i = full.indexOf(q, pos);
+    if (i < 0) break;
+    let s = i, e = i + q.length;
+    while (s > 0 && COMB.test(full[s])) s--;                 // never start on a mark
+    while (e < full.length && COMB.test(full[e])) e++;       // carry trailing marks
+    matches.push([s, e]);
+    pos = i + q.length;
+  }
+  if (!matches.length) return;
+  // Apply in reverse so earlier offsets remain valid
+  for (let m = matches.length - 1; m >= 0; m--) {
+    const [s, e] = matches[m];
+    for (let k = nodes.length - 1; k >= 0; k--) {
+      const node = nodes[k];
+      const ns = starts[k], ne = ns + node.nodeValue.length;
+      const a = Math.max(s, ns), b = Math.min(e, ne);
+      if (a >= b) continue;                                   // no overlap
+      const local = a - ns, len = b - a;
+      const target = node.splitText(local);                  // [pre][target...]
+      target.splitText(len);                                  // [target][post]
+      const mark = document.createElement('mark');
+      mark.className = 'gt-kwic-hit';
+      target.parentNode.insertBefore(mark, target);
+      mark.appendChild(target);
+      // note: nodes[k] still references the pre-split head; safe because we
+      // process matches right-to-left and segments never overlap.
+    }
+  }
 }
 
 /* ── Deep-zoom IIIF viewer + clickable line-region overlay ───────────────────
@@ -13193,6 +13278,10 @@ function gtMakeViewer(specId, spec, tileSource, mode) {
     gtBuildBands(specId, spec);
     gtLayoutBands(specId);
     gtBuildLegend(specId, spec);
+    if (gtKwicTarget && gtKwicTarget.specId === specId) {
+      const ti = (spec.lines || []).findIndex(l => l.id === gtKwicTarget.lineId);
+      if (ti >= 0) gtSelectLine(specId, ti, true);
+    }
     if (mode === 'image') gtOsdStatus(specId, 'IIIF tiles still processing on Zenodo — showing static-image zoom (reduced resolution). Full deep zoom will activate automatically once Zenodo finishes tiling.');
     else gtOsdStatus(specId, '');
   });
@@ -13629,6 +13718,7 @@ function closeSpecimenModal() {
   // Stop any ongoing Tamil TTS playback before closing
   if (window.TamilTTS) window.TamilTTS.stopAll();
   gtDestroyAllOSD();
+  gtKwicTarget = null;
   const modal = document.getElementById('gt-modal');
   modal.style.display = 'none';
   document.body.style.overflow = '';
