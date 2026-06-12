@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -5386,7 +5386,7 @@ footer {
       <span id="lang-ta-indicator" style="font-family:var(--font-tamil)">த</span>
     </button>
     <!-- Theme Toggle -->
-    <button class="header-ctrl-btn theme-toggle" onclick="toggleTheme()" aria-label="Toggle light and dark theme" title="Theme">
+    <button class="header-ctrl-btn theme-toggle" onclick="toggleTheme()" aria-label="Toggle light and dark theme" title="Theme" style="display:none" aria-hidden="true" tabindex="-1">
       <svg id="theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
         <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
       </svg>
@@ -8104,21 +8104,14 @@ document.addEventListener('keydown', e => {
 
 // ── THEME TOGGLE ─────────────────────────────────────────────────
 function toggleTheme() {
-  const current = document.documentElement.getAttribute('data-theme') || 'dark';
-  const next = current === 'dark' ? 'light' : 'dark';
-  document.documentElement.setAttribute('data-theme', next);
-  document.getElementById('theme-icon-moon').style.display = next === 'dark' ? 'block' : 'none';
-  document.getElementById('theme-icon-sun').style.display = next === 'light' ? 'block' : 'none';
-  try { localStorage.setItem('cict-theme', next); } catch(e){}
+  // Theme locked to Light — dark theme disabled.
+  document.documentElement.setAttribute('data-theme', 'light');
+  try { localStorage.setItem('cict-theme', 'light'); } catch(e){}
 }
-// Restore theme on load
+// Force Light theme on load (dark theme disabled)
 try {
-  const saved = localStorage.getItem('cict-theme');
-  if (saved === 'light') {
-    document.documentElement.setAttribute('data-theme', 'light');
-    document.getElementById('theme-icon-moon').style.display = 'none';
-    document.getElementById('theme-icon-sun').style.display = 'block';
-  }
+  document.documentElement.setAttribute('data-theme', 'light');
+  localStorage.setItem('cict-theme', 'light');
 } catch(e){}
 
 // ── LANGUAGE TOGGLE ──────────────────────────────────────────────
@@ -8185,9 +8178,6 @@ const paletteIndex = [
     action: () => scrollToSection('about') },
 
   // Actions
-  { group: 'Actions', icon: '◐', title: 'Toggle light/dark theme', subtitle: 'Switch between day and night view',
-    keywords: 'theme dark light night day mode',
-    action: () => toggleTheme() },
   { group: 'Actions', icon: 'த', title: 'Toggle language · English/Tamil', subtitle: 'Switch UI between EN and தமிழ்',
     keywords: 'language tamil english toggle switch ta en',
     action: () => toggleLang() },
