@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+  <Metadata>
+    <Creator>Central Institute of Classical Tamil (CICT)</Creator>
+    <Created>2026-05-12T00:00:00</Created>
+    <LastChange>2026-05-12T00:00:00</LastChange>
+    <Comments>CICT-PLM-GT-024 | Tirukkural Adhikaram 24 (புகழ் / Fame / Renown) | kurals 231-240 | section அறம் / subsection  | DOI 10.5281/zenodo.20133411 | record https://zenodo.org/records/20133411 | manuscriptId 18871_26 | NOTE: line Coords are band-derived full-width bounding boxes (approximate); transcription text is exact ground truth.</Comments>
+  </Metadata>
+  <Page imageFilename="18871_26.jpg" imageWidth="2784" imageHeight="485">
+    <ReadingOrder>
+      <OrderedGroup id="g0">
+        <RegionRefIndexed index="0" regionRef="r_main"/>
+        <RegionRefIndexed index="1" regionRef="r_margin"/>
+      </OrderedGroup>
+    </ReadingOrder>
+    <TextRegion id="r_main" type="paragraph" custom="readingOrder {index:0;}">
+      <Coords points="0,91 2784,91 2784,464 0,464"/>
+      <TextLine id="r_main_l1" custom="readingOrder {index:0;}" comments="kural=236; numeral=௧">
+        <Coords points="0,91 2784,91 2784,128 0,128"/>
+        <Baseline points="0,121 2784,121"/>
+        <TextEquiv>
+          <Unicode>தோன்றிற் புகளோடு தோன்றுக வஃதிலார் தோன்றலிற் றோன்றாமை நன்று</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l2" custom="readingOrder {index:1;}" comments="kural=231; numeral=௨">
+        <Coords points="0,128 2784,128 2784,165 0,165"/>
+        <Baseline points="0,159 2784,159"/>
+        <TextEquiv>
+          <Unicode>யீத லிசைபட வாழ்தல் லஃதிலார் தூதிய மில்லை யுயிர்க்கு</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l3" custom="readingOrder {index:2;}" comments="kural=233; numeral=௩">
+        <Coords points="0,165 2784,165 2784,203 0,203"/>
+        <Baseline points="0,196 2784,196"/>
+        <TextEquiv>
+          <Unicode>ஒன்றா வுலகத் துயர்ந்த புகழல்லாற் பொன்றாது நிற்பதொன் றில்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l4" custom="readingOrder {index:3;}" comments="kural=234; numeral=௪">
+        <Coords points="0,203 2784,203 2784,240 0,240"/>
+        <Baseline points="0,233 2784,233"/>
+        <TextEquiv>
+          <Unicode>நிலவரை நீழ்புக ளாற்றிற் புலவரைப் போற்றாது புத்தே ழுலகு</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l5" custom="readingOrder {index:4;}" comments="kural=232; numeral=௫">
+        <Coords points="0,240 2784,240 2784,277 0,277"/>
+        <Baseline points="0,271 2784,271"/>
+        <TextEquiv>
+          <Unicode>உரைப்பார் உரைப்பவை யெல்லாம் யிரப்பார்க்கொன் றீயவார்மேல் நிற்கும் புகழ்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l6" custom="readingOrder {index:5;}" comments="kural=237; numeral=௬">
+        <Coords points="0,277 2784,277 2784,315 0,315"/>
+        <Baseline points="0,308 2784,308"/>
+        <TextEquiv>
+          <Unicode>புகழ்பட வாளாதார் தந்நோவார் தம்மை யிகழ்வாரை நோவ தெவன்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l7" custom="readingOrder {index:6;}" comments="kural=238; numeral=௭">
+        <Coords points="0,315 2784,315 2784,352 0,352"/>
+        <Baseline points="0,345 2784,345"/>
+        <TextEquiv>
+          <Unicode>வசையென்ப வையத்தார்க் கெல்லாம் மிசையெந்நு மெச்சம் பெறா விடின்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l8" custom="readingOrder {index:7;}" comments="kural=239; numeral=௮">
+        <Coords points="0,352 2784,352 2784,389 0,389"/>
+        <Baseline points="0,383 2784,383"/>
+        <TextEquiv>
+          <Unicode>வசையிலா வண்பயன் குன்றும் மிசையிலா வாக்கை பொறுத்த நிலம்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l9" custom="readingOrder {index:8;}" comments="kural=235; numeral=௯">
+        <Coords points="0,389 2784,389 2784,427 0,427"/>
+        <Baseline points="0,420 2784,420"/>
+        <TextEquiv>
+          <Unicode>நத்தம்போற் கேடு முளதாகுஞ் சாக்காடு வித்தகற் கல்லா லரிது</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l10" custom="readingOrder {index:9;}" comments="kural=240; numeral=௰">
+        <Coords points="0,427 2784,427 2784,464 0,464"/>
+        <Baseline points="0,457 2784,457"/>
+        <TextEquiv>
+          <Unicode>வசையொளிய வாழ்வாரெ வாழ்வா யிசையொழிய வாழ்வாரெ வாழா தவர்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextEquiv>
+        <Unicode>தோன்றிற் புகளோடு தோன்றுக வஃதிலார் தோன்றலிற் றோன்றாமை நன்று
+யீத லிசைபட வாழ்தல் லஃதிலார் தூதிய மில்லை யுயிர்க்கு
+ஒன்றா வுலகத் துயர்ந்த புகழல்லாற் பொன்றாது நிற்பதொன் றில்
+நிலவரை நீழ்புக ளாற்றிற் புலவரைப் போற்றாது புத்தே ழுலகு
+உரைப்பார் உரைப்பவை யெல்லாம் யிரப்பார்க்கொன் றீயவார்மேல் நிற்கும் புகழ்
+புகழ்பட வாளாதார் தந்நோவார் தம்மை யிகழ்வாரை நோவ தெவன்
+வசையென்ப வையத்தார்க் கெல்லாம் மிசையெந்நு மெச்சம் பெறா விடின்
+வசையிலா வண்பயன் குன்றும் மிசையிலா வாக்கை பொறுத்த நிலம்
+நத்தம்போற் கேடு முளதாகுஞ் சாக்காடு வித்தகற் கல்லா லரிது
+வசையொளிய வாழ்வாரெ வாழ்வா யிசையொழிய வாழ்வாரெ வாழா தவர்</Unicode>
+      </TextEquiv>
+    </TextRegion>
+    <TextRegion id="r_margin" type="marginalia" custom="readingOrder {index:1;}">
+      <Coords points="0,91 390,91 390,464 0,464"/>
+      <TextLine id="r_margin_l3" custom="readingOrder {index:2;}" comments="marginal cell @ L3">
+        <Coords points="0,165 390,165 390,203 0,203"/>
+        <Baseline points="0,196 390,196"/>
+        <TextEquiv>
+          <Unicode>புகழ்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextEquiv>
+        <Unicode>புகழ்</Unicode>
+      </TextEquiv>
+    </TextRegion>
+  </Page>
+</PcGts>

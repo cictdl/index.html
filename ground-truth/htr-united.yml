@@ -1,0 +1,83 @@
+schema: https://htr-united.github.io/schema/2023-06-27/schema.json
+title: CICT Tirukkural Palm-Leaf Ground Truth Corpus
+project-name: CICT Tirukkural Ground Truth Corpus
+description: >-
+  Line-level ground truth for handwritten-text recognition (HTR) of palm-leaf
+  manuscripts of the Tirukkural, transcribed by the Central Institute of Classical
+  Tamil (CICT). Each specimen is one palm-leaf folio carrying ten kural couplets;
+  the verbatim scribal reading is aligned line-by-line with the critical-edition
+  verse numbers. Released as PAGE-XML (segmentation + transcription) and IIIF
+  Presentation 3.0 manifests with line-level Web Annotations. Source images are
+  published per-leaf on Zenodo with individual DOIs under CC BY 4.0.
+# NOTE: set `url` to the canonical Git repository that hosts this folder before
+# submitting to the HTR-United catalog.
+url: https://github.com/cictdl/index.html/tree/main/ground-truth
+project-website: https://www.digitalarchives.cict.in/
+language:
+  - tam
+script:
+  - iso: Taml
+    qualify: Tamil script, 19th-century palm-leaf hand
+script-type: only-manuscript
+# NOTE: manuscript production date is ESTIMATED (undated palm leaf, typical Tamil
+# palm-leaf range). Replace with the verified date if/when established.
+time:
+  notBefore: "1700-01-01"
+  notAfter: "1900-12-31"
+format: Page-XML
+hands:
+  count: "1"
+  precision: estimated
+automatically-aligned: false
+volume:
+  - metric: files
+    count: 100
+  - metric: pages
+    count: 100
+  - metric: regions
+    count: 200
+  - metric: lines
+    count: 1272
+  - metric: characters
+    count: 59657
+production-software: >-
+  Manual transcription by CICT curators; PAGE-XML and IIIF v3 generated from the
+  CICT Digital Archives corpus by generate_ground_truth.py.
+characters:
+  mode: NFC
+  transliteration: false
+authors:
+  - surname: Krishnan
+    name: Kannan
+    roles:
+      - data curator
+  - surname: J
+    name: Mohammed Shameem
+    roles:
+      - researcher
+  - surname: D
+    name: Hariyanka
+    roles:
+      - researcher
+  - surname: Shanmugavel
+    name: Dinesh
+    roles:
+      - researcher
+institutions:
+  - name: Central Institute of Classical Tamil (CICT)
+    roles:
+      - provider
+      - editor
+  - name: SRM Institute of Science and Technology (SRMIST), Ramapuram
+    roles:
+      - researcher
+sources:
+  - reference: Tirukkural palm-leaf manuscript folios
+    link: https://zenodo.org/search?q=%22Palm%20Leaf%20Manuscript%20of%20Tirukkural%22
+    description: >-
+      Per-leaf digitised palm-leaf folios with individual Zenodo DOIs (CC BY 4.0);
+      see index.csv for the DOI and IIIF image service of each specimen.
+transcription-guidelines: https://www.digitalarchives.cict.in/
+license:
+  name: CC-BY-4.0
+  url: https://creativecommons.org/licenses/by/4.0/

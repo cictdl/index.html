@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+  <Metadata>
+    <Creator>Central Institute of Classical Tamil (CICT)</Creator>
+    <Created>2026-05-11T00:00:00</Created>
+    <LastChange>2026-05-11T00:00:00</LastChange>
+    <Comments>CICT-PLM-GT-023 | Tirukkural Adhikaram 23 (ஈகை / Charity / Generosity) | kurals 221-230 | section அறம் / subsection  | DOI 10.5281/zenodo.20120362 | record https://zenodo.org/records/20120362 | manuscriptId 18861_25 | NOTE: line Coords are band-derived full-width bounding boxes (approximate); transcription text is exact ground truth.</Comments>
+  </Metadata>
+  <Page imageFilename="18861_25.jpg" imageWidth="2890" imageHeight="478">
+    <ReadingOrder>
+      <OrderedGroup id="g0">
+        <RegionRefIndexed index="0" regionRef="r_main"/>
+        <RegionRefIndexed index="1" regionRef="r_margin"/>
+      </OrderedGroup>
+    </ReadingOrder>
+    <TextRegion id="r_main" type="paragraph" custom="readingOrder {index:0;}">
+      <Coords points="0,87 2890,87 2890,460 0,460"/>
+      <TextLine id="r_main_l1" custom="readingOrder {index:0;}" comments="kural=221; numeral=௧">
+        <Coords points="0,87 2890,87 2890,124 0,124"/>
+        <Baseline points="0,117 2890,117"/>
+        <TextEquiv>
+          <Unicode>வறியார்க்கொன்றீ யவதே யீகைமற் றெல்லாங் குறியெதிர்ப்பை நீர துடைத்து</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l2" custom="readingOrder {index:1;}" comments="kural=222; numeral=௨">
+        <Coords points="0,124 2890,124 2890,162 0,162"/>
+        <Baseline points="0,155 2890,155"/>
+        <TextEquiv>
+          <Unicode>அற்றா ரழிபசி தீர்த்த லஃதொருவன் பெற்றான் பொருள்வைப்ழி</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l3" custom="readingOrder {index:2;}" comments="kural=223; numeral=௩">
+        <Coords points="0,162 2890,162 2890,199 0,199"/>
+        <Baseline points="0,192 2890,192"/>
+        <TextEquiv>
+          <Unicode>ஆற்றுவா ராற்றல் பசியாற்ற லப்பசியை மாற்றுவா ராற்றலிற் பின்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l4" custom="readingOrder {index:3;}" comments="kural=224; numeral=௪">
+        <Coords points="0,199 2890,199 2890,236 0,236"/>
+        <Baseline points="0,229 2890,229"/>
+        <TextEquiv>
+          <Unicode>பார்த்தூண் மரீஇ யவநைப் பசியெந்நுந் தீயப்பிணி தீண்ட லரிது</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l5" custom="readingOrder {index:4;}" comments="kural=225; numeral=௫">
+        <Coords points="0,236 2890,236 2890,273 0,273"/>
+        <Baseline points="0,267 2890,267"/>
+        <TextEquiv>
+          <Unicode>இரத்தலி னின்னாது மின்றி நிரப்பிய தாமெ தமிய ருணல்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l6" custom="readingOrder {index:5;}" comments="kural=229; numeral=௬">
+        <Coords points="0,273 2890,273 2890,311 0,311"/>
+        <Baseline points="0,304 2890,304"/>
+        <TextEquiv>
+          <Unicode>இத்துவக்கு மின்ப மறியார்கொ றாமுடைமை வைத்திழக்கும் வன்க ணவர்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l7" custom="readingOrder {index:6;}" comments="kural=226; numeral=௭">
+        <Coords points="0,311 2890,311 2890,348 0,348"/>
+        <Baseline points="0,341 2890,341"/>
+        <TextEquiv>
+          <Unicode>சாதலி னின்னாத தில்லை யீனித்தூஉம் மீத லியையாக் கடை</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l8" custom="readingOrder {index:7;}" comments="kural=227; numeral=௮">
+        <Coords points="0,348 2890,348 2890,385 0,385"/>
+        <Baseline points="0,379 2890,379"/>
+        <TextEquiv>
+          <Unicode>இந்நா திரக்கப் படுதல் லிரந்தவ ரின்முகங் காணு மழவு</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l9" custom="readingOrder {index:8;}" comments="kural=228; numeral=௯">
+        <Coords points="0,385 2890,385 2890,423 0,423"/>
+        <Baseline points="0,416 2890,416"/>
+        <TextEquiv>
+          <Unicode>இலநென்னு மெவ்வ முரையாமை யீய்தல் குலனுடையான் கண்ணெ யுள்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l10" custom="readingOrder {index:9;}" comments="kural=230; numeral=௰">
+        <Coords points="0,423 2890,423 2890,460 0,460"/>
+        <Baseline points="0,453 2890,453"/>
+        <TextEquiv>
+          <Unicode>நல்லா றெநிநுங் கொளறீது மேலுலக மில்லெனினு மீதலெ நன்று</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextEquiv>
+        <Unicode>வறியார்க்கொன்றீ யவதே யீகைமற் றெல்லாங் குறியெதிர்ப்பை நீர துடைத்து
+அற்றா ரழிபசி தீர்த்த லஃதொருவன் பெற்றான் பொருள்வைப்ழி
+ஆற்றுவா ராற்றல் பசியாற்ற லப்பசியை மாற்றுவா ராற்றலிற் பின்
+பார்த்தூண் மரீஇ யவநைப் பசியெந்நுந் தீயப்பிணி தீண்ட லரிது
+இரத்தலி னின்னாது மின்றி நிரப்பிய தாமெ தமிய ருணல்
+இத்துவக்கு மின்ப மறியார்கொ றாமுடைமை வைத்திழக்கும் வன்க ணவர்
+சாதலி னின்னாத தில்லை யீனித்தூஉம் மீத லியையாக் கடை
+இந்நா திரக்கப் படுதல் லிரந்தவ ரின்முகங் காணு மழவு
+இலநென்னு மெவ்வ முரையாமை யீய்தல் குலனுடையான் கண்ணெ யுள்
+நல்லா றெநிநுங் கொளறீது மேலுலக மில்லெனினு மீதலெ நன்று</Unicode>
+      </TextEquiv>
+    </TextRegion>
+    <TextRegion id="r_margin" type="marginalia" custom="readingOrder {index:1;}">
+      <Coords points="0,87 405,87 405,460 0,460"/>
+      <TextLine id="r_margin_l3" custom="readingOrder {index:2;}" comments="marginal cell @ L3">
+        <Coords points="0,162 405,162 405,199 0,199"/>
+        <Baseline points="0,192 405,192"/>
+        <TextEquiv>
+          <Unicode>ஈகை</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_margin_l6" custom="readingOrder {index:5;}" comments="marginal cell @ L6">
+        <Coords points="0,273 405,273 405,311 0,311"/>
+        <Baseline points="0,304 405,304"/>
+        <TextEquiv>
+          <Unicode>௩௰௨</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextEquiv>
+        <Unicode>ஈகை
+௩௰௨</Unicode>
+      </TextEquiv>
+    </TextRegion>
+  </Page>
+</PcGts>
