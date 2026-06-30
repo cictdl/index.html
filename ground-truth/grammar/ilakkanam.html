@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>திருக்குறள் இலக்கணக் குறிப்பு ஆவணகம் · Tirukkural Grammatical Annotation Archive</title>
+<meta name="description" content="Word-by-word grammatical (இலக்கணக் குறிப்பு) annotation of all 1330 Tirukkural couplets — 133 அதிகாரம், 3 பால்.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;500;600&family=Noto+Serif+Tamil:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#fbfaf7; --surface:#ffffff; --surface2:#f3f1ea; --text:#23221e; --muted:#6b6a63; --faint:#9a988f;
+  --border:#e4e1d7; --accent:#185fa5; --accent-bg:#e6f1fb;
+  --peyar:#185fa5; --peyar-bg:#e6f1fb; --vinai:#3b6d11; --vinai-bg:#eaf3de;
+  --idai:#854f0b; --idai-bg:#faeeda; --uri:#534ab7; --uri-bg:#eeedfe;
+  --ok:#3b6d11; --warn:#ba7517; --bad:#a32d2d; --radius:10px;
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#1a1a18; --surface:#242420; --surface2:#2c2c28; --text:#ece9e1; --muted:#a8a69c; --faint:#7a796f;
+  --border:#3a3a34; --accent:#85b7eb; --accent-bg:#0c447c;
+  --peyar:#85b7eb; --peyar-bg:#0c447c; --vinai:#97c459; --vinai-bg:#27500a;
+  --idai:#ef9f27; --idai-bg:#633806; --uri:#afa9ec; --uri-bg:#3c3489;
+  --ok:#97c459; --warn:#ef9f27; --bad:#f09595;
+}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:'Noto Sans Tamil',system-ui,sans-serif;font-size:16px;line-height:1.6}
+a{color:var(--accent);text-decoration:none}
+header{position:sticky;top:0;z-index:10;background:var(--surface);border-bottom:1px solid var(--border);padding:10px 16px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.brand{font-weight:600;font-size:17px;display:flex;align-items:center;gap:8px;cursor:pointer}
+.brand small{font-weight:400;color:var(--muted);font-size:12px}
+.searchbox{flex:1;min-width:180px;display:flex;align-items:center;gap:7px;background:var(--surface2);border:1px solid var(--border);border-radius:999px;padding:7px 14px}
+.searchbox input{border:0;background:transparent;outline:0;color:var(--text);font:inherit;font-size:14px;width:100%}
+.btn{border:1px solid var(--border);background:var(--surface);color:var(--text);border-radius:999px;padding:6px 12px;font:inherit;font-size:13px;cursor:pointer}
+.btn:hover{border-color:var(--muted)}
+.wrap{max-width:960px;margin:0 auto;padding:18px 16px 60px}
+.banner{background:var(--idai-bg);color:var(--idai);border-radius:var(--radius);padding:8px 12px;font-size:12.5px;margin-bottom:16px;display:flex;gap:8px;align-items:flex-start}
+.crumb{font-size:13px;color:var(--muted);margin-bottom:14px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.crumb a{color:var(--muted)}
+.pal-h{font-family:'Noto Serif Tamil',serif;font-size:20px;font-weight:600;margin:22px 0 4px}
+.iyal-h{font-size:13px;color:var(--muted);margin:14px 0 8px;text-transform:none}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px}
+.card{display:block;color:inherit;background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:12px 14px;cursor:pointer;transition:border-color .12s}
+.card:hover{border-color:var(--accent)}
+.card .n{font-size:12px;color:var(--faint)}
+.card .t{font-family:'Noto Serif Tamil',serif;font-size:16px;font-weight:500;margin-top:2px}
+.card .e{font-size:12px;color:var(--muted);margin-top:3px}
+.couplet{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:18px 20px;margin-bottom:14px}
+.couplet p{font-family:'Noto Serif Tamil',serif;font-size:22px;line-height:1.65;margin:0}
+.hl{color:var(--accent);border-bottom:2px solid var(--accent)}
+.ystrip{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:16px}
+.ychip{font-size:12.5px;padding:5px 11px;border-radius:999px;background:var(--surface2);color:var(--muted);border:1px solid var(--border)}
+.wgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(165px,1fr));gap:10px;margin-bottom:16px}
+.wcard{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:11px 13px}
+.wcard .sol{font-family:'Noto Serif Tamil',serif;font-size:17px;font-weight:500;margin-bottom:6px}
+.tag{display:inline-block;font-size:11.5px;padding:2px 9px;border-radius:999px}
+.cat-பெயர்{background:var(--peyar-bg);color:var(--peyar)} .cat-வினை{background:var(--vinai-bg);color:var(--vinai)}
+.cat-இடை{background:var(--idai-bg);color:var(--idai)} .cat-உரி{background:var(--uri-bg);color:var(--uri)}
+.sub{font-size:12px;color:var(--muted);margin-top:6px}
+.track{height:4px;background:var(--surface2);border-radius:999px;overflow:hidden;margin-top:7px}
+.track>i{display:block;height:100%}
+.panel{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:13px 15px;margin-bottom:12px}
+.panel h3{font-size:12px;color:var(--faint);font-weight:500;margin:0 0 6px;text-transform:none}
+.flags li{font-size:12.5px;color:var(--muted);margin:3px 0}
+.facet{display:flex;flex-wrap:wrap;gap:7px}
+.facet button{border:1px solid var(--border);background:var(--surface);border-radius:999px;padding:5px 11px;font:inherit;font-size:13px;cursor:pointer;color:var(--text)}
+.facet button:hover{border-color:var(--accent)}
+.facet .ct{color:var(--faint);font-size:11px;margin-left:5px}
+.tabbar{display:flex;gap:6px;margin-bottom:16px;flex-wrap:wrap}
+.tabbar a{font-size:13px;padding:6px 13px;border-radius:999px;background:var(--surface2);color:var(--muted)}
+.tabbar a.on{background:var(--accent-bg);color:var(--accent)}
+.rowlist a{display:block;padding:9px 0;border-bottom:1px solid var(--border);color:var(--text)}
+.rowlist .rn{color:var(--faint);font-size:12px}
+.rowlist .rt{font-family:'Noto Serif Tamil',serif}
+.badge{font-size:11.5px;padding:2px 9px;border-radius:999px;display:inline-flex;gap:4px;align-items:center}
+.badge.ok{background:var(--vinai-bg);color:var(--vinai)}
+.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:6px}
+footer{max-width:960px;margin:0 auto;padding:20px 16px 50px;color:var(--faint);font-size:12px;border-top:1px solid var(--border)}
+.spin{color:var(--muted);padding:30px 0;text-align:center}
+</style>
+</head>
+<body>
+<header>
+  <div class="brand" onclick="location.hash='#/'"><span data-i="brand">இலக்கணக் குறிப்பு ஆவணகம்</span></div>
+  <label class="searchbox"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--faint)"><circle cx="11" cy="11" r="7"/><path d="m21 21-4-4"/></svg>
+    <input id="q" data-ph="search" placeholder="சொல் / குறிப்பு தேடு…" autocomplete="off"></label>
+  <button class="btn" id="lang" title="language">EN</button>
+</header>
+<div class="wrap">
+  <div class="banner">
+    <span>⚠</span><span data-i="disclaimer">AI-உதவியுடன் உருவாக்கப்பட்ட இலக்கண வரைவு; இறுதி நிலைக்கு தமிழ் இலக்கண அறிஞர் சரிபார்ப்பு தேவை.</span>
+  </div>
+  <div class="tabbar" id="tabs"></div>
+  <div id="view"><div class="spin">ஏற்றுகிறது…</div></div>
+</div>
+<footer>
+  <span data-i="foot">திருக்குறள் இலக்கணக் குறிப்பு · 1330 குறள் · 133 அதிகாரம் · CICT Digital Archives</span> ·
+  <a href="https://github.com/cictdl/index.html/tree/main/ground-truth/grammar" target="_blank" rel="noopener">GitHub</a>
+</footer>
+<script>
+const REPO="https://github.com/cictdl/index.html";
+const I18N={
+  ta:{brand:"இலக்கணக் குறிப்பு ஆவணகம்",search:"சொல் / குறிப்பு தேடு…",browse:"தொகுப்பு",explore:"இலக்கணம் ஆராய்",
+      disclaimer:"AI-உதவியுடன் உருவாக்கப்பட்ட இலக்கண வரைவு; இறுதி நிலைக்கு தமிழ் இலக்கண அறிஞர் சரிபார்ப்பு தேவை.",
+      foot:"திருக்குறள் இலக்கணக் குறிப்பு · 1330 குறள் · 133 அதிகாரம் · CICT Digital Archives",
+      yappu:"யாப்பு",ani:"அணி",urai:"உரை (மு. வரதராசனார்)",meaning:"பொருள்",flags:"பார்வைக் குறிப்புகள்",
+      split:"பிரிப்பு",vetrumai:"வேற்றுமை",conf:"நம்பிக்கை",verified:"சரிபார்க்கப்பட்டது",draft:"வரைவு",
+      kural:"குறள்",adhigaram:"அதிகாரம்",suggest:"திருத்தம் பரிந்துரை",results:"முடிவுகள்",
+      byTag:"இலக்கணக் குறிப்பு வாரியாக",byAni:"அணி வாரியாக",byVetrumai:"வேற்றுமை வாரியாக",nomatch:"பொருத்தம் இல்லை"},
+  en:{brand:"Grammatical Annotation Archive",search:"search word / tag…",browse:"Browse",explore:"Explore grammar",
+      disclaimer:"AI-assisted grammatical draft; final use needs review by a Tamil-grammar scholar.",
+      foot:"Tirukkural grammatical annotation · 1330 couplets · 133 chapters · CICT Digital Archives",
+      yappu:"Prosody",ani:"Figure",urai:"Commentary (Mu. Varadarajanar)",meaning:"Meaning",flags:"Review notes",
+      split:"Morphology",vetrumai:"Case",conf:"Confidence",verified:"Verified",draft:"Draft",
+      kural:"Kural",adhigaram:"Chapter",suggest:"Suggest correction",results:"Results",
+      byTag:"By grammatical tag",byAni:"By figure of speech",byVetrumai:"By case",nomatch:"No matches"}
+};
+let LANG=localStorage.getItem('tk_lang')||'ta';
+let INDEX=null, SI=null; const chCache={};
+const $=s=>document.querySelector(s), pad=n=>String(n).padStart(3,'0'), chOf=n=>Math.floor((n-1)/10)+1;
+const T=k=>I18N[LANG][k]||k;
+const GRAPH=/[அ-ஔ]|[ஂஃ]|[க-ஹ][ா-்ௗ]?/g;
+const esc=s=>(s==null?'':String(s)).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+function applyLang(){
+  document.documentElement.lang=LANG;
+  document.querySelectorAll('[data-i]').forEach(e=>e.textContent=T(e.dataset.i));
+  $('#q').placeholder=T('search'); $('#lang').textContent=LANG==='ta'?'EN':'த';
+  renderTabs(); route();
+}
+function renderTabs(){
+  const h=location.hash||'#/';
+  const on=p=>h.startsWith(p)?'on':'';
+  $('#tabs').innerHTML=`<a class="${on('#/')&&!h.startsWith('#/explore')?'on':''}" href="#/">${T('browse')}</a>
+    <a class="${on('#/explore')}" href="#/explore">${T('explore')}</a>`;
+}
+async function getIndex(){ if(!INDEX) INDEX=await (await fetch('web/index.json')).json(); return INDEX; }
+async function getChapter(n){ if(!chCache[n]) chCache[n]=await (await fetch('web/ch/'+pad(n)+'.json')).json(); return chCache[n]; }
+async function getSI(){ if(!SI){ $('#view').innerHTML='<div class="spin">…</div>'; SI=await (await fetch('web/search-index.json')).json(); } return SI; }
+
+function catClass(c){return 'cat-'+(c||'');}
+function confColor(v){return v>=0.75?'var(--ok)':v>=0.5?'var(--warn)':'var(--bad)';}
+
+async function viewHome(){
+  const idx=await getIndex();
+  const byPal={}; idx.forEach(c=>{(byPal[c.pal]=byPal[c.pal]||{}); (byPal[c.pal][c.iyal]=byPal[c.pal][c.iyal]||[]).push(c);});
+  let h='';
+  for(const pal in byPal){ h+=`<div class="pal-h">${esc(pal)}</div>`;
+    for(const iyal in byPal[pal]){ h+=`<div class="iyal-h">${esc(iyal)}</div><div class="cards">`;
+      byPal[pal][iyal].forEach(c=>{ h+=`<a class="card" href="#/adhigaram/${c.adhigaram}">
+        <div class="n">${T('adhigaram')} ${c.adhigaram} · ${T('kural')} ${c.start}–${c.end}</div>
+        <div class="t">${esc(c.name)}</div><div class="e">${esc(c.nameEn||'')}</div></a>`; });
+      h+='</div>'; } }
+  $('#view').innerHTML=h;
+}
+async function viewAdhigaram(n){
+  const ch=await getChapter(n);
+  let h=`<div class="crumb"><a href="#/">${esc(ch.pal)} · ${esc(ch.iyal)}</a></div>
+    <div class="pal-h">${T('adhigaram')} ${n} · ${esc(ch.name)}</div>
+    <div class="iyal-h">${esc(ch.nameEn||'')}</div><div class="cards">`;
+  ch.kurals.forEach(k=>{
+    h+=`<a class="card" href="#/kural/${k.number}">
+      <div class="n">${T('kural')} ${k.number}</div>
+      <div class="t">${esc(k.line1)}</div><div class="e">${esc(k.line2)}</div></a>`; });
+  h+='</div>'; $('#view').innerHTML=h;
+}
+function hlEdugai(line,letter){
+  if(!letter) return esc(line);
+  const words=line.split(/\s+/); if(!words.length) return esc(line);
+  const g=(words[0].match(GRAPH)||[]);
+  if(g.length>=2){ g[1]=`<span class="hl">${esc(g[1])}</span>`; words[0]=g.join(''); }
+  return words.map((w,i)=>i===0?w:esc(w)).join(' ');
+}
+async function viewKural(n){
+  const ch=await getChapter(chOf(n)); const k=(ch.kurals||[]).find(x=>x.number===n);
+  if(!k){ $('#view').innerHTML='<div class="spin">'+T('nomatch')+'</div>'; return; }
+  const y=k.yappu||{}, ed=(y.edugai||{}).letter||'';
+  const prev=n>1?`<a href="#/kural/${n-1}">‹</a>`:'<span></span>';
+  const next=n<1330?`<a href="#/kural/${n+1}">›</a>`:'<span></span>';
+  let chips=[]; if(y.paa)chips.push(y.paa); if(y.sirCount)chips.push('சீர் '+y.sirCount.join(' + '));
+  if(ed)chips.push('எதுகை · '+ed); if(y.eetruseer)chips.push('ஈற்றுச்சீர் · '+y.eetruseer);
+  (k.ani||[]).forEach(a=>{if(a&&a.name)chips.push('அணி · '+a.name);});
+  let wg=''; (k.sirs||[]).forEach(s=>{ (s.components||[]).forEach(c=>{
+    const cf=typeof c.confidence==='number'?c.confidence:0;
+    const vt=c.vetrumai&&c.vetrumai.name?`<div class="sub">${T('vetrumai')}: ${esc(c.vetrumai.urupu||'')} (${esc(c.vetrumai.name)})</div>`:'';
+    wg+=`<div class="wcard"><div class="sol">${esc(c.sol)}</div>
+      <span class="tag ${catClass(c.category)}">${esc(c.ilakkanam||'')}</span>
+      ${c.split?`<div class="sub">${esc(c.split)}</div>`:''}${vt}
+      <div class="track"><i style="width:${Math.round(cf*100)}%;background:${confColor(cf)}"></i></div></div>`;
+  });});
+  const issue=`${REPO}/issues/new?title=${encodeURIComponent('இலக்கணக் குறிப்பு திருத்தம்: குறள் '+n)}&body=${encodeURIComponent('குறள் '+n+' ('+k.line1+' / '+k.line2+')\n\nபரிந்துரைக்கப்படும் திருத்தம்:\n')}`;
+  const badge=k.verification==='verified'?`<span class="badge ok">✓ ${T('verified')}</span>`:`<span class="badge">${T('draft')}</span>`;
+  let h=`<div class="crumb"><a href="#/adhigaram/${k.adhigaram}">${esc(ch.pal)} · ${esc(ch.name)}</a>
+      <span>${prev} ${T('kural')} ${n} / 1330 ${next}</span></div>
+    <div class="couplet"><p>${hlEdugai(k.line1,ed)}</p><p>${hlEdugai(k.line2,ed)}</p></div>
+    <div class="ystrip">${chips.map(c=>`<span class="ychip">${esc(c)}</span>`).join('')}</div>
+    <div class="wgrid">${wg}</div>`;
+  if(k.urai_mv) h+=`<div class="panel"><h3>${T('urai')}</h3>${esc(k.urai_mv)}</div>`;
+  if(k.meaningEn) h+=`<div class="panel"><h3>${T('meaning')}</h3>${esc(k.meaningEn)}</div>`;
+  if((k.reviewFlags||[]).length) h+=`<div class="panel"><h3>${T('flags')} · ${k.reviewFlags.length}</h3><ul class="flags">${k.reviewFlags.map(f=>`<li>${esc(f)}</li>`).join('')}</ul></div>`;
+  h+=`<div class="actions">${badge}<a class="btn" href="${issue}" target="_blank" rel="noopener">${T('suggest')}</a></div>`;
+  $('#view').innerHTML=h;
+}
+async function viewExplore(){
+  const si=await getSI();
+  const blk=(title,obj)=>{ const items=Object.entries(obj).slice(0,40);
+    return `<h3 style="margin:18px 0 8px;font-size:14px">${title}</h3><div class="facet">`+
+      items.map(([v,ks])=>`<button onclick="location.hash='#/tag/${encodeURIComponent(v)}'">${esc(v)}<span class="ct">${ks.length}</span></button>`).join('')+'</div>';
+  };
+  $('#view').innerHTML=blk(T('byTag'),si.facets.ilakkanam)+blk(T('byAni'),si.facets.ani)+blk(T('byVetrumai'),si.facets.vetrumai);
+}
+async function viewTag(val){
+  const si=await getSI(); const idx=await getIndex();
+  let ks=null; for(const f of ['ilakkanam','ani','vetrumai','togai','category']){ if(si.facets[f][val]){ks=si.facets[f][val];break;} }
+  if(!ks){ $('#view').innerHTML='<div class="spin">'+T('nomatch')+'</div>'; return; }
+  const lines={}; si.words.forEach(w=>{lines[w[0]]=lines[w[0]]||w[1];});
+  let h=`<div class="crumb"><a href="#/explore">‹ ${T('explore')}</a><span>${esc(val)} · ${ks.length}</span></div><div class="rowlist">`;
+  ks.slice(0,400).forEach(n=>{ h+=`<a href="#/kural/${n}"><span class="rn">${T('kural')} ${n}</span> <span class="rt">${esc(lines[n]||'')}</span></a>`; });
+  h+='</div>'; $('#view').innerHTML=h;
+}
+async function doSearch(term){
+  term=term.trim(); if(term.length<2){ route(); return; }
+  const si=await getSI(); const seen=new Set(); const rows=[];
+  for(const w of si.words){ if((w[1]&&w[1].includes(term))||(w[2]&&w[2].includes(term))){ const key=w[0]+w[1]; if(!seen.has(key)){seen.add(key); rows.push(w);} } if(rows.length>=300)break; }
+  let h=`<div class="crumb"><span>${T('results')}: “${esc(term)}” · ${rows.length}</span></div><div class="rowlist">`;
+  if(!rows.length) h+=`<div class="spin">${T('nomatch')}</div>`;
+  rows.forEach(w=>{ h+=`<a href="#/kural/${w[0]}"><span class="rn">${T('kural')} ${w[0]}</span> <span class="rt">${esc(w[1])}</span> <span class="tag ${catClass(w[3])}">${esc(w[2])}</span></a>`; });
+  h+='</div>'; $('#view').innerHTML=h;
+}
+function route(){
+  renderTabs();
+  const h=location.hash||'#/'; const m=h.match(/^#\/(\w+)\/?(.*)$/);
+  if(!m||h==='#/') return viewHome();
+  const [,r,a]=m;
+  if(r==='adhigaram') return viewAdhigaram(+a);
+  if(r==='kural') return viewKural(+a);
+  if(r==='explore') return viewExplore();
+  if(r==='tag') return viewTag(decodeURIComponent(a));
+  return viewHome();
+}
+$('#lang').onclick=()=>{ LANG=LANG==='ta'?'en':'ta'; localStorage.setItem('tk_lang',LANG); applyLang(); };
+let st; $('#q').oninput=e=>{ clearTimeout(st); const v=e.target.value; st=setTimeout(()=>{ if(v.trim().length>=2) doSearch(v); else route(); },220); };
+window.addEventListener('hashchange',route);
+applyLang();
+</script>
+</body>
+</html>
