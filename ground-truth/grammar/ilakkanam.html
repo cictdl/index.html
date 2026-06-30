@@ -77,6 +77,18 @@ header{position:sticky;top:0;z-index:10;background:var(--surface);border-bottom:
 .actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:6px}
 footer{max-width:960px;margin:0 auto;padding:20px 16px 50px;color:var(--faint);font-size:12px;border-top:1px solid var(--border)}
 .spin{color:var(--muted);padding:30px 0;text-align:center}
+.metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px;margin-bottom:18px}
+.metric{background:var(--surface2);border-radius:var(--radius);padding:12px 14px}
+.metric .v{font-size:22px;font-weight:600}.metric .l{font-size:12px;color:var(--muted);margin-top:2px}
+.sec-h{font-size:14px;font-weight:500;margin:18px 0 8px}
+.brow{display:flex;align-items:center;gap:10px;margin:5px 0;font-size:13px}
+.brow .bl{width:160px;flex:none;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.brow .bt{flex:1;background:var(--surface2);border-radius:999px;height:13px;overflow:hidden}
+.brow .bt>i{display:block;height:100%;background:var(--accent)}
+.brow .bc{width:50px;flex:none;text-align:right;color:var(--muted);font-size:12px}
+.heat{display:grid;grid-template-columns:repeat(19,1fr);gap:3px;margin:8px 0 6px}
+.heat a{aspect-ratio:1;border-radius:3px;display:block}
+.msimg{width:100%;border-radius:8px;border:1px solid var(--border);background:var(--surface2);display:block;image-rendering:auto}
 </style>
 </head>
 <body>
@@ -106,17 +118,23 @@ const I18N={
       yappu:"யாப்பு",ani:"அணி",urai:"உரை (மு. வரதராசனார்)",meaning:"பொருள்",flags:"பார்வைக் குறிப்புகள்",
       split:"பிரிப்பு",vetrumai:"வேற்றுமை",conf:"நம்பிக்கை",verified:"சரிபார்க்கப்பட்டது",draft:"வரைவு",
       kural:"குறள்",adhigaram:"அதிகாரம்",suggest:"திருத்தம் பரிந்துரை",results:"முடிவுகள்",
-      byTag:"இலக்கணக் குறிப்பு வாரியாக",byAni:"அணி வாரியாக",byVetrumai:"வேற்றுமை வாரியாக",nomatch:"பொருத்தம் இல்லை"},
+      byTag:"இலக்கணக் குறிப்பு வாரியாக",byAni:"அணி வாரியாக",byVetrumai:"வேற்றுமை வாரியாக",nomatch:"பொருத்தம் இல்லை",
+      stats:"புள்ளிவிவரம்",words:"சொற்கள்",verifiedN:"சரிபார்க்கப்பட்ட அதிகாரம்",meanConf:"சராசரி நம்பிக்கை",flagsN:"பார்வைக் குறிப்புகள்",
+      catDist:"சொல்வகை பரவல்",topTags:"முதன்மை இலக்கணக் குறிப்புகள்",aniDist:"அணி பரவல்",vetDist:"வேற்றுமை பரவல்",
+      heatmap:"அதிகார நம்பிக்கை வரைபடம்",manuscript:"ஓலைச்சுவடி",scribal:"சுவடி வாசிப்பு",viewLeaf:"முழு ஓலை · DOI"},
   en:{brand:"Grammatical Annotation Archive",search:"search word / tag…",browse:"Browse",explore:"Explore grammar",
       disclaimer:"AI-assisted grammatical draft; final use needs review by a Tamil-grammar scholar.",
       foot:"Tirukkural grammatical annotation · 1330 couplets · 133 chapters · CICT Digital Archives",
       yappu:"Prosody",ani:"Figure",urai:"Commentary (Mu. Varadarajanar)",meaning:"Meaning",flags:"Review notes",
       split:"Morphology",vetrumai:"Case",conf:"Confidence",verified:"Verified",draft:"Draft",
       kural:"Kural",adhigaram:"Chapter",suggest:"Suggest correction",results:"Results",
-      byTag:"By grammatical tag",byAni:"By figure of speech",byVetrumai:"By case",nomatch:"No matches"}
+      byTag:"By grammatical tag",byAni:"By figure of speech",byVetrumai:"By case",nomatch:"No matches",
+      stats:"Stats",words:"Words",verifiedN:"Verified chapters",meanConf:"Mean confidence",flagsN:"Review flags",
+      catDist:"Word-class distribution",topTags:"Top grammatical tags",aniDist:"Figures of speech",vetDist:"Cases",
+      heatmap:"Per-chapter confidence",manuscript:"Palm-leaf manuscript",scribal:"Scribal reading",viewLeaf:"Full leaf · DOI"}
 };
 let LANG=localStorage.getItem('tk_lang')||'ta';
-let INDEX=null, SI=null; const chCache={};
+let INDEX=null, SI=null, STATS=null, MAN=null; const chCache={};
 const $=s=>document.querySelector(s), pad=n=>String(n).padStart(3,'0'), chOf=n=>Math.floor((n-1)/10)+1;
 const T=k=>I18N[LANG][k]||k;
 const GRAPH=/[அ-ஔ]|[ஂஃ]|[க-ஹ][ா-்ௗ]?/g;
@@ -130,13 +148,15 @@ function applyLang(){
 }
 function renderTabs(){
   const h=location.hash||'#/';
-  const on=p=>h.startsWith(p)?'on':'';
-  $('#tabs').innerHTML=`<a class="${on('#/')&&!h.startsWith('#/explore')?'on':''}" href="#/">${T('browse')}</a>
-    <a class="${on('#/explore')}" href="#/explore">${T('explore')}</a>`;
+  const cur=(h.startsWith('#/explore')||h.startsWith('#/tag'))?'explore':h.startsWith('#/stats')?'stats':'browse';
+  const tab=(id,href,lbl)=>`<a class="${cur===id?'on':''}" href="${href}">${lbl}</a>`;
+  $('#tabs').innerHTML=tab('browse','#/',T('browse'))+tab('explore','#/explore',T('explore'))+tab('stats','#/stats',T('stats'));
 }
 async function getIndex(){ if(!INDEX) INDEX=await (await fetch('web/index.json')).json(); return INDEX; }
 async function getChapter(n){ if(!chCache[n]) chCache[n]=await (await fetch('web/ch/'+pad(n)+'.json')).json(); return chCache[n]; }
 async function getSI(){ if(!SI){ $('#view').innerHTML='<div class="spin">…</div>'; SI=await (await fetch('web/search-index.json')).json(); } return SI; }
+async function getStats(){ if(!STATS) STATS=await (await fetch('web/stats.json')).json(); return STATS; }
+async function getMan(){ if(MAN===null){ try{ MAN=await (await fetch('web/manuscript.json')).json(); }catch(e){ MAN={}; } } return MAN; }
 
 function catClass(c){return 'cat-'+(c||'');}
 function confColor(v){return v>=0.75?'var(--ok)':v>=0.5?'var(--warn)':'var(--bad)';}
@@ -171,6 +191,16 @@ function hlEdugai(line,letter){
   if(g.length>=2){ g[1]=`<span class="hl">${esc(g[1])}</span>`; words[0]=g.join(''); }
   return words.map((w,i)=>i===0?w:esc(w)).join(' ');
 }
+async function msPanel(n){
+  const man=await getMan(); const mc=man[chOf(n)];
+  if(!mc||!mc.lines||!mc.lines[n]) return '';
+  const ln=mc.lines[n]; let img='';
+  if(mc.service&&ln.y){ const hh=ln.y[1]-ln.y[0]; img=`${mc.service}/0,${ln.y[0]},${mc.width},${hh}/max/0/default.jpg`; }
+  return `<div class="panel"><h3>${T('manuscript')} · ${esc(mc.manuscriptId)}</h3>
+    ${img?`<img class="msimg" loading="lazy" src="${esc(img)}" alt="ஓலைச்சுவடி">`:''}
+    ${ln.text?`<div class="sub" style="margin-top:8px">${T('scribal')}: ${esc(ln.text)}</div>`:''}
+    ${mc.recordURL?`<div class="actions" style="margin-top:8px"><a class="btn" href="${esc(mc.recordURL)}" target="_blank" rel="noopener">${T('viewLeaf')}</a></div>`:''}</div>`;
+}
 async function viewKural(n){
   const ch=await getChapter(chOf(n)); const k=(ch.kurals||[]).find(x=>x.number===n);
   if(!k){ $('#view').innerHTML='<div class="spin">'+T('nomatch')+'</div>'; return; }
@@ -194,7 +224,7 @@ async function viewKural(n){
       <span>${prev} ${T('kural')} ${n} / 1330 ${next}</span></div>
     <div class="couplet"><p>${hlEdugai(k.line1,ed)}</p><p>${hlEdugai(k.line2,ed)}</p></div>
     <div class="ystrip">${chips.map(c=>`<span class="ychip">${esc(c)}</span>`).join('')}</div>
-    <div class="wgrid">${wg}</div>`;
+    <div class="wgrid">${wg}</div>${await msPanel(n)}`;
   if(k.urai_mv) h+=`<div class="panel"><h3>${T('urai')}</h3>${esc(k.urai_mv)}</div>`;
   if(k.meaningEn) h+=`<div class="panel"><h3>${T('meaning')}</h3>${esc(k.meaningEn)}</div>`;
   if((k.reviewFlags||[]).length) h+=`<div class="panel"><h3>${T('flags')} · ${k.reviewFlags.length}</h3><ul class="flags">${k.reviewFlags.map(f=>`<li>${esc(f)}</li>`).join('')}</ul></div>`;
@@ -227,6 +257,18 @@ async function doSearch(term){
   rows.forEach(w=>{ h+=`<a href="#/kural/${w[0]}"><span class="rn">${T('kural')} ${w[0]}</span> <span class="rt">${esc(w[1])}</span> <span class="tag ${catClass(w[3])}">${esc(w[2])}</span></a>`; });
   h+='</div>'; $('#view').innerHTML=h;
 }
+async function viewStats(){
+  const s=await getStats(); const t=s.totals;
+  const metric=(v,l)=>`<div class="metric"><div class="v">${v}</div><div class="l">${esc(l)}</div></div>`;
+  const bars=(title,obj,n)=>{ const ents=Object.entries(obj).slice(0,n||12); const mx=Math.max(1,...ents.map(e=>e[1]));
+    return `<div class="sec-h">${esc(title)}</div>`+ents.map(([k,v])=>`<div class="brow"><span class="bl" title="${esc(k)}">${esc(k)}</span><span class="bt"><i style="width:${Math.round(v/mx*100)}%"></i></span><span class="bc">${v.toLocaleString()}</span></div>`).join(''); };
+  const heat=s.perAdhigaram.map(p=>{ const c=p.conf; const col=c>=0.75?'var(--ok)':c>=0.6?'var(--warn)':'var(--bad)';
+    return `<a href="#/adhigaram/${p.a}" title="${p.a}. ${esc(p.name)} — ${T('meanConf')} ${c}, ${T('flagsN')} ${p.flags}" style="background:${col};opacity:${(0.4+c*0.6).toFixed(2)}"></a>`; }).join('');
+  let h=`<div class="metrics">${metric(t.kurals.toLocaleString(),T('kural'))}${metric(t.words.toLocaleString(),T('words'))}${metric(t.verified+' / '+t.chapters,T('verifiedN'))}${metric(t.meanConf,T('meanConf'))}${metric(t.flags.toLocaleString(),T('flagsN'))}</div>`;
+  h+=bars(T('catDist'),s.category,4)+bars(T('topTags'),s.ilakkanam,12)+bars(T('aniDist'),s.ani,10)+bars(T('vetDist'),s.vetrumai,11);
+  h+=`<div class="sec-h">${T('heatmap')}</div><div class="heat">${heat}</div>`;
+  $('#view').innerHTML=h;
+}
 function route(){
   renderTabs();
   const h=location.hash||'#/'; const m=h.match(/^#\/(\w+)\/?(.*)$/);
@@ -236,6 +278,7 @@ function route(){
   if(r==='kural') return viewKural(+a);
   if(r==='explore') return viewExplore();
   if(r==='tag') return viewTag(decodeURIComponent(a));
+  if(r==='stats') return viewStats();
   return viewHome();
 }
 $('#lang').onclick=()=>{ LANG=LANG==='ta'?'en':'ta'; localStorage.setItem('tk_lang',LANG); applyLang(); };
