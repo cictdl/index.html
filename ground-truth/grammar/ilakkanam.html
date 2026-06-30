@@ -89,11 +89,39 @@ footer{max-width:960px;margin:0 auto;padding:20px 16px 50px;color:var(--faint);f
 .heat{display:grid;grid-template-columns:repeat(19,1fr);gap:3px;margin:8px 0 6px}
 .heat a{aspect-ratio:1;border-radius:3px;display:block}
 .msimg{width:100%;border-radius:8px;border:1px solid var(--border);background:var(--surface2);display:block;image-rendering:auto}
+.govbar{background:var(--surface2);border-bottom:1px solid var(--border);padding:5px 16px;display:flex;gap:10px;flex-wrap:wrap;font-size:12px;color:var(--muted);align-items:center}
+.govbar .gsep{opacity:.45}
+.instbar{display:flex;align-items:center;gap:14px;padding:11px 16px;border-bottom:1px solid var(--border);background:var(--surface)}
+.instbar .emblem{width:46px;height:46px;object-fit:contain;border-radius:6px;flex:none}
+.instnames{flex:1;min-width:0}
+.inst-ta{font-family:'Noto Serif Tamil',serif;font-size:16px;font-weight:600;line-height:1.25;color:var(--text)}
+.inst-en{font-size:13px;font-weight:500;color:var(--text)}
+.inst-sub{font-size:11.5px;color:var(--muted);margin-top:1px}
+.homebtn{flex:none;border:1px solid var(--border);border-radius:999px;padding:6px 14px;font-size:13px;color:var(--text)}
+.homebtn:hover{border-color:var(--accent);color:var(--accent)}
+footer .foot-director{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+footer .foot-director img{width:54px;height:54px;border-radius:8px;object-fit:cover;border:1px solid var(--border);flex:none}
+.fd-label{font-size:12px;color:var(--faint)}.fd-name{font-weight:600;font-size:14px;color:var(--text)}.fd-title{font-size:12px;color:var(--muted)}
+.foot-meta{display:flex;flex-direction:column;gap:4px}
 </style>
 </head>
 <body>
+<div class="govbar">
+  <span>भारत सरकार · Government of India</span><span class="gsep">·</span>
+  <span>शिक्षा मंत्रालय · Ministry of Education</span><span class="gsep">·</span>
+  <span>An Autonomous Institution</span>
+</div>
+<div class="instbar">
+  <img class="emblem" src="assets/state-emblem.jpg" alt="State Emblem of India" width="46" height="46">
+  <div class="instnames">
+    <div class="inst-ta">செம்மொழித் தமிழாய்வு மத்திய நிறுவனம்</div>
+    <div class="inst-en">Central Institute of Classical Tamil</div>
+    <div class="inst-sub">An Autonomous Institution under the Ministry of Education, Government of India</div>
+  </div>
+  <a class="homebtn" href="https://www.digitalarchives.cict.in/#ground-truth" data-i="home">முகப்பு</a>
+</div>
 <header>
-  <div class="brand" onclick="location.hash='#/'"><span data-i="brand">இலக்கணக் குறிப்பு ஆவணகம்</span></div>
+  <div class="brand" onclick="location.hash='#/'"><span data-i="brand">திருக்குறள் இலக்கணக் குறிப்பு ஆவணகம்</span></div>
   <label class="searchbox"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--faint)"><circle cx="11" cy="11" r="7"/><path d="m21 21-4-4"/></svg>
     <input id="q" data-ph="search" placeholder="சொல் / குறிப்பு தேடு…" autocomplete="off"></label>
   <button class="btn" id="lang" title="language">EN</button>
@@ -106,13 +134,25 @@ footer{max-width:960px;margin:0 auto;padding:20px 16px 50px;color:var(--faint);f
   <div id="view"><div class="spin">ஏற்றுகிறது…</div></div>
 </div>
 <footer>
-  <span data-i="foot">திருக்குறள் இலக்கணக் குறிப்பு · 1330 குறள் · 133 அதிகாரம் · CICT Digital Archives</span> ·
-  <a href="https://github.com/cictdl/index.html/tree/main/ground-truth/grammar" target="_blank" rel="noopener">GitHub</a>
+  <div class="foot-director">
+    <img src="assets/director.jpg" alt="Prof. R. Chandrasekaran" width="54" height="54">
+    <div>
+      <div class="fd-label" data-i="dirmsg">இயக்குநர் செய்தி</div>
+      <div class="fd-name">Prof. R. Chandrasekaran</div>
+      <div class="fd-title" data-i="dirtitle">இயக்குநர் · செம்மொழித் தமிழாய்வு மத்திய நிறுவனம்</div>
+    </div>
+  </div>
+  <div class="foot-meta">
+    <div><span data-i="contact">தொடர்பு</span>: <a href="mailto:kannan.k@cict.in">kannan.k@cict.in</a></div>
+    <div><span data-i="foot">திருக்குறள் இலக்கணக் குறிப்பு · 1330 குறள் · 133 அதிகாரம் · CICT Digital Archives</span> ·
+      <a href="https://github.com/cictdl/index.html/tree/main/ground-truth/grammar" target="_blank" rel="noopener">GitHub</a></div>
+  </div>
 </footer>
 <script>
 const REPO="https://github.com/cictdl/index.html";
 const I18N={
-  ta:{brand:"இலக்கணக் குறிப்பு ஆவணகம்",search:"சொல் / குறிப்பு தேடு…",browse:"தொகுப்பு",explore:"இலக்கணம் ஆராய்",
+  ta:{brand:"திருக்குறள் இலக்கணக் குறிப்பு ஆவணகம்",search:"சொல் / குறிப்பு தேடு…",browse:"தொகுப்பு",explore:"இலக்கணம் ஆராய்",
+      home:"முகப்பு",dirmsg:"இயக்குநர் செய்தி",dirtitle:"இயக்குநர் · செம்மொழித் தமிழாய்வு மத்திய நிறுவனம்",contact:"தொடர்பு",
       disclaimer:"AI-உதவியுடன் உருவாக்கப்பட்ட இலக்கண வரைவு; இறுதி நிலைக்கு தமிழ் இலக்கண அறிஞர் சரிபார்ப்பு தேவை.",
       foot:"திருக்குறள் இலக்கணக் குறிப்பு · 1330 குறள் · 133 அதிகாரம் · CICT Digital Archives",
       yappu:"யாப்பு",ani:"அணி",urai:"உரை (மு. வரதராசனார்)",meaning:"பொருள்",flags:"பார்வைக் குறிப்புகள்",
@@ -122,7 +162,8 @@ const I18N={
       stats:"புள்ளிவிவரம்",words:"சொற்கள்",verifiedN:"சரிபார்க்கப்பட்ட அதிகாரம்",meanConf:"சராசரி நம்பிக்கை",flagsN:"பார்வைக் குறிப்புகள்",
       catDist:"சொல்வகை பரவல்",topTags:"முதன்மை இலக்கணக் குறிப்புகள்",aniDist:"அணி பரவல்",vetDist:"வேற்றுமை பரவல்",
       heatmap:"அதிகார நம்பிக்கை வரைபடம்",manuscript:"ஓலைச்சுவடி",scribal:"சுவடி வாசிப்பு",viewLeaf:"முழு ஓலை · DOI"},
-  en:{brand:"Grammatical Annotation Archive",search:"search word / tag…",browse:"Browse",explore:"Explore grammar",
+  en:{brand:"Tirukkural Grammatical Annotation Archive",search:"search word / tag…",browse:"Browse",explore:"Explore grammar",
+      home:"Home",dirmsg:"Director's Message",dirtitle:"Director · Central Institute of Classical Tamil",contact:"Contact",
       disclaimer:"AI-assisted grammatical draft; final use needs review by a Tamil-grammar scholar.",
       foot:"Tirukkural grammatical annotation · 1330 couplets · 133 chapters · CICT Digital Archives",
       yappu:"Prosody",ani:"Figure",urai:"Commentary (Mu. Varadarajanar)",meaning:"Meaning",flags:"Review notes",
