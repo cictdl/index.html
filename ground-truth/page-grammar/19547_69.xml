@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='utf-8'?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+  <Metadata>
+    <Creator>Central Institute of Classical Tamil (CICT)</Creator>
+    <Created>2026-06-16T00:00:00</Created>
+    <LastChange>2026-06-16T00:00:00</LastChange>
+    <Comments>CICT-PLM-GT-066 | Tirukkural Adhikaram 66 (வினைத்தூய்மை / Purity in Action) | kurals 651-660 | section பொருள் / subsection அமைச்சியல் | DOI 10.5281/zenodo.20715203 | record https://zenodo.org/records/20715203 | manuscriptId 19547_69 | NOTE: line Coords are band-derived full-width bounding boxes (approximate); transcription text is exact ground truth.</Comments>
+  </Metadata>
+  <Page imageFilename="19547_69.jpg" imageWidth="2725" imageHeight="472">
+    <ReadingOrder>
+      <OrderedGroup id="g0">
+        <RegionRefIndexed index="0" regionRef="r_main" />
+        <RegionRefIndexed index="1" regionRef="r_margin" />
+      </OrderedGroup>
+    </ReadingOrder>
+    <TextRegion id="r_main" type="paragraph" custom="readingOrder {index:0;}">
+      <Coords points="0,85 2725,85 2725,458 0,458" />
+      <TextLine id="r_main_l1" custom="readingOrder {index:0;} ilakkanam {kural:652;verification:verified;words:என்றும்=காலப்பெயர்|ஒருவுதல்=தொழிற்பெயர்|வேண்டும்=தெரிநிலைவினைமுற்று|புகழ்=பண்புப்பெயர்|ஒடு=வேற்றுமைஉருபு|நன்றி=பண்புப்பெயர்|பயவா=எதிர்மறைபெயரெச்சம்|வினை=தொழிற்பெயர்;edugai:ன்;eetruseer:மலர்;}" comments="kural=652; numeral=௧">
+        <Coords points="0,85 2725,85 2725,122 0,122" />
+        <Baseline points="0,116 2725,116" />
+        <TextEquiv>
+          <Unicode>என்றுமொ ருவுதல் வேண்டும் புகளேடு நன்றி பயவா விநை</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l2" custom="readingOrder {index:1;} ilakkanam {kural:653;verification:verified;words:ஒஓதல்=தொழிற்பெயர்|வேண்டும்=தெரிநிலைவினைமுற்று|ஒளி=பண்புப்பெயர்|மாழ்கும்=பெயரெச்சம்|செய்=பெயரெச்சம்|வினை=தொழிற்பெயர்|ஆதும்=தெரிநிலைவினைமுற்று|என்னும்=பெயரெச்சம்|அவர்=சுட்டுப்பெயர்;togai:செய்வினை=வினைத்தொகை;ani:இயைபு/ஒலிநயம்;edugai:ஓ;eetruseer:பிறப்பு;}" comments="kural=653; numeral=௨">
+        <Coords points="0,122 2725,122 2725,160 0,160" />
+        <Baseline points="0,153 2725,153" />
+        <TextEquiv>
+          <Unicode>ஒஓத்தல் வேண்டுமொ ழிமாள்குமஞ் செய்விநை யாதுமெ ன்னு மவர்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l3" custom="readingOrder {index:2;} ilakkanam {kural:654;verification:verified;words:இடுக்கண்=பண்புப்பெயர்|படினும்=வினையெச்சம்|இளிவந்த=பெயரெச்சம்|செய்யார்=எதிர்மறைவினைமுற்று|நடுக்கு=பண்புப்பெயர்|அற்ற=எதிர்மறைபெயரெச்சம்|காட்சி=தொழிற்பெயர்|அவர்=சுட்டுப்பெயர்;edugai:டு;eetruseer:பிறப்பு;}" comments="kural=654; numeral=௩">
+        <Coords points="0,160 2725,160 2725,197 0,197" />
+        <Baseline points="0,190 2725,190" />
+        <TextEquiv>
+          <Unicode>இடுக்கப் படிநுமி ழிவந்த செய்யார் நடுக்கற்ற காக்ஷி யவர்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l4" custom="readingOrder {index:3;} ilakkanam {kural:656;verification:verified;words:ஈன்றாள்=வினையாலணையும்பெயர்|பசி=பண்புப்பெயர்|காண்பான்=வினையாலணையும்பெயர்|ஆயினும்=வினையெச்சம்|செய்யற்க=வியங்கோள்வினைமுற்று|சான்றோர்=வினையாலணையும்பெயர்|பழிக்கும்=பெயரெச்சம்|வினை=தொழிற்பெயர்;togai:பசிகாண்பான்=வேற்றுமைத்தொகை;ani:உயர்வுநவிற்சி;edugai:ன்;eetruseer:மலர்;}" comments="kural=656; numeral=௪">
+        <Coords points="0,197 2725,197 2725,234 0,234" />
+        <Baseline points="0,228 2725,228" />
+        <TextEquiv>
+          <Unicode>ஈன்றாள் பசிகாண்பாநா யினுஞ் செய்யற் க சான்றோர் பழிக்கும் விநை</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l5" custom="readingOrder {index:4;} ilakkanam {kural:659;verification:verified;words:அழ=வினையெச்சம்|கொண்ட=பெயரெச்சம்|எல்லாம்=பொருட்பெயர்|அழ=வினையெச்சம்|போம்=தெரிநிலைவினைமுற்று|இழப்பினும்=வினையெச்சம்|பிற்=காலப்பெயர்|பயக்கும்=தெரிநிலைவினைமுற்று|நல்=பண்புப்பெயர்|பால்=பண்புப்பெயர்|அவை=சுட்டுப்பெயர்;togai:நற்பா=பண்புத்தொகை;ani:மடக்கு;edugai:ழ;eetruseer:மலர்;}" comments="kural=659; numeral=௫">
+        <Coords points="0,234 2725,234 2725,272 0,272" />
+        <Baseline points="0,265 2725,265" />
+        <TextEquiv>
+          <Unicode>அழக் கொண்ட தெல்லாம ழப்போம் யிழப்பிநும் பிற்பயக்கும் நற்பா லவை</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l6" custom="readingOrder {index:5;} ilakkanam {kural:660;verification:verified;words:சலம்=பண்புப்பெயர்|பொருள்=பொருட்பெயர்|செய்தே=வினையெச்சம்|மார்த்தல்=தொழிற்பெயர்|பசு=பண்புப்பெயர்|மண்=பொருட்பெயர்|கலத்துள்=இடப்பெயர்|நீர்=பொருட்பெயர்|பெய்திரீஇ=வினையெச்சம்|அற்று=உவமைஉருபு;togai:பொருள்செய்தே=வேற்றுமைத்தொகை|பசுமண்=பண்புத்தொகை|கலத்துள்நீர்=வேற்றுமைத்தொகை;ani:உவமை;edugai:ல;eetruseer:காசு;}" comments="kural=660; numeral=௬">
+        <Coords points="0,272 2725,272 2725,309 0,309" />
+        <Baseline points="0,302 2725,302" />
+        <TextEquiv>
+          <Unicode>சலத்தால்ப் பொருள்செய்தே மார்த்தல் பசுமட் கலத்துணீர் பெய்திரி யற்று</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l7" custom="readingOrder {index:6;} ilakkanam {kural:658;verification:verified;words:கடிந்த=பெயரெச்சம்|கடிந்து=வினையெச்சம்|ஒரார்=எதிர்மறைவினைமுற்று|செய்தார்க்கு=வினையாலணையும்பெயர்|அவை=சுட்டுப்பெயர்|தாம்=அசைநிலை|முடிந்தாலும்=வினையெச்சம்|பீழை=பண்புப்பெயர்|தரும்=தெரிநிலைவினைமுற்று;ani:சொற்பொருட்பின்வருநிலை;edugai:டி;eetruseer:மலர்;}" comments="kural=658; numeral=௭">
+        <Coords points="0,309 2725,309 2725,346 0,346" />
+        <Baseline points="0,340 2725,340" />
+        <TextEquiv>
+          <Unicode>கடிந்த கடிந்தோரார் செய்தார்க்கு கவைதான் முடிந்தாலும் பூழை தரும்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l8" custom="readingOrder {index:7;} ilakkanam {kural:655;verification:verified;words:எற்று=வினாப்பெயர்|என்று=வினையெச்சம்|இரங்குவ=வினையாலணையும்பெயர்|செய்யற்க=வியங்கோள்வினைமுற்று|செய்வானேல்=வினையெச்சம்|மற்று=அசைநிலை|அன்ன=சுட்டுப்பெயர்|செய்யாமை=எதிர்மறைவினையெச்சம்|நன்று=குறிப்புவினைமுற்று;edugai:ற்;eetruseer:பிறப்பு;}" comments="kural=655; numeral=௮">
+        <Coords points="0,346 2725,346 2725,384 0,384" />
+        <Baseline points="0,377 2725,377" />
+        <TextEquiv>
+          <Unicode>எற்றென்றி ரங்குவ செய்யற்கச் செய்வானேன் மற்றந்ந செய்யாமை நன்று</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l9" custom="readingOrder {index:8;} ilakkanam {kural:651;verification:verified;words:துணை=பொருட்பெயர்|நலம்=பண்புப்பெயர்|ஆக்கம்=தொழிற்பெயர்|தரும்=தெரிநிலைவினைமுற்று|வினை=தொழிற்பெயர்|நலம்=பண்புப்பெயர்|வேண்டிய=பெயரெச்சம்|எல்லாம்=பொருட்பெயர்|தரும்=தெரிநிலைவினைமுற்று;togai:துணைநலம்=வேற்றுமைத்தொகை|வினைநலம்=வேற்றுமைத்தொகை;ani:சொற்பொருட்பின்வருநிலை;edugai:ணை;eetruseer:மலர்;}" comments="kural=651; numeral=௯">
+        <Coords points="0,384 2725,384 2725,421 0,421" />
+        <Baseline points="0,414 2725,414" />
+        <TextEquiv>
+          <Unicode>துணைநலமா க்கம் தருஉம் விநைநலம் வேண்டிய தெல்லாந் தரும்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l10" custom="readingOrder {index:9;} ilakkanam {kural:657;verification:verified;words:பழி=பண்புப்பெயர்|மலைந்து=வினையெச்சம்|எய்திய=பெயரெச்சம்|ஆக்கம்=தொழிற்பெயர்|சான்றோர்=வினையாலணையும்பெயர்|கழி=உரிச்சொல்|நல்=பண்புப்பெயர்|குரவு=பண்புப்பெயர்|ஏ=பிரிநிலைஇடை|தலை=குறிப்புவினைமுற்று;togai:பழிமலைந்து=வேற்றுமைத்தொகை|கழிநல்=பண்புத்தொகை;ani:வஞ்சப்புகழ்ச்சி;edugai:ழி;eetruseer:மலர்;}" comments="kural=657; numeral=௰">
+        <Coords points="0,421 2725,421 2725,458 0,458" />
+        <Baseline points="0,452 2725,452" />
+        <TextEquiv>
+          <Unicode>பழிமலைந்தெ ய்திய வாக்கத்துச் சான்றோர் கழிநல் குரவெ தலை</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextEquiv>
+        <Unicode>என்றுமொ ருவுதல் வேண்டும் புகளேடு நன்றி பயவா விநை
+ஒஓத்தல் வேண்டுமொ ழிமாள்குமஞ் செய்விநை யாதுமெ ன்னு மவர்
+இடுக்கப் படிநுமி ழிவந்த செய்யார் நடுக்கற்ற காக்ஷி யவர்
+ஈன்றாள் பசிகாண்பாநா யினுஞ் செய்யற் க சான்றோர் பழிக்கும் விநை
+அழக் கொண்ட தெல்லாம ழப்போம் யிழப்பிநும் பிற்பயக்கும் நற்பா லவை
+சலத்தால்ப் பொருள்செய்தே மார்த்தல் பசுமட் கலத்துணீர் பெய்திரி யற்று
+கடிந்த கடிந்தோரார் செய்தார்க்கு கவைதான் முடிந்தாலும் பூழை தரும்
+எற்றென்றி ரங்குவ செய்யற்கச் செய்வானேன் மற்றந்ந செய்யாமை நன்று
+துணைநலமா க்கம் தருஉம் விநைநலம் வேண்டிய தெல்லாந் தரும்
+பழிமலைந்தெ ய்திய வாக்கத்துச் சான்றோர் கழிநல் குரவெ தலை</Unicode>
+      </TextEquiv>
+    </TextRegion>
+    <TextRegion id="r_margin" type="marginalia" custom="readingOrder {index:1;}">
+      <Coords points="0,85 382,85 382,458 0,458" />
+      <TextLine id="r_margin_l3" custom="readingOrder {index:2;}" comments="marginal cell @ L3">
+        <Coords points="0,160 382,160 382,197 0,197" />
+        <Baseline points="0,190 382,190" />
+        <TextEquiv>
+          <Unicode>விநை</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_margin_l4" custom="readingOrder {index:3;}" comments="marginal cell @ L4">
+        <Coords points="0,197 382,197 382,234 0,234" />
+        <Baseline points="0,228 382,228" />
+        <TextEquiv>
+          <Unicode>த்தூய்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_margin_l5" custom="readingOrder {index:4;}" comments="marginal cell @ L5">
+        <Coords points="0,234 382,234 382,272 0,272" />
+        <Baseline points="0,265 382,265" />
+        <TextEquiv>
+          <Unicode>மை</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_margin_l7" custom="readingOrder {index:6;}" comments="marginal cell @ L7">
+        <Coords points="0,309 382,309 382,346 0,346" />
+        <Baseline points="0,340 382,340" />
+        <TextEquiv>
+          <Unicode>௫௰௪</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextEquiv>
+        <Unicode>விநை
+த்தூய்
+மை
+௫௰௪</Unicode>
+      </TextEquiv>
+    </TextRegion>
+  </Page>
+</PcGts>

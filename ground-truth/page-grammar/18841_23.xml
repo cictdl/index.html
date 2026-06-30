@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='utf-8'?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+  <Metadata>
+    <Creator>Central Institute of Classical Tamil (CICT)</Creator>
+    <Created>2026-05-08T00:00:00</Created>
+    <LastChange>2026-05-08T00:00:00</LastChange>
+    <Comments>CICT-PLM-GT-021 | Tirukkural Adhikaram 21 (தீவினையச்சம் / Fear of Sin) | kurals 201-210 | section அறம் / subsection  | DOI 10.5281/zenodo.20078850 | record https://zenodo.org/records/20078850 | manuscriptId 18841_23 | NOTE: line Coords are band-derived full-width bounding boxes (approximate); transcription text is exact ground truth.</Comments>
+  </Metadata>
+  <Page imageFilename="18841_23.jpg" imageWidth="3006" imageHeight="602">
+    <ReadingOrder>
+      <OrderedGroup id="g0">
+        <RegionRefIndexed index="0" regionRef="r_main" />
+        <RegionRefIndexed index="1" regionRef="r_margin" />
+      </OrderedGroup>
+    </ReadingOrder>
+    <TextRegion id="r_main" type="paragraph" custom="readingOrder {index:0;}">
+      <Coords points="0,181 3006,181 3006,572 0,572" />
+      <TextLine id="r_main_l1" custom="readingOrder {index:0;} ilakkanam {kural:201;verification:verified;words:தீவினையார்=வினையாலணையும்பெயர்|அஞ்சார்=குறிப்புவினைமுற்று|விழுமியார்=வினையாலணையும்பெயர்|அஞ்சுவர்=தெரிநிலைவினைமுற்று|தீவினை=பொருட்பெயர்|என்னும்=பெயரெச்சம்|செருக்கு=பண்புப்பெயர்;togai:தீவினையார்=பண்புத்தொகை|தீவினை=பண்புத்தொகை;ani:முரண்;edugai:வி;eetruseer:பிறப்பு;}" comments="kural=201; numeral=௧">
+        <Coords points="0,181 3006,181 3006,220 0,220" />
+        <Baseline points="0,213 3006,213" />
+        <TextEquiv>
+          <Unicode>தீவிநையா ரஞ்சார் விழுமியா ரஞ்சுவர் தீவிநை யெந்நுஞ் செருக்கு</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l2" custom="readingOrder {index:1;} ilakkanam {kural:203;verification:verified;words:அறிவினுள்=தொழிற்பெயர்|எல்லாம்=பொருட்பெயர்|தலை=பண்புப்பெயர்|என்ப=தெரிநிலைவினைமுற்று|தீய=பெயரெச்சம்|செறுவார்க்கு=வினையாலணையும்பெயர்|உம்=உம்மை|செய்யா=எதிர்மறைவினையெச்சம்|விடல்=தொழிற்பெயர்;ani:உயர்வுநவிற்சி;edugai:ற;eetruseer:மலர்;}" comments="kural=203; numeral=௨">
+        <Coords points="0,220 3006,220 3006,259 0,259" />
+        <Baseline points="0,252 3006,252" />
+        <TextEquiv>
+          <Unicode>அறிவிநு ளெல்லாந் தலையென்ப தீய செறுவார்க்குஞ் செய்யா விடல்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l3" custom="readingOrder {index:2;} ilakkanam {kural:210;verification:verified;words:அருங்கேடன்=குறிப்புவினைமுற்று|என்பது=வினையாலணையும்பெயர்|அறிக=வியங்கோள்வினைமுற்று|மருங்கு=இடப்பெயர்|ஓடி=வினையெச்சம்|தீவினை=பொருட்பெயர்|செய்யான்=குறிப்புவினைமுற்று|எனின்=வினையெச்சம்;togai:அருங்கேடன்=பண்புத்தொகை|தீவினை=பண்புத்தொகை;ani:சொற்பொருட்பின்வருநிலை;eetruseer:காசு;}" comments="kural=210; numeral=௩">
+        <Coords points="0,259 3006,259 3006,298 0,298" />
+        <Baseline points="0,291 3006,291" />
+        <TextEquiv>
+          <Unicode>அருங்கேட னென்ப தறிக மருங்கோடித் தீவினநை செய்யா னெனில்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l4" custom="readingOrder {index:3;} ilakkanam {kural:202;verification:verified;words:தீயவை=வினையாலணையும்பெயர்|தீய=பெயரெச்சம்|பயத்தலால்=தொழிற்பெயர்|தீயவை=வினையாலணையும்பெயர்|தீயின்=பொருட்பெயர்|உம்=உம்மை|அஞ்சப்=வினையெச்சம்|படும்=தெரிநிலைவினைமுற்று;ani:சொற்பொருட்பின்வருநிலை,மடக்கு;edugai:ய;eetruseer:காசு;}" comments="kural=202; numeral=௪">
+        <Coords points="0,298 3006,298 3006,337 0,337" />
+        <Baseline points="0,330 3006,330" />
+        <TextEquiv>
+          <Unicode>தீயவை தீய பயத்தலாற் றீயவை தீயிநு மஞ்சப் படும்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l5" custom="readingOrder {index:4;} ilakkanam {kural:208;verification:verified;words:தீயவை=வினையாலணையும்பெயர்|செய்தார்=வினையாலணையும்பெயர்|கெடுதல்=தொழிற்பெயர்|நிழல்=பொருட்பெயர்|தன்னை=சுட்டுப்பெயர்|வீயாது=எதிர்மறைவினையெச்சம்|அடியுறைந்து=வினையெச்சம்|அற்று=அசைநிலை;ani:உவமை;edugai:ய;eetruseer:காசு;}" comments="kural=208; numeral=௫">
+        <Coords points="0,337 3006,337 3006,376 0,376" />
+        <Baseline points="0,369 3006,369" />
+        <TextEquiv>
+          <Unicode>தீயவை செய்தார் கெடுத னிழறந்நை வீயா தடியுறைந் தற்று</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l6" custom="readingOrder {index:5;} ilakkanam {kural:207;verification:verified;words:எனை=வினாப்பெயர்|பகை=பண்புப்பெயர்|உற்றார்=வினையாலணையும்பெயர்|உம்=உம்மை|உய்வர்=தெரிநிலைவினைமுற்று|வினைப்பகை=பொருட்பெயர்|வீயாது=எதிர்மறைவினையெச்சம்|பின்=காலப்பெயர்|சென்று=வினையெச்சம்|அடும்=தெரிநிலைவினைமுற்று;togai:வினைப்பகை=வேற்றுமைத்தொகை;ani:மடக்கு,முரண்;eetruseer:காசு;}" comments="kural=207; numeral=௬">
+        <Coords points="0,376 3006,376 3006,415 0,415" />
+        <Baseline points="0,408 3006,408" />
+        <TextEquiv>
+          <Unicode>எநைப்பகை யுற்றாரு முய்வர் விநைப்பகை வீயாது பின்சென் றாடும்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l7" custom="readingOrder {index:6;} ilakkanam {kural:209;verification:verified;words:தன்னை=சுட்டுப்பெயர்|தான்=சுட்டுப்பெயர்|காதலன்=குறிப்புவினைமுற்று|ஆயின்=வினையெச்சம்|எனைத்து=வினாப்பெயர்|ஒன்றும்=எண்ணுப்பெயர்|துன்னற்க=வியங்கோள்வினைமுற்று|தீவினை=பொருட்பெயர்|பால்=இடப்பெயர்;togai:தீவினைப்=பண்புத்தொகை;ani:சொற்பொருட்பின்வருநிலை;edugai:ன்;eetruseer:காசு;}" comments="kural=209; numeral=௭">
+        <Coords points="0,415 3006,415 3006,455 0,455" />
+        <Baseline points="0,447 3006,447" />
+        <TextEquiv>
+          <Unicode>தந்நைத்தான் காதல னாயின்னெனைத்தொன்றுந் துன்னற்க தீவிநைப் பால்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l8" custom="readingOrder {index:7;} ilakkanam {kural:206;verification:verified;words:தீப்பால=பொருட்பெயர்|தான்=சுட்டுப்பெயர்|பிறர்கண்=வினையாலணையும்பெயர்|செய்யற்க=வியங்கோள்வினைமுற்று|நோய்ப்பால=பொருட்பெயர்|தன்னை=சுட்டுப்பெயர்|அடல்=தொழிற்பெயர்|வேண்டா=குறிப்புவினைமுற்று|தான்=அசைநிலை;togai:தீப்பால=பண்புத்தொகை|நோய்ப்பால=பண்புத்தொகை;ani:சொற்பொருட்பின்வருநிலை;eetruseer:நாள்;}" comments="kural=206; numeral=௮">
+        <Coords points="0,455 3006,455 3006,494 0,494" />
+        <Baseline points="0,487 3006,487" />
+        <TextEquiv>
+          <Unicode>தீய்ப்பால தான்பிறர்கட் செய்யற்க நோய்ப்பால தந்நை யடல் வேண்டா தார்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l9" custom="readingOrder {index:8;} ilakkanam {kural:205;verification:verified;words:இலன்=குறிப்புவினைமுற்று|என்று=வினையெச்சம்|தீயவை=வினையாலணையும்பெயர்|செய்யற்க=வியங்கோள்வினைமுற்று|செய்யின்=வினையெச்சம்|இலனாகும்=தெரிநிலைவினைமுற்று|மற்றும்=உம்மை|பெயர்த்து=வினையெச்சம்;ani:சொற்பொருட்பின்வருநிலை;edugai:ல;eetruseer:காசு;}" comments="kural=205; numeral=௯">
+        <Coords points="0,494 3006,494 3006,533 0,533" />
+        <Baseline points="0,526 3006,526" />
+        <TextEquiv>
+          <Unicode>இலமென்றுந் தீயவை செய்யற்கச் செய்யின் னிலநாகு மற்றும் பெயர்த்து</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l10" custom="readingOrder {index:9;} ilakkanam {kural:204;verification:verified;words:மறந்து=வினையெச்சம்|உம்=உம்மை|பிறன்=பொருட்பெயர்|கேடு=பண்புப்பெயர்|சூழற்க=வியங்கோள்வினைமுற்று|சூழின்=வினையெச்சம்|அறம்=பண்புப்பெயர்|சூழும்=தெரிநிலைவினைமுற்று|சூழ்ந்தவன்=வினையாலணையும்பெயர்|கேடு=பண்புப்பெயர்;togai:பிறன்கேடு=வேற்றுமைத்தொகை;ani:பிறிதுமொழிதல்;edugai:ற;eetruseer:காசு;}" comments="kural=204; numeral=௰">
+        <Coords points="0,533 3006,533 3006,572 0,572" />
+        <Baseline points="0,565 3006,565" />
+        <TextEquiv>
+          <Unicode>மறந்தும் பிறன்கேடு சூழற்கச் சூழின்அறஞ்சூழுஞ் சூழ்ந்தவன் கேடு</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextEquiv>
+        <Unicode>தீவிநையா ரஞ்சார் விழுமியா ரஞ்சுவர் தீவிநை யெந்நுஞ் செருக்கு
+அறிவிநு ளெல்லாந் தலையென்ப தீய செறுவார்க்குஞ் செய்யா விடல்
+அருங்கேட னென்ப தறிக மருங்கோடித் தீவினநை செய்யா னெனில்
+தீயவை தீய பயத்தலாற் றீயவை தீயிநு மஞ்சப் படும்
+தீயவை செய்தார் கெடுத னிழறந்நை வீயா தடியுறைந் தற்று
+எநைப்பகை யுற்றாரு முய்வர் விநைப்பகை வீயாது பின்சென் றாடும்
+தந்நைத்தான் காதல னாயின்னெனைத்தொன்றுந் துன்னற்க தீவிநைப் பால்
+தீய்ப்பால தான்பிறர்கட் செய்யற்க நோய்ப்பால தந்நை யடல் வேண்டா தார்
+இலமென்றுந் தீயவை செய்யற்கச் செய்யின் னிலநாகு மற்றும் பெயர்த்து
+மறந்தும் பிறன்கேடு சூழற்கச் சூழின்அறஞ்சூழுஞ் சூழ்ந்தவன் கேடு</Unicode>
+      </TextEquiv>
+    </TextRegion>
+    <TextRegion id="r_margin" type="marginalia" custom="readingOrder {index:1;}">
+      <Coords points="0,181 421,181 421,572 0,572" />
+      <TextLine id="r_margin_l3" custom="readingOrder {index:2;}" comments="marginal cell @ L3">
+        <Coords points="0,259 421,259 421,298 0,298" />
+        <Baseline points="0,291 421,291" />
+        <TextEquiv>
+          <Unicode>தீவிநை</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_margin_l4" custom="readingOrder {index:3;}" comments="marginal cell @ L4">
+        <Coords points="0,298 421,298 421,337 0,337" />
+        <Baseline points="0,330 421,330" />
+        <TextEquiv>
+          <Unicode>யச்சம்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_margin_l6" custom="readingOrder {index:5;}" comments="marginal cell @ L6">
+        <Coords points="0,376 421,376 421,415 0,415" />
+        <Baseline points="0,408 421,408" />
+        <TextEquiv>
+          <Unicode>௩௰௧</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextEquiv>
+        <Unicode>தீவிநை
+யச்சம்
+௩௰௧</Unicode>
+      </TextEquiv>
+    </TextRegion>
+  </Page>
+</PcGts>

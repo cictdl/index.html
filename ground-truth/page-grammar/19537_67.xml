@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='utf-8'?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+  <Metadata>
+    <Creator>Central Institute of Classical Tamil (CICT)</Creator>
+    <Created>2026-06-16T00:00:00</Created>
+    <LastChange>2026-06-16T00:00:00</LastChange>
+    <Comments>CICT-PLM-GT-065 | Tirukkural Adhikaram 65 (சொல்வன்மை / Excellence of Speech / Eloquence) | kurals 641-650 | section பொருள் / subsection அமைச்சியல் | DOI 10.5281/zenodo.20714996 | record https://zenodo.org/records/20714996 | manuscriptId 19537_67 | NOTE: line Coords are band-derived full-width bounding boxes (approximate); transcription text is exact ground truth.</Comments>
+  </Metadata>
+  <Page imageFilename="19537_67.jpg" imageWidth="2687" imageHeight="463">
+    <ReadingOrder>
+      <OrderedGroup id="g0">
+        <RegionRefIndexed index="0" regionRef="r_main" />
+        <RegionRefIndexed index="1" regionRef="r_margin" />
+      </OrderedGroup>
+    </ReadingOrder>
+    <TextRegion id="r_main" type="paragraph" custom="readingOrder {index:0;}">
+      <Coords points="0,77 2687,77 2687,436 0,436" />
+      <TextLine id="r_main_l1" custom="readingOrder {index:0;} ilakkanam {kural:643;verification:verified;words:கேட்டார்=வினையாலணையும்பெயர்|பிணிக்கும்=பெயரெச்சம்|தகைய=பண்புப்பெயர்|ஆய்=வினையெச்சம்|கேளார்=வினையாலணையும்பெயர்|உம்=உம்மை|வேட்ப=வினையெச்சம்|மொழிவது=வினையாலணையும்பெயர்|ஆம்=குறிப்புவினைமுற்று|சொல்=தொழிற்பெயர்;edugai:ே;eetruseer:சொல் — மலர் வாய்பாடு;}" comments="kural=643; numeral=௧">
+        <Coords points="0,77 2687,77 2687,113 0,113" />
+        <Baseline points="0,107 2687,107" />
+        <TextEquiv>
+          <Unicode>கேட்டார் பிணிக்குந் தகையவாக கேழாரும் வேட்ப மொழிவதாஞ் சொல்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l2" custom="readingOrder {index:1;} ilakkanam {kural:644;verification:verified;words:திறன்=பண்புப்பெயர்|அறிந்து=வினையெச்சம்|சொல்லுக=வியங்கோள்வினைமுற்று|சொல்=தொழிற்பெயர்|அறன்=பண்புப்பெயர்|உம்=உம்மை|பொருள்=பொருட்பெயர்|உம்=உம்மை|அது=சுட்டுப்பெயர்|ஊங்கு=உரிச்சொல்|இல்=எதிர்மறைஇடை;togai:திறனறிந்து=வேற்றுமைத்தொகை;edugai:—;eetruseer:இல் — மலர் வாய்பாடு;}" comments="kural=644; numeral=௨">
+        <Coords points="0,113 2687,113 2687,149 0,149" />
+        <Baseline points="0,143 2687,143" />
+        <TextEquiv>
+          <Unicode>திறனறிந்து சொல்லுக சொல்லை யறனும் பொருளும் தநிநூங்கில்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l3" custom="readingOrder {index:2;} ilakkanam {kural:641;verification:verified;words:நா=சினைப்பெயர்|நலம்=பண்புப்பெயர்|என்னும்=பெயரெச்சம்|நலன்=பண்புப்பெயர்|உடைமை=பண்புப்பெயர்|அ=சுட்டுப்பெயர்|நலம்=பண்புப்பெயர்|யா=வினாப்பெயர்|நலத்து=பண்புப்பெயர்|உள்ளது=வினையாலணையும்பெயர்|உம்=உம்மை|அன்று=எதிர்மறைஇடை;togai:நாநலம்=வேற்றுமைத்தொகை|நலனுடைமை=வேற்றுமைத்தொகை;ani:சொற்பொருட்பின்வருநிலை;edugai:ா;eetruseer:அன்று — காசு வாய்பாடு;}" comments="kural=641; numeral=௩">
+        <Coords points="0,149 2687,149 2687,185 0,185" />
+        <Baseline points="0,178 2687,178" />
+        <TextEquiv>
+          <Unicode>நாநலமெ ந்நும் நலனுடமை யந்நலம் யாநலத்துள்ளது மன்று</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l4" custom="readingOrder {index:3;} ilakkanam {kural:645;verification:verified;words:சொல்லுக=வியங்கோள்வினைமுற்று|சொல்=தொழிற்பெயர்|பிறிது=பண்புப்பெயர்|ஓர்=எண்ணுப்பெயர்|சொல்=தொழிற்பெயர்|அ=சுட்டுப்பெயர்|சொல்=தொழிற்பெயர்|வெல்லும்=பெயரெச்சம்|சொல்=தொழிற்பெயர்|இன்மை=பண்புப்பெயர்|அறிந்து=வினையெச்சம்;ani:மடக்கு;edugai:ொ;eetruseer:அறிந்து — காசு வாய்பாடு;}" comments="kural=645; numeral=௪">
+        <Coords points="0,185 2687,185 2687,221 0,221" />
+        <Baseline points="0,214 2687,214" />
+        <TextEquiv>
+          <Unicode>சொல்லுக சொல்லைப் பிறிதோரா லச்சொல்லை வெல்லுஞ்சொல் வன்மை யறிந்து</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l5" custom="readingOrder {index:4;} ilakkanam {kural:649;verification:verified;words:பல=எண்ணுப்பெயர்|சொல்ல=வினையெச்சம்|காமுறுவர்=தெரிநிலைவினைமுற்று|மன்ற=அசைநிலை|மா=பண்புப்பெயர்|அற்ற=எதிர்மறைபெயரெச்சம்|சில=எண்ணுப்பெயர்|சொல்லல்=தொழிற்பெயர்|தேற்றா=எதிர்மறைபெயரெச்சம்|அவர்=சுட்டுப்பெயர்;ani:முரண்;edugai:ல;eetruseer:தவர் — மலர் வாய்பாடு;}" comments="kural=649; numeral=௫">
+        <Coords points="0,221 2687,221 2687,257 0,257" />
+        <Baseline points="0,250 2687,250" />
+        <TextEquiv>
+          <Unicode>பலசொல்லக் காமுறுவர் மன்றமா சற்ற சிலசொல்லல் றேற்றா தவர்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l6" custom="readingOrder {index:5;} ilakkanam {kural:650;verification:verified;words:இணர்=பொருட்பெயர்|உழ்த்து=வினையெச்சம்|உம்=உம்மை|நாறா=எதிர்மறைபெயரெச்சம்|மலர்=பொருட்பெயர்|அனையர்=குறிப்புவினைமுற்று|கற்றது=வினையாலணையும்பெயர்|உணர=வினையெச்சம்|விரித்து=வினையெச்சம்|உரையா=எதிர்மறைபெயரெச்சம்|ஆர்=வினையாலணையும்பெயர்;togai:மலரனையர்=உவமைத்தொகை;ani:உவமை;edugai:ண;eetruseer:தார் — மலர் வாய்பாடு;}" comments="kural=650; numeral=௬">
+        <Coords points="0,257 2687,257 2687,293 0,293" />
+        <Baseline points="0,286 2687,286" />
+        <TextEquiv>
+          <Unicode>இணருழ்த்துநாறா மலரநையர் கற்றது ணர விரித்துரையா தார்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l7" custom="readingOrder {index:6;} ilakkanam {kural:648;verification:verified;words:விரைந்து=வினையெச்சம்|தொழில்=தொழிற்பெயர்|கேட்கும்=பெயரெச்சம்|ஞாலம்=இடப்பெயர்|நிரந்து=வினையெச்சம்|இனிது=பண்புப்பெயர்|சொல்லுதல்=தொழிற்பெயர்|வல்லார்=வினையாலணையும்பெயர்|பெறின்=வினையெச்சம்;togai:தொழில்கேட்கும்=வேற்றுமைத்தொகை;edugai:ி;eetruseer:பெறின் — காசு வாய்பாடு;}" comments="kural=648; numeral=௭">
+        <Coords points="0,293 2687,293 2687,328 0,328" />
+        <Baseline points="0,322 2687,322" />
+        <TextEquiv>
+          <Unicode>விரைந்து தொழில்கேட்கும் ஞாலம் நிரைந்திநிது சொல்லுதல் வல்லார்ப் பெறின்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l8" custom="readingOrder {index:7;} ilakkanam {kural:647;verification:verified;words:சொலல்=தொழிற்பெயர்|வல்லன்=குறிப்புவினைமுற்று|சோர்வு=தொழிற்பெயர்|இலன்=குறிப்புவினைமுற்று|அஞ்சான்=எதிர்மறைவினைமுற்று|அவன்=சுட்டுப்பெயர்|இகல்=பண்புப்பெயர்|வெல்லல்=தொழிற்பெயர்|யார்=வினாப்பெயர்|உம்=உம்மை|அரிது=குறிப்புவினைமுற்று;togai:இகல்வெல்லல்=வேற்றுமைத்தொகை;edugai:ொ;eetruseer:அரிது — காசு வாய்பாடு;}" comments="kural=647; numeral=௮">
+        <Coords points="0,328 2687,328 2687,364 0,364" />
+        <Baseline points="0,358 2687,358" />
+        <TextEquiv>
+          <Unicode>சொல்வல்லன்ஞ் சோர்விலன ஞ்சான் அவநை யிகல்வெல்ல யார்க்கும ரிது</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l9" custom="readingOrder {index:8;} ilakkanam {kural:646;verification:verified;words:வேட்ப=வினையெச்சம்|தாம்=சுட்டுப்பெயர்|சொல்லி=வினையெச்சம்|பிறர்=பொருட்பெயர்|சொல்=தொழிற்பெயர்|பயன்=பண்புப்பெயர்|கோடல்=தொழிற்பெயர்|மாட்சி=பண்புப்பெயர்|இன்=வேற்றுமைஉருபு|மாசு=பண்புப்பெயர்|அற்றார்=வினையாலணையும்பெயர்|கோள்=தொழிற்பெயர்;togai:பிறர்சொல்=வேற்றுமைத்தொகை|பயன்கோடல்=வேற்றுமைத்தொகை;edugai:ே;eetruseer:கோள் — மலர் வாய்பாடு;}" comments="kural=646; numeral=௯">
+        <Coords points="0,364 2687,364 2687,400 0,400" />
+        <Baseline points="0,394 2687,394" />
+        <TextEquiv>
+          <Unicode>வேட்பத்தான் சொல்லிப் பிறர்சொற் பயன்கோடல் மாக்ஷியின் மாசற்றார் கோள்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l10" custom="readingOrder {index:9;} ilakkanam {kural:642;verification:verified;words:ஆக்கம்=தொழிற்பெயர்|உம்=உம்மை|கேடு=பண்புப்பெயர்|உம்=உம்மை|அது=சுட்டுப்பெயர்|வருதல்=தொழிற்பெயர்|காத்து=வினையெச்சம்|ஓம்பல்=தொழிற்பெயர்|சொல்=தொழிற்பெயர்|இன்=சாரியை|கண்=வேற்றுமைஉருபு|சோர்வு=தொழிற்பெயர்;edugai:ா;eetruseer:சோர்வு — காசு வாய்பாடு;}" comments="kural=642; numeral=௰">
+        <Coords points="0,400 2687,400 2687,436 0,436" />
+        <Baseline points="0,430 2687,430" />
+        <TextEquiv>
+          <Unicode>ஆக்கமுங் கேடும தநால் வருதலாற் காத்தோம்பற் சொல்லின்கட் சோர்வு</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextEquiv>
+        <Unicode>கேட்டார் பிணிக்குந் தகையவாக கேழாரும் வேட்ப மொழிவதாஞ் சொல்
+திறனறிந்து சொல்லுக சொல்லை யறனும் பொருளும் தநிநூங்கில்
+நாநலமெ ந்நும் நலனுடமை யந்நலம் யாநலத்துள்ளது மன்று
+சொல்லுக சொல்லைப் பிறிதோரா லச்சொல்லை வெல்லுஞ்சொல் வன்மை யறிந்து
+பலசொல்லக் காமுறுவர் மன்றமா சற்ற சிலசொல்லல் றேற்றா தவர்
+இணருழ்த்துநாறா மலரநையர் கற்றது ணர விரித்துரையா தார்
+விரைந்து தொழில்கேட்கும் ஞாலம் நிரைந்திநிது சொல்லுதல் வல்லார்ப் பெறின்
+சொல்வல்லன்ஞ் சோர்விலன ஞ்சான் அவநை யிகல்வெல்ல யார்க்கும ரிது
+வேட்பத்தான் சொல்லிப் பிறர்சொற் பயன்கோடல் மாக்ஷியின் மாசற்றார் கோள்
+ஆக்கமுங் கேடும தநால் வருதலாற் காத்தோம்பற் சொல்லின்கட் சோர்வு</Unicode>
+      </TextEquiv>
+    </TextRegion>
+    <TextRegion id="r_margin" type="marginalia" custom="readingOrder {index:1;}">
+      <Coords points="0,77 376,77 376,436 0,436" />
+      <TextLine id="r_margin_l3" custom="readingOrder {index:2;}" comments="marginal cell @ L3">
+        <Coords points="0,149 376,149 376,185 0,185" />
+        <Baseline points="0,178 376,178" />
+        <TextEquiv>
+          <Unicode>சொல்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_margin_l4" custom="readingOrder {index:3;}" comments="marginal cell @ L4">
+        <Coords points="0,185 376,185 376,221 0,221" />
+        <Baseline points="0,214 376,214" />
+        <TextEquiv>
+          <Unicode>வன்மை</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_margin_l6" custom="readingOrder {index:5;}" comments="marginal cell @ L6">
+        <Coords points="0,257 376,257 376,293 0,293" />
+        <Baseline points="0,286 376,286" />
+        <TextEquiv>
+          <Unicode>௫௰௩</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextEquiv>
+        <Unicode>சொல்
+வன்மை
+௫௰௩</Unicode>
+      </TextEquiv>
+    </TextRegion>
+  </Page>
+</PcGts>

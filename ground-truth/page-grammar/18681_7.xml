@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='utf-8'?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+  <Metadata>
+    <Creator>Central Institute of Classical Tamil (CICT)</Creator>
+    <Created>2026-04-28T00:00:00</Created>
+    <LastChange>2026-04-28T00:00:00</LastChange>
+    <Comments>CICT-PLM-GT-005 | Tirukkural Adhikaram 5 (இல்வாழ்க்கை / Domestic Life) | kurals 41-50 | section அறம் / subsection  | DOI 10.5281/zenodo.19849060 | record https://zenodo.org/records/19849060 | manuscriptId 18681_7 | NOTE: line Coords are band-derived full-width bounding boxes (approximate); transcription text is exact ground truth.</Comments>
+  </Metadata>
+  <Page imageFilename="18681_7.jpg" imageWidth="2964" imageHeight="598">
+    <ReadingOrder>
+      <OrderedGroup id="g0">
+        <RegionRefIndexed index="0" regionRef="r_main" />
+        <RegionRefIndexed index="1" regionRef="r_margin" />
+      </OrderedGroup>
+    </ReadingOrder>
+    <TextRegion id="r_main" type="paragraph" custom="readingOrder {index:0;}">
+      <Coords points="0,163 2964,163 2964,561 0,561" />
+      <TextLine id="r_main_l1" custom="readingOrder {index:0;} ilakkanam {kural:41;verification:verified;words:இல்வாழ்வான்=வினையாலணையும்பெயர்|என்பான்=வினையாலணையும்பெயர்|இயல்பு=பண்புப்பெயர்|உடைய=பெயரெச்சம்|மூவர்=எண்ணுப்பெயர்|கு=வேற்றுமைஉருபு|உம்=உம்மை|நல்=உரிச்சொல்|ஆற்றின்=இடப்பெயர்|இன்=வேற்றுமைஉருபு|நின்ற=பெயரெச்சம்|துணை=பொருட்பெயர்;togai:நல்லாற்றின்=பண்புத்தொகை;edugai:ல்;eetruseer:நாள்;}" comments="kural=41; numeral=௧">
+        <Coords points="0,163 2964,163 2964,203 0,203" />
+        <Baseline points="0,196 2964,196" />
+        <TextEquiv>
+          <Unicode>இல்வாழ்வா நென்பா னியல்புடைய மூவர்க்கும் நல்லாற்றி னின்றதுணை</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l2" custom="readingOrder {index:1;} ilakkanam {kural:42;verification:verified;words:துறந்தார்=வினையாலணையும்பெயர்|கு=வேற்றுமைஉருபு|உம்=உம்மை|துவ்வாதவர்=வினையாலணையும்பெயர்|கு=வேற்றுமைஉருபு|உம்=உம்மை|இறந்தார்=வினையாலணையும்பெயர்|கு=வேற்றுமைஉருபு|உம்=உம்மை|இல்வாழ்வான்=வினையாலணையும்பெயர்|என்பான்=வினையாலணையும்பெயர்|துணை=பொருட்பெயர்;ani:சொற்பொருட்பின்வருநிலை;eetruseer:நாள்;}" comments="kural=42; numeral=௨">
+        <Coords points="0,203 2964,203 2964,243 0,243" />
+        <Baseline points="0,236 2964,236" />
+        <TextEquiv>
+          <Unicode>துறந்தார்க்குந் துவ்வா தவர்க்கு மிறந்தார்க்கும் யில்வாழ்வா னென்பான்றுணை</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l3" custom="readingOrder {index:2;} ilakkanam {kural:43;verification:verified;words:தென்புலத்தார்=இடப்பெயர்|தெய்வம்=பொருட்பெயர்|விருந்து=பொருட்பெயர்|ஒக்கல்=பொருட்பெயர்|தான்=சுட்டுப்பெயர்|என்று=வினையெச்சம்|ஆங்கு=அசைநிலை|ஐம்=எண்ணுப்பெயர்|புலத்து=இடப்பெயர்|ஆறு=பொருட்பெயர்|ஓம்பல்=தொழிற்பெயர்|தலை=பண்புப்பெயர்;togai:தென்புலத்தார்=வேற்றுமைத்தொகை|விருந்தொக்கல்=உம்மைத்தொகை|ஐம்புலத்தாறு=பண்புத்தொகை;ani:தீவகம்;eetruseer:மலர்;}" comments="kural=43; numeral=௩">
+        <Coords points="0,243 2964,243 2964,283 0,283" />
+        <Baseline points="0,276 2964,276" />
+        <TextEquiv>
+          <Unicode>தென்புலத்தார் தெய்வம் விருந்தொக்க றா நென்றாங் கைம்புலத்தா றோம்பறலை</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l4" custom="readingOrder {index:3;} ilakkanam {kural:44;verification:verified;words:பழி=பொருட்பெயர்|அஞ்சி=வினையெச்சம்|பாத்து=வினையெச்சம்|ஊண்=தொழிற்பெயர்|உடைத்து=குறிப்புவினைமுற்று|ஆயின்=வினையெச்சம்|வாழ்க்கை=தொழிற்பெயர்|வழி=பொருட்பெயர்|எஞ்சல்=தொழிற்பெயர்|எஞ்ஞான்று=காலப்பெயர்|உம்=உம்மை|இல்=எதிர்மறைஇடை;togai:பழியஞ்சிப்=வேற்றுமைத்தொகை|பாத்தூண்=வினைத்தொகை|வழியெஞ்சல்=வேற்றுமைத்தொகை;edugai:ழி;eetruseer:காசு;}" comments="kural=44; numeral=௪">
+        <Coords points="0,283 2964,283 2964,322 0,322" />
+        <Baseline points="0,315 2964,315" />
+        <TextEquiv>
+          <Unicode>பழியஞ்சிப் பாத்தூணு டைத்தாயி ல்வாழ்க்கை வழியெஞ்ச லெஞ்ஞான்றுமில்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l5" custom="readingOrder {index:4;} ilakkanam {kural:45;verification:verified;words:அன்பு=பண்புப்பெயர்|உம்=உம்மை|அறன்=பண்புப்பெயர்|உம்=உம்மை|உடைத்து=குறிப்புவினைமுற்று|ஆயின்=வினையெச்சம்|இல்=இடப்பெயர்|வாழ்க்கை=தொழிற்பெயர்|பண்பு=பண்புப்பெயர்|உம்=உம்மை|பயன்=பண்புப்பெயர்|உம்=உம்மை|அது=சுட்டுப்பெயர்;togai:இல்வாழ்க்கை=வேற்றுமைத்தொகை;ani:இயைபு/ஒலிநயம்;eetruseer:பிறப்பு;}" comments="kural=45; numeral=௫">
+        <Coords points="0,322 2964,322 2964,362 0,362" />
+        <Baseline points="0,355 2964,355" />
+        <TextEquiv>
+          <Unicode>அன்பு மறநு முடைத்தாயி னில்வாழ்க்கை பண்பும் பயநுமது</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l6" custom="readingOrder {index:5;} ilakkanam {kural:46;verification:verified;words:அறத்து=பண்புப்பெயர்|ஆற்றின்=இடப்பெயர்|இன்=வேற்றுமைஉருபு|இல்=இடப்பெயர்|வாழ்க்கை=தொழிற்பெயர்|ஆற்றின்=வினையெச்சம்|புறத்து=இடப்பெயர்|ஆற்றில்=இடப்பெயர்|இல்=வேற்றுமைஉருபு|போஒய்=வினையெச்சம்|பெறுவது=வினையாலணையும்பெயர்|எவன்=வினாஇடை;togai:அறத்தாற்றின்=வேற்றுமைத்தொகை|இல்வாழ்க்கை=வேற்றுமைத்தொகை|புறத்தாற்றில்=வேற்றுமைத்தொகை;ani:முரண்;eetruseer:மலர்;}" comments="kural=46; numeral=௬">
+        <Coords points="0,362 2964,362 2964,402 0,402" />
+        <Baseline points="0,395 2964,395" />
+        <TextEquiv>
+          <Unicode>அறத்தாற்றி னில்வாழ்க்கை யாற்றிற் புறத்தாற்றிற் போய்ப் பெறுவதெவன்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l7" custom="readingOrder {index:6;} ilakkanam {kural:47;verification:verified;words:இயல்பு=பண்புப்பெயர்|இன்=சாரியை|ஆன்=வேற்றுமைஉருபு|இல்=இடப்பெயர்|வாழ்க்கை=தொழிற்பெயர்|வாழ்பவன்=வினையாலணையும்பெயர்|என்பான்=வினையாலணையும்பெயர்|முயல்வார்=வினையாலணையும்பெயர்|உள்=வேற்றுமைஉருபு|எல்லாம்=பொருட்பெயர்|தலை=பண்புப்பெயர்;togai:இல்வாழ்க்கை=வேற்றுமைத்தொகை;edugai:ய;eetruseer:மலர்;}" comments="kural=47; numeral=௭">
+        <Coords points="0,402 2964,402 2964,442 0,442" />
+        <Baseline points="0,434 2964,434" />
+        <TextEquiv>
+          <Unicode>இயல்பிநா னில்வாழ்க்கை வாழ்பவ நென்பான் முயல்வாருளெ ல்லாந்தலை</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l8" custom="readingOrder {index:7;} ilakkanam {kural:48;verification:verified;words:ஆற்றின்=இடப்பெயர்|இன்=வேற்றுமைஉருபு|ஒழுக்கி=வினையெச்சம்|அறன்=பண்புப்பெயர்|இழுக்கா=எதிர்மறைபெயரெச்சம்|இல்=இடப்பெயர்|வாழ்க்கை=தொழிற்பெயர்|நோற்பார்=வினையாலணையும்பெயர்|இன்=வேற்றுமைஉருபு|நோன்மை=பண்புப்பெயர்|உடைத்து=குறிப்புவினைமுற்று;togai:இல்வாழ்க்கை=வேற்றுமைத்தொகை;ani:உயர்வுநவிற்சி;edugai:ற்;eetruseer:காசு;}" comments="kural=48; numeral=௮">
+        <Coords points="0,442 2964,442 2964,481 0,481" />
+        <Baseline points="0,474 2964,474" />
+        <TextEquiv>
+          <Unicode>ஆற்றி னொழுக்கி யறனிழுக்கா வில்வாழ்க்கை நோற்பாரி நோன்மை யுடைத்து</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l9" custom="readingOrder {index:8;} ilakkanam {kural:49;verification:verified;words:அறன்=பண்புப்பெயர்|என=வினையெச்சம்|பட்டது=வினையாலணையும்பெயர்|ஏ=ஏகாரம்|இல்=இடப்பெயர்|வாழ்க்கை=தொழிற்பெயர்|அஃது=சுட்டுப்பெயர்|உம்=உம்மை|பிறன்=பொருட்பெயர்|பழிப்ப=பெயரெச்சம்|அது=சுட்டுப்பெயர்|இல்லாயின்=எதிர்மறைவினையெச்சம்|நன்று=குறிப்புவினைமுற்று;togai:இல்வாழ்க்கை=வேற்றுமைத்தொகை;edugai:ற;eetruseer:காசு;}" comments="kural=49; numeral=௯">
+        <Coords points="0,481 2964,481 2964,521 0,521" />
+        <Baseline points="0,514 2964,514" />
+        <TextEquiv>
+          <Unicode>அறநெந்ப் பட்டதே யில்வாழ்க்கை யஃதும் பிறன்பழிப்ப தில்லாயிநன்று</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l10" custom="readingOrder {index:9;} ilakkanam {kural:50;verification:verified;words:வையம்=இடப்பெயர்|உள்=வேற்றுமைஉருபு|வாழ்வு=தொழிற்பெயர்|ஆங்கு=அசைநிலை|வாழ்பவன்=வினையாலணையும்பெயர்|வான்=இடப்பெயர்|உறையும்=பெயரெச்சம்|தெய்வம்=பொருட்பெயர்|உள்=வேற்றுமைஉருபு|வைக்க=வினையெச்சம்|படும்=தெரிநிலைவினைமுற்று;togai:வான்உறையும்=வேற்றுமைத்தொகை;ani:உவமை;edugai:ய;eetruseer:பிறப்பு;}" comments="kural=50; numeral=௰">
+        <Coords points="0,521 2964,521 2964,561 0,561" />
+        <Baseline points="0,554 2964,554" />
+        <TextEquiv>
+          <Unicode>வையத்து வாழ்வாங்கு வாழ்பவன் வானுறையுமந் தெய்வத்துள் வைக்கப் படும்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextEquiv>
+        <Unicode>இல்வாழ்வா நென்பா னியல்புடைய மூவர்க்கும் நல்லாற்றி னின்றதுணை
+துறந்தார்க்குந் துவ்வா தவர்க்கு மிறந்தார்க்கும் யில்வாழ்வா னென்பான்றுணை
+தென்புலத்தார் தெய்வம் விருந்தொக்க றா நென்றாங் கைம்புலத்தா றோம்பறலை
+பழியஞ்சிப் பாத்தூணு டைத்தாயி ல்வாழ்க்கை வழியெஞ்ச லெஞ்ஞான்றுமில்
+அன்பு மறநு முடைத்தாயி னில்வாழ்க்கை பண்பும் பயநுமது
+அறத்தாற்றி னில்வாழ்க்கை யாற்றிற் புறத்தாற்றிற் போய்ப் பெறுவதெவன்
+இயல்பிநா னில்வாழ்க்கை வாழ்பவ நென்பான் முயல்வாருளெ ல்லாந்தலை
+ஆற்றி னொழுக்கி யறனிழுக்கா வில்வாழ்க்கை நோற்பாரி நோன்மை யுடைத்து
+அறநெந்ப் பட்டதே யில்வாழ்க்கை யஃதும் பிறன்பழிப்ப தில்லாயிநன்று
+வையத்து வாழ்வாங்கு வாழ்பவன் வானுறையுமந் தெய்வத்துள் வைக்கப் படும்</Unicode>
+      </TextEquiv>
+    </TextRegion>
+    <TextRegion id="r_margin" type="marginalia" custom="readingOrder {index:1;}">
+      <Coords points="0,163 415,163 415,561 0,561" />
+      <TextLine id="r_margin_l3" custom="readingOrder {index:2;}" comments="marginal cell @ L3">
+        <Coords points="0,243 415,243 415,283 0,283" />
+        <Baseline points="0,276 415,276" />
+        <TextEquiv>
+          <Unicode>யில்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_margin_l4" custom="readingOrder {index:3;}" comments="marginal cell @ L4">
+        <Coords points="0,283 415,283 415,322 0,322" />
+        <Baseline points="0,315 415,315" />
+        <TextEquiv>
+          <Unicode>வாழ்க்கை</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_margin_l7" custom="readingOrder {index:6;}" comments="marginal cell @ L7">
+        <Coords points="0,402 415,402 415,442 0,442" />
+        <Baseline points="0,434 415,434" />
+        <TextEquiv>
+          <Unicode>௨௰௩</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextEquiv>
+        <Unicode>யில்
+வாழ்க்கை
+௨௰௩</Unicode>
+      </TextEquiv>
+    </TextRegion>
+  </Page>
+</PcGts>

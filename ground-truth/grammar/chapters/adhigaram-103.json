@@ -1,0 +1,925 @@
+{
+  "adhigaram": 103,
+  "name": "குடிசெயல் வகை",
+  "pal": "பொருட்பால்",
+  "iyal": "குடியியல்",
+  "schemaVersion": "1.0",
+  "method": "AI-draft-senior-reviewed",
+  "kurals": [
+    {
+      "number": 1021,
+      "line1": "கருமம் செயஒருவன் கைதூவேன் என்னும்",
+      "line2": "பெருமையின் பீடுடையது இல்.",
+      "yappu": {
+        "paa": "குறள் வெண்பா",
+        "sirCount": [4, 3],
+        "monai": [
+          {"adi": 1, "sirs": ["கருமம்", "கைதூவேன்"], "key": "க", "present": true},
+          {"adi": 2, "sirs": ["பெருமையின்", "பீடுடையது"], "key": "ப", "present": true}
+        ],
+        "edugai": {"present": true, "letter": "ரு", "note": "கருமம் / பெருமையின் — அடிமுதல் சீர்களின் இரண்டாம் எழுத்து 'ரு' ஒப்பு"},
+        "thalai": "வெண்டளை",
+        "eetruseer": "இல் (காசு வாய்பாடு)"
+      },
+      "ani": [
+        {"name": "சொற்பொருட்பின்வருநிலை", "note": "கருமம்/கைதூவேன்/பெருமை — செயல்முயற்சியின் மேன்மை வலியுறுத்தப்படுகிறது"}
+      ],
+      "sirs": [
+        {
+          "sira": "கருமம்",
+          "adi": 1,
+          "pos": 1,
+          "togai": null,
+          "components": [
+            {"sol": "கருமம்", "split": "கருமம்", "category": "பெயர்", "ilakkanam": "பொருட்பெயர்", "features": {"thinai": "அஃறிணை", "paal": "ஒன்றன்பால்", "eN": "ஒருமை"}, "vetrumai": {"number": 2, "urupu": "ஐ", "name": "செயப்படுபொருள்"}, "todar": null, "gloss": "deed, duty (the deed to be done)", "confidence": 0.74}
+          ]
+        },
+        {
+          "sira": "செயஒருவன்",
+          "adi": 1,
+          "pos": 2,
+          "togai": null,
+          "components": [
+            {"sol": "செய", "split": "செய்+அ", "category": "வினை", "ilakkanam": "வினையெச்சம்", "features": {}, "vetrumai": null, "todar": null, "gloss": "to do (செய்தற்பொருட்டு, infinitive of purpose)", "confidence": 0.7},
+            {"sol": "ஒருவன்", "split": "ஒருவன்", "category": "பெயர்", "ilakkanam": "பொருட்பெயர்", "features": {"thinai": "உயர்திணை", "paal": "ஆண்பால்", "eN": "ஒருமை"}, "vetrumai": {"number": 1, "urupu": "—", "name": "எழுவாய்"}, "todar": null, "gloss": "a man, one", "confidence": 0.82}
+          ]
+        },
+        {
+          "sira": "கைதூவேன்",
+          "adi": 1,
+          "pos": 3,
+          "togai": null,
+          "components": [
+            {"sol": "கைதூவேன்", "split": "கை+தூவேன்", "category": "வினை", "ilakkanam": "எதிர்மறைவினைமுற்று", "features": {"idam": "தன்மை", "eN": "ஒருமை"}, "vetrumai": null, "todar": null, "gloss": "I will not slacken/withdraw the hand (கைவிடேன்)", "confidence": 0.78}
+          ]
+        },
+        {
+          "sira": "என்னும்",
+          "adi": 1,
+          "pos": 4,
+          "togai": null,
+          "components": [
+            {"sol": "என்னும்", "split": "என்+உம்", "category": "வினை", "ilakkanam": "பெயரெச்சம்", "features": {"kaalam": "நிகழ்காலம்"}, "vetrumai": null, "todar": null, "gloss": "saying / that which says (என்னும் பெருமை)", "confidence": 0.7}
+          ]
+        },
+        {
+          "sira": "பெருமையின்",
+          "adi": 2,
+          "pos": 1,
+          "togai": null,
+          "components": [
+            {"sol": "பெருமையின்", "split": "பெருமை+இன்", "category": "பெயர்", "ilakkanam": "பண்புப்பெயர்", "features": {"thinai": "அஃறிணை", "paal": "ஒன்றன்பால்", "eN": "ஒருமை"}, "vetrumai": {"number": 5, "urupu": "இன்", "name": "நீங்கல்/ஒப்பு"}, "todar": null, "gloss": "than the greatness (of)", "confidence": 0.78}
+          ]
+        },
+        {
+          "sira": "பீடுடையது",
+          "adi": 2,
+          "pos": 2,
+          "togai": "வேற்றுமைத்தொகை",
+          "components": [
+            {"sol": "பீடு", "split": "பீடு", "category": "பெயர்", "ilakkanam": "பண்புப்பெயர்", "features": {"thinai": "அஃறிணை"}, "vetrumai": {"number": 2, "urupu": "ஐ", "name": "செயப்படுபொருள்"}, "todar": null, "gloss": "loftiness, eminence", "confidence": 0.62},
+            {"sol": "உடையது", "split": "உடை+அது", "category": "பெயர்", "ilakkanam": "வினையாலணையும்பெயர்", "features": {"thinai": "அஃறிணை", "paal": "ஒன்றன்பால்", "eN": "ஒருமை"}, "vetrumai": null, "todar": null, "gloss": "that which possesses", "confidence": 0.66}
+          ]
+        },
+        {
+          "sira": "இல்",
+          "adi": 2,
+          "pos": 3,
+          "togai": null,
+          "components": [
+            {"sol": "இல்", "split": "இல்", "category": "இடை", "ilakkanam": "எதிர்மறைஇடை", "features": {}, "vetrumai": null, "todar": null, "gloss": "is not, none", "confidence": 0.78}
+          ]
+        }
+      ],
+      "reviewFlags": [
+        "கைதூவேன் — பொருளால் எதிர்மறை தன்மை ஒருமை முற்று (கைதூவேன் = கைவிடேன்/சோர்வடையேன்); இப்போது செல்லத்தக்க 'எதிர்மறைவினைமுற்று' tag வழங்கப்பட்டது. காலம் வெளிப்படா எதிர்மறை முற்று.",
+        "பீடுடையது — 'பீடு'+'உடையது'; வேற்றுமைத்தொகை (பீட்டை உடையது) என்பது ஐயத்திற்குரியது."
+      ]
+    },
+    {
+      "number": 1022,
+      "line1": "ஆள்வினையும் ஆன்ற அறிவும் எனஇரண்டின்",
+      "line2": "நீள்வினையால் நீளும் குடி.",
+      "yappu": {
+        "paa": "குறள் வெண்பா",
+        "sirCount": [4, 3],
+        "monai": [
+          {"adi": 1, "sirs": ["ஆள்வினையும்", "ஆன்ற", "அறிவும்"], "key": "ஆ/அ", "present": true},
+          {"adi": 2, "sirs": ["நீள்வினையால்", "நீளும்"], "key": "நீ", "present": true}
+        ],
+        "edugai": {"present": true, "letter": "ள்", "note": "ஆள்வினையும் / நீள்வினையால் — அடிமுதல் சீர்களின் இரண்டாம் எழுத்து 'ள்' ஒப்பு"},
+        "thalai": "வெண்டளை",
+        "eetruseer": "குடி (பிறப்பு வாய்பாடு)"
+      },
+      "ani": [
+        {"name": "சொற்பொருட்பின்வருநிலை", "note": "ஆள்வினை / நீள்வினை — 'வினை' சொல் திரும்ப வந்து செயலின் தொடர்ச்சியை வலியுறுத்துகிறது"}
+      ],
+      "sirs": [
+        {
+          "sira": "ஆள்வினையும்",
+          "adi": 1,
+          "pos": 1,
+          "togai": "வினைத்தொகை",
+          "components": [
+            {"sol": "ஆள்வினை", "split": "ஆள்+வினை", "category": "பெயர்", "ilakkanam": "தொழிற்பெயர்", "features": {"thinai": "அஃறிணை", "paal": "ஒன்றன்பால்"}, "vetrumai": null, "todar": null, "gloss": "ardent effort, endeavour (ஆளும் வினை)", "confidence": 0.7},
+            {"sol": "உம்", "split": "உம்", "category": "இடை", "ilakkanam": "உம்மை", "features": {}, "vetrumai": null, "todar": null, "gloss": "and (enumerative)", "confidence": 0.85}
+          ]
+        },
+        {
+          "sira": "ஆன்ற",
+          "adi": 1,
+          "pos": 2,
+          "togai": null,
+          "components": [
+            {"sol": "ஆன்ற", "split": "ஆன்று+அ", "category": "வினை", "ilakkanam": "பெயரெச்சம்", "features": {"kaalam": "இறப்பு"}, "vetrumai": null, "todar": null, "gloss": "full, abundant, ripe (ஆன்ற அறிவு)", "confidence": 0.72}
+          ]
+        },
+        {
+          "sira": "அறிவும்",
+          "adi": 1,
+          "pos": 3,
+          "togai": null,
+          "components": [
+            {"sol": "அறிவு", "split": "அறி+வு", "category": "பெயர்", "ilakkanam": "தொழிற்பெயர்", "features": {"thinai": "அஃறிணை", "paal": "ஒன்றன்பால்"}, "vetrumai": null, "todar": null, "gloss": "wisdom", "confidence": 0.78},
+            {"sol": "உம்", "split": "உம்", "category": "இடை", "ilakkanam": "உம்மை", "features": {}, "vetrumai": null, "todar": null, "gloss": "and (enumerative)", "confidence": 0.85}
+          ]
+        },
+        {
+          "sira": "எனஇரண்டின்",
+          "adi": 1,
+          "pos": 4,
+          "togai": null,
+          "components": [
+            {"sol": "என", "split": "என்+அ", "category": "வினை", "ilakkanam": "வினையெச்சம்", "features": {}, "vetrumai": null, "todar": null, "gloss": "saying, called", "confidence": 0.72},
+            {"sol": "இரண்டின்", "split": "இரண்டு+இன்", "category": "பெயர்", "ilakkanam": "எண்ணுப்பெயர்", "features": {"thinai": "அஃறிணை", "eN": "ஒருமை"}, "vetrumai": {"number": 5, "urupu": "இன்", "name": "நீங்கல்/ஒப்பு"}, "todar": null, "gloss": "of the two", "confidence": 0.68}
+          ]
+        },
+        {
+          "sira": "நீள்வினையால்",
+          "adi": 2,
+          "pos": 1,
+          "togai": "வினைத்தொகை",
+          "components": [
+            {"sol": "நீள்வினையால்", "split": "நீள்வினை+ஆல்", "category": "பெயர்", "ilakkanam": "தொழிற்பெயர்", "features": {"thinai": "அஃறிணை", "paal": "ஒன்றன்பால்"}, "vetrumai": {"number": 3, "urupu": "ஆல்", "name": "கருவி/உடன்"}, "todar": null, "gloss": "by ceaseless action (நீளும் வினை)", "confidence": 0.68}
+          ]
+        },
+        {
+          "sira": "நீளும்",
+          "adi": 2,
+          "pos": 2,
+          "togai": null,
+          "components": [
+            {"sol": "நீளும்", "split": "நீள்+உம்", "category": "வினை", "ilakkanam": "தெரிநிலைவினைமுற்று", "features": {"kaalam": "எதிர்காலம்", "idam": "படர்க்கை", "paal": "ஒன்றன்பால்", "eN": "ஒருமை"}, "vetrumai": null, "todar": null, "gloss": "will rise, grow long", "confidence": 0.74}
+          ]
+        },
+        {
+          "sira": "குடி",
+          "adi": 2,
+          "pos": 3,
+          "togai": null,
+          "components": [
+            {"sol": "குடி", "split": "குடி", "category": "பெயர்", "ilakkanam": "பொருட்பெயர்", "features": {"thinai": "அஃறிணை", "paal": "ஒன்றன்பால்", "eN": "ஒருமை"}, "vetrumai": {"number": 1, "urupu": "—", "name": "எழுவாய்"}, "todar": null, "gloss": "family, lineage", "confidence": 0.82}
+          ]
+        }
+      ],
+      "reviewFlags": [
+        "ஆள்வினை / நீள்வினை — 'ஆளும்/நீளும் வினை' எனக் காலம் மறைந்த வினைத்தொகையாகக் கொள்ளப்பட்டது (சீர் மட்டத்தில் togai); முதனிலை தொழிற்பெயர். ஐயம் சிறிது உண்டு."
+      ]
+    },
+    {
+      "number": 1023,
+      "line1": "குடிசெய்வல் என்னும் ஒருவற்குத் தெய்வம்",
+      "line2": "மடிதற்றுத் தான்முந் துறும்.",
+      "yappu": {
+        "paa": "குறள் வெண்பா",
+        "sirCount": [4, 3],
+        "monai": [
+          {"adi": 1, "sirs": ["குடிசெய்வல்"], "key": "கு", "present": false},
+          {"adi": 2, "sirs": ["தான்முந்", "துறும்"], "key": "த", "present": true}
+        ],
+        "edugai": {"present": true, "letter": "டி", "note": "குடிசெய்வல் / மடிதற்றுத் — அடிமுதல் சீர்களின் இரண்டாம் எழுத்து 'டி' ஒப்பு"},
+        "thalai": "வெண்டளை",
+        "eetruseer": "துறும் (— முற்று ஈறு)"
+      },
+      "ani": [
+        {"name": "உருவகம்", "note": "தெய்வம் மடிதற்று (ஆடையை இறுக உடுத்தி) முன்வந்து துணைசெய்தல் — ஊழை/தெய்வத்தை செயலாற்றும் மனிதனாக உருவகித்தல்"}
+      ],
+      "sirs": [
+        {
+          "sira": "குடிசெய்வல்",
+          "adi": 1,
+          "pos": 1,
+          "togai": null,
+          "components": [
+            {"sol": "குடி", "split": "குடி", "category": "பெயர்", "ilakkanam": "பொருட்பெயர்", "features": {"thinai": "அஃறிணை", "paal": "ஒன்றன்பால்"}, "vetrumai": {"number": 2, "urupu": "ஐ", "name": "செயப்படுபொருள்"}, "todar": null, "gloss": "family, lineage", "confidence": 0.74},
+            {"sol": "செய்வல்", "split": "செய்+வல்", "category": "வினை", "ilakkanam": "தெரிநிலைவினைமுற்று", "features": {"kaalam": "எதிர்காலம்", "idam": "தன்மை", "eN": "ஒருமை"}, "vetrumai": null, "todar": null, "gloss": "I will raise/do (செய்வேன்)", "confidence": 0.7}
+          ]
+        },
+        {
+          "sira": "என்னும்",
+          "adi": 1,
+          "pos": 2,
+          "togai": null,
+          "components": [
+            {"sol": "என்னும்", "split": "என்+உம்", "category": "வினை", "ilakkanam": "பெயரெச்சம்", "features": {"kaalam": "நிகழ்காலம்"}, "vetrumai": null, "todar": null, "gloss": "saying / who says", "confidence": 0.68}
+          ]
+        },
+        {
+          "sira": "ஒருவற்குத்",
+          "adi": 1,
+          "pos": 3,
+          "togai": null,
+          "components": [
+            {"sol": "ஒருவற்கு", "split": "ஒருவன்+கு", "category": "பெயர்", "ilakkanam": "பொருட்பெயர்", "features": {"thinai": "உயர்திணை", "paal": "ஆண்பால்", "eN": "ஒருமை"}, "vetrumai": {"number": 4, "urupu": "கு", "name": "கொடை/நோக்கம்"}, "todar": null, "gloss": "for the one (who)", "confidence": 0.8}
+          ]
+        },
+        {
+          "sira": "தெய்வம்",
+          "adi": 1,
+          "pos": 4,
+          "togai": null,
+          "components": [
+            {"sol": "தெய்வம்", "split": "தெய்வம்", "category": "பெயர்", "ilakkanam": "பொருட்பெயர்", "features": {"thinai": "அஃறிணை", "paal": "ஒன்றன்பால்", "eN": "ஒருமை"}, "vetrumai": {"number": 1, "urupu": "—", "name": "எழுவாய்"}, "todar": null, "gloss": "God, fate, deity", "confidence": 0.8}
+          ]
+        },
+        {
+          "sira": "மடிதற்றுத்",
+          "adi": 2,
+          "pos": 1,
+          "togai": null,
+          "components": [
+            {"sol": "மடி", "split": "மடி", "category": "பெயர்", "ilakkanam": "பொருட்பெயர்", "features": {"thinai": "அஃறிணை"}, "vetrumai": {"number": 2, "urupu": "ஐ", "name": "செயப்படுபொருள்"}, "todar": null, "gloss": "fold of cloth, garment-end", "confidence": 0.5},
+            {"sol": "தற்று", "split": "தற்று", "category": "வினை", "ilakkanam": "வினையெச்சம்", "features": {}, "vetrumai": null, "todar": null, "gloss": "having girt/tucked tight (கட்டிக்கொண்டு)", "confidence": 0.45}
+          ]
+        },
+        {
+          "sira": "தான்முந்",
+          "adi": 2,
+          "pos": 2,
+          "togai": null,
+          "components": [
+            {"sol": "தான்", "split": "தான்", "category": "பெயர்", "ilakkanam": "சுட்டுப்பெயர்", "features": {"thinai": "அஃறிணை", "paal": "ஒன்றன்பால்", "eN": "ஒருமை"}, "vetrumai": null, "todar": null, "gloss": "itself (refers to தெய்வம்)", "confidence": 0.6},
+            {"sol": "முந்", "split": "முந்(து)", "category": "வினை", "ilakkanam": "தெரிநிலைவினைமுற்று", "features": {"kaalam": "எதிர்காலம்", "idam": "படர்க்கை", "paal": "ஒன்றன்பால்", "eN": "ஒருமை"}, "vetrumai": null, "todar": null, "gloss": "(part of முந்துறும்) will come forward, precede", "confidence": 0.4}
+          ]
+        },
+        {
+          "sira": "துறும்",
+          "adi": 2,
+          "pos": 3,
+          "togai": null,
+          "components": [
+            {"sol": "துறும்", "split": "(முந்து)+உறும்", "category": "வினை", "ilakkanam": "தெரிநிலைவினைமுற்று", "features": {"kaalam": "எதிர்காலம்", "idam": "படர்க்கை", "paal": "ஒன்றன்பால்", "eN": "ஒருமை"}, "vetrumai": null, "todar": null, "gloss": "will come forward, precede (with முந்-)", "confidence": 0.5}
+          ]
+        }
+      ],
+      "reviewFlags": [
+        "மடிதற்றுத் — 'மடி தற்று' (ஆடையை இறுகக் கட்டி) பகுப்பு; 'தற்று' வினையெச்ச வடிவம் ஐயத்திற்குரியது.",
+        "தான்முந் / துறும் — யாப்புச் சீர் எல்லையால் 'முந்துறும்' ஒரு தெரிநிலைவினைமுற்று இரு சீர்களாகப் பிரிந்துள்ளது; 'முந்' (pos2) + 'துறும்' (pos3) சேர்த்தே ஒரே முற்று. தனித்தனியே tag செய்தது யாப்புக் கட்டாயத்தால்.",
+        "தான் — தெய்வம் (அஃறிணை ஒன்றன்பால்) குறித்து நிற்கும் ஒருமை சுட்டு."
+      ]
+    },
+    {
+      "number": 1024,
+      "line1": "சூழாமல் தானே முடிவெய்தும் தம்குடியைத்",
+      "line2": "தாழாது உஞற்று பவர்க்கு.",
+      "yappu": {
+        "paa": "குறள் வெண்பா",
+        "sirCount": [4, 3],
+        "monai": [
+          {"adi": 1, "sirs": ["தானே", "தம்குடியைத்"], "key": "த", "present": true},
+          {"adi": 2, "sirs": ["தாழாது"], "key": "த", "present": false}
+        ],
+        "edugai": {"present": true, "letter": "ழா", "note": "சூழாமல் / தாழாது — அடிமுதல் சீர்களின் இரண்டாம் எழுத்து 'ழா' ஒப்பு"},
+        "thalai": "வெண்டளை",
+        "eetruseer": "பவர்க்கு (— உருபு ஈறு)"
+      },
+      "ani": [
+        {"name": "சொற்பொருட்பின்வருநிலை", "note": "சூழாமல் / தாழாது — எதிர்மறை எச்சங்கள் இணைந்து விரைந்த, ஆராயாத செயலை வலியுறுத்துகின்றன"}
+      ],
+      "sirs": [
+        {
+          "sira": "சூழாமல்",
+          "adi": 1,
+          "pos": 1,
+          "togai": null,
+          "components": [
+            {"sol": "சூழாமல்", "split": "சூழ்+ஆமல்", "category": "வினை", "ilakkanam": "எதிர்மறைவினையெச்சம்", "features": {}, "vetrumai": null, "todar": null, "gloss": "without planning/scheming", "confidence": 0.82}
+          ]
+        },
+        {
+          "sira": "தானே",
+          "adi": 1,
+          "pos": 2,
+          "togai": null,
+          "components": [
+            {"sol": "தான்", "split": "தான்", "category": "பெயர்", "ilakkanam": "சுட்டுப்பெயர்", "features": {"thinai": "அஃறிணை", "paal": "ஒன்றன்பால்", "eN": "ஒருமை"}, "vetrumai": null, "todar": null, "gloss": "itself (the deed)", "confidence": 0.7},
+            {"sol": "ஏ", "split": "ஏ", "category": "இடை", "ilakkanam": "ஏகாரம்", "features": {}, "vetrumai": null, "todar": null, "gloss": "(emphatic) by itself", "confidence": 0.72}
+          ]
+        },
+        {
+          "sira": "முடிவெய்தும்",
+          "adi": 1,
+          "pos": 3,
+          "togai": null,
+          "components": [
+            {"sol": "முடிவு", "split": "முடி+வு", "category": "பெயர்", "ilakkanam": "தொழிற்பெயர்", "features": {"thinai": "அஃறிணை"}, "vetrumai": {"number": 1, "urupu": "—", "name": "எழுவாய்"}, "todar": null, "gloss": "completion, end", "confidence": 0.58},
+            {"sol": "எய்தும்", "split": "எய்து+உம்", "category": "வினை", "ilakkanam": "தெரிநிலைவினைமுற்று", "features": {"kaalam": "எதிர்காலம்", "idam": "படர்க்கை", "paal": "ஒன்றன்பால்", "eN": "ஒருமை"}, "vetrumai": null, "todar": null, "gloss": "will attain/reach", "confidence": 0.62}
+          ]
+        },
+        {
+          "sira": "தம்குடியைத்",
+          "adi": 1,
+          "pos": 4,
+          "togai": null,
+          "components": [
+            {"sol": "தம்", "split": "தம்", "category": "பெயர்", "ilakkanam": "சுட்டுப்பெயர்", "features": {"thinai": "உயர்திணை", "paal": "பலர்பால்", "eN": "பன்மை"}, "vetrumai": {"number": 6, "urupu": "அது", "name": "உடைமை"}, "todar": null, "gloss": "their own", "confidence": 0.64},
+            {"sol": "குடியை", "split": "குடி+ஐ", "category": "பெயர்", "ilakkanam": "பொருட்பெயர்", "features": {"thinai": "அஃறிணை", "paal": "ஒன்றன்பால்", "eN": "ஒருமை"}, "vetrumai": {"number": 2, "urupu": "ஐ", "name": "செயப்படுபொருள்"}, "todar": null, "gloss": "the family (acc.)", "confidence": 0.8}
+          ]
+        },
+        {
+          "sira": "தாழாது",
+          "adi": 2,
+          "pos": 1,
+          "togai": null,
+          "components": [
+            {"sol": "தாழாது", "split": "தாழ்+ஆது", "category": "வினை", "ilakkanam": "எதிர்மறைவினையெச்சம்", "features": {}, "vetrumai": null, "todar": null, "gloss": "without delay", "confidence": 0.82}
+          ]
+        },
+        {
+          "sira": "உஞற்று",
+          "adi": 2,
+          "pos": 2,
+          "togai": null,
+          "components": [
+            {"sol": "உஞற்று", "split": "உஞற்று", "category": "வினை", "ilakkanam": "வினையெச்சம்", "features": {}, "vetrumai": null, "todar": null, "gloss": "striving, exerting (முதனிலை of உஞற்றுபவர்)", "confidence": 0.45}
+          ]
+        },
+        {
+          "sira": "பவர்க்கு",
+          "adi": 2,
+          "pos": 3,
+          "togai": null,
+          "components": [
+            {"sol": "பவர்க்கு", "split": "பவர்+கு", "category": "பெயர்", "ilakkanam": "வினையாலணையும்பெயர்", "features": {"thinai": "உயர்திணை", "paal": "பலர்பால்", "eN": "பன்மை"}, "vetrumai": {"number": 4, "urupu": "கு", "name": "கொடை/நோக்கம்"}, "todar": null, "gloss": "for those who (do)", "confidence": 0.6}
+          ]
+        }
+      ],
+      "reviewFlags": [
+        "உஞற்று பவர்க்கு — 'உஞற்றுபவர்க்கு' (செய்பவர்க்கு) ஒரே வினையாலணையும்பெயர்; யாப்புச் சீர் எல்லையால் 'உஞற்று' + 'பவர்க்கு' எனப் பிரிந்துள்ளது. 'உஞற்று' முதனிலை, 'பவர்க்கு' வினையாலணையும்பெயர் (வே.4 கு) எனத் தற்காலிகமாகக் கொள்ளப்பட்டது.",
+        "முடிவெய்தும் — 'முடிவு'(எழுவாய்) தானே எய்தும்; முடிவு ஒன்றன்பால் எழுவாய், எய்தும் படர்க்கை முற்று."
+      ]
+    },
+    {
+      "number": 1025,
+      "line1": "குற்றம் இலனாய்க் குடிசெய்து வாழ்வானைச்",
+      "line2": "சுற்றமாச் சுற்றும் உலகு.",
+      "yappu": {
+        "paa": "குறள் வெண்பா",
+        "sirCount": [4, 3],
+        "monai": [
+          {"adi": 1, "sirs": ["குற்றம்", "குடிசெய்து"], "key": "கு", "present": true},
+          {"adi": 2, "sirs": ["சுற்றமாச்", "சுற்றும்"], "key": "சு", "present": true}
+        ],
+        "edugai": {"present": true, "letter": "ற்", "note": "குற்றம் / சுற்றமாச் — அடிமுதல் சீர்களின் இரண்டாம் எழுத்து 'ற்' ஒப்பு"},
+        "thalai": "வெண்டளை",
+        "eetruseer": "உலகு (காசு வாய்பாடு)"
+      },
+      "ani": [
+        {"name": "இயைபு/ஒலிநயம்", "note": "சுற்றம் / சுற்றும் — ஒத்த ஒலியில் சுற்றமாகச் சூழ்தல் வலியுறுத்தப்படுகிறது"}
+      ],
+      "sirs": [
+        {
+          "sira": "குற்றம்",
+          "adi": 1,
+          "pos": 1,
+          "togai": null,
+          "components": [
+            {"sol": "குற்றம்", "split": "குற்றம்", "category": "பெயர்", "ilakkanam": "பண்புப்பெயர்", "features": {"thinai": "அஃறிணை", "paal": "ஒன்றன்பால்", "eN": "ஒருமை"}, "vetrumai": null, "todar": null, "gloss": "fault, blame", "confidence": 0.74}
+          ]
+        },
+        {
+          "sira": "இலனாய்க்",
+          "adi": 1,
+          "pos": 2,
+          "togai": null,
+          "components": [
+            {"sol": "இலனாய்", "split": "இலன்+ஆய்", "category": "வினை", "ilakkanam": "எதிர்மறைவினையெச்சம்", "features": {}, "vetrumai": null, "todar": null, "gloss": "being one without (fault) — குற்றம் இல்லாதவனாய்", "confidence": 0.55}
+          ]
+        },
+        {
+          "sira": "குடிசெய்து",
+          "adi": 1,
+          "pos": 3,
+          "togai": null,
+          "components": [
+            {"sol": "குடி", "split": "குடி", "category": "பெயர்", "ilakkanam": "பொருட்பெயர்", "features": {"thinai": "அஃறிணை"}, "vetrumai": {"number": 2, "urupu": "ஐ", "name": "செயப்படுபொருள்"}, "todar": null, "gloss": "family", "confidence": 0.74},
+            {"sol": "செய்து", "split": "செய்+து", "category": "வினை", "ilakkanam": "வினையெச்சம்", "features": {}, "vetrumai": null, "todar": null, "gloss": "having done/raised", "confidence": 0.8}
+          ]
+        },
+        {
+          "sira": "வாழ்வானைச்",
+          "adi": 1,
+          "pos": 4,
+          "togai": null,
+          "components": [
+            {"sol": "வாழ்வானை", "split": "வாழ்வான்+ஐ", "category": "பெயர்", "ilakkanam": "வினையாலணையும்பெயர்", "features": {"thinai": "உயர்திணை", "paal": "ஆண்பால்", "eN": "ஒருமை"}, "vetrumai": {"number": 2, "urupu": "ஐ", "name": "செயப்படுபொருள்"}, "todar": null, "gloss": "him who lives", "confidence": 0.76}
+          ]
+        },
+        {
+          "sira": "சுற்றமாச்",
+          "adi": 2,
+          "pos": 1,
+          "togai": null,
+          "components": [
+            {"sol": "சுற்றமா", "split": "சுற்றம்+ஆ", "category": "பெயர்", "ilakkanam": "பொருட்பெயர்", "features": {"thinai": "அஃறிணை", "paal": "ஒன்றன்பால்"}, "vetrumai": null, "todar": null, "gloss": "as kinsfolk (சுற்றமாக)", "confidence": 0.58}
+          ]
+        },
+        {
+          "sira": "சுற்றும்",
+          "adi": 2,
+          "pos": 2,
+          "togai": null,
+          "components": [
+            {"sol": "சுற்றும்", "split": "சுற்று+உம்", "category": "வினை", "ilakkanam": "தெரிநிலைவினைமுற்று", "features": {"kaalam": "எதிர்காலம்", "idam": "படர்க்கை", "paal": "ஒன்றன்பால்", "eN": "ஒருமை"}, "vetrumai": null, "todar": null, "gloss": "surrounds, gathers around", "confidence": 0.6}
+          ]
+        },
+        {
+          "sira": "உலகு",
+          "adi": 2,
+          "pos": 3,
+          "togai": null,
+          "components": [
+            {"sol": "உலகு", "split": "உலகு", "category": "பெயர்", "ilakkanam": "இடப்பெயர்", "features": {"thinai": "அஃறிணை", "paal": "ஒன்றன்பால்", "eN": "ஒருமை"}, "vetrumai": {"number": 1, "urupu": "—", "name": "எழுவாய்"}, "todar": null, "gloss": "the world, people of the world", "confidence": 0.74}
+          ]
+        }
+      ],
+      "reviewFlags": [
+        "இலனாய் — 'இலன்' (இல்லாதவன், எதிர்மறைக் குறிப்பு) + 'ஆய்' எச்ச உருபு = குற்றம் இல்லாதவனாய். எதிர்மறைப் பொருள் கொண்ட எச்சம் என்பதால் 'எதிர்மறைவினையெச்சம்' கொடுக்கப்பட்டது; 'இலன்' குறிப்பு உரு என்பதால் ilakkanam சிறிது ஐயம்.",
+        "சுற்றமா — 'சுற்றம்'(அஃறிணை ஒன்றன்பால்) + 'ஆ' (ஆக்கச்சொல்/predicative) = சுற்றமாக; tag பொருட்பெயராக கொண்டது, 'ஆ' ஆக்கம் தனி உருவாக.",
+        "சுற்றும் — உலகு (அஃறிணை ஒன்றன்பால்) எழுவாயோடு இயைந்த ஒன்றன்பால் முற்று; உரையில் 'உலகத்தார் சுற்றுவர்' எனப் பலர்பால் பொருளும் உண்டு."
+      ]
+    },
+    {
+      "number": 1026,
+      "line1": "நல்லாண்மை என்பது ஒருவற்குத் தான்பிறந்த",
+      "line2": "இல்லாண்மை ஆக்கிக் கொளல்.",
+      "yappu": {
+        "paa": "குறள் வெண்பா",
+        "sirCount": [4, 3],
+        "monai": [
+          {"adi": 1, "sirs": ["நல்லாண்மை"], "key": "ந", "present": false},
+          {"adi": 2, "sirs": ["இல்லாண்மை"], "key": "இ", "present": false}
+        ],
+        "edugai": {"present": true, "letter": "ல்", "note": "நல்லாண்மை / இல்லாண்மை — அடிமுதல் சீர்களின் இரண்டாம் எழுத்து 'ல்' ஒப்பு (மடக்கு நயம்)"},
+        "thalai": "வெண்டளை",
+        "eetruseer": "கொளல் (— தொழிற்பெயர் ஈறு)"
+      },
+      "ani": [
+        {"name": "மடக்கு", "note": "நல்லாண்மை / இல்லாண்மை — ஒத்தொலி கொண்ட சொற்களின் இணை; சொல்விளையாட்டு (மடக்கு நயம்)"}
+      ],
+      "sirs": [
+        {
+          "sira": "நல்லாண்மை",
+          "adi": 1,
+          "pos": 1,
+          "togai": "பண்புத்தொகை",
+          "components": [
+            {"sol": "நல்", "split": "நல்", "category": "உரி", "ilakkanam": "உரிச்சொல்", "features": {}, "vetrumai": null, "todar": null, "gloss": "good", "confidence": 0.62},
+            {"sol": "ஆண்மை", "split": "ஆண்மை", "category": "பெயர்", "ilakkanam": "பண்புப்பெயர்", "features": {"thinai": "அஃறிணை", "paal": "ஒன்றன்பால்"}, "vetrumai": null, "todar": null, "gloss": "manliness, capability", "confidence": 0.7}
+          ]
+        },
+        {
+          "sira": "என்பது",
+          "adi": 1,
+          "pos": 2,
+          "togai": null,
+          "components": [
+            {"sol": "என்பது", "split": "என்+பது", "category": "பெயர்", "ilakkanam": "வினையாலணையும்பெயர்", "features": {"thinai": "அஃறிணை", "paal": "ஒன்றன்பால்", "eN": "ஒருமை"}, "vetrumai": null, "todar": null, "gloss": "that which is called", "confidence": 0.72}
+          ]
+        },
+        {
+          "sira": "ஒருவற்குத்",
+          "adi": 1,
+          "pos": 3,
+          "togai": null,
+          "components": [
+            {"sol": "ஒருவற்கு", "split": "ஒருவன்+கு", "category": "பெயர்", "ilakkanam": "பொருட்பெயர்", "features": {"thinai": "உயர்திணை", "paal": "ஆண்பால்", "eN": "ஒருமை"}, "vetrumai": {"number": 4, "urupu": "கு", "name": "கொடை/நோக்கம்"}, "todar": null, "gloss": "for a man", "confidence": 0.8}
+          ]
+        },
+        {
+          "sira": "தான்பிறந்த",
+          "adi": 1,
+          "pos": 4,
+          "togai": null,
+          "components": [
+            {"sol": "தான்", "split": "தான்", "category": "பெயர்", "ilakkanam": "சுட்டுப்பெயர்", "features": {"thinai": "உயர்திணை", "paal": "ஆண்பால்", "eN": "ஒருமை"}, "vetrumai": null, "todar": null, "gloss": "he himself", "confidence": 0.68},
+            {"sol": "பிறந்த", "split": "பிற+ந்த", "category": "வினை", "ilakkanam": "பெயரெச்சம்", "features": {"kaalam": "இறப்பு"}, "vetrumai": null, "todar": null, "gloss": "in which (he) was born (பிறந்த இல்)", "confidence": 0.78}
+          ]
+        },
+        {
+          "sira": "இல்லாண்மை",
+          "adi": 2,
+          "pos": 1,
+          "togai": "வேற்றுமைத்தொகை",
+          "components": [
+            {"sol": "இல்", "split": "இல்", "category": "பெயர்", "ilakkanam": "இடப்பெயர்", "features": {"thinai": "அஃறிணை"}, "vetrumai": {"number": 2, "urupu": "ஐ", "name": "செயப்படுபொருள்"}, "todar": null, "gloss": "house, home (lineage)", "confidence": 0.58},
+            {"sol": "ஆண்மை", "split": "ஆண்மை", "category": "பெயர்", "ilakkanam": "பண்புப்பெயர்", "features": {"thinai": "அஃறிணை", "paal": "ஒன்றன்பால்"}, "vetrumai": null, "todar": null, "gloss": "rule/mastery (of the house)", "confidence": 0.6}
+          ]
+        },
+        {
+          "sira": "ஆக்கிக்",
+          "adi": 2,
+          "pos": 2,
+          "togai": null,
+          "components": [
+            {"sol": "ஆக்கி", "split": "ஆக்கு+இ", "category": "வினை", "ilakkanam": "வினையெச்சம்", "features": {}, "vetrumai": null, "todar": null, "gloss": "having made", "confidence": 0.8}
+          ]
+        },
+        {
+          "sira": "கொளல்",
+          "adi": 2,
+          "pos": 3,
+          "togai": null,
+          "components": [
+            {"sol": "கொளல்", "split": "கொள்+அல்", "category": "பெயர்", "ilakkanam": "தொழிற்பெயர்", "features": {"thinai": "அஃறிணை", "paal": "ஒன்றன்பால்"}, "vetrumai": null, "todar": null, "gloss": "the taking/acquiring (for oneself)", "confidence": 0.7}
+          ]
+        }
+      ],
+      "reviewFlags": [
+        "நல்லாண்மை — 'நல்'(உரி)+'ஆண்மை' பண்புத்தொகை; 'நல்' உரிச்சொல்லாகவோ பண்படியாகவோ கொள்ளலாம்.",
+        "இல்லாண்மை — 'இல்'(வீடு/குடி)+'ஆண்மை' = இல்லை ஆளுதல்; வேற்றுமைத்தொகை (ஐ மறைந்தது). 'இல்' இடப்பெயராகக் கொள்ளப்பட்டது.",
+        "தான் — உயர்திணை ஆண்பால் (ஒருவன்) குறித்து நிற்கிறது."
+      ]
+    },
+    {
+      "number": 1027,
+      "line1": "அமரகத்து வன்கண்ணர் போலத் தமரகத்தும்",
+      "line2": "ஆற்றுவார் மேற்றே பொறை.",
+      "yappu": {
+        "paa": "குறள் வெண்பா",
+        "sirCount": [4, 3],
+        "monai": [
+          {"adi": 1, "sirs": [], "key": "—", "present": false},
+          {"adi": 2, "sirs": [], "key": "—", "present": false}
+        ],
+        "edugai": {"present": false, "letter": "ம/ற்", "note": "அமரகத்து (இரண்டாம் எழுத்து 'ம') / ஆற்றுவார் ('ற்') — அடிமுதல் சீர்களின் இரண்டாம் எழுத்து வேறுபடுகிறது; எதுகை இல்லை. அமரகத்து/தமரகத்தும் என்பது அடி உள்ளமைந்த இயைபு/மடக்கு நயம், அடிமுதல் எதுகை அன்று"},
+        "thalai": "வெண்டளை",
+        "eetruseer": "பொறை (— பண்புப்பெயர் ஈறு)"
+      },
+      "ani": [
+        {"name": "உவமை", "note": "அமரகத்து வன்கண்ணர் போல — போர்க்களத்து அஞ்சா வீரரை, குடி/சுற்றத்தைத் தாங்கும் ஆற்றலாளர்க்கு உவமை"},
+        {"name": "இயைபு/ஒலிநயம்", "note": "அமரகத்து / தமரகத்தும் — ஒத்தொலி இணை (மடக்கு நயம்)"}
+      ],
+      "sirs": [
+        {
+          "sira": "அமரகத்து",
+          "adi": 1,
+          "pos": 1,
+          "togai": "வேற்றுமைத்தொகை",
+          "components": [
+            {"sol": "அமரகத்து", "split": "அமர்+அகத்து", "category": "பெயர்", "ilakkanam": "இடப்பெயர்", "features": {"thinai": "அஃறிணை"}, "vetrumai": {"number": 7, "urupu": "கண்", "name": "இடம்"}, "todar": null, "gloss": "in the battlefield (அமரின்கண்)", "confidence": 0.64}
+          ]
+        },
+        {
+          "sira": "வன்கண்ணர்",
+          "adi": 1,
+          "pos": 2,
+          "togai": "பண்புத்தொகை",
+          "components": [
+            {"sol": "வன்கண்ணர்", "split": "வன்+கண்+அர்", "category": "பெயர்", "ilakkanam": "பண்புப்பெயர்", "features": {"thinai": "உயர்திணை", "paal": "பலர்பால்", "eN": "பன்மை"}, "vetrumai": {"number": 1, "urupu": "—", "name": "எழுவாய்"}, "todar": null, "gloss": "the dauntless/fearless ones", "confidence": 0.62}
+          ]
+        },
+        {
+          "sira": "போலத்",
+          "adi": 1,
+          "pos": 3,
+          "togai": null,
+          "components": [
+            {"sol": "போல", "split": "போல", "category": "இடை", "ilakkanam": "உவமைஉருபு", "features": {}, "vetrumai": null, "todar": null, "gloss": "like, as (உவம உருபு)", "confidence": 0.82}
+          ]
+        },
+        {
+          "sira": "தமரகத்தும்",
+          "adi": 1,
+          "pos": 4,
+          "togai": "வேற்றுமைத்தொகை",
+          "components": [
+            {"sol": "தமரகத்து", "split": "தமர்+அகத்து", "category": "பெயர்", "ilakkanam": "இடப்பெயர்", "features": {"thinai": "அஃறிணை"}, "vetrumai": {"number": 7, "urupu": "கண்", "name": "இடம்"}, "todar": null, "gloss": "among one's own kin (தமரின்கண்)", "confidence": 0.58},
+            {"sol": "உம்", "split": "உம்", "category": "இடை", "ilakkanam": "உம்மை", "features": {}, "vetrumai": null, "todar": null, "gloss": "also (even among)", "confidence": 0.78}
+          ]
+        },
+        {
+          "sira": "ஆற்றுவார்",
+          "adi": 2,
+          "pos": 1,
+          "togai": null,
+          "components": [
+            {"sol": "ஆற்றுவார்", "split": "ஆற்று+வார்", "category": "பெயர்", "ilakkanam": "வினையாலணையும்பெயர்", "features": {"thinai": "உயர்திணை", "paal": "பலர்பால்", "eN": "பன்மை"}, "vetrumai": null, "todar": null, "gloss": "those who are able / who bear", "confidence": 0.72}
+          ]
+        },
+        {
+          "sira": "மேற்றே",
+          "adi": 2,
+          "pos": 2,
+          "togai": null,
+          "components": [
+            {"sol": "மேற்று", "split": "மேல்+து", "category": "பெயர்", "ilakkanam": "இடப்பெயர்", "features": {"thinai": "அஃறிணை", "paal": "ஒன்றன்பால்"}, "vetrumai": null, "todar": null, "gloss": "is upon (rests on) — மேலது", "confidence": 0.5},
+            {"sol": "ஏ", "split": "ஏ", "category": "இடை", "ilakkanam": "ஏகாரம்", "features": {}, "vetrumai": null, "todar": null, "gloss": "(emphatic/assertive)", "confidence": 0.7}
+          ]
+        },
+        {
+          "sira": "பொறை",
+          "adi": 2,
+          "pos": 3,
+          "togai": null,
+          "components": [
+            {"sol": "பொறை", "split": "பொறை", "category": "பெயர்", "ilakkanam": "பண்புப்பெயர்", "features": {"thinai": "அஃறிணை", "paal": "ஒன்றன்பால்", "eN": "ஒருமை"}, "vetrumai": {"number": 1, "urupu": "—", "name": "எழுவாய்"}, "todar": null, "gloss": "the burden, endurance", "confidence": 0.7}
+          ]
+        }
+      ],
+      "reviewFlags": [
+        "மேற்றே — 'மேற்று'(மேலது, predicative) + 'ஏ'; 'மேலது' குறிப்புமுற்று/இடப்பெயர் என்பது ஐயம்.",
+        "வன்கண்ணர் — 'வன்'(வலி/கடுமை) + 'கண்' + 'அர்' = கடுமையான கண் உடையோர் = அஞ்சாதோர்; பண்புத்தொகை எனக் கொண்டது; அன்மொழித்தொகை (குணம் ஆகுபெயராய்ப் பண்புடையோரைக் குறித்தல்) எனவும் கொள்ளலாம்.",
+        "எதுகை — அமர்/தமர் இயைபு அடி உள்ளே; அடிமுதல் எதுகை (அமரகத்து 'ம' / ஆற்றுவார் 'ற்') ஒவ்வாது, எனவே edugai present:false."
+      ]
+    },
+    {
+      "number": 1028,
+      "line1": "குடிசெய்வார்க் கில்லை பருவம் மடிசெய்து",
+      "line2": "மானங் கருதக் கெடும்.",
+      "yappu": {
+        "paa": "குறள் வெண்பா",
+        "sirCount": [4, 3],
+        "monai": [
+          {"adi": 1, "sirs": ["குடிசெய்வார்க்", "கில்லை"], "key": "கு/கி", "present": true},
+          {"adi": 2, "sirs": ["கருதக்", "கெடும்"], "key": "க", "present": true}
+        ],
+        "edugai": {"present": false, "letter": "டி/ன", "note": "குடிசெய்வார்க் (இரண்டாம் எழுத்து 'டி') / மானங் ('ன') — அடிமுதல் சீர்களின் இரண்டாம் எழுத்து வேறுபடுகிறது; எதுகை இல்லை. குடி/மடி 'டி' இயைபு அடி உள்ளே (குடி/மடி முரண் நயம்)"},
+        "thalai": "வெண்டளை",
+        "eetruseer": "கெடும் (— முற்று ஈறு)"
+      },
+      "ani": [
+        {"name": "முரண்", "note": "குடிசெய்து / மடிசெய்து — செயல்முயற்சிக்கும் சோம்பலுக்கும் இடையே ஒலியொத்த முரண்"}
+      ],
+      "sirs": [
+        {
+          "sira": "குடிசெய்வார்க்",
+          "adi": 1,
+          "pos": 1,
+          "togai": null,
+          "components": [
+            {"sol": "குடி", "split": "குடி", "category": "பெயர்", "ilakkanam": "பொருட்பெயர்", "features": {"thinai": "அஃறிணை"}, "vetrumai": {"number": 2, "urupu": "ஐ", "name": "செயப்படுபொருள்"}, "todar": null, "gloss": "family", "confidence": 0.74},
+            {"sol": "செய்வார்க்", "split": "செய்வார்+கு", "category": "பெயர்", "ilakkanam": "வினையாலணையும்பெயர்", "features": {"thinai": "உயர்திணை", "paal": "பலர்பால்", "eN": "பன்மை"}, "vetrumai": {"number": 4, "urupu": "கு", "name": "கொடை/நோக்கம்"}, "todar": null, "gloss": "for those who raise (the family)", "confidence": 0.7}
+          ]
+        },
+        {
+          "sira": "கில்லை",
+          "adi": 1,
+          "pos": 2,
+          "togai": null,
+          "components": [
+            {"sol": "இல்லை", "split": "இல்+லை", "category": "இடை", "ilakkanam": "எதிர்மறைஇடை", "features": {}, "vetrumai": null, "todar": null, "gloss": "there is not", "confidence": 0.68}
+          ]
+        },
+        {
+          "sira": "பருவம்",
+          "adi": 1,
+          "pos": 3,
+          "togai": null,
+          "components": [
+            {"sol": "பருவம்", "split": "பருவம்", "category": "பெயர்", "ilakkanam": "காலப்பெயர்", "features": {"thinai": "அஃறிணை", "paal": "ஒன்றன்பால்", "eN": "ஒருமை"}, "vetrumai": {"number": 1, "urupu": "—", "name": "எழுவாய்"}, "todar": null, "gloss": "season, fixed time", "confidence": 0.74}
+          ]
+        },
+        {
+          "sira": "மடிசெய்து",
+          "adi": 1,
+          "pos": 4,
+          "togai": null,
+          "components": [
+            {"sol": "மடி", "split": "மடி", "category": "பெயர்", "ilakkanam": "பண்புப்பெயர்", "features": {"thinai": "அஃறிணை"}, "vetrumai": {"number": 2, "urupu": "ஐ", "name": "செயப்படுபொருள்"}, "todar": null, "gloss": "sloth, idleness", "confidence": 0.65},
+            {"sol": "செய்து", "split": "செய்+து", "category": "வினை", "ilakkanam": "வினையெச்சம்", "features": {}, "vetrumai": null, "todar": null, "gloss": "having indulged in (sloth)", "confidence": 0.8}
+          ]
+        },
+        {
+          "sira": "மானங்",
+          "adi": 2,
+          "pos": 1,
+          "togai": null,
+          "components": [
+            {"sol": "மானம்", "split": "மானம்", "category": "பெயர்", "ilakkanam": "பண்புப்பெயர்", "features": {"thinai": "அஃறிணை", "paal": "ஒன்றன்பால்", "eN": "ஒருமை"}, "vetrumai": {"number": 2, "urupu": "ஐ", "name": "செயப்படுபொருள்"}, "todar": null, "gloss": "honour, pride", "confidence": 0.7}
+          ]
+        },
+        {
+          "sira": "கருதக்",
+          "adi": 2,
+          "pos": 2,
+          "togai": null,
+          "components": [
+            {"sol": "கருத", "split": "கருது+அ", "category": "வினை", "ilakkanam": "வினையெச்சம்", "features": {}, "vetrumai": null, "todar": null, "gloss": "(if/when) one thinks of", "confidence": 0.72}
+          ]
+        },
+        {
+          "sira": "கெடும்",
+          "adi": 2,
+          "pos": 3,
+          "togai": null,
+          "components": [
+            {"sol": "கெடும்", "split": "கெடு+உம்", "category": "வினை", "ilakkanam": "தெரிநிலைவினைமுற்று", "features": {"kaalam": "எதிர்காலம்", "idam": "படர்க்கை", "paal": "ஒன்றன்பால்", "eN": "ஒருமை"}, "vetrumai": null, "todar": null, "gloss": "(it) will perish/be ruined", "confidence": 0.74}
+          ]
+        }
+      ],
+      "reviewFlags": [
+        "கில்லை — புணர்ச்சியில் 'கு+இல்லை' ('செய்வார்க்கு இல்லை'); 'கு' உருபு முந்தைய சீருடன் சேர்க்கப்பட்டது, எஞ்சிய 'இல்லை' எதிர்மறை. யாப்பால் சீர் எல்லை பிளவுபட்டது. 'இல்லை' எதிர்மறை குறிப்புமுற்றாகவும் கொள்ளலாம்.",
+        "மடி — சோம்பல் (பண்புப்பெயர்); 'மடிசெய்து' = சோம்பல் கொண்டு.",
+        "எதுகை — குடி/மடி 'டி' இயைபு அடி உள்ளே; அடிமுதல் எதுகை (குடிசெய்வார்க் 'டி' / மானங் 'ன') ஒவ்வாது, edugai present:false."
+      ]
+    },
+    {
+      "number": 1029,
+      "line1": "இடும்பைக்கே கொள்கலம் கொல்லோ குடும்பத்தைக்",
+      "line2": "குற்ற மறைப்பான் உடம்பு.",
+      "yappu": {
+        "paa": "குறள் வெண்பா",
+        "sirCount": [4, 3],
+        "monai": [
+          {"adi": 1, "sirs": ["கொள்கலம்", "கொல்லோ"], "key": "கொ", "present": true},
+          {"adi": 2, "sirs": ["குற்ற"], "key": "கு", "present": false}
+        ],
+        "edugai": {"present": false, "letter": "டு/ற்", "note": "இடும்பைக்கே (இரண்டாம் எழுத்து 'டு') / குற்ற ('ற்') — அடிமுதல் சீர்களின் இரண்டாம் எழுத்து வேறுபடுகிறது; எதுகை இல்லை. இடும்பை/குடும்பம் 'டும்' இயைபு அடி உள்ளே"},
+        "thalai": "வெண்டளை",
+        "eetruseer": "உடம்பு (பிறப்பு வாய்பாடு)"
+      },
+      "ani": [
+        {"name": "உருவகம்", "note": "உடம்பு 'இடும்பைக்கே கொள்கலம்' — உடலை துன்பத்தை ஏந்தும் கலனாக உருவகித்தல்"},
+        {"name": "இயைபு/ஒலிநயம்", "note": "இடும்பை / குடும்பம் — ஒத்தொலி சொற்கள் (இயைபு நயம்)"}
+      ],
+      "sirs": [
+        {
+          "sira": "இடும்பைக்கே",
+          "adi": 1,
+          "pos": 1,
+          "togai": null,
+          "components": [
+            {"sol": "இடும்பைக்கு", "split": "இடும்பை+கு", "category": "பெயர்", "ilakkanam": "பண்புப்பெயர்", "features": {"thinai": "அஃறிணை", "paal": "ஒன்றன்பால்"}, "vetrumai": {"number": 4, "urupu": "கு", "name": "கொடை/நோக்கம்"}, "todar": null, "gloss": "for sorrow/suffering", "confidence": 0.7},
+            {"sol": "ஏ", "split": "ஏ", "category": "இடை", "ilakkanam": "ஏகாரம்", "features": {}, "vetrumai": null, "todar": null, "gloss": "(emphatic/பிரிநிலை) only for", "confidence": 0.72}
+          ]
+        },
+        {
+          "sira": "கொள்கலம்",
+          "adi": 1,
+          "pos": 2,
+          "togai": "வினைத்தொகை",
+          "components": [
+            {"sol": "கொள்கலம்", "split": "கொள்+கலம்", "category": "பெயர்", "ilakkanam": "பொருட்பெயர்", "features": {"thinai": "அஃறிணை", "paal": "ஒன்றன்பால்", "eN": "ஒருமை"}, "vetrumai": null, "todar": null, "gloss": "vessel, receptacle (கொள்ளும் கலம்)", "confidence": 0.7}
+          ]
+        },
+        {
+          "sira": "கொல்லோ",
+          "adi": 1,
+          "pos": 3,
+          "togai": null,
+          "components": [
+            {"sol": "கொல்", "split": "கொல்", "category": "இடை", "ilakkanam": "வினாஇடை", "features": {}, "vetrumai": null, "todar": null, "gloss": "(doubt/interrogative particle)", "confidence": 0.65},
+            {"sol": "ஓ", "split": "ஓ", "category": "இடை", "ilakkanam": "ஓகாரம்", "features": {}, "vetrumai": null, "todar": null, "gloss": "(interrogative/wonder)", "confidence": 0.72}
+          ]
+        },
+        {
+          "sira": "குடும்பத்தைக்",
+          "adi": 1,
+          "pos": 4,
+          "togai": null,
+          "components": [
+            {"sol": "குடும்பத்தை", "split": "குடும்பம்+அத்து+ஐ", "category": "பெயர்", "ilakkanam": "பொருட்பெயர்", "features": {"thinai": "அஃறிணை", "paal": "ஒன்றன்பால்", "eN": "ஒருமை"}, "vetrumai": {"number": 2, "urupu": "ஐ", "name": "செயப்படுபொருள்"}, "todar": null, "gloss": "the family (acc.)", "confidence": 0.74}
+          ]
+        },
+        {
+          "sira": "குற்ற",
+          "adi": 2,
+          "pos": 1,
+          "togai": null,
+          "components": [
+            {"sol": "குற்றம்", "split": "குற்றம்", "category": "பெயர்", "ilakkanam": "பண்புப்பெயர்", "features": {"thinai": "அஃறிணை"}, "vetrumai": {"number": 2, "urupu": "ஐ", "name": "செயப்படுபொருள்"}, "todar": null, "gloss": "fault, harm (குற்றத்தை)", "confidence": 0.65}
+          ]
+        },
+        {
+          "sira": "மறைப்பான்",
+          "adi": 2,
+          "pos": 2,
+          "togai": null,
+          "components": [
+            {"sol": "மறைப்பான்", "split": "மறை+ப்பான்", "category": "பெயர்", "ilakkanam": "வினையாலணையும்பெயர்", "features": {"thinai": "உயர்திணை", "paal": "ஆண்பால்", "eN": "ஒருமை"}, "vetrumai": null, "todar": null, "gloss": "he who wards off/conceals", "confidence": 0.72}
+          ]
+        },
+        {
+          "sira": "உடம்பு",
+          "adi": 2,
+          "pos": 3,
+          "togai": null,
+          "components": [
+            {"sol": "உடம்பு", "split": "உடம்பு", "category": "பெயர்", "ilakkanam": "பொருட்பெயர்", "features": {"thinai": "அஃறிணை", "paal": "ஒன்றன்பால்", "eN": "ஒருமை"}, "vetrumai": {"number": 1, "urupu": "—", "name": "எழுவாய்"}, "todar": null, "gloss": "the body", "confidence": 0.8}
+          ]
+        }
+      ],
+      "reviewFlags": [
+        "கொள்கலம் — 'கொள்'(கொள்ளும், வினைத்தொகை) + 'கலம்' = கொள்ளும் கலம்; சீர் மட்டத்தில் வினைத்தொகை.",
+        "கொல்லோ — 'கொல்'(ஐயம்/வினா இடை) + 'ஓ'(ஓகாரம்); 'கொல்' அசைநிலையாகவும் கொள்ளலாம்.",
+        "குற்ற — 'குற்றம்' விகாரத்தால் 'குற்ற'; 'குற்றம் மறைப்பான்' (செயப்படுபொருள்).",
+        "குடும்பத்தை — அத்து சாரியை + ஐ உருபு; சாரியை தனிச்சொல்லாகப் பிரிக்கப்படவில்லை.",
+        "எதுகை — இடும்பை/குடும்பம் 'டும்' இயைபு அடி உள்ளே; அடிமுதல் எதுகை (இடும்பைக்கே 'டு' / குற்ற 'ற்') ஒவ்வாது, edugai present:false."
+      ]
+    },
+    {
+      "number": 1030,
+      "line1": "இடுக்கண்கால் கொன்றிட வீழும் அடுத்தூன்றும்",
+      "line2": "நல்லாள் இலாத குடி.",
+      "yappu": {
+        "paa": "குறள் வெண்பா",
+        "sirCount": [4, 3],
+        "monai": [
+          {"adi": 1, "sirs": [], "key": "—", "present": false},
+          {"adi": 2, "sirs": [], "key": "—", "present": false}
+        ],
+        "edugai": {"present": false, "letter": "டு/ல்", "note": "இடுக்கண்கால் (இரண்டாம் எழுத்து 'டு') / நல்லாள் ('ல்') — அடிமுதல் சீர்களின் இரண்டாம் எழுத்து வேறுபடுகிறது; எதுகை இல்லை"},
+        "thalai": "வெண்டளை",
+        "eetruseer": "குடி (பிறப்பு வாய்பாடு)"
+      },
+      "ani": [
+        {"name": "உருவகம்", "note": "இடுக்கண் (துன்பம்) கால் கொன்றிட (அடியை வெட்ட) வீழும் — துன்பத்தைக் கோடரியாகவும் குடியை மரமாகவும் உருவகித்தல்"}
+      ],
+      "sirs": [
+        {
+          "sira": "இடுக்கண்கால்",
+          "adi": 1,
+          "pos": 1,
+          "togai": null,
+          "components": [
+            {"sol": "இடுக்கண்", "split": "இடுக்கண்", "category": "பெயர்", "ilakkanam": "பண்புப்பெயர்", "features": {"thinai": "அஃறிணை", "paal": "ஒன்றன்பால்", "eN": "ஒருமை"}, "vetrumai": {"number": 1, "urupu": "—", "name": "எழுவாய்"}, "todar": null, "gloss": "affliction, calamity", "confidence": 0.7},
+            {"sol": "கால்", "split": "கால்", "category": "பெயர்", "ilakkanam": "சினைப்பெயர்", "features": {"thinai": "அஃறிணை", "paal": "ஒன்றன்பால்"}, "vetrumai": {"number": 2, "urupu": "ஐ", "name": "செயப்படுபொருள்"}, "todar": null, "gloss": "the foot/base (of the trunk)", "confidence": 0.55}
+          ]
+        },
+        {
+          "sira": "கொன்றிட",
+          "adi": 1,
+          "pos": 2,
+          "togai": null,
+          "components": [
+            {"sol": "கொன்றிட", "split": "கொன்று+இட", "category": "வினை", "ilakkanam": "வினையெச்சம்", "features": {}, "vetrumai": null, "todar": null, "gloss": "having struck/cut down (வெட்டிவிட)", "confidence": 0.62}
+          ]
+        },
+        {
+          "sira": "வீழும்",
+          "adi": 1,
+          "pos": 3,
+          "togai": null,
+          "components": [
+            {"sol": "வீழும்", "split": "வீழ்+உம்", "category": "வினை", "ilakkanam": "தெரிநிலைவினைமுற்று", "features": {"kaalam": "எதிர்காலம்", "idam": "படர்க்கை", "paal": "ஒன்றன்பால்", "eN": "ஒருமை"}, "vetrumai": null, "todar": null, "gloss": "(it/the house) will fall", "confidence": 0.72}
+          ]
+        },
+        {
+          "sira": "அடுத்தூன்றும்",
+          "adi": 1,
+          "pos": 4,
+          "togai": null,
+          "components": [
+            {"sol": "அடுத்து", "split": "அடு+த்து", "category": "வினை", "ilakkanam": "வினையெச்சம்", "features": {}, "vetrumai": null, "todar": null, "gloss": "drawing near, coming alongside", "confidence": 0.6},
+            {"sol": "ஊன்றும்", "split": "ஊன்று+உம்", "category": "வினை", "ilakkanam": "பெயரெச்சம்", "features": {"kaalam": "எதிர்காலம்"}, "vetrumai": null, "todar": null, "gloss": "that props up/supports (ஊன்றும் நல்லாள்)", "confidence": 0.62}
+          ]
+        },
+        {
+          "sira": "நல்லாள்",
+          "adi": 2,
+          "pos": 1,
+          "togai": "பண்புத்தொகை",
+          "components": [
+            {"sol": "நல்", "split": "நல்", "category": "உரி", "ilakkanam": "உரிச்சொல்", "features": {}, "vetrumai": null, "todar": null, "gloss": "good", "confidence": 0.6},
+            {"sol": "ஆள்", "split": "ஆள்", "category": "பெயர்", "ilakkanam": "பொருட்பெயர்", "features": {"thinai": "உயர்திணை", "eN": "ஒருமை"}, "vetrumai": null, "todar": null, "gloss": "person, capable one", "confidence": 0.68}
+          ]
+        },
+        {
+          "sira": "இலாத",
+          "adi": 2,
+          "pos": 2,
+          "togai": null,
+          "components": [
+            {"sol": "இலாத", "split": "இல்+ஆத", "category": "வினை", "ilakkanam": "எதிர்மறைபெயரெச்சம்", "features": {}, "vetrumai": null, "todar": null, "gloss": "which does not have", "confidence": 0.8}
+          ]
+        },
+        {
+          "sira": "குடி",
+          "adi": 2,
+          "pos": 3,
+          "togai": null,
+          "components": [
+            {"sol": "குடி", "split": "குடி", "category": "பெயர்", "ilakkanam": "பொருட்பெயர்", "features": {"thinai": "அஃறிணை", "paal": "ஒன்றன்பால்", "eN": "ஒருமை"}, "vetrumai": {"number": 1, "urupu": "—", "name": "எழுவாய்"}, "todar": null, "gloss": "the family/house", "confidence": 0.8}
+          ]
+        }
+      ],
+      "reviewFlags": [
+        "இடுக்கண்கால் — 'இடுக்கண்'(துன்பம், எழுவாய்) + 'கால்'(அடி/பகுதி, செயப்படுபொருள்); உருவகப் பொருளில் 'கால்' மரத்தின் அடி. பகுப்பு/வேற்றுமை சிறிது ஐயம்.",
+        "அடுத்தூன்றும் — 'அடுத்து'(நெருங்கி, வினையெச்சம்) + 'ஊன்றும்'(தாங்கும், பெயரெச்சம்), 'நல்லாள்' ஐ விளக்கும் அடை.",
+        "நல்லாள் — 'நல்'(உரி) + 'ஆள்' பண்புத்தொகை; ஆள் உயர்திணை ஒருமை (பால் பொதுமை).",
+        "கொன்றிட — 'கொன்று இட' (வெட்டிவிட) துணைவினையுடன் கூடிய வினையெச்சம்."
+      ]
+    }
+  ]
+}

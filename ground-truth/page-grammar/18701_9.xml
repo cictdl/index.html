@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='utf-8'?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+  <Metadata>
+    <Creator>Central Institute of Classical Tamil (CICT)</Creator>
+    <Created>2026-04-29T00:00:00</Created>
+    <LastChange>2026-04-29T00:00:00</LastChange>
+    <Comments>CICT-PLM-GT-007 | Tirukkural Adhikaram 7 (புதல்வரைப் பெறுதல் / The Begetting of Sons) | kurals 61-70 | section அறம் / subsection  | DOI 10.5281/zenodo.19874619 | record https://zenodo.org/records/19874619 | manuscriptId 18701_9 | NOTE: line Coords are band-derived full-width bounding boxes (approximate); transcription text is exact ground truth.</Comments>
+  </Metadata>
+  <Page imageFilename="18701_9.jpg" imageWidth="2956" imageHeight="506">
+    <ReadingOrder>
+      <OrderedGroup id="g0">
+        <RegionRefIndexed index="0" regionRef="r_main" />
+        <RegionRefIndexed index="1" regionRef="r_margin" />
+      </OrderedGroup>
+    </ReadingOrder>
+    <TextRegion id="r_main" type="paragraph" custom="readingOrder {index:0;}">
+      <Coords points="0,85 2956,85 2956,480 0,480" />
+      <TextLine id="r_main_l1" custom="readingOrder {index:0;} ilakkanam {kural:61;verification:verified;words:பெறும்=பெயரெச்சம்|அவற்றுள்=சுட்டுப்பெயர்|யாம்=சுட்டுப்பெயர்|அறிவது=வினையாலணையும்பெயர்|இல்லை=குறிப்புவினைமுற்று|அறிவு=பொருட்பெயர்|அறிந்த=பெயரெச்சம்|மக்கள்=பொருட்பெயர்|பேறு=தொழிற்பெயர்|அல்ல=குறிப்புவினைமுற்று|பிற=பொருட்பெயர்;togai:மக்கட்பேறு=வேற்றுமைத்தொகை;ani:சொற்பொருட்பின்வருநிலை;eetruseer:பிறப்பு;}" comments="kural=61; numeral=௧">
+        <Coords points="0,85 2956,85 2956,124 0,124" />
+        <Baseline points="0,117 2956,117" />
+        <TextEquiv>
+          <Unicode>பெறுமவற்றுள் யாமறிவதில்லை யறிவறிந்த மக்கட்பே றல்லப்பிற</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l2" custom="readingOrder {index:1;} ilakkanam {kural:62;verification:verified;words:எழு=எண்ணுப்பெயர்|பிறப்பு=தொழிற்பெயர்|உம்=உம்மை|தீயவை=வினையாலணையும்பெயர்|தீண்டா=எதிர்மறைவினையெச்சம்|பழி=பண்புப்பெயர்|பிறங்கா=எதிர்மறைபெயரெச்சம்|பண்பு=பண்புப்பெயர்|உடை=பெயரெச்சம்|மக்கள்=பொருட்பெயர்|பெறின்=வினையெச்சம்;togai:எழுபிறப்பும்=பண்புத்தொகை|பண்புடை=வேற்றுமைத்தொகை;ani:உயர்வுநவிற்சி;eetruseer:மலர்;}" comments="kural=62; numeral=௨">
+        <Coords points="0,124 2956,124 2956,164 0,164" />
+        <Baseline points="0,157 2956,157" />
+        <TextEquiv>
+          <Unicode>எழுபிறப்புந் தீயவை தீண்டாப் பழிபிறங்காப் பண்புடை மக்கட் பெறின்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l3" custom="readingOrder {index:2;} ilakkanam {kural:63;verification:verified;words:தம்=சுட்டுப்பெயர்|பொருள்=பொருட்பெயர்|என்ப=குறிப்புவினைமுற்று|தம்=சுட்டுப்பெயர்|மக்கள்=பொருட்பெயர்|அவர்=சுட்டுப்பெயர்|பொருள்=பொருட்பெயர்|தம்தம்=சுட்டுப்பெயர்|வினையான்=தொழிற்பெயர்|வரும்=தெரிநிலைவினைமுற்று;togai:தம்பொருள்=வேற்றுமைத்தொகை|அவர்பொருள்=வேற்றுமைத்தொகை;ani:மடக்கு;edugai:ம்;eetruseer:பிறப்பு;}" comments="kural=63; numeral=௩">
+        <Coords points="0,164 2956,164 2956,204 0,204" />
+        <Baseline points="0,196 2956,196" />
+        <TextEquiv>
+          <Unicode>தம்பொரு ளென்பாதம் மக்க ளவர்பொருட் டந்தம் விநையான் வரும்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l4" custom="readingOrder {index:3;} ilakkanam {kural:64;verification:verified;words:அமிழ்தினும்=பொருட்பெயர்|ஆற்ற=உரிச்சொல்|இனிது=பண்புப்பெயர்|ஏ=ஏகாரம்|தம்=சுட்டுப்பெயர்|மக்கள்=பொருட்பெயர்|சிறு=பண்புப்பெயர்|கை=சினைப்பெயர்|அளாவிய=பெயரெச்சம்|கூழ்=பொருட்பெயர்;togai:சிறுகை=பண்புத்தொகை;ani:உவமை;eetruseer:நாள்;}" comments="kural=64; numeral=௪">
+        <Coords points="0,204 2956,204 2956,243 0,243" />
+        <Baseline points="0,236 2956,236" />
+        <TextEquiv>
+          <Unicode>அமிழ்திநு மாற்ற விநிதேதம் மக்கள் சிறுகை யழாவியகூழ்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l5" custom="readingOrder {index:4;} ilakkanam {kural:65;verification:verified;words:மக்கள்=பொருட்பெயர்|மெய்=சினைப்பெயர்|தீண்டல்=தொழிற்பெயர்|உடற்கு=சினைப்பெயர்|இன்பம்=பண்புப்பெயர்|மற்று=அசைநிலை|அவர்=சுட்டுப்பெயர்|சொல்=பொருட்பெயர்|கேட்டல்=தொழிற்பெயர்|இன்பம்=பண்புப்பெயர்|செவிக்கு=சினைப்பெயர்;togai:மக்கள்மெய்=வேற்றுமைத்தொகை|சொற்கேட்டல்=வேற்றுமைத்தொகை;ani:சொற்பொருட்பின்வருநிலை;eetruseer:காசு;}" comments="kural=65; numeral=௫">
+        <Coords points="0,243 2956,243 2956,283 0,283" />
+        <Baseline points="0,275 2956,275" />
+        <TextEquiv>
+          <Unicode>மக்கண் மெய் தீண்ட லுடற்கின்ப மற்றவர் சொற்கேட்டலின்பம் செவிக்கு</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l6" custom="readingOrder {index:5;} ilakkanam {kural:66;verification:verified;words:குழல்=பொருட்பெயர்|இனிது=குறிப்புவினைமுற்று|யாழ்=பொருட்பெயர்|இனிது=குறிப்புவினைமுற்று|என்ப=குறிப்புவினைமுற்று|தம்=சுட்டுப்பெயர்|மக்கள்=பொருட்பெயர்|மழலை=பண்புப்பெயர்|சொல்=பொருட்பெயர்|கேளா=எதிர்மறைபெயரெச்சம்|தவர்=வினையாலணையும்பெயர்;togai:மழலைச்சொல்=பண்புத்தொகை;ani:வஞ்சப்புகழ்ச்சி,சொற்பொருட்பின்வருநிலை;edugai:ழ;eetruseer:மலர்;}" comments="kural=66; numeral=௬">
+        <Coords points="0,283 2956,283 2956,322 0,322" />
+        <Baseline points="0,315 2956,315" />
+        <TextEquiv>
+          <Unicode>குழலிநிது யாழினி தென்பா்தம் மக்கண் மழலைச்சொற் கேளா தவர்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l7" custom="readingOrder {index:6;} ilakkanam {kural:67;verification:verified;words:தந்தை=பொருட்பெயர்|மகற்கு=பொருட்பெயர்|ஆற்றும்=பெயரெச்சம்|நன்றி=பண்புப்பெயர்|அவையத்து=இடப்பெயர்|முந்தி=வினையெச்சம்|இருப்ப=வினையெச்சம்|செயல்=வியங்கோள்வினைமுற்று;ani:இயைபு/ஒலிநயம்;edugai:ந்;eetruseer:மலர்;}" comments="kural=67; numeral=௭">
+        <Coords points="0,322 2956,322 2956,362 0,362" />
+        <Baseline points="0,354 2956,354" />
+        <TextEquiv>
+          <Unicode>தந்தை மகற்காற்று முதவி யவையத்து முந்தி யிருப்பச் செயன்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l8" custom="readingOrder {index:7;} ilakkanam {kural:68;verification:verified;words:தம்மின்=சுட்டுப்பெயர்|தம்=சுட்டுப்பெயர்|மக்கள்=பொருட்பெயர்|அறிவு=பண்புப்பெயர்|உடைமை=தொழிற்பெயர்|மா=பண்புப்பெயர்|நிலத்து=இடப்பெயர்|மன்னு=பெயரெச்சம்|உயிர்க்கு=பொருட்பெயர்|எல்லாம்=பொருட்பெயர்|இனிது=குறிப்புவினைமுற்று;togai:அறிவுடைமை=வேற்றுமைத்தொகை|மாநிலத்து=பண்புத்தொகை|மன்னுயிர்க்=பண்புத்தொகை;ani:உயர்வுநவிற்சி;eetruseer:நாள்;}" comments="kural=68; numeral=௮">
+        <Coords points="0,362 2956,362 2956,401 0,401" />
+        <Baseline points="0,394 2956,394" />
+        <TextEquiv>
+          <Unicode>தம்மிற் தம்மக்க ளறிவுடைமை மாநிலத்து மந்நுயிர்க் கெல்லா மிநிது</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l9" custom="readingOrder {index:8;} ilakkanam {kural:69;verification:verified;words:ஈன்ற=பெயரெச்சம்|பொழுதின்=காலப்பெயர்|பெரிது=பண்புப்பெயர்|உவக்கும்=தெரிநிலைவினைமுற்று|தன்=சுட்டுப்பெயர்|மகனை=பொருட்பெயர்|சான்றோன்=வினையாலணையும்பெயர்|என=வினையெச்சம்|கேட்ட=பெயரெச்சம்|தாய்=பொருட்பெயர்;ani:உயர்வுநவிற்சி;edugai:ன்;eetruseer:காசு;}" comments="kural=69; numeral=௯">
+        <Coords points="0,401 2956,401 2956,441 0,441" />
+        <Baseline points="0,434 2956,434" />
+        <TextEquiv>
+          <Unicode>ஈன்ற பொழுதிற் பெரிதுவக்குந் தன்மகநைச் சான்றோ நெனக் கேட்டதாய்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l10" custom="readingOrder {index:9;} ilakkanam {kural:70;verification:verified;words:மகன்=பொருட்பெயர்|தந்தைக்கு=பொருட்பெயர்|ஆற்றும்=பெயரெச்சம்|உதவி=தொழிற்பெயர்|இவன்=சுட்டுப்பெயர்|தந்தை=பொருட்பெயர்|என்=வினாப்பெயர்|நோற்றான்=தெரிநிலைவினைமுற்று|கொல்=அசைநிலை|எனும்=பெயரெச்சம்|சொல்=பொருட்பெயர்;ani:பிறிதுமொழிதல்;eetruseer:மலர்;}" comments="kural=70; numeral=௰">
+        <Coords points="0,441 2956,441 2956,480 0,480" />
+        <Baseline points="0,473 2956,473" />
+        <TextEquiv>
+          <Unicode>மகன்றந்தைக் காற்று முதவி யிவன்றந்தை யெந்நோற்றான் கொலெந்நுஞ்சொல்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextEquiv>
+        <Unicode>பெறுமவற்றுள் யாமறிவதில்லை யறிவறிந்த மக்கட்பே றல்லப்பிற
+எழுபிறப்புந் தீயவை தீண்டாப் பழிபிறங்காப் பண்புடை மக்கட் பெறின்
+தம்பொரு ளென்பாதம் மக்க ளவர்பொருட் டந்தம் விநையான் வரும்
+அமிழ்திநு மாற்ற விநிதேதம் மக்கள் சிறுகை யழாவியகூழ்
+மக்கண் மெய் தீண்ட லுடற்கின்ப மற்றவர் சொற்கேட்டலின்பம் செவிக்கு
+குழலிநிது யாழினி தென்பா்தம் மக்கண் மழலைச்சொற் கேளா தவர்
+தந்தை மகற்காற்று முதவி யவையத்து முந்தி யிருப்பச் செயன்
+தம்மிற் தம்மக்க ளறிவுடைமை மாநிலத்து மந்நுயிர்க் கெல்லா மிநிது
+ஈன்ற பொழுதிற் பெரிதுவக்குந் தன்மகநைச் சான்றோ நெனக் கேட்டதாய்
+மகன்றந்தைக் காற்று முதவி யிவன்றந்தை யெந்நோற்றான் கொலெந்நுஞ்சொல்</Unicode>
+      </TextEquiv>
+    </TextRegion>
+    <TextRegion id="r_margin" type="marginalia" custom="readingOrder {index:1;}">
+      <Coords points="0,85 414,85 414,480 0,480" />
+      <TextLine id="r_margin_l3" custom="readingOrder {index:2;}" comments="marginal cell @ L3">
+        <Coords points="0,164 414,164 414,204 0,204" />
+        <Baseline points="0,196 414,196" />
+        <TextEquiv>
+          <Unicode>புதல்வ</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_margin_l4" custom="readingOrder {index:3;}" comments="marginal cell @ L4">
+        <Coords points="0,204 414,204 414,243 0,243" />
+        <Baseline points="0,236 414,236" />
+        <TextEquiv>
+          <Unicode>ரைப்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_margin_l5" custom="readingOrder {index:4;}" comments="marginal cell @ L5">
+        <Coords points="0,243 414,243 414,283 0,283" />
+        <Baseline points="0,275 414,275" />
+        <TextEquiv>
+          <Unicode>பெறுதல்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_margin_l9" custom="readingOrder {index:8;}" comments="marginal cell @ L9">
+        <Coords points="0,401 414,401 414,441 0,441" />
+        <Baseline points="0,434 414,434" />
+        <TextEquiv>
+          <Unicode>௨௰௪</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextEquiv>
+        <Unicode>புதல்வ
+ரைப்
+பெறுதல்
+௨௰௪</Unicode>
+      </TextEquiv>
+    </TextRegion>
+  </Page>
+</PcGts>

@@ -1,0 +1,722 @@
+{
+  "adhigaram": 111,
+  "name": "புணர்ச்சி மகிழ்தல்",
+  "pal": "காமத்துப்பால்",
+  "iyal": "களவியல்",
+  "schemaVersion": "1.0",
+  "method": "AI-draft-senior-reviewed",
+  "kurals": [
+    {
+      "number": 1101,
+      "line1": "கண்டுகேட்டு உண்டுயிர்த்து உற்றறியும் ஐம்புலனும்",
+      "line2": "ஒண்தொடி கண்ணே உள.",
+      "yappu": {
+        "paa": "குறள் வெண்பா",
+        "sirCount": [4, 3],
+        "monai": [
+          {"adi": 1, "sirs": ["கண்டுகேட்டு", "உண்டுயிர்த்து", "உற்றறியும்", "ஐம்புலனும்"], "key": "க/உ/உ/ஐ", "present": true, "note": "உண்டுயிர்த்து / உற்றறியும் — இரு சீரும் 'உ' முதலெழுத்து ஒப்பு"},
+          {"adi": 2, "sirs": ["ஒண்தொடி", "கண்ணே", "உள"], "key": "ஒ/க/உ", "present": false}
+        ],
+        "edugai": {"present": true, "letter": "ண்", "note": "கண்டு / ஒண்தொடி — அடி முதல் சீர் இரண்டாம் எழுத்து 'ண்' ஒப்பு"},
+        "thalai": "வெண்டளை",
+        "eetruseer": "உள (காசு வாய்பாடு)"
+      },
+      "ani": [
+        {"name": "சொற்பொருட்பின்வருநிலை", "note": "கண்டு, கேட்டு, உண்டு, உயிர்த்து, உற்று — ஐம்பொறி வினைகள் அடுக்காய் வருதல்"}
+      ],
+      "sirs": [
+        {
+          "sira": "கண்டுகேட்டு", "adi": 1, "pos": 1, "togai": null,
+          "components": [
+            {"sol": "கண்டு", "split": "காண்+டு", "category": "வினை", "ilakkanam": "வினையெச்சம்", "features": {"kaalam": "இறந்தகாலம்"}, "vetrumai": null, "todar": null, "gloss": "having seen", "confidence": 0.92},
+            {"sol": "கேட்டு", "split": "கேள்+டு", "category": "வினை", "ilakkanam": "வினையெச்சம்", "features": {"kaalam": "இறந்தகாலம்"}, "vetrumai": null, "todar": null, "gloss": "having heard", "confidence": 0.92}
+          ]
+        },
+        {
+          "sira": "உண்டுயிர்த்து", "adi": 1, "pos": 2, "togai": null,
+          "components": [
+            {"sol": "உண்டு", "split": "உண்+டு", "category": "வினை", "ilakkanam": "வினையெச்சம்", "features": {"kaalam": "இறந்தகாலம்"}, "vetrumai": null, "todar": null, "gloss": "having tasted/eaten", "confidence": 0.92},
+            {"sol": "உயிர்த்து", "split": "உயிர்+த்து", "category": "வினை", "ilakkanam": "வினையெச்சம்", "features": {"kaalam": "இறந்தகாலம்"}, "vetrumai": null, "todar": null, "gloss": "having smelt/breathed", "confidence": 0.88}
+          ]
+        },
+        {
+          "sira": "உற்றறியும்", "adi": 1, "pos": 3, "togai": null,
+          "components": [
+            {"sol": "உற்று", "split": "உறு+று", "category": "வினை", "ilakkanam": "வினையெச்சம்", "features": {"kaalam": "இறந்தகாலம்"}, "vetrumai": null, "todar": null, "gloss": "having touched/felt", "confidence": 0.85},
+            {"sol": "அறியும்", "split": "அறி+உம்", "category": "வினை", "ilakkanam": "பெயரெச்சம்", "features": {"kaalam": "நிகழ்காலம்"}, "vetrumai": null, "todar": null, "gloss": "that knows/perceives (qualifies ஐம்புலன்)", "confidence": 0.78}
+          ]
+        },
+        {
+          "sira": "ஐம்புலனும்", "adi": 1, "pos": 4, "togai": "பண்புத்தொகை",
+          "components": [
+            {"sol": "ஐம்புலன்", "split": "ஐம்+புலன்", "category": "பெயர்", "ilakkanam": "பொருட்பெயர்", "features": {"paal": "பலவின்பால்", "eN": "பன்மை"}, "vetrumai": null, "todar": null, "gloss": "the five senses/sensations", "confidence": 0.85},
+            {"sol": "உம்", "split": "உம்", "category": "இடை", "ilakkanam": "உம்மை", "features": {}, "vetrumai": null, "todar": null, "gloss": "all (inclusive)", "confidence": 0.88}
+          ]
+        },
+        {
+          "sira": "ஒண்தொடி", "adi": 2, "pos": 1, "togai": "அன்மொழித்தொகை",
+          "components": [
+            {"sol": "ஒண்தொடி", "split": "ஒள்+தொடி", "category": "பெயர்", "ilakkanam": "பொருட்பெயர்", "features": {"paal": "பெண்பால்", "eN": "ஒருமை", "thinai": "உயர்திணை"}, "vetrumai": null, "todar": {"type": "அடைமொழி", "note": "ஒண் = ஒளிபொருந்திய, தொடியை விளக்கும் அடை"}, "gloss": "the bright-bangled woman (=she)", "confidence": 0.78}
+          ]
+        },
+        {
+          "sira": "கண்ணே", "adi": 2, "pos": 2, "togai": null,
+          "components": [
+            {"sol": "கண்", "split": "கண்", "category": "இடை", "ilakkanam": "வேற்றுமைஉருபு", "features": {}, "vetrumai": {"number": 7, "urupu": "கண்", "name": "இடம்"}, "gloss": "in/at (locative)", "confidence": 0.85},
+            {"sol": "ஏ", "split": "ஏ", "category": "இடை", "ilakkanam": "ஏகாரம்", "features": {}, "vetrumai": null, "todar": null, "gloss": "only (emphatic/restrictive)", "confidence": 0.85}
+          ]
+        },
+        {
+          "sira": "உள", "adi": 2, "pos": 3, "togai": null,
+          "components": [
+            {"sol": "உள", "split": "உள்+அ", "category": "வினை", "ilakkanam": "குறிப்புவினைமுற்று", "features": {"paal": "பலவின்பால்", "eN": "பன்மை", "idam": "படர்க்கை"}, "vetrumai": null, "todar": null, "gloss": "they exist/are present", "confidence": 0.82}
+          ]
+        }
+      ],
+      "reviewFlags": [
+        "அறியும்: 'உற்று அறியும் ஐம்புலன்' — பெயரெச்சமாக ஐம்புலனை அடைதல்; தெரிநிலைவினைமுற்று/பெயரெச்சம் அமைப்பு ஐயம்",
+        "ஒண்தொடி: அன்மொழித்தொகை (ஒள்+தொடி, அவளைக் குறித்தல்); தலைச்சொல் தொடி=பொருட்பெயர் என வைக்கப்பட்டது — வினையாலணையும்பெயர் அன்று"
+      ]
+    },
+    {
+      "number": 1102,
+      "line1": "பிணிக்கு மருந்து பிறமன் அணியிழை",
+      "line2": "தன்நோய்க்குத் தானே மருந்து.",
+      "yappu": {
+        "paa": "குறள் வெண்பா",
+        "sirCount": [4, 3],
+        "monai": [
+          {"adi": 1, "sirs": ["பிணிக்கு", "மருந்து", "பிறமன்", "அணியிழை"], "key": "ப/ம/ப/அ", "present": true, "note": "பிணி/பிற 'ப' ஒப்பு; ம இனமோனை (ப/ம)"},
+          {"adi": 2, "sirs": ["தன்நோய்க்குத்", "தானே", "மருந்து"], "key": "த/த/ம", "present": true, "note": "தன்/தான் 'த' ஒப்பு"}
+        ],
+        "edugai": {"present": true, "letter": "ண்/ன்", "note": "தன்நோய் / தானே — அடிமுதல் சீர் 'த' முதல்; முதலடி பிணி/பிற இடைமோனை"},
+        "thalai": "வெண்டளை",
+        "eetruseer": "மருந்து (பிறப்பு வாய்பாடு)"
+      },
+      "ani": [
+        {"name": "முரண்", "note": "பிறமன் (வேறு மருந்து) எனும் பொதுநிலைக்கு மாறாக தானே மருந்து எனும் சிறப்பு — பொதுவும் சிறப்பும் முரண்படுத்தல்"},
+        {"name": "உருவகம்", "note": "காதல்நோய்க்கு அவளே மருந்து என உருவகித்தல்"}
+      ],
+      "sirs": [
+        {
+          "sira": "பிணிக்கு", "adi": 1, "pos": 1, "togai": null,
+          "components": [
+            {"sol": "பிணி", "split": "பிணி", "category": "பெயர்", "ilakkanam": "பண்புப்பெயர்", "features": {}, "vetrumai": {"number": 4, "urupu": "கு", "name": "கொடை/நோக்கம்"}, "gloss": "for ailment/disease", "confidence": 0.85}
+          ]
+        },
+        {
+          "sira": "மருந்து", "adi": 1, "pos": 2, "togai": null,
+          "components": [
+            {"sol": "மருந்து", "split": "மருந்து", "category": "பெயர்", "ilakkanam": "பொருட்பெயர்", "features": {"paal": "ஒன்றன்பால்", "eN": "ஒருமை"}, "vetrumai": null, "todar": null, "gloss": "medicine/cure", "confidence": 0.9}
+          ]
+        },
+        {
+          "sira": "பிறமன்", "adi": 1, "pos": 3, "togai": null,
+          "components": [
+            {"sol": "பிற", "split": "பிற", "category": "பெயர்", "ilakkanam": "பொருட்பெயர்", "features": {}, "vetrumai": null, "todar": null, "gloss": "other (things)", "confidence": 0.75},
+            {"sol": "மன்", "split": "மன்", "category": "இடை", "ilakkanam": "அசைநிலை", "features": {}, "vetrumai": null, "todar": null, "gloss": "(asai / particle; here oziyisai 'but / other')", "confidence": 0.75}
+          ]
+        },
+        {
+          "sira": "அணியிழை", "adi": 1, "pos": 4, "togai": "அன்மொழித்தொகை",
+          "components": [
+            {"sol": "அணியிழை", "split": "அணி+இழை", "category": "பெயர்", "ilakkanam": "பொருட்பெயர்", "features": {"paal": "பெண்பால்", "eN": "ஒருமை", "thinai": "உயர்திணை"}, "vetrumai": null, "todar": {"type": "அடைமொழி", "note": "அணி = அழகிய/அணிகலன், இழையை விளக்கும் அடை"}, "gloss": "the jewel-adorned woman (=she)", "confidence": 0.78}
+          ]
+        },
+        {
+          "sira": "தன்நோய்க்குத்", "adi": 2, "pos": 1, "togai": null,
+          "components": [
+            {"sol": "தன்", "split": "தன்", "category": "பெயர்", "ilakkanam": "சுட்டுப்பெயர்", "features": {"paal": "பெண்பால்", "eN": "ஒருமை", "thinai": "உயர்திணை"}, "vetrumai": {"number": 6, "urupu": "அது", "name": "உடைமை"}, "gloss": "her own", "confidence": 0.75},
+            {"sol": "நோய்", "split": "நோய்", "category": "பெயர்", "ilakkanam": "பண்புப்பெயர்", "features": {}, "vetrumai": {"number": 4, "urupu": "கு", "name": "கொடை/நோக்கம்"}, "gloss": "for the ailment (she caused)", "confidence": 0.8}
+          ]
+        },
+        {
+          "sira": "தானே", "adi": 2, "pos": 2, "togai": null,
+          "components": [
+            {"sol": "தான்", "split": "தான்", "category": "பெயர்", "ilakkanam": "சுட்டுப்பெயர்", "features": {"paal": "பெண்பால்", "eN": "ஒருமை", "thinai": "உயர்திணை"}, "vetrumai": null, "todar": null, "gloss": "she herself", "confidence": 0.8},
+            {"sol": "ஏ", "split": "ஏ", "category": "இடை", "ilakkanam": "ஏகாரம்", "features": {}, "vetrumai": null, "todar": null, "gloss": "alone/only (emphatic)", "confidence": 0.85}
+          ]
+        },
+        {
+          "sira": "மருந்து", "adi": 2, "pos": 3, "togai": null,
+          "components": [
+            {"sol": "மருந்து", "split": "மருந்து", "category": "பெயர்", "ilakkanam": "பொருட்பெயர்", "features": {"paal": "ஒன்றன்பால்", "eN": "ஒருமை"}, "vetrumai": null, "todar": null, "gloss": "medicine/cure", "confidence": 0.9}
+          ]
+        }
+      ],
+      "reviewFlags": [
+        "மன் (பிறமன்): அசைநிலை vs ஒழியிசை/பிரிநிலை மன் — பொருள் 'பிற மருந்து வேறே உள' எனும் ஒழியிசையால் அசைநிலையாகக் கொள்ளப்பட்டது",
+        "தன்நோய்: தன் = ஆறாம் வேற்றுமை உடைமை; நோய்க்கு = நான்காம் வேற்றுமை — கூட்டுச்சீர் பகுப்பில் ஐயம்",
+        "பிணி/நோய்: பண்புப்பெயர் vs பொருட்பெயர் வகைப்பாட்டில் ஐயம்"
+      ]
+    },
+    {
+      "number": 1103,
+      "line1": "தாம்வீழ்வார் மென்றோள் துயிலின் இனிதுகொல்",
+      "line2": "தாமரைக் கண்ணான் உலகு.",
+      "yappu": {
+        "paa": "குறள் வெண்பா",
+        "sirCount": [4, 3],
+        "monai": [
+          {"adi": 1, "sirs": ["தாம்வீழ்வார்", "மென்றோள்", "துயிலின்", "இனிதுகொல்"], "key": "த/ம/த/இ", "present": true, "note": "தாம்/துயில் 'த' ஒப்பு"},
+          {"adi": 2, "sirs": ["தாமரைக்", "கண்ணான்", "உலகு"], "key": "த/க/உ", "present": false}
+        ],
+        "edugai": {"present": true, "letter": "ா", "note": "தாம் / தாமரை — அடி முதல் சீர் இரண்டாம் எழுத்து (நெடில் ஆ) ஒப்பு"},
+        "thalai": "வெண்டளை",
+        "eetruseer": "உலகு (காசு வாய்பாடு)"
+      },
+      "ani": [
+        {"name": "உயர்வுநவிற்சி", "note": "காதலியின் தோள்துயில் திருமாலின் உலகினும் இனிதோ என உயர்த்திக் கூறல்"},
+        {"name": "வஞ்சப்புகழ்ச்சி", "note": "வைகுந்த இன்பத்தைக் கேள்வியால் சிறிது தாழ்த்தி காதலின்பத்தை உயர்த்துதல்"}
+      ],
+      "sirs": [
+        {
+          "sira": "தாம்வீழ்வார்", "adi": 1, "pos": 1, "togai": null,
+          "components": [
+            {"sol": "தாம்", "split": "தாம்", "category": "பெயர்", "ilakkanam": "சுட்டுப்பெயர்", "features": {"paal": "பலர்பால்", "eN": "பன்மை", "idam": "படர்க்கை"}, "vetrumai": null, "todar": null, "gloss": "they (themselves)", "confidence": 0.75},
+            {"sol": "வீழ்வார்", "split": "வீழ்+வ்+ஆர்", "category": "பெயர்", "ilakkanam": "வினையாலணையும்பெயர்", "features": {"kaalam": "எதிர்காலம்", "paal": "பலர்பால்", "eN": "பன்மை", "thinai": "உயர்திணை"}, "vetrumai": null, "todar": null, "gloss": "those whom (they) love", "confidence": 0.8}
+          ]
+        },
+        {
+          "sira": "மென்றோள்", "adi": 1, "pos": 2, "togai": "பண்புத்தொகை",
+          "components": [
+            {"sol": "மென்தோள்", "split": "மெல்+தோள்", "category": "பெயர்", "ilakkanam": "சினைப்பெயர்", "features": {"paal": "பலவின்பால்", "eN": "பன்மை"}, "vetrumai": null, "todar": {"type": "அடைமொழி", "note": "மென் = மெல்லிய, தோளை விளக்கும் பண்படை"}, "gloss": "soft shoulders/arms", "confidence": 0.85}
+          ]
+        },
+        {
+          "sira": "துயிலின்", "adi": 1, "pos": 3, "togai": null,
+          "components": [
+            {"sol": "துயில்", "split": "துயில்", "category": "பெயர்", "ilakkanam": "தொழிற்பெயர்", "features": {}, "vetrumai": {"number": 5, "urupu": "இன்", "name": "நீங்கல்/ஒப்பு"}, "gloss": "than (the) sleep", "confidence": 0.8}
+          ]
+        },
+        {
+          "sira": "இனிதுகொல்", "adi": 1, "pos": 4, "togai": null,
+          "components": [
+            {"sol": "இனிது", "split": "இனிமை+து", "category": "பெயர்", "ilakkanam": "பண்புப்பெயர்", "features": {"paal": "ஒன்றன்பால்", "eN": "ஒருமை"}, "vetrumai": null, "todar": null, "gloss": "sweet/pleasant (thing)", "confidence": 0.8},
+            {"sol": "கொல்", "split": "கொல்", "category": "இடை", "ilakkanam": "வினாஇடை", "features": {}, "vetrumai": null, "todar": null, "gloss": "(doubt/interrogative particle)", "confidence": 0.85}
+          ]
+        },
+        {
+          "sira": "தாமரைக்", "adi": 2, "pos": 1, "togai": "உவமைத்தொகை",
+          "components": [
+            {"sol": "தாமரை", "split": "தாமரை", "category": "பெயர்", "ilakkanam": "பொருட்பெயர்", "features": {}, "vetrumai": null, "todar": {"type": "அடைமொழி", "note": "கண்ணை விளக்கும் உவமவடை (தாமரை போன்ற கண்)"}, "gloss": "lotus (likened to eye)", "confidence": 0.8}
+          ]
+        },
+        {
+          "sira": "கண்ணான்", "adi": 2, "pos": 2, "togai": null,
+          "components": [
+            {"sol": "கண்ணான்", "split": "கண்+ஆன்", "category": "பெயர்", "ilakkanam": "வினையாலணையும்பெயர்", "features": {"paal": "ஆண்பால்", "eN": "ஒருமை", "thinai": "உயர்திணை"}, "vetrumai": null, "todar": null, "gloss": "the lotus-eyed one (Vishnu)", "confidence": 0.8}
+          ]
+        },
+        {
+          "sira": "உலகு", "adi": 2, "pos": 3, "togai": null,
+          "components": [
+            {"sol": "உலகு", "split": "உலகு", "category": "பெயர்", "ilakkanam": "இடப்பெயர்", "features": {"paal": "ஒன்றன்பால்", "eN": "ஒருமை"}, "vetrumai": null, "todar": null, "gloss": "world/heaven", "confidence": 0.9}
+          ]
+        }
+      ],
+      "reviewFlags": [
+        "வீழ்வார்: 'தாம் வீழ்வார்' = தாம் விரும்புவோர் — வினையாலணையும்பெயர் (செயப்படுபொருளாய் நிற்றல்) — அமைப்பு ஐயம்",
+        "கொல்: இங்கு ஐயப்பொருள் வினா — வினாஇடையாகக் கொள்ளப்பட்டது (இனிதுகொல் = இனிதோ?)",
+        "கண்ணான்: அன்மொழித்தொகையாய்த் திருமாலைக் குறித்தல்; உரிமைப்பொருள் 'கண்ணை உடையான்'"
+      ]
+    },
+    {
+      "number": 1104,
+      "line1": "நீங்கின் தெறூஉம் குறுகுங்கால் தண்ணென்னும்",
+      "line2": "தீயாண்டுப் பெற்றாள் இவள்?",
+      "yappu": {
+        "paa": "குறள் வெண்பா",
+        "sirCount": [4, 3],
+        "monai": [
+          {"adi": 1, "sirs": ["நீங்கின்", "தெறூஉம்", "குறுகுங்கால்", "தண்ணென்னும்"], "key": "ந/த/க/த", "present": true, "note": "தெறூஉம்/தண் 'த' ஒப்பு; ந இனமோனை (த/ந)"},
+          {"adi": 2, "sirs": ["தீயாண்டுப்", "பெற்றாள்", "இவள்"], "key": "த/ப/இ", "present": false}
+        ],
+        "edugai": {"present": true, "letter": "ண்", "note": "முதலடி தண்/ஈற்றடி... அடிமுதல் சீர் இரண்டாம் எழுத்து ஒப்பு குறைபாடு; தண்/பெற்று இடைமோனை"},
+        "thalai": "வெண்டளை",
+        "eetruseer": "இவள் (மலர் வாய்பாடு)"
+      },
+      "ani": [
+        {"name": "முரண்", "note": "நீங்கின் தெறூஉம் (சுடும்) — குறுகுங்கால் தண்ணென்னும் (குளிரும்): எதிரெதிர் இயல்பு முரண்"},
+        {"name": "உருவகம்", "note": "காதல்/காதலியை 'புதுமைத் தீ' என உருவகித்தல்"}
+      ],
+      "sirs": [
+        {
+          "sira": "நீங்கின்", "adi": 1, "pos": 1, "togai": null,
+          "components": [
+            {"sol": "நீங்கின்", "split": "நீங்கு+இன்", "category": "வினை", "ilakkanam": "வினையெச்சம்", "features": {"kaalam": "நிகழ்காலம்"}, "vetrumai": null, "todar": null, "gloss": "if (one) moves away", "confidence": 0.8}
+          ]
+        },
+        {
+          "sira": "தெறூஉம்", "adi": 1, "pos": 2, "togai": null,
+          "components": [
+            {"sol": "தெறூஉம்", "split": "தெறு+உம்", "category": "வினை", "ilakkanam": "தெரிநிலைவினைமுற்று", "features": {"kaalam": "நிகழ்காலம்", "paal": "ஒன்றன்பால்", "eN": "ஒருமை", "idam": "படர்க்கை"}, "vetrumai": null, "todar": null, "gloss": "(it) burns/scorches", "confidence": 0.8}
+          ]
+        },
+        {
+          "sira": "குறுகுங்கால்", "adi": 1, "pos": 3, "togai": null,
+          "components": [
+            {"sol": "குறுகும்", "split": "குறுகு+உம்", "category": "வினை", "ilakkanam": "பெயரெச்சம்", "features": {"kaalam": "நிகழ்காலம்"}, "vetrumai": null, "todar": null, "gloss": "(when one) draws near", "confidence": 0.78},
+            {"sol": "கால்", "split": "கால்", "category": "பெயர்", "ilakkanam": "காலப்பெயர்", "features": {}, "vetrumai": {"number": 7, "urupu": "கால்", "name": "இடம்"}, "gloss": "at the time / when", "confidence": 0.78}
+          ]
+        },
+        {
+          "sira": "தண்ணென்னும்", "adi": 1, "pos": 4, "togai": null,
+          "components": [
+            {"sol": "தண்ணென்னும்", "split": "தண்+என்+உம்", "category": "வினை", "ilakkanam": "தெரிநிலைவினைமுற்று", "features": {"kaalam": "நிகழ்காலம்", "paal": "ஒன்றன்பால்", "eN": "ஒருமை", "idam": "படர்க்கை"}, "vetrumai": null, "todar": null, "gloss": "(it) feels/says cool", "confidence": 0.72}
+          ]
+        },
+        {
+          "sira": "தீயாண்டுப்", "adi": 2, "pos": 1, "togai": null,
+          "components": [
+            {"sol": "தீ", "split": "தீ", "category": "பெயர்", "ilakkanam": "பொருட்பெயர்", "features": {"paal": "ஒன்றன்பால்", "eN": "ஒருமை"}, "vetrumai": {"number": 2, "urupu": "ஐ", "name": "செயப்படுபொருள்"}, "gloss": "fire (object of பெற்றாள்)", "confidence": 0.8},
+            {"sol": "யாண்டு", "split": "யாண்டு", "category": "பெயர்", "ilakkanam": "வினாப்பெயர்", "features": {}, "vetrumai": null, "todar": null, "gloss": "from where?", "confidence": 0.8}
+          ]
+        },
+        {
+          "sira": "பெற்றாள்", "adi": 2, "pos": 2, "togai": null,
+          "components": [
+            {"sol": "பெற்றாள்", "split": "பெறு+த்த்+ஆள்", "category": "வினை", "ilakkanam": "தெரிநிலைவினைமுற்று", "features": {"kaalam": "இறந்தகாலம்", "paal": "பெண்பால்", "eN": "ஒருமை", "idam": "படர்க்கை"}, "vetrumai": null, "todar": null, "gloss": "(she) got/obtained", "confidence": 0.9}
+          ]
+        },
+        {
+          "sira": "இவள்", "adi": 2, "pos": 3, "togai": null,
+          "components": [
+            {"sol": "இவள்", "split": "இ+வள்", "category": "பெயர்", "ilakkanam": "சுட்டுப்பெயர்", "features": {"paal": "பெண்பால்", "eN": "ஒருமை", "thinai": "உயர்திணை"}, "vetrumai": null, "todar": null, "gloss": "this woman/she", "confidence": 0.9}
+          ]
+        }
+      ],
+      "reviewFlags": [
+        "குறுகுங்கால்: 'குறுகும் + கால்' எனப் பகுக்கப்பட்டது — குறுகும் பெயரெச்சம், கால் காலப்பெயர் (ஏழன் இட உருபு); ஒற்றைச்சொல் வினையெச்சமாகவும் கொள்ளலாம்",
+        "தண்ணென்னும்: 'தண் என்னும்' அடிப்படையில் என்-வினை; குறிப்பு/தெரிநிலை ஐயம்",
+        "தீ: செயப்படுபொருள் (பெற்றாள் என்பதன் கருமம்) உருபு மறைந்து நிற்றல் — வேற்றுமை எண் உரையால் உறுதி"
+      ]
+    },
+    {
+      "number": 1105,
+      "line1": "வேட்ட பொழுதின் அவையவை போலுமே",
+      "line2": "தோட்டார் கதுப்பினாள் தோள்.",
+      "yappu": {
+        "paa": "குறள் வெண்பா",
+        "sirCount": [4, 3],
+        "monai": [
+          {"adi": 1, "sirs": ["வேட்ட", "பொழுதின்", "அவையவை", "போலுமே"], "key": "வ/ப/அ/ப", "present": true, "note": "பொழுது/போலும் 'ப' ஒப்பு"},
+          {"adi": 2, "sirs": ["தோட்டார்", "கதுப்பினாள்", "தோள்"], "key": "த/க/த", "present": true, "note": "தோட்டார்/தோள் 'த' ஒப்பு"}
+        ],
+        "edugai": {"present": true, "letter": "ோ", "note": "தோட்டார் / தோள் — அடிமுதல் சீர் 'தோ' ஒப்பு"},
+        "thalai": "வெண்டளை",
+        "eetruseer": "தோள் (மலர் வாய்பாடு)"
+      },
+      "ani": [
+        {"name": "எடுத்துக்காட்டுவமை", "note": "விரும்பிய பொருள்கள் விரும்பியவாறே இன்பம் தருதல் என்னும் எடுத்துக்காட்டால் தோளின்பத்தை விளக்கல்"},
+        {"name": "மடக்கு", "note": "அவையவை — அடுக்கி வரும் சொல்நயம்"}
+      ],
+      "sirs": [
+        {
+          "sira": "வேட்ட", "adi": 1, "pos": 1, "togai": null,
+          "components": [
+            {"sol": "வேட்ட", "split": "வேள்+ட்+அ", "category": "வினை", "ilakkanam": "பெயரெச்சம்", "features": {"kaalam": "இறந்தகாலம்"}, "vetrumai": null, "todar": null, "gloss": "desired (that one wished)", "confidence": 0.8}
+          ]
+        },
+        {
+          "sira": "பொழுதின்", "adi": 1, "pos": 2, "togai": null,
+          "components": [
+            {"sol": "பொழுதின்", "split": "பொழுது+இன்", "category": "பெயர்", "ilakkanam": "காலப்பெயர்", "features": {}, "vetrumai": {"number": 7, "urupu": "இன்", "name": "இடம்"}, "gloss": "at the time (when)", "confidence": 0.8}
+          ]
+        },
+        {
+          "sira": "அவையவை", "adi": 1, "pos": 3, "togai": null,
+          "components": [
+            {"sol": "அவையவை", "split": "அவை+அவை", "category": "பெயர்", "ilakkanam": "சுட்டுப்பெயர்", "features": {"paal": "பலவின்பால்", "eN": "பன்மை"}, "vetrumai": null, "todar": {"type": "அடுக்குத்தொடர்", "note": "அவை அவை — அடுக்கி வந்து 'அவ்வப் பொருள்' எனப் பன்மை மிகுதி உணர்த்தல்"}, "gloss": "those very (things)", "confidence": 0.8}
+          ]
+        },
+        {
+          "sira": "போலுமே", "adi": 1, "pos": 4, "togai": null,
+          "components": [
+            {"sol": "போலும்", "split": "போல்+உம்", "category": "வினை", "ilakkanam": "குறிப்புவினைமுற்று", "features": {"paal": "பலவின்பால்", "eN": "பன்மை", "idam": "படர்க்கை"}, "vetrumai": null, "todar": null, "gloss": "are like / resemble", "confidence": 0.75},
+            {"sol": "ஏ", "split": "ஏ", "category": "இடை", "ilakkanam": "ஏகாரம்", "features": {}, "vetrumai": null, "todar": null, "gloss": "(emphatic/assertive)", "confidence": 0.8}
+          ]
+        },
+        {
+          "sira": "தோட்டார்", "adi": 2, "pos": 1, "togai": null,
+          "components": [
+            {"sol": "தோடு", "split": "தோடு", "category": "பெயர்", "ilakkanam": "பொருட்பெயர்", "features": {}, "vetrumai": null, "todar": {"type": "அடைமொழி", "note": "தோடு ஆர்ந்த = மலரணிந்த, கதுப்பினை விளக்கும் அடை"}, "gloss": "flower-petal/blossom", "confidence": 0.72},
+            {"sol": "ஆர்", "split": "ஆர்+(ந்த)", "category": "வினை", "ilakkanam": "பெயரெச்சம்", "features": {"kaalam": "இறந்தகாலம்"}, "vetrumai": null, "todar": null, "gloss": "filled/decked with", "confidence": 0.7}
+          ]
+        },
+        {
+          "sira": "கதுப்பினாள்", "adi": 2, "pos": 2, "togai": "அன்மொழித்தொகை",
+          "components": [
+            {"sol": "கதுப்பினாள்", "split": "கதுப்பு+இன்+ஆள்", "category": "பெயர்", "ilakkanam": "வினையாலணையும்பெயர்", "features": {"paal": "பெண்பால்", "eN": "ஒருமை", "thinai": "உயர்திணை"}, "vetrumai": null, "todar": {"type": "அடைமொழி", "note": "தோட்டார் = மலரணிந்த, கூந்தலை விளக்கும் அடை; இன் = சாரியை"}, "gloss": "she of flower-decked tresses", "confidence": 0.8}
+          ]
+        },
+        {
+          "sira": "தோள்", "adi": 2, "pos": 3, "togai": null,
+          "components": [
+            {"sol": "தோள்", "split": "தோள்", "category": "பெயர்", "ilakkanam": "சினைப்பெயர்", "features": {"paal": "பலவின்பால்", "eN": "பன்மை"}, "vetrumai": null, "todar": null, "gloss": "shoulders/arms", "confidence": 0.9}
+          ]
+        }
+      ],
+      "reviewFlags": [
+        "வேட்ட: பெயரெச்சம் (பொழுதின் என்பதை அடைதல்) — இறந்தகால எச்சம்",
+        "போலும்: உவம/ஒப்புப்பொருள் குறிப்புவினைமுற்று; எண்/பால் முடிபு ஐயம்",
+        "தோட்டார்: 'தோடு ஆர்(ந்த)' பகுப்பு; தோட்டார் தனிச்சீராக கதுப்பினுக்கு அடையாக நிற்றல் — பகுப்பில் ஐயம்",
+        "கதுப்பினாள்: இன் சாரியை; -ஆள் விகுதியால் வினையாலணையும்பெயராய் அவளைக் குறித்தல் (அன்மொழித்தொகை)"
+      ]
+    },
+    {
+      "number": 1106,
+      "line1": "உறுதோறு உயிர்தளிர்ப்பத் தீண்டலால் பேதைக்கு",
+      "line2": "அமிழ்தின் இயன்றன தோள்.",
+      "yappu": {
+        "paa": "குறள் வெண்பா",
+        "sirCount": [4, 3],
+        "monai": [
+          {"adi": 1, "sirs": ["உறுதோறு", "உயிர்தளிர்ப்பத்", "தீண்டலால்", "பேதைக்கு"], "key": "உ/உ/த/ப", "present": true, "note": "உறு/உயிர் 'உ' ஒப்பு"},
+          {"adi": 2, "sirs": ["அமிழ்தின்", "இயன்றன", "தோள்"], "key": "அ/இ/த", "present": false}
+        ],
+        "edugai": {"present": true, "letter": "ம/ய", "note": "அமிழ்தின் / இயன்றன — அடிமுதல் சீர் இரண்டாம் எழுத்து இனமோனை (ம/ய) ஒப்பு"},
+        "thalai": "வெண்டளை",
+        "eetruseer": "தோள் (மலர் வாய்பாடு)"
+      },
+      "ani": [
+        {"name": "உருவகம்", "note": "தோள்களை 'அமிழ்தத்தால் இயன்றன' என்று உருவகித்தல் (உயிர் தளிர்ப்பதால்)"},
+        {"name": "தீவகம்", "note": "உயிர்தளிர்ப்ப — தீண்டலின் விளைவை ஒளிர்வித்துக் காட்டல்"}
+      ],
+      "sirs": [
+        {
+          "sira": "உறுதோறு", "adi": 1, "pos": 1, "togai": null,
+          "components": [
+            {"sol": "உறுதோறு", "split": "உறு+தோறு", "category": "வினை", "ilakkanam": "வினையெச்சம்", "features": {}, "vetrumai": null, "todar": null, "gloss": "each time (we) embrace", "confidence": 0.68}
+          ]
+        },
+        {
+          "sira": "உயிர்தளிர்ப்பத்", "adi": 1, "pos": 2, "togai": null,
+          "components": [
+            {"sol": "உயிர்", "split": "உயிர்", "category": "பெயர்", "ilakkanam": "பொருட்பெயர்", "features": {"paal": "ஒன்றன்பால்", "eN": "ஒருமை"}, "vetrumai": null, "todar": null, "gloss": "life/soul", "confidence": 0.85},
+            {"sol": "தளிர்ப்ப", "split": "தளிர்+ப்ப", "category": "வினை", "ilakkanam": "வினையெச்சம்", "features": {}, "vetrumai": null, "todar": null, "gloss": "so as to sprout/revive", "confidence": 0.8}
+          ]
+        },
+        {
+          "sira": "தீண்டலால்", "adi": 1, "pos": 3, "togai": null,
+          "components": [
+            {"sol": "தீண்டலால்", "split": "தீண்டல்+ஆல்", "category": "பெயர்", "ilakkanam": "தொழிற்பெயர்", "features": {}, "vetrumai": {"number": 3, "urupu": "ஆல்", "name": "கருவி/உடன்"}, "gloss": "by (the) touching", "confidence": 0.85}
+          ]
+        },
+        {
+          "sira": "பேதைக்கு", "adi": 1, "pos": 4, "togai": null,
+          "components": [
+            {"sol": "பேதைக்கு", "split": "பேதை+கு", "category": "பெயர்", "ilakkanam": "பண்புப்பெயர்", "features": {"paal": "பெண்பால்", "eN": "ஒருமை", "thinai": "உயர்திணை"}, "vetrumai": {"number": 4, "urupu": "கு", "name": "கொடை/நோக்கம்"}, "gloss": "for the (naive) maiden", "confidence": 0.8}
+          ]
+        },
+        {
+          "sira": "அமிழ்தின்", "adi": 2, "pos": 1, "togai": null,
+          "components": [
+            {"sol": "அமிழ்தின்", "split": "அமிழ்து+இன்", "category": "பெயர்", "ilakkanam": "பொருட்பெயர்", "features": {}, "vetrumai": {"number": 3, "urupu": "இன்", "name": "கருவி/உடன்"}, "gloss": "of/with nectar", "confidence": 0.72}
+          ]
+        },
+        {
+          "sira": "இயன்றன", "adi": 2, "pos": 2, "togai": null,
+          "components": [
+            {"sol": "இயன்றன", "split": "இயல்+ந்த்+அன", "category": "வினை", "ilakkanam": "தெரிநிலைவினைமுற்று", "features": {"kaalam": "இறந்தகாலம்", "paal": "பலவின்பால்", "eN": "பன்மை", "idam": "படர்க்கை"}, "vetrumai": null, "todar": null, "gloss": "were made/formed", "confidence": 0.8}
+          ]
+        },
+        {
+          "sira": "தோள்", "adi": 2, "pos": 3, "togai": null,
+          "components": [
+            {"sol": "தோள்", "split": "தோள்", "category": "பெயர்", "ilakkanam": "சினைப்பெயர்", "features": {"paal": "பலவின்பால்", "eN": "பன்மை"}, "vetrumai": null, "todar": null, "gloss": "shoulders/arms", "confidence": 0.9}
+          ]
+        }
+      ],
+      "reviewFlags": [
+        "உறுதோறு: 'உறு + தோறு' — தோறு (ஒவ்வொரு முறையும்) பகுதி; வினையெச்சம்/இடைச்சொல் வகைப்பாட்டில் ஐயம்",
+        "அமிழ்தின்: இன் = மூன்றாம்(கருவி) அல்லது ஐந்தாம்(ஒப்பு) வேற்றுமை — 'அமிழ்தால் இயன்றன' பொருளால் கருவியாகக் கொள்ளப்பட்டது",
+        "இயன்றன: பலவின்பால் பன்மை முற்று (தோள் = பன்மை) — பால்/எண் முடிபு உரையால் உறுதி"
+      ]
+    },
+    {
+      "number": 1107,
+      "line1": "தம்மில் இருந்து தமதுபாத்து உண்டற்றால்",
+      "line2": "அம்மா அரிவை முயக்கு.",
+      "yappu": {
+        "paa": "குறள் வெண்பா",
+        "sirCount": [4, 3],
+        "monai": [
+          {"adi": 1, "sirs": ["தம்மில்", "இருந்து", "தமதுபாத்து", "உண்டற்றால்"], "key": "த/இ/த/உ", "present": true, "note": "தம்/தமது 'த' ஒப்பு"},
+          {"adi": 2, "sirs": ["அம்மா", "அரிவை", "முயக்கு"], "key": "அ/அ/ம", "present": true, "note": "அம்மா/அரிவை 'அ' ஒப்பு"}
+        ],
+        "edugai": {"present": true, "letter": "ம்/ர்", "note": "அம்மா / அரிவை — அடிமுதல் சீர் 'அ' முதல்; முதலடி தம்/தமது 'த' ஒப்பு"},
+        "thalai": "வெண்டளை",
+        "eetruseer": "முயக்கு (பிறப்பு வாய்பாடு)"
+      },
+      "ani": [
+        {"name": "எடுத்துக்காட்டுவமை", "note": "தம் வீட்டில் தாம் ஈட்டியதைப் பகுத்துண்ணும் இன்பத்தை எடுத்துக்காட்டி முயக்கின்பத்தை விளக்கல்"}
+      ],
+      "sirs": [
+        {
+          "sira": "தம்மில்", "adi": 1, "pos": 1, "togai": null,
+          "components": [
+            {"sol": "தம்", "split": "தம்", "category": "பெயர்", "ilakkanam": "சுட்டுப்பெயர்", "features": {"paal": "பலர்பால்", "eN": "பன்மை", "idam": "படர்க்கை"}, "vetrumai": {"number": 6, "urupu": "அது", "name": "உடைமை"}, "gloss": "one's own", "confidence": 0.7},
+            {"sol": "இல்", "split": "இல்", "category": "பெயர்", "ilakkanam": "இடப்பெயர்", "features": {}, "vetrumai": {"number": 7, "urupu": "இல்", "name": "இடம்"}, "gloss": "in (the) home", "confidence": 0.72}
+          ]
+        },
+        {
+          "sira": "இருந்து", "adi": 1, "pos": 2, "togai": null,
+          "components": [
+            {"sol": "இருந்து", "split": "இரு+ந்து", "category": "வினை", "ilakkanam": "வினையெச்சம்", "features": {"kaalam": "இறந்தகாலம்"}, "vetrumai": null, "todar": null, "gloss": "being/staying", "confidence": 0.85}
+          ]
+        },
+        {
+          "sira": "தமதுபாத்து", "adi": 1, "pos": 3, "togai": null,
+          "components": [
+            {"sol": "தமது", "split": "தம்+அது", "category": "பெயர்", "ilakkanam": "சுட்டுப்பெயர்", "features": {"paal": "பலர்பால்", "eN": "பன்மை", "idam": "படர்க்கை"}, "vetrumai": {"number": 6, "urupu": "அது", "name": "உடைமை"}, "gloss": "one's own (earnings)", "confidence": 0.75},
+            {"sol": "பாத்து", "split": "பகு+த்து", "category": "வினை", "ilakkanam": "வினையெச்சம்", "features": {"kaalam": "இறந்தகாலம்"}, "vetrumai": null, "todar": null, "gloss": "having shared/divided", "confidence": 0.8}
+          ]
+        },
+        {
+          "sira": "உண்டற்றால்", "adi": 1, "pos": 4, "togai": null,
+          "components": [
+            {"sol": "உண்டல்", "split": "உண்+டல்", "category": "பெயர்", "ilakkanam": "தொழிற்பெயர்", "features": {}, "vetrumai": null, "todar": null, "gloss": "eating", "confidence": 0.72},
+            {"sol": "அற்று", "split": "அற்று", "category": "இடை", "ilakkanam": "உவமைஉருபு", "features": {}, "vetrumai": null, "todar": null, "gloss": "like / similar to", "confidence": 0.72},
+            {"sol": "ஆல்", "split": "ஆல்", "category": "இடை", "ilakkanam": "அசைநிலை", "features": {}, "vetrumai": null, "todar": null, "gloss": "(asai particle)", "confidence": 0.75}
+          ]
+        },
+        {
+          "sira": "அம்மா", "adi": 2, "pos": 1, "togai": null,
+          "components": [
+            {"sol": "அம்", "split": "அம்", "category": "உரி", "ilakkanam": "உரிச்சொல்", "features": {}, "vetrumai": null, "todar": {"type": "அடைமொழி", "note": "அம் = அழகிய, மா(நிறம்) / அரிவையை விளக்கும் அடை"}, "gloss": "beautiful (qualifying)", "confidence": 0.6},
+            {"sol": "மா", "split": "மா", "category": "பெயர்", "ilakkanam": "பண்புப்பெயர்", "features": {}, "vetrumai": null, "todar": null, "gloss": "dark/mango-hued (complexion)", "confidence": 0.6}
+          ]
+        },
+        {
+          "sira": "அரிவை", "adi": 2, "pos": 2, "togai": null,
+          "components": [
+            {"sol": "அரிவை", "split": "அரிவை", "category": "பெயர்", "ilakkanam": "பொருட்பெயர்", "features": {"paal": "பெண்பால்", "eN": "ஒருமை", "thinai": "உயர்திணை"}, "vetrumai": null, "todar": null, "gloss": "young woman", "confidence": 0.85}
+          ]
+        },
+        {
+          "sira": "முயக்கு", "adi": 2, "pos": 3, "togai": null,
+          "components": [
+            {"sol": "முயக்கு", "split": "முயங்கு+கு", "category": "பெயர்", "ilakkanam": "தொழிற்பெயர்", "features": {"paal": "ஒன்றன்பால்", "eN": "ஒருமை"}, "vetrumai": null, "todar": null, "gloss": "embrace", "confidence": 0.85}
+          ]
+        }
+      ],
+      "reviewFlags": [
+        "உண்டற்றால்: 'உண்டல் + அற்று + ஆல்' — அற்று உவமைஉருபு (ஒப்பு), ஆல் அசைநிலை; உண்டல் தொழிற்பெயராகப் பகுக்கப்பட்டது",
+        "அம்மா: 'அம் மா' (அழகிய மாநிறம்) — அம் உரிச்சொல்/அசைநிலை ஐயம்; 'அம்மா' ஒரு வியப்பிடைச்சொல்லாகவும் கொள்ளப்படும்",
+        "தம்மில்/தமது: ஆறாம் வேற்றுமை உடைமைச்சுட்டு; இல் இடப்பெயர் (ஏழன்) — கூட்டுச்சீர் பகுப்பு ஐயம்"
+      ]
+    },
+    {
+      "number": 1108,
+      "line1": "வீழும் இருவர்க்கு இனிதே வளியிடை",
+      "line2": "போழப் படாஅ முயக்கு.",
+      "yappu": {
+        "paa": "குறள் வெண்பா",
+        "sirCount": [4, 3],
+        "monai": [
+          {"adi": 1, "sirs": ["வீழும்", "இருவர்க்கு", "இனிதே", "வளியிடை"], "key": "வ/இ/இ/வ", "present": true, "note": "வீழும்/வளி 'வ' ஒப்பு; இருவர்/இனிது 'இ' ஒப்பு"},
+          {"adi": 2, "sirs": ["போழப்", "படாஅ", "முயக்கு"], "key": "ப/ப/ம", "present": true, "note": "போழ/படா 'ப' ஒப்பு; ம இனமோனை (ப/ம)"}
+        ],
+        "edugai": {"present": true, "letter": "ப", "note": "போழ / படா — அடிமுதல் சீர் 'ப' முதல்; ம ஈற்றுச்சீர் இனமோனை"},
+        "thalai": "வெண்டளை",
+        "eetruseer": "முயக்கு (பிறப்பு வாய்பாடு)"
+      },
+      "ani": [
+        {"name": "உயர்வுநவிற்சி", "note": "காற்றும் ஊடே நுழைய முடியாத இறுக்கம் — மிகுதிப்படுத்திக் கூறல்"}
+      ],
+      "sirs": [
+        {
+          "sira": "வீழும்", "adi": 1, "pos": 1, "togai": null,
+          "components": [
+            {"sol": "வீழும்", "split": "வீழ்+உம்", "category": "வினை", "ilakkanam": "பெயரெச்சம்", "features": {"kaalam": "நிகழ்காலம்"}, "vetrumai": null, "todar": null, "gloss": "who love (each other)", "confidence": 0.8}
+          ]
+        },
+        {
+          "sira": "இருவர்க்கு", "adi": 1, "pos": 2, "togai": null,
+          "components": [
+            {"sol": "இருவர்க்கு", "split": "இருவர்+கு", "category": "பெயர்", "ilakkanam": "எண்ணுப்பெயர்", "features": {"paal": "பலர்பால்", "eN": "பன்மை", "thinai": "உயர்திணை"}, "vetrumai": {"number": 4, "urupu": "கு", "name": "கொடை/நோக்கம்"}, "gloss": "to the two (lovers)", "confidence": 0.8}
+          ]
+        },
+        {
+          "sira": "இனிதே", "adi": 1, "pos": 3, "togai": null,
+          "components": [
+            {"sol": "இனிது", "split": "இனிமை+து", "category": "பெயர்", "ilakkanam": "பண்புப்பெயர்", "features": {"paal": "ஒன்றன்பால்", "eN": "ஒருமை"}, "vetrumai": null, "todar": null, "gloss": "sweet/pleasant", "confidence": 0.8},
+            {"sol": "ஏ", "split": "ஏ", "category": "இடை", "ilakkanam": "ஏகாரம்", "features": {}, "vetrumai": null, "todar": null, "gloss": "(emphatic/assertive)", "confidence": 0.85}
+          ]
+        },
+        {
+          "sira": "வளியிடை", "adi": 1, "pos": 4, "togai": null,
+          "components": [
+            {"sol": "வளி", "split": "வளி", "category": "பெயர்", "ilakkanam": "பொருட்பெயர்", "features": {}, "vetrumai": null, "todar": null, "gloss": "wind/air", "confidence": 0.8},
+            {"sol": "இடை", "split": "இடை", "category": "இடை", "ilakkanam": "வேற்றுமைஉருபு", "features": {}, "vetrumai": {"number": 7, "urupu": "இடை", "name": "இடம்"}, "gloss": "in between", "confidence": 0.72}
+          ]
+        },
+        {
+          "sira": "போழப்", "adi": 2, "pos": 1, "togai": null,
+          "components": [
+            {"sol": "போழ", "split": "போழ்+அ", "category": "வினை", "ilakkanam": "வினையெச்சம்", "features": {}, "vetrumai": null, "todar": null, "gloss": "to split/pass through", "confidence": 0.75}
+          ]
+        },
+        {
+          "sira": "படாஅ", "adi": 2, "pos": 2, "togai": null,
+          "components": [
+            {"sol": "படாஅ", "split": "படு+ஆ", "category": "வினை", "ilakkanam": "எதிர்மறைபெயரெச்சம்", "features": {}, "vetrumai": null, "todar": null, "gloss": "that does not get (split)", "confidence": 0.72}
+          ]
+        },
+        {
+          "sira": "முயக்கு", "adi": 2, "pos": 3, "togai": null,
+          "components": [
+            {"sol": "முயக்கு", "split": "முயங்கு+கு", "category": "பெயர்", "ilakkanam": "தொழிற்பெயர்", "features": {"paal": "ஒன்றன்பால்", "eN": "ஒருமை"}, "vetrumai": null, "todar": null, "gloss": "embrace", "confidence": 0.85}
+          ]
+        }
+      ],
+      "reviewFlags": [
+        "வீழும்: 'வீழும் இருவர்' — பெயரெச்சம் (இருவரை அடைதல்); நிகழ்/எதிர்கால ஐயம்",
+        "வளியிடை: 'வளி இடை' — இடை வேற்றுமையுருபு/இடைச்சொல்; வேற்றுமைத்தொகையாகவும் கொள்ளலாம்",
+        "படாஅ: 'போழப்படாஅ முயக்கு' — செயப்பாட்டு எதிர்மறை எச்சம், முயக்கை அடைதலால் எதிர்மறைபெயரெச்சம் (அளபெடை படாஅ)"
+      ]
+    },
+    {
+      "number": 1109,
+      "line1": "ஊடல் உணர்தல் புணர்தல் இவைகாமம்",
+      "line2": "கூடியார் பெற்ற பயன்.",
+      "yappu": {
+        "paa": "குறள் வெண்பா",
+        "sirCount": [4, 3],
+        "monai": [
+          {"adi": 1, "sirs": ["ஊடல்", "உணர்தல்", "புணர்தல்", "இவைகாமம்"], "key": "ஊ/உ/ப/இ", "present": false, "note": "ஊ(நெடில்)/உ(குறில்) உயிரளவை வேறுபாடு — மோனை முழுமை இல்லை"},
+          {"adi": 2, "sirs": ["கூடியார்", "பெற்ற", "பயன்"], "key": "க/ப/ப", "present": true, "note": "பெற்ற/பயன் 'ப' ஒப்பு"}
+        ],
+        "edugai": {"present": false, "letter": null, "note": "கூடியார்/பெற்ற அடிமுதல் சீர் இரண்டாம் எழுத்து ஒப்பு இல்லை"},
+        "thalai": "வெண்டளை",
+        "eetruseer": "பயன் (மலர் வாய்பாடு)"
+      },
+      "ani": [
+        {"name": "சொற்பொருட்பின்வருநிலை", "note": "ஊடல்-உணர்தல்-புணர்தல் — தொழிற்பெயர்கள் வரிசையாக அடுக்கி வருதல்"}
+      ],
+      "sirs": [
+        {
+          "sira": "ஊடல்", "adi": 1, "pos": 1, "togai": null,
+          "components": [
+            {"sol": "ஊடல்", "split": "ஊடு+அல்", "category": "பெயர்", "ilakkanam": "தொழிற்பெயர்", "features": {"paal": "ஒன்றன்பால்", "eN": "ஒருமை"}, "vetrumai": null, "todar": null, "gloss": "sulking/love-quarrel", "confidence": 0.9}
+          ]
+        },
+        {
+          "sira": "உணர்தல்", "adi": 1, "pos": 2, "togai": null,
+          "components": [
+            {"sol": "உணர்தல்", "split": "உணர்+தல்", "category": "பெயர்", "ilakkanam": "தொழிற்பெயர்", "features": {"paal": "ஒன்றன்பால்", "eN": "ஒருமை"}, "vetrumai": null, "todar": null, "gloss": "reconciliation/realizing", "confidence": 0.9}
+          ]
+        },
+        {
+          "sira": "புணர்தல்", "adi": 1, "pos": 3, "togai": null,
+          "components": [
+            {"sol": "புணர்தல்", "split": "புணர்+தல்", "category": "பெயர்", "ilakkanam": "தொழிற்பெயர்", "features": {"paal": "ஒன்றன்பால்", "eN": "ஒருமை"}, "vetrumai": null, "todar": null, "gloss": "union/clasping", "confidence": 0.9}
+          ]
+        },
+        {
+          "sira": "இவைகாமம்", "adi": 1, "pos": 4, "togai": null,
+          "components": [
+            {"sol": "இவை", "split": "இ+வை", "category": "பெயர்", "ilakkanam": "சுட்டுப்பெயர்", "features": {"paal": "பலவின்பால்", "eN": "பன்மை"}, "vetrumai": null, "todar": null, "gloss": "these", "confidence": 0.9},
+            {"sol": "காமம்", "split": "காமம்", "category": "பெயர்", "ilakkanam": "பண்புப்பெயர்", "features": {"paal": "ஒன்றன்பால்", "eN": "ஒருமை"}, "vetrumai": null, "todar": null, "gloss": "love/desire", "confidence": 0.82}
+          ]
+        },
+        {
+          "sira": "கூடியார்", "adi": 2, "pos": 1, "togai": null,
+          "components": [
+            {"sol": "கூடியார்", "split": "கூடு+இ+ஆர்", "category": "பெயர்", "ilakkanam": "வினையாலணையும்பெயர்", "features": {"kaalam": "இறந்தகாலம்", "paal": "பலர்பால்", "eN": "பன்மை", "thinai": "உயர்திணை"}, "vetrumai": null, "todar": null, "gloss": "those who united (in love)", "confidence": 0.85}
+          ]
+        },
+        {
+          "sira": "பெற்ற", "adi": 2, "pos": 2, "togai": null,
+          "components": [
+            {"sol": "பெற்ற", "split": "பெறு+ற்+அ", "category": "வினை", "ilakkanam": "பெயரெச்சம்", "features": {"kaalam": "இறந்தகாலம்"}, "vetrumai": null, "todar": null, "gloss": "(that they) obtained", "confidence": 0.85}
+          ]
+        },
+        {
+          "sira": "பயன்", "adi": 2, "pos": 3, "togai": null,
+          "components": [
+            {"sol": "பயன்", "split": "பயன்", "category": "பெயர்", "ilakkanam": "பொருட்பெயர்", "features": {"paal": "பலவின்பால்", "eN": "பன்மை"}, "vetrumai": null, "todar": null, "gloss": "benefit(s)/fruit", "confidence": 0.82}
+          ]
+        }
+      ],
+      "reviewFlags": [
+        "இவைகாமம்: 'இவை காமம்' — இவை சுட்டுப்பெயர் (எழுவாய்), காமம் பயனிலை; கூட்டுச்சீர் பகுப்பு உரையால் உறுதி",
+        "காமம்: பண்புப்பெயர் vs பொருட்பெயர் வகைப்பாட்டில் ஐயம்",
+        "முதலடி மோனை: ஊ/உ உயிரளவை வேறுபாட்டால் முழுமோனை இல்லை எனக் கொள்ளப்பட்டது"
+      ]
+    },
+    {
+      "number": 1110,
+      "line1": "அறிதோறு அறியாமை கண்டற்றால் காமம்",
+      "line2": "செறிதோறும் சேயிழை மாட்டு.",
+      "yappu": {
+        "paa": "குறள் வெண்பா",
+        "sirCount": [4, 3],
+        "monai": [
+          {"adi": 1, "sirs": ["அறிதோறு", "அறியாமை", "கண்டற்றால்", "காமம்"], "key": "அ/அ/க/க", "present": true, "note": "அறி/அறியாமை 'அ' ஒப்பு; கண்/காமம் 'க' ஒப்பு"},
+          {"adi": 2, "sirs": ["செறிதோறும்", "சேயிழை", "மாட்டு"], "key": "ச/ச/ம", "present": true, "note": "செறி/சேயிழை 'ச' ஒப்பு"}
+        ],
+        "edugai": {"present": true, "letter": "ெ/ே", "note": "செறிதோறும் / சேயிழை — அடிமுதல் சீர் 'செ/சே' ஒப்பு; முதலடி அறி/அறியாமை எதுகை"},
+        "thalai": "வெண்டளை",
+        "eetruseer": "மாட்டு (பிறப்பு வாய்பாடு)"
+      },
+      "ani": [
+        {"name": "எடுத்துக்காட்டுவமை", "note": "கற்கக் கற்க முன்னைய அறியாமை விளங்குதல் என்னும் உவமையால் காதலின் புதுமையை விளக்கல்"},
+        {"name": "முரண்", "note": "அறிதல் — அறியாமை: அறிவும் அறியாமையும் முரண்படுத்தல்"}
+      ],
+      "sirs": [
+        {
+          "sira": "அறிதோறு", "adi": 1, "pos": 1, "togai": null,
+          "components": [
+            {"sol": "அறிதோறு", "split": "அறி+தோறு", "category": "வினை", "ilakkanam": "வினையெச்சம்", "features": {}, "vetrumai": null, "todar": null, "gloss": "as one learns (each time)", "confidence": 0.68}
+          ]
+        },
+        {
+          "sira": "அறியாமை", "adi": 1, "pos": 2, "togai": null,
+          "components": [
+            {"sol": "அறியாமை", "split": "அறி+யாமை", "category": "பெயர்", "ilakkanam": "தொழிற்பெயர்", "features": {"paal": "ஒன்றன்பால்", "eN": "ஒருமை"}, "vetrumai": null, "todar": null, "gloss": "(prior) ignorance", "confidence": 0.8}
+          ]
+        },
+        {
+          "sira": "கண்டற்றால்", "adi": 1, "pos": 3, "togai": null,
+          "components": [
+            {"sol": "கண்டு", "split": "காண்+டு", "category": "வினை", "ilakkanam": "வினையெச்சம்", "features": {"kaalam": "இறந்தகாலம்"}, "vetrumai": null, "todar": null, "gloss": "having seen/perceived", "confidence": 0.7},
+            {"sol": "அற்று", "split": "அற்று", "category": "இடை", "ilakkanam": "உவமைஉருபு", "features": {}, "vetrumai": null, "todar": null, "gloss": "like / similar to", "confidence": 0.72},
+            {"sol": "ஆல்", "split": "ஆல்", "category": "இடை", "ilakkanam": "அசைநிலை", "features": {}, "vetrumai": null, "todar": null, "gloss": "(asai particle)", "confidence": 0.75}
+          ]
+        },
+        {
+          "sira": "காமம்", "adi": 1, "pos": 4, "togai": null,
+          "components": [
+            {"sol": "காமம்", "split": "காமம்", "category": "பெயர்", "ilakkanam": "பண்புப்பெயர்", "features": {"paal": "ஒன்றன்பால்", "eN": "ஒருமை"}, "vetrumai": null, "todar": null, "gloss": "love/desire", "confidence": 0.82}
+          ]
+        },
+        {
+          "sira": "செறிதோறும்", "adi": 2, "pos": 1, "togai": null,
+          "components": [
+            {"sol": "செறிதோறும்", "split": "செறி+தோறு+உம்", "category": "வினை", "ilakkanam": "வினையெச்சம்", "features": {}, "vetrumai": null, "todar": null, "gloss": "every time (we) unite closely", "confidence": 0.68}
+          ]
+        },
+        {
+          "sira": "சேயிழை", "adi": 2, "pos": 2, "togai": "அன்மொழித்தொகை",
+          "components": [
+            {"sol": "சேயிழை", "split": "சே+இழை", "category": "பெயர்", "ilakkanam": "பொருட்பெயர்", "features": {"paal": "பெண்பால்", "eN": "ஒருமை", "thinai": "உயர்திணை"}, "vetrumai": null, "todar": {"type": "அடைமொழி", "note": "சே = செந்நிற, இழையை விளக்கும் பண்படை"}, "gloss": "she of red/fine jewels (=she)", "confidence": 0.78}
+          ]
+        },
+        {
+          "sira": "மாட்டு", "adi": 2, "pos": 3, "togai": null,
+          "components": [
+            {"sol": "மாட்டு", "split": "மாட்டு", "category": "இடை", "ilakkanam": "வேற்றுமைஉருபு", "features": {}, "vetrumai": {"number": 7, "urupu": "மாட்டு", "name": "இடம்"}, "gloss": "in/at (locative)", "confidence": 0.75}
+          ]
+        }
+      ],
+      "reviewFlags": [
+        "அறிதோறு / செறிதோறும்: 'தோறு / தோறும்' (ஒவ்வொரு முறையும்) பகுதி; வினையெச்சம்/இடைச்சொல் வகைப்பாட்டில் ஐயம்",
+        "கண்டற்றால்: 'கண்டு + அற்று + ஆல்' — அற்று உவமைஉருபு, ஆல் அசைநிலை; கண்டு வினையெச்சமாகப் பகுக்கப்பட்டது",
+        "சேயிழை: அன்மொழித்தொகையாய் அவளைக் குறித்தல்; தலைச்சொல் இழை=பொருட்பெயர் (சே = செம்மை பண்படை)",
+        "மாட்டு: ஏழாம் வேற்றுமை இட உருபு 'மாட்டு' (சேயிழை மாட்டு = அவளிடம்)"
+      ]
+    }
+  ]
+}

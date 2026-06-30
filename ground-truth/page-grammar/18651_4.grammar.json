@@ -1,0 +1,2807 @@
+{
+  "manuscriptId": "18651_4",
+  "source": "page/18651_4.xml",
+  "schema": "thirukkural-ilakkanam v1.0",
+  "kurals": [
+    {
+      "number": 11,
+      "verification": "verified",
+      "pal": "அறத்துப்பால்",
+      "iyal": "பாயிரவியல்",
+      "adhigaram": 2,
+      "adhigaramName": "வான்சிறப்பு",
+      "adhigaramEn": "The Blessing of Rain",
+      "line1": "வான்நின்று உலகம் வழங்கி வருதலால்",
+      "line2": "தான்அமிழ்தம் என்றுணரற் பாற்று.",
+      "couplet": "வான்நின்று உலகம் வழங்கி வருதலால் தான்அமிழ்தம் என்றுணரற் பாற்று.",
+      "meaningEn": "The genial rain ambrosia call: The world but lasts while rain shall fall",
+      "urai_mv": "மழை பெய்ய உலகம் வாழ்ந்து வருவதால், மழையானது உலகத்து வாழும் உயிர்களுக்கு அமிழ்தம் என்று உணரத்தக்கதாகும்",
+      "yappu": {
+        "paa": "குறள் வெண்பா",
+        "sirCount": [
+          4,
+          3
+        ],
+        "monai": [
+          {
+            "adi": 1,
+            "sirs": [
+              "வான்நின்று",
+              "உலகம்",
+              "வழங்கி",
+              "வருதலால்"
+            ],
+            "key": "வ/உ",
+            "present": true
+          },
+          {
+            "adi": 2,
+            "sirs": [
+              "தான்அமிழ்தம்",
+              "என்றுணரற்",
+              "பாற்று"
+            ],
+            "key": "த/எ/ப",
+            "present": false
+          }
+        ],
+        "edugai": {
+          "present": true,
+          "letter": "ா",
+          "note": "வான்/தான் — அடிமுதல் சீர் இரண்டாம் எழுத்து (ஆகாரம்) ஒப்பு"
+        },
+        "thalai": "வெண்டளை",
+        "eetruseer": "பாற்று"
+      },
+      "ani": [
+        {
+          "name": "உருவகம்",
+          "note": "மழையை அமிழ்தமாக உருவகித்தல்"
+        }
+      ],
+      "sirs": [
+        {
+          "sira": "வான்நின்று",
+          "adi": 1,
+          "pos": 1,
+          "togai": null,
+          "components": [
+            {
+              "sol": "வான்",
+              "split": "வான்",
+              "category": "பெயர்",
+              "ilakkanam": "பொருட்பெயர்",
+              "features": {
+                "thinai": "அஃறிணை",
+                "paal": "ஒன்றன்பால்",
+                "eN": "ஒருமை"
+              },
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "rain/sky",
+              "confidence": 0.85
+            },
+            {
+              "sol": "நின்று",
+              "split": "நில்+ன்(டு)",
+              "category": "வினை",
+              "ilakkanam": "வினையெச்சம்",
+              "features": {
+                "kaalam": "இறந்தகாலம்"
+              },
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "standing/being",
+              "confidence": 0.78
+            }
+          ]
+        },
+        {
+          "sira": "உலகம்",
+          "adi": 1,
+          "pos": 2,
+          "togai": null,
+          "components": [
+            {
+              "sol": "உலகம்",
+              "split": "உலகம்",
+              "category": "பெயர்",
+              "ilakkanam": "இடப்பெயர்",
+              "features": {
+                "thinai": "அஃறிணை",
+                "paal": "ஒன்றன்பால்",
+                "eN": "ஒருமை"
+              },
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "world",
+              "confidence": 0.9
+            }
+          ]
+        },
+        {
+          "sira": "வழங்கி",
+          "adi": 1,
+          "pos": 3,
+          "togai": null,
+          "components": [
+            {
+              "sol": "வழங்கி",
+              "split": "வழங்கு+இ",
+              "category": "வினை",
+              "ilakkanam": "வினையெச்சம்",
+              "features": {
+                "kaalam": "இறந்தகாலம்"
+              },
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "thriving/proceeding",
+              "confidence": 0.8
+            }
+          ]
+        },
+        {
+          "sira": "வருதலால்",
+          "adi": 1,
+          "pos": 4,
+          "togai": null,
+          "components": [
+            {
+              "sol": "வருதல்",
+              "split": "வரு+தல்",
+              "category": "பெயர்",
+              "ilakkanam": "தொழிற்பெயர்",
+              "features": {
+                "thinai": "அஃறிணை",
+                "paal": "ஒன்றன்பால்",
+                "eN": "ஒருமை"
+              },
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "coming/happening",
+              "confidence": 0.82
+            },
+            {
+              "sol": "ஆல்",
+              "split": "ஆல்",
+              "category": "இடை",
+              "ilakkanam": "வேற்றுமைஉருபு",
+              "features": {},
+              "vetrumai": {
+                "number": 3,
+                "urupu": "ஆல்",
+                "name": "கருவி/உடன்"
+              },
+              "todar": null,
+              "gloss": "by/because",
+              "confidence": 0.8
+            }
+          ]
+        },
+        {
+          "sira": "தான்அமிழ்தம்",
+          "adi": 2,
+          "pos": 1,
+          "togai": null,
+          "components": [
+            {
+              "sol": "தான்",
+              "split": "தான்",
+              "category": "இடை",
+              "ilakkanam": "அசைநிலை",
+              "features": {},
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "itself (expletive)",
+              "confidence": 0.65
+            },
+            {
+              "sol": "அமிழ்தம்",
+              "split": "அமிழ்தம்",
+              "category": "பெயர்",
+              "ilakkanam": "பொருட்பெயர்",
+              "features": {
+                "thinai": "அஃறிணை",
+                "paal": "ஒன்றன்பால்",
+                "eN": "ஒருமை"
+              },
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "ambrosia/nectar",
+              "confidence": 0.88
+            }
+          ]
+        },
+        {
+          "sira": "என்றுணரற்",
+          "adi": 2,
+          "pos": 2,
+          "togai": null,
+          "components": [
+            {
+              "sol": "என்று",
+              "split": "என்+று",
+              "category": "வினை",
+              "ilakkanam": "வினையெச்சம்",
+              "features": {
+                "kaalam": "இறந்தகாலம்"
+              },
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "saying/that",
+              "confidence": 0.7
+            },
+            {
+              "sol": "உணரற்",
+              "split": "உணர்+அல்",
+              "category": "பெயர்",
+              "ilakkanam": "தொழிற்பெயர்",
+              "features": {
+                "thinai": "அஃறிணை",
+                "paal": "ஒன்றன்பால்",
+                "eN": "ஒருமை"
+              },
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "realizing/knowing",
+              "confidence": 0.68
+            }
+          ]
+        },
+        {
+          "sira": "பாற்று",
+          "adi": 2,
+          "pos": 3,
+          "togai": null,
+          "components": [
+            {
+              "sol": "பாற்று",
+              "split": "பால்+து",
+              "category": "வினை",
+              "ilakkanam": "குறிப்புவினைமுற்று",
+              "features": {
+                "kaalam": "இறந்தகாலம்",
+                "idam": "படர்க்கை",
+                "thinai": "அஃறிணை",
+                "paal": "ஒன்றன்பால்",
+                "eN": "ஒருமை"
+              },
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "is of the nature of",
+              "confidence": 0.62
+            }
+          ]
+        }
+      ],
+      "reviewFlags": [
+        "தான் — அசைநிலை vs சுட்டுப்பெயர் ஐயம்",
+        "என்று — வினையெச்சம் வகைப்பாடு ஐயம்",
+        "உணரற் — தொழிற்பெயர் (உணரல்) புணர்ச்சி வடிவம்",
+        "பாற்று — 'பால் அது' = பகுதிக்குரியது; குறிப்புவினைமுற்று வகைப்பாடு ஐயம்"
+      ]
+    },
+    {
+      "number": 12,
+      "verification": "verified",
+      "pal": "அறத்துப்பால்",
+      "iyal": "பாயிரவியல்",
+      "adhigaram": 2,
+      "adhigaramName": "வான்சிறப்பு",
+      "adhigaramEn": "The Blessing of Rain",
+      "line1": "துப்பார்க்குத் துப்பாய துப்பாக்கித் துப்பார்க்குத்",
+      "line2": "துப்பாய தூஉம் மழை.",
+      "couplet": "துப்பார்க்குத் துப்பாய துப்பாக்கித் துப்பார்க்குத் துப்பாய தூஉம் மழை.",
+      "meaningEn": "The rain begets the food we eat",
+      "urai_mv": "உண்பவர்க்குத் தக்க உணவுப் பொருள்களை விளைவித்துத் தருவதோடு, பருகுவோர்க்குத் தானும் ஓர் உணவாக இருப்பது மழையாகும்",
+      "yappu": {
+        "paa": "குறள் வெண்பா",
+        "sirCount": [
+          4,
+          3
+        ],
+        "monai": [
+          {
+            "adi": 1,
+            "sirs": [
+              "துப்பார்க்குத்",
+              "துப்பாய",
+              "துப்பாக்கித்",
+              "துப்பார்க்குத்"
+            ],
+            "key": "த",
+            "present": true
+          },
+          {
+            "adi": 2,
+            "sirs": [
+              "துப்பாய",
+              "தூஉம்",
+              "மழை"
+            ],
+            "key": "த/ம",
+            "present": true
+          }
+        ],
+        "edugai": {
+          "present": true,
+          "letter": "ு",
+          "note": "துப்/துப் — மடக்கணியால் அடிமுதல் சீர்கள் ஒன்றுபடுதல்"
+        },
+        "thalai": "வெண்டளை",
+        "eetruseer": "மழை"
+      },
+      "ani": [
+        {
+          "name": "மடக்கு",
+          "note": "'துப்பு' சொல் பல பொருளில் மீண்டும் மீண்டும் வருதல் (யமகம்)"
+        },
+        {
+          "name": "சொற்பொருட்பின்வருநிலை",
+          "note": "ஒரே சொல் வடிவம் பல பொருளில் தொடர்ந்து வருதல்"
+        }
+      ],
+      "sirs": [
+        {
+          "sira": "துப்பார்க்குத்",
+          "adi": 1,
+          "pos": 1,
+          "togai": null,
+          "components": [
+            {
+              "sol": "துப்பார்",
+              "split": "துப்பு+ஆர்",
+              "category": "பெயர்",
+              "ilakkanam": "வினையாலணையும்பெயர்",
+              "features": {
+                "thinai": "உயர்திணை",
+                "paal": "பலர்பால்",
+                "eN": "பன்மை"
+              },
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "those who eat/enjoy",
+              "confidence": 0.72
+            },
+            {
+              "sol": "கு",
+              "split": "கு",
+              "category": "இடை",
+              "ilakkanam": "வேற்றுமைஉருபு",
+              "features": {},
+              "vetrumai": {
+                "number": 4,
+                "urupu": "கு",
+                "name": "கொடை/நோக்கம்"
+              },
+              "todar": null,
+              "gloss": "for/to",
+              "confidence": 0.82
+            }
+          ]
+        },
+        {
+          "sira": "துப்பாய",
+          "adi": 1,
+          "pos": 2,
+          "togai": null,
+          "components": [
+            {
+              "sol": "துப்பாய",
+              "split": "துப்பு+ஆய",
+              "category": "வினை",
+              "ilakkanam": "பெயரெச்சம்",
+              "features": {
+                "kaalam": "இறந்தகாலம்"
+              },
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "that are food/sustenance",
+              "confidence": 0.68
+            }
+          ]
+        },
+        {
+          "sira": "துப்பாக்கித்",
+          "adi": 1,
+          "pos": 3,
+          "togai": null,
+          "components": [
+            {
+              "sol": "துப்பாக்கி",
+              "split": "துப்பு+ஆக்கி",
+              "category": "வினை",
+              "ilakkanam": "வினையெச்சம்",
+              "features": {
+                "kaalam": "இறந்தகாலம்"
+              },
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "having made into food",
+              "confidence": 0.72
+            }
+          ]
+        },
+        {
+          "sira": "துப்பார்க்குத்",
+          "adi": 1,
+          "pos": 4,
+          "togai": null,
+          "components": [
+            {
+              "sol": "துப்பார்",
+              "split": "துப்பு+ஆர்",
+              "category": "பெயர்",
+              "ilakkanam": "வினையாலணையும்பெயர்",
+              "features": {
+                "thinai": "உயர்திணை",
+                "paal": "பலர்பால்",
+                "eN": "பன்மை"
+              },
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "those who eat/enjoy",
+              "confidence": 0.72
+            },
+            {
+              "sol": "கு",
+              "split": "கு",
+              "category": "இடை",
+              "ilakkanam": "வேற்றுமைஉருபு",
+              "features": {},
+              "vetrumai": {
+                "number": 4,
+                "urupu": "கு",
+                "name": "கொடை/நோக்கம்"
+              },
+              "todar": null,
+              "gloss": "for/to",
+              "confidence": 0.82
+            }
+          ]
+        },
+        {
+          "sira": "துப்பாய",
+          "adi": 2,
+          "pos": 1,
+          "togai": null,
+          "components": [
+            {
+              "sol": "துப்பாய",
+              "split": "துப்பு+ஆய",
+              "category": "வினை",
+              "ilakkanam": "பெயரெச்சம்",
+              "features": {
+                "kaalam": "இறந்தகாலம்"
+              },
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "that is food/sustenance",
+              "confidence": 0.68
+            }
+          ]
+        },
+        {
+          "sira": "தூஉம்",
+          "adi": 2,
+          "pos": 2,
+          "togai": null,
+          "components": [
+            {
+              "sol": "தூஉம்",
+              "split": "தூஉம்",
+              "category": "பெயர்",
+              "ilakkanam": "பொருட்பெயர்",
+              "features": {
+                "thinai": "அஃறிணை",
+                "paal": "ஒன்றன்பால்",
+                "eN": "ஒருமை"
+              },
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "food/that which is consumed",
+              "confidence": 0.5
+            }
+          ]
+        },
+        {
+          "sira": "மழை",
+          "adi": 2,
+          "pos": 3,
+          "togai": null,
+          "components": [
+            {
+              "sol": "மழை",
+              "split": "மழை",
+              "category": "பெயர்",
+              "ilakkanam": "பொருட்பெயர்",
+              "features": {
+                "thinai": "அஃறிணை",
+                "paal": "ஒன்றன்பால்",
+                "eN": "ஒருமை"
+              },
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "rain",
+              "confidence": 0.92
+            }
+          ]
+        }
+      ],
+      "reviewFlags": [
+        "துப்பு — 'வலிமை/உணவு/பொருள்' பல பொருள்; மடக்கணி",
+        "துப்பார் — வினையாலணையும்பெயர் (உண்பவர்) — உரைப்படி உறுதி",
+        "துப்பாய — பெயரெச்சம் (துப்பாகிய); அடுத்த பெயரை விளக்குதல்",
+        "தூஉம் — இன்னிசை அளபெடையுடைய ஒரு சொல் (தூஉம்=உண்பது); 'தூ+உம்' பகுப்பு நீக்கப்பட்டது; பொருள் இன்னும் ஐயத்திற்குரியது"
+      ]
+    },
+    {
+      "number": 13,
+      "verification": "verified",
+      "pal": "அறத்துப்பால்",
+      "iyal": "பாயிரவியல்",
+      "adhigaram": 2,
+      "adhigaramName": "வான்சிறப்பு",
+      "adhigaramEn": "The Blessing of Rain",
+      "line1": "விண்இன்று பொய்ப்பின் விரிநீர் வியனுலகத்து",
+      "line2": "உள்நின்று உடற்றும் பசி.",
+      "couplet": "விண்இன்று பொய்ப்பின் விரிநீர் வியனுலகத்து உள்நின்று உடற்றும் பசி.",
+      "meaningEn": "Let clouds their visits stay, and dearth Distresses all the sea-girt earth",
+      "urai_mv": "மழை பெய்யாமல் பொய்படுமானால், கடல் சூழ்ந்த அகன்ற உலகமாக இருந்தும் பசி உள்ளே நிலைத்து நின்று உயிர்களை வருத்தும்",
+      "yappu": {
+        "paa": "குறள் வெண்பா",
+        "sirCount": [
+          4,
+          3
+        ],
+        "monai": [
+          {
+            "adi": 1,
+            "sirs": [
+              "விண்இன்று",
+              "பொய்ப்பின்",
+              "விரிநீர்",
+              "வியனுலகத்து"
+            ],
+            "key": "வி/பொ",
+            "present": true
+          },
+          {
+            "adi": 2,
+            "sirs": [
+              "உள்நின்று",
+              "உடற்றும்",
+              "பசி"
+            ],
+            "key": "உ/ப",
+            "present": true
+          }
+        ],
+        "edugai": {
+          "present": false,
+          "letter": "ி",
+          "note": "விண்/உள் முதல்சீர் இரண்டாம் எழுத்து (ண்/ள்) ஒவ்வாமை — எதுகை இல்லை; மோனை மட்டுமே"
+        },
+        "thalai": "வெண்டளை",
+        "eetruseer": "பசி"
+      },
+      "ani": [
+        {
+          "name": "சொற்பொருட்பின்வருநிலை",
+          "note": "மழையின்மையின் விளைவாகப் பசி வருதலை வரிசையாகக் கூறல்"
+        }
+      ],
+      "sirs": [
+        {
+          "sira": "விண்இன்று",
+          "adi": 1,
+          "pos": 1,
+          "togai": null,
+          "components": [
+            {
+              "sol": "விண்",
+              "split": "விண்",
+              "category": "பெயர்",
+              "ilakkanam": "இடப்பெயர்",
+              "features": {
+                "thinai": "அஃறிணை",
+                "paal": "ஒன்றன்பால்",
+                "eN": "ஒருமை"
+              },
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "sky",
+              "confidence": 0.85
+            },
+            {
+              "sol": "இன்று",
+              "split": "இன்மை+று",
+              "category": "வினை",
+              "ilakkanam": "எதிர்மறைவினையெச்சம்",
+              "features": {},
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "not being/without",
+              "confidence": 0.6
+            }
+          ]
+        },
+        {
+          "sira": "பொய்ப்பின்",
+          "adi": 1,
+          "pos": 2,
+          "togai": null,
+          "components": [
+            {
+              "sol": "பொய்ப்பின்",
+              "split": "பொய்ப்பு+இன்",
+              "category": "வினை",
+              "ilakkanam": "வினையெச்சம்",
+              "features": {
+                "kaalam": "எதிர்காலம்"
+              },
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "if it fails",
+              "confidence": 0.7
+            }
+          ]
+        },
+        {
+          "sira": "விரிநீர்",
+          "adi": 1,
+          "pos": 3,
+          "togai": "வினைத்தொகை",
+          "components": [
+            {
+              "sol": "விரி",
+              "split": "விரி",
+              "category": "வினை",
+              "ilakkanam": "பெயரெச்சம்",
+              "features": {},
+              "vetrumai": null,
+              "todar": "அடைமொழி",
+              "gloss": "spreading/wide",
+              "confidence": 0.66
+            },
+            {
+              "sol": "நீர்",
+              "split": "நீர்",
+              "category": "பெயர்",
+              "ilakkanam": "பொருட்பெயர்",
+              "features": {
+                "thinai": "அஃறிணை",
+                "paal": "ஒன்றன்பால்",
+                "eN": "ஒருமை"
+              },
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "water (sea)",
+              "confidence": 0.85
+            }
+          ]
+        },
+        {
+          "sira": "வியனுலகத்து",
+          "adi": 1,
+          "pos": 4,
+          "togai": "பண்புத்தொகை",
+          "components": [
+            {
+              "sol": "வியன்",
+              "split": "வியன்",
+              "category": "உரி",
+              "ilakkanam": "உரிச்சொல்",
+              "features": {},
+              "vetrumai": null,
+              "todar": "அடைமொழி",
+              "gloss": "wide/vast",
+              "confidence": 0.7
+            },
+            {
+              "sol": "உலகத்து",
+              "split": "உலகு+அத்து",
+              "category": "பெயர்",
+              "ilakkanam": "இடப்பெயர்",
+              "features": {
+                "thinai": "அஃறிணை",
+                "paal": "ஒன்றன்பால்",
+                "eN": "ஒருமை"
+              },
+              "vetrumai": {
+                "number": 7,
+                "urupu": "கண்",
+                "name": "இடம்"
+              },
+              "todar": null,
+              "gloss": "in the world",
+              "confidence": 0.72
+            }
+          ]
+        },
+        {
+          "sira": "உள்நின்று",
+          "adi": 2,
+          "pos": 1,
+          "togai": null,
+          "components": [
+            {
+              "sol": "உள்",
+              "split": "உள்",
+              "category": "பெயர்",
+              "ilakkanam": "இடப்பெயர்",
+              "features": {
+                "thinai": "அஃறிணை",
+                "paal": "ஒன்றன்பால்",
+                "eN": "ஒருமை"
+              },
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "inside/within",
+              "confidence": 0.6
+            },
+            {
+              "sol": "நின்று",
+              "split": "நில்+ன்(டு)",
+              "category": "வினை",
+              "ilakkanam": "வினையெச்சம்",
+              "features": {
+                "kaalam": "இறந்தகாலம்"
+              },
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "remaining/standing",
+              "confidence": 0.78
+            }
+          ]
+        },
+        {
+          "sira": "உடற்றும்",
+          "adi": 2,
+          "pos": 2,
+          "togai": null,
+          "components": [
+            {
+              "sol": "உடற்றும்",
+              "split": "உடற்று+உம்",
+              "category": "வினை",
+              "ilakkanam": "பெயரெச்சம்",
+              "features": {
+                "kaalam": "எதிர்காலம்"
+              },
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "will torment",
+              "confidence": 0.7
+            }
+          ]
+        },
+        {
+          "sira": "பசி",
+          "adi": 2,
+          "pos": 3,
+          "togai": null,
+          "components": [
+            {
+              "sol": "பசி",
+              "split": "பசி",
+              "category": "பெயர்",
+              "ilakkanam": "பண்புப்பெயர்",
+              "features": {
+                "thinai": "அஃறிணை",
+                "paal": "ஒன்றன்பால்",
+                "eN": "ஒருமை"
+              },
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "hunger",
+              "confidence": 0.8
+            }
+          ]
+        }
+      ],
+      "reviewFlags": [
+        "விண்இன்று — 'இன்று'(=இல்லாமல்) எதிர்மறைவினையெச்சம் (உறுதி)",
+        "விரிநீர் — வினைத்தொகை எனத் திருத்தப்பட்டது (விரி வினையடி; காலம் தொக்கது). பண்புத்தொகை அன்று",
+        "வியனுலகத்து — வியன் உரிச்சொல்; வேற்றுமை 7 இடம் (அத்து சாரியை)",
+        "உடற்றும் — பசியை விளக்கும் பெயரெச்சம் (உறுதி); முற்று அன்று",
+        "எதுகை: விண்/உள் இரண்டாம் எழுத்து ஒவ்வாமை — எதுகை இல்லை எனத் திருத்தம்"
+      ]
+    },
+    {
+      "number": 14,
+      "verification": "verified",
+      "pal": "அறத்துப்பால்",
+      "iyal": "பாயிரவியல்",
+      "adhigaram": 2,
+      "adhigaramName": "வான்சிறப்பு",
+      "adhigaramEn": "The Blessing of Rain",
+      "line1": "ஏரின் உழாஅர் உழவர் புயல்என்னும்",
+      "line2": "வாரி வளங்குன்றிக் கால்.",
+      "couplet": "ஏரின் உழாஅர் உழவர் புயல்என்னும் வாரி வளங்குன்றிக் கால்.",
+      "meaningEn": "Unless the fruitful shower descend, The ploughman's sacred toil must end",
+      "urai_mv": "மழை என்னும் வருவாய் வளம் குன்றி விட்டால், ( உணவுப் பொருள்களை உண்டாக்கும்) உழவரும் ஏர் கொண்டு உழமாட்டார்",
+      "yappu": {
+        "paa": "குறள் வெண்பா",
+        "sirCount": [
+          4,
+          3
+        ],
+        "monai": [
+          {
+            "adi": 1,
+            "sirs": [
+              "ஏரின்",
+              "உழாஅர்",
+              "உழவர்",
+              "புயல்என்னும்"
+            ],
+            "key": "ஏ/உ/ப",
+            "present": true
+          },
+          {
+            "adi": 2,
+            "sirs": [
+              "வாரி",
+              "வளங்குன்றிக்",
+              "கால்"
+            ],
+            "key": "வ/க",
+            "present": true
+          }
+        ],
+        "edugai": {
+          "present": true,
+          "letter": "ா",
+          "note": "வாரி/... ஈற்றடி; ஏரின்/உழாஅர் முதல்சீர் இரண்டாம் எழுத்து ஒப்பு"
+        },
+        "thalai": "வெண்டளை",
+        "eetruseer": "கால்"
+      },
+      "ani": [
+        {
+          "name": "உருவகம்",
+          "note": "புயல்(மழை) என்னும் வாரி/கால் — மழையை வருவாய்/கால்வாயாக உருவகித்தல்"
+        }
+      ],
+      "sirs": [
+        {
+          "sira": "ஏரின்",
+          "adi": 1,
+          "pos": 1,
+          "togai": null,
+          "components": [
+            {
+              "sol": "ஏர்",
+              "split": "ஏர்",
+              "category": "பெயர்",
+              "ilakkanam": "பொருட்பெயர்",
+              "features": {
+                "thinai": "அஃறிணை",
+                "paal": "ஒன்றன்பால்",
+                "eN": "ஒருமை"
+              },
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "plough",
+              "confidence": 0.85
+            },
+            {
+              "sol": "இன்",
+              "split": "இன்",
+              "category": "இடை",
+              "ilakkanam": "வேற்றுமைஉருபு",
+              "features": {},
+              "vetrumai": {
+                "number": 3,
+                "urupu": "இன்",
+                "name": "கருவி/உடன்"
+              },
+              "todar": null,
+              "gloss": "with/by",
+              "confidence": 0.72
+            }
+          ]
+        },
+        {
+          "sira": "உழாஅர்",
+          "adi": 1,
+          "pos": 2,
+          "togai": null,
+          "components": [
+            {
+              "sol": "உழாஅர்",
+              "split": "உழ்+ஆ+அர்",
+              "category": "வினை",
+              "ilakkanam": "எதிர்மறைவினையெச்சம்",
+              "features": {
+                "idam": "படர்க்கை",
+                "thinai": "உயர்திணை",
+                "paal": "பலர்பால்",
+                "eN": "பன்மை"
+              },
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "will not plough",
+              "confidence": 0.6
+            }
+          ]
+        },
+        {
+          "sira": "உழவர்",
+          "adi": 1,
+          "pos": 3,
+          "togai": null,
+          "components": [
+            {
+              "sol": "உழவர்",
+              "split": "உழவு+அர்",
+              "category": "பெயர்",
+              "ilakkanam": "காரணப்பெயர்",
+              "features": {
+                "thinai": "உயர்திணை",
+                "paal": "பலர்பால்",
+                "eN": "பன்மை"
+              },
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "ploughmen/farmers",
+              "confidence": 0.8
+            }
+          ]
+        },
+        {
+          "sira": "புயல்என்னும்",
+          "adi": 1,
+          "pos": 4,
+          "togai": null,
+          "components": [
+            {
+              "sol": "புயல்",
+              "split": "புயல்",
+              "category": "பெயர்",
+              "ilakkanam": "பொருட்பெயர்",
+              "features": {
+                "thinai": "அஃறிணை",
+                "paal": "ஒன்றன்பால்",
+                "eN": "ஒருமை"
+              },
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "rain/cloud",
+              "confidence": 0.82
+            },
+            {
+              "sol": "என்னும்",
+              "split": "என்+னும்",
+              "category": "வினை",
+              "ilakkanam": "பெயரெச்சம்",
+              "features": {
+                "kaalam": "எதிர்காலம்"
+              },
+              "vetrumai": null,
+              "todar": "அடைமொழி",
+              "gloss": "called/named",
+              "confidence": 0.7
+            }
+          ]
+        },
+        {
+          "sira": "வாரி",
+          "adi": 2,
+          "pos": 1,
+          "togai": null,
+          "components": [
+            {
+              "sol": "வாரி",
+              "split": "வாரி",
+              "category": "பெயர்",
+              "ilakkanam": "பொருட்பெயர்",
+              "features": {
+                "thinai": "அஃறிணை",
+                "paal": "ஒன்றன்பால்",
+                "eN": "ஒருமை"
+              },
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "wealth/revenue source",
+              "confidence": 0.7
+            }
+          ]
+        },
+        {
+          "sira": "வளங்குன்றிக்",
+          "adi": 2,
+          "pos": 2,
+          "togai": null,
+          "components": [
+            {
+              "sol": "வளம்",
+              "split": "வளம்",
+              "category": "பெயர்",
+              "ilakkanam": "பண்புப்பெயர்",
+              "features": {
+                "thinai": "அஃறிணை",
+                "paal": "ஒன்றன்பால்",
+                "eN": "ஒருமை"
+              },
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "abundance",
+              "confidence": 0.78
+            },
+            {
+              "sol": "குன்றிக்",
+              "split": "குன்று+இ",
+              "category": "வினை",
+              "ilakkanam": "வினையெச்சம்",
+              "features": {
+                "kaalam": "இறந்தகாலம்"
+              },
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "having diminished",
+              "confidence": 0.74
+            }
+          ]
+        },
+        {
+          "sira": "கால்",
+          "adi": 2,
+          "pos": 3,
+          "togai": null,
+          "components": [
+            {
+              "sol": "கால்",
+              "split": "கால்",
+              "category": "பெயர்",
+              "ilakkanam": "பொருட்பெயர்",
+              "features": {
+                "thinai": "அஃறிணை",
+                "paal": "ஒன்றன்பால்",
+                "eN": "ஒருமை"
+              },
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "channel/source (of water)",
+              "confidence": 0.55
+            }
+          ]
+        }
+      ],
+      "reviewFlags": [
+        "உழாஅர் — எதிர்மறை முற்று (உழார்) ஒலிநீட்டலுடன்; எச்சம் vs முற்று ஐயம்",
+        "உழவர் — காரணப்பெயர் vs வினையாலணையும்பெயர் ஐயம்",
+        "வாரி/கால் — மழையை விளக்கும் உருவகச் சொற்கள்; பொருள்/சொற்பகுப்பு ஐயம்",
+        "வளங்குன்றிக் — 'கால்' உடன் இணைக்கும் தொடரமைப்பு ஐயம்"
+      ]
+    },
+    {
+      "number": 15,
+      "verification": "verified",
+      "pal": "அறத்துப்பால்",
+      "iyal": "பாயிரவியல்",
+      "adhigaram": 2,
+      "adhigaramName": "வான்சிறப்பு",
+      "adhigaramEn": "The Blessing of Rain",
+      "line1": "கெடுப்பதூஉம் கெட்டார்க்குச் சார்வாய்மற் றாங்கே",
+      "line2": "எடுப்பதூஉம் எல்லாம் மழை.",
+      "couplet": "கெடுப்பதூஉம் கெட்டார்க்குச் சார்வாய்மற் றாங்கே எடுப்பதூஉம் எல்லாம் மழை.",
+      "meaningEn": "Destruction it may sometimes pour But only rain can life restore",
+      "urai_mv": "பெய்யாமல் வாழ்வைக் கெடுக்க வல்லதும் மழை; மழையில்லாமல் வளம் கெட்டு நொந்தவர்க்கும் துணையாய் அவ்வாறே காக்க வல்லதும் மழையாகும்",
+      "yappu": {
+        "paa": "குறள் வெண்பா",
+        "sirCount": [
+          4,
+          3
+        ],
+        "monai": [
+          {
+            "adi": 1,
+            "sirs": [
+              "கெடுப்பதூஉம்",
+              "கெட்டார்க்குச்",
+              "சார்வாய்மற்",
+              "றாங்கே"
+            ],
+            "key": "கெ/ச/ற",
+            "present": true
+          },
+          {
+            "adi": 2,
+            "sirs": [
+              "எடுப்பதூஉம்",
+              "எல்லாம்",
+              "மழை"
+            ],
+            "key": "எ/ம",
+            "present": true
+          }
+        ],
+        "edugai": {
+          "present": true,
+          "letter": "ெ",
+          "note": "கெடுப்/எடுப் — அடிமுதல் சீர் இரண்டாம் எழுத்து ஒப்பு; மடக்கு"
+        },
+        "thalai": "வெண்டளை",
+        "eetruseer": "மழை"
+      },
+      "ani": [
+        {
+          "name": "முரண்",
+          "note": "கெடுப்பது / எடுப்பது — எதிரெதிர்ச் செயல்களை ஒன்றுக்கே கூறல்"
+        },
+        {
+          "name": "மடக்கு",
+          "note": "கெடுப்பதூஉம்/எடுப்பதூஉம் ஒத்த வடிவ எதிர்ப்பொருள்"
+        }
+      ],
+      "sirs": [
+        {
+          "sira": "கெடுப்பதூஉம்",
+          "adi": 1,
+          "pos": 1,
+          "togai": null,
+          "components": [
+            {
+              "sol": "கெடுப்பது",
+              "split": "கெடு+ப்ப+அது",
+              "category": "பெயர்",
+              "ilakkanam": "வினையாலணையும்பெயர்",
+              "features": {
+                "thinai": "அஃறிணை",
+                "paal": "ஒன்றன்பால்",
+                "eN": "ஒருமை"
+              },
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "that which destroys",
+              "confidence": 0.72
+            },
+            {
+              "sol": "உம்",
+              "split": "உம்",
+              "category": "இடை",
+              "ilakkanam": "உம்மை",
+              "features": {},
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "also/and",
+              "confidence": 0.8
+            }
+          ]
+        },
+        {
+          "sira": "கெட்டார்க்குச்",
+          "adi": 1,
+          "pos": 2,
+          "togai": null,
+          "components": [
+            {
+              "sol": "கெட்டார்",
+              "split": "கெடு+ட்ட+ஆர்",
+              "category": "பெயர்",
+              "ilakkanam": "வினையாலணையும்பெயர்",
+              "features": {
+                "thinai": "உயர்திணை",
+                "paal": "பலர்பால்",
+                "eN": "பன்மை"
+              },
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "those who are ruined",
+              "confidence": 0.74
+            },
+            {
+              "sol": "கு",
+              "split": "கு",
+              "category": "இடை",
+              "ilakkanam": "வேற்றுமைஉருபு",
+              "features": {},
+              "vetrumai": {
+                "number": 4,
+                "urupu": "கு",
+                "name": "கொடை/நோக்கம்"
+              },
+              "todar": null,
+              "gloss": "for/to",
+              "confidence": 0.82
+            }
+          ]
+        },
+        {
+          "sira": "சார்வாய்மற்",
+          "adi": 1,
+          "pos": 3,
+          "togai": null,
+          "components": [
+            {
+              "sol": "சார்வாய்",
+              "split": "சார்வு+ஆய்",
+              "category": "வினை",
+              "ilakkanam": "வினையெச்சம்",
+              "features": {
+                "kaalam": "இறந்தகாலம்"
+              },
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "being a support",
+              "confidence": 0.66
+            },
+            {
+              "sol": "மற்",
+              "split": "மன்",
+              "category": "இடை",
+              "ilakkanam": "அசைநிலை",
+              "features": {},
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "(expletive)",
+              "confidence": 0.6
+            }
+          ]
+        },
+        {
+          "sira": "றாங்கே",
+          "adi": 1,
+          "pos": 4,
+          "togai": null,
+          "components": [
+            {
+              "sol": "ஆங்கு",
+              "split": "ஆங்கு+ஏ",
+              "category": "இடை",
+              "ilakkanam": "அசைநிலை",
+              "features": {},
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "there/thus (expletive)",
+              "confidence": 0.55
+            },
+            {
+              "sol": "ஏ",
+              "split": "ஏ",
+              "category": "இடை",
+              "ilakkanam": "ஏகாரம்",
+              "features": {},
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "emphatic",
+              "confidence": 0.6
+            }
+          ]
+        },
+        {
+          "sira": "எடுப்பதூஉம்",
+          "adi": 2,
+          "pos": 1,
+          "togai": null,
+          "components": [
+            {
+              "sol": "எடுப்பது",
+              "split": "எடு+ப்ப+அது",
+              "category": "பெயர்",
+              "ilakkanam": "வினையாலணையும்பெயர்",
+              "features": {
+                "thinai": "அஃறிணை",
+                "paal": "ஒன்றன்பால்",
+                "eN": "ஒருமை"
+              },
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "that which raises up",
+              "confidence": 0.72
+            },
+            {
+              "sol": "உம்",
+              "split": "உம்",
+              "category": "இடை",
+              "ilakkanam": "உம்மை",
+              "features": {},
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "also/and",
+              "confidence": 0.8
+            }
+          ]
+        },
+        {
+          "sira": "எல்லாம்",
+          "adi": 2,
+          "pos": 2,
+          "togai": null,
+          "components": [
+            {
+              "sol": "எல்லாம்",
+              "split": "எல்+ஆம்",
+              "category": "பெயர்",
+              "ilakkanam": "பொருட்பெயர்",
+              "features": {
+                "thinai": "அஃறிணை",
+                "paal": "பலவின்பால்",
+                "eN": "பன்மை"
+              },
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "all",
+              "confidence": 0.65
+            }
+          ]
+        },
+        {
+          "sira": "மழை",
+          "adi": 2,
+          "pos": 3,
+          "togai": null,
+          "components": [
+            {
+              "sol": "மழை",
+              "split": "மழை",
+              "category": "பெயர்",
+              "ilakkanam": "பொருட்பெயர்",
+              "features": {
+                "thinai": "அஃறிணை",
+                "paal": "ஒன்றன்பால்",
+                "eN": "ஒருமை"
+              },
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "rain",
+              "confidence": 0.92
+            }
+          ]
+        }
+      ],
+      "reviewFlags": [
+        "கெடுப்பதூஉம்/எடுப்பதூஉம் — 'அது' வினையாலணையும்பெயர்; ஊஉ ஒலிநீட்டல்",
+        "மற் — 'மன்' அசைநிலையின் புணர்ச்சி வடிவம் (றகர மெய்)",
+        "றாங்கே — 'ஆங்கே' அசைநிலை; றகரம் முந்தைய சீர் புணர்ச்சி",
+        "எல்லாம் — பொருட்பெயர் vs முற்றுப்பெயர் வகைப்பாடு ஐயம்"
+      ]
+    },
+    {
+      "number": 16,
+      "verification": "verified",
+      "pal": "அறத்துப்பால்",
+      "iyal": "பாயிரவியல்",
+      "adhigaram": 2,
+      "adhigaramName": "வான்சிறப்பு",
+      "adhigaramEn": "The Blessing of Rain",
+      "line1": "விசும்பின் துளிவீழின் அல்லால்மற் றாங்கே",
+      "line2": "பசும்புல் தலைகாண்பு அரிது.",
+      "couplet": "விசும்பின் துளிவீழின் அல்லால்மற் றாங்கே பசும்புல் தலைகாண்பு அரிது.",
+      "meaningEn": "No grassy blade its head will rear, If from the cloud no drop appear",
+      "urai_mv": "வானத்திலிருந்து மழைத்துளி வீழ்ந்தால் அல்லாமல், உலகத்தில் ஓரறிவுயிராகிய பசும்புல்லின் தலையையும் காண முடியாது",
+      "yappu": {
+        "paa": "குறள் வெண்பா",
+        "sirCount": [
+          4,
+          3
+        ],
+        "monai": [
+          {
+            "adi": 1,
+            "sirs": [
+              "விசும்பின்",
+              "துளிவீழின்",
+              "அல்லால்மற்",
+              "றாங்கே"
+            ],
+            "key": "வி/து/அ/ற",
+            "present": false
+          },
+          {
+            "adi": 2,
+            "sirs": [
+              "பசும்புல்",
+              "தலைகாண்பு",
+              "அரிது"
+            ],
+            "key": "ப/த/அ",
+            "present": false
+          }
+        ],
+        "edugai": {
+          "present": true,
+          "letter": "ு",
+          "note": "விசும்/பசும் — அடிமுதல் சீர் இரண்டாம் எழுத்து (சு/சு) ஒப்பு"
+        },
+        "thalai": "வெண்டளை",
+        "eetruseer": "அரிது"
+      },
+      "ani": [
+        {
+          "name": "உயர்வுநவிற்சி",
+          "note": "மழையின்றேல் பசும்புல் தலையும் காண்பது அரிது எனச் சிறப்பித்தல்"
+        }
+      ],
+      "sirs": [
+        {
+          "sira": "விசும்பின்",
+          "adi": 1,
+          "pos": 1,
+          "togai": null,
+          "components": [
+            {
+              "sol": "விசும்பு",
+              "split": "விசும்பு",
+              "category": "பெயர்",
+              "ilakkanam": "இடப்பெயர்",
+              "features": {
+                "thinai": "அஃறிணை",
+                "paal": "ஒன்றன்பால்",
+                "eN": "ஒருமை"
+              },
+              "vetrumai": {
+                "number": 5,
+                "urupu": "இன்",
+                "name": "நீங்கல்/ஒப்பு"
+              },
+              "todar": null,
+              "gloss": "from the sky",
+              "confidence": 0.72
+            },
+            {
+              "sol": "இன்",
+              "split": "இன்",
+              "category": "இடை",
+              "ilakkanam": "வேற்றுமைஉருபு",
+              "features": {},
+              "vetrumai": {
+                "number": 5,
+                "urupu": "இன்",
+                "name": "நீங்கல்/ஒப்பு"
+              },
+              "todar": null,
+              "gloss": "from",
+              "confidence": 0.7
+            }
+          ]
+        },
+        {
+          "sira": "துளிவீழின்",
+          "adi": 1,
+          "pos": 2,
+          "togai": null,
+          "components": [
+            {
+              "sol": "துளி",
+              "split": "துளி",
+              "category": "பெயர்",
+              "ilakkanam": "பொருட்பெயர்",
+              "features": {
+                "thinai": "அஃறிணை",
+                "paal": "ஒன்றன்பால்",
+                "eN": "ஒருமை"
+              },
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "drop",
+              "confidence": 0.82
+            },
+            {
+              "sol": "வீழின்",
+              "split": "வீழ்+இன்",
+              "category": "வினை",
+              "ilakkanam": "வினையெச்சம்",
+              "features": {
+                "kaalam": "எதிர்காலம்"
+              },
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "if it falls",
+              "confidence": 0.72
+            }
+          ]
+        },
+        {
+          "sira": "அல்லால்மற்",
+          "adi": 1,
+          "pos": 3,
+          "togai": null,
+          "components": [
+            {
+              "sol": "அல்லால்",
+              "split": "அல்+ஆல்",
+              "category": "இடை",
+              "ilakkanam": "எதிர்மறைஇடை",
+              "features": {},
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "except/unless",
+              "confidence": 0.66
+            },
+            {
+              "sol": "மற்",
+              "split": "மன்",
+              "category": "இடை",
+              "ilakkanam": "அசைநிலை",
+              "features": {},
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "(expletive)",
+              "confidence": 0.6
+            }
+          ]
+        },
+        {
+          "sira": "றாங்கே",
+          "adi": 1,
+          "pos": 4,
+          "togai": null,
+          "components": [
+            {
+              "sol": "ஆங்கு",
+              "split": "ஆங்கு+ஏ",
+              "category": "இடை",
+              "ilakkanam": "அசைநிலை",
+              "features": {},
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "there/thus (expletive)",
+              "confidence": 0.55
+            },
+            {
+              "sol": "ஏ",
+              "split": "ஏ",
+              "category": "இடை",
+              "ilakkanam": "ஏகாரம்",
+              "features": {},
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "emphatic",
+              "confidence": 0.6
+            }
+          ]
+        },
+        {
+          "sira": "பசும்புல்",
+          "adi": 2,
+          "pos": 1,
+          "togai": "பண்புத்தொகை",
+          "components": [
+            {
+              "sol": "பசும்",
+              "split": "பசுமை",
+              "category": "பெயர்",
+              "ilakkanam": "பண்புப்பெயர்",
+              "features": {},
+              "vetrumai": null,
+              "todar": "அடைமொழி",
+              "gloss": "green",
+              "confidence": 0.72
+            },
+            {
+              "sol": "புல்",
+              "split": "புல்",
+              "category": "பெயர்",
+              "ilakkanam": "பொருட்பெயர்",
+              "features": {
+                "thinai": "அஃறிணை",
+                "paal": "ஒன்றன்பால்",
+                "eN": "ஒருமை"
+              },
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "grass",
+              "confidence": 0.85
+            }
+          ]
+        },
+        {
+          "sira": "தலைகாண்பு",
+          "adi": 2,
+          "pos": 2,
+          "togai": null,
+          "components": [
+            {
+              "sol": "தலை",
+              "split": "தலை",
+              "category": "பெயர்",
+              "ilakkanam": "சினைப்பெயர்",
+              "features": {
+                "thinai": "அஃறிணை",
+                "paal": "ஒன்றன்பால்",
+                "eN": "ஒருமை"
+              },
+              "vetrumai": {
+                "number": 2,
+                "urupu": "ஐ",
+                "name": "செயப்படுபொருள்"
+              },
+              "todar": null,
+              "gloss": "head/tip",
+              "confidence": 0.66
+            },
+            {
+              "sol": "காண்பு",
+              "split": "காண்+பு",
+              "category": "பெயர்",
+              "ilakkanam": "தொழிற்பெயர்",
+              "features": {
+                "thinai": "அஃறிணை",
+                "paal": "ஒன்றன்பால்",
+                "eN": "ஒருமை"
+              },
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "seeing",
+              "confidence": 0.62
+            }
+          ]
+        },
+        {
+          "sira": "அரிது",
+          "adi": 2,
+          "pos": 3,
+          "togai": null,
+          "components": [
+            {
+              "sol": "அரிது",
+              "split": "அரு+இது",
+              "category": "வினை",
+              "ilakkanam": "குறிப்புவினைமுற்று",
+              "features": {
+                "idam": "படர்க்கை",
+                "thinai": "அஃறிணை",
+                "paal": "ஒன்றன்பால்",
+                "eN": "ஒருமை"
+              },
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "is difficult/rare",
+              "confidence": 0.7
+            }
+          ]
+        }
+      ],
+      "reviewFlags": [
+        "விசும்பின் — வேற்றுமை 5 நீங்கல் (இன்) — உறுதி",
+        "அல்லால் — எதிர்மறைஇடை ('அல்லாமல்')",
+        "பசும்புல் — பண்புத்தொகை (பசுமையான புல்)",
+        "தலைகாண்பு — தலை(வேற்றுமை 2) + காண்பு(தொழிற்பெயர்)",
+        "அரிது — குறிப்புவினைமுற்று ('அரிதாகும்') — உறுதி",
+        "மோனை: ஈற்றடி (ப/த/அ) மோனை இல்லை எனத் திருத்தம்"
+      ]
+    },
+    {
+      "number": 17,
+      "verification": "verified",
+      "pal": "அறத்துப்பால்",
+      "iyal": "பாயிரவியல்",
+      "adhigaram": 2,
+      "adhigaramName": "வான்சிறப்பு",
+      "adhigaramEn": "The Blessing of Rain",
+      "line1": "நெடுங்கடலும் தன்நீர்மை குன்றும் தடிந்தெழிலி",
+      "line2": "தான்நல்கா தாகி விடின்.",
+      "couplet": "நெடுங்கடலும் தன்நீர்மை குன்றும் தடிந்தெழிலி தான்நல்கா தாகி விடின்.",
+      "meaningEn": "The ocean's wealth will waste away, Except the cloud its stores repay",
+      "urai_mv": "மேகம் கடலிலிருந்து நீரைக் கொண்டு அதனிடத்திலேயே பெய்யாமல் விடுமானால், பெரிய கடலும் தன் வளம் குன்றிப் போகும்",
+      "yappu": {
+        "paa": "குறள் வெண்பா",
+        "sirCount": [
+          4,
+          3
+        ],
+        "monai": [
+          {
+            "adi": 1,
+            "sirs": [
+              "நெடுங்கடலும்",
+              "தன்நீர்மை",
+              "குன்றும்",
+              "தடிந்தெழிலி"
+            ],
+            "key": "ந/த/கு/த",
+            "present": true
+          },
+          {
+            "adi": 2,
+            "sirs": [
+              "தான்நல்கா",
+              "தாகி",
+              "விடின்"
+            ],
+            "key": "த/வி",
+            "present": true
+          }
+        ],
+        "edugai": {
+          "present": false,
+          "letter": "ெ",
+          "note": "நெடு/தான் முதல்சீர் இரண்டாம் எழுத்து (டு/ன்) ஒவ்வாமை — எதுகை இல்லை; தகர மோனை வலியது"
+        },
+        "thalai": "வெண்டளை",
+        "eetruseer": "விடின்"
+      },
+      "ani": [
+        {
+          "name": "உயர்வுநவிற்சி",
+          "note": "மேகம் பெய்யாவிடின் பெருங்கடலும் வற்றும் எனச் சிறப்பித்தல்"
+        }
+      ],
+      "sirs": [
+        {
+          "sira": "நெடுங்கடலும்",
+          "adi": 1,
+          "pos": 1,
+          "togai": "பண்புத்தொகை",
+          "components": [
+            {
+              "sol": "நெடும்",
+              "split": "நெடு",
+              "category": "பெயர்",
+              "ilakkanam": "பண்புப்பெயர்",
+              "features": {},
+              "vetrumai": null,
+              "todar": "அடைமொழி",
+              "gloss": "long/vast",
+              "confidence": 0.72
+            },
+            {
+              "sol": "கடல்",
+              "split": "கடல்",
+              "category": "பெயர்",
+              "ilakkanam": "இடப்பெயர்",
+              "features": {
+                "thinai": "அஃறிணை",
+                "paal": "ஒன்றன்பால்",
+                "eN": "ஒருமை"
+              },
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "sea",
+              "confidence": 0.85
+            },
+            {
+              "sol": "உம்",
+              "split": "உம்",
+              "category": "இடை",
+              "ilakkanam": "உம்மை",
+              "features": {},
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "even",
+              "confidence": 0.78
+            }
+          ]
+        },
+        {
+          "sira": "தன்நீர்மை",
+          "adi": 1,
+          "pos": 2,
+          "togai": null,
+          "components": [
+            {
+              "sol": "தன்",
+              "split": "தன்",
+              "category": "பெயர்",
+              "ilakkanam": "சுட்டுப்பெயர்",
+              "features": {
+                "thinai": "அஃறிணை",
+                "paal": "ஒன்றன்பால்",
+                "eN": "ஒருமை"
+              },
+              "vetrumai": {
+                "number": 6,
+                "urupu": "அது",
+                "name": "உடைமை"
+              },
+              "todar": null,
+              "gloss": "its own",
+              "confidence": 0.6
+            },
+            {
+              "sol": "நீர்மை",
+              "split": "நீர்மை",
+              "category": "பெயர்",
+              "ilakkanam": "பண்புப்பெயர்",
+              "features": {
+                "thinai": "அஃறிணை",
+                "paal": "ஒன்றன்பால்",
+                "eN": "ஒருமை"
+              },
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "quality/nature",
+              "confidence": 0.75
+            }
+          ]
+        },
+        {
+          "sira": "குன்றும்",
+          "adi": 1,
+          "pos": 3,
+          "togai": null,
+          "components": [
+            {
+              "sol": "குன்றும்",
+              "split": "குன்று+உம்",
+              "category": "வினை",
+              "ilakkanam": "தெரிநிலைவினைமுற்று",
+              "features": {
+                "kaalam": "எதிர்காலம்",
+                "idam": "படர்க்கை",
+                "thinai": "அஃறிணை",
+                "paal": "ஒன்றன்பால்",
+                "eN": "ஒருமை"
+              },
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "will diminish",
+              "confidence": 0.7
+            }
+          ]
+        },
+        {
+          "sira": "தடிந்தெழிலி",
+          "adi": 1,
+          "pos": 4,
+          "togai": null,
+          "components": [
+            {
+              "sol": "தடிந்து",
+              "split": "தடி+ந்து",
+              "category": "வினை",
+              "ilakkanam": "வினையெச்சம்",
+              "features": {
+                "kaalam": "இறந்தகாலம்"
+              },
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "having taken/cut off",
+              "confidence": 0.55
+            },
+            {
+              "sol": "எழிலி",
+              "split": "எழிலி",
+              "category": "பெயர்",
+              "ilakkanam": "பொருட்பெயர்",
+              "features": {
+                "thinai": "அஃறிணை",
+                "paal": "ஒன்றன்பால்",
+                "eN": "ஒருமை"
+              },
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "cloud",
+              "confidence": 0.78
+            }
+          ]
+        },
+        {
+          "sira": "தான்நல்கா",
+          "adi": 2,
+          "pos": 1,
+          "togai": null,
+          "components": [
+            {
+              "sol": "தான்",
+              "split": "தான்",
+              "category": "பெயர்",
+              "ilakkanam": "சுட்டுப்பெயர்",
+              "features": {
+                "thinai": "அஃறிணை",
+                "paal": "ஒன்றன்பால்",
+                "eN": "ஒருமை"
+              },
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "it (itself)",
+              "confidence": 0.58
+            },
+            {
+              "sol": "நல்கா",
+              "split": "நல்கு+ஆ",
+              "category": "வினை",
+              "ilakkanam": "எதிர்மறைவினையெச்சம்",
+              "features": {},
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "not giving",
+              "confidence": 0.6
+            }
+          ]
+        },
+        {
+          "sira": "தாகி",
+          "adi": 2,
+          "pos": 2,
+          "togai": null,
+          "components": [
+            {
+              "sol": "ஆகி",
+              "split": "ஆகு+இ",
+              "category": "வினை",
+              "ilakkanam": "வினையெச்சம்",
+              "features": {
+                "kaalam": "இறந்தகாலம்"
+              },
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "becoming",
+              "confidence": 0.7
+            }
+          ]
+        },
+        {
+          "sira": "விடின்",
+          "adi": 2,
+          "pos": 3,
+          "togai": null,
+          "components": [
+            {
+              "sol": "விடின்",
+              "split": "விடு+இன்",
+              "category": "வினை",
+              "ilakkanam": "வினையெச்சம்",
+              "features": {
+                "kaalam": "எதிர்காலம்"
+              },
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "if it leaves/fails",
+              "confidence": 0.72
+            }
+          ]
+        }
+      ],
+      "reviewFlags": [
+        "நெடுங்கடலும் — பண்புத்தொகை + உம்மை; சீர்க்குள் மூன்று சொல்",
+        "தன் — தற்சுட்டுப்பெயர்; வேற்றுமை 6 உடைமை",
+        "குன்றும் — தெரிநிலைவினைமுற்று (கடல்நீர்மை குன்றும்) — உறுதி",
+        "தடிந்து — பொருள் ஐயம் (கடல்நீரைக்கொண்டு/நீக்கி); எழிலியுடன் புணர்ச்சி",
+        "நல்கா — எதிர்மறைவினையெச்சம் ('நல்காது ஆகி')",
+        "எதுகை: நெடு/தான் இரண்டாம் எழுத்து ஒவ்வாமை — எதுகை இல்லை எனத் திருத்தம்"
+      ]
+    },
+    {
+      "number": 18,
+      "verification": "verified",
+      "pal": "அறத்துப்பால்",
+      "iyal": "பாயிரவியல்",
+      "adhigaram": 2,
+      "adhigaramName": "வான்சிறப்பு",
+      "adhigaramEn": "The Blessing of Rain",
+      "line1": "சிறப்பொடு பூசனை செல்லாது வானம்",
+      "line2": "வறக்குமேல் வானோர்க்கும் ஈண்டு.",
+      "couplet": "சிறப்பொடு பூசனை செல்லாது வானம் வறக்குமேல் வானோர்க்கும் ஈண்டு.",
+      "meaningEn": "The earth, beneath a barren sky, Would offerings for the gods deny",
+      "urai_mv": "மழை பெய்யாமல் போகுமானால் இவ்வுலகத்தில் வானோர்க்காக நடைபெறும் திருவிழாவும் நடைபெறாது; நாள் வழிபாடும் நடைபெறாது",
+      "yappu": {
+        "paa": "குறள் வெண்பா",
+        "sirCount": [
+          4,
+          3
+        ],
+        "monai": [
+          {
+            "adi": 1,
+            "sirs": [
+              "சிறப்பொடு",
+              "பூசனை",
+              "செல்லாது",
+              "வானம்"
+            ],
+            "key": "சி/செ (ச-மோனை)",
+            "present": true
+          },
+          {
+            "adi": 2,
+            "sirs": [
+              "வறக்குமேல்",
+              "வானோர்க்கும்",
+              "ஈண்டு"
+            ],
+            "key": "வ/ஈ",
+            "present": true
+          }
+        ],
+        "edugai": {
+          "present": true,
+          "letter": "ி",
+          "note": "சிறப்/... முதல்சீர்; வறக்/வானோர் ஈரடி வகர மோனை"
+        },
+        "thalai": "வெண்டளை",
+        "eetruseer": "ஈண்டு"
+      },
+      "ani": [
+        {
+          "name": "சொற்பொருட்பின்வருநிலை",
+          "note": "மழையின்மையின் விளைவாகப் பூசனை-விழா இன்மையை வரிசையாகக் கூறல்"
+        }
+      ],
+      "sirs": [
+        {
+          "sira": "சிறப்பொடு",
+          "adi": 1,
+          "pos": 1,
+          "togai": null,
+          "components": [
+            {
+              "sol": "சிறப்பு",
+              "split": "சிறப்பு",
+              "category": "பெயர்",
+              "ilakkanam": "பண்புப்பெயர்",
+              "features": {
+                "thinai": "அஃறிணை",
+                "paal": "ஒன்றன்பால்",
+                "eN": "ஒருமை"
+              },
+              "vetrumai": {
+                "number": 3,
+                "urupu": "ஒடு",
+                "name": "கருவி/உடன்"
+              },
+              "todar": null,
+              "gloss": "festival/distinction",
+              "confidence": 0.62
+            },
+            {
+              "sol": "ஒடு",
+              "split": "ஒடு",
+              "category": "இடை",
+              "ilakkanam": "வேற்றுமைஉருபு",
+              "features": {},
+              "vetrumai": {
+                "number": 3,
+                "urupu": "ஒடு",
+                "name": "கருவி/உடன்"
+              },
+              "todar": null,
+              "gloss": "with/along with",
+              "confidence": 0.78
+            }
+          ]
+        },
+        {
+          "sira": "பூசனை",
+          "adi": 1,
+          "pos": 2,
+          "togai": null,
+          "components": [
+            {
+              "sol": "பூசனை",
+              "split": "பூசனை",
+              "category": "பெயர்",
+              "ilakkanam": "தொழிற்பெயர்",
+              "features": {
+                "thinai": "அஃறிணை",
+                "paal": "ஒன்றன்பால்",
+                "eN": "ஒருமை"
+              },
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "worship/pooja",
+              "confidence": 0.72
+            }
+          ]
+        },
+        {
+          "sira": "செல்லாது",
+          "adi": 1,
+          "pos": 3,
+          "togai": null,
+          "components": [
+            {
+              "sol": "செல்லாது",
+              "split": "செல்+ஆ+து",
+              "category": "வினை",
+              "ilakkanam": "எதிர்மறைவினையெச்சம்",
+              "features": {
+                "idam": "படர்க்கை",
+                "thinai": "அஃறிணை",
+                "paal": "ஒன்றன்பால்",
+                "eN": "ஒருமை"
+              },
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "will not proceed",
+              "confidence": 0.58
+            }
+          ]
+        },
+        {
+          "sira": "வானம்",
+          "adi": 1,
+          "pos": 4,
+          "togai": null,
+          "components": [
+            {
+              "sol": "வானம்",
+              "split": "வானம்",
+              "category": "பெயர்",
+              "ilakkanam": "பொருட்பெயர்",
+              "features": {
+                "thinai": "அஃறிணை",
+                "paal": "ஒன்றன்பால்",
+                "eN": "ஒருமை"
+              },
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "sky/rain",
+              "confidence": 0.82
+            }
+          ]
+        },
+        {
+          "sira": "வறக்குமேல்",
+          "adi": 2,
+          "pos": 1,
+          "togai": null,
+          "components": [
+            {
+              "sol": "வறக்கும்",
+              "split": "வறக்கு+உம்",
+              "category": "வினை",
+              "ilakkanam": "பெயரெச்சம்",
+              "features": {
+                "kaalam": "எதிர்காலம்"
+              },
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "if it dries up",
+              "confidence": 0.62
+            },
+            {
+              "sol": "ஏல்",
+              "split": "ஏல்",
+              "category": "இடை",
+              "ilakkanam": "அசைநிலை",
+              "features": {},
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "if (conditional)",
+              "confidence": 0.6
+            }
+          ]
+        },
+        {
+          "sira": "வானோர்க்கும்",
+          "adi": 2,
+          "pos": 2,
+          "togai": null,
+          "components": [
+            {
+              "sol": "வானோர்",
+              "split": "வான்+ஓர்",
+              "category": "பெயர்",
+              "ilakkanam": "காரணப்பெயர்",
+              "features": {
+                "thinai": "உயர்திணை",
+                "paal": "பலர்பால்",
+                "eN": "பன்மை"
+              },
+              "vetrumai": {
+                "number": 4,
+                "urupu": "கு",
+                "name": "கொடை/நோக்கம்"
+              },
+              "todar": null,
+              "gloss": "the celestials/gods",
+              "confidence": 0.72
+            },
+            {
+              "sol": "உம்",
+              "split": "உம்",
+              "category": "இடை",
+              "ilakkanam": "உம்மை",
+              "features": {},
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "even/also",
+              "confidence": 0.78
+            }
+          ]
+        },
+        {
+          "sira": "ஈண்டு",
+          "adi": 2,
+          "pos": 3,
+          "togai": null,
+          "components": [
+            {
+              "sol": "ஈண்டு",
+              "split": "ஈண்டு",
+              "category": "பெயர்",
+              "ilakkanam": "இடப்பெயர்",
+              "features": {
+                "thinai": "அஃறிணை",
+                "paal": "ஒன்றன்பால்",
+                "eN": "ஒருமை"
+              },
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "here/in this world",
+              "confidence": 0.62
+            }
+          ]
+        }
+      ],
+      "reviewFlags": [
+        "சிறப்பொடு — 'ஒடு' வேற்றுமை 3 உடன்; சிறப்பு=விழா",
+        "செல்லாது — எதிர்மறை முற்றுப்பொருளில் நின்ற '-ஆது' வடிவம்; TAGSET-இல் எதிர்மறைவினைமுற்று இன்மையால் எதிர்மறைவினையெச்சம் எனக் குறிக்கப்பட்டது (முற்று/எச்சம் ஐயம் உள்)",
+        "வறக்குமேல் — பெயரெச்சம் + 'ஏல்' நிபந்தனை அசைநிலை",
+        "வானோர் — காரணப்பெயர்; வேற்றுமை 4 + உம்மை",
+        "ஈண்டு — இடப்பெயர் (இவ்வுலகம்) — உறுதி",
+        "மோனை: முதலடி சிறப்/செல் ச-மோனை உள — present:true எனத் திருத்தம்"
+      ]
+    },
+    {
+      "number": 19,
+      "verification": "verified",
+      "pal": "அறத்துப்பால்",
+      "iyal": "பாயிரவியல்",
+      "adhigaram": 2,
+      "adhigaramName": "வான்சிறப்பு",
+      "adhigaramEn": "The Blessing of Rain",
+      "line1": "தானம் தவம்இரண்டும் தங்கா வியன்உலகம்",
+      "line2": "வானம் வழங்கா தெனின்.",
+      "couplet": "தானம் தவம்இரண்டும் தங்கா வியன்உலகம் வானம் வழங்கா தெனின்.",
+      "meaningEn": "Were heaven above to fail below Nor alms nor penance earth would show",
+      "urai_mv": "மழை பெய்யவில்லையானால், இந்த பெரிய உலகத்தில் பிறர் பொருட்டு செய்யும் தானமும், தம் பொருட்டு செய்யும் தவமும் இல்லையாகும்.",
+      "yappu": {
+        "paa": "குறள் வெண்பா",
+        "sirCount": [
+          4,
+          3
+        ],
+        "monai": [
+          {
+            "adi": 1,
+            "sirs": [
+              "தானம்",
+              "தவம்இரண்டும்",
+              "தங்கா",
+              "வியன்உலகம்"
+            ],
+            "key": "த/வி",
+            "present": true
+          },
+          {
+            "adi": 2,
+            "sirs": [
+              "வானம்",
+              "வழங்கா",
+              "தெனின்"
+            ],
+            "key": "வ/த",
+            "present": true
+          }
+        ],
+        "edugai": {
+          "present": true,
+          "letter": "ா",
+          "note": "தானம்/வானம் — அடிமுதல் சீர் இரண்டாம் எழுத்து (ஆகாரம்) ஒப்பு"
+        },
+        "thalai": "வெண்டளை",
+        "eetruseer": "தெனின்"
+      },
+      "ani": [
+        {
+          "name": "இயைபு/ஒலிநயம்",
+          "note": "தானம்/வானம்/தவம் — அகர மெய்யொலி இயைபு"
+        }
+      ],
+      "sirs": [
+        {
+          "sira": "தானம்",
+          "adi": 1,
+          "pos": 1,
+          "togai": null,
+          "components": [
+            {
+              "sol": "தானம்",
+              "split": "தானம்",
+              "category": "பெயர்",
+              "ilakkanam": "தொழிற்பெயர்",
+              "features": {
+                "thinai": "அஃறிணை",
+                "paal": "ஒன்றன்பால்",
+                "eN": "ஒருமை"
+              },
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "charity/alms",
+              "confidence": 0.78
+            }
+          ]
+        },
+        {
+          "sira": "தவம்இரண்டும்",
+          "adi": 1,
+          "pos": 2,
+          "togai": null,
+          "components": [
+            {
+              "sol": "தவம்",
+              "split": "தவம்",
+              "category": "பெயர்",
+              "ilakkanam": "தொழிற்பெயர்",
+              "features": {
+                "thinai": "அஃறிணை",
+                "paal": "ஒன்றன்பால்",
+                "eN": "ஒருமை"
+              },
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "penance",
+              "confidence": 0.78
+            },
+            {
+              "sol": "இரண்டு",
+              "split": "இரண்டு",
+              "category": "பெயர்",
+              "ilakkanam": "எண்ணுப்பெயர்",
+              "features": {
+                "thinai": "அஃறிணை",
+                "paal": "பலவின்பால்",
+                "eN": "பன்மை"
+              },
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "two",
+              "confidence": 0.82
+            },
+            {
+              "sol": "உம்",
+              "split": "உம்",
+              "category": "இடை",
+              "ilakkanam": "உம்மை",
+              "features": {},
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "both/and",
+              "confidence": 0.8
+            }
+          ]
+        },
+        {
+          "sira": "தங்கா",
+          "adi": 1,
+          "pos": 3,
+          "togai": null,
+          "components": [
+            {
+              "sol": "தங்கா",
+              "split": "தங்கு+ஆ",
+              "category": "வினை",
+              "ilakkanam": "எதிர்மறைவினையெச்சம்",
+              "features": {
+                "idam": "படர்க்கை",
+                "thinai": "அஃறிணை",
+                "paal": "பலவின்பால்",
+                "eN": "பன்மை"
+              },
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "will not remain",
+              "confidence": 0.58
+            }
+          ]
+        },
+        {
+          "sira": "வியன்உலகம்",
+          "adi": 1,
+          "pos": 4,
+          "togai": "பண்புத்தொகை",
+          "components": [
+            {
+              "sol": "வியன்",
+              "split": "வியன்",
+              "category": "உரி",
+              "ilakkanam": "உரிச்சொல்",
+              "features": {},
+              "vetrumai": null,
+              "todar": "அடைமொழி",
+              "gloss": "wide/vast",
+              "confidence": 0.7
+            },
+            {
+              "sol": "உலகம்",
+              "split": "உலகம்",
+              "category": "பெயர்",
+              "ilakkanam": "இடப்பெயர்",
+              "features": {
+                "thinai": "அஃறிணை",
+                "paal": "ஒன்றன்பால்",
+                "eN": "ஒருமை"
+              },
+              "vetrumai": {
+                "number": 7,
+                "urupu": "கண்",
+                "name": "இடம்"
+              },
+              "todar": null,
+              "gloss": "world",
+              "confidence": 0.78
+            }
+          ]
+        },
+        {
+          "sira": "வானம்",
+          "adi": 2,
+          "pos": 1,
+          "togai": null,
+          "components": [
+            {
+              "sol": "வானம்",
+              "split": "வானம்",
+              "category": "பெயர்",
+              "ilakkanam": "பொருட்பெயர்",
+              "features": {
+                "thinai": "அஃறிணை",
+                "paal": "ஒன்றன்பால்",
+                "eN": "ஒருமை"
+              },
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "sky/rain",
+              "confidence": 0.82
+            }
+          ]
+        },
+        {
+          "sira": "வழங்கா",
+          "adi": 2,
+          "pos": 2,
+          "togai": null,
+          "components": [
+            {
+              "sol": "வழங்கா",
+              "split": "வழங்கு+ஆ",
+              "category": "வினை",
+              "ilakkanam": "எதிர்மறைவினையெச்சம்",
+              "features": {},
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "not giving/not raining",
+              "confidence": 0.62
+            }
+          ]
+        },
+        {
+          "sira": "தெனின்",
+          "adi": 2,
+          "pos": 3,
+          "togai": null,
+          "components": [
+            {
+              "sol": "து",
+              "split": "து",
+              "category": "வினை",
+              "ilakkanam": "குறிப்புவினைமுற்று",
+              "features": {
+                "idam": "படர்க்கை",
+                "thinai": "அஃறிணை",
+                "paal": "ஒன்றன்பால்",
+                "eN": "ஒருமை"
+              },
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "(it) being so",
+              "confidence": 0.45
+            },
+            {
+              "sol": "எனின்",
+              "split": "என்+இன்",
+              "category": "வினை",
+              "ilakkanam": "வினையெச்சம்",
+              "features": {
+                "kaalam": "எதிர்காலம்"
+              },
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "if (it be said)",
+              "confidence": 0.66
+            }
+          ]
+        }
+      ],
+      "reviewFlags": [
+        "தவம்இரண்டும் — தவம்+இரண்டு(எண்ணுப்பெயர்)+உம்",
+        "தங்கா — எதிர்மறை முற்றுப்பொருள் ('தங்காது'); TAGSET-இல் எதிர்மறைவினைமுற்று இன்மையால் எதிர்மறைவினையெச்சம் எனக் குறிக்கப்பட்டது",
+        "வியன்உலகம் — வியன் உரிச்சொல்; பண்புத்தொகை; வேற்றுமை 7 இடம் (உருபு தொக்கது)",
+        "தெனின் — 'வழங்காது+எனின்' சீர்ப்பிளவு; தனி 'து' பகுப்பு மிக ஐயத்திற்குரியது (வழங்காது-வின் ஈறு)"
+      ]
+    },
+    {
+      "number": 20,
+      "verification": "verified",
+      "pal": "அறத்துப்பால்",
+      "iyal": "பாயிரவியல்",
+      "adhigaram": 2,
+      "adhigaramName": "வான்சிறப்பு",
+      "adhigaramEn": "The Blessing of Rain",
+      "line1": "நீர்இன்று அமையாது உலகெனின் யார்யார்க்கும்",
+      "line2": "வான்இன்று அமையாது ஒழுக்கு.",
+      "couplet": "நீர்இன்று அமையாது உலகெனின் யார்யார்க்கும் வான்இன்று அமையாது ஒழுக்கு.",
+      "meaningEn": "Water is life that comes from rain Sans rain our duties go in vain",
+      "urai_mv": "எப்படிப்பட்டவர்க்கும் நீர் இல்லாமல் உலக வாழ்க்கை நடைபெறாது என்றால், மழை இல்லையானால் ஒழுக்கமும் நிலைபெறாமல் போகும்",
+      "yappu": {
+        "paa": "குறள் வெண்பா",
+        "sirCount": [
+          4,
+          3
+        ],
+        "monai": [
+          {
+            "adi": 1,
+            "sirs": [
+              "நீர்இன்று",
+              "அமையாது",
+              "உலகெனின்",
+              "யார்யார்க்கும்"
+            ],
+            "key": "நீ/அ/உ/யா",
+            "present": false
+          },
+          {
+            "adi": 2,
+            "sirs": [
+              "வான்இன்று",
+              "அமையாது",
+              "ஒழுக்கு"
+            ],
+            "key": "வா/அ/ஒ",
+            "present": false
+          }
+        ],
+        "edugai": {
+          "present": false,
+          "letter": "ீ",
+          "note": "நீர்/வான் முதல்சீர் இரண்டாம் எழுத்து (ர்/ன்) ஒவ்வாமை — எதுகை இல்லை"
+        },
+        "thalai": "வெண்டளை",
+        "eetruseer": "ஒழுக்கு"
+      },
+      "ani": [
+        {
+          "name": "மடக்கு",
+          "note": "'இன்று அமையாது' தொடர் ஈரடியிலும் மீளவருதல்"
+        },
+        {
+          "name": "சொற்பொருட்பின்வருநிலை",
+          "note": "நீர்-வான் இன்றியமையாமையை இணையாகக் கூறல்"
+        }
+      ],
+      "sirs": [
+        {
+          "sira": "நீர்இன்று",
+          "adi": 1,
+          "pos": 1,
+          "togai": null,
+          "components": [
+            {
+              "sol": "நீர்",
+              "split": "நீர்",
+              "category": "பெயர்",
+              "ilakkanam": "பொருட்பெயர்",
+              "features": {
+                "thinai": "அஃறிணை",
+                "paal": "ஒன்றன்பால்",
+                "eN": "ஒருமை"
+              },
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "water",
+              "confidence": 0.88
+            },
+            {
+              "sol": "இன்று",
+              "split": "இன்மை+று",
+              "category": "வினை",
+              "ilakkanam": "எதிர்மறைவினையெச்சம்",
+              "features": {},
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "without/not being",
+              "confidence": 0.6
+            }
+          ]
+        },
+        {
+          "sira": "அமையாது",
+          "adi": 1,
+          "pos": 2,
+          "togai": null,
+          "components": [
+            {
+              "sol": "அமையாது",
+              "split": "அமை+ஆ+து",
+              "category": "வினை",
+              "ilakkanam": "எதிர்மறைவினையெச்சம்",
+              "features": {
+                "idam": "படர்க்கை",
+                "thinai": "அஃறிணை",
+                "paal": "ஒன்றன்பால்",
+                "eN": "ஒருமை"
+              },
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "is not sustained",
+              "confidence": 0.58
+            }
+          ]
+        },
+        {
+          "sira": "உலகெனின்",
+          "adi": 1,
+          "pos": 3,
+          "togai": null,
+          "components": [
+            {
+              "sol": "உலகு",
+              "split": "உலகு",
+              "category": "பெயர்",
+              "ilakkanam": "இடப்பெயர்",
+              "features": {
+                "thinai": "அஃறிணை",
+                "paal": "ஒன்றன்பால்",
+                "eN": "ஒருமை"
+              },
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "world",
+              "confidence": 0.82
+            },
+            {
+              "sol": "எனின்",
+              "split": "என்+இன்",
+              "category": "வினை",
+              "ilakkanam": "வினையெச்சம்",
+              "features": {
+                "kaalam": "எதிர்காலம்"
+              },
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "if (it be said)",
+              "confidence": 0.68
+            }
+          ]
+        },
+        {
+          "sira": "யார்யார்க்கும்",
+          "adi": 1,
+          "pos": 4,
+          "togai": null,
+          "components": [
+            {
+              "sol": "யார்யார்",
+              "split": "யார்+யார்",
+              "category": "பெயர்",
+              "ilakkanam": "வினாப்பெயர்",
+              "features": {
+                "thinai": "உயர்திணை",
+                "paal": "பலர்பால்",
+                "eN": "பன்மை"
+              },
+              "vetrumai": {
+                "number": 4,
+                "urupu": "கு",
+                "name": "கொடை/நோக்கம்"
+              },
+              "todar": "அடுக்குத்தொடர்",
+              "gloss": "for whomsoever",
+              "confidence": 0.7
+            },
+            {
+              "sol": "கு",
+              "split": "கு",
+              "category": "இடை",
+              "ilakkanam": "வேற்றுமைஉருபு",
+              "features": {},
+              "vetrumai": {
+                "number": 4,
+                "urupu": "கு",
+                "name": "கொடை/நோக்கம்"
+              },
+              "todar": null,
+              "gloss": "to/for",
+              "confidence": 0.8
+            },
+            {
+              "sol": "உம்",
+              "split": "உம்",
+              "category": "இடை",
+              "ilakkanam": "உம்மை",
+              "features": {},
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "even/all",
+              "confidence": 0.78
+            }
+          ]
+        },
+        {
+          "sira": "வான்இன்று",
+          "adi": 2,
+          "pos": 1,
+          "togai": null,
+          "components": [
+            {
+              "sol": "வான்",
+              "split": "வான்",
+              "category": "பெயர்",
+              "ilakkanam": "பொருட்பெயர்",
+              "features": {
+                "thinai": "அஃறிணை",
+                "paal": "ஒன்றன்பால்",
+                "eN": "ஒருமை"
+              },
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "rain/sky",
+              "confidence": 0.85
+            },
+            {
+              "sol": "இன்று",
+              "split": "இன்மை+று",
+              "category": "வினை",
+              "ilakkanam": "எதிர்மறைவினையெச்சம்",
+              "features": {},
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "without/not being",
+              "confidence": 0.6
+            }
+          ]
+        },
+        {
+          "sira": "அமையாது",
+          "adi": 2,
+          "pos": 2,
+          "togai": null,
+          "components": [
+            {
+              "sol": "அமையாது",
+              "split": "அமை+ஆ+து",
+              "category": "வினை",
+              "ilakkanam": "எதிர்மறைவினையெச்சம்",
+              "features": {
+                "idam": "படர்க்கை",
+                "thinai": "அஃறிணை",
+                "paal": "ஒன்றன்பால்",
+                "eN": "ஒருமை"
+              },
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "is not sustained",
+              "confidence": 0.58
+            }
+          ]
+        },
+        {
+          "sira": "ஒழுக்கு",
+          "adi": 2,
+          "pos": 3,
+          "togai": null,
+          "components": [
+            {
+              "sol": "ஒழுக்கு",
+              "split": "ஒழுகு+கு",
+              "category": "பெயர்",
+              "ilakkanam": "தொழிற்பெயர்",
+              "features": {
+                "thinai": "அஃறிணை",
+                "paal": "ஒன்றன்பால்",
+                "eN": "ஒருமை"
+              },
+              "vetrumai": null,
+              "todar": null,
+              "gloss": "right conduct/virtue",
+              "confidence": 0.74
+            }
+          ]
+        }
+      ],
+      "reviewFlags": [
+        "இன்று — 'இல்' அடியான எதிர்மறைவினையெச்சம் (நீர்இன்று/வான்இன்று) — உறுதி",
+        "அமையாது — எதிர்மறை முற்றுப்பொருள்; TAGSET-இல் எதிர்மறைவினைமுற்று இன்மையால் எதிர்மறைவினையெச்சம் எனக் குறிக்கப்பட்டது (ஈரிடத்தும்)",
+        "யார்யார்க்கும் — அடுக்குத்தொடர் வினாப்பெயர் + வேற்றுமை 4 + உம்மை",
+        "ஒழுக்கு — தொழிற்பெயர் (ஒழுக்கம் குறுக்கம்)",
+        "மோனை: ஈற்றடி (வா/அ/ஒ) மோனை இல்லை; எதுகை: நீர்/வான் இரண்டாம் எழுத்து ஒவ்வாமை — இரண்டும் present:false எனத் திருத்தம்"
+      ]
+    }
+  ]
+}

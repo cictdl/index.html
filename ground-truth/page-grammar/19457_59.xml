@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='utf-8'?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+  <Metadata>
+    <Creator>Central Institute of Classical Tamil (CICT)</Creator>
+    <Created>2026-06-11T00:00:00</Created>
+    <LastChange>2026-06-11T00:00:00</LastChange>
+    <Comments>CICT-PLM-GT-057 | Tirukkural Adhikaram 57 (வெருவந்தசெய்யாமை / Avoidance of Cruelty) | kurals 561-570 | section பொருள் / subsection அரசியல் | DOI 10.5281/zenodo.20642516 | record https://zenodo.org/records/20642516 | manuscriptId 19457_59 | NOTE: line Coords are band-derived full-width bounding boxes (approximate); transcription text is exact ground truth.</Comments>
+  </Metadata>
+  <Page imageFilename="19457_59.jpg" imageWidth="2891" imageHeight="481">
+    <ReadingOrder>
+      <OrderedGroup id="g0">
+        <RegionRefIndexed index="0" regionRef="r_main" />
+        <RegionRefIndexed index="1" regionRef="r_margin" />
+      </OrderedGroup>
+    </ReadingOrder>
+    <TextRegion id="r_main" type="paragraph" custom="readingOrder {index:0;}">
+      <Coords points="0,83 2891,83 2891,470 0,470" />
+      <TextLine id="r_main_l1" custom="readingOrder {index:0;} ilakkanam {kural:566;verification:verified;words:கடுஞ்சொல்லன்=காரணப்பெயர்|கண்ணிலன்=குறிப்புவினைமுற்று|ஆயின்=வினையெச்சம்|நெடு=பண்புப்பெயர்|செல்வம்=பொருட்பெயர்|நீடு=தொழிற்பெயர்|இன்றி=எதிர்மறைவினையெச்சம்|ஆங்கு=இடப்பெயர்|ஏ=ஏகாரம்|கெடும்=தெரிநிலைவினைமுற்று;togai:கடுஞ்சொல்லன்=பண்புத்தொகை|நெடுஞ்செல்வம்=பண்புத்தொகை;ani:சொற்பொருட்பின்வருநிலை;edugai:டு/டு;eetruseer:பிறப்பு;}" comments="kural=566; numeral=௧">
+        <Coords points="0,83 2891,83 2891,122 0,122" />
+        <Baseline points="0,115 2891,115" />
+        <TextEquiv>
+          <Unicode>கடுஞ்சொல்லன் கண்ணிலனா யின் நெடுஞ்செல்வம் நீடின்றி யாங்கே கெடும்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l2" custom="readingOrder {index:1;} ilakkanam {kural:568;verification:verified;words:இனத்து=பொருட்பெயர்|ஆற்றி=வினையெச்சம்|எண்ணாத=எதிர்மறைபெயரெச்சம்|வேந்தன்=பொருட்பெயர்|சினத்து=பண்புப்பெயர்|ஆற்றி=வினையெச்சம்|சீறில்=வினையெச்சம்|சிறுகும்=தெரிநிலைவினைமுற்று|திரு=பொருட்பெயர்;ani:சொற்பொருட்பின்வருநிலை;edugai:ன/ன;eetruseer:பிறப்பு;}" comments="kural=568; numeral=௨">
+        <Coords points="0,122 2891,122 2891,161 0,161" />
+        <Baseline points="0,154 2891,154" />
+        <TextEquiv>
+          <Unicode>இநத்தாற்றி யெண்ணாத வேந்தன் சிநத்தாற்றிச் சீறிற் சிறுகும் திரு</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l3" custom="readingOrder {index:2;} ilakkanam {kural:565;verification:verified;words:அரு=பண்புப்பெயர்|செவ்வி=காலப்பெயர்|இன்னா=பண்புப்பெயர்|முகத்தான்=காரணப்பெயர்|பெரு=பண்புப்பெயர்|செல்வம்=பொருட்பெயர்|பேஎய்=பொருட்பெயர்|கண்டு=வினையெச்சம்|அன்னது=சுட்டுப்பெயர்|உடைத்து=குறிப்புவினைமுற்று;togai:அருஞ்செவ்வி=பண்புத்தொகை|பெருஞ்செல்வம்=பண்புத்தொகை;ani:உவமை;edugai:ரு/எ;eetruseer:காசு;}" comments="kural=565; numeral=௩">
+        <Coords points="0,161 2891,161 2891,199 0,199" />
+        <Baseline points="0,192 2891,192" />
+        <TextEquiv>
+          <Unicode>அருஞ்செவ்வி யிந்நா முகத்தான் பெருஞ்செல்வம் பேய்கண் டந்நது டைத்து</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l4" custom="readingOrder {index:3;} ilakkanam {kural:563;verification:verified;words:வெருவந்த=பெயரெச்சம்|செய்து=வினையெச்சம்|ஒழுகும்=பெயரெச்சம்|வெங்கோலன்=காரணப்பெயர்|ஆயின்=வினையெச்சம்|ஒருவந்தம்=பண்புப்பெயர்|ஒல்லை=காலப்பெயர்|கெடும்=தெரிநிலைவினைமுற்று;togai:வெங்கோல=பண்புத்தொகை;ani:சொற்பொருட்பின்வருநிலை;edugai:ரு/ரு;eetruseer:பிறப்பு;}" comments="kural=563; numeral=௪">
+        <Coords points="0,199 2891,199 2891,238 0,238" />
+        <Baseline points="0,231 2891,231" />
+        <TextEquiv>
+          <Unicode>வெருவந்த செய்தொழுகும் வெங்கோல னாயினொ ருவந்துமொ ல்லைக் கெடும்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l5" custom="readingOrder {index:4;} ilakkanam {kural:564;verification:verified;words:இறை=பொருட்பெயர்|கடியன்=குறிப்புவினைமுற்று|என்று=வினையெச்சம்|உரைக்கும்=பெயரெச்சம்|இன்னா=பண்புப்பெயர்|சொல்=பொருட்பெயர்|வேந்தன்=பொருட்பெயர்|உறை=காலப்பெயர்|கடுகி=வினையெச்சம்|ஒல்லை=காலப்பெயர்|கெடும்=தெரிநிலைவினைமுற்று;togai:இன்னாச்சொல்=பண்புத்தொகை;ani:சொற்பொருட்பின்வருநிலை;edugai:றை/றை;eetruseer:பிறப்பு;}" comments="kural=564; numeral=௫">
+        <Coords points="0,238 2891,238 2891,277 0,277" />
+        <Baseline points="0,270 2891,270" />
+        <TextEquiv>
+          <Unicode>இறைகடியநெ ன்றுரைக்குமி ன்னாச்சொல் வேந்தனு றைகடுகி யொல்லைக் கெடும்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l6" custom="readingOrder {index:5;} ilakkanam {kural:567;verification:verified;words:கடுமொழி=பண்புப்பெயர்|உம்=உம்மை|கை=பண்புப்பெயர்|இகந்த=பெயரெச்சம்|தண்டம்=பொருட்பெயர்|உம்=உம்மை|வேந்தன்=பொருட்பெயர்|அடு=பெயரெச்சம்|முரண்=பண்புப்பெயர்|தேய்க்கும்=பெயரெச்சம்|அரம்=பொருட்பெயர்;togai:கடுமொழியும்=பண்புத்தொகை|அடுமுரண்=வினைத்தொகை;ani:உருவகம்;edugai:டு/டு;eetruseer:மலர்;}" comments="kural=567; numeral=௬">
+        <Coords points="0,277 2891,277 2891,315 0,315" />
+        <Baseline points="0,308 2891,308" />
+        <TextEquiv>
+          <Unicode>கடுமொழியுங் கையிகழ்ந்த தண்டமும் வேந்தன டுமுரண் டேய்க்குமாம்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l7" custom="readingOrder {index:6;} ilakkanam {kural:569;verification:verified;words:செரு=பொருட்பெயர்|வந்த=பெயரெச்சம்|போழ்தில்=காலப்பெயர்|சிறை=பொருட்பெயர்|செய்யா=எதிர்மறைபெயரெச்சம்|வேந்தன்=பொருட்பெயர்|வெருவந்து=வினையெச்சம்|வெய்து=உரிச்சொல்|கெடும்=தெரிநிலைவினைமுற்று;ani:சொற்பொருட்பின்வருநிலை;edugai:ரு/ரு;eetruseer:பிறப்பு;}" comments="kural=569; numeral=௭">
+        <Coords points="0,315 2891,315 2891,354 0,354" />
+        <Baseline points="0,347 2891,347" />
+        <TextEquiv>
+          <Unicode>செருவந்த போழ்திற் சிறைசெய்யா வேந்தன் வெருவந்து வெய்து கெடும்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l8" custom="readingOrder {index:7;} ilakkanam {kural:561;verification:verified;words:தக்காங்கு=உரிச்சொல்|நாடி=வினையெச்சம்|தலைச்செல்லா=எதிர்மறைபெயரெச்சம்|வண்ணத்தால்=பண்புப்பெயர்|ஒத்தாங்கு=உரிச்சொல்|ஒறுப்பது=வினையாலணையும்பெயர்|வேந்து=பொருட்பெயர்;ani:சொற்பொருட்பின்வருநிலை;edugai:க்/த்;eetruseer:பிறப்பு;}" comments="kural=561; numeral=௮">
+        <Coords points="0,354 2891,354 2891,393 0,393" />
+        <Baseline points="0,386 2891,386" />
+        <TextEquiv>
+          <Unicode>தக்காங்கு நாடித் தலைச்செய்யா வண்ணத்தாலொ த்தாங்கொ றுப்பது வேந்து</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l9" custom="readingOrder {index:8;} ilakkanam {kural:562;verification:verified;words:கடிது=உரிச்சொல்|ஓச்சி=வினையெச்சம்|மெல்ல=உரிச்சொல்|எறிக=வியங்கோள்வினைமுற்று|நெடிது=உரிச்சொல்|ஆக்கம்=தொழிற்பெயர்|நீங்காமை=தொழிற்பெயர்|வேண்டு=வினையாலணையும்பெயர்|பவர்=வினையாலணையும்பெயர்;ani:முரண்;edugai:டி/டி;eetruseer:பிறப்பு;}" comments="kural=562; numeral=௯">
+        <Coords points="0,393 2891,393 2891,431 0,431" />
+        <Baseline points="0,424 2891,424" />
+        <TextEquiv>
+          <Unicode>கடிதோச்சி மெல்ல வெறிக நெடிதாக்கம் நீங்காமை வேண்டு பவர்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l10" custom="readingOrder {index:9;} ilakkanam {kural:570;verification:verified;words:கல்லார்=வினையாலணையும்பெயர்|பிணிக்கும்=பெயரெச்சம்|கடுங்கோல்=பொருட்பெயர்|அது=சுட்டுப்பெயர்|அல்லது=எதிர்மறைஇடை|இல்லை=எதிர்மறைஇடை|நிலக்கு=இடப்பெயர்|பொறை=பொருட்பெயர்;togai:கடுங்கோல்=பண்புத்தொகை;ani:உயர்வுநவிற்சி;edugai:ல்/ல்;eetruseer:மலர்;}" comments="kural=570; numeral=௰">
+        <Coords points="0,431 2891,431 2891,470 0,470" />
+        <Baseline points="0,463 2891,463" />
+        <TextEquiv>
+          <Unicode>கல்லார்ப் பிணிக்குங் கடுங்கோல துவல்லதி ல்லை நிலற்குப் பொறை</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextEquiv>
+        <Unicode>கடுஞ்சொல்லன் கண்ணிலனா யின் நெடுஞ்செல்வம் நீடின்றி யாங்கே கெடும்
+இநத்தாற்றி யெண்ணாத வேந்தன் சிநத்தாற்றிச் சீறிற் சிறுகும் திரு
+அருஞ்செவ்வி யிந்நா முகத்தான் பெருஞ்செல்வம் பேய்கண் டந்நது டைத்து
+வெருவந்த செய்தொழுகும் வெங்கோல னாயினொ ருவந்துமொ ல்லைக் கெடும்
+இறைகடியநெ ன்றுரைக்குமி ன்னாச்சொல் வேந்தனு றைகடுகி யொல்லைக் கெடும்
+கடுமொழியுங் கையிகழ்ந்த தண்டமும் வேந்தன டுமுரண் டேய்க்குமாம்
+செருவந்த போழ்திற் சிறைசெய்யா வேந்தன் வெருவந்து வெய்து கெடும்
+தக்காங்கு நாடித் தலைச்செய்யா வண்ணத்தாலொ த்தாங்கொ றுப்பது வேந்து
+கடிதோச்சி மெல்ல வெறிக நெடிதாக்கம் நீங்காமை வேண்டு பவர்
+கல்லார்ப் பிணிக்குங் கடுங்கோல துவல்லதி ல்லை நிலற்குப் பொறை</Unicode>
+      </TextEquiv>
+    </TextRegion>
+    <TextRegion id="r_margin" type="marginalia" custom="readingOrder {index:1;}">
+      <Coords points="0,83 405,83 405,470 0,470" />
+      <TextLine id="r_margin_l3" custom="readingOrder {index:2;}" comments="marginal cell @ L3">
+        <Coords points="0,161 405,161 405,199 0,199" />
+        <Baseline points="0,192 405,192" />
+        <TextEquiv>
+          <Unicode>வெருவ</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_margin_l4" custom="readingOrder {index:3;}" comments="marginal cell @ L4">
+        <Coords points="0,199 405,199 405,238 0,238" />
+        <Baseline points="0,231 405,231" />
+        <TextEquiv>
+          <Unicode>ந்தசெ</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_margin_l5" custom="readingOrder {index:4;}" comments="marginal cell @ L5">
+        <Coords points="0,238 405,238 405,277 0,277" />
+        <Baseline points="0,270 405,270" />
+        <TextEquiv>
+          <Unicode>ய்யாமை</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_margin_l7" custom="readingOrder {index:6;}" comments="marginal cell @ L7">
+        <Coords points="0,315 405,315 405,354 0,354" />
+        <Baseline points="0,347 405,347" />
+        <TextEquiv>
+          <Unicode>௪௰௯</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextEquiv>
+        <Unicode>வெருவ
+ந்தசெ
+ய்யாமை
+௪௰௯</Unicode>
+      </TextEquiv>
+    </TextRegion>
+  </Page>
+</PcGts>

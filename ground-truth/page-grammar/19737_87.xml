@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='utf-8'?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+  <Metadata>
+    <Creator>Central Institute of Classical Tamil (CICT)</Creator>
+    <Created>2026-06-22T00:00:00</Created>
+    <LastChange>2026-06-22T00:00:00</LastChange>
+    <Comments>CICT-PLM-GT-085 | Tirukkural Adhikaram 85 (புல்லறிவாண்மை / Petty Conceit) | kurals 841-850 | section பொருள் / subsection அங்கவியல் | DOI 10.5281/zenodo.20791837 | record https://zenodo.org/records/20791837 | manuscriptId 19737_87 | NOTE: line Coords are band-derived full-width bounding boxes (approximate); transcription text is exact ground truth.</Comments>
+  </Metadata>
+  <Page imageFilename="19737_87.jpg" imageWidth="2869" imageHeight="485">
+    <ReadingOrder>
+      <OrderedGroup id="g0">
+        <RegionRefIndexed index="0" regionRef="r_main" />
+        <RegionRefIndexed index="1" regionRef="r_margin" />
+      </OrderedGroup>
+    </ReadingOrder>
+    <TextRegion id="r_main" type="paragraph" custom="readingOrder {index:0;}">
+      <Coords points="0,79 2869,79 2869,460 0,460" />
+      <TextLine id="r_main_l1" custom="readingOrder {index:0;} ilakkanam {kural:841;verification:verified;words:அறிவின்மை=பண்புப்பெயர்|இன்மை=பண்புப்பெயர்|உள்=வேற்றுமைஉருபு|இன்மை=பண்புப்பெயர்|பிறிது=பொருட்பெயர்|இன்மை=பண்புப்பெயர்|இன்மையா=பண்புப்பெயர்|வையா(து)=எதிர்மறைவினைமுற்று|து=எதிர்மறைஇடை|உலகு=இடப்பெயர்;ani:சொற்பொருட்பின்வருநிலை,மடக்கு;edugai:றி/ன்;eetruseer:பிறப்பு;}" comments="kural=841; numeral=௧">
+        <Coords points="0,79 2869,79 2869,117 0,117" />
+        <Baseline points="0,110 2869,110" />
+        <TextEquiv>
+          <Unicode>அறிவின்மை யின்மையுளி ன்மை பிறிதின்மை யின்மையா வையாதுலகு</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l2" custom="readingOrder {index:1;} ilakkanam {kural:843;verification:verified;words:அறிவிலார்=வினையாலணையும்பெயர்|தாம்=சுட்டுப்பெயர்|தம்மை=சுட்டுப்பெயர்|ஐ=வேற்றுமைஉருபு|பீழிக்கும்=பெயரெச்சம்|பீழை=பண்புப்பெயர்|செறுவார்=வினையாலணையும்பெயர்|கு=வேற்றுமைஉருபு|உம்=உம்மை|செய்தல்=தொழிற்பெயர்|அரிது=குறிப்புவினைமுற்று;ani:சொற்பொருட்பின்வருநிலை;edugai:றி/று;eetruseer:காசு;}" comments="kural=843; numeral=௨">
+        <Coords points="0,117 2869,117 2869,155 0,155" />
+        <Baseline points="0,148 2869,148" />
+        <TextEquiv>
+          <Unicode>அறிவிலார் தாந்தம்மை பீழிக்கும் பீழை செறுவார்க்கஞ் செய்தல ரிது</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l3" custom="readingOrder {index:2;} ilakkanam {kural:847;verification:verified;words:அரு=உரிச்சொல்|மறை=பொருட்பெயர்|சோரும்=பெயரெச்சம்|அறிவிலான்=வினையாலணையும்பெயர்|செய்யும்=பெயரெச்சம்|பெரு=பண்புப்பெயர்|மிறை=பொருட்பெயர்|தான்=சுட்டுப்பெயர்|ஏ=ஏகாரம்|தன்=சுட்டுப்பெயர்|கு=வேற்றுமைஉருபு;togai:பெருமிறை=பண்புத்தொகை;ani:இயைபு/ஒலிநயம்;edugai:ரு;eetruseer:காசு;}" comments="kural=847; numeral=௩">
+        <Coords points="0,155 2869,155 2869,193 0,193" />
+        <Baseline points="0,186 2869,186" />
+        <TextEquiv>
+          <Unicode>அருமறை சோரும றிவிலான் செய்யும் பெருமிறை தாநெ தநக்கு</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l4" custom="readingOrder {index:3;} ilakkanam {kural:844;verification:verified;words:வெண்மை=பண்புப்பெயர்|எனப்படுவது=வினையாலணையும்பெயர்|து=வினையாலணையும்பெயர்|யாது=வினாப்பெயர்|எனின்=வினையெச்சம்|ஒண்மை=பண்புப்பெயர்|உடையம்=குறிப்புவினைமுற்று|யாம்=சுட்டுப்பெயர்|என்னும்=பெயரெச்சம்|செருக்கு=பண்புப்பெயர்;ani:இயைபு/ஒலிநயம்;edugai:ண்/டை;eetruseer:காசு;}" comments="kural=844; numeral=௪">
+        <Coords points="0,193 2869,193 2869,231 0,231" />
+        <Baseline points="0,225 2869,225" />
+        <TextEquiv>
+          <Unicode>வெண்மை யெநப்படுவதி யாதெநின் நொண்மை யுடமை யாமெ ந்நுஞ்செருக்கு</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l5" custom="readingOrder {index:4;} ilakkanam {kural:845;verification:verified;words:கல்லாத=எதிர்மறைபெயரெச்சம்|மேல்=இடப்பெயர்|கொண்டு=வினையெச்சம்|டு=வினையெச்சம்|ஒழுகல்=தொழிற்பெயர்|கசடு=பண்புப்பெயர்|அற=வினையெச்சம்|வல்லது=வினையாலணையும்பெயர்|உம்=உம்மை|ஐயம்=பண்புப்பெயர்|தரும்=தெரிநிலைவினைமுற்று;edugai:ல்;eetruseer:காசு;}" comments="kural=845; numeral=௫">
+        <Coords points="0,231 2869,231 2869,269 0,269" />
+        <Baseline points="0,263 2869,263" />
+        <TextEquiv>
+          <Unicode>கல்லாது மேற்கொண்டொ ழுகல் கசடற வல்லதூமை யந் தரும்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l6" custom="readingOrder {index:5;} ilakkanam {kural:849;verification:verified;words:காணாதான்=வினையாலணையும்பெயர்|காட்டுவான்=வினையாலணையும்பெயர்|தான்=சுட்டுப்பெயர்|காணான்=எதிர்மறைவினைமுற்று|காணாதான்=வினையாலணையும்பெயர்|கண்டான்=வினையாலணையும்பெயர்|ஆம்=குறிப்புவினைமுற்று|தான்=சுட்டுப்பெயர்|கண்ட=பெயரெச்சம்|ஆறு=பண்புப்பெயர்;ani:மடக்கு,சொற்பொருட்பின்வருநிலை;edugai:ணா/ண்;eetruseer:காசு;}" comments="kural=849; numeral=௬">
+        <Coords points="0,269 2869,269 2869,308 0,308" />
+        <Baseline points="0,301 2869,301" />
+        <TextEquiv>
+          <Unicode>காணாதான் காட்டுவான் றான்காணான் காணாதான் கண்டாநாந் தான்கண்ட வாறு</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l7" custom="readingOrder {index:6;} ilakkanam {kural:846;verification:verified;words:அற்றம்=பொருட்பெயர்|மறைத்தல்=தொழிற்பெயர்|ஓ=ஓகாரம்|புல்லறிவு=பண்புப்பெயர்|தம்=சுட்டுப்பெயர்|வயின்=வேற்றுமைஉருபு|குற்றம்=பண்புப்பெயர்|மறையா=எதிர்மறைபெயரெச்சம்|வழி=காலப்பெயர்;ani:முரண்;edugai:ற்ற;eetruseer:காசு;}" comments="kural=846; numeral=௭">
+        <Coords points="0,308 2869,308 2869,346 0,346" />
+        <Baseline points="0,339 2869,339" />
+        <TextEquiv>
+          <Unicode>அற்றம் மறைத்தலொ புல்லறிவு தம்வயிற் குற்ற மறையாக் கடை</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l8" custom="readingOrder {index:7;} ilakkanam {kural:848;verification:verified;words:ஏவ=வினையெச்சம்|உம்=உம்மை|செய்கலான்=எதிர்மறைவினைமுற்று|தான்=சுட்டுப்பெயர்|தேறான்=எதிர்மறைவினைமுற்று|அவ்=சுட்டுப்பெயர்|உயிர்=பொருட்பெயர்|போஒம்=பெயரெச்சம்|அளவும்=காலப்பெயர்|உம்=உம்மை|ஓர்=எண்ணுப்பெயர்|நோய்=பொருட்பெயர்;edugai:வ/ஒ;eetruseer:நாள்;}" comments="kural=848; numeral=௮">
+        <Coords points="0,346 2869,346 2869,384 0,384" />
+        <Baseline points="0,377 2869,377" />
+        <TextEquiv>
+          <Unicode>எவவுஞ் செய்கலான் றான்றோறான் ஒவ்வுயிர் போஒம ழவுமோர் நோய்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l9" custom="readingOrder {index:8;} ilakkanam {kural:842;verification:verified;words:அறிவிலான்=வினையாலணையும்பெயர்|நெஞ்சு=சினைப்பெயர்|உவந்து=வினையெச்சம்|ஈதல்=தொழிற்பெயர்|பிறிது=பொருட்பெயர்|யாது=வினாப்பெயர்|உம்=உம்மை|இல்லை=எதிர்மறைவினைமுற்று|பெறுவான்=வினையாலணையும்பெயர்|தவம்=பண்புப்பெயர்;edugai:றி/ல்;eetruseer:பிறப்பு;}" comments="kural=842; numeral=௯">
+        <Coords points="0,384 2869,384 2869,422 0,422" />
+        <Baseline points="0,415 2869,415" />
+        <TextEquiv>
+          <Unicode>அறிவிலான் நெஞ்சுவந்தீ தல் பிறிதியாதுமில்லைப் பெறுவான்றவம்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l10" custom="readingOrder {index:9;} ilakkanam {kural:850;verification:verified;words:உலகத்தார்=வினையாலணையும்பெயர்|உண்டு=குறிப்புவினைமுற்று|என்பது=வினையாலணையும்பெயர்|இல்=எதிர்மறைஇடை|என்பான்=வினையாலணையும்பெயர்|வையத்து=இடப்பெயர்|அலகையா=பொருட்பெயர்|வைக்க=வினையெச்சம்|படும்=தெரிநிலைவினைமுற்று;ani:உவமை;edugai:ல;eetruseer:பிறப்பு;}" comments="kural=850; numeral=௰">
+        <Coords points="0,422 2869,422 2869,460 0,460" />
+        <Baseline points="0,453 2869,453" />
+        <TextEquiv>
+          <Unicode>உலகத்தாரு ண்டென்பதி ல்லென்பான் வையத்த லகையாய் வைக்கப் படும்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextEquiv>
+        <Unicode>அறிவின்மை யின்மையுளி ன்மை பிறிதின்மை யின்மையா வையாதுலகு
+அறிவிலார் தாந்தம்மை பீழிக்கும் பீழை செறுவார்க்கஞ் செய்தல ரிது
+அருமறை சோரும றிவிலான் செய்யும் பெருமிறை தாநெ தநக்கு
+வெண்மை யெநப்படுவதி யாதெநின் நொண்மை யுடமை யாமெ ந்நுஞ்செருக்கு
+கல்லாது மேற்கொண்டொ ழுகல் கசடற வல்லதூமை யந் தரும்
+காணாதான் காட்டுவான் றான்காணான் காணாதான் கண்டாநாந் தான்கண்ட வாறு
+அற்றம் மறைத்தலொ புல்லறிவு தம்வயிற் குற்ற மறையாக் கடை
+எவவுஞ் செய்கலான் றான்றோறான் ஒவ்வுயிர் போஒம ழவுமோர் நோய்
+அறிவிலான் நெஞ்சுவந்தீ தல் பிறிதியாதுமில்லைப் பெறுவான்றவம்
+உலகத்தாரு ண்டென்பதி ல்லென்பான் வையத்த லகையாய் வைக்கப் படும்</Unicode>
+      </TextEquiv>
+    </TextRegion>
+    <TextRegion id="r_margin" type="marginalia" custom="readingOrder {index:1;}">
+      <Coords points="0,79 402,79 402,460 0,460" />
+      <TextLine id="r_margin_l4" custom="readingOrder {index:3;}" comments="marginal cell @ L4">
+        <Coords points="0,193 402,193 402,231 0,231" />
+        <Baseline points="0,225 402,225" />
+        <TextEquiv>
+          <Unicode>புல்லறி</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_margin_l5" custom="readingOrder {index:4;}" comments="marginal cell @ L5">
+        <Coords points="0,231 402,231 402,269 0,269" />
+        <Baseline points="0,263 402,263" />
+        <TextEquiv>
+          <Unicode>வாண்மை</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_margin_l7" custom="readingOrder {index:6;}" comments="marginal cell @ L7">
+        <Coords points="0,308 402,308 402,346 0,346" />
+        <Baseline points="0,339 402,339" />
+        <TextEquiv>
+          <Unicode>௯௰௩</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextEquiv>
+        <Unicode>புல்லறி
+வாண்மை
+௯௰௩</Unicode>
+      </TextEquiv>
+    </TextRegion>
+  </Page>
+</PcGts>

@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='utf-8'?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+  <Metadata>
+    <Creator>Central Institute of Classical Tamil (CICT)</Creator>
+    <Created>2026-06-22T00:00:00</Created>
+    <LastChange>2026-06-22T00:00:00</LastChange>
+    <Comments>CICT-PLM-GT-081 | Tirukkural Adhikaram 81 (பழைமை / Familiarity) | kurals 801-810 | section பொருள் / subsection அங்கவியல் | DOI 10.5281/zenodo.20791532 | record https://zenodo.org/records/20791532 | manuscriptId 19697_83 | NOTE: line Coords are band-derived full-width bounding boxes (approximate); transcription text is exact ground truth.</Comments>
+  </Metadata>
+  <Page imageFilename="19697_83.jpg" imageWidth="2896" imageHeight="468">
+    <ReadingOrder>
+      <OrderedGroup id="g0">
+        <RegionRefIndexed index="0" regionRef="r_main" />
+        <RegionRefIndexed index="1" regionRef="r_margin" />
+      </OrderedGroup>
+    </ReadingOrder>
+    <TextRegion id="r_main" type="paragraph" custom="readingOrder {index:0;}">
+      <Coords points="0,80 2896,80 2896,457 0,457" />
+      <TextLine id="r_main_l1" custom="readingOrder {index:0;} ilakkanam {kural:810;verification:verified;words:விழையார்=வினையாலணையும்பெயர்|விழைய=வினையெச்சம்|படுப=தெரிநிலைவினைமுற்று|பழையார்=வினையாலணையும்பெயர்|கண்=வேற்றுமைஉருபு|பண்பின்=பண்புப்பெயர்|இன்=வேற்றுமைஉருபு|தலைப்பிரியா=எதிர்மறைபெயரெச்சம்|தார்=வினையாலணையும்பெயர்;ani:சொற்பொருட்பின்வருநிலை;eetruseer:தார்;}" comments="kural=810; numeral=௧">
+        <Coords points="0,80 2896,80 2896,118 0,118" />
+        <Baseline points="0,111 2896,111" />
+        <TextEquiv>
+          <Unicode>விழையார் விழையப்படுபவா பழையார்கட் பண்பிற்றலையா தார்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l2" custom="readingOrder {index:1;} ilakkanam {kural:809;verification:verified;words:கெடாஅ=எதிர்மறைபெயரெச்சம்|வழிவந்த=பெயரெச்சம்|கேண்மையார்=வினையாலணையும்பெயர்|கேண்மை=பண்புப்பெயர்|விடாஅர்=வினையாலணையும்பெயர்|விழையும்=தெரிநிலைவினைமுற்று|உலகு=இடப்பெயர்;ani:ஒலிநயம்;edugai:ட;eetruseer:உலகு;}" comments="kural=809; numeral=௨">
+        <Coords points="0,118 2896,118 2896,155 0,155" />
+        <Baseline points="0,148 2896,148" />
+        <TextEquiv>
+          <Unicode>கெடாஅ வழிவந்த கேண்மையார் கேண்மை விடார் விழையுமு லகு</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l3" custom="readingOrder {index:2;} ilakkanam {kural:802;verification:verified;words:நட்பிற்கு=பண்புப்பெயர்|உறுப்பு=பொருட்பெயர்|கெழுதகைமை=பண்புப்பெயர்|மற்று=அசைநிலை|அதற்கு=சுட்டுப்பெயர்|உப்பாதல்=தொழிற்பெயர்|சான்றோர்=வினையாலணையும்பெயர்|கடன்=பண்புப்பெயர்;ani:சொற்பொருட்பின்வருநிலை;eetruseer:கடன்;}" comments="kural=802; numeral=௩">
+        <Coords points="0,155 2896,155 2896,193 0,193" />
+        <Baseline points="0,186 2896,186" />
+        <TextEquiv>
+          <Unicode>நட்பிற்கு றுப்புக் கெழுதகமை மற்றதற்குப்பாதல் சான்றோர்  கடன்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l4" custom="readingOrder {index:3;} ilakkanam {kural:803;verification:verified;words:பழகிய=பெயரெச்சம்|நட்பு=பண்புப்பெயர்|எவன்=வினாஇடை|செய்யும்=தெரிநிலைவினைமுற்று|கெழுதகைமை=பண்புப்பெயர்|செய்தாங்கு=வினையெச்சம்|அமையா=எதிர்மறைபெயரெச்சம்|கடை=காலப்பெயர்;ani:வினா;eetruseer:கடை;}" comments="kural=803; numeral=௪">
+        <Coords points="0,193 2896,193 2896,231 0,231" />
+        <Baseline points="0,224 2896,224" />
+        <TextEquiv>
+          <Unicode>பளகிய நட்பெவன் செய்யுங் கெழுதகைமை செய்யதாங்க மையாக் கடை</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l5" custom="readingOrder {index:4;} ilakkanam {kural:804;verification:verified;words:விழைதகையான்=பண்புப்பெயர்|ஆன்=வேற்றுமைஉருபு|வேண்டி=வினையெச்சம்|இருப்பர்=தெரிநிலைவினைமுற்று|கெழுதகையால்=பண்புப்பெயர்|ஆல்=வேற்றுமைஉருபு|கேளாது=எதிர்மறைவினையெச்சம்|நட்டார்=வினையாலணையும்பெயர்|செயின்=வினையெச்சம்;ani:சொற்பொருட்பின்வருநிலை;eetruseer:செயின்;}" comments="kural=804; numeral=௫">
+        <Coords points="0,231 2896,231 2896,268 0,268" />
+        <Baseline points="0,262 2896,262" />
+        <TextEquiv>
+          <Unicode>விழைதகையான் வேண்டி யிருப்பர் கெழுதகையாற் கேழாது நட்டார் செயின்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l6" custom="readingOrder {index:5;} ilakkanam {kural:808;verification:verified;words:கேள்=பொருட்பெயர்|இழுக்கம்=தொழிற்பெயர்|கேளா=எதிர்மறைபெயரெச்சம்|கெழுதகைமை=பண்புப்பெயர்|வல்லார்க்கு=வினையாலணையும்பெயர்|கு=வேற்றுமைஉருபு|நாள்=காலப்பெயர்|இழுக்கம்=தொழிற்பெயர்|நட்டார்=வினையாலணையும்பெயர்|செயின்=வினையெச்சம்;togai:கேளிழுக்கம்=வேற்றுமைத்தொகை|நாளிழுக்கம்=வேற்றுமைத்தொகை;ani:மடக்கு;edugai:ள;eetruseer:செயின்;}" comments="kural=808; numeral=௬">
+        <Coords points="0,268 2896,268 2896,306 0,306" />
+        <Baseline points="0,299 2896,299" />
+        <TextEquiv>
+          <Unicode>கேழிளுக்கங் கேழாக் கெழுதகமை வல்லார்க்கு நாளிழுக்கம் நட்டார் செயின்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l7" custom="readingOrder {index:6;} ilakkanam {kural:806;verification:verified;words:எல்லைக்கண்=இடப்பெயர்|கண்=வேற்றுமைஉருபு|நின்றார்=வினையாலணையும்பெயர்|துறவார்=எதிர்மறைவினைமுற்று|தொலைவிடத்து=இடப்பெயர்|உம்=உம்மை|தொல்லைக்கண்=காலப்பெயர்|கண்=வேற்றுமைஉருபு|நின்றார்=வினையாலணையும்பெயர்|தொடர்பு=தொழிற்பெயர்;ani:மடக்கு;edugai:ல்;eetruseer:தொடர்பு;}" comments="kural=806; numeral=௭">
+        <Coords points="0,306 2896,306 2896,344 0,344" />
+        <Baseline points="0,337 2896,337" />
+        <TextEquiv>
+          <Unicode>எல்லைக்கண் ணின்றார் துறவார் தொலைவிடத்துத் தொல்லைக்கண் ணின்றார் துடர்பு</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l8" custom="readingOrder {index:7;} ilakkanam {kural:805;verification:verified;words:பேதைமை=பண்புப்பெயர்|ஒன்று=எண்ணுப்பெயர்|ஓ=ஓகாரம்|பெரும்=பண்புப்பெயர்|கிழமை=பண்புப்பெயர்|என்று=வினையெச்சம்|உணர்க=வியங்கோள்வினைமுற்று|நோதக்க=பெயரெச்சம்|நட்டார்=வினையாலணையும்பெயர்|செயின்=வினையெச்சம்;togai:பெருங்கிழமை=பண்புத்தொகை;ani:எண்ணு;edugai:த;eetruseer:செயின்;}" comments="kural=805; numeral=௮">
+        <Coords points="0,344 2896,344 2896,382 0,382" />
+        <Baseline points="0,375 2896,375" />
+        <TextEquiv>
+          <Unicode>பேதமை யென்றொ  பெருங்கிழமை யென்றுணர் நோதக்க நட்டார் செயின்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l9" custom="readingOrder {index:8;} ilakkanam {kural:807;verification:verified;words:அழிவந்த=பெயரெச்சம்|செய்யினும்=வினையெச்சம்|உம்=உம்மை|அன்பு=பண்புப்பெயர்|அறார்=எதிர்மறைவினைமுற்று|அன்பின்=பண்புப்பெயர்|இன்=வேற்றுமைஉருபு|வழிவந்த=பெயரெச்சம்|கேண்மை=பண்புப்பெயர்|யவர்=வினையாலணையும்பெயர்;ani:மடக்கு;edugai:ழி;eetruseer:யவர்;}" comments="kural=807; numeral=௯">
+        <Coords points="0,382 2896,382 2896,419 0,419" />
+        <Baseline points="0,413 2896,413" />
+        <TextEquiv>
+          <Unicode>அழிவந்த செய்யிநு மன்பறாரன்பின் வழிவந்த கேண்மை யவர்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l10" custom="readingOrder {index:9;} ilakkanam {kural:801;verification:verified;words:பழைமை=பண்புப்பெயர்|எனப்படுவது=வினையாலணையும்பெயர்|யாது=வினாப்பெயர்|எனின்=வினையெச்சம்|யாது=வினாப்பெயர்|உம்=உம்மை|கிழமையை=பண்புப்பெயர்|ஐ=வேற்றுமைஉருபு|கீழ்ந்திடா=எதிர்மறைபெயரெச்சம்|நட்பு=பண்புப்பெயர்;ani:வினா;edugai:ழ;eetruseer:நட்பு;}" comments="kural=801; numeral=௰">
+        <Coords points="0,419 2896,419 2896,457 0,457" />
+        <Baseline points="0,450 2896,450" />
+        <TextEquiv>
+          <Unicode>பழைமை யெநப்படுவதி யாதெநின் யாதுங் கிழமையைக் கீழ்ந்திடா நட்பு</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextEquiv>
+        <Unicode>விழையார் விழையப்படுபவா பழையார்கட் பண்பிற்றலையா தார்
+கெடாஅ வழிவந்த கேண்மையார் கேண்மை விடார் விழையுமு லகு
+நட்பிற்கு றுப்புக் கெழுதகமை மற்றதற்குப்பாதல் சான்றோர்  கடன்
+பளகிய நட்பெவன் செய்யுங் கெழுதகைமை செய்யதாங்க மையாக் கடை
+விழைதகையான் வேண்டி யிருப்பர் கெழுதகையாற் கேழாது நட்டார் செயின்
+கேழிளுக்கங் கேழாக் கெழுதகமை வல்லார்க்கு நாளிழுக்கம் நட்டார் செயின்
+எல்லைக்கண் ணின்றார் துறவார் தொலைவிடத்துத் தொல்லைக்கண் ணின்றார் துடர்பு
+பேதமை யென்றொ  பெருங்கிழமை யென்றுணர் நோதக்க நட்டார் செயின்
+அழிவந்த செய்யிநு மன்பறாரன்பின் வழிவந்த கேண்மை யவர்
+பழைமை யெநப்படுவதி யாதெநின் யாதுங் கிழமையைக் கீழ்ந்திடா நட்பு</Unicode>
+      </TextEquiv>
+    </TextRegion>
+    <TextRegion id="r_margin" type="marginalia" custom="readingOrder {index:1;}">
+      <Coords points="0,80 405,80 405,457 0,457" />
+      <TextLine id="r_margin_l4" custom="readingOrder {index:3;}" comments="marginal cell @ L4">
+        <Coords points="0,193 405,193 405,231 0,231" />
+        <Baseline points="0,224 405,224" />
+        <TextEquiv>
+          <Unicode>பளமை</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_margin_l7" custom="readingOrder {index:6;}" comments="marginal cell @ L7">
+        <Coords points="0,306 405,306 405,344 0,344" />
+        <Baseline points="0,337 405,337" />
+        <TextEquiv>
+          <Unicode>௯௰௧</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextEquiv>
+        <Unicode>பளமை
+௯௰௧</Unicode>
+      </TextEquiv>
+    </TextRegion>
+  </Page>
+</PcGts>

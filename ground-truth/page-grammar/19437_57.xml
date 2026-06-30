@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='utf-8'?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+  <Metadata>
+    <Creator>Central Institute of Classical Tamil (CICT)</Creator>
+    <Created>2026-06-11T00:00:00</Created>
+    <LastChange>2026-06-11T00:00:00</LastChange>
+    <Comments>CICT-PLM-GT-055 | Tirukkural Adhikaram 55 (செங்கோன்மை / Just Rule) | kurals 541-550 | section பொருள் / subsection அரசியல் | DOI 10.5281/zenodo.20640368 | record https://zenodo.org/records/20640368 | manuscriptId 19437_57 | NOTE: line Coords are band-derived full-width bounding boxes (approximate); transcription text is exact ground truth.</Comments>
+  </Metadata>
+  <Page imageFilename="19437_57.jpg" imageWidth="2851" imageHeight="490">
+    <ReadingOrder>
+      <OrderedGroup id="g0">
+        <RegionRefIndexed index="0" regionRef="r_main" />
+        <RegionRefIndexed index="1" regionRef="r_margin" />
+      </OrderedGroup>
+    </ReadingOrder>
+    <TextRegion id="r_main" type="paragraph" custom="readingOrder {index:0;}">
+      <Coords points="0,82 2851,82 2851,469 0,469" />
+      <TextLine id="r_main_l1" custom="readingOrder {index:0;} ilakkanam {kural:541;verification:verified;words:ஓர்ந்து=வினையெச்சம்|கண்=சினைப்பெயர்|ஓடாது=எதிர்மறைவினையெச்சம்|இறை=பண்புப்பெயர்|புரிந்து=வினையெச்சம்|யார்=வினாப்பெயர்|மாட்டு=வேற்றுமைஉருபு|உம்=உம்மை|தேர்ந்து=வினையெச்சம்|செய்=பெயரெச்சம்|வஃது=வினையாலணையும்பெயர்|ஏ=பிரிநிலைஇடை|முறை=பண்புப்பெயர்;edugai:ர்;eetruseer:முறை — மலர் வாய்பாடு;}" comments="kural=541; numeral=௧">
+        <Coords points="0,82 2851,82 2851,121 0,121" />
+        <Baseline points="0,114 2851,114" />
+        <TextEquiv>
+          <Unicode>ஓர்ந்துகண் ணோடாதி றைபுரிந்தி யார்மாட்டுந் தேர்ந்துசெய் வஃதெ முறை</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l2" custom="readingOrder {index:1;} ilakkanam {kural:550;verification:verified;words:கொலை=தொழிற்பெயர்|இன்=வேற்றுமைஉருபு|கொடியார்=வினையாலணையும்பெயர்|ஐ=வேற்றுமைஉருபு|வேந்து=பொருட்பெயர்|ஒறுத்தல்=தொழிற்பெயர்|பைம்=பண்புப்பெயர்|கூழ்=பொருட்பெயர்|களை=பொருட்பெயர்|கட்டு=வினையெச்சம்|அதன்=சுட்டுப்பெயர்|ஒடு=வேற்றுமைஉருபு|நேர்=பண்புப்பெயர்;togai:பைங்கூழ்=பண்புத்தொகை;ani:எடுத்துக்காட்டுவமை,உவமை;edugai:ொ;eetruseer:நேர் — நாள் வாய்பாடு;}" comments="kural=550; numeral=௨">
+        <Coords points="0,121 2851,121 2851,160 0,160" />
+        <Baseline points="0,153 2851,153" />
+        <TextEquiv>
+          <Unicode>கொலைமேற் கொடியாரை வேந்தொறுத்தல் பைங்கூழ்க் கழைகட் டதநொடு நேர்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l3" custom="readingOrder {index:2;} ilakkanam {kural:546;verification:verified;words:வேல்=பொருட்பெயர்|அன்று=எதிர்மறைஇடை|வென்றி=தொழிற்பெயர்|தருவது=வினையாலணையும்பெயர்|மன்னவன்=பொருட்பெயர்|கோல்=பொருட்பெயர்|அது=சுட்டுப்பெயர்|உம்=உம்மை|கோடா=எதிர்மறைவினையெச்சம்|து=எதிர்மறைவினையெச்சம்|எனின்=வினையெச்சம்;ani:வஞ்சப்புகழ்ச்சி,முரண்;edugai:ல;eetruseer:தெனின் — காசு வாய்பாடு (எனின் — நிபந்தனை);}" comments="kural=546; numeral=௩">
+        <Coords points="0,160 2851,160 2851,198 0,198" />
+        <Baseline points="0,191 2851,191" />
+        <TextEquiv>
+          <Unicode>வேலன்றி வென்றி தருவது மந்நவன் கோலது கோடா தெநின்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l4" custom="readingOrder {index:3;} ilakkanam {kural:543;verification:verified;words:அந்தணர்=பொருட்பெயர்|நூல்=பொருட்பெயர்|உம்=உம்மை|அறம்=பண்புப்பெயர்|உம்=உம்மை|ஆதியாய்=வினையெச்சம்|நின்றது=வினையாலணையும்பெயர்|மன்னவன்=பொருட்பெயர்|கோல்=பொருட்பெயர்;ani:உருவகம்;edugai:ந்/ன்;eetruseer:கோல் — நாள் வாய்பாடு;}" comments="kural=543; numeral=௪">
+        <Coords points="0,198 2851,198 2851,237 0,237" />
+        <Baseline points="0,230 2851,230" />
+        <TextEquiv>
+          <Unicode>அந்தணர் நூற்கும றத்திற்குமா தியாய் நின்றது மந்நவன் கோல்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l5" custom="readingOrder {index:4;} ilakkanam {kural:545;verification:verified;words:இயல்பு=பண்புப்பெயர்|உளி=வேற்றுமைஉருபு|கோல்=பொருட்பெயர்|ஓச்சும்=பெயரெச்சம்|மன்னவன்=பொருட்பெயர்|நாட்ட=இடப்பெயர்|பெயல்=தொழிற்பெயர்|உம்=உம்மை|விளையுள்=தொழிற்பெயர்|உம்=உம்மை|தொக்கு=வினையெச்சம்;edugai:ய;eetruseer:தொக்கு — காசு வாய்பாடு;}" comments="kural=545; numeral=௫">
+        <Coords points="0,237 2851,237 2851,275 0,275" />
+        <Baseline points="0,268 2851,268" />
+        <TextEquiv>
+          <Unicode>இயல்புளி கோலோச்சும் மந்நவன் னாட்டிற் பெயலும் விழையுழுந் தொக்கு</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l6" custom="readingOrder {index:5;} ilakkanam {kural:542;verification:verified;words:வான்=இடப்பெயர்|நோக்கி=வினையெச்சம்|வாழும்=பெயரெச்சம்|உலகு=இடப்பெயர்|எல்லாம்=பொருட்பெயர்|மன்னவன்=பொருட்பெயர்|கோல்=பொருட்பெயர்|நோக்கி=வினையெச்சம்|வாழும்=பெயரெச்சம்|குடி=பொருட்பெயர்;ani:எடுத்துக்காட்டுவமை;eetruseer:குடி — பிறப்பு வாய்பாடு;}" comments="kural=542; numeral=௬">
+        <Coords points="0,275 2851,275 2851,314 0,314" />
+        <Baseline points="0,307 2851,307" />
+        <TextEquiv>
+          <Unicode>வாநொக்கி வாளுமு லகெல்லா மந்நவன் கோ நோக்கி வாழுங் குடி</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l7" custom="readingOrder {index:6;} ilakkanam {kural:549;verification:verified;words:குடி=பொருட்பெயர்|புறம்=இடப்பெயர்|காத்து=வினையெச்சம்|ஓம்பி=வினையெச்சம்|குற்றம்=பண்புப்பெயர்|கடிதல்=தொழிற்பெயர்|வடு=பண்புப்பெயர்|அன்று=எதிர்மறைஇடை|வேந்தன்=பொருட்பெயர்|தொழில்=தொழிற்பெயர்;ani:இயைபு/ஒலிநயம்;edugai:டி;eetruseer:தொழில் — பிறப்பு வாய்பாடு;}" comments="kural=549; numeral=௭">
+        <Coords points="0,314 2851,314 2851,353 0,353" />
+        <Baseline points="0,346 2851,346" />
+        <TextEquiv>
+          <Unicode>குடிபுறங் காத்தோம்பிக் குற்றங் கடிதல் வடுவன்று வேந்தன் றொழில்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l8" custom="readingOrder {index:7;} ilakkanam {kural:544;verification:verified;words:குடி=பொருட்பெயர்|தழீஇ=வினையெச்சம்|கோல்=பொருட்பெயர்|ஓச்சும்=பெயரெச்சம்|மா=உரிச்சொல்|நில=இடப்பெயர்|மன்னன்=பொருட்பெயர்|அடி=சினைப்பெயர்|தழீஇ=வினையெச்சம்|நிற்கும்=தெரிநிலைவினைமுற்று|உலகு=இடப்பெயர்;togai:மாநில=பண்புத்தொகை;ani:சொற்பொருட்பின்வருநிலை;edugai:டி;eetruseer:உலகு — பிறப்பு வாய்பாடு;}" comments="kural=544; numeral=௮">
+        <Coords points="0,353 2851,353 2851,391 0,391" />
+        <Baseline points="0,384 2851,384" />
+        <TextEquiv>
+          <Unicode>குடிதழீஇக் கோலோச்சுமாநில மந்நன் அடிதழிஇ நிற்குமு லகு</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l9" custom="readingOrder {index:8;} ilakkanam {kural:547;verification:verified;words:இறை=பொருட்பெயர்|காக்கும்=தெரிநிலைவினைமுற்று|வையகம்=இடப்பெயர்|எல்லாம்=பொருட்பெயர்|அவன்=சுட்டுப்பெயர்|முறை=பண்புப்பெயர்|காக்கும்=தெரிநிலைவினைமுற்று|முட்டா=எதிர்மறைவினையெச்சம்|செயின்=வினையெச்சம்;ani:சொற்பொருட்பின்வருநிலை;edugai:றை;eetruseer:செயின் — காசு வாய்பாடு (செய்யின் — நிபந்தனை);}" comments="kural=547; numeral=௯">
+        <Coords points="0,391 2851,391 2851,430 0,430" />
+        <Baseline points="0,423 2851,423" />
+        <TextEquiv>
+          <Unicode>இறைகாக்கும் வையகமெ ல்லாம வநை முறைகாக்கு முட்டா செயின்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l10" custom="readingOrder {index:9;} ilakkanam {kural:548;verification:verified;words:எண்பதத்தான்=பண்புப்பெயர்|ஓரா=எதிர்மறைபெயரெச்சம்|முறை=பண்புப்பெயர்|செய்யா=எதிர்மறைபெயரெச்சம்|மன்னவன்=பொருட்பெயர்|தண்பதத்தான்=பண்புப்பெயர்|தான்=சுட்டுப்பெயர்|ஏ=ஏகாரம்|கெடும்=தெரிநிலைவினைமுற்று;togai:எண்பதத்தான்=பண்புத்தொகை|தண்பதத்தான்=பண்புத்தொகை;ani:சொற்பொருட்பின்வருநிலை,முரண்;edugai:ண்;eetruseer:கெடும் — காசு வாய்பாடு;}" comments="kural=548; numeral=௰">
+        <Coords points="0,430 2851,430 2851,469 0,469" />
+        <Baseline points="0,462 2851,462" />
+        <TextEquiv>
+          <Unicode>எண்பதத்தானொ ரா முறைசெய்யா மந்நவன் றன்பதத்தாற்றா னெ கெடும்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextEquiv>
+        <Unicode>ஓர்ந்துகண் ணோடாதி றைபுரிந்தி யார்மாட்டுந் தேர்ந்துசெய் வஃதெ முறை
+கொலைமேற் கொடியாரை வேந்தொறுத்தல் பைங்கூழ்க் கழைகட் டதநொடு நேர்
+வேலன்றி வென்றி தருவது மந்நவன் கோலது கோடா தெநின்
+அந்தணர் நூற்கும றத்திற்குமா தியாய் நின்றது மந்நவன் கோல்
+இயல்புளி கோலோச்சும் மந்நவன் னாட்டிற் பெயலும் விழையுழுந் தொக்கு
+வாநொக்கி வாளுமு லகெல்லா மந்நவன் கோ நோக்கி வாழுங் குடி
+குடிபுறங் காத்தோம்பிக் குற்றங் கடிதல் வடுவன்று வேந்தன் றொழில்
+குடிதழீஇக் கோலோச்சுமாநில மந்நன் அடிதழிஇ நிற்குமு லகு
+இறைகாக்கும் வையகமெ ல்லாம வநை முறைகாக்கு முட்டா செயின்
+எண்பதத்தானொ ரா முறைசெய்யா மந்நவன் றன்பதத்தாற்றா னெ கெடும்</Unicode>
+      </TextEquiv>
+    </TextRegion>
+    <TextRegion id="r_margin" type="marginalia" custom="readingOrder {index:1;}">
+      <Coords points="0,82 399,82 399,469 0,469" />
+      <TextLine id="r_margin_l3" custom="readingOrder {index:2;}" comments="marginal cell @ L3">
+        <Coords points="0,160 399,160 399,198 0,198" />
+        <Baseline points="0,191 399,191" />
+        <TextEquiv>
+          <Unicode>செங்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_margin_l4" custom="readingOrder {index:3;}" comments="marginal cell @ L4">
+        <Coords points="0,198 399,198 399,237 0,237" />
+        <Baseline points="0,230 399,230" />
+        <TextEquiv>
+          <Unicode>கோ</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_margin_l5" custom="readingOrder {index:4;}" comments="marginal cell @ L5">
+        <Coords points="0,237 399,237 399,275 0,275" />
+        <Baseline points="0,268 399,268" />
+        <TextEquiv>
+          <Unicode>ன்மை</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_margin_l7" custom="readingOrder {index:6;}" comments="marginal cell @ L7">
+        <Coords points="0,314 399,314 399,353 0,353" />
+        <Baseline points="0,346 399,346" />
+        <TextEquiv>
+          <Unicode>௪௰௮</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextEquiv>
+        <Unicode>செங்
+கோ
+ன்மை
+௪௰௮</Unicode>
+      </TextEquiv>
+    </TextRegion>
+  </Page>
+</PcGts>

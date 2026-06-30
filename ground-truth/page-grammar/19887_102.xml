@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='utf-8'?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+  <Metadata>
+    <Creator>Central Institute of Classical Tamil (CICT)</Creator>
+    <Created>2026-06-23T00:00:00</Created>
+    <LastChange>2026-06-23T00:00:00</LastChange>
+    <Comments>CICT-PLM-GT-100 | Tirukkural Adhikaram 100 (பண்புடைமை / Courtesy) | kurals 991-1000 | section பொருள் / subsection ஒழிபியல் | DOI 10.5281/zenodo.20811460 | record https://zenodo.org/records/20811460 | manuscriptId 19887_102 | NOTE: line Coords are band-derived full-width bounding boxes (approximate); transcription text is exact ground truth.</Comments>
+  </Metadata>
+  <Page imageFilename="19887_102.jpg" imageWidth="2836" imageHeight="439">
+    <ReadingOrder>
+      <OrderedGroup id="g0">
+        <RegionRefIndexed index="0" regionRef="r_main" />
+        <RegionRefIndexed index="1" regionRef="r_margin" />
+      </OrderedGroup>
+    </ReadingOrder>
+    <TextRegion id="r_main" type="paragraph" custom="readingOrder {index:0;}">
+      <Coords points="0,72 2836,72 2836,416 0,416" />
+      <TextLine id="r_main_l1" custom="readingOrder {index:0;} ilakkanam {kural:996;verification:verified;words:பண்புடையார்=வினையாலணையும்பெயர்|பட்டு=வினையெச்சம்|உண்டு=குறிப்புவினைமுற்று|உலகம்=இடப்பெயர்|அது=சுட்டுப்பெயர்|இன்றேல்=எதிர்மறைவினையெச்சம்|மண்=பொருட்பெயர்|புக்கு=வினையெச்சம்|மாய்வது=வினையாலணையும்பெயர்|மன்=அசைநிலை;edugai:ண்;eetruseer:காசு;}" comments="kural=996; numeral=௧">
+        <Coords points="0,72 2836,72 2836,106 0,106" />
+        <Baseline points="0,100 2836,100" />
+        <TextEquiv>
+          <Unicode>பண்புடையார் பட்டுண்டு லகம துவின்றெ மண்புக்ழு மாய்வது மன்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l2" custom="readingOrder {index:1;} ilakkanam {kural:992;verification:verified;words:அன்புடைமை=பண்புப்பெயர்|ஆன்ற=பெயரெச்சம்|குடி=பொருட்பெயர்|பிறத்தல்=தொழிற்பெயர்|இவ்=சுட்டுப்பெயர்|இரண்டு=எண்ணுப்பெயர்|உம்=உம்மை|பண்புடைமை=பண்புப்பெயர்|என்னும்=பெயரெச்சம்|வழக்கு=பொருட்பெயர்;togai:குடிப்பிறத்தல்=வேற்றுமைத்தொகை;edugai:ன்/ண்;eetruseer:பிறப்பு;}" comments="kural=992; numeral=௨">
+        <Coords points="0,106 2836,106 2836,140 0,140" />
+        <Baseline points="0,134 2836,134" />
+        <TextEquiv>
+          <Unicode>அன்புடைமை யான்ற குடிப்பிறத்தலி வ்விரண்டும் பண்புடைமை யெந்நும் வழக்கு</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l3" custom="readingOrder {index:2;} ilakkanam {kural:995;verification:verified;words:நகை=தொழிற்பெயர்|உள்=இடப்பெயர்|உம்=உம்மை|இன்னா=பண்புப்பெயர்|இகழ்ச்சி=தொழிற்பெயர்|பகை=பண்புப்பெயர்|உள்=இடப்பெயர்|உம்=உம்மை|பண்பு=பண்புப்பெயர்|உள=குறிப்புவினைமுற்று|பாடு=பொருட்பெயர்|அறிவார்=வினையாலணையும்பெயர்|மாட்டு=இடப்பெயர்;togai:பாடறிவார்=வேற்றுமைத்தொகை;ani:முரண்;edugai:கை;eetruseer:காசு;}" comments="kural=995; numeral=௩">
+        <Coords points="0,140 2836,140 2836,175 0,175" />
+        <Baseline points="0,169 2836,169" />
+        <TextEquiv>
+          <Unicode>நகையுள்ளுமி ந்நாதி கட்சிப் பகையுள்ளும் பண்புள்ள பாடறிவார் மாட்டு</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l4" custom="readingOrder {index:3;} ilakkanam {kural:998;verification:verified;words:நண்பு=பண்புப்பெயர்|ஆற்றார்=எதிர்மறைவினைமுற்று|ஆகி=வினையெச்சம்|நயம்=பண்புப்பெயர்|இல=எதிர்மறைபெயரெச்சம்|செய்வார்=வினையாலணையும்பெயர்|உம்=உம்மை|பண்பு=பண்புப்பெயர்|ஆற்றார்=எதிர்மறைவினைமுற்று|ஆதல்=தொழிற்பெயர்|கடை=பண்புப்பெயர்;ani:சொற்பொருட்பின்வருநிலை;edugai:ண்;eetruseer:காசு;}" comments="kural=998; numeral=௪">
+        <Coords points="0,175 2836,175 2836,209 0,209" />
+        <Baseline points="0,203 2836,203" />
+        <TextEquiv>
+          <Unicode>நண்பாற்றாரா கி நயநில செய்வார்க்குப் பண்பற்றாரா தல் கடை</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l5" custom="readingOrder {index:4;} ilakkanam {kural:1000;verification:verified;words:பண்பிலான்=வினையாலணையும்பெயர்|பெற்ற=பெயரெச்சம்|பெரும்=பண்புப்பெயர்|செல்வம்=பொருட்பெயர்|நன்=பண்புப்பெயர்|பால்=பொருட்பெயர்|கலம்=பொருட்பெயர்|தீமை=பண்புப்பெயர்|ஆல்=வேற்றுமைஉருபு|திரிந்து=வினையெச்சம்|அற்று=உவமைஉருபு;togai:பெருஞ்செல்வம்=பண்புத்தொகை|நன்பால்=பண்புத்தொகை|கலந்தீமை=வேற்றுமைத்தொகை;ani:எடுத்துக்காட்டுவமை;edugai:ண்/ல;eetruseer:காசு;}" comments="kural=1000; numeral=௫">
+        <Coords points="0,209 2836,209 2836,244 0,244" />
+        <Baseline points="0,238 2836,238" />
+        <TextEquiv>
+          <Unicode>பண்பிலான் பெற்ற பெருஞ்செல்வம் நண்பால் கலந்தீமை யாற்றிரிந் தற்று</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l6" custom="readingOrder {index:5;} ilakkanam {kural:997;verification:verified;words:அரம்=பொருட்பெயர்|போலும்=பெயரெச்சம்|கூர்மைய=பண்புப்பெயர்|ஆயினும்=வினையெச்சம்|மரம்=பொருட்பெயர்|போல்வர்=குறிப்புவினைமுற்று|மக்கள்=பொருட்பெயர்|பண்பு=பண்புப்பெயர்|இல்லா=எதிர்மறைபெயரெச்சம்|தவர்=வினையாலணையும்பெயர்;togai:மக்கட்பண்பு=வேற்றுமைத்தொகை;ani:உவமை,உவமை;edugai:ர;eetruseer:பிறப்பு;}" comments="kural=997; numeral=௬">
+        <Coords points="0,244 2836,244 2836,278 0,278" />
+        <Baseline points="0,272 2836,272" />
+        <TextEquiv>
+          <Unicode>அரம்போலுங் கூர்மைய ரேநும் மரம்போல்வர் மக்கட்பண்பி ல்லா தவர்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l7" custom="readingOrder {index:6;} ilakkanam {kural:993;verification:verified;words:உறுப்பு=சினைப்பெயர்|ஒத்தல்=தொழிற்பெயர்|மக்கள்=பொருட்பெயர்|ஒப்பு=தொழிற்பெயர்|அன்று=எதிர்மறைஇடை|ஆல்=அசைநிலை|வெறுத்தக்க=பெயரெச்சம்|பண்பு=பண்புப்பெயர்|ஒத்தல்=தொழிற்பெயர்|ஒப்பது=வினையாலணையும்பெயர்|ஆம்=குறிப்புவினைமுற்று|ஒப்பு=தொழிற்பெயர்;togai:உறுப்பொத்தல்=வேற்றுமைத்தொகை|மக்களொப்பு=வேற்றுமைத்தொகை|பண்பொத்தல்=வேற்றுமைத்தொகை;ani:முரண்;edugai:று/ண்;eetruseer:காசு;}" comments="kural=993; numeral=௭">
+        <Coords points="0,278 2836,278 2836,313 0,313" />
+        <Baseline points="0,307 2836,307" />
+        <TextEquiv>
+          <Unicode>உறுப்பொத்த மக்களொப்பெ ன்றால் வெறுத்தக்கப் பண்பொத்தலொ ப்பதாமொ ப்பு</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l8" custom="readingOrder {index:7;} ilakkanam {kural:999;verification:verified;words:நகல்=தொழிற்பெயர்|வல்லர்=குறிப்புவினைமுற்று|அல்லார்=வினையாலணையும்பெயர்|கு=வேற்றுமைஉருபு|மா=உரிச்சொல்|இரு=உரிச்சொல்|ஞாலம்=இடப்பெயர்|பகல்=காலப்பெயர்|உம்=உம்மை|பால்=இடப்பெயர்|பட்டன்று=தெரிநிலைவினைமுற்று|இருள்=பொருட்பெயர்;ani:உருவகம்;edugai:க;eetruseer:மலர்;}" comments="kural=999; numeral=௮">
+        <Coords points="0,313 2836,313 2836,347 0,347" />
+        <Baseline points="0,341 2836,341" />
+        <TextEquiv>
+          <Unicode>நகல்வல்லர ல்லார்க்கு மாயிரு ஞாலம் பகலும்பாற் பட்டன்றி ருள்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l9" custom="readingOrder {index:8;} ilakkanam {kural:991;verification:verified;words:எண்பதத்தால்=பண்புப்பெயர்|எய்தல்=தொழிற்பெயர்|எளிது=பண்புப்பெயர்|என்ப=தெரிநிலைவினைமுற்று|யார்=வினாப்பெயர்|மாட்டு=இடப்பெயர்|உம்=உம்மை|பண்புடைமை=பண்புப்பெயர்|என்னும்=பெயரெச்சம்|வழக்கு=பொருட்பெயர்;edugai:ண்;eetruseer:பிறப்பு;}" comments="kural=991; numeral=௯">
+        <Coords points="0,347 2836,347 2836,382 0,382" />
+        <Baseline points="0,376 2836,376" />
+        <TextEquiv>
+          <Unicode>எண்பதத்தாலெ ய்தலெழிது மந்நியார்மாட்டும் பண்புடைமை யெந்நும் வழக்கு</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l10" custom="readingOrder {index:9;} ilakkanam {kural:994;verification:verified;words:நயன்=பண்புப்பெயர்|ஒடு=வேற்றுமைஉருபு|நன்றி=பண்புப்பெயர்|புரிந்த=பெயரெச்சம்|பயனுடையார்=வினையாலணையும்பெயர்|பண்பு=பண்புப்பெயர்|பாராட்டும்=பெயரெச்சம்|உலகு=இடப்பெயர்;edugai:ய/ண்;eetruseer:காசு;}" comments="kural=994; numeral=௰">
+        <Coords points="0,382 2836,382 2836,416 0,416" />
+        <Baseline points="0,410 2836,410" />
+        <TextEquiv>
+          <Unicode>நயநொடு நன்றிபுரிந்தப் பினுடையார் பண்புபா ராட்டுமு லகு</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextEquiv>
+        <Unicode>பண்புடையார் பட்டுண்டு லகம துவின்றெ மண்புக்ழு மாய்வது மன்
+அன்புடைமை யான்ற குடிப்பிறத்தலி வ்விரண்டும் பண்புடைமை யெந்நும் வழக்கு
+நகையுள்ளுமி ந்நாதி கட்சிப் பகையுள்ளும் பண்புள்ள பாடறிவார் மாட்டு
+நண்பாற்றாரா கி நயநில செய்வார்க்குப் பண்பற்றாரா தல் கடை
+பண்பிலான் பெற்ற பெருஞ்செல்வம் நண்பால் கலந்தீமை யாற்றிரிந் தற்று
+அரம்போலுங் கூர்மைய ரேநும் மரம்போல்வர் மக்கட்பண்பி ல்லா தவர்
+உறுப்பொத்த மக்களொப்பெ ன்றால் வெறுத்தக்கப் பண்பொத்தலொ ப்பதாமொ ப்பு
+நகல்வல்லர ல்லார்க்கு மாயிரு ஞாலம் பகலும்பாற் பட்டன்றி ருள்
+எண்பதத்தாலெ ய்தலெழிது மந்நியார்மாட்டும் பண்புடைமை யெந்நும் வழக்கு
+நயநொடு நன்றிபுரிந்தப் பினுடையார் பண்புபா ராட்டுமு லகு</Unicode>
+      </TextEquiv>
+    </TextRegion>
+    <TextRegion id="r_margin" type="marginalia" custom="readingOrder {index:1;}">
+      <Coords points="0,72 397,72 397,416 0,416" />
+      <TextLine id="r_margin_l5" custom="readingOrder {index:4;}" comments="marginal cell @ L5">
+        <Coords points="0,209 397,209 397,244 0,244" />
+        <Baseline points="0,238 397,238" />
+        <TextEquiv>
+          <Unicode>பண்பு</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_margin_l6" custom="readingOrder {index:5;}" comments="marginal cell @ L6">
+        <Coords points="0,244 397,244 397,278 0,278" />
+        <Baseline points="0,272 397,272" />
+        <TextEquiv>
+          <Unicode>டமை</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextEquiv>
+        <Unicode>பண்பு
+டமை</Unicode>
+      </TextEquiv>
+    </TextRegion>
+  </Page>
+</PcGts>

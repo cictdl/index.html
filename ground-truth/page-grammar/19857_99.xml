@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='utf-8'?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+  <Metadata>
+    <Creator>Central Institute of Classical Tamil (CICT)</Creator>
+    <Created>2026-06-23T00:00:00</Created>
+    <LastChange>2026-06-23T00:00:00</LastChange>
+    <Comments>CICT-PLM-GT-097 | Tirukkural Adhikaram 97 (மானம் / Honour) | kurals 961-970 | section பொருள் / subsection ஒழிபியல் | DOI 10.5281/zenodo.20811272 | record https://zenodo.org/records/20811272 | manuscriptId 19857_99 | NOTE: line Coords are band-derived full-width bounding boxes (approximate); transcription text is exact ground truth.</Comments>
+  </Metadata>
+  <Page imageFilename="19857_99.jpg" imageWidth="2912" imageHeight="482">
+    <ReadingOrder>
+      <OrderedGroup id="g0">
+        <RegionRefIndexed index="0" regionRef="r_main" />
+        <RegionRefIndexed index="1" regionRef="r_margin" />
+      </OrderedGroup>
+    </ReadingOrder>
+    <TextRegion id="r_main" type="paragraph" custom="readingOrder {index:0;}">
+      <Coords points="0,79 2912,79 2912,457 0,457" />
+      <TextLine id="r_main_l1" custom="readingOrder {index:0;} ilakkanam {kural:961;verification:verified;words:இன்றி=எதிர்மறைவினையெச்சம்|அமையா=எதிர்மறைபெயரெச்சம்|சிறப்பின=குறிப்புவினைமுற்று|ஆயின்=வினையெச்சம்|உம்=உம்மை|குன்ற=வினையெச்சம்|வருப=வினையாலணையும்பெயர்|விடல்=தொழிற்பெயர்;edugai:ன்/ன்;eetruseer:பிறப்பு;}" comments="kural=961; numeral=௧">
+        <Coords points="0,79 2912,79 2912,116 0,116" />
+        <Baseline points="0,110 2912,110" />
+        <TextEquiv>
+          <Unicode>இன்றி யமையாச் சிறப்பிந வாயிநும் குன்ற வருப விடல்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l2" custom="readingOrder {index:1;} ilakkanam {kural:965;verification:verified;words:குன்று=இடப்பெயர்|அனையார்=வினையாலணையும்பெயர்|உம்=உம்மை|குன்றுவர்=தெரிநிலைவினைமுற்று|குன்றுவ=வினையாலணையும்பெயர்|குன்றி=பொருட்பெயர்|அனைய=வினையாலணையும்பெயர்|செயின்=வினையெச்சம்;togai:அனைய=உவமைத்தொகை;ani:மடக்கு,உவமை;edugai:ன்/ன்;eetruseer:பிறப்பு;}" comments="kural=965; numeral=௨">
+        <Coords points="0,116 2912,116 2912,154 0,154" />
+        <Baseline points="0,147 2912,147" />
+        <TextEquiv>
+          <Unicode>குன்றிந னையாருங் குன்றுப்வர் குன்றுவ குன்றி யநைய செயின்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l3" custom="readingOrder {index:2;} ilakkanam {kural:964;verification:verified;words:தலையின்=சினைப்பெயர்|இழிந்த=பெயரெச்சம்|மயிர்=பொருட்பெயர்|அனையர்=வினையாலணையும்பெயர்|மாந்தர்=பொருட்பெயர்|நிலையின்=பண்புப்பெயர்|இழிந்த=பெயரெச்சம்|கடை=காலப்பெயர்;togai:மயிரனையர்=உவமைத்தொகை;ani:எடுத்துக்காட்டுவமை;edugai:லை/லை;eetruseer:மலர்;}" comments="kural=964; numeral=௩">
+        <Coords points="0,154 2912,154 2912,192 0,192" />
+        <Baseline points="0,185 2912,185" />
+        <TextEquiv>
+          <Unicode>தலையினி ழிந்த மயிரநையர் மாந்தர் நிலையினி ழிந்தக் கடை</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l4" custom="readingOrder {index:3;} ilakkanam {kural:962;verification:verified;words:சீரின்=பண்புப்பெயர்|உம்=உம்மை|சீர்=பண்புப்பெயர்|அல்ல=எதிர்மறைஇடை|செய்யார்=எதிர்மறைவினைமுற்று|ஏ=ஏகாரம்|சீர்=பண்புப்பெயர்|பேர்=உரிச்சொல்|ஆண்மை=பண்புப்பெயர்|வேண்டு=பெயரெச்சம்|பவர்=வினையாலணையும்பெயர்;togai:பேராண்மை=பண்புத்தொகை;ani:சொற்பொருட்பின்வருநிலை;edugai:ர/ர;eetruseer:பிறப்பு;}" comments="kural=962; numeral=௪">
+        <Coords points="0,192 2912,192 2912,230 0,230" />
+        <Baseline points="0,223 2912,223" />
+        <TextEquiv>
+          <Unicode>சீறிநுஞ் சீரல்ல செய்யாரெ சீரோடு பேராண்மை வேண்டு பவர்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l5" custom="readingOrder {index:4;} ilakkanam {kural:968;verification:verified;words:மருந்து=பொருட்பெயர்|ஓ=ஓகாரம்|மற்று=அசைநிலை|ஊன்=பொருட்பெயர்|ஓம்பும்=பெயரெச்சம்|வாழ்க்கை=தொழிற்பெயர்|பெரும்=உரிச்சொல்|தகைமை=பண்புப்பெயர்|பீடு=பண்புப்பெயர்|அழிய=வினையெச்சம்|வந்த=பெயரெச்சம்|இடத்து=இடப்பெயர்;togai:பெருந்தகைமை=பண்புத்தொகை;ani:வினா;edugai:ரு/ட;eetruseer:பிறப்பு;}" comments="kural=968; numeral=௫">
+        <Coords points="0,230 2912,230 2912,268 0,268" />
+        <Baseline points="0,261 2912,261" />
+        <TextEquiv>
+          <Unicode>மருந்தொமற்றூ னோம்பும் வாட்கை பெருந்தகமை பீடழிய வந்த விடத்து</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l6" custom="readingOrder {index:5;} ilakkanam {kural:969;verification:verified;words:மயிர்=பொருட்பெயர்|நீப்பின்=வினையெச்சம்|வாழா=எதிர்மறைபெயரெச்சம்|கவரிமா=பொருட்பெயர்|அன்னார்=வினையாலணையும்பெயர்|உயிர்=பொருட்பெயர்|நீப்பர்=தெரிநிலைவினைமுற்று|மானம்=பண்புப்பெயர்|வரின்=வினையெச்சம்;togai:அன்னார்=உவமைத்தொகை;ani:உவமை,சொற்பொருட்பின்வருநிலை;edugai:யி/யி;eetruseer:பிறப்பு;}" comments="kural=969; numeral=௬">
+        <Coords points="0,268 2912,268 2912,306 0,306" />
+        <Baseline points="0,299 2912,299" />
+        <TextEquiv>
+          <Unicode>மயிர்நீப்பின் வாழாக் கவரிமா வந்நாரு யிர்நீப்பர் மாநம் வரின்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l7" custom="readingOrder {index:6;} ilakkanam {kural:970;verification:verified;words:இளிவு=பண்புப்பெயர்|வரின்=வினையெச்சம்|வாழாத=எதிர்மறைபெயரெச்சம்|மானம்=பண்புப்பெயர்|உடையார்=வினையாலணையும்பெயர்|ஒளி=பண்புப்பெயர்|தொழுது=வினையெச்சம்|ஏத்தும்=தெரிநிலைவினைமுற்று|உலகு=இடப்பெயர்;ani:உயர்வுநவிற்சி;edugai:ளி/ளி;eetruseer:பிறப்பு;}" comments="kural=970; numeral=௭">
+        <Coords points="0,306 2912,306 2912,343 0,343" />
+        <Baseline points="0,337 2912,337" />
+        <TextEquiv>
+          <Unicode>இழிவரின் வாழாத மாநமு டையரொளி தொழுதேற்று முலகு</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l8" custom="readingOrder {index:7;} ilakkanam {kural:967;verification:verified;words:ஒட்டார்=வினையாலணையும்பெயர்|பின்=இடப்பெயர்|சென்று=வினையெச்சம்|ஒருவன்=பொருட்பெயர்|வாழ்தலின்=தொழிற்பெயர்|அ=சுட்டுப்பெயர்|நிலை=தொழிற்பெயர்|ஏ=ஏகாரம்|கெட்டான்=தெரிநிலைவினைமுற்று|என=வினையெச்சம்|படுதல்=தொழிற்பெயர்|நன்று=குறிப்புவினைமுற்று;ani:சொற்பொருட்பின்வருநிலை;edugai:ட்/ட்;eetruseer:காசு;}" comments="kural=967; numeral=௮">
+        <Coords points="0,343 2912,343 2912,381 0,381" />
+        <Baseline points="0,375 2912,375" />
+        <TextEquiv>
+          <Unicode>ஒட்டார்பின் சென்றொருவன் வாழ்தலின ந்நிலை கெட்டானெ னப்படுதல் நன்று</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l9" custom="readingOrder {index:8;} ilakkanam {kural:966;verification:verified;words:புகழ்=பண்புப்பெயர்|இன்று=எதிர்மறைவினைமுற்று|ஆல்=அசைநிலை|புத்தேள்=பொருட்பெயர்|நாட்டு=இடப்பெயர்|உய்யாது=எதிர்மறைவினைமுற்று|ஆல்=அசைநிலை|என்=வினாப்பெயர்|மற்று=அசைநிலை|இகழ்வார்=வினையாலணையும்பெயர்|பின்=இடப்பெயர்|சென்று=வினையெச்சம்|நிலை=தொழிற்பெயர்;togai:புத்தேள்நாட்டு=வேற்றுமைத்தொகை;ani:முரண்,வினா;edugai:க/க;eetruseer:மலர்;}" comments="kural=966; numeral=௯">
+        <Coords points="0,381 2912,381 2912,419 0,419" />
+        <Baseline points="0,412 2912,412" />
+        <TextEquiv>
+          <Unicode>புகழின்றாற் புத்தேணாட்டு ய்யார்த னேன்மற்றி கழார்பின் சென்று நிலை</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l10" custom="readingOrder {index:9;} ilakkanam {kural:963;verification:verified;words:பெருக்கத்து=தொழிற்பெயர்|வேண்டும்=தெரிநிலைவினைமுற்று|பணிதல்=தொழிற்பெயர்|சிறிய=பண்புப்பெயர்|சுருக்கத்து=தொழிற்பெயர்|வேண்டும்=தெரிநிலைவினைமுற்று|உயர்வு=தொழிற்பெயர்;ani:முரண்;edugai:ரு/ரு;eetruseer:காசு;}" comments="kural=963; numeral=௰">
+        <Coords points="0,419 2912,419 2912,457 0,457" />
+        <Baseline points="0,450 2912,450" />
+        <TextEquiv>
+          <Unicode>பெருக்கத்து வேண்டும் பணிவுதல் சிறிய சுருக்கத்து வேண்டுமு யர்வு</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextEquiv>
+        <Unicode>இன்றி யமையாச் சிறப்பிந வாயிநும் குன்ற வருப விடல்
+குன்றிந னையாருங் குன்றுப்வர் குன்றுவ குன்றி யநைய செயின்
+தலையினி ழிந்த மயிரநையர் மாந்தர் நிலையினி ழிந்தக் கடை
+சீறிநுஞ் சீரல்ல செய்யாரெ சீரோடு பேராண்மை வேண்டு பவர்
+மருந்தொமற்றூ னோம்பும் வாட்கை பெருந்தகமை பீடழிய வந்த விடத்து
+மயிர்நீப்பின் வாழாக் கவரிமா வந்நாரு யிர்நீப்பர் மாநம் வரின்
+இழிவரின் வாழாத மாநமு டையரொளி தொழுதேற்று முலகு
+ஒட்டார்பின் சென்றொருவன் வாழ்தலின ந்நிலை கெட்டானெ னப்படுதல் நன்று
+புகழின்றாற் புத்தேணாட்டு ய்யார்த னேன்மற்றி கழார்பின் சென்று நிலை
+பெருக்கத்து வேண்டும் பணிவுதல் சிறிய சுருக்கத்து வேண்டுமு யர்வு</Unicode>
+      </TextEquiv>
+    </TextRegion>
+    <TextRegion id="r_margin" type="marginalia" custom="readingOrder {index:1;}">
+      <Coords points="0,79 408,79 408,457 0,457" />
+      <TextLine id="r_margin_l4" custom="readingOrder {index:3;}" comments="marginal cell @ L4">
+        <Coords points="0,192 408,192 408,230 0,230" />
+        <Baseline points="0,223 408,223" />
+        <TextEquiv>
+          <Unicode>மானம்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_margin_l6" custom="readingOrder {index:5;}" comments="marginal cell @ L6">
+        <Coords points="0,268 408,268 408,306 0,306" />
+        <Baseline points="0,299 408,299" />
+        <TextEquiv>
+          <Unicode>௬௰௯</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextEquiv>
+        <Unicode>மானம்
+௬௰௯</Unicode>
+      </TextEquiv>
+    </TextRegion>
+  </Page>
+</PcGts>

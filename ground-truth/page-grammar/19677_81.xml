@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='utf-8'?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+  <Metadata>
+    <Creator>Central Institute of Classical Tamil (CICT)</Creator>
+    <Created>2026-06-17T00:00:00</Created>
+    <LastChange>2026-06-17T00:00:00</LastChange>
+    <Comments>CICT-PLM-GT-079 | Tirukkural Adhikaram 79 (நட்பு / Friendship) | kurals 781-790 | section பொருள் / subsection அங்கவியல் | DOI 10.5281/zenodo.20729500 | record https://zenodo.org/records/20729500 | manuscriptId 19677_81 | NOTE: line Coords are band-derived full-width bounding boxes (approximate); transcription text is exact ground truth.</Comments>
+  </Metadata>
+  <Page imageFilename="19677_81.jpg" imageWidth="2885" imageHeight="477">
+    <ReadingOrder>
+      <OrderedGroup id="g0">
+        <RegionRefIndexed index="0" regionRef="r_main" />
+        <RegionRefIndexed index="1" regionRef="r_margin" />
+      </OrderedGroup>
+    </ReadingOrder>
+    <TextRegion id="r_main" type="paragraph" custom="readingOrder {index:0;}">
+      <Coords points="0,72 2885,72 2885,459 0,459" />
+      <TextLine id="r_main_l1" custom="readingOrder {index:0;} ilakkanam {kural:781;verification:verified;words:செயற்கரிய=பெயரெச்சம்|யாவுள=வினாப்பெயர்|நட்பின்=பொருட்பெயர்|அது=சுட்டுப்பெயர்|போல்=உவமைஉருபு|வினைக்கரிய=பெயரெச்சம்|யாவுள=வினாப்பெயர்|காப்பு=தொழிற்பெயர்;ani:சொற்பொருட்பின்வருநிலை;eetruseer:காசு;}" comments="kural=781; numeral=௧">
+        <Coords points="0,72 2885,72 2885,111 0,111" />
+        <Baseline points="0,104 2885,104" />
+        <TextEquiv>
+          <Unicode>செயற்கு ரிய யாவுள நட்பின் துபோல் விநைக்கரிய யாவுள காப்பு</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l2" custom="readingOrder {index:1;} ilakkanam {kural:782;verification:verified;words:நிறைநீர=பண்புப்பெயர்|நீரவர்=வினையாலணையும்பெயர்|கேண்மை=பண்புப்பெயர்|பிறைமதி=பொருட்பெயர்|பின்னீர=பண்புப்பெயர்|பேதையார்=பண்புப்பெயர்|நட்பு=பொருட்பெயர்;togai:நிறைநீர=பண்புத்தொகை|பிறைமதிப்=உவமைத்தொகை|பின்னீர=பண்புத்தொகை;ani:உவமை,முரண்;edugai:ன்;eetruseer:காசு;}" comments="kural=782; numeral=௨">
+        <Coords points="0,111 2885,111 2885,150 0,150" />
+        <Baseline points="0,143 2885,143" />
+        <TextEquiv>
+          <Unicode>நிறைமதி நீரவர் கேண்மை பிறைமதிப் பிந்நீரமை பேதையார் நட்பு</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l3" custom="readingOrder {index:2;} ilakkanam {kural:783;verification:verified;words:நவில்=வினையெச்சம்|தொறும்=சாரியை|நூல்நயம்=பண்புப்பெயர்|போலும்=குறிப்புவினைமுற்று|பயில்=வினையெச்சம்|தொறும்=சாரியை|பண்புடை=பெயரெச்சம்|யாளர்=வினையாலணையும்பெயர்|தொடர்பு=தொழிற்பெயர்;togai:நூல்நயம்=வேற்றுமைத்தொகை;ani:உவமை,சொற்பொருட்பின்வருநிலை;eetruseer:பிறப்பு;}" comments="kural=783; numeral=௩">
+        <Coords points="0,150 2885,150 2885,188 0,188" />
+        <Baseline points="0,181 2885,181" />
+        <TextEquiv>
+          <Unicode>நவிறேறும் நூநயம் போலும் பயிறேறும் பண்புடை யாழர் தொடர்பு</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l4" custom="readingOrder {index:3;} ilakkanam {kural:784;verification:verified;words:நகுதல்=தொழிற்பெயர்|பொருட்டு=காரணப்பெயர்|அன்று=எதிர்மறைஇடை|நட்டல்=தொழிற்பெயர்|மிகுதிக்கண்=பண்புப்பெயர்|மேற்சென்று=வினையெச்சம்|இடித்தல்=தொழிற்பெயர்|பொருட்டு=காரணப்பெயர்;ani:முரண்,சொற்பொருட்பின்வருநிலை;eetruseer:பிறப்பு;}" comments="kural=784; numeral=௪">
+        <Coords points="0,188 2885,188 2885,227 0,227" />
+        <Baseline points="0,220 2885,220" />
+        <TextEquiv>
+          <Unicode>நகுதற் பொருட்டன்று நட்டந் மிகுதிக்கண் மேற்செனறி டித்தற் பொருட்டு</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l5" custom="readingOrder {index:4;} ilakkanam {kural:785;verification:verified;words:புணர்ச்சி=தொழிற்பெயர்|பழகுதல்=தொழிற்பெயர்|வேண்டா=எதிர்மறைவினைமுற்று|உணர்ச்சி=தொழிற்பெயர்|தான்=அசைநிலை|நட்பாம்=பெயரெச்சம்|கிழமை=பண்புப்பெயர்|தரும்=தெரிநிலைவினைமுற்று;ani:சொற்பொருட்பின்வருநிலை;eetruseer:மலர்;}" comments="kural=785; numeral=௫">
+        <Coords points="0,227 2885,227 2885,266 0,266" />
+        <Baseline points="0,259 2885,259" />
+        <TextEquiv>
+          <Unicode>புணர்ச்சி பளகுதல் வேண்டா வுணர்ச்சிதான் ட்பாங் கிளமை தரும்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l6" custom="readingOrder {index:5;} ilakkanam {kural:786;verification:verified;words:முகம்=சினைப்பெயர்|நக=வினையெச்சம்|நட்பது=வினையாலணையும்பெயர்|நட்பு=பொருட்பெயர்|அன்று=எதிர்மறைஇடை|நெஞ்சத்து=சினைப்பெயர்|அகம்=இடப்பெயர்|நக=வினையெச்சம்|நட்பது=வினையாலணையும்பெயர்|நட்பு=பொருட்பெயர்;ani:மடக்கு,முரண்;edugai:க;eetruseer:பிறப்பு;}" comments="kural=786; numeral=௬">
+        <Coords points="0,266 2885,266 2885,304 0,304" />
+        <Baseline points="0,297 2885,297" />
+        <TextEquiv>
+          <Unicode>முகநக நட்பது நட்பன்று நெஞ்சத்த கநக நட்பதெ நட்பு</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l7" custom="readingOrder {index:6;} ilakkanam {kural:787;verification:verified;words:அழிவின=பெயரெச்சம்|அவை=சுட்டுப்பெயர்|நீக்கி=வினையெச்சம்|ஆறு=இடப்பெயர்|உய்த்து=வினையெச்சம்|அழிவின்கண்=தொழிற்பெயர்|அல்லல்=பண்புப்பெயர்|உழப்பதாம்=வினையாலணையும்பெயர்|நட்பு=பொருட்பெயர்;ani:சொற்பொருட்பின்வருநிலை;edugai:ழி;eetruseer:பிறப்பு;}" comments="kural=787; numeral=௭">
+        <Coords points="0,304 2885,304 2885,343 0,343" />
+        <Baseline points="0,336 2885,336" />
+        <TextEquiv>
+          <Unicode>அழிவி னவைநீக்கி ஆறுய்த்து அழிவின்கண் அல்லல் உழப்பதாம் நட்பு</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l8" custom="readingOrder {index:7;} ilakkanam {kural:788;verification:verified;words:உடுக்கை=பொருட்பெயர்|இழந்தவன்=வினையாலணையும்பெயர்|கை=சினைப்பெயர்|போல=உவமைஉருபு|ஆங்கு=இடப்பெயர்|ஏ=அசைநிலை|இடுக்கண்=பண்புப்பெயர்|களைவதாம்=வினையாலணையும்பெயர்|நட்பு=பொருட்பெயர்;ani:உவமை;edugai:டு;eetruseer:பிறப்பு;}" comments="kural=788; numeral=௮">
+        <Coords points="0,343 2885,343 2885,382 0,382" />
+        <Baseline points="0,375 2885,375" />
+        <TextEquiv>
+          <Unicode>உடுக்கை யிழந்தவன் கைபோல வாங்கெ யிடுக்கண் கழைவதாம் நட்பு</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l9" custom="readingOrder {index:8;} ilakkanam {kural:789;verification:verified;words:நட்பிற்கு=பொருட்பெயர்|வீற்றிருக்கை=தொழிற்பெயர்|யாது=வினாப்பெயர்|எனின்=வினையெச்சம்|கொட்பு=பண்புப்பெயர்|இன்றி=எதிர்மறைவினையெச்சம்|ஒல்லும்=பெயரெச்சம்|வாய்=இடப்பெயர்|ஊன்றும்=பெயரெச்சம்|நிலை=தொழிற்பெயர்;ani:உருவகம்;eetruseer:மலர்;}" comments="kural=789; numeral=௯">
+        <Coords points="0,382 2885,382 2885,420 0,420" />
+        <Baseline points="0,413 2885,413" />
+        <TextEquiv>
+          <Unicode>நட்பிற்கு வைத்திருக்கை யாதெநிற் கொட்பின்றி யொல்லும்வாயூ ன்று நிலை</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l10" custom="readingOrder {index:9;} ilakkanam {kural:790;verification:verified;words:இனையர்=குறிப்புவினைமுற்று|இவர்=சுட்டுப்பெயர்|எமக்கு=பொருட்பெயர்|இன்னம்=குறிப்புவினைமுற்று|யாம்=பொருட்பெயர்|என்று=வினையெச்சம்|புனையினும்=வினையெச்சம்|புல்லென்னும்=குறிப்புவினைமுற்று|நட்பு=பொருட்பெயர்;ani:சொற்பொருட்பின்வருநிலை;edugai:னை;eetruseer:காசு;}" comments="kural=790; numeral=௰">
+        <Coords points="0,420 2885,420 2885,459 0,459" />
+        <Baseline points="0,452 2885,452" />
+        <TextEquiv>
+          <Unicode>இநையரி வரெந்மக்கி ந்நம்யாமெ ன்று புநையிநும் புல்லெந்நும் நட்பு</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextEquiv>
+        <Unicode>செயற்கு ரிய யாவுள நட்பின் துபோல் விநைக்கரிய யாவுள காப்பு
+நிறைமதி நீரவர் கேண்மை பிறைமதிப் பிந்நீரமை பேதையார் நட்பு
+நவிறேறும் நூநயம் போலும் பயிறேறும் பண்புடை யாழர் தொடர்பு
+நகுதற் பொருட்டன்று நட்டந் மிகுதிக்கண் மேற்செனறி டித்தற் பொருட்டு
+புணர்ச்சி பளகுதல் வேண்டா வுணர்ச்சிதான் ட்பாங் கிளமை தரும்
+முகநக நட்பது நட்பன்று நெஞ்சத்த கநக நட்பதெ நட்பு
+அழிவி னவைநீக்கி ஆறுய்த்து அழிவின்கண் அல்லல் உழப்பதாம் நட்பு
+உடுக்கை யிழந்தவன் கைபோல வாங்கெ யிடுக்கண் கழைவதாம் நட்பு
+நட்பிற்கு வைத்திருக்கை யாதெநிற் கொட்பின்றி யொல்லும்வாயூ ன்று நிலை
+இநையரி வரெந்மக்கி ந்நம்யாமெ ன்று புநையிநும் புல்லெந்நும் நட்பு</Unicode>
+      </TextEquiv>
+    </TextRegion>
+    <TextRegion id="r_margin" type="marginalia" custom="readingOrder {index:1;}">
+      <Coords points="0,72 404,72 404,459 0,459" />
+      <TextLine id="r_margin_l4" custom="readingOrder {index:3;}" comments="marginal cell @ L4">
+        <Coords points="0,188 404,188 404,227 0,227" />
+        <Baseline points="0,220 404,220" />
+        <TextEquiv>
+          <Unicode>நட்பு</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_margin_l6" custom="readingOrder {index:5;}" comments="marginal cell @ L6">
+        <Coords points="0,266 404,266 404,304 0,304" />
+        <Baseline points="0,297 404,297" />
+        <TextEquiv>
+          <Unicode>௬௰</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextEquiv>
+        <Unicode>நட்பு
+௬௰</Unicode>
+      </TextEquiv>
+    </TextRegion>
+  </Page>
+</PcGts>

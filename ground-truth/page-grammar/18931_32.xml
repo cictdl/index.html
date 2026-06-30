@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='utf-8'?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+  <Metadata>
+    <Creator>Central Institute of Classical Tamil (CICT)</Creator>
+    <Created>2026-06-03T00:00:00</Created>
+    <LastChange>2026-06-03T00:00:00</LastChange>
+    <Comments>CICT-PLM-GT-030 | Tirukkural Adhikaram 30 (வாய்மை / Truthfulness) | kurals 291-300 | section அறம் / subsection துறவறவியல் | DOI 10.5281/zenodo.20524015 | record https://zenodo.org/records/20524015 | manuscriptId 18931_32 | NOTE: line Coords are band-derived full-width bounding boxes (approximate); transcription text is exact ground truth.</Comments>
+  </Metadata>
+  <Page imageFilename="18931_32.jpg" imageWidth="2690" imageHeight="458">
+    <ReadingOrder>
+      <OrderedGroup id="g0">
+        <RegionRefIndexed index="0" regionRef="r_main" />
+        <RegionRefIndexed index="1" regionRef="r_margin" />
+      </OrderedGroup>
+    </ReadingOrder>
+    <TextRegion id="r_main" type="paragraph" custom="readingOrder {index:0;}">
+      <Coords points="0,74 2690,74 2690,445 0,445" />
+      <TextLine id="r_main_l1" custom="readingOrder {index:0;} ilakkanam {kural:291;verification:verified;words:வாய்மை=பண்புப்பெயர்|எனப்படுவது=வினையாலணையும்பெயர்|யாது=வினாப்பெயர்|எனின்=வினையெச்சம்|யாது=வினாப்பெயர்|ஒன்றும்=எண்ணுப்பெயர்|உம்=உம்மை|தீமை=பண்புப்பெயர்|இலாத=எதிர்மறைபெயரெச்சம்|சொலல்=தொழிற்பெயர்;ani:வினா-விடை;eetruseer:சொலல் (காசு);}" comments="kural=291; numeral=௧">
+        <Coords points="0,74 2690,74 2690,111 0,111" />
+        <Baseline points="0,104 2690,104" />
+        <TextEquiv>
+          <Unicode>வாய்மை யெநப்படுவ தியாதெநின் யாதொன்றுந் தீயமை யிலாத சொல்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l2" custom="readingOrder {index:1;} ilakkanam {kural:292;verification:verified;words:பொய்மை=பண்புப்பெயர்|உம்=உம்மை|வாய்மை=பண்புப்பெயர்|இடத்த=இடப்பெயர்|புரை=பண்புப்பெயர்|தீர்ந்த=பெயரெச்சம்|நன்மை=பண்புப்பெயர்|பயக்கும்=தெரிநிலைவினைமுற்று|எனின்=வினையெச்சம்;ani:முரண்;eetruseer:எனின் (காசு);}" comments="kural=292; numeral=௨">
+        <Coords points="0,111 2690,111 2690,148 0,148" />
+        <Baseline points="0,142 2690,142" />
+        <TextEquiv>
+          <Unicode>பொய்ம்மையும் வாய்மை யிடத்த புரைதீர்ந்த நன்மை பயக்கு மெநின்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l3" custom="readingOrder {index:2;} ilakkanam {kural:295;verification:verified;words:மனத்தொடு=பொருட்பெயர்|வாய்மை=பண்புப்பெயர்|மொழியின்=வினையெச்சம்|தவத்தொடு=தொழிற்பெயர்|தானம்=தொழிற்பெயர்|செய்=வினையெச்சம்|வாரின்=வினையாலணையும்பெயர்|தலை=பண்புப்பெயர்;togai:தானஞ்செய்=வேற்றுமைத்தொகை;ani:உயர்வுநவிற்சி;edugai:ன;eetruseer:தலை (மலர்);}" comments="kural=295; numeral=௩">
+        <Coords points="0,148 2690,148 2690,185 0,185" />
+        <Baseline points="0,179 2690,179" />
+        <TextEquiv>
+          <Unicode>மனத்தோடு வாய்மை மொழியிற் தவத்தொடு தாநஞ்செய் வாரிற் றலை</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l4" custom="readingOrder {index:3;} ilakkanam {kural:294;verification:verified;words:உள்ளத்தால்=பொருட்பெயர்|பொய்யா=எதிர்மறைவினையெச்சம்|ஒழுகின்=வினையெச்சம்|உலகத்தார்=பொருட்பெயர்|உள்ளத்து=பொருட்பெயர்|எல்லாம்=பொருட்பெயர்|உளன்=குறிப்புவினைமுற்று;ani:சொற்பொருட்பின்வருநிலை;edugai:ள்;eetruseer:உளன் (காசு);}" comments="kural=294; numeral=௪">
+        <Coords points="0,185 2690,185 2690,222 0,222" />
+        <Baseline points="0,216 2690,216" />
+        <TextEquiv>
+          <Unicode>உள்ளத்தாற் பொய்யா தொளுகின உலகத்தா ருள்ளத்து ளெல்லா முளன்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l5" custom="readingOrder {index:4;} ilakkanam {kural:296;verification:verified;words:பொய்யாமை=தொழிற்பெயர்|அன்ன=உரிச்சொல்|புகழ்=பண்புப்பெயர்|இல்லை=குறிப்புவினைமுற்று|எய்யாமை=எதிர்மறைவினையெச்சம்|எல்லா=பொருட்பெயர்|அறம்=பொருட்பெயர்|உம்=உம்மை|தரும்=தெரிநிலைவினைமுற்று;ani:இயைபு;eetruseer:தரும் (காசு);}" comments="kural=296; numeral=௫">
+        <Coords points="0,222 2690,222 2690,259 0,259" />
+        <Baseline points="0,253 2690,253" />
+        <TextEquiv>
+          <Unicode>பொய்யாமை யன்ன புகழில்லை பொய்யாமை யெல்லா வறமுந் தரும்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l6" custom="readingOrder {index:5;} ilakkanam {kural:299;verification:verified;words:எல்லா=பொருட்பெயர்|விளக்கு=பொருட்பெயர்|உம்=உம்மை|விளக்கு=பொருட்பெயர்|அல்ல=குறிப்புவினைமுற்று|சான்றோர்க்கு=வினையாலணையும்பெயர்|பொய்யா=எதிர்மறைபெயரெச்சம்|விளக்கு=பொருட்பெயர்|ஏ=ஏகாரம்|விளக்கு=பொருட்பெயர்;ani:மடக்கு,உருவகம்;eetruseer:விளக்கு (பிறப்பு);}" comments="kural=299; numeral=௬">
+        <Coords points="0,259 2690,259 2690,296 0,296" />
+        <Baseline points="0,290 2690,290" />
+        <TextEquiv>
+          <Unicode>எல்லா விளக்கும் விளக்கல்லச் சான்றோர்க்குப் பொய்யா விளக்கே விளக்கு</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l7" custom="readingOrder {index:6;} ilakkanam {kural:297;verification:verified;words:பொய்யாமை=தொழிற்பெயர்|பொய்யாமை=தொழிற்பெயர்|ஆற்றின்=வினையெச்சம்|அறம்=பொருட்பெயர்|பிற=பொருட்பெயர்|செய்யாமை=தொழிற்பெயர்|செய்யாமை=தொழிற்பெயர்|நன்று=குறிப்புவினைமுற்று;ani:மடக்கு;edugai:ய்;eetruseer:நன்று (காசு);}" comments="kural=297; numeral=௭">
+        <Coords points="0,296 2690,296 2690,333 0,333" />
+        <Baseline points="0,327 2690,327" />
+        <TextEquiv>
+          <Unicode>பொய்யாமை பொய்யாமை யாற்றின் அறம்பிற செய்யாமை செய்யாமை நன்று</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l8" custom="readingOrder {index:7;} ilakkanam {kural:298;verification:verified;words:புறம்=இடப்பெயர்|தூய்மை=பண்புப்பெயர்|நீரான்=பொருட்பெயர்|அமையும்=தெரிநிலைவினைமுற்று|அகம்=இடப்பெயர்|தூய்மை=பண்புப்பெயர்|வாய்மையால்=பண்புப்பெயர்|காண=வினையெச்சம்|படும்=தெரிநிலைவினைமுற்று;togai:புறள்தூய்மை=பண்புத்தொகை|அகந்தூய்மை=பண்புத்தொகை;ani:முரண்,எடுத்துக்காட்டுவமை;eetruseer:படும் (காசு);}" comments="kural=298; numeral=௮">
+        <Coords points="0,333 2690,333 2690,370 0,370" />
+        <Baseline points="0,364 2690,364" />
+        <TextEquiv>
+          <Unicode>புறந்தூய்மை நீரா னமையும் மகந்தூய்மை வாய்மையாற் காணப் படும்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l9" custom="readingOrder {index:8;} ilakkanam {kural:293;verification:verified;words:தன்=சுட்டுப்பெயர்|நெஞ்=சினைப்பெயர்|அறிவது=வினையாலணையும்பெயர்|பொய்யற்க=வியங்கோள்வினைமுற்று|பொய்த்த=பெயரெச்சம்|பின்=காலப்பெயர்|தன்=சுட்டுப்பெயர்|நெஞ்சு=சினைப்பெயர்|ஏ=பிரிநிலைஇடை|தன்னை=சுட்டுப்பெயர்|சுடும்=தெரிநிலைவினைமுற்று;togai:தன்நெஞ்=வேற்றுமைத்தொகை|தன்நெஞ்சே=வேற்றுமைத்தொகை;ani:சொற்பொருட்பின்வருநிலை;edugai:ன்;eetruseer:சுடும் (பிறப்பு);}" comments="kural=293; numeral=௯">
+        <Coords points="0,370 2690,370 2690,407 0,407" />
+        <Baseline points="0,401 2690,401" />
+        <TextEquiv>
+          <Unicode>தந்நெஞ் சறிவது பொய்யற்கப் பொய்த்தபின் றந்நெஞ்சே தந்நைச் சுடும்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l10" custom="readingOrder {index:9;} ilakkanam {kural:300;verification:verified;words:யாம்=சுட்டுப்பெயர்|மெய்யா=வினையெச்சம்|கண்டவற்று=வினையாலணையும்பெயர்|உள்=வேற்றுமைஉருபு|இல்லை=குறிப்புவினைமுற்று|எனைத்து=வினாப்பெயர்|ஒன்றும்=எண்ணுப்பெயர்|உம்=உம்மை|வாய்மையின்=பண்புப்பெயர்|நல்ல=பண்புப்பெயர்|பிற=பொருட்பெயர்;ani:உயர்வுநவிற்சி;eetruseer:பிற (மலர்);}" comments="kural=300; numeral=௰">
+        <Coords points="0,407 2690,407 2690,445 0,445" />
+        <Baseline points="0,438 2690,438" />
+        <TextEquiv>
+          <Unicode>யாமெய்யாய்க் கண்டவற்று ளில்லை யெநைத்தோன்றும் வாய்மையி னல்ல பிற</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextEquiv>
+        <Unicode>வாய்மை யெநப்படுவ தியாதெநின் யாதொன்றுந் தீயமை யிலாத சொல்
+பொய்ம்மையும் வாய்மை யிடத்த புரைதீர்ந்த நன்மை பயக்கு மெநின்
+மனத்தோடு வாய்மை மொழியிற் தவத்தொடு தாநஞ்செய் வாரிற் றலை
+உள்ளத்தாற் பொய்யா தொளுகின உலகத்தா ருள்ளத்து ளெல்லா முளன்
+பொய்யாமை யன்ன புகழில்லை பொய்யாமை யெல்லா வறமுந் தரும்
+எல்லா விளக்கும் விளக்கல்லச் சான்றோர்க்குப் பொய்யா விளக்கே விளக்கு
+பொய்யாமை பொய்யாமை யாற்றின் அறம்பிற செய்யாமை செய்யாமை நன்று
+புறந்தூய்மை நீரா னமையும் மகந்தூய்மை வாய்மையாற் காணப் படும்
+தந்நெஞ் சறிவது பொய்யற்கப் பொய்த்தபின் றந்நெஞ்சே தந்நைச் சுடும்
+யாமெய்யாய்க் கண்டவற்று ளில்லை யெநைத்தோன்றும் வாய்மையி னல்ல பிற</Unicode>
+      </TextEquiv>
+    </TextRegion>
+    <TextRegion id="r_margin" type="marginalia" custom="readingOrder {index:1;}">
+      <Coords points="0,74 377,74 377,445 0,445" />
+      <TextLine id="r_margin_l4" custom="readingOrder {index:3;}" comments="marginal cell @ L4">
+        <Coords points="0,185 377,185 377,222 0,222" />
+        <Baseline points="0,216 377,216" />
+        <TextEquiv>
+          <Unicode>வாய்மை</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextEquiv>
+        <Unicode>வாய்மை</Unicode>
+      </TextEquiv>
+    </TextRegion>
+  </Page>
+</PcGts>

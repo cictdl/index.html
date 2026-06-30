@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='utf-8'?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+  <Metadata>
+    <Creator>Central Institute of Classical Tamil (CICT)</Creator>
+    <Created>2026-05-06T00:00:00</Created>
+    <LastChange>2026-05-06T00:00:00</LastChange>
+    <Comments>CICT-PLM-GT-017 | Tirukkural Adhikaram 17 (அழுக்காறாமை / Avoidance of Envy) | kurals 161-170 | section அறம் / subsection  | DOI 10.5281/zenodo.20052399 | record https://zenodo.org/records/20052399 | manuscriptId 18801_19 | NOTE: line Coords are band-derived full-width bounding boxes (approximate); transcription text is exact ground truth.</Comments>
+  </Metadata>
+  <Page imageFilename="18801_19.jpg" imageWidth="2965" imageHeight="651">
+    <ReadingOrder>
+      <OrderedGroup id="g0">
+        <RegionRefIndexed index="0" regionRef="r_main" />
+        <RegionRefIndexed index="1" regionRef="r_margin" />
+      </OrderedGroup>
+    </ReadingOrder>
+    <TextRegion id="r_main" type="paragraph" custom="readingOrder {index:0;}">
+      <Coords points="0,185 2965,185 2965,577 0,577" />
+      <TextLine id="r_main_l1" custom="readingOrder {index:0;} ilakkanam {kural:161;verification:verified;words:ஒழுக்காறாக்=இடப்பெயர்|கொள்க=வியங்கோள்வினைமுற்று|ஒருவன்=பொருட்பெயர்|தன்=சுட்டுப்பெயர்|நெஞ்சத்து=சினைப்பெயர்|அழுக்காறு=பண்புப்பெயர்|இலாத=எதிர்மறைபெயரெச்சம்|இயல்பு=பண்புப்பெயர்;ani:இயைபு/ஒலிநயம்;edugai:ழ;eetruseer:இயல்பு (பிறப்பு வாய்பாடு);}" comments="kural=161; numeral=௧">
+        <Coords points="0,185 2965,185 2965,224 0,224" />
+        <Baseline points="0,217 2965,217" />
+        <TextEquiv>
+          <Unicode>ஒழுக்காறாக் கொள்க வொருவன்றன் நெஞ்சத் தளுக்காறி ல்லாத வியல்பு</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l2" custom="readingOrder {index:1;} ilakkanam {kural:162;verification:verified;words:விழுப்பேற்றின்=பண்புப்பெயர்|அஃது=சுட்டுப்பெயர்|ஒப்பது=வினையாலணையும்பெயர்|இல்லை=குறிப்புவினைமுற்று|யார்=வினாப்பெயர்|மாட்டு=இடப்பெயர்|உம்=உம்மை|அழுக்காற்றின்=பண்புப்பெயர்|அன்மை=தொழிற்பெயர்|பெறின்=வினையெச்சம்;ani:உயர்வுநவிற்சி;edugai:ழ;eetruseer:பெறின் (காசு வாய்பாடு);}" comments="kural=162; numeral=௨">
+        <Coords points="0,224 2965,224 2965,263 0,263" />
+        <Baseline points="0,256 2965,256" />
+        <TextEquiv>
+          <Unicode>விழுப்பேற்றி னஃதொப்ப தில்லையார் மாட்டு மளுக்காற்றி னன்மை பெறின்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l3" custom="readingOrder {index:2;} ilakkanam {kural:163;verification:verified;words:அறன்=பண்புப்பெயர்|ஆக்கம்=தொழிற்பெயர்|வேண்டாதான்=வினையாலணையும்பெயர்|என்பான்=வினையாலணையும்பெயர்|பிறன்=பொருட்பெயர்|ஆக்கம்=தொழிற்பெயர்|பேணாது=எதிர்மறைவினையெச்சம்|அழுக்கறுப்=வினையாலணையும்பெயர்|பான்=வினையாலணையும்பெயர்;togai:அறன்ஆக்கம்=உம்மைத்தொகை|பிறனாக்கம்=வேற்றுமைத்தொகை;ani:சொற்பொருட்பின்வருநிலை;edugai:ற/ண;eetruseer:பான் (காசு வாய்பாடு);}" comments="kural=163; numeral=௩">
+        <Coords points="0,263 2965,263 2965,303 0,303" />
+        <Baseline points="0,296 2965,296" />
+        <TextEquiv>
+          <Unicode>அறனாக்கம் வேண்டாதா னென்பான் பிறனாக்கம் பேணா தழுக்கறுப் பான்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l4" custom="readingOrder {index:3;} ilakkanam {kural:164;verification:verified;words:அழுக்காற்றின்=பண்புப்பெயர்|அல்லவை=வினையாலணையும்பெயர்|செய்யார்=குறிப்புவினைமுற்று|இழுக்காற்றின்=பண்புப்பெயர்|ஏதம்=பொருட்பெயர்|படுபாக்கு=தொழிற்பெயர்|அறிந்து=வினையெச்சம்;ani:இயைபு/ஒலிநயம்;edugai:ழ/த;eetruseer:அறிந்து (நாள் வாய்பாடு);}" comments="kural=164; numeral=௪">
+        <Coords points="0,303 2965,303 2965,342 0,342" />
+        <Baseline points="0,335 2965,335" />
+        <TextEquiv>
+          <Unicode>அழுக்காற்றி னல்லவை செய்யா ரிழுக்காற்றி நேதம் படும்பாக் கறிந்து</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l5" custom="readingOrder {index:4;} ilakkanam {kural:165;verification:verified;words:அழுக்காறு=பண்புப்பெயர்|உடையார்க்கு=வினையாலணையும்பெயர்|அது=சுட்டுப்பெயர்|சாலும்=தெரிநிலைவினைமுற்று|ஒன்னார்=வினையாலணையும்பெயர்|வழுக்காயும்=எதிர்மறைவினையெச்சம்|உம்=உம்மை|கேடு=தொழிற்பெயர்|ஈன்பது=வினையாலணையும்பெயர்;ani:பிறிதுமொழிதல்;edugai:ழ;eetruseer:பது (சீர்ப்பிரிவு) — கேடீன்பது (காசு வாய்பாடு);}" comments="kural=165; numeral=௫">
+        <Coords points="0,342 2965,342 2965,381 0,381" />
+        <Baseline points="0,374 2965,374" />
+        <TextEquiv>
+          <Unicode>அழுக்கா றுடையாற் கதுசாலு மொந்நார் வழுக்கியுங் கேடீன் பது</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l6" custom="readingOrder {index:5;} ilakkanam {kural:166;verification:verified;words:கொடுப்பது=வினையாலணையும்பெயர்|அழுக்கறுப்பான்=வினையாலணையும்பெயர்|சுற்றம்=பொருட்பெயர்|உடுப்பது=வினையாலணையும்பெயர்|உம்=உம்மை|உண்பது=வினையாலணையும்பெயர்|உம்=உம்மை|இன்றி=எதிர்மறைவினையெச்சம்|கெடும்=தெரிநிலைவினைமுற்று;ani:சொற்பொருட்பின்வருநிலை;edugai:ண;eetruseer:கெடும் (காசு வாய்பாடு);}" comments="kural=166; numeral=௬">
+        <Coords points="0,381 2965,381 2965,420 0,420" />
+        <Baseline points="0,413 2965,413" />
+        <TextEquiv>
+          <Unicode>கெடுப்ப தழுக்கறுப்பான் சுற்றம் உடுப்பதூம் உண்பதூம் யின்றிக் கெடும்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l7" custom="readingOrder {index:6;} ilakkanam {kural:167;verification:verified;words:அவ்வித்து=வினையெச்சம்|அழுக்காறு=பண்புப்பெயர்|உடையானை=வினையாலணையும்பெயர்|செய்யவள்=சிறப்புப்பெயர்|தவ்வையை=பொருட்பெயர்|காட்டி=வினையெச்சம்|விடும்=தெரிநிலைவினைமுற்று;ani:உருவகம்,பிறிதுமொழிதல்;edugai:வ்;eetruseer:விடும் (காசு வாய்பாடு);}" comments="kural=167; numeral=௭">
+        <Coords points="0,420 2965,420 2965,459 0,459" />
+        <Baseline points="0,452 2965,452" />
+        <TextEquiv>
+          <Unicode>அவ்வித் தழுக்காறு டையாநைச் செய்யவ டவ்வையைக் காட்டி விடும்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l8" custom="readingOrder {index:7;} ilakkanam {kural:168;verification:verified;words:அழுக்காறு=பண்புப்பெயர்|என=வினையெச்சம்|ஒரு=எண்ணுப்பெயர்|பாவி=பண்புப்பெயர்|திரு=பொருட்பெயர்|செற்று=வினையெச்சம்|தீ=பண்புப்பெயர்|உழி=இடப்பெயர்|உய்த்து=வினையெச்சம்|விடும்=தெரிநிலைவினைமுற்று;togai:திருச்செற்றுத்=வேற்றுமைத்தொகை|தீயுழி=பண்புத்தொகை;ani:உருவகம்,பிறிதுமொழிதல்;edugai:ழ/ய;eetruseer:விடும் (காசு வாய்பாடு);}" comments="kural=168; numeral=௮">
+        <Coords points="0,459 2965,459 2965,499 0,499" />
+        <Baseline points="0,492 2965,492" />
+        <TextEquiv>
+          <Unicode>அழுக்கா றெநவொரு பாவி திருச்செற்றுத் தீயுழி யுய்த்து விடும்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l9" custom="readingOrder {index:8;} ilakkanam {kural:169;verification:verified;words:அவ்விய=பெயரெச்சம்|நெஞ்சத்தான்=வினையாலணையும்பெயர்|ஆக்கம்=தொழிற்பெயர்|உம்=உம்மை|செவ்வியான்=வினையாலணையும்பெயர்|கேடு=தொழிற்பெயர்|உம்=உம்மை|நினைக்கப்=வினையெச்சம்|படும்=தெரிநிலைவினைமுற்று;ani:முரண்;edugai:வ்/டு;eetruseer:படும் (காசு வாய்பாடு);}" comments="kural=169; numeral=௯">
+        <Coords points="0,499 2965,499 2965,538 0,538" />
+        <Baseline points="0,531 2965,531" />
+        <TextEquiv>
+          <Unicode>அவ்விய நெஞ்சத்தா னாக்கமுஞ் செவ்வியான்  நினைக்கப் படும்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l10" custom="readingOrder {index:9;} ilakkanam {kural:170;verification:verified;words:அழுக்கற்று=வினையெச்சம்|அகன்றார்=வினையாலணையும்பெயர்|உம்=உம்மை|இல்லை=குறிப்புவினைமுற்று|அஃது=சுட்டுப்பெயர்|இல்லார்=வினையாலணையும்பெயர்|பெருக்கத்தில்=தொழிற்பெயர்|தீர்ந்தார்=வினையாலணையும்பெயர்|உம்=உம்மை|இல்=எதிர்மறைஇடை;ani:சொற்பொருட்பின்வருநிலை,முரண்;edugai:ழ/ர;eetruseer:இல் (காசு வாய்பாடு);}" comments="kural=170; numeral=௰">
+        <Coords points="0,538 2965,538 2965,577 0,577" />
+        <Baseline points="0,570 2965,570" />
+        <TextEquiv>
+          <Unicode>அழுக்காற் றகன்றாரு மில்லையஃ திலார் பெருக்கத்திற் தீர்ந்தாரு மில்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextEquiv>
+        <Unicode>ஒழுக்காறாக் கொள்க வொருவன்றன் நெஞ்சத் தளுக்காறி ல்லாத வியல்பு
+விழுப்பேற்றி னஃதொப்ப தில்லையார் மாட்டு மளுக்காற்றி னன்மை பெறின்
+அறனாக்கம் வேண்டாதா னென்பான் பிறனாக்கம் பேணா தழுக்கறுப் பான்
+அழுக்காற்றி னல்லவை செய்யா ரிழுக்காற்றி நேதம் படும்பாக் கறிந்து
+அழுக்கா றுடையாற் கதுசாலு மொந்நார் வழுக்கியுங் கேடீன் பது
+கெடுப்ப தழுக்கறுப்பான் சுற்றம் உடுப்பதூம் உண்பதூம் யின்றிக் கெடும்
+அவ்வித் தழுக்காறு டையாநைச் செய்யவ டவ்வையைக் காட்டி விடும்
+அழுக்கா றெநவொரு பாவி திருச்செற்றுத் தீயுழி யுய்த்து விடும்
+அவ்விய நெஞ்சத்தா னாக்கமுஞ் செவ்வியான்  நினைக்கப் படும்
+அழுக்காற் றகன்றாரு மில்லையஃ திலார் பெருக்கத்திற் தீர்ந்தாரு மில்</Unicode>
+      </TextEquiv>
+    </TextRegion>
+    <TextRegion id="r_margin" type="marginalia" custom="readingOrder {index:1;}">
+      <Coords points="0,185 415,185 415,577 0,577" />
+      <TextLine id="r_margin_l3" custom="readingOrder {index:2;}" comments="marginal cell @ L3">
+        <Coords points="0,263 415,263 415,303 0,303" />
+        <Baseline points="0,296 415,296" />
+        <TextEquiv>
+          <Unicode>அளுக்கா</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_margin_l4" custom="readingOrder {index:3;}" comments="marginal cell @ L4">
+        <Coords points="0,303 415,303 415,342 0,342" />
+        <Baseline points="0,335 415,335" />
+        <TextEquiv>
+          <Unicode>றாமை</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_margin_l6" custom="readingOrder {index:5;}" comments="marginal cell @ L6">
+        <Coords points="0,381 415,381 415,420 0,420" />
+        <Baseline points="0,413 415,413" />
+        <TextEquiv>
+          <Unicode>௨௰௯</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextEquiv>
+        <Unicode>அளுக்கா
+றாமை
+௨௰௯</Unicode>
+      </TextEquiv>
+    </TextRegion>
+  </Page>
+</PcGts>

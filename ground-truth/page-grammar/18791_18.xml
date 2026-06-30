@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='utf-8'?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+  <Metadata>
+    <Creator>Central Institute of Classical Tamil (CICT)</Creator>
+    <Created>2026-05-06T00:00:00</Created>
+    <LastChange>2026-05-06T00:00:00</LastChange>
+    <Comments>CICT-PLM-GT-016 | Tirukkural Adhikaram 16 (பொறையுடைமை / Forbearance) | kurals 151-160 | section அறம் / subsection  | DOI 10.5281/zenodo.20049933 | record https://zenodo.org/records/20049933 | manuscriptId 18791_18 | NOTE: line Coords are band-derived full-width bounding boxes (approximate); transcription text is exact ground truth.</Comments>
+  </Metadata>
+  <Page imageFilename="18791_18.jpg" imageWidth="2883" imageHeight="557">
+    <ReadingOrder>
+      <OrderedGroup id="g0">
+        <RegionRefIndexed index="0" regionRef="r_main" />
+        <RegionRefIndexed index="1" regionRef="r_margin" />
+      </OrderedGroup>
+    </ReadingOrder>
+    <TextRegion id="r_main" type="paragraph" custom="readingOrder {index:0;}">
+      <Coords points="0,147 2883,147 2883,539 0,539" />
+      <TextLine id="r_main_l1" custom="readingOrder {index:0;} ilakkanam {kural:151;verification:verified;words:அகழ்வாரை=வினையாலணையும்பெயர்|தாங்கும்=பெயரெச்சம்|நிலம்=இடப்பெயர்|போல=வினையெச்சம்|தம்மை=சுட்டுப்பெயர்|இகழ்வாரை=வினையாலணையும்பெயர்|பொறுத்தல்=தொழிற்பெயர்|தலை=பண்புப்பெயர்;ani:எடுத்துக்காட்டுவமை;edugai:க;eetruseer:நாள்;}" comments="kural=151; numeral=௧">
+        <Coords points="0,147 2883,147 2883,187 0,187" />
+        <Baseline points="0,179 2883,179" />
+        <TextEquiv>
+          <Unicode>அகழ்வாரைத் தாங்கும் நிலம்போலத் தம்மை யிகழ்வார் பொறுத்த றலை</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l2" custom="readingOrder {index:1;} ilakkanam {kural:152;verification:verified;words:பொறுத்தல்=தொழிற்பெயர்|இறப்பினை=தொழிற்பெயர்|என்றும்=காலப்பெயர்|அதனை=சுட்டுப்பெயர்|மறத்தல்=தொழிற்பெயர்|அதனின்=சுட்டுப்பெயர்|உம்=உம்மை|நன்று=குறிப்புவினைமுற்று;ani:சொற்பொருட்பின்வருநிலை;edugai:ற;eetruseer:பிறப்பு;}" comments="kural=152; numeral=௨">
+        <Coords points="0,187 2883,187 2883,226 0,226" />
+        <Baseline points="0,219 2883,219" />
+        <TextEquiv>
+          <Unicode>பொறுத்த லிறப்பிநை யென்று மதநை மறத்த லதநினும் நன்று</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l3" custom="readingOrder {index:2;} ilakkanam {kural:153;verification:verified;words:இன்மையுள்=பண்புப்பெயர்|இன்மை=பண்புப்பெயர்|விருந்து=பொருட்பெயர்|ஒரால்=தொழிற்பெயர்|வன்மையுள்=பண்புப்பெயர்|வன்மை=பண்புப்பெயர்|மடவாரை=வினையாலணையும்பெயர்|பொறை=தொழிற்பெயர்;ani:மடக்கு,சொற்பொருட்பின்வருநிலை;edugai:ன்;eetruseer:மலர்;}" comments="kural=153; numeral=௩">
+        <Coords points="0,226 2883,226 2883,265 0,265" />
+        <Baseline points="0,258 2883,258" />
+        <TextEquiv>
+          <Unicode>யின்மையு ளின்மை விருந்தோரால் வன்மையுள் வன்மை மடவார் பொறை</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l4" custom="readingOrder {index:3;} ilakkanam {kural:154;verification:verified;words:நிறையுடைமை=பண்புப்பெயர்|நீங்காமை=எதிர்மறைவினையெச்சம்|வேண்டின்=வினையெச்சம்|பொறையுடைமை=பண்புப்பெயர்|போற்றி=வினையெச்சம்|ஒழுகப்=வினையெச்சம்|படும்=தெரிநிலைவினைமுற்று;edugai:ற;eetruseer:பிறப்பு;}" comments="kural=154; numeral=௪">
+        <Coords points="0,265 2883,265 2883,304 0,304" />
+        <Baseline points="0,297 2883,297" />
+        <TextEquiv>
+          <Unicode>நிறையுடைமை நீங்காமை வேண்டிற் பொறையுடைமை போற்றி யொளுகப் படும்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l5" custom="readingOrder {index:4;} ilakkanam {kural:155;verification:verified;words:ஒறுத்தாரை=வினையாலணையும்பெயர்|ஒன்றாக=எண்ணுப்பெயர்|வையார்=குறிப்புவினைமுற்று|ஏ=ஏகாரம்|வைப்பர்=தெரிநிலைவினைமுற்று|பொறுத்தாரை=வினையாலணையும்பெயர்|பொன்=பொருட்பெயர்|போல்=வினையெச்சம்|பொதிந்து=வினையெச்சம்;ani:உவமை,முரண்;edugai:று;eetruseer:காசு;}" comments="kural=155; numeral=௫">
+        <Coords points="0,304 2883,304 2883,343 0,343" />
+        <Baseline points="0,336 2883,336" />
+        <TextEquiv>
+          <Unicode>ஒறுத்தாரை யொன்றாக வையாரெ வைப்பர் பொறுத்தாரைப் பொன்போற் பொதிந்து</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l6" custom="readingOrder {index:5;} ilakkanam {kural:156;verification:verified;words:ஒறுத்தார்க்கு=வினையாலணையும்பெயர்|ஒரு=எண்ணுப்பெயர்|நாளை=காலப்பெயர்|இன்பம்=பண்புப்பெயர்|பொறுத்தார்க்கு=வினையாலணையும்பெயர்|பொன்றும்=பெயரெச்சம்|துணை=காலப்பெயர்|உம்=உம்மை|புகழ்=பண்புப்பெயர்;ani:முரண்;edugai:று;eetruseer:மலர்;}" comments="kural=156; numeral=௬">
+        <Coords points="0,343 2883,343 2883,382 0,382" />
+        <Baseline points="0,375 2883,375" />
+        <TextEquiv>
+          <Unicode>ஒறுத்தார்க் கொருநாழை யின்பம் பொறுத்தார்க்குப் பொன்றுந் துணையும் புகழ்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l7" custom="readingOrder {index:6;} ilakkanam {kural:157;verification:verified;words:திறன்=பண்புப்பெயர்|அல்ல=எதிர்மறைஇடை|தன்=சுட்டுப்பெயர்|பிறர்=பொருட்பெயர்|செய்யினும்=வினையெச்சம்|உம்=உம்மை|நோ=தொழிற்பெயர்|நொந்து=வினையெச்சம்|அறன்=பண்புப்பெயர்|அல்ல=எதிர்மறைஇடை|செய்யாமை=எதிர்மறைவினையெச்சம்|நன்று=குறிப்புவினைமுற்று;ani:சொற்பொருட்பின்வருநிலை;edugai:ற;eetruseer:பிறப்பு;}" comments="kural=157; numeral=௭">
+        <Coords points="0,382 2883,382 2883,422 0,422" />
+        <Baseline points="0,414 2883,414" />
+        <TextEquiv>
+          <Unicode>திறநல்ல தற்பிறர் செய்யிநும் நோநோந் தாற்கறனல்ல செய்யாமை நன்று</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l8" custom="readingOrder {index:7;} ilakkanam {kural:158;verification:verified;words:மிகுதியான்=பண்புப்பெயர்|மிக்கவை=வினையாலணையும்பெயர்|செய்தாரை=வினையாலணையும்பெயர்|தாம்=சுட்டுப்பெயர்|தம்=சுட்டுப்பெயர்|தகுதியான்=பண்புப்பெயர்|வென்று=வினையெச்சம்|விடல்=வியங்கோள்வினைமுற்று;ani:இயைபு;edugai:கு;eetruseer:பிறப்பு;}" comments="kural=158; numeral=௮">
+        <Coords points="0,422 2883,422 2883,461 0,461" />
+        <Baseline points="0,454 2883,454" />
+        <TextEquiv>
+          <Unicode>மிகுதியான் மிக்கவை செய்தாரைத் தாந்தந் தகுதியான் வென்று விடல்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l9" custom="readingOrder {index:8;} ilakkanam {kural:159;verification:verified;words:துறந்தாரின்=வினையாலணையும்பெயர்|தூய்மை=பண்புப்பெயர்|உடையர்=குறிப்புவினைமுற்று|இறந்தார்=வினையாலணையும்பெயர்|வாய்=சினைப்பெயர்|இன்னா=உரிச்சொல்|சொல்=பொருட்பெயர்|நோற்கில்=வினையெச்சம்|பவர்=வினையாலணையும்பெயர்;togai:இன்னாச்சொல்=பண்புத்தொகை;ani:உவமை;edugai:ற;eetruseer:மலர்;}" comments="kural=159; numeral=௯">
+        <Coords points="0,461 2883,461 2883,500 0,500" />
+        <Baseline points="0,493 2883,493" />
+        <TextEquiv>
+          <Unicode>துறந்தாரிற் றூய்மை யுடைய ரிறந்தார்வா யிந்நாச்சொல் நோ நோக்கிப் பவர்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l10" custom="readingOrder {index:9;} ilakkanam {kural:160;verification:verified;words:உண்ணாது=எதிர்மறைவினையெச்சம்|நோற்பார்=வினையாலணையும்பெயர்|பெரியர்=குறிப்புவினைமுற்று|பிறர்=பொருட்பெயர்|சொல்லும்=பெயரெச்சம்|இன்னா=உரிச்சொல்|சொல்=பொருட்பெயர்|நோற்பாரின்=வினையாலணையும்பெயர்|பின்=காலப்பெயர்;togai:இன்னாச்சொல்=பண்புத்தொகை;ani:சொற்பொருட்பின்வருநிலை;edugai:ண்;eetruseer:பிறப்பு;}" comments="kural=160; numeral=௰">
+        <Coords points="0,500 2883,500 2883,539 0,539" />
+        <Baseline points="0,532 2883,532" />
+        <TextEquiv>
+          <Unicode>உன்னாது நோற்பார் பெரியர் பிறர்சொல்லு யிந்நாச்சொல்  நோற்பாரிற் பின்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextEquiv>
+        <Unicode>அகழ்வாரைத் தாங்கும் நிலம்போலத் தம்மை யிகழ்வார் பொறுத்த றலை
+பொறுத்த லிறப்பிநை யென்று மதநை மறத்த லதநினும் நன்று
+யின்மையு ளின்மை விருந்தோரால் வன்மையுள் வன்மை மடவார் பொறை
+நிறையுடைமை நீங்காமை வேண்டிற் பொறையுடைமை போற்றி யொளுகப் படும்
+ஒறுத்தாரை யொன்றாக வையாரெ வைப்பர் பொறுத்தாரைப் பொன்போற் பொதிந்து
+ஒறுத்தார்க் கொருநாழை யின்பம் பொறுத்தார்க்குப் பொன்றுந் துணையும் புகழ்
+திறநல்ல தற்பிறர் செய்யிநும் நோநோந் தாற்கறனல்ல செய்யாமை நன்று
+மிகுதியான் மிக்கவை செய்தாரைத் தாந்தந் தகுதியான் வென்று விடல்
+துறந்தாரிற் றூய்மை யுடைய ரிறந்தார்வா யிந்நாச்சொல் நோ நோக்கிப் பவர்
+உன்னாது நோற்பார் பெரியர் பிறர்சொல்லு யிந்நாச்சொல்  நோற்பாரிற் பின்</Unicode>
+      </TextEquiv>
+    </TextRegion>
+    <TextRegion id="r_margin" type="marginalia" custom="readingOrder {index:1;}">
+      <Coords points="0,147 404,147 404,539 0,539" />
+      <TextLine id="r_margin_l3" custom="readingOrder {index:2;}" comments="marginal cell @ L3">
+        <Coords points="0,226 404,226 404,265 0,265" />
+        <Baseline points="0,258 404,258" />
+        <TextEquiv>
+          <Unicode>பொறை</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_margin_l4" custom="readingOrder {index:3;}" comments="marginal cell @ L4">
+        <Coords points="0,265 404,265 404,304 0,304" />
+        <Baseline points="0,297 404,297" />
+        <TextEquiv>
+          <Unicode>யுடமை</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextEquiv>
+        <Unicode>பொறை
+யுடமை</Unicode>
+      </TextEquiv>
+    </TextRegion>
+  </Page>
+</PcGts>

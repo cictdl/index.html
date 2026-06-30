@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='utf-8'?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+  <Metadata>
+    <Creator>Central Institute of Classical Tamil (CICT)</Creator>
+    <Created>2026-06-05T00:00:00</Created>
+    <LastChange>2026-06-05T00:00:00</LastChange>
+    <Comments>CICT-PLM-GT-038 | Tirukkural Adhikaram 38 (ஊழ் / Fate) | kurals 371-380 | section அறம் / subsection ஊழியல் | DOI 10.5281/zenodo.20553769 | record https://zenodo.org/records/20553769 | manuscriptId 19011_40 | NOTE: line Coords are band-derived full-width bounding boxes (approximate); transcription text is exact ground truth.</Comments>
+  </Metadata>
+  <Page imageFilename="19011_40.jpg" imageWidth="2780" imageHeight="524">
+    <ReadingOrder>
+      <OrderedGroup id="g0">
+        <RegionRefIndexed index="0" regionRef="r_main" />
+        <RegionRefIndexed index="1" regionRef="r_margin" />
+      </OrderedGroup>
+    </ReadingOrder>
+    <TextRegion id="r_main" type="paragraph" custom="readingOrder {index:0;}">
+      <Coords points="0,121 2780,121 2780,510 0,510" />
+      <TextLine id="r_main_l1" custom="readingOrder {index:0;} ilakkanam {kural:371;verification:verified;words:ஆகூழால்=காரணப்பெயர்|தோன்றும்=தெரிநிலைவினைமுற்று|அசைவின்மை=பண்புப்பெயர்|கைப்பொருள்=பொருட்பெயர்|போகூழால்=காரணப்பெயர்|தோன்றும்=தெரிநிலைவினைமுற்று|மடி=பண்புப்பெயர்;togai:கைப்பொருள்=வேற்றுமைத்தொகை;ani:முரண்,சொற்பொருட்பின்வருநிலை;edugai:கூ;eetruseer:நாள்;}" comments="kural=371; numeral=௧">
+        <Coords points="0,121 2780,121 2780,160 0,160" />
+        <Baseline points="0,153 2780,153" />
+        <TextEquiv>
+          <Unicode>ஆகூழாற் றோன்றும் டிசைவின்மை கைப்பொருள் போகூழாற் றோன்றும் மடி</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l2" custom="readingOrder {index:1;} ilakkanam {kural:372;verification:verified;words:பேதைப்=பண்புப்பெயர்|படுக்கும்=பெயரெச்சம்|இழவூழ்=காரணப்பெயர்|அறிவு=பண்புப்பெயர்|அகற்றும்=பெயரெச்சம்|ஆகலூழ்=காரணப்பெயர்|உற்ற=பெயரெச்சம்|கடை=காலப்பெயர்;ani:முரண்;edugai:தை/க;eetruseer:நாள்;}" comments="kural=372; numeral=௨">
+        <Coords points="0,160 2780,160 2780,199 0,199" />
+        <Baseline points="0,192 2780,192" />
+        <TextEquiv>
+          <Unicode>பேதைப் படுக்குமி ழவூழ் ழறிவகற்றும் மாகலூழு ற்றக் கடை</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l3" custom="readingOrder {index:2;} ilakkanam {kural:376;verification:verified;words:பரியின்=வினையெச்சம்|உம்=உம்மை|ஆகாவாம்=எதிர்மறைவினைமுற்று|பால்=பண்புப்பெயர்|அல்ல=எதிர்மறைவினைமுற்று|உய்த்து=வினையெச்சம்|சொரியின்=வினையெச்சம்|உம்=உம்மை|போகா=எதிர்மறைவினைமுற்று|தம=வினையாலணையும்பெயர்;ani:முரண்,இயைபு/ஒலிநயம்;edugai:ரி;eetruseer:பிறப்பு;}" comments="kural=376; numeral=௩">
+        <Coords points="0,199 2780,199 2780,238 0,238" />
+        <Baseline points="0,231 2780,231" />
+        <TextEquiv>
+          <Unicode>பரியிநு மாகாவாம் பாலல்ல வுய்த்துச் சொரியிநும் போகா தாம</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l4" custom="readingOrder {index:3;} ilakkanam {kural:375;verification:verified;words:நல்லவை=வினையாலணையும்பெயர்|எல்லாம்=எண்ணுப்பெயர்|தீயவாம்=குறிப்புவினைமுற்று|தீயவை=வினையாலணையும்பெயர்|உம்=உம்மை|நல்லவாம்=குறிப்புவினைமுற்று|செல்வம்=பொருட்பெயர்|செயற்கு=தொழிற்பெயர்;ani:முரண்,மடக்கு;edugai:ல்;eetruseer:காசு;}" comments="kural=375; numeral=௪">
+        <Coords points="0,238 2780,238 2780,277 0,277" />
+        <Baseline points="0,270 2780,270" />
+        <TextEquiv>
+          <Unicode>நல்லவை யெல்லாந் தீயவாந் தீயவும்நல்லவாஞ் செல்வஞ் செயற்கு</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l5" custom="readingOrder {index:4;} ilakkanam {kural:379;verification:verified;words:நன்று=பண்புப்பெயர்|ஆங்கால்=காலப்பெயர்|நல்லவா=வினையாலணையும்பெயர்|காண்பவர்=வினையாலணையும்பெயர்|அன்று=எதிர்மறைஇடை|ஆங்கால்=காலப்பெயர்|அல்லல்=பண்புப்பெயர்|படுவது=வினையாலணையும்பெயர்|எவன்=வினாப்பெயர்;ani:முரண்,வினாஅணி;edugai:ன்/ல்;eetruseer:காசு;}" comments="kural=379; numeral=௫">
+        <Coords points="0,277 2780,277 2780,316 0,316" />
+        <Baseline points="0,309 2780,309" />
+        <TextEquiv>
+          <Unicode>நன்றாங்கா ணல்லவாக் காண்பவ நன்றாங் கல்லற் படுவ தெவன்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l6" custom="readingOrder {index:5;} ilakkanam {kural:377;verification:verified;words:வகுத்தான்=வினையாலணையும்பெயர்|வகுத்த=பெயரெச்சம்|வகை=பண்புப்பெயர்|அல்லால்=எதிர்மறைஇடை|கோடி=எண்ணுப்பெயர்|தொகுத்தார்க்கு=வினையாலணையும்பெயர்|துய்த்தல்=தொழிற்பெயர்|அரிது=குறிப்புவினைமுற்று;ani:சொற்பொருட்பின்வருநிலை;edugai:கு;eetruseer:காசு;}" comments="kural=377; numeral=௬">
+        <Coords points="0,316 2780,316 2780,355 0,355" />
+        <Baseline points="0,348 2780,348" />
+        <TextEquiv>
+          <Unicode>வகுத்தான் வகுத்த வகையல்லாற் கோடி தொகுத்தார்க்கு துய்த்தல் ரிது</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l7" custom="readingOrder {index:6;} ilakkanam {kural:373;verification:verified;words:நுண்ணிய=பெயரெச்சம்|நூல்=பொருட்பெயர்|பல=எண்ணுப்பெயர்|கற்பின்=வினையெச்சம்|உம்=உம்மை|மற்றும்=அசைநிலை|தன்=சுட்டுப்பெயர்|உண்மை=பண்புப்பெயர்|அறிவு=பண்புப்பெயர்|ஏ=ஏகாரம்|மிகும்=தெரிநிலைவினைமுற்று;togai:நூல்பல=பண்புத்தொகை;ani:வஞ்சப்புகழ்ச்சி;edugai:ண்;eetruseer:காசு;}" comments="kural=373; numeral=௭">
+        <Coords points="0,355 2780,355 2780,394 0,394" />
+        <Baseline points="0,387 2780,387" />
+        <TextEquiv>
+          <Unicode>நுண்ணிய பல கற்பிநும் மற்றுந்தந் நுண்மை யறிவே மிகும்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l8" custom="readingOrder {index:7;} ilakkanam {kural:374;verification:verified;words:இரு=எண்ணுப்பெயர்|வேறு=பண்புப்பெயர்|உலகத்து=இடப்பெயர்|இயற்கை=பண்புப்பெயர்|திரு=பொருட்பெயர்|வேறு=குறிப்புவினைமுற்று|தெள்ளியர்=வினையாலணையும்பெயர்|ஆதல்=தொழிற்பெயர்|உம்=உம்மை|வேறு=குறிப்புவினைமுற்று;togai:இருவேறு=பண்புத்தொகை;ani:சொற்பொருட்பின்வருநிலை,மடக்கு;edugai:ரு/ள்;eetruseer:காசு;}" comments="kural=374; numeral=௮">
+        <Coords points="0,394 2780,394 2780,432 0,432" />
+        <Baseline points="0,425 2780,425" />
+        <TextEquiv>
+          <Unicode>இருவேறு லகத்துதி யற்கை திருவேறு தெள்ளிய ராதலும் வேறு</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l9" custom="readingOrder {index:8;} ilakkanam {kural:378;verification:verified;words:துறப்பார்=தெரிநிலைவினைமுற்று|மன்=அசைநிலை|துப்புரவு=பொருட்பெயர்|இல்லார்=வினையாலணையும்பெயர்|உறற்பால=வினையாலணையும்பெயர்|ஊட்டா=எதிர்மறைவினையெச்சம்|கழியும்=பெயரெச்சம்|எனின்=வினையெச்சம்;ani:பிறிதுமொழிதல்;edugai:ற/ட்;eetruseer:காசு;}" comments="kural=378; numeral=௯">
+        <Coords points="0,432 2780,432 2780,471 0,471" />
+        <Baseline points="0,464 2780,464" />
+        <TextEquiv>
+          <Unicode>துறப்பார்மனற் றுப்புர வில்லாருற்றபால வூட்டா களியு மெநின்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l10" custom="readingOrder {index:9;} ilakkanam {kural:380;verification:verified;words:ஊழின்=பொருட்பெயர்|பெரு=பண்புப்பெயர்|வலி=பண்புப்பெயர்|யா=வினாப்பெயர்|உள=குறிப்புவினைமுற்று|மற்று=அசைநிலை|ஒன்று=எண்ணுப்பெயர்|சூழின்=வினையெச்சம்|உம்=உம்மை|தான்=சுட்டுப்பெயர்|முந்(து)=வினையெச்சம்|துறும்=தெரிநிலைவினைமுற்று;togai:பெருவலி=பண்புத்தொகை;ani:வினாஅணி,உயர்வுநவிற்சி;edugai:ழி;eetruseer:காசு;}" comments="kural=380; numeral=௰">
+        <Coords points="0,471 2780,471 2780,510 0,510" />
+        <Baseline points="0,503 2780,503" />
+        <TextEquiv>
+          <Unicode>உள்ழிற் பெருவலி யாவுள மற்றொன்று சூழிநுந் தான்முந் துறும்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextEquiv>
+        <Unicode>ஆகூழாற் றோன்றும் டிசைவின்மை கைப்பொருள் போகூழாற் றோன்றும் மடி
+பேதைப் படுக்குமி ழவூழ் ழறிவகற்றும் மாகலூழு ற்றக் கடை
+பரியிநு மாகாவாம் பாலல்ல வுய்த்துச் சொரியிநும் போகா தாம
+நல்லவை யெல்லாந் தீயவாந் தீயவும்நல்லவாஞ் செல்வஞ் செயற்கு
+நன்றாங்கா ணல்லவாக் காண்பவ நன்றாங் கல்லற் படுவ தெவன்
+வகுத்தான் வகுத்த வகையல்லாற் கோடி தொகுத்தார்க்கு துய்த்தல் ரிது
+நுண்ணிய பல கற்பிநும் மற்றுந்தந் நுண்மை யறிவே மிகும்
+இருவேறு லகத்துதி யற்கை திருவேறு தெள்ளிய ராதலும் வேறு
+துறப்பார்மனற் றுப்புர வில்லாருற்றபால வூட்டா களியு மெநின்
+உள்ழிற் பெருவலி யாவுள மற்றொன்று சூழிநுந் தான்முந் துறும்</Unicode>
+      </TextEquiv>
+    </TextRegion>
+    <TextRegion id="r_margin" type="marginalia" custom="readingOrder {index:1;}">
+      <Coords points="0,121 389,121 389,510 0,510" />
+      <TextLine id="r_margin_l4" custom="readingOrder {index:3;}" comments="marginal cell @ L4">
+        <Coords points="0,238 389,238 389,277 0,277" />
+        <Baseline points="0,270 389,270" />
+        <TextEquiv>
+          <Unicode>ஊழ்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextEquiv>
+        <Unicode>ஊழ்</Unicode>
+      </TextEquiv>
+    </TextRegion>
+  </Page>
+</PcGts>
