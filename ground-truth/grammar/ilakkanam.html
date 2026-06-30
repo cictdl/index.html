@@ -10,18 +10,18 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;500;600&family=Noto+Serif+Tamil:wght@500;600&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#fbfaf7; --surface:#ffffff; --surface2:#f3f1ea; --text:#23221e; --muted:#6b6a63; --faint:#9a988f;
-  --border:#e4e1d7; --accent:#185fa5; --accent-bg:#e6f1fb;
-  --peyar:#185fa5; --peyar-bg:#e6f1fb; --vinai:#3b6d11; --vinai-bg:#eaf3de;
-  --idai:#854f0b; --idai-bg:#faeeda; --uri:#534ab7; --uri-bg:#eeedfe;
-  --ok:#3b6d11; --warn:#ba7517; --bad:#a32d2d; --radius:10px;
+  --bg:#efe6cf; --surface:#fbf5e6; --surface2:#e9dcc0; --text:#3a2e22; --muted:#7c6a50; --faint:#a3906f;
+  --border:#ddcdab; --accent:#b9521f; --accent-bg:#f4e2d2; --head:#6e2b2b;
+  --peyar:#1f5470; --peyar-bg:#dfeaf0; --vinai:#2f6d3a; --vinai-bg:#e4efd6;
+  --idai:#8a5a12; --idai-bg:#f3e6cc; --uri:#5b3a8c; --uri-bg:#ebe3f4;
+  --ok:#3b6d11; --warn:#a06a12; --bad:#a32d2d; --radius:10px;
 }
 html{color-scheme:light}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--text);font-family:'Noto Sans Tamil',system-ui,sans-serif;font-size:16px;line-height:1.6}
 a{color:var(--accent);text-decoration:none}
 header{position:sticky;top:0;z-index:10;background:var(--surface);border-bottom:1px solid var(--border);padding:10px 16px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
-.brand{font-weight:600;font-size:17px;display:flex;align-items:center;gap:8px;cursor:pointer}
+.brand{font-weight:600;font-size:17px;display:flex;align-items:center;gap:8px;cursor:pointer;color:var(--head)}
 .brand small{font-weight:400;color:var(--muted);font-size:12px}
 .searchbox{flex:1;min-width:180px;display:flex;align-items:center;gap:7px;background:var(--surface2);border:1px solid var(--border);border-radius:999px;padding:7px 14px}
 .searchbox input{border:0;background:transparent;outline:0;color:var(--text);font:inherit;font-size:14px;width:100%}
@@ -31,7 +31,7 @@ header{position:sticky;top:0;z-index:10;background:var(--surface);border-bottom:
 .banner{background:var(--idai-bg);color:var(--idai);border-radius:var(--radius);padding:8px 12px;font-size:12.5px;margin-bottom:16px;display:flex;gap:8px;align-items:flex-start}
 .crumb{font-size:13px;color:var(--muted);margin-bottom:14px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
 .crumb a{color:var(--muted)}
-.pal-h{font-family:'Noto Serif Tamil',serif;font-size:20px;font-weight:600;margin:22px 0 4px}
+.pal-h{font-family:'Noto Serif Tamil',serif;font-size:20px;font-weight:600;margin:22px 0 4px;color:var(--head)}
 .iyal-h{font-size:13px;color:var(--muted);margin:14px 0 8px;text-transform:none}
 .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px}
 .card{display:block;color:inherit;background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:12px 14px;cursor:pointer;transition:border-color .12s}
@@ -105,6 +105,13 @@ footer .foot-director img{width:54px;height:54px;border-radius:8px;object-fit:co
 .dname{font-size:19px;font-weight:600;color:var(--text)}.dtitle{font-size:12.5px;color:var(--muted)}
 .dquote{font-family:'Noto Serif Tamil',Georgia,serif;font-size:16.5px;line-height:1.9;color:var(--text);border-left:3px solid var(--accent);padding-left:18px}
 .dsign{margin-top:16px;text-align:right;font-style:italic;color:var(--muted)}
+.welcome{display:flex;gap:16px;align-items:center;background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--accent);border-radius:12px;padding:16px 20px;margin-bottom:20px;color:inherit}
+.welcome:hover{border-color:var(--accent)}
+.welcome-photo{width:72px;height:72px;border-radius:50%;object-fit:cover;border:2px solid var(--accent-bg);flex:none}
+.welcome-label{font-size:12px;color:var(--accent);font-weight:600}
+.welcome-text{font-family:'Noto Serif Tamil',Georgia,serif;font-size:15px;line-height:1.7;color:var(--text);margin:5px 0 7px}
+.welcome-foot{font-size:13px;color:var(--head);font-weight:600}
+@media(max-width:560px){.welcome{flex-direction:column;text-align:center}}
 </style>
 </head>
 <body>
@@ -156,6 +163,7 @@ const I18N={
   ta:{brand:"திருக்குறள் இலக்கணக் குறிப்பு ஆவணகம்",search:"சொல் / குறிப்பு தேடு…",browse:"தொகுப்பு",explore:"இலக்கணம் ஆராய்",
       home:"முகப்பு",dirmsg:"இயக்குநர் உரை",dirtitle:"இயக்குநர் · செம்மொழித் தமிழாய்வு மத்திய நிறுவனம்",contact:"தொடர்பு",
       dmBody:"திருக்குறள் தமிழ்மொழியின் சிகரம்; அதன் ஒவ்வொரு குறளும் வாழ்வியலுக்கு மட்டுமன்றி மொழிக்கும் ஒரு பாடம். இந்த இலக்கணக் குறிப்பு ஆவணகத்தின் வாயிலாக, செம்மொழித் தமிழாய்வு மத்திய நிறுவனம் 1,330 குறள்களுக்கும் சொல்வாரியான இலக்கணக் குறிப்பை — சொல்வகை, வேற்றுமை, தொகை, யாப்பு, அணி ஆகியவற்றுடன் — அவற்றைத் தாங்கி வந்த ஓலைச்சுவடிகளுடன் இணைத்து முதன்முறையாக வழங்குகிறது. மாணவர், ஆசிரியர், அறிஞர் அனைவருக்கும் இது நம்பகமான கருவியாகவும், வள்ளுவர் தமிழை இலக்கண ஆழத்தில் கற்க ஓர் அழைப்பாகவும் அமையும். இது ஒரு தொடக்கம்; திறந்த மனத்துடன் பகிரப்பட்டு, அறிஞர் சமூகத்தின் செம்மைப்படுத்தலுக்கு என்றும் திறந்திருக்கிறது.",
+      dmShort:"திருக்குறள் தமிழ்மொழியின் சிகரம். இந்த ஆவணகம் 1,330 குறள்களுக்கும் சொல்வாரியான இலக்கணக் குறிப்பை — சொல்வகை, வேற்றுமை, தொகை, யாப்பு, அணி — ஓலைச்சுவடிகளுடன் இணைத்து வழங்குகிறது.",dmRead:"முழு உரை வாசிக்க",
       disclaimer:"AI-உதவியுடன் உருவாக்கப்பட்ட இலக்கண வரைவு; இறுதி நிலைக்கு தமிழ் இலக்கண அறிஞர் சரிபார்ப்பு தேவை.",
       foot:"திருக்குறள் இலக்கணக் குறிப்பு · 1330 குறள் · 133 அதிகாரம் · CICT Digital Archives",
       yappu:"யாப்பு",ani:"அணி",urai:"உரை (மு. வரதராசனார்)",meaning:"பொருள்",flags:"பார்வைக் குறிப்புகள்",
@@ -168,6 +176,7 @@ const I18N={
   en:{brand:"Tirukkural Grammatical Annotation Archive",search:"search word / tag…",browse:"Browse",explore:"Explore grammar",
       home:"Home",dirmsg:"Director's Message",dirtitle:"Director · Central Institute of Classical Tamil",contact:"Contact",
       dmBody:"The Tirukkural is the crown of classical Tamil — every couplet a lesson in language as much as in life. With this archive, the Central Institute of Classical Tamil offers, for the first time, a word-by-word grammatical reading (இலக்கணக் குறிப்பு) of all 1,330 couplets — their word-class, case, compound, prosody, and figures of speech — set beside the palm-leaf manuscripts that carried them across the centuries. May students, teachers, and scholars everywhere find here both a faithful reference and a living invitation to study Valluvar's Tamil in its full grammatical depth. This is a beginning: openly shared, and ever open to refinement by the scholarly community.",
+      dmShort:"The Tirukkural is the crown of classical Tamil. This archive pairs a word-by-word grammatical reading of all 1,330 couplets — word-class, case, compound, prosody, and figures of speech — with the palm-leaf manuscripts that carried them.",dmRead:"Read the full message",
       disclaimer:"AI-assisted grammatical draft; final use needs review by a Tamil-grammar scholar.",
       foot:"Tirukkural grammatical annotation · 1330 couplets · 133 chapters · CICT Digital Archives",
       yappu:"Prosody",ani:"Figure",urai:"Commentary (Mu. Varadarajanar)",meaning:"Meaning",flags:"Review notes",
@@ -206,10 +215,19 @@ async function getMan(){ if(MAN===null){ try{ MAN=await (await fetch('web/manusc
 function catClass(c){return 'cat-'+(c||'');}
 function confColor(v){return v>=0.75?'var(--ok)':v>=0.5?'var(--warn)':'var(--bad)';}
 
+function welcomeCard(){
+  return `<a class="welcome" href="#/director">
+    <img class="welcome-photo" src="assets/director.jpg" alt="Prof. R. Chandrasekaran">
+    <div class="welcome-body">
+      <div class="welcome-label">${T('dirmsg')} · Prof. R. Chandrasekaran</div>
+      <div class="welcome-text">${esc(T('dmShort'))}</div>
+      <div class="welcome-foot">${T('dmRead')} →</div>
+    </div></a>`;
+}
 async function viewHome(){
   const idx=await getIndex();
   const byPal={}; idx.forEach(c=>{(byPal[c.pal]=byPal[c.pal]||{}); (byPal[c.pal][c.iyal]=byPal[c.pal][c.iyal]||[]).push(c);});
-  let h='';
+  let h=welcomeCard();
   for(const pal in byPal){ h+=`<div class="pal-h">${esc(pal)}</div>`;
     for(const iyal in byPal[pal]){ h+=`<div class="iyal-h">${esc(iyal)}</div><div class="cards">`;
       byPal[pal][iyal].forEach(c=>{ h+=`<a class="card" href="#/adhigaram/${c.adhigaram}">
