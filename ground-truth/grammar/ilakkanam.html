@@ -16,13 +16,7 @@
   --idai:#854f0b; --idai-bg:#faeeda; --uri:#534ab7; --uri-bg:#eeedfe;
   --ok:#3b6d11; --warn:#ba7517; --bad:#a32d2d; --radius:10px;
 }
-@media (prefers-color-scheme:dark){:root{
-  --bg:#1a1a18; --surface:#242420; --surface2:#2c2c28; --text:#ece9e1; --muted:#a8a69c; --faint:#7a796f;
-  --border:#3a3a34; --accent:#85b7eb; --accent-bg:#0c447c;
-  --peyar:#85b7eb; --peyar-bg:#0c447c; --vinai:#97c459; --vinai-bg:#27500a;
-  --idai:#ef9f27; --idai-bg:#633806; --uri:#afa9ec; --uri-bg:#3c3489;
-  --ok:#97c459; --warn:#ef9f27; --bad:#f09595;
-}}
+html{color-scheme:light}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--text);font-family:'Noto Sans Tamil',system-ui,sans-serif;font-size:16px;line-height:1.6}
 a{color:var(--accent);text-decoration:none}
@@ -103,6 +97,14 @@ footer .foot-director{display:flex;align-items:center;gap:12px;margin-bottom:12p
 footer .foot-director img{width:54px;height:54px;border-radius:8px;object-fit:cover;border:1px solid var(--border);flex:none}
 .fd-label{font-size:12px;color:var(--faint)}.fd-name{font-weight:600;font-size:14px;color:var(--text)}.fd-title{font-size:12px;color:var(--muted)}
 .foot-meta{display:flex;flex-direction:column;gap:4px}
+.foot-director{color:inherit;cursor:pointer}.foot-director:hover .fd-name{color:var(--accent)}
+.dcard{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:26px;max-width:760px;margin:6px auto}
+.dhead{display:flex;align-items:center;gap:14px;margin-bottom:18px}
+.dhead img{width:64px;height:64px;border-radius:50%;object-fit:cover;border:1px solid var(--border);flex:none}
+.dlabel{font-size:12px;color:var(--accent);font-weight:500}
+.dname{font-size:19px;font-weight:600;color:var(--text)}.dtitle{font-size:12.5px;color:var(--muted)}
+.dquote{font-family:'Noto Serif Tamil',Georgia,serif;font-size:16.5px;line-height:1.9;color:var(--text);border-left:3px solid var(--accent);padding-left:18px}
+.dsign{margin-top:16px;text-align:right;font-style:italic;color:var(--muted)}
 </style>
 </head>
 <body>
@@ -134,14 +136,14 @@ footer .foot-director img{width:54px;height:54px;border-radius:8px;object-fit:co
   <div id="view"><div class="spin">ஏற்றுகிறது…</div></div>
 </div>
 <footer>
-  <div class="foot-director">
+  <a class="foot-director" href="#/director">
     <img src="assets/director.jpg" alt="Prof. R. Chandrasekaran" width="54" height="54">
     <div>
-      <div class="fd-label" data-i="dirmsg">இயக்குநர் செய்தி</div>
+      <div class="fd-label" data-i="dirmsg">இயக்குநர் உரை</div>
       <div class="fd-name">Prof. R. Chandrasekaran</div>
       <div class="fd-title" data-i="dirtitle">இயக்குநர் · செம்மொழித் தமிழாய்வு மத்திய நிறுவனம்</div>
     </div>
-  </div>
+  </a>
   <div class="foot-meta">
     <div><span data-i="contact">தொடர்பு</span>: <a href="mailto:kannan.k@cict.in">kannan.k@cict.in</a></div>
     <div><span data-i="foot">திருக்குறள் இலக்கணக் குறிப்பு · 1330 குறள் · 133 அதிகாரம் · CICT Digital Archives</span> ·
@@ -152,7 +154,8 @@ footer .foot-director img{width:54px;height:54px;border-radius:8px;object-fit:co
 const REPO="https://github.com/cictdl/index.html";
 const I18N={
   ta:{brand:"திருக்குறள் இலக்கணக் குறிப்பு ஆவணகம்",search:"சொல் / குறிப்பு தேடு…",browse:"தொகுப்பு",explore:"இலக்கணம் ஆராய்",
-      home:"முகப்பு",dirmsg:"இயக்குநர் செய்தி",dirtitle:"இயக்குநர் · செம்மொழித் தமிழாய்வு மத்திய நிறுவனம்",contact:"தொடர்பு",
+      home:"முகப்பு",dirmsg:"இயக்குநர் உரை",dirtitle:"இயக்குநர் · செம்மொழித் தமிழாய்வு மத்திய நிறுவனம்",contact:"தொடர்பு",
+      dmBody:"திருக்குறள் தமிழ்மொழியின் சிகரம்; அதன் ஒவ்வொரு குறளும் வாழ்வியலுக்கு மட்டுமன்றி மொழிக்கும் ஒரு பாடம். இந்த இலக்கணக் குறிப்பு ஆவணகத்தின் வாயிலாக, செம்மொழித் தமிழாய்வு மத்திய நிறுவனம் 1,330 குறள்களுக்கும் சொல்வாரியான இலக்கணக் குறிப்பை — சொல்வகை, வேற்றுமை, தொகை, யாப்பு, அணி ஆகியவற்றுடன் — அவற்றைத் தாங்கி வந்த ஓலைச்சுவடிகளுடன் இணைத்து முதன்முறையாக வழங்குகிறது. மாணவர், ஆசிரியர், அறிஞர் அனைவருக்கும் இது நம்பகமான கருவியாகவும், வள்ளுவர் தமிழை இலக்கண ஆழத்தில் கற்க ஓர் அழைப்பாகவும் அமையும். இது ஒரு தொடக்கம்; திறந்த மனத்துடன் பகிரப்பட்டு, அறிஞர் சமூகத்தின் செம்மைப்படுத்தலுக்கு என்றும் திறந்திருக்கிறது.",
       disclaimer:"AI-உதவியுடன் உருவாக்கப்பட்ட இலக்கண வரைவு; இறுதி நிலைக்கு தமிழ் இலக்கண அறிஞர் சரிபார்ப்பு தேவை.",
       foot:"திருக்குறள் இலக்கணக் குறிப்பு · 1330 குறள் · 133 அதிகாரம் · CICT Digital Archives",
       yappu:"யாப்பு",ani:"அணி",urai:"உரை (மு. வரதராசனார்)",meaning:"பொருள்",flags:"பார்வைக் குறிப்புகள்",
@@ -164,6 +167,7 @@ const I18N={
       heatmap:"அதிகார நம்பிக்கை வரைபடம்",manuscript:"ஓலைச்சுவடி",scribal:"சுவடி வாசிப்பு",viewLeaf:"முழு ஓலை · DOI"},
   en:{brand:"Tirukkural Grammatical Annotation Archive",search:"search word / tag…",browse:"Browse",explore:"Explore grammar",
       home:"Home",dirmsg:"Director's Message",dirtitle:"Director · Central Institute of Classical Tamil",contact:"Contact",
+      dmBody:"The Tirukkural is the crown of classical Tamil — every couplet a lesson in language as much as in life. With this archive, the Central Institute of Classical Tamil offers, for the first time, a word-by-word grammatical reading (இலக்கணக் குறிப்பு) of all 1,330 couplets — their word-class, case, compound, prosody, and figures of speech — set beside the palm-leaf manuscripts that carried them across the centuries. May students, teachers, and scholars everywhere find here both a faithful reference and a living invitation to study Valluvar's Tamil in its full grammatical depth. This is a beginning: openly shared, and ever open to refinement by the scholarly community.",
       disclaimer:"AI-assisted grammatical draft; final use needs review by a Tamil-grammar scholar.",
       foot:"Tirukkural grammatical annotation · 1330 couplets · 133 chapters · CICT Digital Archives",
       yappu:"Prosody",ani:"Figure",urai:"Commentary (Mu. Varadarajanar)",meaning:"Meaning",flags:"Review notes",
@@ -310,6 +314,14 @@ async function viewStats(){
   h+=`<div class="sec-h">${T('heatmap')}</div><div class="heat">${heat}</div>`;
   $('#view').innerHTML=h;
 }
+function viewDirector(){
+  $('#view').innerHTML=`<div class="dcard">
+    <div class="dhead"><img src="assets/director.jpg" alt="Prof. R. Chandrasekaran">
+      <div><div class="dlabel">${T('dirmsg')}</div><div class="dname">Prof. R. Chandrasekaran</div><div class="dtitle">${T('dirtitle')}</div></div></div>
+    <div class="dquote">${esc(T('dmBody'))}</div>
+    <div class="dsign">— Prof. R. Chandrasekaran</div>
+  </div>`;
+}
 function route(){
   renderTabs();
   const h=location.hash||'#/'; const m=h.match(/^#\/(\w+)\/?(.*)$/);
@@ -320,6 +332,7 @@ function route(){
   if(r==='explore') return viewExplore();
   if(r==='tag') return viewTag(decodeURIComponent(a));
   if(r==='stats') return viewStats();
+  if(r==='director') return viewDirector();
   return viewHome();
 }
 $('#lang').onclick=()=>{ LANG=LANG==='ta'?'en':'ta'; localStorage.setItem('tk_lang',LANG); applyLang(); };
