@@ -114,6 +114,19 @@ footer .foot-director img{width:54px;height:54px;border-radius:8px;object-fit:co
 #tip{position:fixed;z-index:50;display:none;max-width:330px;background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:9px 11px;box-shadow:0 6px 20px rgba(60,40,20,.18);pointer-events:none;font-size:12.5px;line-height:1.5}
 #tip b{color:var(--head);font-size:13px}#tip .tt-ta{color:var(--text);margin-top:3px}#tip .tt-en{color:var(--muted);margin-top:2px}
 [data-term]{cursor:help}.vt-term{border-bottom:1px dotted var(--faint)}
+.knav{display:flex;align-items:stretch;gap:10px;margin-bottom:16px}
+.knav-pos{flex:none;align-self:center;text-align:center;font-size:13px;color:var(--muted);white-space:nowrap;padding:0 4px}
+.knav-pos b{display:block;color:var(--head);font-size:22px;font-weight:700;line-height:1.1}
+.knav-tot{font-size:12px}
+.knav-btn{flex:1;display:flex;align-items:center;gap:10px;background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:9px 14px;color:inherit;min-width:0}
+.knav-btn:hover{border-color:var(--accent);background:var(--accent-bg)}
+.knav-btn.next{justify-content:flex-end;text-align:right}
+.knav-btn.disabled{visibility:hidden}
+.knav-arrow{font-size:30px;font-weight:700;color:var(--accent);line-height:1;flex:none}
+.knav-meta{display:flex;flex-direction:column;min-width:0}
+.knav-lbl{font-size:12px;color:var(--faint);font-weight:600}
+.knav-line{font-family:'Noto Serif Tamil',serif;font-size:13px;color:var(--text);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+@media(max-width:560px){.knav-line{display:none}.knav-btn{flex:none}}
 </style>
 </head>
 <body>
@@ -205,6 +218,7 @@ function renderTabs(){
 }
 async function getIndex(){ if(!INDEX) INDEX=await (await fetch('web/index.json')).json(); return INDEX; }
 async function getChapter(n){ if(!chCache[n]) chCache[n]=await (await fetch('web/ch/'+pad(n)+'.json')).json(); return chCache[n]; }
+async function neighborLine(m){ if(m<1||m>1330) return null; try{ const c=await getChapter(chOf(m)); const kk=(c.kurals||[]).find(x=>x.number===m); return kk?kk.line1:null; }catch(e){ return null; } }
 async function getSI(){ if(!SI){ $('#view').innerHTML='<div class="spin">…</div>'; SI=await (await fetch('web/search-index.json')).json(); } return SI; }
 async function getStats(){ if(!STATS) STATS=await (await fetch('web/stats.json')).json(); return STATS; }
 async function getMan(){ if(MAN===null){ try{ MAN=await (await fetch('web/manuscript.json')).json(); }catch(e){ MAN={}; } } return MAN; }
@@ -265,8 +279,12 @@ async function viewKural(n){
   const ch=await getChapter(chOf(n)); const k=(ch.kurals||[]).find(x=>x.number===n);
   if(!k){ $('#view').innerHTML='<div class="spin">'+T('nomatch')+'</div>'; return; }
   const y=k.yappu||{}, ed=(y.edugai||{}).letter||'';
-  const prev=n>1?`<a href="#/kural/${n-1}">‹</a>`:'<span></span>';
-  const next=n<1330?`<a href="#/kural/${n+1}">›</a>`:'<span></span>';
+  const prevLine=await neighborLine(n-1), nextLine=await neighborLine(n+1);
+  const nav=`<div class="knav">`+
+    (n>1?`<a class="knav-btn prev" href="#/kural/${n-1}"><span class="knav-arrow">‹</span><span class="knav-meta"><span class="knav-lbl">${T('kural')} ${n-1}</span><span class="knav-line">${esc(prevLine||'')}</span></span></a>`:`<span class="knav-btn disabled"></span>`)+
+    `<div class="knav-pos">${T('kural')} <b>${n}</b> <span class="knav-tot">/ 1330</span></div>`+
+    (n<1330?`<a class="knav-btn next" href="#/kural/${n+1}"><span class="knav-meta"><span class="knav-lbl">${T('kural')} ${n+1}</span><span class="knav-line">${esc(nextLine||'')}</span></span><span class="knav-arrow">›</span></a>`:`<span class="knav-btn disabled"></span>`)+
+    `</div>`;
   let chips=[]; if(y.paa)chips.push(y.paa); if(y.sirCount)chips.push('சீர் '+y.sirCount.join(' + '));
   if(ed)chips.push('எதுகை · '+ed); if(y.eetruseer)chips.push('ஈற்றுச்சீர் · '+y.eetruseer);
   const aniChips=(k.ani||[]).filter(a=>a&&a.name).map(a=>`<span class="ychip" data-term="${esc(a.name)}">அணி · ${esc(a.name)}</span>`).join('');
@@ -280,8 +298,8 @@ async function viewKural(n){
   });});
   const issue=`${REPO}/issues/new?title=${encodeURIComponent('இலக்கணக் குறிப்பு திருத்தம்: குறள் '+n)}&body=${encodeURIComponent('குறள் '+n+' ('+k.line1+' / '+k.line2+')\n\nபரிந்துரைக்கப்படும் திருத்தம்:\n')}`;
   const badge=k.verification==='verified'?`<span class="badge ok">✓ ${T('verified')}</span>`:`<span class="badge">${T('draft')}</span>`;
-  let h=`<div class="crumb"><a href="#/adhigaram/${k.adhigaram}">${esc(ch.pal)} · ${esc(ch.name)}</a>
-      <span>${prev} ${T('kural')} ${n} / 1330 ${next}</span></div>
+  let h=`<div class="crumb"><a href="#/adhigaram/${k.adhigaram}">${esc(ch.pal)} · ${esc(ch.name)}</a></div>
+    ${nav}
     <div class="couplet"><p>${hlEdugai(k.line1,ed)}</p><p>${hlEdugai(k.line2,ed)}</p></div>
     <div class="ystrip">${chips.map(c=>`<span class="ychip">${esc(c)}</span>`).join('')}${aniChips}</div>
     <div class="wgrid">${wg}</div>${await msPanel(n)}`;
@@ -360,6 +378,7 @@ document.addEventListener('mousemove',e=>{ if(tip.style.display==='block'&&e.tar
 document.addEventListener('mouseout',e=>{ if(e.target.closest&&e.target.closest('[data-term]')) tip.style.display='none'; });
 document.addEventListener('focusin',e=>{ const el=e.target.closest&&e.target.closest('[data-term]'); if(el&&tipFor(el)){ const r=el.getBoundingClientRect(); posTip(r.left-14,r.bottom-8); } });
 document.addEventListener('focusout',()=>{ tip.style.display='none'; });
+document.addEventListener('keydown',e=>{ if(/^(INPUT|TEXTAREA|SELECT)$/.test(e.target.tagName))return; const mm=(location.hash||'').match(/^#\/kural\/(\d+)/); if(!mm)return; const n=+mm[1]; if(e.key==='ArrowLeft'&&n>1)location.hash='#/kural/'+(n-1); else if(e.key==='ArrowRight'&&n<1330)location.hash='#/kural/'+(n+1); });
 getGloss();
 $('#lang').onclick=()=>{ LANG=LANG==='ta'?'en':'ta'; localStorage.setItem('tk_lang',LANG); applyLang(); };
 let st; $('#q').oninput=e=>{ clearTimeout(st); const v=e.target.value; st=setTimeout(()=>{ if(v.trim().length>=2) doSearch(v); else route(); },220); };
