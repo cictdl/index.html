@@ -1,0 +1,60 @@
+name: இலக்கணக் குறிப்பு திருத்தம் · Grammar correction
+description: Suggest a correction to a Tirukkural grammatical annotation (இலக்கணக் குறிப்பு / வேற்றுமை / யாப்பு / அணி).
+title: "[திருத்தம்] குறள் "
+labels: ["grammar-correction"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        நன்றி! இந்த ஆவணகத்தின் இலக்கணக் குறிப்பு AI-உதவியுடன் உருவாக்கப்பட்ட வரைவு; உங்கள் திருத்தம் அதைச் செம்மைப்படுத்த உதவும்.
+        Thank you — the grammatical annotation is an AI-assisted draft, and your correction helps refine it.
+  - type: input
+    id: kural
+    attributes:
+      label: குறள் எண் · Kural number (1–1330)
+      placeholder: "2"
+    validations:
+      required: true
+  - type: input
+    id: word
+    attributes:
+      label: சொல் / சீர் · Word (leave blank for a whole-kural note)
+      placeholder: "ஆய"
+  - type: dropdown
+    id: field
+    attributes:
+      label: திருத்தப்படும் புலம் · Field to correct
+      options:
+        - "இலக்கணக் குறிப்பு · ilakkanam (word tag)"
+        - "வகை · category"
+        - "வேற்றுமை · case"
+        - "தொகை · compound"
+        - "யாப்பு · prosody (மோனை/எதுகை/சீர்)"
+        - "அணி · figure of speech"
+        - "பொருள் / பிற · meaning or other"
+    validations:
+      required: true
+  - type: input
+    id: current
+    attributes:
+      label: தற்போதைய மதிப்பு · Current value (as shown)
+      placeholder: "பெயரெச்சம்"
+  - type: input
+    id: proposed
+    attributes:
+      label: பரிந்துரைக்கப்படும் மதிப்பு · Proposed value
+      placeholder: "வினையாலணையும்பெயர்"
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: காரணம் / சான்று · Reason or citation
+      placeholder: "இலக்கண விதி, உரை, அல்லது சான்று…  (grammar rule, commentary, or reference)"
+    validations:
+      required: true
+  - type: input
+    id: reviewer
+    attributes:
+      label: உங்கள் பெயர் / நிறுவனம் · Your name & affiliation (optional, for credit)
+      placeholder: "பெயர், நிறுவனம்"

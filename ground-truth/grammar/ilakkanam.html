@@ -127,6 +127,9 @@ footer .foot-director img{width:54px;height:54px;border-radius:8px;object-fit:co
 .knav-lbl{font-size:12px;color:var(--faint);font-weight:600}
 .knav-line{font-family:'Noto Serif Tamil',serif;font-size:13px;color:var(--text);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 @media(max-width:560px){.knav-line{display:none}.knav-btn{flex:none}}
+.wc-top{display:flex;justify-content:space-between;align-items:flex-start;gap:6px}
+.fixw{flex:none;color:var(--faint);font-size:14px;line-height:1;text-decoration:none;opacity:.5}
+.wcard:hover .fixw,.fixw:hover{opacity:1;color:var(--accent)}
 </style>
 </head>
 <body>
@@ -175,7 +178,7 @@ const I18N={
   ta:{brand:"திருக்குறள் இலக்கணக் குறிப்பு ஆவணகம்",search:"சொல் / குறிப்பு தேடு…",browse:"தொகுப்பு",explore:"இலக்கணம் ஆராய்",
       home:"முகப்பு",dirmsg:"இயக்குநர் உரை",dirtitle:"இயக்குநர் · செம்மொழித் தமிழாய்வு மத்திய நிறுவனம்",contact:"தொடர்பு",
       dmBody:"திருக்குறள் தமிழ்மொழியின் சிகரம்; அதன் ஒவ்வொரு குறளும் வாழ்வியலுக்கு மட்டுமன்றி மொழிக்கும் ஒரு பாடம். இந்த இலக்கணக் குறிப்பு ஆவணகத்தின் வாயிலாக, செம்மொழித் தமிழாய்வு மத்திய நிறுவனம் 1,330 குறள்களுக்கும் சொல்வாரியான இலக்கணக் குறிப்பை — சொல்வகை, வேற்றுமை, தொகை, யாப்பு, அணி ஆகியவற்றுடன் — அவற்றைத் தாங்கி வந்த ஓலைச்சுவடிகளுடன் இணைத்து முதன்முறையாக வழங்குகிறது. மாணவர், ஆசிரியர், அறிஞர் அனைவருக்கும் இது நம்பகமான கருவியாகவும், வள்ளுவர் தமிழை இலக்கண ஆழத்தில் கற்க ஓர் அழைப்பாகவும் அமையும். இது ஒரு தொடக்கம்; திறந்த மனத்துடன் பகிரப்பட்டு, அறிஞர் சமூகத்தின் செம்மைப்படுத்தலுக்கு என்றும் திறந்திருக்கிறது.",
-      dmShort:"திருக்குறள் தமிழ்மொழியின் சிகரம். இந்த ஆவணகம் 1,330 குறள்களுக்கும் சொல்வாரியான இலக்கணக் குறிப்பை — சொல்வகை, வேற்றுமை, தொகை, யாப்பு, அணி — ஓலைச்சுவடிகளுடன் இணைத்து வழங்குகிறது.",dmRead:"முழு உரை வாசிக்க",
+      dmShort:"திருக்குறள் தமிழ்மொழியின் சிகரம். இந்த ஆவணகம் 1,330 குறள்களுக்கும் சொல்வாரியான இலக்கணக் குறிப்பை — சொல்வகை, வேற்றுமை, தொகை, யாப்பு, அணி — ஓலைச்சுவடிகளுடன் இணைத்து வழங்குகிறது.",dmRead:"முழு உரை வாசிக்க",openCorr:"திருத்தங்கள்",corrNote:"இலக்கணக் குறிப்பு AI-உதவியுடன் உருவாக்கப்பட்ட வரைவு; அறிஞர்களின் திருத்தங்களை வரவேற்கிறோம். ஒவ்வொரு சொல்லிலும் உள்ள ✎ பொத்தானால் திருத்தம் பரிந்துரைக்கலாம்.",
       foot:"திருக்குறள் இலக்கணக் குறிப்பு · 1330 குறள் · 133 அதிகாரம் · CICT Digital Archives",
       yappu:"யாப்பு",ani:"அணி",urai:"உரை (மு. வரதராசனார்)",meaning:"பொருள்",flags:"பார்வைக் குறிப்புகள்",
       split:"பிரிப்பு",vetrumai:"வேற்றுமை",conf:"நம்பிக்கை",verified:"சரிபார்க்கப்பட்டது",draft:"வரைவு",
@@ -187,7 +190,7 @@ const I18N={
   en:{brand:"Tirukkural Grammatical Annotation Archive",search:"search word / tag…",browse:"Browse",explore:"Explore grammar",
       home:"Home",dirmsg:"Director's Message",dirtitle:"Director · Central Institute of Classical Tamil",contact:"Contact",
       dmBody:"The Tirukkural is the crown of classical Tamil — every couplet a lesson in language as much as in life. With this archive, the Central Institute of Classical Tamil offers, for the first time, a word-by-word grammatical reading (இலக்கணக் குறிப்பு) of all 1,330 couplets — their word-class, case, compound, prosody, and figures of speech — set beside the palm-leaf manuscripts that carried them across the centuries. May students, teachers, and scholars everywhere find here both a faithful reference and a living invitation to study Valluvar's Tamil in its full grammatical depth. This is a beginning: openly shared, and ever open to refinement by the scholarly community.",
-      dmShort:"The Tirukkural is the crown of classical Tamil. This archive pairs a word-by-word grammatical reading of all 1,330 couplets — word-class, case, compound, prosody, and figures of speech — with the palm-leaf manuscripts that carried them.",dmRead:"Read the full message",
+      dmShort:"The Tirukkural is the crown of classical Tamil. This archive pairs a word-by-word grammatical reading of all 1,330 couplets — word-class, case, compound, prosody, and figures of speech — with the palm-leaf manuscripts that carried them.",dmRead:"Read the full message",openCorr:"Corrections",corrNote:"The grammatical tags are an AI-assisted draft — scholarly corrections are welcome. Use the ✎ on any word to suggest a fix.",
       foot:"Tirukkural grammatical annotation · 1330 couplets · 133 chapters · CICT Digital Archives",
       yappu:"Prosody",ani:"Figure",urai:"Commentary (Mu. Varadarajanar)",meaning:"Meaning",flags:"Review notes",
       split:"Morphology",vetrumai:"Case",conf:"Confidence",verified:"Verified",draft:"Draft",
@@ -203,6 +206,7 @@ const $=s=>document.querySelector(s), pad=n=>String(n).padStart(3,'0'), chOf=n=>
 const T=k=>I18N[LANG][k]||k;
 const GRAPH=/[அ-ஔ]|[ஂஃ]|[க-ஹ][ா-்ௗ]?/g;
 const esc=s=>(s==null?'':String(s)).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+function fixUrl(p){ const q=Object.entries(p).filter(([k,v])=>v!=null&&v!=='').map(([k,v])=>k+'='+encodeURIComponent(v)).join('&'); return REPO+'/issues/new?template=grammar-correction.yml&'+q; }
 
 function applyLang(){
   document.documentElement.lang=LANG;
@@ -291,12 +295,13 @@ async function viewKural(n){
   let wg=''; (k.sirs||[]).forEach(s=>{ (s.components||[]).forEach(c=>{
     const cf=typeof c.confidence==='number'?c.confidence:0;
     const vt=c.vetrumai&&c.vetrumai.name?`<div class="sub">${T('vetrumai')}: ${esc(c.vetrumai.urupu||'')} (<span class="vt-term" data-term="${esc(c.vetrumai.name)}">${esc(c.vetrumai.name)}</span>)</div>`:'';
-    wg+=`<div class="wcard"><div class="sol">${esc(c.sol)}</div>
+    const fxw=fixUrl({title:`[திருத்தம்] குறள் ${n} — ${c.sol}`, kural:n, word:c.sol, current:(c.ilakkanam||'')+(c.category?' / '+c.category:''), field:'இலக்கணக் குறிப்பு · ilakkanam (word tag)'});
+    wg+=`<div class="wcard"><div class="wc-top"><span class="sol">${esc(c.sol)}</span><a class="fixw" href="${fxw}" target="_blank" rel="noopener" title="${esc(T('suggest'))}" aria-label="${esc(T('suggest'))}">✎</a></div>
       <span class="tag ${catClass(c.category)}" data-term="${esc(c.ilakkanam||'')}">${esc(c.ilakkanam||'')}</span>
       ${c.split?`<div class="sub">${esc(c.split)}</div>`:''}${vt}
       <div class="track"><i style="width:${Math.round(cf*100)}%;background:${confColor(cf)}"></i></div></div>`;
   });});
-  const issue=`${REPO}/issues/new?title=${encodeURIComponent('இலக்கணக் குறிப்பு திருத்தம்: குறள் '+n)}&body=${encodeURIComponent('குறள் '+n+' ('+k.line1+' / '+k.line2+')\n\nபரிந்துரைக்கப்படும் திருத்தம்:\n')}`;
+  const issue=fixUrl({title:`[திருத்தம்] குறள் ${n}`, kural:n, field:'பொருள் / பிற · meaning or other'});
   const badge=k.verification==='verified'?`<span class="badge ok">✓ ${T('verified')}</span>`:`<span class="badge">${T('draft')}</span>`;
   let h=`<div class="crumb"><a href="#/adhigaram/${k.adhigaram}">${esc(ch.pal)} · ${esc(ch.name)}</a></div>
     ${nav}
@@ -345,6 +350,8 @@ async function viewStats(){
   let h=`<div class="metrics">${metric(t.kurals.toLocaleString(),T('kural'))}${metric(t.words.toLocaleString(),T('words'))}${metric(t.verified+' / '+t.chapters,T('verifiedN'))}${metric(t.meanConf,T('meanConf'))}${metric(t.flags.toLocaleString(),T('flagsN'))}</div>`;
   h+=bars(T('catDist'),s.category,4)+bars(T('topTags'),s.ilakkanam,12)+bars(T('aniDist'),s.ani,10)+bars(T('vetDist'),s.vetrumai,11);
   h+=`<div class="sec-h">${T('heatmap')}</div><div class="heat">${heat}</div>`;
+  h+=`<div class="sec-h">${T('openCorr')}</div><p style="font-size:13px;color:var(--muted);margin:0 0 10px;max-width:640px">${T('corrNote')}</p>`+
+     `<a class="btn" href="${REPO}/issues?q=${encodeURIComponent('is:issue label:grammar-correction')}" target="_blank" rel="noopener">${T('openCorr')} →</a>`;
   $('#view').innerHTML=h;
 }
 function viewDirector(){

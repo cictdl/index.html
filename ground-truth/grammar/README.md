@@ -50,6 +50,18 @@ confidence heatmap), and **palm-leaf pairing** — for the 1000 digitized kurals
 shows the ஓலைச்சுவடி line image (IIIF region crop from Zenodo) + scribal reading + DOI.
 Served on GitHub Pages at `…/ground-truth/grammar/`.
 
+## Curation loop (corrections)
+The grammatical layer is an AI-assisted draft (see `REPORT.md` `reviewFlags`), opened for scholarly correction:
+- Every word in the web archive shows a ✎ that opens a **prefilled GitHub issue form**
+  (`.github/ISSUE_TEMPLATE/grammar-correction.yml`, label `grammar-correction`) carrying the kural,
+  சொல், and current tag, with fields for the proposed value + reason + contributor. The stats page
+  links to all open corrections.
+- **Accepting a correction (editor):** edit the relevant `chapters/adhigaram-NNN.json` (fix the tag,
+  raise `confidence`, clear the matching `reviewFlags` entry), then re-run
+  `py merge_grammar.py && py generate_reference.py && py build_web_data.py && py ../inject_grammar.py`,
+  commit, and close the issue crediting the contributor. The flag count and per-அதிகாரம் confidence
+  update automatically.
+
 ## Provenance
 Canonical text & உரை: `tk120404/thirukkural` (Mu. Varadarajanar / Solomon Pappaiah / Mu. Karunanidhi உரை).
 Structure: same repo `detail.json`. Tagset: தொல்காப்பியம் / நன்னூல் grammatical tradition.
