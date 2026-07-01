@@ -111,6 +111,9 @@ footer .foot-director img{width:54px;height:54px;border-radius:8px;object-fit:co
 .welcome-text{font-family:'Noto Serif Tamil',Georgia,serif;font-size:15px;line-height:1.7;color:var(--text);margin:5px 0 7px}
 .welcome-foot{font-size:13px;color:var(--head);font-weight:600}
 @media(max-width:560px){.welcome{flex-direction:column;text-align:center}}
+#tip{position:fixed;z-index:50;display:none;max-width:330px;background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:9px 11px;box-shadow:0 6px 20px rgba(60,40,20,.18);pointer-events:none;font-size:12.5px;line-height:1.5}
+#tip b{color:var(--head);font-size:13px}#tip .tt-ta{color:var(--text);margin-top:3px}#tip .tt-en{color:var(--muted);margin-top:2px}
+[data-term]{cursor:help}.vt-term{border-bottom:1px dotted var(--faint)}
 </style>
 </head>
 <body>
@@ -182,7 +185,7 @@ const I18N={
       heatmap:"Per-chapter confidence",manuscript:"Palm-leaf manuscript",scribal:"Scribal reading",viewLeaf:"Full leaf · DOI"}
 };
 let LANG=localStorage.getItem('tk_lang')||'ta';
-let INDEX=null, SI=null, STATS=null, MAN=null; const chCache={};
+let INDEX=null, SI=null, STATS=null, MAN=null, GLOSS=null; const chCache={};
 const $=s=>document.querySelector(s), pad=n=>String(n).padStart(3,'0'), chOf=n=>Math.floor((n-1)/10)+1;
 const T=k=>I18N[LANG][k]||k;
 const GRAPH=/[அ-ஔ]|[ஂஃ]|[க-ஹ][ா-்ௗ]?/g;
@@ -266,12 +269,12 @@ async function viewKural(n){
   const next=n<1330?`<a href="#/kural/${n+1}">›</a>`:'<span></span>';
   let chips=[]; if(y.paa)chips.push(y.paa); if(y.sirCount)chips.push('சீர் '+y.sirCount.join(' + '));
   if(ed)chips.push('எதுகை · '+ed); if(y.eetruseer)chips.push('ஈற்றுச்சீர் · '+y.eetruseer);
-  (k.ani||[]).forEach(a=>{if(a&&a.name)chips.push('அணி · '+a.name);});
+  const aniChips=(k.ani||[]).filter(a=>a&&a.name).map(a=>`<span class="ychip" data-term="${esc(a.name)}">அணி · ${esc(a.name)}</span>`).join('');
   let wg=''; (k.sirs||[]).forEach(s=>{ (s.components||[]).forEach(c=>{
     const cf=typeof c.confidence==='number'?c.confidence:0;
-    const vt=c.vetrumai&&c.vetrumai.name?`<div class="sub">${T('vetrumai')}: ${esc(c.vetrumai.urupu||'')} (${esc(c.vetrumai.name)})</div>`:'';
+    const vt=c.vetrumai&&c.vetrumai.name?`<div class="sub">${T('vetrumai')}: ${esc(c.vetrumai.urupu||'')} (<span class="vt-term" data-term="${esc(c.vetrumai.name)}">${esc(c.vetrumai.name)}</span>)</div>`:'';
     wg+=`<div class="wcard"><div class="sol">${esc(c.sol)}</div>
-      <span class="tag ${catClass(c.category)}">${esc(c.ilakkanam||'')}</span>
+      <span class="tag ${catClass(c.category)}" data-term="${esc(c.ilakkanam||'')}">${esc(c.ilakkanam||'')}</span>
       ${c.split?`<div class="sub">${esc(c.split)}</div>`:''}${vt}
       <div class="track"><i style="width:${Math.round(cf*100)}%;background:${confColor(cf)}"></i></div></div>`;
   });});
@@ -280,7 +283,7 @@ async function viewKural(n){
   let h=`<div class="crumb"><a href="#/adhigaram/${k.adhigaram}">${esc(ch.pal)} · ${esc(ch.name)}</a>
       <span>${prev} ${T('kural')} ${n} / 1330 ${next}</span></div>
     <div class="couplet"><p>${hlEdugai(k.line1,ed)}</p><p>${hlEdugai(k.line2,ed)}</p></div>
-    <div class="ystrip">${chips.map(c=>`<span class="ychip">${esc(c)}</span>`).join('')}</div>
+    <div class="ystrip">${chips.map(c=>`<span class="ychip">${esc(c)}</span>`).join('')}${aniChips}</div>
     <div class="wgrid">${wg}</div>${await msPanel(n)}`;
   if(k.urai_mv) h+=`<div class="panel"><h3>${T('urai')}</h3>${esc(k.urai_mv)}</div>`;
   if(k.meaningEn) h+=`<div class="panel"><h3>${T('meaning')}</h3>${esc(k.meaningEn)}</div>`;
@@ -292,7 +295,7 @@ async function viewExplore(){
   const si=await getSI();
   const blk=(title,obj)=>{ const items=Object.entries(obj).slice(0,40);
     return `<h3 style="margin:18px 0 8px;font-size:14px">${title}</h3><div class="facet">`+
-      items.map(([v,ks])=>`<button onclick="location.hash='#/tag/${encodeURIComponent(v)}'">${esc(v)}<span class="ct">${ks.length}</span></button>`).join('')+'</div>';
+      items.map(([v,ks])=>`<button data-term="${esc(v)}" onclick="location.hash='#/tag/${encodeURIComponent(v)}'">${esc(v)}<span class="ct">${ks.length}</span></button>`).join('')+'</div>';
   };
   $('#view').innerHTML=blk(T('byTag'),si.facets.ilakkanam)+blk(T('byAni'),si.facets.ani)+blk(T('byVetrumai'),si.facets.vetrumai);
 }
@@ -301,7 +304,7 @@ async function viewTag(val){
   let ks=null; for(const f of ['ilakkanam','ani','vetrumai','togai','category']){ if(si.facets[f][val]){ks=si.facets[f][val];break;} }
   if(!ks){ $('#view').innerHTML='<div class="spin">'+T('nomatch')+'</div>'; return; }
   const lines={}; si.words.forEach(w=>{lines[w[0]]=lines[w[0]]||w[1];});
-  let h=`<div class="crumb"><a href="#/explore">‹ ${T('explore')}</a><span>${esc(val)} · ${ks.length}</span></div><div class="rowlist">`;
+  let h=`<div class="crumb"><a href="#/explore">‹ ${T('explore')}</a><span><span data-term="${esc(val)}">${esc(val)}</span> · ${ks.length}</span></div><div class="rowlist">`;
   ks.slice(0,400).forEach(n=>{ h+=`<a href="#/kural/${n}"><span class="rn">${T('kural')} ${n}</span> <span class="rt">${esc(lines[n]||'')}</span></a>`; });
   h+='</div>'; $('#view').innerHTML=h;
 }
@@ -311,14 +314,14 @@ async function doSearch(term){
   for(const w of si.words){ if((w[1]&&w[1].includes(term))||(w[2]&&w[2].includes(term))){ const key=w[0]+w[1]; if(!seen.has(key)){seen.add(key); rows.push(w);} } if(rows.length>=300)break; }
   let h=`<div class="crumb"><span>${T('results')}: “${esc(term)}” · ${rows.length}</span></div><div class="rowlist">`;
   if(!rows.length) h+=`<div class="spin">${T('nomatch')}</div>`;
-  rows.forEach(w=>{ h+=`<a href="#/kural/${w[0]}"><span class="rn">${T('kural')} ${w[0]}</span> <span class="rt">${esc(w[1])}</span> <span class="tag ${catClass(w[3])}">${esc(w[2])}</span></a>`; });
+  rows.forEach(w=>{ h+=`<a href="#/kural/${w[0]}"><span class="rn">${T('kural')} ${w[0]}</span> <span class="rt">${esc(w[1])}</span> <span class="tag ${catClass(w[3])}" data-term="${esc(w[2])}">${esc(w[2])}</span></a>`; });
   h+='</div>'; $('#view').innerHTML=h;
 }
 async function viewStats(){
   const s=await getStats(); const t=s.totals;
   const metric=(v,l)=>`<div class="metric"><div class="v">${v}</div><div class="l">${esc(l)}</div></div>`;
   const bars=(title,obj,n)=>{ const ents=Object.entries(obj).slice(0,n||12); const mx=Math.max(1,...ents.map(e=>e[1]));
-    return `<div class="sec-h">${esc(title)}</div>`+ents.map(([k,v])=>`<div class="brow"><span class="bl" title="${esc(k)}">${esc(k)}</span><span class="bt"><i style="width:${Math.round(v/mx*100)}%"></i></span><span class="bc">${v.toLocaleString()}</span></div>`).join(''); };
+    return `<div class="sec-h">${esc(title)}</div>`+ents.map(([k,v])=>`<div class="brow"><span class="bl" data-term="${esc(k)}">${esc(k)}</span><span class="bt"><i style="width:${Math.round(v/mx*100)}%"></i></span><span class="bc">${v.toLocaleString()}</span></div>`).join(''); };
   const heat=s.perAdhigaram.map(p=>{ const c=p.conf; const col=c>=0.75?'var(--ok)':c>=0.6?'var(--warn)':'var(--bad)';
     return `<a href="#/adhigaram/${p.a}" title="${p.a}. ${esc(p.name)} — ${T('meanConf')} ${c}, ${T('flagsN')} ${p.flags}" style="background:${col};opacity:${(0.4+c*0.6).toFixed(2)}"></a>`; }).join('');
   let h=`<div class="metrics">${metric(t.kurals.toLocaleString(),T('kural'))}${metric(t.words.toLocaleString(),T('words'))}${metric(t.verified+' / '+t.chapters,T('verifiedN'))}${metric(t.meanConf,T('meanConf'))}${metric(t.flags.toLocaleString(),T('flagsN'))}</div>`;
@@ -347,6 +350,17 @@ function route(){
   if(r==='director') return viewDirector();
   return viewHome();
 }
+async function getGloss(){ if(!GLOSS){ try{ GLOSS=(await (await fetch('web/glossary.json')).json()).terms; }catch(e){ GLOSS={}; } } return GLOSS; }
+const tip=document.createElement('div'); tip.id='tip'; document.body.appendChild(tip);
+const normTerm=t=>{ if(!GLOSS)return t; t=(t||'').trim(); if(GLOSS[t])return t; if(GLOSS[t+'்'])return t+'்'; return t; };
+function posTip(x,y){ const p=12,r=tip.getBoundingClientRect(); let nx=x+14,ny=y+16; if(nx+r.width+p>innerWidth)nx=x-r.width-14; if(ny+r.height+p>innerHeight)ny=y-r.height-16; tip.style.left=Math.max(p,nx)+'px'; tip.style.top=Math.max(p,ny)+'px'; }
+function tipFor(el){ if(!GLOSS)return null; const g=GLOSS[normTerm(el.dataset.term)]; if(!g)return null; tip.innerHTML=`<b>${esc(el.dataset.term)}</b><div class="tt-ta">${esc(g.ta)}</div><div class="tt-en">${esc(g.en)}</div>`; tip.style.display='block'; return true; }
+document.addEventListener('mouseover',e=>{ const el=e.target.closest&&e.target.closest('[data-term]'); if(!el){return;} if(tipFor(el)) posTip(e.clientX,e.clientY); });
+document.addEventListener('mousemove',e=>{ if(tip.style.display==='block'&&e.target.closest&&e.target.closest('[data-term]')) posTip(e.clientX,e.clientY); });
+document.addEventListener('mouseout',e=>{ if(e.target.closest&&e.target.closest('[data-term]')) tip.style.display='none'; });
+document.addEventListener('focusin',e=>{ const el=e.target.closest&&e.target.closest('[data-term]'); if(el&&tipFor(el)){ const r=el.getBoundingClientRect(); posTip(r.left-14,r.bottom-8); } });
+document.addEventListener('focusout',()=>{ tip.style.display='none'; });
+getGloss();
 $('#lang').onclick=()=>{ LANG=LANG==='ta'?'en':'ta'; localStorage.setItem('tk_lang',LANG); applyLang(); };
 let st; $('#q').oninput=e=>{ clearTimeout(st); const v=e.target.value; st=setTimeout(()=>{ if(v.trim().length>=2) doSearch(v); else route(); },220); };
 window.addEventListener('hashchange',route);
