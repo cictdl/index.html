@@ -7305,8 +7305,35 @@ footer {
 </footer>
 <div class="footer-bottom">
   <span>© 2026 Central Institute of Classical Tamil. Ministry of Education, Government of India.</span>
+  <span class="footer-visitors" id="visitor-counter" hidden style="align-items:center;gap:0.45em;">
+    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="opacity:0.7"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+    <span class="t-en">Visitors</span><span class="t-ta">பார்வையாளர்கள்</span>
+    <strong id="vc-count" aria-live="polite" style="color:var(--amber);font-weight:600;font-variant-numeric:tabular-nums;letter-spacing:0.02em;"></strong>
+  </span>
   <span class="tamil-chars" style="font-size:11px">தமிழ் · Classical Tamil · 2,500+ years</span>
 </div>
+<script>
+/* Visitor counter — Abacus (abacus.jasoncameron.dev). Session-guarded so refreshes don't inflate;
+   hides itself gracefully if the service is unreachable. */
+(function () {
+  var NS = 'cictdl-tirukkural', KEY = 'visits', BASE = 'https://abacus.jasoncameron.dev';
+  var seen = false;
+  try { seen = sessionStorage.getItem('cictdl_vc') === '1'; } catch (e) {}
+  fetch(BASE + (seen ? '/get/' : '/hit/') + NS + '/' + KEY)
+    .then(function (r) { return r.ok ? r.json() : null; })
+    .then(function (d) {
+      if (!d || typeof d.value !== 'number') return;
+      var el = document.getElementById('vc-count');
+      var box = document.getElementById('visitor-counter');
+      if (!el || !box) return;
+      el.textContent = d.value.toLocaleString();
+      box.hidden = false;
+      box.style.display = 'inline-flex';
+      try { sessionStorage.setItem('cictdl_vc', '1'); } catch (e) {}
+    })
+    .catch(function () { /* service unavailable — leave the counter hidden */ });
+})();
+</script>
 
 <script>
 // ── MANUSCRIPT DATA ────────────────────────────────────────────────
