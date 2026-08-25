@@ -1,0 +1,389 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-101/manifest.json",
+  "type": "Manifest",
+  "label": {
+    "en": [
+      "CICT-PLM-GT-101 · Tirukkural Adhikaram 101 (Wealth Without Benefaction)"
+    ],
+    "ta": [
+      "திருக்குறள் அதிகாரம் 101 (நன்றியில்செல்வம்)"
+    ]
+  },
+  "metadata": [
+    {
+      "label": {
+        "en": [
+          "Specimen ID"
+        ]
+      },
+      "value": {
+        "none": [
+          "CICT-PLM-GT-101"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Chapter"
+        ]
+      },
+      "value": {
+        "en": [
+          "101 · Wealth Without Benefaction"
+        ],
+        "ta": [
+          "நன்றியில்செல்வம்"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Kural range"
+        ]
+      },
+      "value": {
+        "none": [
+          "1001–1010"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Section / sub-section"
+        ]
+      },
+      "value": {
+        "ta": [
+          "பொருள் / ஒழிபியல்"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Manuscript ID"
+        ]
+      },
+      "value": {
+        "none": [
+          "19897_103"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Material"
+        ]
+      },
+      "value": {
+        "en": [
+          "Palm leaf (பனை ஓலை)"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "DOI"
+        ]
+      },
+      "value": {
+        "none": [
+          "10.5281/zenodo.20843035"
+        ]
+      }
+    }
+  ],
+  "rights": "http://creativecommons.org/licenses/by/4.0/",
+  "requiredStatement": {
+    "label": {
+      "en": [
+        "Attribution"
+      ]
+    },
+    "value": {
+      "en": [
+        "Central Institute of Classical Tamil (CICT). CICT-PLM-GT-101. DOI: 10.5281/zenodo.20843035. Licensed CC BY 4.0."
+      ]
+    }
+  },
+  "provider": [
+    {
+      "id": "https://www.cict.in/",
+      "type": "Agent",
+      "label": {
+        "en": [
+          "Central Institute of Classical Tamil (CICT)"
+        ]
+      }
+    }
+  ],
+  "homepage": [
+    {
+      "id": "https://zenodo.org/records/20843035",
+      "type": "Text",
+      "label": {
+        "en": [
+          "Zenodo record"
+        ]
+      },
+      "format": "text/html"
+    }
+  ],
+  "seeAlso": [
+    {
+      "id": "https://www.digitalarchives.cict.in/ground-truth/page/19897_103.xml",
+      "type": "Dataset",
+      "label": {
+        "en": [
+          "PAGE-XML ground truth"
+        ]
+      },
+      "format": "application/xml",
+      "profile": "http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd"
+    },
+    {
+      "id": "https://doi.org/10.5281/zenodo.20843035",
+      "type": "Dataset",
+      "label": {
+        "en": [
+          "Zenodo DOI"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-101/canvas",
+      "type": "Canvas",
+      "height": 478,
+      "width": 2783,
+      "label": {
+        "none": [
+          "19897_103"
+        ]
+      },
+      "items": [
+        {
+          "id": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-101/canvas/page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-101/canvas/painting",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://zenodo.org/api/iiif/record:20843035:19897_103.jpg/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 478,
+                "width": 2783,
+                "service": [
+                  {
+                    "id": "https://zenodo.org/api/iiif/record:20843035:19897_103.jpg",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              },
+              "target": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-101/canvas"
+            }
+          ]
+        }
+      ],
+      "annotations": [
+        {
+          "id": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-101/canvas/annotations",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-101/anno/line-1",
+              "type": "Annotation",
+              "motivation": "supplementing",
+              "body": {
+                "type": "TextualBody",
+                "language": "ta",
+                "format": "text/plain",
+                "value": "அன்பொரிஇ தற்சேற்ற றநோக்காதீ ட்டிய வொண்பொருள் கொழ்வார் பிறர்"
+              },
+              "target": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-101/canvas#xywh=0,89,2783,37"
+            },
+            {
+              "id": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-101/anno/line-2",
+              "type": "Annotation",
+              "motivation": "supplementing",
+              "body": {
+                "type": "TextualBody",
+                "language": "ta",
+                "format": "text/plain",
+                "value": "வைத்தான்வாய் சான்ற பெரும்பொருள ஃதுண்ணான் செத்தான் செயக்கிடந்ததில்"
+              },
+              "target": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-101/canvas#xywh=0,126,2783,38"
+            },
+            {
+              "id": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-101/anno/line-3",
+              "type": "Annotation",
+              "motivation": "supplementing",
+              "body": {
+                "type": "TextualBody",
+                "language": "ta",
+                "format": "text/plain",
+                "value": "அற்றார்க்கொன்றா ற்றான் செல்வம் மிகநலம் பெற்றாடமியன் மூத் தற்று"
+              },
+              "target": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-101/canvas#xywh=0,164,2783,37"
+            },
+            {
+              "id": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-101/anno/line-4",
+              "type": "Annotation",
+              "motivation": "supplementing",
+              "body": {
+                "type": "TextualBody",
+                "language": "ta",
+                "format": "text/plain",
+                "value": "கொடுப்பதூஉந் துய்ப்பதூஊ மில்லார்க்க டுக்கிய கோடியுண் டாயிநுமில்"
+              },
+              "target": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-101/canvas#xywh=0,201,2783,38"
+            },
+            {
+              "id": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-101/anno/line-5",
+              "type": "Annotation",
+              "motivation": "supplementing",
+              "body": {
+                "type": "TextualBody",
+                "language": "ta",
+                "format": "text/plain",
+                "value": "ஈட்டமி வறி யிசைவேண்டா வாடவர் தோற்றநிலற்குப் பொறை"
+              },
+              "target": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-101/canvas#xywh=0,239,2783,38"
+            },
+            {
+              "id": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-101/anno/line-6",
+              "type": "Annotation",
+              "motivation": "supplementing",
+              "body": {
+                "type": "TextualBody",
+                "language": "ta",
+                "format": "text/plain",
+                "value": "பொருளானாமேல்வாமொன்றீ யாவாறு மருளானா மாணாப் பிறப்பு"
+              },
+              "target": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-101/canvas#xywh=0,277,2783,37"
+            },
+            {
+              "id": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-101/anno/line-7",
+              "type": "Annotation",
+              "motivation": "supplementing",
+              "body": {
+                "type": "TextualBody",
+                "language": "ta",
+                "format": "text/plain",
+                "value": "எச்சமென்றெ ன்நெண்ணுங் கொல்லொ ஒருவரா நச்சப் படா தவன்"
+              },
+              "target": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-101/canvas#xywh=0,314,2783,38"
+            },
+            {
+              "id": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-101/anno/line-8",
+              "type": "Annotation",
+              "motivation": "supplementing",
+              "body": {
+                "type": "TextualBody",
+                "language": "ta",
+                "format": "text/plain",
+                "value": "ஏதம் பெருஞ்செல்வந் தான்றூவான் றக்கார்க்கொன்றீ தலி யலா தான்"
+              },
+              "target": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-101/canvas#xywh=0,352,2783,37"
+            },
+            {
+              "id": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-101/anno/line-9",
+              "type": "Annotation",
+              "motivation": "supplementing",
+              "body": {
+                "type": "TextualBody",
+                "language": "ta",
+                "format": "text/plain",
+                "value": "நச்சப் படாஅதவன் செல்வம் நடுவூரின் நச்சு மரம்பழுத் தற்று"
+              },
+              "target": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-101/canvas#xywh=0,389,2783,38"
+            },
+            {
+              "id": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-101/anno/line-10",
+              "type": "Annotation",
+              "motivation": "supplementing",
+              "body": {
+                "type": "TextualBody",
+                "language": "ta",
+                "format": "text/plain",
+                "value": "சீருழைச் செல்வர் சிறுதுளி மாறி  வறங்கூர்ந் தநையது டைத்து"
+              },
+              "target": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-101/canvas#xywh=0,427,2783,37"
+            },
+            {
+              "id": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-101/anno/margin-4",
+              "type": "Annotation",
+              "motivation": "supplementing",
+              "body": {
+                "type": "TextualBody",
+                "language": "ta",
+                "format": "text/plain",
+                "value": "நன்றி"
+              },
+              "target": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-101/canvas#xywh=0,201,390,38"
+            },
+            {
+              "id": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-101/anno/margin-5",
+              "type": "Annotation",
+              "motivation": "supplementing",
+              "body": {
+                "type": "TextualBody",
+                "language": "ta",
+                "format": "text/plain",
+                "value": "யிற்"
+              },
+              "target": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-101/canvas#xywh=0,239,390,38"
+            },
+            {
+              "id": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-101/anno/margin-6",
+              "type": "Annotation",
+              "motivation": "supplementing",
+              "body": {
+                "type": "TextualBody",
+                "language": "ta",
+                "format": "text/plain",
+                "value": "செல்"
+              },
+              "target": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-101/canvas#xywh=0,277,390,37"
+            },
+            {
+              "id": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-101/anno/margin-7",
+              "type": "Annotation",
+              "motivation": "supplementing",
+              "body": {
+                "type": "TextualBody",
+                "language": "ta",
+                "format": "text/plain",
+                "value": "வம்"
+              },
+              "target": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-101/canvas#xywh=0,314,390,38"
+            },
+            {
+              "id": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-101/anno/margin-8",
+              "type": "Annotation",
+              "motivation": "supplementing",
+              "body": {
+                "type": "TextualBody",
+                "language": "ta",
+                "format": "text/plain",
+                "value": "௭௰௧"
+              },
+              "target": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-101/canvas#xywh=0,352,390,37"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

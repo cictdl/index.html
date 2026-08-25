@@ -1,0 +1,353 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-110/manifest.json",
+  "type": "Manifest",
+  "label": {
+    "en": [
+      "CICT-PLM-GT-110 · Tirukkural Adhikaram 110 (Reading the Signs)"
+    ],
+    "ta": [
+      "திருக்குறள் அதிகாரம் 110 (குறிப்பறிதல்)"
+    ]
+  },
+  "metadata": [
+    {
+      "label": {
+        "en": [
+          "Specimen ID"
+        ]
+      },
+      "value": {
+        "none": [
+          "CICT-PLM-GT-110"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Chapter"
+        ]
+      },
+      "value": {
+        "en": [
+          "110 · Reading the Signs"
+        ],
+        "ta": [
+          "குறிப்பறிதல்"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Kural range"
+        ]
+      },
+      "value": {
+        "none": [
+          "1091–1100"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Section / sub-section"
+        ]
+      },
+      "value": {
+        "ta": [
+          "இன்பம் / களவியல்"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Manuscript ID"
+        ]
+      },
+      "value": {
+        "none": [
+          "19987_112"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Material"
+        ]
+      },
+      "value": {
+        "en": [
+          "Palm leaf (பனை ஓலை)"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "DOI"
+        ]
+      },
+      "value": {
+        "none": [
+          "10.5281/zenodo.21067346"
+        ]
+      }
+    }
+  ],
+  "rights": "http://creativecommons.org/licenses/by/4.0/",
+  "requiredStatement": {
+    "label": {
+      "en": [
+        "Attribution"
+      ]
+    },
+    "value": {
+      "en": [
+        "Central Institute of Classical Tamil (CICT). CICT-PLM-GT-110. DOI: 10.5281/zenodo.21067346. Licensed CC BY 4.0."
+      ]
+    }
+  },
+  "provider": [
+    {
+      "id": "https://www.cict.in/",
+      "type": "Agent",
+      "label": {
+        "en": [
+          "Central Institute of Classical Tamil (CICT)"
+        ]
+      }
+    }
+  ],
+  "homepage": [
+    {
+      "id": "https://zenodo.org/records/21067346",
+      "type": "Text",
+      "label": {
+        "en": [
+          "Zenodo record"
+        ]
+      },
+      "format": "text/html"
+    }
+  ],
+  "seeAlso": [
+    {
+      "id": "https://www.digitalarchives.cict.in/ground-truth/page/19987_112.xml",
+      "type": "Dataset",
+      "label": {
+        "en": [
+          "PAGE-XML ground truth"
+        ]
+      },
+      "format": "application/xml",
+      "profile": "http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd"
+    },
+    {
+      "id": "https://doi.org/10.5281/zenodo.21067346",
+      "type": "Dataset",
+      "label": {
+        "en": [
+          "Zenodo DOI"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-110/canvas",
+      "type": "Canvas",
+      "height": 470,
+      "width": 2788,
+      "label": {
+        "none": [
+          "19987_112"
+        ]
+      },
+      "items": [
+        {
+          "id": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-110/canvas/page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-110/canvas/painting",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://zenodo.org/api/iiif/record:21067346:19987_112.jpg/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 470,
+                "width": 2788,
+                "service": [
+                  {
+                    "id": "https://zenodo.org/api/iiif/record:21067346:19987_112.jpg",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              },
+              "target": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-110/canvas"
+            }
+          ]
+        }
+      ],
+      "annotations": [
+        {
+          "id": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-110/canvas/annotations",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-110/anno/line-1",
+              "type": "Annotation",
+              "motivation": "supplementing",
+              "body": {
+                "type": "TextualBody",
+                "language": "ta",
+                "format": "text/plain",
+                "value": "இருநோக்கி வளுண்கண்ணு ள்ளதொருநோக்கு நோய்நோக்கன்ற ந்நோய் மருந்து"
+              },
+              "target": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-110/canvas#xywh=0,106,2788,33"
+            },
+            {
+              "id": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-110/anno/line-2",
+              "type": "Annotation",
+              "motivation": "supplementing",
+              "body": {
+                "type": "TextualBody",
+                "language": "ta",
+                "format": "text/plain",
+                "value": "ஏதிலார் போலப் பொதுநோக்கு நோக்குதல் காதலார் கண்ணே யுள"
+              },
+              "target": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-110/canvas#xywh=0,139,2788,33"
+            },
+            {
+              "id": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-110/anno/line-3",
+              "type": "Annotation",
+              "motivation": "supplementing",
+              "body": {
+                "type": "TextualBody",
+                "language": "ta",
+                "format": "text/plain",
+                "value": "கண்களவு கொள்ளுஞ் சிறுநோக்கங் காமத்திற் செம்பாகமன்று பெரிது"
+              },
+              "target": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-110/canvas#xywh=0,172,2788,33"
+            },
+            {
+              "id": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-110/anno/line-4",
+              "type": "Annotation",
+              "motivation": "supplementing",
+              "body": {
+                "type": "TextualBody",
+                "language": "ta",
+                "format": "text/plain",
+                "value": "நோக்கிநாள் நோக்கி யிறைஞ்சிநாள் அஃதஅவள் யாப்பினுள் ளட்டிய நீர்"
+              },
+              "target": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-110/canvas#xywh=0,205,2788,33"
+            },
+            {
+              "id": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-110/anno/line-5",
+              "type": "Annotation",
+              "motivation": "supplementing",
+              "body": {
+                "type": "TextualBody",
+                "language": "ta",
+                "format": "text/plain",
+                "value": "யாநோக்குங் கால நிலநோக்கும் நோக்காக்காற் றா நோக்கி மெல்ல நகும்"
+              },
+              "target": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-110/canvas#xywh=0,238,2788,33"
+            },
+            {
+              "id": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-110/anno/line-6",
+              "type": "Annotation",
+              "motivation": "supplementing",
+              "body": {
+                "type": "TextualBody",
+                "language": "ta",
+                "format": "text/plain",
+                "value": "குறிக்கொண்டு நோக்காமை யல்லாலொ ருகண் சிறக்கணித்தாள் போல நகும்"
+              },
+              "target": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-110/canvas#xywh=0,271,2788,33"
+            },
+            {
+              "id": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-110/anno/line-7",
+              "type": "Annotation",
+              "motivation": "supplementing",
+              "body": {
+                "type": "TextualBody",
+                "language": "ta",
+                "format": "text/plain",
+                "value": "அசையியற்கு ண்டாண்டொரேனர்யா நோக்கப் பசையிநள் பைய நகும்"
+              },
+              "target": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-110/canvas#xywh=0,304,2788,33"
+            },
+            {
+              "id": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-110/anno/line-8",
+              "type": "Annotation",
+              "motivation": "supplementing",
+              "body": {
+                "type": "TextualBody",
+                "language": "ta",
+                "format": "text/plain",
+                "value": "உறாஅ தவர்போற் சொலினுஞ் செறாஅர்சொல் லொல்லை யுணரப் படும்"
+              },
+              "target": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-110/canvas#xywh=0,337,2788,32"
+            },
+            {
+              "id": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-110/anno/line-9",
+              "type": "Annotation",
+              "motivation": "supplementing",
+              "body": {
+                "type": "TextualBody",
+                "language": "ta",
+                "format": "text/plain",
+                "value": "செறாஅச் செறுசொல்லுஞ் செற்றார்போ நோக்குமுறார் போன்றுற்றார் குறிப்பு"
+              },
+              "target": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-110/canvas#xywh=0,369,2788,33"
+            },
+            {
+              "id": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-110/anno/line-10",
+              "type": "Annotation",
+              "motivation": "supplementing",
+              "body": {
+                "type": "TextualBody",
+                "language": "ta",
+                "format": "text/plain",
+                "value": "கண்ணொடு கண்ணிநை நோக்கொக்கின் வாய்ச்சொற்களெந்ந பயத்து மில்"
+              },
+              "target": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-110/canvas#xywh=0,402,2788,33"
+            },
+            {
+              "id": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-110/anno/margin-4",
+              "type": "Annotation",
+              "motivation": "supplementing",
+              "body": {
+                "type": "TextualBody",
+                "language": "ta",
+                "format": "text/plain",
+                "value": "குறிப்"
+              },
+              "target": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-110/canvas#xywh=0,205,390,33"
+            },
+            {
+              "id": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-110/anno/margin-5",
+              "type": "Annotation",
+              "motivation": "supplementing",
+              "body": {
+                "type": "TextualBody",
+                "language": "ta",
+                "format": "text/plain",
+                "value": "பறிதல்"
+              },
+              "target": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-110/canvas#xywh=0,238,390,33"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

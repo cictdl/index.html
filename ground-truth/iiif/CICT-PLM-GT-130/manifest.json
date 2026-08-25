@@ -1,0 +1,377 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-130/manifest.json",
+  "type": "Manifest",
+  "label": {
+    "en": [
+      "CICT-PLM-GT-130 · Tirukkural Adhikaram 130 (Expostulation with the Heart)"
+    ],
+    "ta": [
+      "திருக்குறள் அதிகாரம் 130 (நெஞ்சொடுபுலத்தல்)"
+    ]
+  },
+  "metadata": [
+    {
+      "label": {
+        "en": [
+          "Specimen ID"
+        ]
+      },
+      "value": {
+        "none": [
+          "CICT-PLM-GT-130"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Chapter"
+        ]
+      },
+      "value": {
+        "en": [
+          "130 · Expostulation with the Heart"
+        ],
+        "ta": [
+          "நெஞ்சொடுபுலத்தல்"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Kural range"
+        ]
+      },
+      "value": {
+        "none": [
+          "1291–1300"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Section / sub-section"
+        ]
+      },
+      "value": {
+        "ta": [
+          "இன்பம் / கற்பியல்"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Manuscript ID"
+        ]
+      },
+      "value": {
+        "none": [
+          "20187_125"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Material"
+        ]
+      },
+      "value": {
+        "en": [
+          "Palm leaf (பனை ஓலை)"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "DOI"
+        ]
+      },
+      "value": {
+        "none": [
+          "10.5281/zenodo.21336679"
+        ]
+      }
+    }
+  ],
+  "rights": "http://creativecommons.org/licenses/by/4.0/",
+  "requiredStatement": {
+    "label": {
+      "en": [
+        "Attribution"
+      ]
+    },
+    "value": {
+      "en": [
+        "Central Institute of Classical Tamil (CICT). CICT-PLM-GT-130. DOI: 10.5281/zenodo.21336679. Licensed CC BY 4.0."
+      ]
+    }
+  },
+  "provider": [
+    {
+      "id": "https://www.cict.in/",
+      "type": "Agent",
+      "label": {
+        "en": [
+          "Central Institute of Classical Tamil (CICT)"
+        ]
+      }
+    }
+  ],
+  "homepage": [
+    {
+      "id": "https://zenodo.org/records/21336679",
+      "type": "Text",
+      "label": {
+        "en": [
+          "Zenodo record"
+        ]
+      },
+      "format": "text/html"
+    }
+  ],
+  "seeAlso": [
+    {
+      "id": "https://www.digitalarchives.cict.in/ground-truth/page/20187_125.xml",
+      "type": "Dataset",
+      "label": {
+        "en": [
+          "PAGE-XML ground truth"
+        ]
+      },
+      "format": "application/xml",
+      "profile": "http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd"
+    },
+    {
+      "id": "https://doi.org/10.5281/zenodo.21336679",
+      "type": "Dataset",
+      "label": {
+        "en": [
+          "Zenodo DOI"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-130/canvas",
+      "type": "Canvas",
+      "height": 533,
+      "width": 2921,
+      "label": {
+        "none": [
+          "20187_125"
+        ]
+      },
+      "items": [
+        {
+          "id": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-130/canvas/page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-130/canvas/painting",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://zenodo.org/api/iiif/record:21336679:20187_125.jpg/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 533,
+                "width": 2921,
+                "service": [
+                  {
+                    "id": "https://zenodo.org/api/iiif/record:21336679:20187_125.jpg",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              },
+              "target": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-130/canvas"
+            }
+          ]
+        }
+      ],
+      "annotations": [
+        {
+          "id": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-130/canvas/annotations",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-130/anno/line-1",
+              "type": "Annotation",
+              "motivation": "supplementing",
+              "body": {
+                "type": "TextualBody",
+                "language": "ta",
+                "format": "text/plain",
+                "value": "அவர்நெஞ் சவர்க்காதல் கண்டு மெவந்நெஞ்செ நீயெமக் காக த்து"
+              },
+              "target": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-130/canvas#xywh=0,139,2921,31"
+            },
+            {
+              "id": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-130/anno/line-2",
+              "type": "Annotation",
+              "motivation": "supplementing",
+              "body": {
+                "type": "TextualBody",
+                "language": "ta",
+                "format": "text/plain",
+                "value": "உறாஅ தவர்க்கண்ட கண்ணு மவரைச் செறாஅரெனச் சேறி நெஞ்சு"
+              },
+              "target": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-130/canvas#xywh=0,170,2921,31"
+            },
+            {
+              "id": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-130/anno/line-3",
+              "type": "Annotation",
+              "motivation": "supplementing",
+              "body": {
+                "type": "TextualBody",
+                "language": "ta",
+                "format": "text/plain",
+                "value": "கெட்டார்க்கு நட்டாரில் லென்பதெ நெஞ்செநீ வெட்டாங் கவர்பின்  செலல்"
+              },
+              "target": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-130/canvas#xywh=0,201,2921,32"
+            },
+            {
+              "id": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-130/anno/line-4",
+              "type": "Annotation",
+              "motivation": "supplementing",
+              "body": {
+                "type": "TextualBody",
+                "language": "ta",
+                "format": "text/plain",
+                "value": "இநியந்ந நின்னோடு சூழ்வார்யார் நெஞ்செ துநிசெய்து துவ்வாய்காண் மற்று"
+              },
+              "target": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-130/canvas#xywh=0,233,2921,31"
+            },
+            {
+              "id": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-130/anno/line-5",
+              "type": "Annotation",
+              "motivation": "supplementing",
+              "body": {
+                "type": "TextualBody",
+                "language": "ta",
+                "format": "text/plain",
+                "value": "நாணு மறந்தேந அவர்மறக் கல்லாவென் மாணா மடநெஞ்சிற் பட்டு"
+              },
+              "target": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-130/canvas#xywh=0,264,2921,32"
+            },
+            {
+              "id": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-130/anno/line-6",
+              "type": "Annotation",
+              "motivation": "supplementing",
+              "body": {
+                "type": "TextualBody",
+                "language": "ta",
+                "format": "text/plain",
+                "value": "எள்ளி னிழிவாமென் றெண்ணி யவர்திற முள்ளு முயிர்க்காத நெஞ்சு"
+              },
+              "target": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-130/canvas#xywh=0,296,2921,31"
+            },
+            {
+              "id": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-130/anno/line-7",
+              "type": "Annotation",
+              "motivation": "supplementing",
+              "body": {
+                "type": "TextualBody",
+                "language": "ta",
+                "format": "text/plain",
+                "value": "துன்பத்திற் கியாரெ துணையாவார் தம்முடைய நெஞ்சந் துணையல் வழி"
+              },
+              "target": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-130/canvas#xywh=0,327,2921,31"
+            },
+            {
+              "id": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-130/anno/line-8",
+              "type": "Annotation",
+              "motivation": "supplementing",
+              "body": {
+                "type": "TextualBody",
+                "language": "ta",
+                "format": "text/plain",
+                "value": "பெறாஅமை யஞ்சும் பெறிற்பிரி வஞ்சு மறாஅ விடும்பைக்கெந் நெஞ்சு"
+              },
+              "target": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-130/canvas#xywh=0,358,2921,32"
+            },
+            {
+              "id": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-130/anno/line-9",
+              "type": "Annotation",
+              "motivation": "supplementing",
+              "body": {
+                "type": "TextualBody",
+                "language": "ta",
+                "format": "text/plain",
+                "value": "தநியெ யிருந்து நிநைத்தக்கா லெந்நைத் திநிய விருந்ததெந் நெஞ்சு"
+              },
+              "target": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-130/canvas#xywh=0,390,2921,31"
+            },
+            {
+              "id": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-130/anno/line-10",
+              "type": "Annotation",
+              "motivation": "supplementing",
+              "body": {
+                "type": "TextualBody",
+                "language": "ta",
+                "format": "text/plain",
+                "value": "தஞ்சந் தமரல்ல ரேதிலார் தாமுடைய நெஞ்சந் தமரல் வழி"
+              },
+              "target": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-130/canvas#xywh=0,421,2921,32"
+            },
+            {
+              "id": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-130/anno/margin-4",
+              "type": "Annotation",
+              "motivation": "supplementing",
+              "body": {
+                "type": "TextualBody",
+                "language": "ta",
+                "format": "text/plain",
+                "value": "நெஞ்சொ"
+              },
+              "target": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-130/canvas#xywh=0,233,409,31"
+            },
+            {
+              "id": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-130/anno/margin-5",
+              "type": "Annotation",
+              "motivation": "supplementing",
+              "body": {
+                "type": "TextualBody",
+                "language": "ta",
+                "format": "text/plain",
+                "value": "டுபுலாத்"
+              },
+              "target": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-130/canvas#xywh=0,264,409,32"
+            },
+            {
+              "id": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-130/anno/margin-6",
+              "type": "Annotation",
+              "motivation": "supplementing",
+              "body": {
+                "type": "TextualBody",
+                "language": "ta",
+                "format": "text/plain",
+                "value": "தல்"
+              },
+              "target": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-130/canvas#xywh=0,296,409,31"
+            },
+            {
+              "id": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-130/anno/margin-8",
+              "type": "Annotation",
+              "motivation": "supplementing",
+              "body": {
+                "type": "TextualBody",
+                "language": "ta",
+                "format": "text/plain",
+                "value": "௮௰௨"
+              },
+              "target": "https://www.digitalarchives.cict.in/ground-truth/iiif/CICT-PLM-GT-130/canvas#xywh=0,358,409,32"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='utf-8'?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+  <Metadata>
+    <Creator>Central Institute of Classical Tamil (CICT)</Creator>
+    <Created>2026-07-15T00:00:00</Created>
+    <LastChange>2026-07-15T00:00:00</LastChange>
+    <Comments>CICT-PLM-GT-122 | Tirukkural Adhikaram 122 (கனவுநிலையுரைத்தல் / The Visions of the Night) | kurals 1211-1220 | section இன்பம் / subsection கற்பியல் | DOI 10.5281/zenodo.21332251 | record https://zenodo.org/records/21332251 | manuscriptId 20107_133 | NOTE: line Coords are band-derived full-width bounding boxes (approximate); transcription text is exact ground truth.</Comments>
+  </Metadata>
+  <Page imageFilename="20107_133.jpg" imageWidth="2724" imageHeight="493">
+    <ReadingOrder>
+      <OrderedGroup id="g0">
+        <RegionRefIndexed index="0" regionRef="r_main" />
+        <RegionRefIndexed index="1" regionRef="r_margin" />
+      </OrderedGroup>
+    </ReadingOrder>
+    <TextRegion id="r_main" type="paragraph" custom="readingOrder {index:0;}">
+      <Coords points="0,118 2724,118 2724,449 0,449" />
+      <TextLine id="r_main_l1" custom="readingOrder {index:0;} ilakkanam {kural:1217;verification:verified;words:நனவினால்=பொருட்பெயர்|நல்கா=எதிர்மறைபெயரெச்சம்|கொடியார்=வினையாலணையும்பெயர்|கனவனால்=பொருட்பெயர்|என்=வினாஇடை|எம்மை=சுட்டுப்பெயர்|பீழி=வினையெச்சம்|பது=வினையாலணையும்பெயர்;edugai:ன;eetruseer:பது;}" comments="kural=1217; numeral=௧">
+        <Coords points="0,118 2724,118 2724,151 0,151" />
+        <Baseline points="0,145 2724,145" />
+        <TextEquiv>
+          <Unicode>நநவிநா நல்காக் கொடியா் கநவிநாநென்னெம்மை பீடிப் பது</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l2" custom="readingOrder {index:1;} ilakkanam {kural:1214;verification:verified;words:கனவினான்=பொருட்பெயர்|உண்டாகும்=பெயரெச்சம்|காமம்=பண்புப்பெயர்|நனவினான்=பொருட்பெயர்|நல்காரை=வினையாலணையும்பெயர்|நாடி=வினையெச்சம்|தரற்கு=தொழிற்பெயர்;eetruseer:தரற்கு;}" comments="kural=1214; numeral=௨">
+        <Coords points="0,151 2724,151 2724,184 0,184" />
+        <Baseline points="0,178 2724,178" />
+        <TextEquiv>
+          <Unicode>கநவிநா லுண்டாகுங் காமம் நநவிநா நல்காரை நாடித் தறர்க்கு</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l3" custom="readingOrder {index:2;} ilakkanam {kural:1215;verification:verified;words:நனவினால்=பொருட்பெயர்|கண்டது=வினையாலணையும்பெயர்|உம்=உம்மை|ஆங்கு=இடப்பெயர்|ஏ=ஏகாரம்|கனவு=பொருட்பெயர்|உம்=உம்மை|தான்=அசைநிலை|கண்ட=பெயரெச்சம்|பொழுது=காலப்பெயர்|ஏ=ஏகாரம்|இனிது=குறிப்புவினைமுற்று;ani:சொற்பொருட்பின்வருநிலை;eetruseer:இனிது;}" comments="kural=1215; numeral=௩">
+        <Coords points="0,184 2724,184 2724,217 0,217" />
+        <Baseline points="0,211 2724,211" />
+        <TextEquiv>
+          <Unicode>நநவிநாற்  கண்டதூஉ மாங்கெ கநவுந்தான் கண்ட பொழுதெயநிது</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l4" custom="readingOrder {index:3;} ilakkanam {kural:1216;verification:verified;words:நனவு=பொருட்பெயர்|என=வினையெச்சம்|ஒன்று=எண்ணுப்பெயர்|இல்லை=எதிர்மறைஇடை|ஆயின்=வினையெச்சம்|கனவினால்=பொருட்பெயர்|காதலர்=பொருட்பெயர்|நீங்கலர்=எதிர்மறைவினைமுற்று|மன்=பிரிநிலைஇடை;eetruseer:மன்;}" comments="kural=1216; numeral=௪">
+        <Coords points="0,217 2724,217 2724,250 0,250" />
+        <Baseline points="0,244 2724,244" />
+        <TextEquiv>
+          <Unicode>நநவெந வேறில்லை யாயிற் கநவிநாற் காதலர் நீங்கலர்மன்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l5" custom="readingOrder {index:4;} ilakkanam {kural:1213;verification:verified;words:நனவினால்=பொருட்பெயர்|நல்கா=எதிர்மறைபெயரெச்சம்|அவரை=சுட்டுப்பெயர்|கனவினால்=பொருட்பெயர்|காண்டலின்=தொழிற்பெயர்|உண்டு=குறிப்புவினைமுற்று|என்=சுட்டுப்பெயர்|உயிர்=பொருட்பெயர்;eetruseer:உயிர்;}" comments="kural=1213; numeral=௫">
+        <Coords points="0,250 2724,250 2724,283 0,283" />
+        <Baseline points="0,278 2724,278" />
+        <TextEquiv>
+          <Unicode>நநவிநால் நல்காதவரைக் கநவிநாற் காண்டலுமு ண்டெந்நுயிர்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l6" custom="readingOrder {index:5;} ilakkanam {kural:1220;verification:verified;words:நனவினால்=பொருட்பெயர்|நம்=சுட்டுப்பெயர்|நீத்தார்=வினையாலணையும்பெயர்|என்பர்=தெரிநிலைவினைமுற்று|கனவினால்=பொருட்பெயர்|காணார்=எதிர்மறைவினைமுற்று|கொல்=வினாஇடை|இவ்=சுட்டுப்பெயர்|ஊர்=இடப்பெயர்|அவர்=வினையாலணையும்பெயர்;eetruseer:ரவர்;}" comments="kural=1220; numeral=௬">
+        <Coords points="0,283 2724,283 2724,317 0,317" />
+        <Baseline points="0,311 2724,311" />
+        <TextEquiv>
+          <Unicode>நநவிநால் நந்நீத்தா ரென்பர் கநவிநாற்  காணார்கொல் லிவ்வூரவர்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l7" custom="readingOrder {index:6;} ilakkanam {kural:1218;verification:verified;words:துஞ்சும்=பெயரெச்சம்|கால்=காலப்பெயர்|தோள்=சினைப்பெயர்|மேலர்=குறிப்புவினைமுற்று|ஆகி=வினையெச்சம்|விழிக்கும்=பெயரெச்சம்|கால்=காலப்பெயர்|நெஞ்சத்தர்=குறிப்புவினைமுற்று|ஆவர்=தெரிநிலைவினைமுற்று|விரைந்து=வினையெச்சம்;ani:முரண்;edugai:ஞ;eetruseer:விரைந்து;}" comments="kural=1218; numeral=௭">
+        <Coords points="0,317 2724,317 2724,350 0,350" />
+        <Baseline points="0,344 2724,344" />
+        <TextEquiv>
+          <Unicode>துஞ்சுங்காற் தோண்மேலார் கிவிழிக்குங்கால் நெஞ்சத்து ளாவர் விரைந்து</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l8" custom="readingOrder {index:7;} ilakkanam {kural:1219;verification:verified;words:நனவினால்=பொருட்பெயர்|நல்காரை=வினையாலணையும்பெயர்|நோவர்=தெரிநிலைவினைமுற்று|கனவினால்=பொருட்பெயர்|காதலர்=பொருட்பெயர்|காணா=எதிர்மறைபெயரெச்சம்|அவர்=சுட்டுப்பெயர்;eetruseer:தவர்;}" comments="kural=1219; numeral=௮">
+        <Coords points="0,350 2724,350 2724,383 0,383" />
+        <Baseline points="0,377 2724,377" />
+        <TextEquiv>
+          <Unicode>நநவிநால் நல்காமை நோவர் கநவிநாற் காதலர் காணாதவர்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l9" custom="readingOrder {index:8;} ilakkanam {kural:1212;verification:verified;words:கயல்=பொருட்பெயர்|உண்=உரிச்சொல்|கண்=சினைப்பெயர்|யான்=சுட்டுப்பெயர்|இரப்ப=வினையெச்சம்|துஞ்சில்=வினையெச்சம்|கலந்தார்=வினையாலணையும்பெயர்|உயல்=தொழிற்பெயர்|உண்மை=பண்புப்பெயர்|சாற்றுவேன்=தெரிநிலைவினைமுற்று|மன்=அசைநிலை;togai:கயலுண்கண்=உவமைத்தொகை;ani:உவமைத்தொகை;edugai:ய;eetruseer:மன்;}" comments="kural=1212; numeral=௯">
+        <Coords points="0,383 2724,383 2724,416 0,416" />
+        <Baseline points="0,410 2724,410" />
+        <TextEquiv>
+          <Unicode>கயலுண்கண்ணி  யாமிரப்பத் துஞ்சிற் காநதாற்கு யலுண்மைச் சாற்றுவென்மன்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l10" custom="readingOrder {index:9;} ilakkanam {kural:1211;verification:verified;words:காதலர்=பொருட்பெயர்|தூது=பொருட்பெயர்|ஒடு=வேற்றுமைஉருபு|வந்த=பெயரெச்சம்|கனவினுக்கு=பொருட்பெயர்|யாது=வினாப்பெயர்|செய்=வினையெச்சம்|வேன்=தெரிநிலைவினைமுற்று|கொல்=அசைநிலை|விருந்து=பொருட்பெயர்;edugai:த;eetruseer:விருந்து;}" comments="kural=1211; numeral=௰">
+        <Coords points="0,416 2724,416 2724,449 0,449" />
+        <Baseline points="0,443 2724,443" />
+        <TextEquiv>
+          <Unicode>காதலர் தூதொடு வந்த கநவிநு கயாது செய்வென்கொல் விருந்து</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextEquiv>
+        <Unicode>நநவிநா நல்காக் கொடியா் கநவிநாநென்னெம்மை பீடிப் பது
+கநவிநா லுண்டாகுங் காமம் நநவிநா நல்காரை நாடித் தறர்க்கு
+நநவிநாற்  கண்டதூஉ மாங்கெ கநவுந்தான் கண்ட பொழுதெயநிது
+நநவெந வேறில்லை யாயிற் கநவிநாற் காதலர் நீங்கலர்மன்
+நநவிநால் நல்காதவரைக் கநவிநாற் காண்டலுமு ண்டெந்நுயிர்
+நநவிநால் நந்நீத்தா ரென்பர் கநவிநாற்  காணார்கொல் லிவ்வூரவர்
+துஞ்சுங்காற் தோண்மேலார் கிவிழிக்குங்கால் நெஞ்சத்து ளாவர் விரைந்து
+நநவிநால் நல்காமை நோவர் கநவிநாற் காதலர் காணாதவர்
+கயலுண்கண்ணி  யாமிரப்பத் துஞ்சிற் காநதாற்கு யலுண்மைச் சாற்றுவென்மன்
+காதலர் தூதொடு வந்த கநவிநு கயாது செய்வென்கொல் விருந்து</Unicode>
+      </TextEquiv>
+    </TextRegion>
+    <TextRegion id="r_margin" type="marginalia" custom="readingOrder {index:1;}">
+      <Coords points="0,118 381,118 381,449 0,449" />
+      <TextLine id="r_margin_l2" custom="readingOrder {index:1;}" comments="marginal cell @ L2">
+        <Coords points="0,151 381,151 381,184 0,184" />
+        <Baseline points="0,178 381,178" />
+        <TextEquiv>
+          <Unicode>கநவு</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_margin_l3" custom="readingOrder {index:2;}" comments="marginal cell @ L3">
+        <Coords points="0,184 381,184 381,217 0,217" />
+        <Baseline points="0,211 381,211" />
+        <TextEquiv>
+          <Unicode>நிலை</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_margin_l4" custom="readingOrder {index:3;}" comments="marginal cell @ L4">
+        <Coords points="0,217 381,217 381,250 0,250" />
+        <Baseline points="0,244 381,244" />
+        <TextEquiv>
+          <Unicode>யுரைத்தல்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_margin_l7" custom="readingOrder {index:6;}" comments="marginal cell @ L7">
+        <Coords points="0,317 381,317 381,350 0,350" />
+        <Baseline points="0,344 381,344" />
+        <TextEquiv>
+          <Unicode>௮௰௬</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextEquiv>
+        <Unicode>கநவு
+நிலை
+யுரைத்தல்
+௮௰௬</Unicode>
+      </TextEquiv>
+    </TextRegion>
+  </Page>
+</PcGts>

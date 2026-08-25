@@ -4,7 +4,7 @@
     <Creator>Central Institute of Classical Tamil (CICT)</Creator>
     <Created>2026-04-27T00:00:00</Created>
     <LastChange>2026-04-27T00:00:00</LastChange>
-    <Comments>CICT-PLM-GT-001 | Tirukkural Adhikaram 1 (கடவுள் வாழ்த்து / Praise of God) | kurals 1-10 | section அறம் / subsection  | DOI 10.5281/zenodo.20793633 | record https://zenodo.org/records/20793633 | manuscriptId 18641_3 | NOTE: line Coords are band-derived full-width bounding boxes (approximate); transcription text is exact ground truth.</Comments>
+    <Comments>CICT-PLM-GT-001 | Tirukkural Adhikaram 1 (கடவுள் வாழ்த்து / Praise of God) | kurals 1-10 | section அறம் / subsection  | DOI 10.5281/zenodo.20793633 | record https://zenodo.org/records/20793633 | manuscriptId 18641_3 | NOTE: line Coords are band-derived full-width bounding boxes (approximate); transcription text is exact ground truth. | LEAF NOTE: (end of leaf — no further inscribed lines on this side of the folio)</Comments>
   </Metadata>
   <Page imageFilename="18641_3.jpg" imageWidth="3076" imageHeight="407">
     <ReadingOrder>
@@ -14,7 +14,7 @@
       </OrderedGroup>
     </ReadingOrder>
     <TextRegion id="r_main" type="paragraph" custom="readingOrder {index:0;}">
-      <Coords points="0,0 3076,0 3076,384 0,384" />
+      <Coords points="0,0 3076,0 3076,349 0,349" />
       <TextLine id="r_main_l1" custom="readingOrder {index:0;} ilakkanam {kural:1;verification:verified;words:அகர=பொருட்பெயர்|முதல=பெயரெச்சம்|எழுத்து=பொருட்பெயர்|எல்லாம்=பொருட்பெயர்|ஆதி=பண்புப்பெயர்|பகவன்=சிறப்புப்பெயர்|முதற்று=குறிப்புவினைமுற்று|ஏ=ஏகாரம்|உலகு=இடப்பெயர்;ani:எடுத்துக்காட்டுவமை;edugai:க/க;eetruseer:உலகு (காசு வாய்பாடு);}" comments="kural=1; numeral=௧">
         <Coords points="0,0 3076,0 3076,35 0,35" />
         <Baseline points="0,29 3076,29" />
@@ -85,13 +85,6 @@
           <Unicode>பிறவிப் பெருங்கட னீந்துவர் நீந்தா ரிறைவ னடிசேரா தா / ர்</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r_main_l11" custom="readingOrder {index:10;}" comments="kural=none; numeral=—">
-        <Coords points="0,349 3076,349 3076,384 0,384" />
-        <Baseline points="0,377 3076,377" />
-        <TextEquiv>
-          <Unicode>(end of leaf — no further inscribed lines on this side of the folio)</Unicode>
-        </TextEquiv>
-      </TextLine>
       <TextEquiv>
         <Unicode>அகர முதல என் வெழுத்தெல்லா ஆதி பகவன் முத ற்றே  வுல / கு
 கற்றதி னா லாய பயனென்கொல்  வாலறிவா நற்றா டொழாஅ ரெனி / ன்
@@ -102,12 +95,11 @@
 தனக்குவமை யில்   லாதான் றாள்சேர்ந்தார்க் கல்லான் மனக்கவலை மாற்ற லரிது
 அறவாழி யந்தணன் றாள் சேர்ந்தார்க் கல்லாற் பிறவாழி நீந்த அரிது
 கோளில் பொறியிற் குணமிலவே வெண்குணத்தான் றாளை வணங்காத்        தலை
-பிறவிப் பெருங்கட னீந்துவர் நீந்தா ரிறைவ னடிசேரா தா / ர்
-(end of leaf — no further inscribed lines on this side of the folio)</Unicode>
+பிறவிப் பெருங்கட னீந்துவர் நீந்தா ரிறைவ னடிசேரா தா / ர்</Unicode>
       </TextEquiv>
     </TextRegion>
     <TextRegion id="r_margin" type="marginalia" custom="readingOrder {index:1;}">
-      <Coords points="0,0 431,0 431,384 0,384" />
+      <Coords points="0,0 431,0 431,349 0,349" />
       <TextLine id="r_margin_l1" custom="readingOrder {index:0;}" comments="marginal cell @ L1">
         <Coords points="0,0 431,0 431,35 0,35" />
         <Baseline points="0,29 431,29" />

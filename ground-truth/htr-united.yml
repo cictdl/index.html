@@ -4,9 +4,11 @@ project-name: CICT Tirukkural Ground Truth Corpus
 description: >-
   Line-level ground truth for handwritten-text recognition (HTR) of palm-leaf
   manuscripts of the Tirukkural, transcribed by the Central Institute of Classical
-  Tamil (CICT). Each specimen is one palm-leaf folio carrying ten kural couplets;
-  the verbatim scribal reading is aligned line-by-line with the critical-edition
-  verse numbers. Released as PAGE-XML (segmentation + transcription) and IIIF
+  Tamil (CICT). Each specimen is one palm-leaf folio, normally carrying ten kural
+  couplets (one leaf carries nine); the verbatim scribal reading is aligned
+  line-by-line with the critical-edition verse numbers, which on some leaves run out
+  of sequence. The 133 leaves cover all 133 adhikarams and 1,329 of the 1,330 kurals.
+  Released as PAGE-XML (segmentation + transcription) and IIIF
   Presentation 3.0 manifests with line-level Web Annotations. Source images are
   published per-leaf on Zenodo with individual DOIs under CC BY 4.0.
 # NOTE: set `url` to the canonical Git repository that hosts this folder before
@@ -31,15 +33,15 @@ hands:
 automatically-aligned: false
 volume:
   - metric: files
-    count: 100
+    count: 133
   - metric: pages
-    count: 100
+    count: 133
   - metric: regions
-    count: 200
+    count: 266
   - metric: lines
-    count: 1272
+    count: 1704
   - metric: characters
-    count: 59657
+    count: 78825
 production-software: >-
   Manual transcription by CICT curators; PAGE-XML and IIIF v3 generated from the
   CICT Digital Archives corpus by generate_ground_truth.py.

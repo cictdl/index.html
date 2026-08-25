@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='utf-8'?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+  <Metadata>
+    <Creator>Central Institute of Classical Tamil (CICT)</Creator>
+    <Created>2026-07-02T00:00:00</Created>
+    <LastChange>2026-07-02T00:00:00</LastChange>
+    <Comments>CICT-PLM-GT-118 | Tirukkural Adhikaram 118 (கண்விதுப்பழிதல் / The Eyes Consumed with Grief) | kurals 1171-1180 | section இன்பம் / subsection கற்பியல் | DOI 10.5281/zenodo.21102400 | record https://zenodo.org/records/21102400 | manuscriptId 20067_120 | NOTE: line Coords are band-derived full-width bounding boxes (approximate); transcription text is exact ground truth.</Comments>
+  </Metadata>
+  <Page imageFilename="20067_120.jpg" imageWidth="2888" imageHeight="531">
+    <ReadingOrder>
+      <OrderedGroup id="g0">
+        <RegionRefIndexed index="0" regionRef="r_main" />
+        <RegionRefIndexed index="1" regionRef="r_margin" />
+      </OrderedGroup>
+    </ReadingOrder>
+    <TextRegion id="r_main" type="paragraph" custom="readingOrder {index:0;}">
+      <Coords points="0,127 2888,127 2888,465 0,465" />
+      <TextLine id="r_main_l1" custom="readingOrder {index:0;} ilakkanam {kural:1176;verification:verified;words:ஓஒ=ஓகாரம்|இனிது=குறிப்புவினைமுற்று|ஏ=ஏகாரம்|எமக்கு=சுட்டுப்பெயர்|இந்நோய்=பண்புப்பெயர்|செய்த=பெயரெச்சம்|கண்=சினைப்பெயர்|தாம்=சுட்டுப்பெயர்|இதற்கு=சுட்டுப்பெயர்|பட்(டது)=தெரிநிலைவினைமுற்று|(பட்)டது=வினையாலணையும்பெயர்;ani:வஞ்சப்புகழ்ச்சி;eetruseer:காசு;}" comments="kural=1176; numeral=௧">
+        <Coords points="0,127 2888,127 2888,161 0,161" />
+        <Baseline points="0,155 2888,155" />
+        <TextEquiv>
+          <Unicode>ஓஒ விநிதெ யெமக்கிந்நோய் செய்தகண் டாஅமிடற்பட்டது</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l2" custom="readingOrder {index:1;} ilakkanam {kural:1173;verification:verified;words:கதுமென=உரிச்சொல்|தா(ம்)=சுட்டுப்பெயர்|நோக்கி=வினையெச்சம்|தாம்=சுட்டுப்பெயர்|ஏ=ஏகாரம்|கலுழும்=பெயரெச்சம்|இது=சுட்டுப்பெயர்|நக=வினையெச்சம்|தக்க=பெயரெச்சம்|(த)துடைத்து=குறிப்புவினைமுற்று;ani:சொற்பொருட்பின்வருநிலை;edugai:து;eetruseer:பிறப்பு;}" comments="kural=1173; numeral=௨">
+        <Coords points="0,161 2888,161 2888,195 0,195" />
+        <Baseline points="0,189 2888,189" />
+        <TextEquiv>
+          <Unicode>கதுமெனத் தாநோக்கித் தாநெ கலுழும் மகநகத் தக்க துடைத்து</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l3" custom="readingOrder {index:2;} ilakkanam {kural:1171;verification:verified;words:கண்=சினைப்பெயர்|தாம்=சுட்டுப்பெயர்|கலுழ்வது=வினையாலணையும்பெயர்|எவன்=வினாஇடை|கொல்=அசைநிலை|ஓ=ஓகாரம்|தண்டா=எதிர்மறைபெயரெச்சம்|நோய்=பண்புப்பெயர்|தாம்=சுட்டுப்பெயர்|காட்ட=வினையெச்சம்|யாம்=சுட்டுப்பெயர்|கண்(டது)=தெரிநிலைவினைமுற்று|(கண்)டது=வினையாலணையும்பெயர்;ani:சொற்பொருட்பின்வருநிலை;edugai:ண்;eetruseer:காசு;}" comments="kural=1171; numeral=௩">
+        <Coords points="0,195 2888,195 2888,229 0,229" />
+        <Baseline points="0,223 2888,223" />
+        <TextEquiv>
+          <Unicode>கண்டான் கலுழ்வ தெவன்கொலொ தண்டாநோய் தான்காட்ட யான்கண் டது</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l4" custom="readingOrder {index:3;} ilakkanam {kural:1172;verification:verified;words:தெரிந்து=வினையெச்சம்|உணரா=எதிர்மறைவினையெச்சம்|நோக்கிய=பெயரெச்சம்|உண்=பண்புப்பெயர்|கண்=சினைப்பெயர்|பரிந்து=வினையெச்சம்|உணரா=எதிர்மறைவினையெச்சம்|பைதல்=தொழிற்பெயர்|உழப்பது=வினையாலணையும்பெயர்|எவன்=வினாஇடை;togai:உண்கண்=பண்புத்தொகை;ani:சொற்பொருட்பின்வருநிலை;edugai:ரி;eetruseer:காசு;}" comments="kural=1172; numeral=௪">
+        <Coords points="0,229 2888,229 2888,262 0,262" />
+        <Baseline points="0,256 2888,256" />
+        <TextEquiv>
+          <Unicode>தெரிந்துணரா நோக்கிய வொண்கண் பரிந்துணராப் பைதலு ழப்பதெ வன்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l5" custom="readingOrder {index:4;} ilakkanam {kural:1175;verification:verified;words:படல்=தொழிற்பெயர்|ஆற்றா=எதிர்மறைபெயரெச்சம்|பைதல்=தொழிற்பெயர்|உழக்கும்=பெயரெச்சம்|கடல்=இடப்பெயர்|ஆற்றா=எதிர்மறைபெயரெச்சம்|காம=பண்புப்பெயர்|நோய்=பண்புப்பெயர்|செய்த=பெயரெச்சம்|என்=சுட்டுப்பெயர்|கண்=சினைப்பெயர்;togai:காமநோய்=பண்புத்தொகை;ani:உயர்வுநவிற்சி;edugai:ட;eetruseer:காசு;}" comments="kural=1175; numeral=௫">
+        <Coords points="0,262 2888,262 2888,296 0,296" />
+        <Baseline points="0,290 2888,290" />
+        <TextEquiv>
+          <Unicode>படலாற்றா றபைதலு ழக்கும் கடலாற்றாற்க் காமநோயுற்ற வென் கண்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l6" custom="readingOrder {index:5;} ilakkanam {kural:1179;verification:verified;words:வாரா=எதிர்மறைபெயரெச்சம்|கால்=காலப்பெயர்|துஞ்சா=எதிர்மறைவினைமுற்று|வரின்=வினையெச்சம்|துஞ்சா=எதிர்மறைவினைமுற்று|ஆயிடை=இடப்பெயர்|ஆர்=உரிச்சொல்|அஞர்=பண்புப்பெயர்|உற்றன=தெரிநிலைவினைமுற்று|கண்=சினைப்பெயர்;togai:ஆரஞர்=பண்புத்தொகை;ani:முரண்;edugai:ரா/ரி;eetruseer:காசு;}" comments="kural=1179; numeral=௬">
+        <Coords points="0,296 2888,296 2888,330 0,330" />
+        <Baseline points="0,324 2888,324" />
+        <TextEquiv>
+          <Unicode>வாராக்காற்று ஞ்சா வரிற்றுஞ்சா வாயிடை யாரஞரு ற்றந கண்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l7" custom="readingOrder {index:6;} ilakkanam {kural:1178;verification:verified;words:பேணாது=எதிர்மறைவினையெச்சம்|பெட்டார்=வினையாலணையும்பெயர்|உளர்=குறிப்புவினைமுற்று|மன்=அசைநிலை|ஓ=ஓகாரம்|மற்று=அசைநிலை|அவர்=சுட்டுப்பெயர்|காணாது=எதிர்மறைவினையெச்சம்|அமைவு=தொழிற்பெயர்|இல=எதிர்மறைவினைமுற்று|கண்=சினைப்பெயர்;ani:வஞ்சப்புகழ்ச்சி;edugai:ண/ட;eetruseer:காசு;}" comments="kural=1178; numeral=௭">
+        <Coords points="0,330 2888,330 2888,363 0,363" />
+        <Baseline points="0,357 2888,357" />
+        <TextEquiv>
+          <Unicode>பேணாது பெட்டரு ளர்மந்நொ கொண்கநைக் காணாத மையல கண்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l8" custom="readingOrder {index:7;} ilakkanam {kural:1174;verification:verified;words:பெயல்=தொழிற்பெயர்|ஆற்றா=எதிர்மறைபெயரெச்சம்|நீர்=பொருட்பெயர்|உலந்த=பெயரெச்சம்|உண்=பண்புப்பெயர்|கண்=சினைப்பெயர்|உயல்=தொழிற்பெயர்|ஆற்றா=எதிர்மறைபெயரெச்சம்|உய்வு=தொழிற்பெயர்|இல்=எதிர்மறைஇடை|நோய்=பண்புப்பெயர்|என்=சுட்டுப்பெயர்|கண்=வேற்றுமைஉருபு|நிறுத்து=வினையெச்சம்;togai:உண்கண்=பண்புத்தொகை;ani:இயைபு/ஒலிநயம்;edugai:ய;eetruseer:பிறப்பு;}" comments="kural=1174; numeral=௮">
+        <Coords points="0,363 2888,363 2888,397 0,397" />
+        <Baseline points="0,391 2888,391" />
+        <TextEquiv>
+          <Unicode>பெயலாற்றா நீருலந்த வொண்கண்ணு யலாற்றா வுய்வில்நோயயென் கணிறுத்து</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l9" custom="readingOrder {index:8;} ilakkanam {kural:1180;verification:verified;words:மறை=பொருட்பெயர்|பெறல்=தொழிற்பெயர்|ஊரார்=வினையாலணையும்பெயர்|அரிது=பண்புப்பெயர்|அன்று=எதிர்மறைஇடை|ஆல்=அசைநிலை|எம்=சுட்டுப்பெயர்|போல்=உவமைஉருபு|அறை=பெயரெச்சம்|பறை=பொருட்பெயர்|கண்ணார்=வினையாலணையும்பெயர்|அகத்து=இடப்பெயர்;togai:மறைபெறல்=வேற்றுமைத்தொகை|அறைபறை=வினைத்தொகை;ani:உவமை;edugai:றை;eetruseer:காசு;}" comments="kural=1180; numeral=௯">
+        <Coords points="0,397 2888,397 2888,431 0,431" />
+        <Baseline points="0,425 2888,425" />
+        <TextEquiv>
+          <Unicode>மறைபெறலலூரற் கரிதென்றெ நெம்போல றைபறை கண்ணா கத்து</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l10" custom="readingOrder {index:9;} ilakkanam {kural:1177;verification:verified;words:உழந்து=வினையெச்சம்|உழந்து=வினையெச்சம்|(து)உள்=இடப்பெயர்|நீர்=பொருட்பெயர்|அறுக=வியங்கோள்வினைமுற்று|விழைந்து=வினையெச்சம்|இழைந்து=வினையெச்சம்|வேண்டி=வினையெச்சம்|அவர்=சுட்டுப்பெயர்|கண்ட=பெயரெச்சம்|கண்=சினைப்பெயர்;togai:துள்நீர்=வேற்றுமைத்தொகை;ani:இயைபு/ஒலிநயம்;edugai:ழ;eetruseer:காசு;}" comments="kural=1177; numeral=௰">
+        <Coords points="0,431 2888,431 2888,465 0,465" />
+        <Baseline points="0,459 2888,459" />
+        <TextEquiv>
+          <Unicode>உழந்துழந் துண்ணீரறுக விழைந்திழைந்து வேண்டி யவற்கண்ட கண்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextEquiv>
+        <Unicode>ஓஒ விநிதெ யெமக்கிந்நோய் செய்தகண் டாஅமிடற்பட்டது
+கதுமெனத் தாநோக்கித் தாநெ கலுழும் மகநகத் தக்க துடைத்து
+கண்டான் கலுழ்வ தெவன்கொலொ தண்டாநோய் தான்காட்ட யான்கண் டது
+தெரிந்துணரா நோக்கிய வொண்கண் பரிந்துணராப் பைதலு ழப்பதெ வன்
+படலாற்றா றபைதலு ழக்கும் கடலாற்றாற்க் காமநோயுற்ற வென் கண்
+வாராக்காற்று ஞ்சா வரிற்றுஞ்சா வாயிடை யாரஞரு ற்றந கண்
+பேணாது பெட்டரு ளர்மந்நொ கொண்கநைக் காணாத மையல கண்
+பெயலாற்றா நீருலந்த வொண்கண்ணு யலாற்றா வுய்வில்நோயயென் கணிறுத்து
+மறைபெறலலூரற் கரிதென்றெ நெம்போல றைபறை கண்ணா கத்து
+உழந்துழந் துண்ணீரறுக விழைந்திழைந்து வேண்டி யவற்கண்ட கண்</Unicode>
+      </TextEquiv>
+    </TextRegion>
+    <TextRegion id="r_margin" type="marginalia" custom="readingOrder {index:1;}">
+      <Coords points="0,127 404,127 404,465 0,465" />
+      <TextLine id="r_margin_l4" custom="readingOrder {index:3;}" comments="marginal cell @ L4">
+        <Coords points="0,229 404,229 404,262 0,262" />
+        <Baseline points="0,256 404,256" />
+        <TextEquiv>
+          <Unicode>கண்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_margin_l5" custom="readingOrder {index:4;}" comments="marginal cell @ L5">
+        <Coords points="0,262 404,262 404,296 0,296" />
+        <Baseline points="0,290 404,290" />
+        <TextEquiv>
+          <Unicode>விதுப்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_margin_l6" custom="readingOrder {index:5;}" comments="marginal cell @ L6">
+        <Coords points="0,296 404,296 404,330 0,330" />
+        <Baseline points="0,324 404,324" />
+        <TextEquiv>
+          <Unicode>பழிதல்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextEquiv>
+        <Unicode>கண்
+விதுப்
+பழிதல்</Unicode>
+      </TextEquiv>
+    </TextRegion>
+  </Page>
+</PcGts>

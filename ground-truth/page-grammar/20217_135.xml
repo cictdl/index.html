@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='utf-8'?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+  <Metadata>
+    <Creator>Central Institute of Classical Tamil (CICT)</Creator>
+    <Created>2026-07-16T00:00:00</Created>
+    <LastChange>2026-07-16T00:00:00</LastChange>
+    <Comments>CICT-PLM-GT-133 | Tirukkural Adhikaram 133 (ஊடலுவகை / The Joys of Temporary Variance) | kurals 1321-1330 | section இன்பம் / subsection கற்பியல் | DOI 10.5281/zenodo.21337086 | record https://zenodo.org/records/21337086 | manuscriptId 20217_135 | NOTE: line Coords are band-derived full-width bounding boxes (approximate); transcription text is exact ground truth.</Comments>
+  </Metadata>
+  <Page imageFilename="20217_135.jpg" imageWidth="2762" imageHeight="459">
+    <ReadingOrder>
+      <OrderedGroup id="g0">
+        <RegionRefIndexed index="0" regionRef="r_main" />
+        <RegionRefIndexed index="1" regionRef="r_margin" />
+      </OrderedGroup>
+    </ReadingOrder>
+    <TextRegion id="r_main" type="paragraph" custom="readingOrder {index:0;}">
+      <Coords points="0,90 2762,90 2762,408 0,408" />
+      <TextLine id="r_main_l1" custom="readingOrder {index:0;} ilakkanam {kural:1321;verification:verified;words:இல்லை=எதிர்மறைவினைமுற்று|தவறு=பண்புப்பெயர்|அவர்க்கு=சுட்டுப்பெயர்|ஆயின்=வினையெச்சம்|உம்=உம்மை|ஊடுதல்=தொழிற்பெயர்|வல்லது=வினையாலணையும்பெயர்|அவர்=சுட்டுப்பெயர்|அளிக்கு=பண்புப்பெயர்|மாறு=பண்புப்பெயர்;ani:முரண்;edugai:ல்;eetruseer:மாறு (காசு வாய்பாடு);}" comments="kural=1321; numeral=௧">
+        <Coords points="0,90 2762,90 2762,122 0,122" />
+        <Baseline points="0,116 2762,116" />
+        <TextEquiv>
+          <Unicode>இல்லைத் தவற் வாக்காயினு மூடுதல் வல்லது வாளிக்கு மாறு</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l2" custom="readingOrder {index:1;} ilakkanam {kural:1322;verification:verified;words:ஊடலின்=தொழிற்பெயர்|தோன்றும்=பெயரெச்சம்|சிறு=பண்புப்பெயர்|துனி=பண்புப்பெயர்|நல்=பண்புப்பெயர்|அளி=பண்புப்பெயர்|வாடின்=வினையெச்சம்|உம்=உம்மை|பாடு=பண்புப்பெயர்|பெறும்=தெரிநிலைவினைமுற்று;togai:சிறுதுனி=பண்புத்தொகை|நல்லளி=பண்புத்தொகை;ani:முரண்;edugai:ட;eetruseer:பெறும் (பிறப்பு வாய்பாடு);}" comments="kural=1322; numeral=௨">
+        <Coords points="0,122 2762,122 2762,153 0,153" />
+        <Baseline points="0,148 2762,148" />
+        <TextEquiv>
+          <Unicode>ஊடலிற் றோன்று ஞ்சிறுதுனி நல்லளி வாடினும் பாடு பெறும</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l3" custom="readingOrder {index:2;} ilakkanam {kural:1323;verification:verified;words:புலத்தலின்=தொழிற்பெயர்|புத்தேள்=பொருட்பெயர்|நாடு=இடப்பெயர்|உண்டு=குறிப்புவினைமுற்று|ஓ=ஓகாரம்|நிலத்தொடு=இடப்பெயர்|நீர்=பொருட்பெயர்|இயைந்து=வினையெச்சம்|அன்னார்=வினையாலணையும்பெயர்|அகத்து=இடப்பெயர்;togai:புத்தேள்நாடு=வேற்றுமைத்தொகை;ani:உவமை,உயர்வுநவிற்சி;edugai:ல;eetruseer:அகத்து (காசு வாய்பாடு);}" comments="kural=1323; numeral=௩">
+        <Coords points="0,153 2762,153 2762,185 0,185" />
+        <Baseline points="0,180 2762,180" />
+        <TextEquiv>
+          <Unicode>புலத்தலிற் பத்தேணுடுண்டோ நிலத்தொடு நீரியைந் தன்னூர்க த்து</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l4" custom="readingOrder {index:3;} ilakkanam {kural:1324;verification:verified;words:புல்லி=வினையெச்சம்|விடாஅ=எதிர்மறைபெயரெச்சம்|புலவியுள்=தொழிற்பெயர்|தோன்றும்=பெயரெச்சம்|என்=சுட்டுப்பெயர்|உள்ளம்=பொருட்பெயர்|உடைக்கும்=பெயரெச்சம்|படை=பொருட்பெயர்;ani:உருவகம்;edugai:ள்;eetruseer:படை (மலர் வாய்பாடு);}" comments="kural=1324; numeral=௪">
+        <Coords points="0,185 2762,185 2762,217 0,217" />
+        <Baseline points="0,211 2762,211" />
+        <TextEquiv>
+          <Unicode>புல்லிவிடாப் புல்வி யுடடோன்றுமெனனுள்ளமுடைக்கும்படை</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l5" custom="readingOrder {index:4;} ilakkanam {kural:1325;verification:verified;words:தவறு=பண்புப்பெயர்|இலர்=எதிர்மறைவினைமுற்று|ஆயின்=வினையெச்சம்|உம்=உம்மை|தாம்=சுட்டுப்பெயர்|வீழ்வார்=வினையாலணையும்பெயர்|மென்=பண்புப்பெயர்|தோள்=சினைப்பெயர்|அகறலின்=தொழிற்பெயர்|ஆங்கு=அசைநிலை|ஒன்று=எண்ணுப்பெயர்|உடைத்து=குறிப்புவினைமுற்று;togai:மென்றோள்=பண்புத்தொகை;ani:முரண்;edugai:வ/க;eetruseer:உடைத்து (காசு வாய்பாடு);}" comments="kural=1325; numeral=௫">
+        <Coords points="0,217 2762,217 2762,249 0,249" />
+        <Baseline points="0,243 2762,243" />
+        <TextEquiv>
+          <Unicode>தவரிலநாயினுந்தா  மவீழவரா மென்றேள் கறலி னுங் கொன்றுடைத்து</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l6" custom="readingOrder {index:5;} ilakkanam {kural:1326;verification:verified;words:உணல்=தொழிற்பெயர்|உம்=உம்மை|உண்டது=வினையாலணையும்பெயர்|அறல்=தொழிற்பெயர்|இனிது=குறிப்புவினைமுற்று|காமம்=பண்புப்பெயர்|புணர்தலின்=தொழிற்பெயர்|ஊடல்=தொழிற்பெயர்|இனிது=குறிப்புவினைமுற்று;ani:எடுத்துக்காட்டுவமை,சொற்பொருட்பின்வருநிலை;edugai:ண;eetruseer:இனிது (மலர் வாய்பாடு);}" comments="kural=1326; numeral=௬">
+        <Coords points="0,249 2762,249 2762,281 0,281" />
+        <Baseline points="0,275 2762,275" />
+        <TextEquiv>
+          <Unicode>உணலிசநுமுண்டதற்லினிது காமம் புணாதலினூட லிநிது</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l7" custom="readingOrder {index:6;} ilakkanam {kural:1327;verification:verified;words:ஊடலில்=தொழிற்பெயர்|தோற்றவர்=வினையாலணையும்பெயர்|வென்றார்=தெரிநிலைவினைமுற்று|அது=சுட்டுப்பெயர்|மன்=அசைநிலை|உம்=உம்மை|கூடலில்=தொழிற்பெயர்|காண=வினையெச்சம்|படும்=தெரிநிலைவினைமுற்று;ani:முரண்;edugai:ட;eetruseer:படும் (பிறப்பு வாய்பாடு);}" comments="kural=1327; numeral=௭">
+        <Coords points="0,281 2762,281 2762,312 0,312" />
+        <Baseline points="0,307 2762,307" />
+        <TextEquiv>
+          <Unicode>உளடலிற் றேற்றுவ ரவென்றார்  துமநநுங் கூடலிற் காணப்படும்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l8" custom="readingOrder {index:7;} ilakkanam {kural:1328;verification:verified;words:ஊடி=வினையெச்சம்|பெறுகுவம்=தெரிநிலைவினைமுற்று|கொல்=வினாஇடை|ஓ=ஓகாரம்|நுதல்=சினைப்பெயர்|வெயர்ப்ப=வினையெச்சம்|கூடலில்=தொழிற்பெயர்|தோன்றிய=பெயரெச்சம்|உப்பு=பொருட்பெயர்;ani:உருவகம்;edugai:ட;eetruseer:உப்பு (பிறப்பு வாய்பாடு);}" comments="kural=1328; numeral=௮">
+        <Coords points="0,312 2762,312 2762,344 0,344" />
+        <Baseline points="0,338 2762,338" />
+        <TextEquiv>
+          <Unicode>உளடிப் பெருகுவுங் தொல்லொநு துல்வியாப்பக்  கடலிற றேனறிய      ஷப்பு</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l9" custom="readingOrder {index:8;} ilakkanam {kural:1329;verification:verified;words:ஊடுக=வியங்கோள்வினைமுற்று|மன்=அசைநிலை|ஓ=ஓகாரம்|ஒளி=பண்புப்பெயர்|இழை=பொருட்பெயர்|யாம்=சுட்டுப்பெயர்|இரப்ப=வினையெச்சம்|நீடுக=வியங்கோள்வினைமுற்று|மன்=அசைநிலை|ஓ=ஓகாரம்|இரா=காலப்பெயர்;togai:ஒளியிழை=அன்மொழித்தொகை;ani:மடக்கு;edugai:ட;eetruseer:இரா (நாள் வாய்பாடு);}" comments="kural=1329; numeral=௯">
+        <Coords points="0,344 2762,344 2762,376 0,376" />
+        <Baseline points="0,370 2762,370" />
+        <TextEquiv>
+          <Unicode>உளடுக மந்நொ வொளியிழை யாமிரப்ப நீடுகு மன்னோ விரர்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l10" custom="readingOrder {index:9;} ilakkanam {kural:1330;verification:verified;words:ஊடுதல்=தொழிற்பெயர்|காமத்திற்கு=பண்புப்பெயர்|இன்பம்=பண்புப்பெயர்|அதற்கு=சுட்டுப்பெயர்|இன்பம்=பண்புப்பெயர்|கூடி=வினையெச்சம்|முயங்க=வினையெச்சம்|பெறின்=வினையெச்சம்;ani:சொற்பொருட்பின்வருநிலை;edugai:ட;eetruseer:பெறின் (மலர் வாய்பாடு);}" comments="kural=1330; numeral=௰">
+        <Coords points="0,376 2762,376 2762,408 0,408" />
+        <Baseline points="0,402 2762,402" />
+        <TextEquiv>
+          <Unicode>உளடுதுல காமத்திற் கின் பமதற் கின்பங் கூடிமுயங்கப்  பெறின்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextEquiv>
+        <Unicode>இல்லைத் தவற் வாக்காயினு மூடுதல் வல்லது வாளிக்கு மாறு
+ஊடலிற் றோன்று ஞ்சிறுதுனி நல்லளி வாடினும் பாடு பெறும
+புலத்தலிற் பத்தேணுடுண்டோ நிலத்தொடு நீரியைந் தன்னூர்க த்து
+புல்லிவிடாப் புல்வி யுடடோன்றுமெனனுள்ளமுடைக்கும்படை
+தவரிலநாயினுந்தா  மவீழவரா மென்றேள் கறலி னுங் கொன்றுடைத்து
+உணலிசநுமுண்டதற்லினிது காமம் புணாதலினூட லிநிது
+உளடலிற் றேற்றுவ ரவென்றார்  துமநநுங் கூடலிற் காணப்படும்
+உளடிப் பெருகுவுங் தொல்லொநு துல்வியாப்பக்  கடலிற றேனறிய      ஷப்பு
+உளடுக மந்நொ வொளியிழை யாமிரப்ப நீடுகு மன்னோ விரர்
+உளடுதுல காமத்திற் கின் பமதற் கின்பங் கூடிமுயங்கப்  பெறின்</Unicode>
+      </TextEquiv>
+    </TextRegion>
+    <TextRegion id="r_margin" type="marginalia" custom="readingOrder {index:1;}">
+      <Coords points="0,90 387,90 387,408 0,408" />
+      <TextLine id="r_margin_l4" custom="readingOrder {index:3;}" comments="marginal cell @ L4">
+        <Coords points="0,185 387,185 387,217 0,217" />
+        <Baseline points="0,211 387,211" />
+        <TextEquiv>
+          <Unicode>ஊட</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_margin_l5" custom="readingOrder {index:4;}" comments="marginal cell @ L5">
+        <Coords points="0,217 387,217 387,249 0,249" />
+        <Baseline points="0,243 387,243" />
+        <TextEquiv>
+          <Unicode>லுவகை</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_margin_l7" custom="readingOrder {index:6;}" comments="marginal cell @ L7">
+        <Coords points="0,281 387,281 387,312 0,312" />
+        <Baseline points="0,307 387,307" />
+        <TextEquiv>
+          <Unicode>௮௰௭</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextEquiv>
+        <Unicode>ஊட
+லுவகை
+௮௰௭</Unicode>
+      </TextEquiv>
+    </TextRegion>
+  </Page>
+</PcGts>

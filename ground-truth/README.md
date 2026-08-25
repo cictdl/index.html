@@ -3,9 +3,9 @@
 Machine-readable ground truth for handwritten-text recognition (HTR) of palm-leaf
 manuscripts of the **Tirukkural**, derived from the CICT Digital Archives corpus.
 
-Each **specimen** is one palm-leaf folio carrying ten kural couplets. The verbatim
-scribal reading is aligned line-by-line with the critical-edition verse numbers and
-released in two interoperable formats:
+Each **specimen** is one palm-leaf folio, normally carrying ten kural couplets. The
+verbatim scribal reading is aligned line-by-line with the critical-edition verse
+numbers and released in two interoperable formats:
 
 - **PAGE-XML** (PRImA `pagecontent` 2019-07-15) — segmentation + transcription,
   one file per leaf, in [`page/`](page/).
@@ -14,9 +14,9 @@ released in two interoperable formats:
   Each manifest references the leaf image directly from Zenodo's IIIF Image API 3.0
   service, so it opens in Mirador / Clover / Annona with the transcription overlaid.
 
-Current coverage: **100 specimens · 100 chapters · kurals 1–1000** (Tirukkural
-adhikarams 1–100), 1,272 text lines (1,000 verse lines + 272 marginal title/numeral
-cells), 59,657 characters.
+Current coverage: **133 specimens · 133 chapters · kurals 1–1330** — the complete
+Tirukkural (adhikarams 1–133), 1,704 text lines (1,329 verse lines + 375 marginal
+title/numeral cells), 78,825 characters.
 
 ## Layout
 
@@ -27,7 +27,10 @@ ground-truth/
 ├── index.csv                 id ↔ manuscriptId ↔ DOI ↔ image ↔ file map
 ├── page/<manuscriptId>.xml   PAGE-XML per leaf  (e.g. 19797_93.xml)
 ├── iiif/<id>/manifest.json   IIIF v3 manifest per specimen (e.g. CICT-PLM-GT-091/manifest.json)
+├── grammar/                  இலக்கணக் குறிப்பு word-level grammar layer (all 1,330 kurals)
+├── page-grammar/             page/ enriched with that layer + per-leaf .grammar.json sidecars
 ├── generate_ground_truth.py  regenerates page/ + iiif/ + index.csv from ../index.html
+├── inject_grammar.py         rebuilds page-grammar/ from page/ + grammar/
 ├── validate_gt.py            XSD-validates PAGE-XML and checks IIIF + text round-trip
 └── fetch_images.py           optional: download leaf JPEGs from Zenodo into page/
 ```
@@ -52,10 +55,22 @@ ground-truth/
    They are correct *bands* (every box vertically contains its line) and exact in
    text, suitable for line-strip HTR training and display. For pixel-accurate
    baselines, re-segment the images with Kraken/eScriptorium and replace the `Coords`.
-2. **Manuscript date is estimated** (`time` in `htr-united.yml`): the leaves are
+2. **1,329 of the 1,330 kurals are inscribed.** The 133 leaves span every adhikaram,
+   but leaf `CICT-PLM-GT-113` (20017_115, adhikaram 113) carries only nine verses —
+   **kural 1127 is not present on it**, and its nine verses are inscribed out of
+   sequence (see `folioSequence` in the source record; the `comments` attribute of each
+   `TextLine` gives the critical-edition number, so physical order and verse order are
+   both recoverable). Leaf `CICT-PLM-GT-001` likewise carries eleven bands but only ten
+   inscribed lines. Do not assume ten verses per leaf, or that leaf order equals verse
+   order.
+3. **Editorial folio notes are not transcription.** Source lines flagged `endOfLeaf`
+   (e.g. "end of leaf — no further inscribed lines on this side of the folio") are
+   editorial remarks, not scribal text. They are excluded from `TextLine`/annotation
+   content and preserved in the page `Metadata/Comments` as `LEAF NOTE:` instead.
+4. **Manuscript date is estimated** (`time` in `htr-united.yml`): the leaves are
    undated; the 1700–1900 range is a placeholder for the typical Tamil palm-leaf era.
    Replace with the verified date if established.
-3. **Hosting URL.** IIIF manifest/canvas/annotation `id`s use the base
+5. **Hosting URL.** IIIF manifest/canvas/annotation `id`s use the base
    `https://www.digitalarchives.cict.in/ground-truth`. IIIF requires these to be the
    real dereferenceable URLs — if you publish elsewhere, edit `GT_BASE_URL` at the top
    of `generate_ground_truth.py` and regenerate.

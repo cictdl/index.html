@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='utf-8'?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+  <Metadata>
+    <Creator>Central Institute of Classical Tamil (CICT)</Creator>
+    <Created>2026-07-02T00:00:00</Created>
+    <LastChange>2026-07-02T00:00:00</LastChange>
+    <Comments>CICT-PLM-GT-120 | Tirukkural Adhikaram 120 (தனிப்படர்மிகுதி / The Solitary Anguish) | kurals 1191-1200 | section இன்பம் / subsection கற்பியல் | DOI 10.5281/zenodo.21126143 | record https://zenodo.org/records/21126143 | manuscriptId 20087_122 | NOTE: line Coords are band-derived full-width bounding boxes (approximate); transcription text is exact ground truth.</Comments>
+  </Metadata>
+  <Page imageFilename="20087_122.jpg" imageWidth="2783" imageHeight="444">
+    <ReadingOrder>
+      <OrderedGroup id="g0">
+        <RegionRefIndexed index="0" regionRef="r_main" />
+        <RegionRefIndexed index="1" regionRef="r_margin" />
+      </OrderedGroup>
+    </ReadingOrder>
+    <TextRegion id="r_main" type="paragraph" custom="readingOrder {index:0;}">
+      <Coords points="0,84 2783,84 2783,404 0,404" />
+      <TextLine id="r_main_l1" custom="readingOrder {index:0;} ilakkanam {kural:1196;verification:verified;words:ஒரு=எண்ணுப்பெயர்|தலையான்=பொருட்பெயர்|இன்னாது=குறிப்புவினைமுற்று|காமம்=பண்புப்பெயர்|காப்=பொருட்பெயர்|போல=உவமைஉருபு|இரு=எண்ணுப்பெயர்|தலை=பொருட்பெயர்|ஆன்=வேற்றுமைஉருபு|உம்=உம்மை|இனிது=குறிப்புவினைமுற்று;togai:ஒருதலையான்=பண்புத்தொகை|இருதலை=பண்புத்தொகை;ani:உவமை,முரண்;edugai:ரு;eetruseer:இனிது;}" comments="kural=1196; numeral=௧">
+        <Coords points="0,84 2783,84 2783,116 0,116" />
+        <Baseline points="0,111 2783,111" />
+        <TextEquiv>
+          <Unicode>ஒருதலையானி ந்நாது காமங்காற் போல விருதலை யாநுமி நிது</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l2" custom="readingOrder {index:1;} ilakkanam {kural:1193;verification:verified;words:வீழுநர்=வினையாலணையும்பெயர்|வீழப்=வினையெச்சம்|படுவார்க்கு=வினையாலணையும்பெயர்|அமையும்=தெரிநிலைவினைமுற்று|ஏ=ஏகாரம்|வாழுநம்=தெரிநிலைவினைமுற்று|என்னும்=பெயரெச்சம்|செருக்கு=பண்புப்பெயர்;edugai:ழு;eetruseer:செருக்கு;}" comments="kural=1193; numeral=௨">
+        <Coords points="0,116 2783,116 2783,148 0,148" />
+        <Baseline points="0,143 2783,143" />
+        <TextEquiv>
+          <Unicode>வீழுநர் வீழப் படுவார்க்க மைந்த்தெ வாழுனமெ ந்நுஞ் செருக்கு</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l3" custom="readingOrder {index:2;} ilakkanam {kural:1192;verification:verified;words:வாழ்வார்க்கு=வினையாலணையும்பெயர்|வானம்=பொருட்பெயர்|பயந்து=வினையெச்சம்|அற்று=உவமைஉருபு|ஆல்=அசைநிலை|வீழ்வார்க்கு=வினையாலணையும்பெயர்|வீழ்வார்=வினையாலணையும்பெயர்|அளிக்கும்=பெயரெச்சம்|அளி=பண்புப்பெயர்;ani:உவமை;edugai:ா;eetruseer:அளி;}" comments="kural=1192; numeral=௩">
+        <Coords points="0,148 2783,148 2783,180 0,180" />
+        <Baseline points="0,175 2783,175" />
+        <TextEquiv>
+          <Unicode>வாழ்வார்க்கு வாநம் பயந்தற்றால் வீழ்வார்க்கு வீழ்வார ழிக்குமளி</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l4" custom="readingOrder {index:3;} ilakkanam {kural:1195;verification:verified;words:நாம்=சுட்டுப்பெயர்|காதல்=தொழிற்பெயர்|கொண்டார்=வினையாலணையும்பெயர்|நமக்கு=சுட்டுப்பெயர்|எவன்=வினாப்பெயர்|செய்ப=தெரிநிலைவினைமுற்று|ஓ=ஓகாரம்|தாம்=சுட்டுப்பெயர்|காதல்=தொழிற்பெயர்|கொள்ளா=எதிர்மறைபெயரெச்சம்|கடை=காலப்பெயர்;edugai:ம;eetruseer:கடை;}" comments="kural=1195; numeral=௪">
+        <Coords points="0,180 2783,180 2783,212 0,212" />
+        <Baseline points="0,206 2783,206" />
+        <TextEquiv>
+          <Unicode>யாங்காதல் கொண்டாரடெல்க்கெவன் செய்தொ தாங்காதல் கொள்ளாக் கடை</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l5" custom="readingOrder {index:4;} ilakkanam {kural:1197;verification:verified;words:பருவரல்=தொழிற்பெயர்|உம்=உம்மை|பைதல்=தொழிற்பெயர்|உம்=உம்மை|காணான்=எதிர்மறைவினைமுற்று|கொல்=அசைநிலை|காமன்=சிறப்புப்பெயர்|ஒருவர்=பொருட்பெயர்|கண்=வேற்றுமைஉருபு|நின்று=வினையெச்சம்|ஒழுகு=பெயரெச்சம்|வான்=வினையாலணையும்பெயர்;ani:சொற்பொருட்பின்வருநிலை;edugai:ரு;eetruseer:வான்;}" comments="kural=1197; numeral=௫">
+        <Coords points="0,212 2783,212 2783,244 0,244" />
+        <Baseline points="0,238 2783,238" />
+        <TextEquiv>
+          <Unicode>பருவரலும் பைதலுங் காணான்கொல் காமன்னொ ருவர்கண் ணின்றொழுக லான்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l6" custom="readingOrder {index:5;} ilakkanam {kural:1198;verification:verified;words:வீழ்வார்=வினையாலணையும்பெயர்|இன்=பண்புப்பெயர்|சொல்=பொருட்பெயர்|பெறாஅது=எதிர்மறைவினையெச்சம்|உலகத்து=இடப்பெயர்|வாழ்வார்=வினையாலணையும்பெயர்|வன்கணார்=பண்புப்பெயர்|இல்=எதிர்மறைஇடை;togai:இன்சொல்=பண்புத்தொகை|வன்கணார்=பண்புத்தொகை;ani:இயைபு/ஒலிநயம்;edugai:ழ;eetruseer:இல்;}" comments="kural=1198; numeral=௬">
+        <Coords points="0,244 2783,244 2783,276 0,276" />
+        <Baseline points="0,270 2783,270" />
+        <TextEquiv>
+          <Unicode>வீழ்வாரிநி ன்சொற் செபறாஅது உலகத்து வாழ்வாரின் வன்கணாரில்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l7" custom="readingOrder {index:6;} ilakkanam {kural:1199;verification:verified;words:நசைஇயார்=வினையாலணையும்பெயர்|நல்கார்=எதிர்மறைவினைமுற்று|எனின்=வினையெச்சம்|உம்=உம்மை|அவர்=சுட்டுப்பெயர்|மாட்டு=வேற்றுமைஉருபு|இசை=பொருட்பெயர்|உம்=உம்மை|இனிய=பெயரெச்சம்|செவிக்கு=சினைப்பெயர்;edugai:சை;eetruseer:செவிக்கு;}" comments="kural=1199; numeral=௭">
+        <Coords points="0,276 2783,276 2783,308 0,308" />
+        <Baseline points="0,302 2783,302" />
+        <TextEquiv>
+          <Unicode>நசையில்லார் நல்காரெ நினும வர்மாட்டி சையுமி நிய செவிக்கு</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l8" custom="readingOrder {index:7;} ilakkanam {kural:1200;verification:verified;words:உறாஅர்=வினையாலணையும்பெயர்|உறு=உரிச்சொல்|நோய்=பொருட்பெயர்|உரைப்பாய்=தெரிநிலைவினைமுற்று|கடலை=இடப்பெயர்|செறாஅஅய்=ஏவல்வினைமுற்று|வாழிய=வியங்கோள்வினைமுற்று|நெஞ்சு=சினைப்பெயர்;ani:பிறிதுமொழிதல்;edugai:றா;eetruseer:நெஞ்சு;}" comments="kural=1200; numeral=௮">
+        <Coords points="0,308 2783,308 2783,340 0,340" />
+        <Baseline points="0,334 2783,334" />
+        <TextEquiv>
+          <Unicode>உறாஅர்க்கு றுநோயு ரைப்பாய் கடலைச் செறாய வாழியெ நெஞ்சு</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l9" custom="readingOrder {index:8;} ilakkanam {kural:1191;verification:verified;words:தாம்=சுட்டுப்பெயர்|வீழ்வார்=வினையாலணையும்பெயர்|தம்=சுட்டுப்பெயர்|வீழப்=வினையெச்சம்|பெற்றவர்=வினையாலணையும்பெயர்|பெற்றார்=தெரிநிலைவினைமுற்று|ஏ=ஏகாரம்|காமத்து=பண்புப்பெயர்|காழ்=பொருட்பெயர்|இல்=எதிர்மறைஇடை|கனி=பொருட்பெயர்;ani:உருவகம்;edugai:ம;eetruseer:கனி;}" comments="kural=1191; numeral=௯">
+        <Coords points="0,340 2783,340 2783,372 0,372" />
+        <Baseline points="0,366 2783,366" />
+        <TextEquiv>
+          <Unicode>தாம்வீழார் தாம்வீழப் பெற்றவர் பெற்றாரெ காமத்துக் காழில் கநி</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l10" custom="readingOrder {index:9;} ilakkanam {kural:1194;verification:verified;words:வீழப்=வினையெச்சம்|படுவார்=வினையாலணையும்பெயர்|கெழீஇ=பண்புப்பெயர்|இலர்=குறிப்புவினைமுற்று|தாம்=சுட்டுப்பெயர்|வீழ்வார்=வினையாலணையும்பெயர்|வீழப்=வினையெச்சம்|படாஅர்=எதிர்மறைவினைமுற்று|எனின்=வினையெச்சம்;ani:மடக்கு;edugai:ழ;eetruseer:எனின்;}" comments="kural=1194; numeral=௰">
+        <Coords points="0,372 2783,372 2783,404 0,404" />
+        <Baseline points="0,398 2783,398" />
+        <TextEquiv>
+          <Unicode>வீழப் படுவார்க் கெளியிலரெ தாம்வீழ்வார் வீழப் படாரெ நின்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextEquiv>
+        <Unicode>ஒருதலையானி ந்நாது காமங்காற் போல விருதலை யாநுமி நிது
+வீழுநர் வீழப் படுவார்க்க மைந்த்தெ வாழுனமெ ந்நுஞ் செருக்கு
+வாழ்வார்க்கு வாநம் பயந்தற்றால் வீழ்வார்க்கு வீழ்வார ழிக்குமளி
+யாங்காதல் கொண்டாரடெல்க்கெவன் செய்தொ தாங்காதல் கொள்ளாக் கடை
+பருவரலும் பைதலுங் காணான்கொல் காமன்னொ ருவர்கண் ணின்றொழுக லான்
+வீழ்வாரிநி ன்சொற் செபறாஅது உலகத்து வாழ்வாரின் வன்கணாரில்
+நசையில்லார் நல்காரெ நினும வர்மாட்டி சையுமி நிய செவிக்கு
+உறாஅர்க்கு றுநோயு ரைப்பாய் கடலைச் செறாய வாழியெ நெஞ்சு
+தாம்வீழார் தாம்வீழப் பெற்றவர் பெற்றாரெ காமத்துக் காழில் கநி
+வீழப் படுவார்க் கெளியிலரெ தாம்வீழ்வார் வீழப் படாரெ நின்</Unicode>
+      </TextEquiv>
+    </TextRegion>
+    <TextRegion id="r_margin" type="marginalia" custom="readingOrder {index:1;}">
+      <Coords points="0,84 390,84 390,404 0,404" />
+      <TextLine id="r_margin_l4" custom="readingOrder {index:3;}" comments="marginal cell @ L4">
+        <Coords points="0,180 390,180 390,212 0,212" />
+        <Baseline points="0,206 390,206" />
+        <TextEquiv>
+          <Unicode>தநிப்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_margin_l5" custom="readingOrder {index:4;}" comments="marginal cell @ L5">
+        <Coords points="0,212 390,212 390,244 0,244" />
+        <Baseline points="0,238 390,238" />
+        <TextEquiv>
+          <Unicode>படர்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_margin_l6" custom="readingOrder {index:5;}" comments="marginal cell @ L6">
+        <Coords points="0,244 390,244 390,276 0,276" />
+        <Baseline points="0,270 390,270" />
+        <TextEquiv>
+          <Unicode>மிகுதி</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextEquiv>
+        <Unicode>தநிப்
+படர்
+மிகுதி</Unicode>
+      </TextEquiv>
+    </TextRegion>
+  </Page>
+</PcGts>

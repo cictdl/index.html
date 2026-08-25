@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='utf-8'?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+  <Metadata>
+    <Creator>Central Institute of Classical Tamil (CICT)</Creator>
+    <Created>2026-07-01T00:00:00</Created>
+    <LastChange>2026-07-01T00:00:00</LastChange>
+    <Comments>CICT-PLM-GT-115 | Tirukkural Adhikaram 115 (அலரறிவுறுத்தல் / The Announcement of the Rumour) | kurals 1141-1150 | section இன்பம் / subsection களவியல் | DOI 10.5281/zenodo.21095615 | record https://zenodo.org/records/21095615 | manuscriptId 20037_117 | NOTE: line Coords are band-derived full-width bounding boxes (approximate); transcription text is exact ground truth.</Comments>
+  </Metadata>
+  <Page imageFilename="20037_117.jpg" imageWidth="2831" imageHeight="470">
+    <ReadingOrder>
+      <OrderedGroup id="g0">
+        <RegionRefIndexed index="0" regionRef="r_main" />
+        <RegionRefIndexed index="1" regionRef="r_margin" />
+      </OrderedGroup>
+    </ReadingOrder>
+    <TextRegion id="r_main" type="paragraph" custom="readingOrder {index:0;}">
+      <Coords points="0,103 2831,103 2831,432 0,432" />
+      <TextLine id="r_main_l1" custom="readingOrder {index:0;} ilakkanam {kural:1141;verification:verified;words:அலர்=தொழிற்பெயர்|எழ=வினையெச்சம்|ஆர்=உரிச்சொல்|உயிர்=பொருட்பெயர்|நிற்கும்=தெரிநிலைவினைமுற்று|அது=சுட்டுப்பெயர்|ஐ=வேற்றுமைஉருபு|பலர்=பொருட்பெயர்|அறியார்=எதிர்மறைவினைமுற்று|பாக்கியத்து=பண்புப்பெயர்|ஆல்=வேற்றுமைஉருபு;togai:ஆருயிர்=பண்புத்தொகை;edugai:ல;eetruseer:காசு;}" comments="kural=1141; numeral=௧">
+        <Coords points="0,103 2831,103 2831,136 0,136" />
+        <Baseline points="0,130 2831,130" />
+        <TextEquiv>
+          <Unicode>அலரெழ வாருயிர் நிற்கும தநைப் பலாறியார் பாக்கியத் தால்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l2" custom="readingOrder {index:1;} ilakkanam {kural:1144;verification:verified;words:கவ்வை=தொழிற்பெயர்|ஆல்=வேற்றுமைஉருபு|கவ்விது=குறிப்புவினைமுற்று|காமம்=பண்புப்பெயர்|அது=சுட்டுப்பெயர்|இன்று=எதிர்மறைஇடை|ஏல்=அசைநிலை|தவ்வென்னும்=பெயரெச்சம்|தன்மை=பண்புப்பெயர்|இழந்து=வினையெச்சம்;ani:சொற்பொருட்பின்வருநிலை;edugai:வ்;eetruseer:நாள்;}" comments="kural=1144; numeral=௨">
+        <Coords points="0,136 2831,136 2831,169 0,169" />
+        <Baseline points="0,163 2831,163" />
+        <TextEquiv>
+          <Unicode>கெள்வையாற் கவ்விது காமம துவின்றேற்ற வ்வெந்நுந் தண்மை யிழந்து</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l3" custom="readingOrder {index:2;} ilakkanam {kural:1143;verification:verified;words:உறாஅது=எதிர்மறைவினைமுற்று|ஓ=ஓகாரம்|ஊர்=இடப்பெயர்|அறிந்த=பெயரெச்சம்|கெளவை=தொழிற்பெயர்|அது=சுட்டுப்பெயர்|ஐ=வேற்றுமைஉருபு|பெறாஅது=எதிர்மறைவினையெச்சம்|பெற்று=வினையெச்சம்|அன்ன=உவமைஉருபு|நீர்த்து=குறிப்புவினைமுற்று;ani:முரண்;edugai:ற;eetruseer:காசு;}" comments="kural=1143; numeral=௩">
+        <Coords points="0,169 2831,169 2831,202 0,202" />
+        <Baseline points="0,196 2831,196" />
+        <TextEquiv>
+          <Unicode>உறாதொ வூறிந்தக் கெளவை யதநைப் பெறாது பெற்றன்ன நீத்து</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l4" custom="readingOrder {index:3;} ilakkanam {kural:1142;verification:verified;words:மலர்=பொருட்பெயர்|அன்ன=உவமைஉருபு|கண்ணாள்=வினையாலணையும்பெயர்|அருமை=பண்புப்பெயர்|அறியாது=எதிர்மறைவினையெச்சம்|அலர்=தொழிற்பெயர்|எமக்கு=சுட்டுப்பெயர்|கு=வேற்றுமைஉருபு|ஈந்தது=வினையாலணையும்பெயர்|இவ்=சுட்டுப்பெயர்|ஊர்=இடப்பெயர்;togai:மலரன்ன=உவமைத்தொகை;ani:உவமை;edugai:ல;eetruseer:நாள்;}" comments="kural=1142; numeral=௪">
+        <Coords points="0,202 2831,202 2831,235 0,235" />
+        <Baseline points="0,229 2831,229" />
+        <TextEquiv>
+          <Unicode>மலரந்ந கண்ணாள் ரிமை யறியார் அலரெமக்கியந்ததிவ் வூர்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l5" custom="readingOrder {index:4;} ilakkanam {kural:1145;verification:verified;words:களி=வினையெச்சம்|தொறும்=அசைநிலை|கள்=பொருட்பெயர்|உண்டல்=தொழிற்பெயர்|வேட்டல்=தொழிற்பெயர்|அற்று=அசைநிலை|ஆல்=அசைநிலை|காமம்=பண்புப்பெயர்|வெளிப்படும்=பெயரெச்சம்|தோறும்=அசைநிலை|இனிது=குறிப்புவினைமுற்று;togai:கள்ளுண்டல்=வேற்றுமைத்தொகை;ani:எடுத்துக்காட்டுவமை;edugai:ள;eetruseer:காசு;}" comments="kural=1145; numeral=௫">
+        <Coords points="0,235 2831,235 2831,268 0,268" />
+        <Baseline points="0,262 2831,262" />
+        <TextEquiv>
+          <Unicode>களித்தோறுங் கள்ளுண்டல் வேட்டத்தாற் காமம் வெளிப்படுந் தோறுமி ளிது</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l6" custom="readingOrder {index:5;} ilakkanam {kural:1149;verification:verified;words:அலர்=தொழிற்பெயர்|நாண=வினையெச்சம்|ஒல்வது=வினையாலணையும்பெயர்|ஓ=ஓகாரம்|அஞ்சல்=எதிர்மறைவினைமுற்று|ஓம்பு=ஏவல்வினைமுற்று|என்றார்=தெரிநிலைவினைமுற்று|பலர்=பொருட்பெயர்|நாண=வினையெச்சம்|நீத்த=பெயரெச்சம்|கடை=காலப்பெயர்;ani:சொற்பொருட்பின்வருநிலை;edugai:ல;eetruseer:மலர்;}" comments="kural=1149; numeral=௬">
+        <Coords points="0,268 2831,268 2831,301 0,301" />
+        <Baseline points="0,295 2831,295" />
+        <TextEquiv>
+          <Unicode>அலர்நாண வெல்வதோர் வஞ்சலோம்பெ ன்றார் பலநாண நீத்தக் கடை</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l7" custom="readingOrder {index:6;} ilakkanam {kural:1146;verification:verified;words:கண்டது=வினையாலணையும்பெயர்|மன்=அசைநிலை|உம்=உம்மை|ஒரு=எண்ணுப்பெயர்|நாள்=காலப்பெயர்|அலர்=தொழிற்பெயர்|மன்=அசைநிலை|உம்=உம்மை|திங்கள்=பொருட்பெயர்|ஐ=வேற்றுமைஉருபு|பாம்பு=பொருட்பெயர்|கொண்டு=வினையெச்சம்|அற்று=அசைநிலை;togai:ஒருநாள்=பண்புத்தொகை;ani:உவமை;edugai:ண்/ங்;eetruseer:காசு;}" comments="kural=1146; numeral=௭">
+        <Coords points="0,301 2831,301 2831,334 0,334" />
+        <Baseline points="0,328 2831,328" />
+        <TextEquiv>
+          <Unicode>கண்டது மன்னுமொ ருநாள லமன்னுந் திங்கழைப் பாம்புகொண் டற்று</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l8" custom="readingOrder {index:7;} ilakkanam {kural:1150;verification:verified;words:தாம்=சுட்டுப்பெயர்|வேண்டின்=வினையெச்சம்|நல்குவர்=தெரிநிலைவினைமுற்று|காதலர்=வினையாலணையும்பெயர்|யாம்=சுட்டுப்பெயர்|வேண்டும்=பெயரெச்சம்|கெளவை=தொழிற்பெயர்|எடுக்கும்=தெரிநிலைவினைமுற்று|இவ்=சுட்டுப்பெயர்|ஊர்=இடப்பெயர்;edugai:ா(ம்)/ெ(ள);eetruseer:நாள்;}" comments="kural=1150; numeral=௮">
+        <Coords points="0,334 2831,334 2831,367 0,367" />
+        <Baseline points="0,361 2831,361" />
+        <TextEquiv>
+          <Unicode>தாம்வேண்ட் நல்குவர் காதலர் யாம்வேண்டுங் கெளவை யெடுக்குமி வ் வூர்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l9" custom="readingOrder {index:8;} ilakkanam {kural:1147;verification:verified;words:ஊரவர்=வினையாலணையும்பெயர்|கெளவை=தொழிற்பெயர்|எரு=பொருட்பெயர்|ஆக=வினையெச்சம்|அன்னை=பொருட்பெயர்|சொல்=தொழிற்பெயர்|நீர்=பொருட்பெயர்|ஆக=வினையெச்சம்|நீளும்=பெயரெச்சம்|இந்=சுட்டுப்பெயர்|நோய்=பண்புப்பெயர்;togai:அன்னைசொல்=வேற்றுமைத்தொகை;ani:உருவகம்;edugai:ர;eetruseer:காசு;}" comments="kural=1147; numeral=௯">
+        <Coords points="0,367 2831,367 2831,400 0,400" />
+        <Baseline points="0,394 2831,394" />
+        <TextEquiv>
+          <Unicode>ஊரவர் கெளவை யெருவாக வந்நைசொல் நீராக நீளுமிந் நோய்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l10" custom="readingOrder {index:9;} ilakkanam {kural:1148;verification:verified;words:நெய்=பொருட்பெயர்|ஆல்=வேற்றுமைஉருபு|எரி=பொருட்பெயர்|நுதுப்பேம்=தெரிநிலைவினைமுற்று|என்று=வினையெச்சம்|அற்று=அசைநிலை|ஆல்=அசைநிலை|கெளவை=தொழிற்பெயர்|ஆல்=வேற்றுமைஉருபு|காமம்=பண்புப்பெயர்|நுதுப்பேம்=தெரிநிலைவினைமுற்று|எனல்=தொழிற்பெயர்;togai:எரிநுதுப்பேம்=வேற்றுமைத்தொகை;ani:எடுத்துக்காட்டுவமை;edugai:ய்/ா;eetruseer:காசு;}" comments="kural=1148; numeral=௰">
+        <Coords points="0,400 2831,400 2831,432 0,432" />
+        <Baseline points="0,426 2831,426" />
+        <TextEquiv>
+          <Unicode>நெய்யாலெ ரிநுதுயப்பொமெ ன்றற்றாற் கெளவையாற்  காமந் துயப்பொமெ நல்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextEquiv>
+        <Unicode>அலரெழ வாருயிர் நிற்கும தநைப் பலாறியார் பாக்கியத் தால்
+கெள்வையாற் கவ்விது காமம துவின்றேற்ற வ்வெந்நுந் தண்மை யிழந்து
+உறாதொ வூறிந்தக் கெளவை யதநைப் பெறாது பெற்றன்ன நீத்து
+மலரந்ந கண்ணாள் ரிமை யறியார் அலரெமக்கியந்ததிவ் வூர்
+களித்தோறுங் கள்ளுண்டல் வேட்டத்தாற் காமம் வெளிப்படுந் தோறுமி ளிது
+அலர்நாண வெல்வதோர் வஞ்சலோம்பெ ன்றார் பலநாண நீத்தக் கடை
+கண்டது மன்னுமொ ருநாள லமன்னுந் திங்கழைப் பாம்புகொண் டற்று
+தாம்வேண்ட் நல்குவர் காதலர் யாம்வேண்டுங் கெளவை யெடுக்குமி வ் வூர்
+ஊரவர் கெளவை யெருவாக வந்நைசொல் நீராக நீளுமிந் நோய்
+நெய்யாலெ ரிநுதுயப்பொமெ ன்றற்றாற் கெளவையாற்  காமந் துயப்பொமெ நல்</Unicode>
+      </TextEquiv>
+    </TextRegion>
+    <TextRegion id="r_margin" type="marginalia" custom="readingOrder {index:1;}">
+      <Coords points="0,103 396,103 396,432 0,432" />
+      <TextLine id="r_margin_l4" custom="readingOrder {index:3;}" comments="marginal cell @ L4">
+        <Coords points="0,202 396,202 396,235 0,235" />
+        <Baseline points="0,229 396,229" />
+        <TextEquiv>
+          <Unicode>அலரறி</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_margin_l5" custom="readingOrder {index:4;}" comments="marginal cell @ L5">
+        <Coords points="0,235 396,235 396,268 0,268" />
+        <Baseline points="0,262 396,262" />
+        <TextEquiv>
+          <Unicode>வுறுத்தல்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_margin_l7" custom="readingOrder {index:6;}" comments="marginal cell @ L7">
+        <Coords points="0,301 396,301 396,334 0,334" />
+        <Baseline points="0,328 396,328" />
+        <TextEquiv>
+          <Unicode>௭௰அ</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextEquiv>
+        <Unicode>அலரறி
+வுறுத்தல்
+௭௰அ</Unicode>
+      </TextEquiv>
+    </TextRegion>
+  </Page>
+</PcGts>

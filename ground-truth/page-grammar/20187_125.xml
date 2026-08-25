@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='utf-8'?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+  <Metadata>
+    <Creator>Central Institute of Classical Tamil (CICT)</Creator>
+    <Created>2026-07-16T00:00:00</Created>
+    <LastChange>2026-07-16T00:00:00</LastChange>
+    <Comments>CICT-PLM-GT-130 | Tirukkural Adhikaram 130 (நெஞ்சொடுபுலத்தல் / Expostulation with the Heart) | kurals 1291-1300 | section இன்பம் / subsection கற்பியல் | DOI 10.5281/zenodo.21336679 | record https://zenodo.org/records/21336679 | manuscriptId 20187_125 | NOTE: line Coords are band-derived full-width bounding boxes (approximate); transcription text is exact ground truth.</Comments>
+  </Metadata>
+  <Page imageFilename="20187_125.jpg" imageWidth="2921" imageHeight="533">
+    <ReadingOrder>
+      <OrderedGroup id="g0">
+        <RegionRefIndexed index="0" regionRef="r_main" />
+        <RegionRefIndexed index="1" regionRef="r_margin" />
+      </OrderedGroup>
+    </ReadingOrder>
+    <TextRegion id="r_main" type="paragraph" custom="readingOrder {index:0;}">
+      <Coords points="0,139 2921,139 2921,453 0,453" />
+      <TextLine id="r_main_l1" custom="readingOrder {index:0;} ilakkanam {kural:1291;verification:verified;words:அவர்=சுட்டுப்பெயர்|நெஞ்சு=பொருட்பெயர்|அவர்க்கு=சுட்டுப்பெயர்|காதல்=பண்புப்பெயர்|கண்டு=வினையெச்சம்|உம்=உம்மை|எவன்=வினாஇடை|நெஞ்சே=பொருட்பெயர்|நீ=பொருட்பெயர்|எமக்கு=பொருட்பெயர்|ஆகா=எதிர்மறைபெயரெச்சம்|அது=வினையாலணையும்பெயர்;togai:அவர்நெஞ்சு=வேற்றுமைத்தொகை;eetruseer:தது;}" comments="kural=1291; numeral=௧">
+        <Coords points="0,139 2921,139 2921,170 0,170" />
+        <Baseline points="0,164 2921,164" />
+        <TextEquiv>
+          <Unicode>அவர்நெஞ் சவர்க்காதல் கண்டு மெவந்நெஞ்செ நீயெமக் காக த்து</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l2" custom="readingOrder {index:1;} ilakkanam {kural:1292;verification:verified;words:உறாஅ=எதிர்மறைபெயரெச்சம்|அவர்=சுட்டுப்பெயர்|கண்ட=பெயரெச்சம்|கண்=காலப்பெயர்|உம்=உம்மை|அவரை=சுட்டுப்பெயர்|செறார்=எதிர்மறைவினைமுற்று|என=வினையெச்சம்|சேறி=தெரிநிலைவினைமுற்று|என்=பொருட்பெயர்|நெஞ்சு=பொருட்பெயர்;edugai:ற;eetruseer:நெஞ்சு;}" comments="kural=1292; numeral=௨">
+        <Coords points="0,170 2921,170 2921,201 0,201" />
+        <Baseline points="0,196 2921,196" />
+        <TextEquiv>
+          <Unicode>உறாஅ தவர்க்கண்ட கண்ணு மவரைச் செறாஅரெனச் சேறி நெஞ்சு</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l3" custom="readingOrder {index:2;} ilakkanam {kural:1293;verification:verified;words:கெட்டார்க்கு=வினையாலணையும்பெயர்|நட்டார்=வினையாலணையும்பெயர்|இல்=எதிர்மறைஇடை|என்பது=வினையாலணையும்பெயர்|ஓ=ஓகாரம்|நெஞ்சே=பொருட்பெயர்|நீ=பொருட்பெயர்|பெட்டாங்கு=வினையெச்சம்|அவர்=சுட்டுப்பெயர்|பின்=இடப்பெயர்|செலல்=தொழிற்பெயர்;togai:அவர்பின்=வேற்றுமைத்தொகை;edugai:ட்;eetruseer:செலல்;}" comments="kural=1293; numeral=௩">
+        <Coords points="0,201 2921,201 2921,233 0,233" />
+        <Baseline points="0,227 2921,227" />
+        <TextEquiv>
+          <Unicode>கெட்டார்க்கு நட்டாரில் லென்பதெ நெஞ்செநீ வெட்டாங் கவர்பின்  செலல்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l4" custom="readingOrder {index:3;} ilakkanam {kural:1294;verification:verified;words:இனி=காலப்பெயர்|அன்ன=சுட்டுப்பெயர்|நின்னொடு=பொருட்பெயர்|சூழ்வார்=வினையாலணையும்பெயர்|யார்=வினாப்பெயர்|நெஞ்சே=பொருட்பெயர்|துனி=பொருட்பெயர்|செய்து=வினையெச்சம்|துவ்வாய்=எதிர்மறைவினைமுற்று|காண்=அசைநிலை|மற்று=அசைநிலை;edugai:னி;eetruseer:மற்று;}" comments="kural=1294; numeral=௪">
+        <Coords points="0,233 2921,233 2921,264 0,264" />
+        <Baseline points="0,259 2921,259" />
+        <TextEquiv>
+          <Unicode>இநியந்ந நின்னோடு சூழ்வார்யார் நெஞ்செ துநிசெய்து துவ்வாய்காண் மற்று</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l5" custom="readingOrder {index:4;} ilakkanam {kural:1297;verification:verified;words:நாண்=பண்புப்பெயர்|உம்=உம்மை|மறந்தேன்=தெரிநிலைவினைமுற்று|அவர்=சுட்டுப்பெயர்|மற=வினையெச்சம்|கல்லா=எதிர்மறைபெயரெச்சம்|என்=பொருட்பெயர்|மாணா=எதிர்மறைபெயரெச்சம்|மட=பண்புப்பெயர்|நெஞ்சில்=பொருட்பெயர்|பட்டு=வினையெச்சம்;togai:மடநெஞ்சிற்=பண்புத்தொகை;edugai:ண;eetruseer:பட்டு;}" comments="kural=1297; numeral=௫">
+        <Coords points="0,264 2921,264 2921,296 0,296" />
+        <Baseline points="0,290 2921,290" />
+        <TextEquiv>
+          <Unicode>நாணு மறந்தேந அவர்மறக் கல்லாவென் மாணா மடநெஞ்சிற் பட்டு</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l6" custom="readingOrder {index:5;} ilakkanam {kural:1298;verification:verified;words:எள்ளின்=வினையெச்சம்|இளிவாம்=தெரிநிலைவினைமுற்று|என்று=வினையெச்சம்|எண்ணி=வினையெச்சம்|அவர்=சுட்டுப்பெயர்|திறம்=பண்புப்பெயர்|உள்ளும்=தெரிநிலைவினைமுற்று|உயிர்க்கு=பொருட்பெயர்|காதல்=பண்புப்பெயர்|நெஞ்சு=பொருட்பெயர்;togai:அவர்திறம்=வேற்றுமைத்தொகை;edugai:ள்;eetruseer:நெஞ்சு;}" comments="kural=1298; numeral=௬">
+        <Coords points="0,296 2921,296 2921,327 0,327" />
+        <Baseline points="0,321 2921,321" />
+        <TextEquiv>
+          <Unicode>எள்ளி னிழிவாமென் றெண்ணி யவர்திற முள்ளு முயிர்க்காத நெஞ்சு</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l7" custom="readingOrder {index:6;} ilakkanam {kural:1299;verification:verified;words:துன்பத்திற்கு=பண்புப்பெயர்|யார்=வினாப்பெயர்|ஏ=ஏகாரம்|துணையாவார்=வினையாலணையும்பெயர்|தாம்=பொருட்பெயர்|உடைய=பெயரெச்சம்|நெஞ்சம்=பொருட்பெயர்|துணையல்=எதிர்மறைவினையெச்சம்|வழி=காலப்பெயர்;eetruseer:வழி;}" comments="kural=1299; numeral=௭">
+        <Coords points="0,327 2921,327 2921,358 0,358" />
+        <Baseline points="0,353 2921,353" />
+        <TextEquiv>
+          <Unicode>துன்பத்திற் கியாரெ துணையாவார் தம்முடைய நெஞ்சந் துணையல் வழி</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l8" custom="readingOrder {index:7;} ilakkanam {kural:1295;verification:verified;words:பெறாஅமை=தொழிற்பெயர்|அஞ்சும்=தெரிநிலைவினைமுற்று|பெறின்=வினையெச்சம்|பிரிவு=தொழிற்பெயர்|அஞ்சும்=தெரிநிலைவினைமுற்று|அறாஅ=எதிர்மறைபெயரெச்சம்|இடும்பைத்து=குறிப்புவினைமுற்று|என்=பொருட்பெயர்|நெஞ்சு=பொருட்பெயர்;ani:சொற்பொருட்பின்வருநிலை;edugai:ற;eetruseer:நெஞ்சு;}" comments="kural=1295; numeral=௮">
+        <Coords points="0,358 2921,358 2921,390 0,390" />
+        <Baseline points="0,384 2921,384" />
+        <TextEquiv>
+          <Unicode>பெறாஅமை யஞ்சும் பெறிற்பிரி வஞ்சு மறாஅ விடும்பைக்கெந் நெஞ்சு</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l9" custom="readingOrder {index:8;} ilakkanam {kural:1296;verification:verified;words:தனி=பண்புப்பெயர்|ஏ=ஏகாரம்|இருந்து=வினையெச்சம்|நினைத்தக்கால்=வினையெச்சம்|என்னை=பொருட்பெயர்|தினிய=வினையெச்சம்|இருந்தது=தெரிநிலைவினைமுற்று|என்=பொருட்பெயர்|நெஞ்சு=பொருட்பெயர்;ani:உவமை;edugai:னி;eetruseer:நெஞ்சு;}" comments="kural=1296; numeral=௯">
+        <Coords points="0,390 2921,390 2921,421 0,421" />
+        <Baseline points="0,415 2921,415" />
+        <TextEquiv>
+          <Unicode>தநியெ யிருந்து நிநைத்தக்கா லெந்நைத் திநிய விருந்ததெந் நெஞ்சு</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l10" custom="readingOrder {index:9;} ilakkanam {kural:1300;verification:verified;words:தஞ்சம்=பண்புப்பெயர்|தமர்=பொருட்பெயர்|அல்லர்=எதிர்மறைவினைமுற்று|ஏதிலார்=வினையாலணையும்பெயர்|தாம்=பொருட்பெயர்|உடைய=பெயரெச்சம்|நெஞ்சம்=பொருட்பெயர்|தமரல்=எதிர்மறைவினையெச்சம்|வழி=காலப்பெயர்;ani:சொற்பொருட்பின்வருநிலை;edugai:ஞ;eetruseer:வழி;}" comments="kural=1300; numeral=௰">
+        <Coords points="0,421 2921,421 2921,453 0,453" />
+        <Baseline points="0,447 2921,447" />
+        <TextEquiv>
+          <Unicode>தஞ்சந் தமரல்ல ரேதிலார் தாமுடைய நெஞ்சந் தமரல் வழி</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextEquiv>
+        <Unicode>அவர்நெஞ் சவர்க்காதல் கண்டு மெவந்நெஞ்செ நீயெமக் காக த்து
+உறாஅ தவர்க்கண்ட கண்ணு மவரைச் செறாஅரெனச் சேறி நெஞ்சு
+கெட்டார்க்கு நட்டாரில் லென்பதெ நெஞ்செநீ வெட்டாங் கவர்பின்  செலல்
+இநியந்ந நின்னோடு சூழ்வார்யார் நெஞ்செ துநிசெய்து துவ்வாய்காண் மற்று
+நாணு மறந்தேந அவர்மறக் கல்லாவென் மாணா மடநெஞ்சிற் பட்டு
+எள்ளி னிழிவாமென் றெண்ணி யவர்திற முள்ளு முயிர்க்காத நெஞ்சு
+துன்பத்திற் கியாரெ துணையாவார் தம்முடைய நெஞ்சந் துணையல் வழி
+பெறாஅமை யஞ்சும் பெறிற்பிரி வஞ்சு மறாஅ விடும்பைக்கெந் நெஞ்சு
+தநியெ யிருந்து நிநைத்தக்கா லெந்நைத் திநிய விருந்ததெந் நெஞ்சு
+தஞ்சந் தமரல்ல ரேதிலார் தாமுடைய நெஞ்சந் தமரல் வழி</Unicode>
+      </TextEquiv>
+    </TextRegion>
+    <TextRegion id="r_margin" type="marginalia" custom="readingOrder {index:1;}">
+      <Coords points="0,139 409,139 409,453 0,453" />
+      <TextLine id="r_margin_l4" custom="readingOrder {index:3;}" comments="marginal cell @ L4">
+        <Coords points="0,233 409,233 409,264 0,264" />
+        <Baseline points="0,259 409,259" />
+        <TextEquiv>
+          <Unicode>நெஞ்சொ</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_margin_l5" custom="readingOrder {index:4;}" comments="marginal cell @ L5">
+        <Coords points="0,264 409,264 409,296 0,296" />
+        <Baseline points="0,290 409,290" />
+        <TextEquiv>
+          <Unicode>டுபுலாத்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_margin_l6" custom="readingOrder {index:5;}" comments="marginal cell @ L6">
+        <Coords points="0,296 409,296 409,327 0,327" />
+        <Baseline points="0,321 409,321" />
+        <TextEquiv>
+          <Unicode>தல்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_margin_l8" custom="readingOrder {index:7;}" comments="marginal cell @ L8">
+        <Coords points="0,358 409,358 409,390 0,390" />
+        <Baseline points="0,384 409,384" />
+        <TextEquiv>
+          <Unicode>௮௰௨</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextEquiv>
+        <Unicode>நெஞ்சொ
+டுபுலாத்
+தல்
+௮௰௨</Unicode>
+      </TextEquiv>
+    </TextRegion>
+  </Page>
+</PcGts>

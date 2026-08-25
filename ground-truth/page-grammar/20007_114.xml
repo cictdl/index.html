@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='utf-8'?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+  <Metadata>
+    <Creator>Central Institute of Classical Tamil (CICT)</Creator>
+    <Created>2026-07-01T00:00:00</Created>
+    <LastChange>2026-07-01T00:00:00</LastChange>
+    <Comments>CICT-PLM-GT-112 | Tirukkural Adhikaram 112 (நலம்புனைந்துரைத்தல் / The Praise of Her Beauty) | kurals 1111-1120 | section இன்பம் / subsection களவியல் | DOI 10.5281/zenodo.21095337 | record https://zenodo.org/records/21095337 | manuscriptId 20007_114 | NOTE: line Coords are band-derived full-width bounding boxes (approximate); transcription text is exact ground truth.</Comments>
+  </Metadata>
+  <Page imageFilename="20007_114.jpg" imageWidth="2801" imageHeight="518">
+    <ReadingOrder>
+      <OrderedGroup id="g0">
+        <RegionRefIndexed index="0" regionRef="r_main" />
+        <RegionRefIndexed index="1" regionRef="r_margin" />
+      </OrderedGroup>
+    </ReadingOrder>
+    <TextRegion id="r_main" type="paragraph" custom="readingOrder {index:0;}">
+      <Coords points="0,130 2801,130 2801,477 0,477" />
+      <TextLine id="r_main_l1" custom="readingOrder {index:0;} ilakkanam {kural:1118;verification:verified;words:மாதர்=பொருட்பெயர்|முகம்=சினைப்பெயர்|போல்=உவமைஉருபு|ஒளி=பண்புப்பெயர்|விட=வினையெச்சம்|வல்லை=குறிப்புவினைமுற்று|ஏல்=அசைநிலை|காதலை=பண்புப்பெயர்|வாழி=வியங்கோள்வினைமுற்று|மதி=பொருட்பெயர்;togai:ஒளிவிட=வேற்றுமைத்தொகை;ani:உவமை,பிறிதுமொழிதல்;edugai:த;eetruseer:மதி;}" comments="kural=1118; numeral=௧">
+        <Coords points="0,130 2801,130 2801,164 0,164" />
+        <Baseline points="0,158 2801,158" />
+        <TextEquiv>
+          <Unicode>மாதர் முகம்போலோ ளிவிட வல்லையேற் காதலை வாழி மதி</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l2" custom="readingOrder {index:1;} ilakkanam {kural:1119;verification:verified;words:மலர்=பொருட்பெயர்|அன்ன=உவமைஉருபு|கண்ணாள்=வினையாலணையும்பெயர்|முகம்=சினைப்பெயர்|ஒத்தி=தெரிநிலைவினைமுற்று|ஆயின்=வினையெச்சம்|பலர்=எண்ணுப்பெயர்|காண=வினையெச்சம்|தோன்றல்=எதிர்மறைவினைமுற்று|மதி=பொருட்பெயர்;togai:மலரன்ன=உவமைத்தொகை|கண்ணாள்=அன்மொழித்தொகை|முகமொத்தி=வேற்றுமைத்தொகை;ani:உவமை,பிறிதுமொழிதல்;edugai:ல;eetruseer:மதி;}" comments="kural=1119; numeral=௨">
+        <Coords points="0,164 2801,164 2801,199 0,199" />
+        <Baseline points="0,193 2801,193" />
+        <TextEquiv>
+          <Unicode>மலரந்ந கண்ணா முகமொத்தி யாயிற் பலர்காணத் தோன்றன் மதி</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l3" custom="readingOrder {index:2;} ilakkanam {kural:1117;verification:verified;words:அறுவாய்=பண்புப்பெயர்|நிறைந்த=பெயரெச்சம்|அவிர்=உரிச்சொல்|மதி=பொருட்பெயர்|கு=வேற்றுமைஉருபு|க்குப்=வேற்றுமைஉருபு|போல=உவமைஉருபு|மறு=பண்புப்பெயர்|உண்டு=குறிப்புவினைமுற்று|ஓ=ஓகாரம்|மாதர்=பொருட்பெயர்|முகத்து=சினைப்பெயர்;togai:அவிர்மதிக்குப்=பண்புத்தொகை;ani:உவமை,வஞ்சப்புகழ்ச்சி;edugai:று;eetruseer:காசு;}" comments="kural=1117; numeral=௩">
+        <Coords points="0,199 2801,199 2801,234 0,234" />
+        <Baseline points="0,227 2801,227" />
+        <TextEquiv>
+          <Unicode>அறிவாய் நிறைந்த வவிர்மதிக்குப் போல மறுவுண்டொ மாதர் முகத்து</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l4" custom="readingOrder {index:3;} ilakkanam {kural:1116;verification:verified;words:மதி=பொருட்பெயர்|உம்=உம்மை|மடந்தை=பொருட்பெயர்|முகன்=சினைப்பெயர்|உம்=உம்மை|அறியா=எதிர்மறைவினையெச்சம்|பதி=இடப்பெயர்|இன்=வேற்றுமைஉருபு|கலங்கிய=பெயரெச்சம்|மீன்=பொருட்பெயர்;ani:உவமை,பிறிதுமொழிதல்;edugai:தி;eetruseer:காசு;}" comments="kural=1116; numeral=௪">
+        <Coords points="0,234 2801,234 2801,268 0,268" />
+        <Baseline points="0,262 2801,262" />
+        <TextEquiv>
+          <Unicode>மதியும் மடந்தை முகமும றியாப் பதியிற் கலங்கிய மீன்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l5" custom="readingOrder {index:4;} ilakkanam {kural:1120;verification:verified;words:அனிச்சம்=பொருட்பெயர்|உம்=உம்மை|அன்னம்=பொருட்பெயர்|அத்து=சாரியை|இன்=வேற்றுமைஉருபு|தூவி=சினைப்பெயர்|உம்=உம்மை|மாதர்=பொருட்பெயர்|அடி=சினைப்பெயர்|கு=வேற்றுமைஉருபு|நெருஞ்சி=பொருட்பெயர்|பழம்=பொருட்பெயர்;togai:நெருஞ்சிப்=பண்புத்தொகை;ani:உவமை,உயர்வுநவிற்சி;edugai:னி/டி;eetruseer:மலர்;}" comments="kural=1120; numeral=௫">
+        <Coords points="0,268 2801,268 2801,303 0,303" />
+        <Baseline points="0,297 2801,297" />
+        <TextEquiv>
+          <Unicode>அநிச்சமுமஅ ந்நத்தின் றூவியு மாதர டிக்கு நெரிஞ்சிப் பளம்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l6" custom="readingOrder {index:5;} ilakkanam {kural:1115;verification:verified;words:அனிச்சம்=பொருட்பெயர்|பூ=பொருட்பெயர்|கால்=சினைப்பெயர்|களையாள்=எதிர்மறைவினைமுற்று|பெய்தாள்=தெரிநிலைவினைமுற்று|நுகப்பு=சினைப்பெயர்|கு=வேற்றுமைஉருபு|நல்ல=பண்புப்பெயர்|படாஅ=எதிர்மறைவினைமுற்று|பறை=பொருட்பெயர்;togai:அனிச்சப்பூக்=பண்புத்தொகை;ani:உயர்வுநவிற்சி;edugai:னி/ல்;eetruseer:மலர்;}" comments="kural=1115; numeral=௬">
+        <Coords points="0,303 2801,303 2801,338 0,338" />
+        <Baseline points="0,331 2801,331" />
+        <TextEquiv>
+          <Unicode>அநிச்சப்பூக் கால்ளையாப் பெய்தால் நுகப்பிற்கு நல்ல படா பறை</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l7" custom="readingOrder {index:6;} ilakkanam {kural:1111;verification:verified;words:நன்=பண்புப்பெயர்|நீரை=பண்புப்பெயர்|வாழி=வியங்கோள்வினைமுற்று|அனிச்சம்=பொருட்பெயர்|ஏ=அசைநிலை|நின்=சுட்டுப்பெயர்|இன்=வேற்றுமைஉருபு|உம்=உம்மை;togai:நன்னீரை=பண்புத்தொகை;ani:எடுத்துக்காட்டுவமை,உயர்வுநவிற்சி;edugai:ன்;eetruseer:மலர்;}" comments="kural=1111; numeral=௭">
+        <Coords points="0,338 2801,338 2801,372 0,372" />
+        <Baseline points="0,366 2801,366" />
+        <TextEquiv>
+          <Unicode>நந்நீரை வாழி யநிச்சமெ நின்னிலும் மெந்நீரள் யாம்வீழ் பவள்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l8" custom="readingOrder {index:7;} ilakkanam {kural:1112;verification:verified;words:மலர்=பொருட்பெயர்|காணின்=வினையெச்சம்|மையாத்தி=தெரிநிலைவினைமுற்று|நெஞ்சு=சினைப்பெயர்|ஏ=அசைநிலை|இவள்=சுட்டுப்பெயர்|கண்=சினைப்பெயர்|பலர்=எண்ணுப்பெயர்|காணும்=பெயரெச்சம்|பூ=பொருட்பெயர்|ஒக்கும்=பெயரெச்சம்|என்று=வினையெச்சம்;togai:மலர்காணின்=வேற்றுமைத்தொகை|இவள்கண்=வேற்றுமைத்தொகை;ani:உவமை,சொற்பொருட்பின்வருநிலை;edugai:ல;eetruseer:காசு;}" comments="kural=1112; numeral=௮">
+        <Coords points="0,372 2801,372 2801,407 0,407" />
+        <Baseline points="0,401 2801,401" />
+        <TextEquiv>
+          <Unicode>மலர்கானின் மையாற்றி நெஞ்செ யிவள்கண் பலர்காணும் பூவொக்குடுமென்று</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l9" custom="readingOrder {index:8;} ilakkanam {kural:1114;verification:verified;words:காணின்=வினையெச்சம்|குவளை=பொருட்பெயர்|கவிழ்ந்து=வினையெச்சம்|நிலன்=இடப்பெயர்|நோக்கும்=தெரிநிலைவினைமுற்று|மாண்=உரிச்சொல்|இழை=பொருட்பெயர்|கண்=சினைப்பெயர்|ஒவ்வேம்=எதிர்மறைவினைமுற்று|என்று=வினையெச்சம்;togai:நிலன்நோக்கும்=வேற்றுமைத்தொகை|மாணிழை=அன்மொழித்தொகை|கண்ணொவ்வேம்=வேற்றுமைத்தொகை;ani:பிறிதுமொழிதல்,உயர்வுநவிற்சி;edugai:ண;eetruseer:காசு;}" comments="kural=1114; numeral=௯">
+        <Coords points="0,407 2801,407 2801,442 0,442" />
+        <Baseline points="0,436 2801,436" />
+        <TextEquiv>
+          <Unicode>காணிற் குவளை கவிழ்ந்து நிலநொக்கும் மாணிழை கண்ணொவ்வொ மென்று</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l10" custom="readingOrder {index:9;} ilakkanam {kural:1113;verification:verified;words:முறி=பொருட்பெயர்|மேனி=சினைப்பெயர்|முத்தம்=பொருட்பெயர்|முறுவல்=பண்புப்பெயர்|வெறி=பண்புப்பெயர்|நாற்றம்=பண்புப்பெயர்|வேல்=பொருட்பெயர்|உண்=பெயரெச்சம்|கண்=சினைப்பெயர்|வேய்=பொருட்பெயர்|தோள்=சினைப்பெயர்|அவட்கு=சுட்டுப்பெயர்|கு=வேற்றுமைஉருபு;togai:முறிமேனி=உவமைத்தொகை|வெறிநாற்றம்=பண்புத்தொகை|வேலுண்கண்=உவமைத்தொகை|வேய்த்தோ=உவமைத்தொகை;ani:உருவகம,சொற்பொருட்பின்வருநிலை;edugai:று/ல்;eetruseer:காசு;}" comments="kural=1113; numeral=௰">
+        <Coords points="0,442 2801,442 2801,477 0,477" />
+        <Baseline points="0,470 2801,470" />
+        <TextEquiv>
+          <Unicode>முறிமேநி முத்த முறுவல் வெறிநாத்தம் வேலுண்கண் வேய்த்தோ ழவாக்கு</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextEquiv>
+        <Unicode>மாதர் முகம்போலோ ளிவிட வல்லையேற் காதலை வாழி மதி
+மலரந்ந கண்ணா முகமொத்தி யாயிற் பலர்காணத் தோன்றன் மதி
+அறிவாய் நிறைந்த வவிர்மதிக்குப் போல மறுவுண்டொ மாதர் முகத்து
+மதியும் மடந்தை முகமும றியாப் பதியிற் கலங்கிய மீன்
+அநிச்சமுமஅ ந்நத்தின் றூவியு மாதர டிக்கு நெரிஞ்சிப் பளம்
+அநிச்சப்பூக் கால்ளையாப் பெய்தால் நுகப்பிற்கு நல்ல படா பறை
+நந்நீரை வாழி யநிச்சமெ நின்னிலும் மெந்நீரள் யாம்வீழ் பவள்
+மலர்கானின் மையாற்றி நெஞ்செ யிவள்கண் பலர்காணும் பூவொக்குடுமென்று
+காணிற் குவளை கவிழ்ந்து நிலநொக்கும் மாணிழை கண்ணொவ்வொ மென்று
+முறிமேநி முத்த முறுவல் வெறிநாத்தம் வேலுண்கண் வேய்த்தோ ழவாக்கு</Unicode>
+      </TextEquiv>
+    </TextRegion>
+    <TextRegion id="r_margin" type="marginalia" custom="readingOrder {index:1;}">
+      <Coords points="0,130 392,130 392,477 0,477" />
+      <TextLine id="r_margin_l4" custom="readingOrder {index:3;}" comments="marginal cell @ L4">
+        <Coords points="0,234 392,234 392,268 0,268" />
+        <Baseline points="0,262 392,262" />
+        <TextEquiv>
+          <Unicode>நலம்பு</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_margin_l5" custom="readingOrder {index:4;}" comments="marginal cell @ L5">
+        <Coords points="0,268 392,268 392,303 0,303" />
+        <Baseline points="0,297 392,297" />
+        <TextEquiv>
+          <Unicode>நைந்து</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_margin_l6" custom="readingOrder {index:5;}" comments="marginal cell @ L6">
+        <Coords points="0,303 392,303 392,338 0,338" />
+        <Baseline points="0,331 392,331" />
+        <TextEquiv>
+          <Unicode>ரைத்தல்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextEquiv>
+        <Unicode>நலம்பு
+நைந்து
+ரைத்தல்</Unicode>
+      </TextEquiv>
+    </TextRegion>
+  </Page>
+</PcGts>

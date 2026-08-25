@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='utf-8'?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+  <Metadata>
+    <Creator>Central Institute of Classical Tamil (CICT)</Creator>
+    <Created>2026-06-30T00:00:00</Created>
+    <LastChange>2026-06-30T00:00:00</LastChange>
+    <Comments>CICT-PLM-GT-101 | Tirukkural Adhikaram 101 (நன்றியில்செல்வம் / Wealth Without Benefaction) | kurals 1001-1010 | section பொருள் / subsection ஒழிபியல் | DOI 10.5281/zenodo.20843035 | record https://zenodo.org/records/20843035 | manuscriptId 19897_103 | NOTE: line Coords are band-derived full-width bounding boxes (approximate); transcription text is exact ground truth.</Comments>
+  </Metadata>
+  <Page imageFilename="19897_103.jpg" imageWidth="2783" imageHeight="478">
+    <ReadingOrder>
+      <OrderedGroup id="g0">
+        <RegionRefIndexed index="0" regionRef="r_main" />
+        <RegionRefIndexed index="1" regionRef="r_margin" />
+      </OrderedGroup>
+    </ReadingOrder>
+    <TextRegion id="r_main" type="paragraph" custom="readingOrder {index:0;}">
+      <Coords points="0,89 2783,89 2783,464 0,464" />
+      <TextLine id="r_main_l1" custom="readingOrder {index:0;} ilakkanam {kural:1009;verification:verified;words:அன்பு=பண்புப்பெயர்|ஒரீஇ=வினையெச்சம்|தன்=சுட்டுப்பெயர்|செற்று=வினையெச்சம்|அறம்=பண்புப்பெயர்|நோக்காது=எதிர்மறைவினையெச்சம்|ஈட்டிய=பெயரெச்சம்|ஒள்=பண்புப்பெயர்|பொருள்=பொருட்பெயர்|கொள்வார்=தெரிநிலைவினைமுற்று|பிறர்=பொருட்பெயர்;togai:ஒண்பொருள்=பண்புத்தொகை;ani:பிறிதுமொழிதல்;edugai:ண்;eetruseer:பிறர்;}" comments="kural=1009; numeral=௧">
+        <Coords points="0,89 2783,89 2783,126 0,126" />
+        <Baseline points="0,120 2783,120" />
+        <TextEquiv>
+          <Unicode>அன்பொரிஇ தற்சேற்ற றநோக்காதீ ட்டிய வொண்பொருள் கொழ்வார் பிறர்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l2" custom="readingOrder {index:1;} ilakkanam {kural:1001;verification:verified;words:வைத்தான்=வினையாலணையும்பெயர்|வாய்=இடப்பெயர்|சான்ற=பெயரெச்சம்|பெரும்=பண்புப்பெயர்|பொருள்=பொருட்பெயர்|அஃது=சுட்டுப்பெயர்|உண்ணான்=எதிர்மறைவினைமுற்று|செத்தான்=தெரிநிலைவினைமுற்று|செய=வினையெச்சம்|கிடந்தது=வினையாலணையும்பெயர்|இல்=எதிர்மறைஇடை;togai:பெரும்பொருள்=பண்புத்தொகை;ani:வஞ்சப்புகழ்ச்சி;edugai:த்;eetruseer:பிறப்பு;}" comments="kural=1001; numeral=௨">
+        <Coords points="0,126 2783,126 2783,164 0,164" />
+        <Baseline points="0,157 2783,157" />
+        <TextEquiv>
+          <Unicode>வைத்தான்வாய் சான்ற பெரும்பொருள ஃதுண்ணான் செத்தான் செயக்கிடந்ததில்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l3" custom="readingOrder {index:2;} ilakkanam {kural:1007;verification:verified;words:அற்றார்க்கு=வினையாலணையும்பெயர்|ஒன்று=எண்ணுப்பெயர்|ஆற்றாதான்=வினையாலணையும்பெயர்|செல்வம்=பொருட்பெயர்|மிக=வினையெச்சம்|நலம்=பண்புப்பெயர்|பெற்றாள்=வினையாலணையும்பெயர்|தமியள்=குறிப்புவினைமுற்று|மூத்து=வினையெச்சம்|அற்று=உவமைஉருபு;ani:உவமை;edugai:ற்;eetruseer:தற்று;}" comments="kural=1007; numeral=௩">
+        <Coords points="0,164 2783,164 2783,201 0,201" />
+        <Baseline points="0,195 2783,195" />
+        <TextEquiv>
+          <Unicode>அற்றார்க்கொன்றா ற்றான் செல்வம் மிகநலம் பெற்றாடமியன் மூத் தற்று</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l4" custom="readingOrder {index:3;} ilakkanam {kural:1005;verification:verified;words:கொடுப்பது=வினையாலணையும்பெயர்|உம்=உம்மை|துய்ப்பது=வினையாலணையும்பெயர்|உம்=உம்மை|இல்லார்க்கு=வினையாலணையும்பெயர்|அடுக்கிய=பெயரெச்சம்|கோடி=எண்ணுப்பெயர்|உண்டு=குறிப்புவினைமுற்று|ஆயினும்=வினையெச்சம்|இல்=எதிர்மறைஇடை;ani:சொற்பொருட்பின்வருநிலை;edugai:ட்;eetruseer:இல்;}" comments="kural=1005; numeral=௪">
+        <Coords points="0,201 2783,201 2783,239 0,239" />
+        <Baseline points="0,232 2783,232" />
+        <TextEquiv>
+          <Unicode>கொடுப்பதூஉந் துய்ப்பதூஊ மில்லார்க்க டுக்கிய கோடியுண் டாயிநுமில்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l5" custom="readingOrder {index:4;} ilakkanam {kural:1003;verification:verified;words:ஈட்டம்=தொழிற்பெயர்|இவறி=வினையெச்சம்|இசை=பொருட்பெயர்|வேண்டா=எதிர்மறைபெயரெச்சம்|ஆடவர்=பொருட்பெயர்|தோற்றம்=தொழிற்பெயர்|நிலக்கு=இடப்பெயர்|பொறை=பண்புப்பெயர்;ani:உருவகம்;eetruseer:பொறை;}" comments="kural=1003; numeral=௫">
+        <Coords points="0,239 2783,239 2783,277 0,277" />
+        <Baseline points="0,270 2783,270" />
+        <TextEquiv>
+          <Unicode>ஈட்டமி வறி யிசைவேண்டா வாடவர் தோற்றநிலற்குப் பொறை</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l6" custom="readingOrder {index:5;} ilakkanam {kural:1002;verification:verified;words:பொருளான்=பொருட்பெயர்|ஆம்=தெரிநிலைவினைமுற்று|எல்லாம்=பொருட்பெயர்|என்று=வினையெச்சம்|ஈயாது=எதிர்மறைவினையெச்சம்|இவறும்=பெயரெச்சம்|மருளான்=பண்புப்பெயர்|ஆம்=தெரிநிலைவினைமுற்று|மாணா=எதிர்மறைபெயரெச்சம்|பிறப்பு=தொழிற்பெயர்;ani:வஞ்சப்புகழ்ச்சி;edugai:ரு;eetruseer:பிறப்பு;}" comments="kural=1002; numeral=௬">
+        <Coords points="0,277 2783,277 2783,314 0,314" />
+        <Baseline points="0,307 2783,307" />
+        <TextEquiv>
+          <Unicode>பொருளானாமேல்வாமொன்றீ யாவாறு மருளானா மாணாப் பிறப்பு</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l7" custom="readingOrder {index:6;} ilakkanam {kural:1004;verification:verified;words:எச்சம்=தொழிற்பெயர்|என்று=வினையெச்சம்|என்=வினாப்பெயர்|எண்ணும்=தெரிநிலைவினைமுற்று|கொல்=அசைநிலை|ஓ=ஓகாரம்|ஒருவரால்=பொருட்பெயர்|நச்ச=வினையெச்சம்|படாஅ=எதிர்மறைபெயரெச்சம்|அவன்=சுட்டுப்பெயர்;ani:வஞ்சப்புகழ்ச்சி;edugai:ச்;eetruseer:தவன்;}" comments="kural=1004; numeral=௭">
+        <Coords points="0,314 2783,314 2783,352 0,352" />
+        <Baseline points="0,345 2783,345" />
+        <TextEquiv>
+          <Unicode>எச்சமென்றெ ன்நெண்ணுங் கொல்லொ ஒருவரா நச்சப் படா தவன்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l8" custom="readingOrder {index:7;} ilakkanam {kural:1006;verification:verified;words:ஏதம்=பண்புப்பெயர்|பெரும்=பண்புப்பெயர்|செல்வம்=பொருட்பெயர்|தான்=சுட்டுப்பெயர்|துவ்வான்=எதிர்மறைவினைமுற்று|தக்கார்க்கு=வினையாலணையும்பெயர்|ஒன்று=எண்ணுப்பெயர்|ஈதல்=தொழிற்பெயர்|இயல்பு=பண்புப்பெயர்|இலா=எதிர்மறைபெயரெச்சம்|தான்=சுட்டுப்பெயர்;togai:பெருஞ்செல்வம்=பண்புத்தொகை;ani:உருவகம்;edugai:த;eetruseer:தான்;}" comments="kural=1006; numeral=௮">
+        <Coords points="0,352 2783,352 2783,389 0,389" />
+        <Baseline points="0,382 2783,382" />
+        <TextEquiv>
+          <Unicode>ஏதம் பெருஞ்செல்வந் தான்றூவான் றக்கார்க்கொன்றீ தலி யலா தான்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l9" custom="readingOrder {index:8;} ilakkanam {kural:1008;verification:verified;words:நச்ச=வினையெச்சம்|படாதவன்=வினையாலணையும்பெயர்|செல்வம்=பொருட்பெயர்|நடுவூர்=இடப்பெயர்|உள்=வேற்றுமைஉருபு|நச்சு=பொருட்பெயர்|மரம்=பொருட்பெயர்|பழுத்து=வினையெச்சம்|அற்று=உவமைஉருபு;ani:உவமை,மடக்கு;edugai:ச்;eetruseer:தற்று;}" comments="kural=1008; numeral=௯">
+        <Coords points="0,389 2783,389 2783,427 0,427" />
+        <Baseline points="0,420 2783,420" />
+        <TextEquiv>
+          <Unicode>நச்சப் படாஅதவன் செல்வம் நடுவூரின் நச்சு மரம்பழுத் தற்று</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l10" custom="readingOrder {index:9;} ilakkanam {kural:1010;verification:verified;words:சீர்=பண்புப்பெயர்|உடை=வினையாலணையும்பெயர்|செல்வர்=குறிப்புவினைமுற்று|சிறு=பண்புப்பெயர்|துனி=பண்புப்பெயர்|மாரி=பொருட்பெயர்|வறம்=பண்புப்பெயர்|கூர்ந்து=வினையெச்சம்|தனையது=சுட்டுப்பெயர்|உடைத்து=குறிப்புவினைமுற்று;togai:சிறுதுனி=பண்புத்தொகை;ani:உவமை;eetruseer:உடைத்து;}" comments="kural=1010; numeral=௰">
+        <Coords points="0,427 2783,427 2783,464 0,464" />
+        <Baseline points="0,457 2783,457" />
+        <TextEquiv>
+          <Unicode>சீருழைச் செல்வர் சிறுதுளி மாறி  வறங்கூர்ந் தநையது டைத்து</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextEquiv>
+        <Unicode>அன்பொரிஇ தற்சேற்ற றநோக்காதீ ட்டிய வொண்பொருள் கொழ்வார் பிறர்
+வைத்தான்வாய் சான்ற பெரும்பொருள ஃதுண்ணான் செத்தான் செயக்கிடந்ததில்
+அற்றார்க்கொன்றா ற்றான் செல்வம் மிகநலம் பெற்றாடமியன் மூத் தற்று
+கொடுப்பதூஉந் துய்ப்பதூஊ மில்லார்க்க டுக்கிய கோடியுண் டாயிநுமில்
+ஈட்டமி வறி யிசைவேண்டா வாடவர் தோற்றநிலற்குப் பொறை
+பொருளானாமேல்வாமொன்றீ யாவாறு மருளானா மாணாப் பிறப்பு
+எச்சமென்றெ ன்நெண்ணுங் கொல்லொ ஒருவரா நச்சப் படா தவன்
+ஏதம் பெருஞ்செல்வந் தான்றூவான் றக்கார்க்கொன்றீ தலி யலா தான்
+நச்சப் படாஅதவன் செல்வம் நடுவூரின் நச்சு மரம்பழுத் தற்று
+சீருழைச் செல்வர் சிறுதுளி மாறி  வறங்கூர்ந் தநையது டைத்து</Unicode>
+      </TextEquiv>
+    </TextRegion>
+    <TextRegion id="r_margin" type="marginalia" custom="readingOrder {index:1;}">
+      <Coords points="0,89 390,89 390,464 0,464" />
+      <TextLine id="r_margin_l4" custom="readingOrder {index:3;}" comments="marginal cell @ L4">
+        <Coords points="0,201 390,201 390,239 0,239" />
+        <Baseline points="0,232 390,232" />
+        <TextEquiv>
+          <Unicode>நன்றி</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_margin_l5" custom="readingOrder {index:4;}" comments="marginal cell @ L5">
+        <Coords points="0,239 390,239 390,277 0,277" />
+        <Baseline points="0,270 390,270" />
+        <TextEquiv>
+          <Unicode>யிற்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_margin_l6" custom="readingOrder {index:5;}" comments="marginal cell @ L6">
+        <Coords points="0,277 390,277 390,314 0,314" />
+        <Baseline points="0,307 390,307" />
+        <TextEquiv>
+          <Unicode>செல்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_margin_l7" custom="readingOrder {index:6;}" comments="marginal cell @ L7">
+        <Coords points="0,314 390,314 390,352 0,352" />
+        <Baseline points="0,345 390,345" />
+        <TextEquiv>
+          <Unicode>வம்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_margin_l8" custom="readingOrder {index:7;}" comments="marginal cell @ L8">
+        <Coords points="0,352 390,352 390,389 0,389" />
+        <Baseline points="0,382 390,382" />
+        <TextEquiv>
+          <Unicode>௭௰௧</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextEquiv>
+        <Unicode>நன்றி
+யிற்
+செல்
+வம்
+௭௰௧</Unicode>
+      </TextEquiv>
+    </TextRegion>
+  </Page>
+</PcGts>

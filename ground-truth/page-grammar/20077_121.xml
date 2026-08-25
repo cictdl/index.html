@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='utf-8'?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+  <Metadata>
+    <Creator>Central Institute of Classical Tamil (CICT)</Creator>
+    <Created>2026-07-02T00:00:00</Created>
+    <LastChange>2026-07-02T00:00:00</LastChange>
+    <Comments>CICT-PLM-GT-119 | Tirukkural Adhikaram 119 (பசப்புறுபருவரல் / The Pallor of Body) | kurals 1181-1190 | section இன்பம் / subsection கற்பியல் | DOI 10.5281/zenodo.21126105 | record https://zenodo.org/records/21126105 | manuscriptId 20077_121 | NOTE: line Coords are band-derived full-width bounding boxes (approximate); transcription text is exact ground truth.</Comments>
+  </Metadata>
+  <Page imageFilename="20077_121.jpg" imageWidth="2889" imageHeight="493">
+    <ReadingOrder>
+      <OrderedGroup id="g0">
+        <RegionRefIndexed index="0" regionRef="r_main" />
+        <RegionRefIndexed index="1" regionRef="r_margin" />
+      </OrderedGroup>
+    </ReadingOrder>
+    <TextRegion id="r_main" type="paragraph" custom="readingOrder {index:0;}">
+      <Coords points="0,108 2889,108 2889,449 0,449" />
+      <TextLine id="r_main_l1" custom="readingOrder {index:0;} ilakkanam {kural:1189;verification:verified;words:பசக்க=வியங்கோள்வினைமுற்று|மன்=அசைநிலை|பட்டாங்கு=உரிச்சொல்|என்=சுட்டுப்பெயர்|மேனி=சினைப்பெயர்|நயப்பித்தார்=வினையாலணையும்பெயர்|நல்=பண்புப்பெயர்|நிலையர்=குறிப்புவினைமுற்று|ஆவர்=தெரிநிலைவினைமுற்று|எனின்=வினையெச்சம்;edugai:ச/ட;eetruseer:காசு;}" comments="kural=1189; numeral=௧">
+        <Coords points="0,108 2889,108 2889,142 0,142" />
+        <Baseline points="0,136 2889,136" />
+        <TextEquiv>
+          <Unicode>பசக்கமற் பட்டாங்கென் மேநி நயப்பித்தார் நந்நிலையா வரெ னின்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l2" custom="readingOrder {index:1;} ilakkanam {kural:1187;verification:verified;words:புல்லி=வினையெச்சம்|கிடந்தேன்=தெரிநிலைவினைமுற்று|புடை=இடப்பெயர்|பெயர்ந்தேன்=தெரிநிலைவினைமுற்று|அவ்வளவு=காலப்பெயர்|இல்=வேற்றுமைஉருபு|அள்ளி=வினையெச்சம்|கொள்வற்று=வினையாலணையும்பெயர்|வற்று=வினையாலணையும்பெயர்|ஏ=ஏகாரம்|பசப்பு=பண்புப்பெயர்;ani:உருவகம்;edugai:ல்/ள்;eetruseer:பிறப்பு;}" comments="kural=1187; numeral=௨">
+        <Coords points="0,142 2889,142 2889,176 0,176" />
+        <Baseline points="0,170 2889,170" />
+        <TextEquiv>
+          <Unicode>புல்லிக் கிடந்தென் புடைபெயர்ந்தென வ்வளவில ள்ளிக்கொள் வற்றெ பசப்பு</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l3" custom="readingOrder {index:2;} ilakkanam {kural:1190;verification:verified;words:பசப்பு=பண்புப்பெயர்|என=வினையெச்சம்|பேர்=பொருட்பெயர்|பெறுதல்=தொழிற்பெயர்|நன்று=பண்புப்பெயர்|ஏ=ஏகாரம்|நயப்பித்தார்=வினையாலணையும்பெயர்|நல்காமை=தொழிற்பெயர்|தூற்றார்=எதிர்மறைவினைமுற்று|எனின்=வினையெச்சம்;ani:வஞ்சப்புகழ்ச்சி;edugai:ச;eetruseer:காசு;}" comments="kural=1190; numeral=௩">
+        <Coords points="0,176 2889,176 2889,211 0,211" />
+        <Baseline points="0,204 2889,204" />
+        <TextEquiv>
+          <Unicode>பசப்பெநப் பேயர்பெறுதல் நன்றெ நயப்பித்தார் நல்காமை தூற்றா ரெநின்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l4" custom="readingOrder {index:3;} ilakkanam {kural:1182;verification:verified;words:அவர்=சுட்டுப்பெயர்|தந்தார்=தெரிநிலைவினைமுற்று|என்னும்=பெயரெச்சம்|தகை=பண்புப்பெயர்|ஆல்=வேற்றுமைஉருபு|இவர்=சுட்டுப்பெயர்|தந்து=வினையெச்சம்|என்=சுட்டுப்பெயர்|மேனி=சினைப்பெயர்|மேல்=வேற்றுமைஉருபு|ஊரும்=தெரிநிலைவினைமுற்று|பசப்பு=பண்புப்பெயர்;ani:மடக்கு,உருவகம்;edugai:வ;eetruseer:பிறப்பு;}" comments="kural=1182; numeral=௪">
+        <Coords points="0,211 2889,211 2889,245 0,245" />
+        <Baseline points="0,238 2889,238" />
+        <TextEquiv>
+          <Unicode>அவர்தந்தாரெ ந்நுந் தகையால் யிவர்தந்தென் மேநிமேலூ ரும் பசப்பு</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l5" custom="readingOrder {index:4;} ilakkanam {kural:1183;verification:verified;words:சாயல்=பண்புப்பெயர்|உம்=உம்மை|நாண்=பண்புப்பெயர்|உம்=உம்மை|அவர்=சுட்டுப்பெயர்|கொண்டார்=தெரிநிலைவினைமுற்று|கைம்மாறா=தொழிற்பெயர்|நோய்=பண்புப்பெயர்|உம்=உம்மை|பசலை=பண்புப்பெயர்|உம்=உம்மை|தந்து=வினையெச்சம்;edugai:ய;eetruseer:காசு;}" comments="kural=1183; numeral=௫">
+        <Coords points="0,245 2889,245 2889,279 0,279" />
+        <Baseline points="0,272 2889,272" />
+        <TextEquiv>
+          <Unicode>சாயலும் நாணும வர்கொண்டார் கைமமாறா நோயும் பசலையுந் தந்து</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l6" custom="readingOrder {index:5;} ilakkanam {kural:1184;verification:verified;words:உள்ளுவன்=தெரிநிலைவினைமுற்று|மன்=அசைநிலை|யான்=சுட்டுப்பெயர்|உரைப்பது=வினையாலணையும்பெயர்|அவர்=சுட்டுப்பெயர்|திறம்=பண்புப்பெயர்|ஆல்=அசைநிலை|கள்ளம்=பண்புப்பெயர்|பிற=பண்புப்பெயர்|ஓ=ஓகாரம்|பசப்பு=பண்புப்பெயர்;edugai:ள்;eetruseer:பிறப்பு;}" comments="kural=1184; numeral=௬">
+        <Coords points="0,279 2889,279 2889,313 0,313" />
+        <Baseline points="0,306 2889,306" />
+        <TextEquiv>
+          <Unicode>உள்ளுவன் மன்னியானு ரைப்பத வர்திறமபாற் கள்ளம் பிறவொ பசப்பு</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l7" custom="readingOrder {index:6;} ilakkanam {kural:1185;verification:verified;words:உவக்காண்=ஏவல்வினைமுற்று|எம்=சுட்டுப்பெயர்|காதலர்=பண்புப்பெயர்|செல்வார்=தெரிநிலைவினைமுற்று|இவக்காண்=ஏவல்வினைமுற்று|என்=சுட்டுப்பெயர்|மேனி=சினைப்பெயர்|பசப்பு=பண்புப்பெயர்|ஊர்வது=வினையாலணையும்பெயர்|வது=வினையாலணையும்பெயர்;ani:மடக்கு;edugai:வ;eetruseer:பிறப்பு;}" comments="kural=1185; numeral=௭">
+        <Coords points="0,313 2889,313 2889,347 0,347" />
+        <Baseline points="0,340 2889,340" />
+        <TextEquiv>
+          <Unicode>உவக்காணென் காதலர் செல்வாரி வக்காணென் மேநி மேலூரும் பசப்பு</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l8" custom="readingOrder {index:7;} ilakkanam {kural:1188;verification:verified;words:பசந்தாள்=தெரிநிலைவினைமுற்று|இவள்=சுட்டுப்பெயர்|என்பது=வினையாலணையும்பெயர்|அல்லால்=எதிர்மறைஇடை|இவள்=சுட்டுப்பெயர்|ஐ=வேற்றுமைஉருபு|துறந்தார்=தெரிநிலைவினைமுற்று|அவர்=சுட்டுப்பெயர்|என்பார்=வினையாலணையும்பெயர்|இல்=எதிர்மறைஇடை;ani:முரண்;edugai:ச/ற;eetruseer:காசு;}" comments="kural=1188; numeral=௮">
+        <Coords points="0,347 2889,347 2889,381 0,381" />
+        <Baseline points="0,374 2889,374" />
+        <TextEquiv>
+          <Unicode>பசந்தாளி வளென்பத ல்லாலி வளைத் துறந்தார வரென்பாரில்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l9" custom="readingOrder {index:8;} ilakkanam {kural:1181;verification:verified;words:நயந்தவர்=வினையாலணையும்பெயர்|கு=வேற்றுமைஉருபு|நல்காமை=தொழிற்பெயர்|நேர்ந்தேன்=தெரிநிலைவினைமுற்று|பசந்த=பெயரெச்சம்|என்=சுட்டுப்பெயர்|பண்பு=பண்புப்பெயர்|யார்=வினாப்பெயர்|கு=வேற்றுமைஉருபு|உரைக்கு=தெரிநிலைவினைமுற்று|ஓ=ஓகாரம்|பிற=அசைநிலை;edugai:ய;eetruseer:பிறப்பு;}" comments="kural=1181; numeral=௯">
+        <Coords points="0,381 2889,381 2889,415 0,415" />
+        <Baseline points="0,408 2889,408" />
+        <TextEquiv>
+          <Unicode>நயந்தவர் நல்கை நொந்தெனப் பசந்தவென் பண்பியார்க்கு ரைக்கொ பிற</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l10" custom="readingOrder {index:9;} ilakkanam {kural:1186;verification:verified;words:விளக்கு=பொருட்பெயர்|அற்றம்=தொழிற்பெயர்|பார்க்கும்=பெயரெச்சம்|இருள்=பண்புப்பெயர்|ஏ=ஏகாரம்|போல்=உவமைஉருபு|கொண்கன்=பொருட்பெயர்|முயக்கு=தொழிற்பெயர்|அற்றம்=தொழிற்பெயர்|பார்க்கும்=தெரிநிலைவினைமுற்று|பசப்பு=பண்புப்பெயர்;ani:உவமை,மடக்கு;edugai:ள/ய;eetruseer:பிறப்பு;}" comments="kural=1186; numeral=௰">
+        <Coords points="0,415 2889,415 2889,449 0,449" />
+        <Baseline points="0,443 2889,443" />
+        <TextEquiv>
+          <Unicode>விளக்கற்றம் பார்க்குமி ருளெபோற் கொண்கன் முயக்கற்றம் பார்க்கும் பசப்பு</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextEquiv>
+        <Unicode>பசக்கமற் பட்டாங்கென் மேநி நயப்பித்தார் நந்நிலையா வரெ னின்
+புல்லிக் கிடந்தென் புடைபெயர்ந்தென வ்வளவில ள்ளிக்கொள் வற்றெ பசப்பு
+பசப்பெநப் பேயர்பெறுதல் நன்றெ நயப்பித்தார் நல்காமை தூற்றா ரெநின்
+அவர்தந்தாரெ ந்நுந் தகையால் யிவர்தந்தென் மேநிமேலூ ரும் பசப்பு
+சாயலும் நாணும வர்கொண்டார் கைமமாறா நோயும் பசலையுந் தந்து
+உள்ளுவன் மன்னியானு ரைப்பத வர்திறமபாற் கள்ளம் பிறவொ பசப்பு
+உவக்காணென் காதலர் செல்வாரி வக்காணென் மேநி மேலூரும் பசப்பு
+பசந்தாளி வளென்பத ல்லாலி வளைத் துறந்தார வரென்பாரில்
+நயந்தவர் நல்கை நொந்தெனப் பசந்தவென் பண்பியார்க்கு ரைக்கொ பிற
+விளக்கற்றம் பார்க்குமி ருளெபோற் கொண்கன் முயக்கற்றம் பார்க்கும் பசப்பு</Unicode>
+      </TextEquiv>
+    </TextRegion>
+    <TextRegion id="r_margin" type="marginalia" custom="readingOrder {index:1;}">
+      <Coords points="0,108 404,108 404,449 0,449" />
+      <TextLine id="r_margin_l4" custom="readingOrder {index:3;}" comments="marginal cell @ L4">
+        <Coords points="0,211 404,211 404,245 0,245" />
+        <Baseline points="0,238 404,238" />
+        <TextEquiv>
+          <Unicode>பசப்பு</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_margin_l5" custom="readingOrder {index:4;}" comments="marginal cell @ L5">
+        <Coords points="0,245 404,245 404,279 0,279" />
+        <Baseline points="0,272 404,272" />
+        <TextEquiv>
+          <Unicode>றுபருவ</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_margin_l6" custom="readingOrder {index:5;}" comments="marginal cell @ L6">
+        <Coords points="0,279 404,279 404,313 0,313" />
+        <Baseline points="0,306 404,306" />
+        <TextEquiv>
+          <Unicode>ரல்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_margin_l8" custom="readingOrder {index:7;}" comments="marginal cell @ L8">
+        <Coords points="0,347 404,347 404,381 0,381" />
+        <Baseline points="0,374 404,374" />
+        <TextEquiv>
+          <Unicode>௮௰</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextEquiv>
+        <Unicode>பசப்பு
+றுபருவ
+ரல்
+௮௰</Unicode>
+      </TextEquiv>
+    </TextRegion>
+  </Page>
+</PcGts>

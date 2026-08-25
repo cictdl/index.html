@@ -44,6 +44,10 @@ for k in range(s,len(det)):
 
 def linetext(l): return ((l.get("body") or "").strip()+(l.get("endChar") or "").strip()).strip()
 
+# endOfLeaf lines are editorial folio notes, not scribal text; the generator omits
+# them from the transcription, so the round-trip must compare against the same set.
+def inscribed(gid): return [l for l in SPEC[gid]["lines"] if not l.get("endOfLeaf")]
+
 # ---- validate IIIF + round-trip ----
 jbad=0; njson=0; rt_fail=0; coord_fail=0
 for jp in sorted(glob.glob(os.path.join(OUT, "iiif", "*", "manifest.json"))):
@@ -60,7 +64,7 @@ for jp in sorted(glob.glob(os.path.join(OUT, "iiif", "*", "manifest.json"))):
         annos = cv["annotations"][0]["items"]
         assert all(a["motivation"]=="supplementing" for a in annos)
         # round-trip line annotations vs source
-        src_lines = [linetext(l) for l in SPEC[gid]["lines"]]
+        src_lines = [linetext(l) for l in inscribed(gid)]
         anno_lines = [a["body"]["value"] for a in annos if "/anno/line-" in a["id"]]
         if anno_lines != src_lines:
             rt_fail += 1; print("RT MISMATCH", gid)
@@ -76,14 +80,28 @@ print(f"IIIF: {njson} manifests, {njson-jbad} structurally OK, {jbad} bad")
 print(f"Round-trip line-text mismatches: {rt_fail}")
 print(f"Coordinate out-of-bounds specimens: {coord_fail}")
 
-# ---- cross-check PAGE main-region text round-trip on a sample ----
-sample = ["CICT-PLM-GT-091","CICT-PLM-GT-100","CICT-PLM-GT-001","CICT-PLM-GT-050"]
-for gid in sample:
+# ---- cross-check PAGE region text round-trip on every specimen ----
+ns = {"p": PAGE_NS}
+page_fail = 0; page_ok = 0; page_lines = 0
+for gid in sorted(SPEC):
     msid = SPEC[gid]["manuscriptId"]
-    doc = etree.parse(os.path.join(OUT,"page",f"{msid}.xml"))
-    ns={"p":PAGE_NS}
+    doc = etree.parse(os.path.join(OUT, "page", f"{msid}.xml"))
     main = doc.find(".//p:TextRegion[@id='r_main']", ns)
     uni = [u.text or "" for u in main.findall("p:TextLine/p:TextEquiv/p:Unicode", ns)]
-    src = [linetext(l) for l in SPEC[gid]["lines"]]
-    print(f"PAGE round-trip {gid}: {'OK' if uni==src else 'MISMATCH'} ({len(uni)} lines)")
+    src = [linetext(l) for l in inscribed(gid)]
+    # marginalia, when the leaf carries any
+    mreg = doc.find(".//p:TextRegion[@id='r_margin']", ns)
+    muni = ([u.text or "" for u in mreg.findall("p:TextLine/p:TextEquiv/p:Unicode", ns)]
+            if mreg is not None else [])
+    msrc = [(l.get("leftMargin") or "").strip() for l in inscribed(gid)
+            if (l.get("leftMargin") or "").strip()]
+    if uni != src or muni != msrc:
+        page_fail += 1
+        print("PAGE MISMATCH", gid, msid,
+              "main" if uni != src else "", "margin" if muni != msrc else "")
+    else:
+        page_ok += 1
+    page_lines += len(uni) + len(muni)
+print(f"PAGE round-trip: {page_ok}/{len(SPEC)} specimens exact, "
+      f"{page_fail} mismatched ({page_lines} lines compared)")
 print("DONE")

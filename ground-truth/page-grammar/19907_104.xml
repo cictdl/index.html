@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='utf-8'?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+  <Metadata>
+    <Creator>Central Institute of Classical Tamil (CICT)</Creator>
+    <Created>2026-06-30T00:00:00</Created>
+    <LastChange>2026-06-30T00:00:00</LastChange>
+    <Comments>CICT-PLM-GT-102 | Tirukkural Adhikaram 102 (நாணுடைமை / Shame) | kurals 1011-1020 | section பொருள் / subsection ஒழிபியல் | DOI 10.5281/zenodo.20843091 | record https://zenodo.org/records/20843091 | manuscriptId 19907_104 | NOTE: line Coords are band-derived full-width bounding boxes (approximate); transcription text is exact ground truth.</Comments>
+  </Metadata>
+  <Page imageFilename="19907_104.jpg" imageWidth="2674" imageHeight="439">
+    <ReadingOrder>
+      <OrderedGroup id="g0">
+        <RegionRefIndexed index="0" regionRef="r_main" />
+        <RegionRefIndexed index="1" regionRef="r_margin" />
+      </OrderedGroup>
+    </ReadingOrder>
+    <TextRegion id="r_main" type="paragraph" custom="readingOrder {index:0;}">
+      <Coords points="0,72 2674,72 2674,431 0,431" />
+      <TextLine id="r_main_l1" custom="readingOrder {index:0;} ilakkanam {kural:1012;verification:verified;words:ஊண்=தொழிற்பெயர்|உடை=பொருட்பெயர்|எச்சம்=பொருட்பெயர்|உயிர்க்கு=பொருட்பெயர்|எல்லாம்=பண்புப்பெயர்|வேறு=பண்புப்பெயர்|அல்ல=எதிர்மறைஇடை|நாணுடைமை=பண்புப்பெயர்|மாந்தர்=பொருட்பெயர்|சிறப்பு=பண்புப்பெயர்;togai:ஊணுடை=உம்மைத்தொகை;edugai:ணு/ாண;eetruseer:பிறப்பு;}" comments="kural=1012; numeral=௧">
+        <Coords points="0,72 2674,72 2674,108 0,108" />
+        <Baseline points="0,102 2674,102" />
+        <TextEquiv>
+          <Unicode>ஊணுடை யெச்சமு யிர்க்கெல்லாம் வேறல்ல நாணுடமை மாந்தர் சிறப்பு</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l2" custom="readingOrder {index:1;} ilakkanam {kural:1013;verification:verified;words:ஊனை=பொருட்பெயர்|குறித்த=பெயரெச்சம்|உயிர்=பொருட்பெயர்|எல்லாம்=பண்புப்பெயர்|நாண்=பண்புப்பெயர்|என்னும்=பெயரெச்சம்|நன்மை=பண்புப்பெயர்|குறித்தது=வினையாலணையும்பெயர்|சால்பு=பண்புப்பெயர்;ani:உவமை;edugai:ன/ன்;eetruseer:பிறப்பு;}" comments="kural=1013; numeral=௨">
+        <Coords points="0,108 2674,108 2674,144 0,144" />
+        <Baseline points="0,138 2674,138" />
+        <TextEquiv>
+          <Unicode>ஊநைக் குறித்த வுயிரெல்லாம் நாண்நெநும் நன்மை மகுரித்தது சார்பு</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l3" custom="readingOrder {index:2;} ilakkanam {kural:1014;verification:verified;words:அணி=பொருட்பெயர்|அன்று=எதிர்மறைஇடை|ஓ=ஓகாரம்|நாணுடைமை=பண்புப்பெயர்|சான்றோர்க்கு=வினையாலணையும்பெயர்|அஃது=சுட்டுப்பெயர்|இன்றேல்=எதிர்மறைவினையெச்சம்|பிணி=பண்புப்பெயர்|அன்று=எதிர்மறைஇடை|ஓ=ஓகாரம்|பீடு=பண்புப்பெயர்|நடை=தொழிற்பெயர்;ani:உருவகம்,முரண்,இயைபு/ஒலிநயம்;edugai:ணி;eetruseer:மலர்;}" comments="kural=1014; numeral=௩">
+        <Coords points="0,144 2674,144 2674,180 0,180" />
+        <Baseline points="0,173 2674,173" />
+        <TextEquiv>
+          <Unicode>அணியன்றொ நாணுடமை சான்றோர்க்க ஃதின்றெற் பிணியன்றோ பீடு நடை</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l4" custom="readingOrder {index:3;} ilakkanam {kural:1020;verification:verified;words:நாண்=பண்புப்பெயர்|அகத்து=இடப்பெயர்|இல்லார்=வினையாலணையும்பெயர்|இயக்கம்=தொழிற்பெயர்|மரம்=பொருட்பெயர்|பாவை=பொருட்பெயர்|நாணால்=பொருட்பெயர்|உயிர்=பொருட்பெயர்|மருட்டி=வினையெச்சம்|அற்று=அசைநிலை;togai:மரப்பாவை=பண்புத்தொகை;ani:எடுத்துக்காட்டுவமை;edugai:ாண;eetruseer:பிறப்பு;}" comments="kural=1020; numeral=௪">
+        <Coords points="0,180 2674,180 2674,216 0,216" />
+        <Baseline points="0,209 2674,209" />
+        <TextEquiv>
+          <Unicode>நாணகத் தில்லாரி யக்க மரப்பாவை நாணால் விழிமருட்டி யற்று</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l5" custom="readingOrder {index:4;} ilakkanam {kural:1015;verification:verified;words:பிறர்=பண்புப்பெயர்|பழி=பண்புப்பெயர்|உம்=உம்மை|தம்=சுட்டுப்பெயர்|பழி=பண்புப்பெயர்|உம்=உம்மை|நாணுவார்=வினையாலணையும்பெயர்|நாணுக்கு=பண்புப்பெயர்|உறை=பெயரெச்சம்|பதி=இடப்பெயர்|என்னும்=பெயரெச்சம்|உலகு=இடப்பெயர்;togai:உறைபதி=வேற்றுமைத்தொகை;ani:உருவகம்;edugai:ற/றை;eetruseer:பிறப்பு;}" comments="kural=1015; numeral=௫">
+        <Coords points="0,216 2674,216 2674,252 0,252" />
+        <Baseline points="0,245 2674,245" />
+        <TextEquiv>
+          <Unicode>பிறர்பழியுந் தன்பழியும் நாணுவார் நாணுக்கு றைபதி யெந்நுமு லகு</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l6" custom="readingOrder {index:5;} ilakkanam {kural:1019;verification:verified;words:குலம்=பொருட்பெயர்|சுடும்=தெரிநிலைவினைமுற்று|கொள்கை=தொழிற்பெயர்|பிழைப்பின்=வினையெச்சம்|நலம்=பண்புப்பெயர்|சுடும்=தெரிநிலைவினைமுற்று|நாணின்மை=பண்புப்பெயர்|நின்ற=பெயரெச்சம்|கடை=காலப்பெயர்;ani:மடக்கு,சொற்பொருட்பின்வருநிலை;edugai:ல;eetruseer:மலர்;}" comments="kural=1019; numeral=௬">
+        <Coords points="0,252 2674,252 2674,287 0,287" />
+        <Baseline points="0,281 2674,281" />
+        <TextEquiv>
+          <Unicode>குலஞ்சுடுங் கொள்கை பிழைக்கும் நலஞ்சுடும் நாணின்மை நின்றக் கடை</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l7" custom="readingOrder {index:6;} ilakkanam {kural:1017;verification:verified;words:நாணால்=பண்புப்பெயர்|உயிரை=பொருட்பெயர்|துறப்பர்=தெரிநிலைவினைமுற்று|உயிர்=பொருட்பெயர்|பொருட்டால்=காரணப்பெயர்|நாண்=பண்புப்பெயர்|துறவார்=எதிர்மறைவினைமுற்று|நாணாள்=பெயரெச்சம்|பவர்=வினையாலணையும்பெயர்;ani:முரண்;edugai:ாண;eetruseer:பிறப்பு;}" comments="kural=1017; numeral=௭">
+        <Coords points="0,287 2674,287 2674,323 0,323" />
+        <Baseline points="0,317 2674,317" />
+        <TextEquiv>
+          <Unicode>நாணாலு யிரைத் துறப்பரு யிர்ப்பொருட்டால் நாண்டுறவார் நாணாள் பவர்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l8" custom="readingOrder {index:7;} ilakkanam {kural:1011;verification:verified;words:கருமத்தால்=பொருட்பெயர்|நாணுதல்=தொழிற்பெயர்|நாணுந்=பெயரெச்சம்|திரு=உரிச்சொல்|நுதல்=சினைப்பெயர்|நல்லவர்=பண்புப்பெயர்|நாணு=பண்புப்பெயர்|பிற=பண்புப்பெயர்;togai:திருநுதல்=பண்புத்தொகை;ani:சொற்பொருட்பின்வருநிலை;edugai:ரு/ல்;eetruseer:பிறப்பு;}" comments="kural=1011; numeral=௮">
+        <Coords points="0,323 2674,323 2674,359 0,359" />
+        <Baseline points="0,353 2674,353" />
+        <TextEquiv>
+          <Unicode>கருமத்தால் நாணுக்  நாணுத் திருநுதல் லலவர் நாணுப் பெற</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l9" custom="readingOrder {index:8;} ilakkanam {kural:1018;verification:verified;words:பிறர்=பண்புப்பெயர்|நாண=வினையெச்சம்|தக்கது=வினையாலணையும்பெயர்|தான்=சுட்டுப்பெயர்|நாணா=எதிர்மறைவினையெச்சம்|ஆயின்=வினையெச்சம்|அறம்=பண்புப்பெயர்|நாண=வினையெச்சம்|தக்கது=வினையாலணையும்பெயர்|உடைத்து=குறிப்புவினைமுற்று;ani:பிறிதுமொழிதல்;edugai:ற;eetruseer:பிறப்பு;}" comments="kural=1018; numeral=௯">
+        <Coords points="0,359 2674,359 2674,395 0,395" />
+        <Baseline points="0,389 2674,389" />
+        <TextEquiv>
+          <Unicode>பிறர்நாணத் தக்கது தாநாணா னாயின் அறநாணத் தக்கது டைத்து</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_main_l10" custom="readingOrder {index:9;} ilakkanam {kural:1016;verification:verified;words:நாண்=பண்புப்பெயர்|வேலி=பொருட்பெயர்|கொள்ளாது=எதிர்மறைவினையெச்சம்|மன்=அசைநிலை|ஓ=ஓகாரம்|வியன்=உரிச்சொல்|ஞாலம்=இடப்பெயர்|பேணலர்=எதிர்மறைவினைமுற்று|மேலா=பண்புப்பெயர்|யவர்=வினையாலணையும்பெயர்;togai:வியன்ஞாலம்=பண்புத்தொகை;ani:உருவகம்;edugai:ாண/ேண;eetruseer:மலர்;}" comments="kural=1016; numeral=௰">
+        <Coords points="0,395 2674,395 2674,431 0,431" />
+        <Baseline points="0,425 2674,425" />
+        <TextEquiv>
+          <Unicode>நாண்வெலி கொள்ளாத மந்நொ வியன்ஞாலம் பேணலர் மேலா யவர்</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextEquiv>
+        <Unicode>ஊணுடை யெச்சமு யிர்க்கெல்லாம் வேறல்ல நாணுடமை மாந்தர் சிறப்பு
+ஊநைக் குறித்த வுயிரெல்லாம் நாண்நெநும் நன்மை மகுரித்தது சார்பு
+அணியன்றொ நாணுடமை சான்றோர்க்க ஃதின்றெற் பிணியன்றோ பீடு நடை
+நாணகத் தில்லாரி யக்க மரப்பாவை நாணால் விழிமருட்டி யற்று
+பிறர்பழியுந் தன்பழியும் நாணுவார் நாணுக்கு றைபதி யெந்நுமு லகு
+குலஞ்சுடுங் கொள்கை பிழைக்கும் நலஞ்சுடும் நாணின்மை நின்றக் கடை
+நாணாலு யிரைத் துறப்பரு யிர்ப்பொருட்டால் நாண்டுறவார் நாணாள் பவர்
+கருமத்தால் நாணுக்  நாணுத் திருநுதல் லலவர் நாணுப் பெற
+பிறர்நாணத் தக்கது தாநாணா னாயின் அறநாணத் தக்கது டைத்து
+நாண்வெலி கொள்ளாத மந்நொ வியன்ஞாலம் பேணலர் மேலா யவர்</Unicode>
+      </TextEquiv>
+    </TextRegion>
+    <TextRegion id="r_margin" type="marginalia" custom="readingOrder {index:1;}">
+      <Coords points="0,72 374,72 374,431 0,431" />
+      <TextLine id="r_margin_l4" custom="readingOrder {index:3;}" comments="marginal cell @ L4">
+        <Coords points="0,180 374,180 374,216 0,216" />
+        <Baseline points="0,209 374,209" />
+        <TextEquiv>
+          <Unicode>நாணு</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r_margin_l5" custom="readingOrder {index:4;}" comments="marginal cell @ L5">
+        <Coords points="0,216 374,216 374,252 0,252" />
+        <Baseline points="0,245 374,245" />
+        <TextEquiv>
+          <Unicode>டமை</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextEquiv>
+        <Unicode>நாணு
+டமை</Unicode>
+      </TextEquiv>
+    </TextRegion>
+  </Page>
+</PcGts>

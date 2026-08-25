@@ -61,6 +61,19 @@ def bands_for(d, n):
     # fallback: even division 0.14..0.96
     return [0.14 + (0.96 - 0.14) * i / n for i in range(n + 1)]
 
+def inscribed(d):
+    """(original index, line) for every physically inscribed line.
+
+    Lines flagged endOfLeaf are editorial notes about the folio ("end of leaf —
+    no further inscribed lines…"), not scribal text, so they are excluded from the
+    transcription; the note is carried in the page Metadata/Comments instead.
+    Indices are the original ones so band lookup stays aligned to the leaf."""
+    return [(i, l) for i, l in enumerate(d["lines"]) if not l.get("endOfLeaf")]
+
+def leaf_notes(d):
+    return [(l.get("body") or "").strip() for l in d["lines"]
+            if l.get("endOfLeaf") and (l.get("body") or "").strip()]
+
 def rect(x0, y0, x1, y1):
     return f"{x0},{y0} {x1},{y0} {x1},{y1} {x0},{y1}"
 
@@ -78,9 +91,8 @@ rows = []
 def build_page(gid, d):
     W = int(d["image"]["width"]); H = int(d["image"]["height"])
     msid = d["manuscriptId"]
-    lns = d["lines"]
-    n = len(lns)
-    bands = bands_for(d, n)
+    bands = bands_for(d, len(d["lines"]))
+    lns = inscribed(d)
     issued = d.get("issued") or d.get("publicationDate") or "2026-06-23"
     dt = issued + "T00:00:00"
 
@@ -100,11 +112,13 @@ def build_page(gid, d):
                f"record {d.get('permalink','')} | manuscriptId {msid} | "
                f"NOTE: line Coords are band-derived full-width bounding boxes (approximate); "
                f"transcription text is exact ground truth.")
+    for note in leaf_notes(d):
+        comment += f" | LEAF NOTE: {note}"
     E(md, "Comments", comment)
 
     page = E(root, "Page", imageFilename=f"{msid}.jpg", imageWidth=W, imageHeight=H)
 
-    margins = [(i, l) for i, l in enumerate(lns) if (l.get("leftMargin") or "").strip()]
+    margins = [(i, l) for i, l in lns if (l.get("leftMargin") or "").strip()]
     has_margin = len(margins) > 0
 
     # reading order
@@ -115,12 +129,12 @@ def build_page(gid, d):
         E(og, "RegionRefIndexed", index="1", regionRef="r_margin")
 
     # main text region (full width)
-    y_top = max(0, int(round(bands[0] * H)))
-    y_bot = min(H, int(round(bands[-1] * H)))
+    y_top = max(0, int(round(bands[lns[0][0]] * H)))
+    y_bot = min(H, int(round(bands[lns[-1][0] + 1] * H)))
     reg = E(page, "TextRegion", id="r_main", type="paragraph", custom="readingOrder {index:0;}")
     E(reg, "Coords", points=rect(0, y_top, W, y_bot))
     region_texts = []
-    for i, l in enumerate(lns):
+    for order, (i, l) in enumerate(lns):
         y0 = max(0, int(round(bands[i] * H)))
         y1 = min(H, int(round(bands[i + 1] * H)))
         if y1 <= y0:
@@ -132,7 +146,7 @@ def build_page(gid, d):
         comm = f"kural={k}" if k is not None else "kural=none"
         comm += f"; numeral={l.get('numeral','')}"
         tl = E(reg, "TextLine", id=f"r_main_l{i+1}",
-               custom=f"readingOrder {{index:{i};}}", comments=comm)
+               custom=f"readingOrder {{index:{order};}}", comments=comm)
         E(tl, "Coords", points=rect(0, y0, W, y1))
         E(tl, "Baseline", points=f"0,{yb} {W},{yb}")
         te = E(tl, "TextEquiv")
@@ -183,13 +197,12 @@ def build_iiif(gid, d, W, H):
     img_full = img_service + "/full/max/0/default.jpg"
     base = f"{GT_BASE_URL}/iiif/{gid}"
     canvas = f"{base}/canvas"
-    lns = d["lines"]
-    n = len(lns)
-    bands = bands_for(d, n)
+    bands = bands_for(d, len(d["lines"]))
+    lns = inscribed(d)
 
     def annos():
         out = []
-        for i, l in enumerate(lns):
+        for i, l in lns:
             y0 = max(0, int(round(bands[i] * H)))
             y1 = min(H, int(round(bands[i + 1] * H)))
             if y1 <= y0: y1 = min(H, y0 + 1)
@@ -202,7 +215,7 @@ def build_iiif(gid, d, W, H):
                 "target": f"{canvas}#xywh=0,{y0},{W},{y1-y0}"})
         # marginalia
         mx = int(round(0.14 * W))
-        for i, l in enumerate(lns):
+        for i, l in lns:
             mt = (l.get("leftMargin") or "").strip()
             if not mt: continue
             y0 = max(0, int(round(bands[i] * H)))
@@ -277,7 +290,7 @@ for gid in sorted(SPEC.keys()):
     build_iiif(gid, d, W, H)
     ch = d["chapter"]; kr = d["kuralRange"]
     rows.append([gid, ch["number"], ch.get("titleTamil",""), ch.get("title",""),
-                 kr["from"], kr["to"], len(d["lines"]), d["manuscriptId"],
+                 kr["from"], kr["to"], len(inscribed(d)), d["manuscriptId"],
                  d.get("doi",""), d.get("permalink",""), W, H,
                  f"page/{d['manuscriptId']}.xml", f"iiif/{gid}/manifest.json"])
 
