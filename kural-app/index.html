@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#8f2f1c" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1b1612" media="(prefers-color-scheme: dark)">
+<meta name="description" content="திருக்குறள் — all 1330 kurals in the 22 scheduled languages of India with parallel translations, simple prose, audio, word-by-word grammar (இலக்கணக்குறிப்பு) and metre-aware recitation practice (யாப்பு). Free, offline-first. Central Institute of Classical Tamil.">
+<title>திருக்குறள் · Tirukkuṟaḷ — 22 மொழிகள்</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="திருக்குறள்">
+<link rel="preload" href="assets/fonts/NotoSerifTamil-LYjUdHr-klIgTfc40komjQ5OObazYp-6H94dBF-RX6nNRL340JYReA.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fonts.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top" id="top">
+  <button class="icon-btn" id="btn-back" aria-label="Back" hidden>‹</button>
+  <img class="logo" src="assets/cict-logo.png" alt="" width="34" height="34">
+  <div class="title-wrap">
+    <h1 id="top-title">திருக்குறள்</h1>
+    <div class="sub" id="top-sub">Tirukkuṟaḷ · 22 மொழிகள்</div>
+  </div>
+  <button class="icon-btn" id="btn-uilang" aria-label="Interface language" title="Interface language">EN</button>
+  <button class="icon-btn" id="btn-langs" aria-label="Choose translation languages" title="Languages">🌐</button>
+</header>
+
+<main id="main" class="view" tabindex="-1" aria-live="polite"></main>
+
+<nav class="tabs" aria-label="Primary">
+  <a href="#/" data-tab="home"><span class="ic">🏠</span><span class="lb" data-i18n="tab.home">முகப்பு</span></a>
+  <a href="#/browse" data-tab="browse"><span class="ic">📖</span><span class="lb" data-i18n="tab.read">நூல்</span></a>
+  <a href="#/search" data-tab="search"><span class="ic">🔍</span><span class="lb" data-i18n="tab.search">தேடு</span></a>
+  <a href="#/practice" data-tab="practice"><span class="ic">🎵</span><span class="lb" data-i18n="tab.practice">பயிற்சி</span></a>
+  <a href="#/more" data-tab="more"><span class="ic">☰</span><span class="lb" data-i18n="tab.more">மேலும்</span></a>
+</nav>
+
+<div id="sheet-root"></div>
+<div id="toast" role="status" aria-live="polite"></div>
+<div id="offline-banner" hidden data-i18n="offline.banner">இணையம் இல்லை — சேமித்த பக்கங்கள் மட்டும்</div>
+
+<script src="app.js" defer></script>
+</body>
+</html>

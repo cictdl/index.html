@@ -1,0 +1,11 @@
+# The audio packs (444 MB) are deliberately not in git — they would bloat the
+# repository permanently. Build them locally with build/make_tts_pack.py, or copy
+# them to the web host under kural-app/audio/. The app detects their absence via
+# data/audio.json and falls back to the device's own speech voices.
+audio/
+build/__pycache__/
+build/_*
+
+# NOTE: data/audio.json is committed as empty ({"chapters":[],"tts":{}}) because no audio
+# is deployed from this repository. After copying audio/ to the web host, re-run
+# `py build/build_data.py` there (or hand-edit this file) so the app offers the packs.

@@ -1,0 +1,82 @@
+{
+  "name": "திருக்குறள் · Tirukkuṟaḷ — 22 மொழிகள்",
+  "short_name": "திருக்குறள்",
+  "description": "All 1330 kurals in the 22 scheduled languages of India — parallel translations, simple prose, audio, word-by-word grammar and metre-aware recitation practice. Free and offline-first. Central Institute of Classical Tamil.",
+  "id": "./",
+  "start_url": "./index.html#/",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#faf7f2",
+  "theme_color": "#8f2f1c",
+  "lang": "ta",
+  "dir": "ltr",
+  "categories": [
+    "education",
+    "books",
+    "reference"
+  ],
+  "icons": [
+    {
+      "src": "assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icon-maskable-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "assets/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "இன்றைய குறள் · Kural of the day",
+      "short_name": "இன்று",
+      "url": "./index.html#/daily",
+      "icons": [
+        {
+          "src": "assets/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "தேடு · Search",
+      "short_name": "தேடு",
+      "url": "./index.html#/search"
+    },
+    {
+      "name": "மனப்பாடப் பயிற்சி · Study",
+      "short_name": "பயிற்சி",
+      "url": "./index.html#/study"
+    },
+    {
+      "name": "யாப்புப் பயிற்சி · Metre practice",
+      "short_name": "யாப்பு",
+      "url": "./index.html#/practice"
+    }
+  ],
+  "display_override": [
+    "standalone",
+    "minimal-ui",
+    "browser"
+  ],
+  "launch_handler": {
+    "client_mode": "navigate-existing"
+  },
+  "prefer_related_applications": false
+}
