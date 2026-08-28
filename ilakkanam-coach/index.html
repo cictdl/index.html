@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ta">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>இலக்கணம் · Ilakkanam Coach</title>
+<meta name="description" content="CICT — சங்க இலக்கணப் பயிற்சி இயந்திரம் · adaptive Tamil grammar drills from the classical canon">
+<meta name="theme-color" content="#1F3A5F">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/icon-192.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header id="topbar">
+  <a href="#/home" id="brand"><span class="mark">இ</span><span id="brand-title">இலக்கணப் பயிற்சி</span></a>
+  <div class="top-actions">
+    <button id="lang-btn" class="chip" title="Tamil / English">EN</button>
+    <a href="#/stats" class="chip" id="nav-stats">📊</a>
+  </div>
+</header>
+<main id="app" aria-live="polite">
+  <div class="loading">ஏற்றுகிறது…</div>
+</main>
+<footer id="foot">
+  <span>செம்மொழித் தமிழாய்வு மத்திய நிறுவனம் · CICT</span>
+</footer>
+<div id="sheet-backdrop" hidden></div>
+<div id="sheet" role="dialog" aria-modal="true" hidden></div>
+<script src="app.js"></script>
+</body>
+</html>
