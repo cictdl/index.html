@@ -71,6 +71,7 @@ const STR = {
     again: 'மீண்டும்', hard: 'கடினம்', good: 'சரி', easy: 'எளிது', srsStats: 'கற்றவை',
     shareCard: 'படமாகப் பகிர்', cardMaking: 'படம் தயாராகிறது…', install: 'செயலியாக நிறுவு',
     installIos: 'iPhone/iPad: Safari-இல் பகிர் ⤴ → "Add to Home Screen"', installed: 'நிறுவப்பட்டது ✓',
+    androidNote: 'இது Android செயலிப் பதிப்பு — நூல் முழுவதும் செயலிக்குள்ளேயே உள்ளது; இணையம் தேவையில்லை. ஒலி வாசிப்புக்கு சாதனத்தின் TextToSpeech (தமிழ்க் குரல்) பயன்படுகிறது.',
     singleFileNote: 'இது ஒரே கோப்பாக (single-file) வழங்கப்படும் பதிப்பு — நூல் முழுவதும் இக்கோப்பினுள்ளேயே உள்ளது; இணையம் தேவையில்லை. ஒலி வாசிப்பு உங்கள் சாதனத்தின் குரல் தொகுப்பைப் பயன்படுத்துகிறது.',
     autoScript: 'எழுத்துக்கேற்ப', autoScriptHelp: 'நீங்கள் தட்டச்சு செய்யும் எழுத்துமுறைக்கு உரிய மொழிகளில் மட்டும் தேடும்',
     scanned: 'அட்டவணை', scannedHelp: 'இத்தேடலில் பயன்படுத்திய அட்டவணைகளின் எண்ணிக்கை', searchAll: 'எல்லா 30 மொழிகளிலும் தேடு',
@@ -121,6 +122,7 @@ const STR = {
     again: 'Again', hard: 'Hard', good: 'Good', easy: 'Easy', srsStats: 'Learned',
     shareCard: 'Share as image', cardMaking: 'Making the card…', install: 'Install as app',
     installIos: 'iPhone/iPad: in Safari tap Share ⤴ → “Add to Home Screen”', installed: 'Installed ✓',
+    androidNote: 'This is the Android app — the whole book is inside it, so no network is needed. Recitation uses the device TextToSpeech engine (install a Tamil voice in Android settings for the best result).',
     singleFileNote: 'This is the single-file edition — the entire book is inside this one HTML file, so there is nothing to download and no network needed. Audio uses your device’s own installed voices.',
     autoScript: 'Match my script', autoScriptHelp: 'Searches only the languages written in the script you are typing',
     scanned: 'indices', scannedHelp: 'How many language indices this search had to read', searchAll: 'search all 30 languages',
@@ -217,12 +219,23 @@ function dailyN(d = new Date()) { const days = Math.floor(Date.UTC(d.getFullYear
 const todayKey = () => { const d = new Date(); return `${d.getFullYear()}-${pad(d.getMonth() + 1, 2)}-${pad(d.getDate(), 2)}`; };
 
 // ───────────────────────────── speech (TTS) ─────────────────────────────
+// Android WebView ships no speechSynthesis at all, so the wrapper injects these bridges.
+// Both are absent in a browser, where the Web Speech API path below is used instead.
+const NATIVE_TTS = typeof AndroidTTS !== 'undefined' ? AndroidTTS : null;
+const NATIVE_SHARE = typeof AndroidShare !== 'undefined' ? AndroidShare : null;
+const NATIVE_NOTIFY = typeof AndroidNotify !== 'undefined' ? AndroidNotify : null;
+const IS_ANDROID_APP = !!NATIVE_TTS;
+
 const TTS = {
-  voices: [], current: null, curBtn: null, audio: null,
+  voices: [], current: null, curBtn: null, audio: null, nativeSeq: 0,
   init() {
     if (!('speechSynthesis' in window)) return;
     const load = () => { this.voices = speechSynthesis.getVoices(); };
     load(); speechSynthesis.onvoiceschanged = load;
+  },
+  available(code) {
+    if (NATIVE_TTS) { try { return NATIVE_TTS.isAvailable((L(code) || {}).voices ? L(code).voices[0] : 'en-IN'); } catch (e) { return true; } }
+    return !!this.pick(code);
   },
   pick(code) {
     const l = L(code); if (!l) return null;
@@ -240,11 +253,13 @@ const TTS = {
   },
   stop() {
     if ('speechSynthesis' in window) speechSynthesis.cancel();
+    if (NATIVE_TTS) { this.nativeSeq++; try { NATIVE_TTS.stop(); } catch (e) { } }
     if (this.audio) { this.audio.pause(); this.audio = null; }
     if (this.curBtn) { this.curBtn.classList.remove('playing'); this.curBtn = null; }
   },
   speak(text, code, btn, onend) {
     this.stop();
+    if (NATIVE_TTS) return this.speakNative(text, code, btn, onend);
     if (!('speechSynthesis' in window)) { toast(t('ttsUnsupported')); return false; }
     const l = L(code) || { voices: ['en'], rate: 0.9 };
     const v = this.pick(code);
@@ -256,6 +271,28 @@ const TTS = {
     speechSynthesis.speak(u);
     return true;
   },
+  // Hand off to the platform TextToSpeech engine through the wrapper's bridge.
+  speakNative(text, code, btn, onend) {
+    const l = L(code) || { voices: ['en'], rate: 0.9 };
+    const tag = (l.voices && l.voices[0]) || 'en-IN';
+    const rate = clamp((l.rate || 0.9) * (S.rate || 1), 0.5, 2);
+    const id = String(++this.nativeSeq);
+    let ok = false;
+    try { ok = NATIVE_TTS.speak(text, tag, rate, id); } catch (e) { ok = false; }
+    if (!ok) { toast(t('noVoice')); return false; }
+    if (btn) { btn.classList.add('playing'); this.curBtn = btn; }
+    TTS._pending = { id, btn, onend };
+    return true;
+  },
+  // called from Java when an utterance finishes or fails
+  nativeDone(id) {
+    const p = TTS._pending;
+    if (!p || p.id !== id) return;
+    TTS._pending = null;
+    if (p.btn) p.btn.classList.remove('playing');
+    if (TTS.curBtn === p.btn) TTS.curBtn = null;
+    if (p.onend) p.onend();
+  },
   // play a bundled clip, falling back to on-device TTS
   clip(url, fallbackText, code, btn, onend) {
     this.stop();
@@ -266,6 +303,8 @@ const TTS = {
     a.play().catch(() => { this.audio = null; if (btn) btn.classList.remove('playing'); this.speak(fallbackText, code, btn, onend); });
   },
 };
+
+window.__ttsDone = id => TTS.nativeDone(id);
 
 // ───────────────────────────── routing ─────────────────────────────
 const view = () => $('#main');
@@ -562,6 +601,7 @@ function kuralText(k, cm) {
 }
 function shareKural(k, cm) {
   const text = kuralText(k, cm);
+  if (NATIVE_SHARE) { try { NATIVE_SHARE.text(`திருக்குறள் ${k.n}`, text); return; } catch (e) { } }
   if (navigator.share) navigator.share({ title: `திருக்குறள் ${k.n}`, text }).catch(() => { });
   else navigator.clipboard.writeText(text).then(() => toast('✓ ' + t('copy')));
 }
@@ -865,6 +905,11 @@ async function shareCard(k, cm, btn) {
     x.fillText('திருக்குறள் — 22 மொழிகள்', W / 2, H - 108);
     x.fillStyle = '#6f6459'; x.font = '400 22px system-ui,sans-serif';
     x.fillText('செம்மொழித் தமிழாய்வு மத்திய நிறுவனம் · Central Institute of Classical Tamil', W / 2, H - 66);
+    if (NATIVE_SHARE) {
+      // hand the PNG to the Android share sheet as base64 — no blob URLs in the WebView
+      const b64 = cv.toDataURL('image/png').split(',')[1];
+      try { NATIVE_SHARE.png('kural-' + k.n + '.png', b64, kuralText(k, cm)); btn.textContent = old; btn.disabled = false; return; } catch (e) { }
+    }
     const blob = await new Promise(res => cv.toBlob(res, 'image/png'));
     const file = new File([blob], 'kural-' + k.n + '.png', { type: 'image/png' });
     if (navigator.canShare && navigator.canShare({ files: [file] })) {
@@ -1112,6 +1157,19 @@ async function viewDaily() {
   $('#test-n').onclick = () => showDailyNotification(true);
 }
 async function setNotify(on) {
+  // Inside the Android wrapper the alarm is scheduled natively — a WebView can neither
+  // post a system notification nor wake itself at 07:00.
+  if (NATIVE_NOTIFY) {
+    if (!on) { try { NATIVE_NOTIFY.disable(); } catch (e) { } S.notify = false; saveS(); return; }
+    let ok = false;
+    try { ok = NATIVE_NOTIFY.enable(S.notifyTime || '07:00'); } catch (e) { ok = false; }
+    // false means Android is still showing its permission prompt; reflect the real state
+    // once the answer lands rather than claiming success now.
+    S.notify = ok; saveS();
+    toast(ok ? '✓' : '…');
+    if (!ok) setTimeout(() => { try { S.notify = NATIVE_NOTIFY.isEnabled(); saveS(); route(); } catch (e) { } }, 1500);
+    return;
+  }
   if (!('Notification' in window)) return;
   if (on) {
     const p = await Notification.requestPermission();
@@ -1125,6 +1183,7 @@ async function setNotify(on) {
   }
 }
 async function showDailyNotification(force) {
+  if (NATIVE_NOTIFY) return;          // the native alarm owns this
   if (!S.notify && !force) return;
   if (!('Notification' in window) || Notification.permission !== 'granted') return;
   const key = todayKey(); if (!force && S.lastNotified === key) return;
@@ -1161,6 +1220,7 @@ async function viewMore() {
 // the Add-to-Home-Screen instruction instead. Already-installed windows say so.
 function renderInstallCard() {
   const card = $('#install-card'); if (!card) return;
+  if (IS_ANDROID_APP) { card.hidden = true; return; }
   const standalone = window.matchMedia('(display-mode: standalone)').matches || navigator.standalone === true;
   const ios = /iphone|ipad|ipod/i.test(navigator.userAgent);
   const note = $('#install-note'); const btn = $('#btn-install2');
@@ -1254,9 +1314,9 @@ function packLabel(p) {
 }
 async function viewOffline() {
   setTitle(t('offline'), t('storage'));
-  if (SINGLE || !hasCaches()) {
+  if (SINGLE || IS_ANDROID_APP || !hasCaches()) {
     const est = navigator.storage && navigator.storage.estimate ? await navigator.storage.estimate() : null;
-    render(`<div class="card"><h2>${t('offline')}</h2><p>${t('singleFileNote')}</p>
+    render(`<div class="card"><h2>${t('offline')}</h2><p>${IS_ANDROID_APP ? t('androidNote') : t('singleFileNote')}</p>
       <div class="muted" style="font-size:.8rem">${esc(D.meta.credits.publisher)} · v${D.meta.version} · ${D.meta.built}</div></div>`);
     return;
   }
@@ -1323,7 +1383,7 @@ async function boot() {
     }
     if (e.key === '/' ) { e.preventDefault(); location.hash = '#/search'; }
   });
-  if ('serviceWorker' in navigator && !SINGLE && location.protocol.startsWith('http')) {
+  if ('serviceWorker' in navigator && !SINGLE && !IS_ANDROID_APP && location.protocol.startsWith('http')) {
     try {
       const reg = await navigator.serviceWorker.register('sw.js');
       reg.addEventListener('updatefound', () => { const nw = reg.installing; nw && nw.addEventListener('statechange', () => { if (nw.state === 'installed' && navigator.serviceWorker.controller) toast(t('update'), 5000); }); });
