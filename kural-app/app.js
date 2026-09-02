@@ -74,7 +74,7 @@ const STR = {
     androidNote: 'இது Android செயலிப் பதிப்பு — நூல் முழுவதும் செயலிக்குள்ளேயே உள்ளது; இணையம் தேவையில்லை. ஒலி வாசிப்புக்கு சாதனத்தின் TextToSpeech (தமிழ்க் குரல்) பயன்படுகிறது.',
     singleFileNote: 'இது ஒரே கோப்பாக (single-file) வழங்கப்படும் பதிப்பு — நூல் முழுவதும் இக்கோப்பினுள்ளேயே உள்ளது; இணையம் தேவையில்லை. ஒலி வாசிப்பு உங்கள் சாதனத்தின் குரல் தொகுப்பைப் பயன்படுத்துகிறது.',
     autoScript: 'எழுத்துக்கேற்ப', autoScriptHelp: 'நீங்கள் தட்டச்சு செய்யும் எழுத்துமுறைக்கு உரிய மொழிகளில் மட்டும் தேடும்',
-    scanned: 'அட்டவணை', scannedHelp: 'இத்தேடலில் பயன்படுத்திய அட்டவணைகளின் எண்ணிக்கை', searchAll: 'எல்லா 30 மொழிகளிலும் தேடு',
+    scanned: 'தேடல் அட்டவணைகள்', scannedHelp: 'இத்தேடலில் பயன்படுத்திய அட்டவணைகளின் எண்ணிக்கை', searchAll: 'எல்லா 30 மொழிகளிலும் தேடு',
     compare: 'எல்லா மொழிகளிலும்', compareSub: '22 மொழிகள் · 30 மொழிபெயர்ப்புகள்', selected: 'தேர்ந்தவை', playAll: 'எல்லாம் ஒலிக்க',
     lineErr: 'இவ்வடி அலகிட முடியவில்லை', update: 'புதிய பதிப்பு உள்ளது — புதுப்பிக்க', ttsUnsupported: 'இந்த உலாவியில் பேச்சு ஒலி இல்லை',
   },
@@ -767,14 +767,14 @@ async function viewParallel(n) {
   S.parallelLang = pick;
   setTitle(`${t('parallel')} · ${ch.name}`, `${t('adhigaram')} ${n} · ${ch.nameEn}`);
   const opts = m.langOrder.filter(c => c !== 'ta')
-    .map(c => `<option value="${c}" ${c === pick ? 'selected' : ''}>${esc(L(c).native)} — ${esc(L(c).name)}</option>`).join('');
+    .map(c => `<option value="${c}" ${c === pick ? 'selected' : ''}>${esc(L(c).native)}${L(c).name === L(c).native ? '' : ' — ' + esc(L(c).name)}</option>`).join('');
   render(`<div class="card">
       <div class="row"><div class="grow"><h2 style="font-size:1.1rem">${esc(ch.name)} <span class="muted">· ${esc(ch.nameEn)}</span></h2>
       <div class="muted">${t('parallelHelp')}</div></div><a class="btn small" href="#/ch/${n}">☰</a></div>
       <div class="row" style="margin-top:8px"><span class="chip sel">தமிழ்</span><span class="muted">↔</span>
         <select id="par-lang" style="max-width:60%" aria-label="${esc(t('parallel'))}">${opts}</select></div>
     </div>
-    <div class="card" style="padding:0;overflow:hidden">
+    <div class="card" style="padding:0;overflow:clip">
       <div class="par-head"><div>தமிழ்</div><div class="${scriptClass(pick)}">${esc(L(pick).native)}</div></div>
       ${ch.kurals.map(k => {
         const tr = k.tr[pick];
