@@ -116,6 +116,33 @@ def extract_kural_text(html_path):
             out[m.group(1)] = json.loads(m.group(2))  # later duplicate keys win, as in JS
     return out
 
+# --------------------------------------------------------------------------- per-language text fixups
+# The Malayalam stream in the archive page came through a legacy-font conversion that mapped
+# five glyphs to look-alike code points. Fixed at the source (index.html) on 7 Sep 2026; this
+# normaliser is kept as a safety net so a re-export can never reintroduce them.
+_ML_MAP = {
+    "൦": "ം",  # MALAYALAM DIGIT ZERO          -> SIGN ANUSVARA          (ആദിയാ൦ -> ആദിയാം)
+    "൪": "ർ",  # MALAYALAM DIGIT FOUR          -> LETTER CHILLU RR       (ധ൪മ്മം -> ധർമ്മം)
+    "ൄ": "ൃ",  # VOWEL SIGN VOCALIC RR         -> VOWEL SIGN VOCALIC R   (ഗൄഹം -> ഗൃഹം)
+    "ൠ": "ഋ",  # LETTER VOCALIC RR             -> LETTER VOCALIC R       (ൠഷി -> ഋഷി)
+    "൱": "ൗ",  # MALAYALAM NUMBER ONE HUNDRED  -> AU LENGTH MARK         (മ൱ഢ്യം -> മൗഢ്യം)
+}
+# Legacy chillus (consonant + virama + ZWJ) -> the atomic chillu letters the rest of the text uses.
+_ML_CHILLU = {"ന": "ൻ", "ല": "ൽ", "ള": "ൾ",
+              "ര": "ർ", "ണ": "ൺ", "ക": "ൿ"}
+_ML_CHILLU_RE = re.compile("([നലളരണക])്‍")
+
+def fix_ml(s):
+    s = "".join(_ML_MAP.get(ch, ch) for ch in s)
+    s = _ML_CHILLU_RE.sub(lambda m: _ML_CHILLU[m.group(1)], s)
+    return re.sub("(?<!്)‍", "", s)  # a ZWJ not after a virama is a stray
+
+FIXUPS = {"ml": fix_ml}
+
+def fix_text(code, s):
+    f = FIXUPS.get(code)
+    return f(s) if f and s else s
+
 def ser_verse(v):
     def ser_line(ln):
         return {
@@ -185,7 +212,7 @@ def main():
     tr = {}
     for code, *_ in LANGS:
         arr = texts.get(code, [])
-        tr[code] = {e["n"]: (e.get("l1", "").strip(), e.get("l2", "").strip()) for e in arr if e.get("l1", "").strip()}
+        tr[code] = {e["n"]: (fix_text(code, e.get("l1", "").strip()), fix_text(code, e.get("l2", "").strip())) for e in arr if e.get("l1", "").strip()}
 
     # optional prose retellings
     prose_extra = {}

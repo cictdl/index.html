@@ -4,7 +4,7 @@
    data / audio / fonts: cache-first — they are content-addressed or immutable per build;
    audio also gets Range support so <audio> can seek inside a cached file;
    plus the daily-kural notification. */
-const VERSION = 'v3';
+const VERSION = 'v4';
 const SHELL = 'kural-shell-' + VERSION;
 const RT = 'kural-rt-v1';
 const PREFS = 'kural-prefs';
@@ -15,9 +15,22 @@ const SHELL_URLS = ['./', './index.html', './app.js', './styles.css', './assets/
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(SHELL).then(c => c.addAll(SHELL_URLS)).then(() => self.skipWaiting()));
 });
+// Generated data is cache-first under stable URLs, so a data repair that keeps the file names
+// (the Malayalam fix of 7 Sep 2026) has to evict the stale copies once. Bump DATA_REV whenever
+// data/ files change in place, and keep STALE_DATA pointing at the paths that changed.
+const DATA_REV = '2026-09-07-ml';
+const STALE_DATA = /\/data\/(ch\/|search\/ml\.json)/;
 self.addEventListener('activate', e => {
   e.waitUntil((async () => {
     for (const k of await caches.keys()) if (k.startsWith('kural-shell-') && k !== SHELL) await caches.delete(k);
+    try {
+      const rt = await caches.open(RT);
+      const seen = await rt.match('/__data_rev');
+      if (!seen || (await seen.text()) !== DATA_REV) {
+        for (const req of await rt.keys()) if (STALE_DATA.test(new URL(req.url).pathname)) await rt.delete(req);
+        await rt.put('/__data_rev', new Response(DATA_REV));
+      }
+    } catch {}
     await self.clients.claim();
   })());
 });
