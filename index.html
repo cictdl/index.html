@@ -46,34 +46,36 @@
   --font-mono: 'JetBrains Mono', monospace;
 }
 [data-theme="light"] {
-  /* Authentic palm-leaf cream — warmed up, museum-quality */
-  --bg: #f4ead2;          /* aged parchment */
-  --bg2: #ede0bc;         /* slightly deeper section bands */
-  --bg3: #ffffff;         /* pure white card — maximum separation */
-  --bg4: #f8f0d8;         /* hover surface */
-  /* Amber stays gold-leaf */
-  --amber: #a85f10;
-  --amber-light: #c87820;
-  --amber-pale: #4d2d05;
-  /* Vermillion — the kumkumam red of palm-leaf manuscripts */
-  --vermillion: #b8341c;
-  --vermillion-light: #d65540;
-  --vermillion-soft: rgba(184,52,28,0.1);
-  /* Manuscript-ink indigo */
-  --indigo: #1f3a6e;
-  --indigo-deep: #122548;
-  --indigo-soft: rgba(31,58,110,0.1);
-  /* Text — deep ink */
-  --cream: #2a1d10;
-  --cream-dim: #5a4226;
-  --cream-mute: #6e5230;
-  --red-accent: #b8341c;
-  --green-accent: #2a5c3a;
-  --border: rgba(168,95,16,0.28);
-  --border-light: rgba(168,95,16,0.13);
-  --goi-bg: #ede0bc;
-  --goi-text: #5a4020;
-  --header-bg: rgba(237,224,189,0.98);
+  /* Modern warm heritage — crisp warm-white and stone neutrals; the
+     gold-leaf / kumkumam / manuscript-ink accents are kept as the brand */
+  --bg: #faf8f4;          /* page — crisp warm white (was aged parchment) */
+  --bg2: #f3efe7;         /* section bands — soft stone */
+  --bg3: #ffffff;         /* card surface — pure white, maximum separation */
+  --bg4: #f6f2ea;         /* hover surface */
+  /* Amber — refined saffron, still gold-leaf */
+  --amber: #b56a14;
+  --amber-light: #cf7d1c;
+  --amber-pale: #4a3210;  /* dark on light, for contrast (mirrors the dark theme's pale gold) */
+  /* Vermillion — the kumkumam red of palm-leaf manuscripts, slightly cleaner */
+  --vermillion: #c8412a;
+  --vermillion-light: #d95a42;
+  --vermillion-soft: rgba(200,65,42,0.10);
+  /* Manuscript-ink indigo — deep navy */
+  --indigo: #24407a;
+  --indigo-deep: #172a54;
+  --indigo-soft: rgba(36,64,122,0.10);
+  /* Text — warm near-black ink, stone-grey secondary */
+  --cream: #1c1917;
+  --cream-dim: #57534e;
+  --cream-mute: #78716c;
+  --red-accent: #c8412a;
+  --green-accent: #2d6a48;
+  /* Borders — neutral warm grey, no amber tint */
+  --border: rgba(28,25,23,0.12);
+  --border-light: rgba(28,25,23,0.07);
+  --goi-bg: #f3efe7;
+  --goi-text: #57534e;
+  --header-bg: rgba(250,248,244,0.96);
 }
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
@@ -204,7 +206,7 @@ nav {
 .nav-brand-text span { color: var(--amber); }
 .nav-links { display: flex; gap: 1.1rem; list-style: none; align-items: center; }
 .nav-links a { color: var(--cream); font-size: 13.5px; font-weight: 500; text-decoration: none; letter-spacing: 0.01em; padding: 5px 8px; border-radius: 6px; transition: color 0.18s, background 0.18s; }
-.nav-links a:hover { color: var(--amber); background: rgba(168,95,16,0.12); }
+.nav-links a:hover { color: var(--amber); background: rgba(181,106,20,0.12); }
 .nav-cta {
   background: var(--amber); color: #0c0a06; border: none;
   padding: 7px 18px; border-radius: 6px; font-family: var(--font-ui);
@@ -849,10 +851,10 @@ nav {
 /* Light-mode specific adjustments */
 [data-theme="light"] .hero-bg {
   background:
-    radial-gradient(ellipse 80% 60% at 60% 40%, rgba(168,95,16,0.08) 0%, transparent 70%),
+    radial-gradient(ellipse 80% 60% at 60% 40%, rgba(181,106,20,0.08) 0%, transparent 70%),
     radial-gradient(ellipse 40% 40% at 20% 80%, rgba(139,46,26,0.04) 0%, transparent 60%);
 }
-[data-theme="light"] .hero-tamil-bg { color: rgba(168,95,16,0.05); }
+[data-theme="light"] .hero-tamil-bg { color: rgba(181,106,20,0.05); }
 [data-theme="light"] .hero-pattern { opacity: 0.04; }
 [data-theme="light"] .nav-cta { color: #faf5e8; }
 [data-theme="light"] .btn-primary { color: #faf5e8; }
@@ -886,7 +888,7 @@ nav {
 .nav-brand-text span { color: var(--amber); }
 .nav-links { display: flex; gap: 1.1rem; list-style: none; }
 .nav-links a { color: var(--cream); font-size: 13.5px; font-weight: 500; text-decoration: none; letter-spacing: 0.01em; padding: 5px 8px; border-radius: 6px; transition: color 0.18s, background 0.18s; }
-.nav-links a:hover { color: var(--amber); background: rgba(168,95,16,0.12); }
+.nav-links a:hover { color: var(--amber); background: rgba(181,106,20,0.12); }
 .nav-cta {
   background: var(--amber); color: #0c0a06; border: none;
   padding: 7px 18px; border-radius: 6px; font-family: var(--font-ui);
@@ -1843,7 +1845,7 @@ nav {
   color: var(--amber-pale); font-style: normal;
   background: rgba(245,208,128,0.08); padding: 0 2px; border-radius: 2px;
 }
-[data-theme="light"] .gt-transcription .gt-body em { color: var(--amber); background: rgba(168,95,16,0.1); }
+[data-theme="light"] .gt-transcription .gt-body em { color: var(--amber); background: rgba(181,106,20,0.1); }
 .gt-transcription .gt-numeral {
   font-family: var(--font-tamil); font-size: 14px;
   color: var(--vermillion-light); text-align: center;
