@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+<meta name="theme-color" content="#1F3A5F">
+<meta name="description" content="தாளக் குறள் — a rhythm game for children built from the வெண்பா metre of every Tirukkural couplet. Tap தா for நேர், தக for நிரை, and chant all 1,330 kurals by their beat. Free, offline, no accounts. Central Institute of Classical Tamil.">
+<title>தாளக் குறள் · Thaala Kural</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="தாளக் குறள்">
+<link rel="stylesheet" href="assets/fonts.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header id="top">
+  <button class="icon-btn" id="btn-back" aria-label="பின் · Back" hidden>‹</button>
+  <img class="logo" src="assets/cict-logo.png" alt="" width="30" height="30">
+  <div class="title-wrap">
+    <h1 id="top-title">தாளக் குறள்</h1>
+    <div class="sub" id="top-sub">Thaala Kural · CICT</div>
+  </div>
+  <button class="icon-btn" id="btn-sound" aria-label="ஒலி · Sound" title="ஒலி">🔊</button>
+  <button class="icon-btn" id="btn-settings" aria-label="அமைப்பு · Settings" title="அமைப்பு">⚙</button>
+</header>
+
+<main id="main" class="view" tabindex="-1"></main>
+
+<div id="toast" role="status" aria-live="polite"></div>
+
+<script src="audio.js" defer></script>
+<script src="game.js" defer></script>
+<script src="app.js" defer></script>
+<script src="lesson.js" defer></script>
+</body>
+</html>

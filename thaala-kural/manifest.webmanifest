@@ -1,0 +1,28 @@
+{
+  "name": "தாளக் குறள் · Thaala Kural",
+  "short_name": "தாளக் குறள்",
+  "description": "A rhythm game for children built from the metre of every Tirukkural couplet: tap தா for நேர் and தக for நிரை and chant all 1,330 kurals by their வெண்பா beat. Free, offline, no accounts. Central Institute of Classical Tamil.",
+  "id": "./",
+  "start_url": "./index.html#/",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#fdf7e7",
+  "theme_color": "#1F3A5F",
+  "lang": "ta",
+  "dir": "ltr",
+  "categories": ["education", "games", "kids"],
+  "icons": [
+    { "src": "assets/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "assets/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "assets/icon-maskable-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+    { "src": "assets/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "விளையாடு · Play", "short_name": "விளையாடு", "url": "./index.html#/next" },
+    { "name": "இன்றைய குறள் · Kural of the day", "short_name": "இன்று", "url": "./index.html#/daily" },
+    { "name": "வரைபடம் · Map", "short_name": "வரைபடம்", "url": "./index.html#/map" }
+  ],
+  "display_override": ["standalone", "minimal-ui", "browser"],
+  "prefer_related_applications": false
+}
