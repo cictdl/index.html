@@ -35,6 +35,7 @@ def build_payload():
         "data/meta.json": load(DATA / "meta.json"),
         "data/glossary.json": load(DATA / "glossary.json"),
         "data/tags.json": load(DATA / "tags.json"),
+        "data/occasions.json": load(DATA / "occasions.json"),
         # scribal readings travel offline; the leaf images are fetched from Zenodo on demand
         "data/manuscript.json": load(DATA / "manuscript.json"),
         # no bundled audio in the single file — the app falls back to on-device speech

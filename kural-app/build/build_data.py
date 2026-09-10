@@ -406,6 +406,15 @@ def main():
         "changelog": load(Path(__file__).resolve().parent / "changelog.json") if (Path(__file__).resolve().parent / "changelog.json").exists() else [],
     }
     dump(OUT / "meta.json", meta)
+    # நிகழ்வுக்கு ஒரு குறள் — curated occasions (build/occasions.json) → data/occasions.json
+    occ_src = Path(__file__).resolve().parent / "occasions.json"
+    if occ_src.exists():
+        occ = load(occ_src); seen = set()
+        for o in occ["occasions"]:
+            assert o["id"] not in seen and all(1 <= n <= 1330 for n in o["kurals"]) and len(set(o["kurals"])) == len(o["kurals"]), o["id"]
+            seen.add(o["id"])
+        dump(OUT / "occasions.json", occ)
+        print(f"occasions: {len(occ['occasions'])} with {sum(len(o['kurals']) for o in occ['occasions'])} couplet slots")
 
     size = sum(p.stat().st_size for p in OUT.rglob("*.json"))
     print(f"data bundle: {size/1e6:.1f} MB in {time.time()-t0:.1f}s → {OUT}")

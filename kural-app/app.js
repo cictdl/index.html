@@ -55,6 +55,7 @@ const STR = {
     grNote: 'இலக்கணக் குறிப்புகள் AI-உதவியுடன் உருவாக்கி இருமுறை சரிபார்க்கப்பட்ட வரைவு; நம்பகம் < 0.7 ஆனவை அறிஞர் மறுஆய்வுக்குரியவை.',
     report: 'பிழையைத் தெரிவி', reportHelp: 'உங்கள் அஞ்சல் செயலியில் முன்நிரப்பிய கடிதம் திறக்கும்; நீங்கள் அனுப்பும் வரை எதுவும் அனுப்பப்படாது.', rpStream: 'எந்தப் பகுதி', rpType: 'பிழை வகை', rpNote: 'என்ன தவறு?', rpFix: 'திருத்தம் (விருப்பம்)', rpEmail: 'மின்னஞ்சலில் அனுப்பு', rpShare: 'பகிர்', rpCopy: 'அறிக்கையை நகலெடு', rpOpened: 'அஞ்சல் செயலி திறக்கிறது…', rpReviewed: 'அறிக்கைகள் நிறுவனத்தில் சரிபார்க்கப்பட்ட பின்னரே பாடம் திருத்தப்படும்; திருத்தங்கள் “நூல் பற்றி” பக்கத்தில் பதிவாகும்.', rpTa: 'மூலம் (தமிழ்)', rpEnProse: 'English prose', rpOther: 'பிற', rpT_spelling: 'எழுத்துப் பிழை', rpT_text: 'வரி / சொல் தவறு', rpT_meaning: 'பொருள் / மொழிபெயர்ப்பு', rpT_grammar: 'இலக்கணக் குறிப்பு', rpT_metre: 'யாப்பு', rpT_ms: 'சுவடி வாசிப்பு', rpT_credit: 'மொழிபெயர்ப்பாளர் / பதிப்பு விவரம்', rpT_other: 'பிற', corrections: 'திருத்தங்கள்', reportIntro: 'பிழை கண்டால் அந்தக் குறளின் பக்கத்தில் ⚑ பொத்தானைத் தட்டுங்கள்; அறிக்கை மின்னஞ்சலாக நிறுவனத்தை அடையும்.',
     kattam: 'குறள் குறுக்கெழுத்து', kattamSub: 'தினமும் ஒரு தமிழ்க் குறுக்கெழுத்து — விடைகள் அனைத்தும் குறள் சொற்கள்', kattamGo: 'விளையாடு',
+    occasions: 'நிகழ்வுக்கு ஒரு குறள்', occasionsSub: 'திருமணம், தொடக்க விழா, பிரியாவிடை, அஞ்சலி, பள்ளிக் கூட்டம் — பேச்சுக்கும் அழைப்பிதழுக்கும் பொருத்தமான குறள்கள்', occAll: 'எல்லா நிகழ்வுகளும்', occSee: 'மேலும் நிகழ்வுகள்', occCurated: 'செம்மொழித் தமிழாய்வு மத்திய நிறுவனம் தேர்ந்தெடுத்தவை · வேறு குறள் பொருத்தம் எனில் அக்குறளின் பக்கத்தில் ⚑ வழியாகத் தெரிவிக்கலாம்', occShare: 'உரையாகப் பகிர்', occCard: 'அட்டை', occOpen: 'திற',
     confidence: 'நம்பகம்', audiobook: 'ஒலிப் புத்தகம் (அதிகாரம் முழுதும்)', saveOffline: 'சேமி', saved: 'சேமிக்கப்பட்டது',
     installed: 'நிறுவுக', install: 'செயலியாக நிறுவு', calendar: 'நாட்காட்டியில் சேர் (.ics)',
     kotd: 'இன்றைய குறள்', more: 'மேலும்', stats: 'புள்ளிவிவரம்', otherKurals: 'இதே குறிப்புள்ள பிற குறள்கள்',
@@ -108,6 +109,7 @@ const STR = {
     grNote: 'Grammar notes are an AI-assisted, double-verified draft; entries with confidence < 0.7 await scholarly review.',
     report: 'Report an error', reportHelp: 'Your mail app opens with a pre-filled message; nothing is sent until you send it.', rpStream: 'Which part', rpType: 'Type of error', rpNote: 'What is wrong?', rpFix: 'Suggested correction (optional)', rpEmail: 'Send by email', rpShare: 'Share', rpCopy: 'Copy report', rpOpened: 'Opening your mail app…', rpReviewed: 'Reports are checked at the Institute before the text is corrected; corrections are listed on the About page.', rpTa: 'Tamil original', rpEnProse: 'English prose', rpOther: 'Other', rpT_spelling: 'Spelling or typo', rpT_text: 'Wrong line or word', rpT_meaning: 'Meaning or translation', rpT_grammar: 'Grammar note', rpT_metre: 'Metre', rpT_ms: 'Manuscript reading', rpT_credit: 'Credit or edition details', rpT_other: 'Other', corrections: 'Corrections', reportIntro: 'Found an error? Tap ⚑ on that kural’s page; the report reaches the Institute by email.',
     kattam: 'Kural crossword', kattamSub: 'A daily Tamil crossword; every answer is a word from the Kural', kattamGo: 'Play',
+    occasions: 'A Kural for the occasion', occasionsSub: 'Weddings, inaugurations, farewells, condolences, school assemblies: couplets that fit the moment, for a speech or an invitation', occAll: 'All occasions', occSee: 'More occasions', occCurated: 'Chosen at the Central Institute of Classical Tamil · if another couplet fits better, say so with ⚑ on its page', occShare: 'Share as text', occCard: 'Card', occOpen: 'Open',
     confidence: 'confidence', audiobook: 'Audiobook (whole chapter)', saveOffline: 'Save', saved: 'Saved',
     installed: 'Install', install: 'Install as app', calendar: 'Add to calendar (.ics)',
     kotd: 'Kural of the day', more: 'More', stats: 'Statistics', otherKurals: 'Other kurals with this tag',
@@ -341,10 +343,11 @@ async function route() {
       search: () => viewSearch(q.get('q') || ''), practice: () => p[1] ? viewPractice(+p[1], p[2] || 'listen') : viewPracticeIndex(),
       more: viewMore, settings: viewSettings, about: viewAbout, daily: viewDaily, bookmarks: viewBookmarks,
       grammar: () => viewGrammar(q.get('type') || 'ilakkanam', q.get('tag') || ''), offline: viewOffline,
+      occasions: () => viewOccasions(p[1] || ''),
     };
     await (map[r] || viewHome)();
     setTab({ home: 'home', daily: 'home', browse: 'browse', ch: 'browse', k: 'browse', compare: 'browse',
-             parallel: 'browse', search: 'search', practice: 'practice', study: 'practice' }[r] || 'more');
+             parallel: 'browse', search: 'search', practice: 'practice', study: 'practice', occasions: 'home' }[r] || 'more');
   } catch (e) {
     console.error(e);
     render(`<div class="card"><h2>⚠️</h2><p>${esc(e.message)}</p><p class="muted">${navigator.onLine ? '' : t('offline.banner')}</p></div>`);
@@ -402,6 +405,8 @@ async function viewHome() {
   const f = firstLang(); const tr = k.tr[f];
   const last = S.lastKural || 1; const lk = await kural(last);
   const m = D.meta;
+  const oc = await occasions().catch(() => null);
+  const occChips = oc ? oc.occasions.slice(0, 8).map(x => `<a class="chip" href="#/occasions/${esc(x.id)}">${x.icon} ${esc(occName(x))}</a>`).join('') + `<a class="chip sel" href="#/occasions">${t('occSee')} ›</a>` : '';
   render(`
   <section class="hero">
     <div class="label">${t('daily')} · ${todayKey()}</div>
@@ -414,6 +419,7 @@ async function viewHome() {
       <a class="btn" href="#/practice/${n}">🎵 ${t('practice')}</a>
     </div>
   </section>
+  ${occChips ? `<div class="card"><h2>🎯 ${t('occasions')}</h2><div class="muted" style="font-size:.85rem">${t('occasionsSub')}</div><div style="margin-top:6px">${occChips}</div></div>` : ''}
   <div class="two">
     <a class="card" href="#/k/${last}" style="text-decoration:none;color:inherit"><h2>${t('continue')}</h2><div class="muted">${t('kural')} ${last} · ${esc(chMeta(chOf(last)).name)}</div><div style="font-family:var(--ta-serif)">${esc(lk.l1)}<br>${esc(lk.l2)}</div></a>
     <div class="card"><h2>${t('stats')}</h2><div class="stat">
@@ -1266,6 +1272,7 @@ async function viewMore() {
     <a href="#/grammar"><span class="num">📚</span><span class="tx">${t('grammarX')} — ${t('grammar')}</span></a>
     <a href="#/practice"><span class="num">🎵</span><span class="tx">${t('practice')} · ${t('memorised')} (${S.memorised.length})</span></a>
     ${SINGLE ? '' : `<a href="kattam/index.html"><span class="num">🧩</span><span class="tx">${t('kattam')}</span></a>`}
+    <a href="#/occasions"><span class="num">🎯</span><span class="tx">${t('occasions')}</span></a>
     <a href="#/study"><span class="num">🧠</span><span class="tx">${t('study')} — spaced repetition (${srsDue().length} ${t('srsDue')})</span></a>
     <a href="#/offline"><span class="num">📥</span><span class="tx">${t('offline')} · ${t('storage')}</span></a>
     <a href="#/settings"><span class="num">⚙</span><span class="tx">${t('settings')}</span></a>
@@ -1295,6 +1302,40 @@ function renderInstallCard() {
   }
   if (ios) { card.hidden = false; note.textContent = t('installIos'); }
 }
+// ───────────────────────────── நிகழ்வுக்கு ஒரு குறள் · a Kural for the occasion ─────────────────────────────
+// Curated in build/occasions.json at the Institute; each occasion offers a few couplets with the reader's
+// translation and the same share actions as the kural page, for a speech, a card or an invitation.
+async function occasions() { return D.occ || (D.occ = await getJSON('data/occasions.json')); }
+function occName(o) { return S.ui === 'ta' ? o.ta : o.en; }
+function occNote(o) { return S.ui === 'ta' ? o.note_ta : o.note_en; }
+async function viewOccasions(id) {
+  const oc = await occasions(); const f = firstLang();
+  const o = oc.occasions.find(x => x.id === id);
+  if (!o) {
+    setTitle(t('occasions'), t('occasionsSub'));
+    render(`<div class="card"><h2>🎯 ${t('occasions')}</h2><div class="muted">${t('occasionsSub')}</div></div>` +
+      oc.groups.map(g => `<div class="card"><h2>${esc(S.ui === 'ta' ? g.ta : g.en)}</h2><div class="occ-grid">${oc.occasions.filter(x => x.group === g.id).map(x =>
+        `<a class="occ" href="#/occasions/${esc(x.id)}"><span class="ic">${x.icon}</span><b>${esc(occName(x))}</b><span class="muted">${esc(occNote(x))}</span></a>`).join('')}</div></div>`).join('') +
+      `<div class="card muted" style="font-size:.85rem">${t('occCurated')}</div>`);
+    return;
+  }
+  const ks = await Promise.all(o.kurals.map(kural));
+  setTitle(`${o.icon} ${occName(o)}`, t('occasions'));
+  render(`<div class="card"><div class="muted">${esc(occNote(o))}</div></div>` + ks.map(k => {
+    const cm = chMeta(chOf(k.n)); const tr = k.tr[f];
+    return `<div class="card occ-k" data-n="${k.n}">
+      <div class="kural-head"><span class="n">${t('kural')} ${k.n}</span><a class="ch" href="#/ch/${cm.adhigaram}">${esc(cm.name)} · ${esc(cm.nameEn)}</a></div>
+      <a href="#/k/${k.n}" style="text-decoration:none;color:inherit">${coupletHTML(k)}</a>
+      ${tr ? `<div class="tr-text ${scriptClass(f)} ${L(f).dir === 'rtl' ? 'rtl' : ''}" style="font-size:1rem;margin-top:6px"${dirAttr(f)}>${esc(tr[0])}${tr[1] ? `<span class="l2">${esc(tr[1])}</span>` : ''}</div><div class="credit">${esc(L(f).credit)}</div>` : ''}
+      <div class="actions"><button class="btn primary occ-share" type="button">⤴ ${t('occShare')}</button><button class="btn occ-card" type="button">🖼 ${t('occCard')}</button><a class="btn" href="#/k/${k.n}">📖 ${t('occOpen')}</a></div></div>`;
+  }).join('') + `<div class="row" style="margin:8px 4px"><a class="btn" href="#/occasions">‹ ${t('occAll')}</a></div><div class="card muted" style="font-size:.85rem">${t('occCurated')}</div>`);
+  $$('.occ-k').forEach(card => {
+    const k = ks.find(x => x.n === +card.dataset.n); const cm = chMeta(chOf(k.n));
+    card.querySelector('.occ-share').onclick = () => shareKural(k, cm);
+    card.querySelector('.occ-card').onclick = e => shareCard(k, cm, e.currentTarget);
+  });
+}
+
 async function viewBookmarks() {
   setTitle(t('bookmarks'), '');
   const f = firstLang();
@@ -1384,7 +1425,7 @@ async function viewOffline() {
   await loadFontUrls();
   const ai = await audioInfo(); const m = D.meta;
   const est = navigator.storage && navigator.storage.estimate ? await navigator.storage.estimate() : null;
-  const textUrls = ['assets/fonts.css', ...FONT_URLS, 'kattam/index.html', 'kattam/app.js', 'kattam/styles.css', 'kattam/assets/icon.svg', 'kattam/data/meta.json', 'kattam/data/mini.json', 'kattam/data/weekly.json']; for (let i = 1; i <= 133; i++) textUrls.push(`data/ch/${pad(i, 3)}.json`, `data/gr/${pad(i, 3)}.json`);
+  const textUrls = ['assets/fonts.css', ...FONT_URLS, 'kattam/index.html', 'kattam/app.js', 'kattam/styles.css', 'kattam/assets/icon.svg', 'kattam/data/meta.json', 'kattam/data/mini.json', 'kattam/data/weekly.json', 'data/occasions.json']; for (let i = 1; i <= 133; i++) textUrls.push(`data/ch/${pad(i, 3)}.json`, `data/gr/${pad(i, 3)}.json`);
   ['translit', 'prose-ta', 'prose-en', ...m.langOrder, ...m.counts.proseLangs.filter(c => !['ta', 'en'].includes(c)).map(c => 'prose-' + c)].forEach(c => textUrls.push(`data/search/${c}.json`));
   const packs = Object.keys(ai.tts || {});
   const packUrls = p => Array.from({ length: 1330 }, (_, i) => `audio/tts/${p}/${pad(i + 1, 4)}.mp3`).slice(0, (ai.tts || {})[p] || 0);
