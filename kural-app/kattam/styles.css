@@ -1,0 +1,165 @@
+/* குறள் கட்டம் — styles. Light/dark via prefers-color-scheme. */
+:root{
+  --ta:"Noto Sans Tamil","Nirmala UI","Latha","Tamil Sangam MN","InaiMathi",sans-serif;
+  --lat:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --paper:#faf7f2; --ink:#221c18; --muted:#6c625a; --line:#d9cfc3;
+  --accent:#8f2f1c; --accent-ink:#fff; --card:#fff;
+  --cellbg:#fff; --blk:#2a2320; --hl:#fbe9b8; --sel:#f7c948; --wrong:#c62828; --ok:#1b7f3b; --rev:#1a5fb4;
+  --key:#fff; --keyb:#cfc4b5; --shadow:0 1px 2px rgba(0,0,0,.08);
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --paper:#1b1612; --ink:#f1e9df; --muted:#b3a698; --line:#3d332c;
+    --accent:#e07a5f; --accent-ink:#1b1612; --card:#26201b;
+    --cellbg:#f6efe4; --blk:#0d0a08; --hl:#e9cf8a; --sel:#f4b400; --wrong:#ff6b6b; --ok:#57d38c; --rev:#79b8ff;
+    --key:#2f2721; --keyb:#4a3f37; --shadow:0 1px 2px rgba(0,0,0,.4);
+  }
+}
+/* --sat / --sab: the safe-area insets. Installed on iOS (black-translucent status bar) they come
+   from env(); the Android shell overrides them inline (WebView reports env() as 0); in a plain
+   browser tab both are 0. */
+:root{--sat:env(safe-area-inset-top,0px);--sab:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--ta),var(--lat);line-height:1.5}
+body{padding-bottom:calc(16px + var(--sab))}
+h1,h2,h3{margin:0 0 .4em;font-weight:600;line-height:1.3}
+h2{font-size:1.15rem} h3{font-size:1rem;margin-top:1.2em}
+p{margin:.4em 0} a{color:var(--accent)} .muted{color:var(--muted)} .en{color:var(--muted);font-family:var(--lat)}
+code{font-family:ui-monospace,Consolas,monospace;font-size:.9em}
+button{font-family:inherit;font-size:inherit;color:inherit}
+
+/* ---------- header / nav */
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:calc(10px + var(--sat)) 14px 10px;background:var(--accent);color:var(--accent-ink)}
+.brand{display:flex;align-items:center;gap:10px}
+.brand img{border-radius:8px;background:#fff}
+.top h1{font-size:1.25rem;margin:0}
+.top .sub{font-size:.72rem;opacity:.85;font-family:var(--lat)}
+.streak{font-size:.95rem;white-space:nowrap}
+.hdr-right{display:flex;align-items:center;gap:8px}
+.install-btn{border:1px solid rgba(255,255,255,.7);background:rgba(255,255,255,.12);color:var(--accent-ink);border-radius:999px;padding:4px 10px;font-size:.85rem;cursor:pointer;white-space:nowrap}
+.install-btn[hidden]{display:none}
+.ios-hint{display:flex;align-items:center;gap:10px;background:var(--hl);color:#1a1512;padding:8px 12px;font-size:.88rem;border-bottom:1px solid var(--line)}
+.ios-hint[hidden]{display:none}
+.ios-hint button{margin-left:auto;border:0;background:transparent;font-size:1rem;cursor:pointer;color:inherit}
+.tabs{display:flex;gap:4px;padding:6px 10px;border-bottom:1px solid var(--line);background:var(--card);position:sticky;top:0;z-index:5}
+/* once the header scrolls away the tab bar would sit under the status bar: keep it below */
+.tabs{top:var(--sat)}
+.tabs a{flex:1;text-align:center;text-decoration:none;color:var(--ink);padding:6px 4px;border-radius:8px;font-size:.92rem;white-space:nowrap}
+.tabs a.active{background:var(--accent);color:var(--accent-ink)}
+main{max-width:1080px;margin:0 auto;padding:10px 12px}
+.view[hidden]{display:none}
+
+/* ---------- play head */
+.playhead{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;margin:4px 0 8px}
+.label{font-weight:600;font-size:1.05rem}
+.meta{font-size:.8rem;color:var(--muted)}
+.stats{display:flex;gap:6px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:3px 10px;font-variant-numeric:tabular-nums;white-space:nowrap}
+
+/* ---------- board layout */
+.board{display:grid;grid-template-columns:1fr;gap:14px}
+@media (min-width:900px){.board{grid-template-columns:auto 1fr;align-items:start} .grid{--cell:min(52px,calc((100vw - 36px) / var(--n)))}}
+.left{display:flex;flex-direction:column;align-items:center;gap:8px;position:relative}
+
+/* ---------- grid */
+/* cell size: capped by width, and on phones also by height so that grid + clue bar stay
+   above the sticky keyboard (about 600px of chrome around the grid); floor 34px for 11×11 */
+.grid{--cell:min(52px,calc((100vw - 36px) / var(--n)),max(32px,calc((100vh - 650px) / var(--n))));display:grid;grid-template-columns:repeat(var(--n),var(--cell));gap:2px;background:var(--blk);padding:2px;border-radius:4px;user-select:none;-webkit-user-select:none;touch-action:manipulation}
+.cell{position:relative;width:var(--cell);height:var(--cell);background:var(--cellbg);color:#1a1512;display:flex;align-items:center;justify-content:center;cursor:pointer;overflow:hidden}
+.cell.blk{background:var(--blk);cursor:default}
+.cell.hl{background:var(--hl)} .cell.sel{background:var(--sel)}
+.cell .num{position:absolute;top:1px;left:3px;font-size:calc(var(--cell) * .22);line-height:1;color:#5a4d44;font-family:var(--lat)}
+.cell .ch{display:inline-block;white-space:nowrap;font-size:calc(var(--cell) * .48);line-height:1;padding-top:calc(var(--cell) * .08)}
+.cell.wrong .ch{color:var(--wrong)} .cell.ok .ch{color:var(--ok)} .cell.rev .ch{color:var(--rev)}
+.cell.wrong::after{content:"";position:absolute;left:12%;right:12%;top:50%;border-top:2px solid var(--wrong);opacity:.5;transform:rotate(-30deg)}
+
+/* ---------- clue bar */
+.cluebar{display:flex;align-items:stretch;gap:6px;width:100%;margin-bottom:2px}
+.cluebar-text{flex:1;background:var(--hl);color:#1a1512;border-radius:8px;padding:5px 10px;font-size:.92rem;min-height:40px;line-height:1.4}
+.cluebar-text .adh{display:block;font-size:.78rem;opacity:.75}
+.nav-btn{border:1px solid var(--line);background:var(--card);border-radius:8px;min-width:40px;cursor:pointer}
+#kb-in{position:absolute;top:0;left:0;opacity:0;width:1px;height:1px;border:0;padding:0;pointer-events:none}
+
+/* ---------- clues */
+.right{display:grid;grid-template-columns:1fr;gap:10px}
+@media (min-width:600px){.right{grid-template-columns:1fr 1fr}}
+.cluecol h2{font-size:1rem;border-bottom:2px solid var(--accent);padding-bottom:3px;margin-bottom:6px}
+.cluecol h2 small{font-weight:400;color:var(--muted);font-size:.75rem;margin-left:6px}
+.cluecol ol{list-style:none;margin:0;padding:0;max-height:52vh;overflow:auto}
+@media (min-width:900px){.cluecol ol{max-height:calc(100vh - 220px)}}
+.cluecol li{display:flex;gap:8px;padding:6px 8px;border-radius:8px;cursor:pointer;border-left:3px solid transparent}
+.cluecol li:hover{background:var(--card)}
+.cluecol li.cur{background:var(--hl);color:#1a1512;border-left-color:var(--accent)}
+.cluecol li.done{opacity:.55}
+.cluecol .n{font-weight:700;min-width:1.4em;font-family:var(--lat)}
+.cluecol .k{font-size:.95rem;line-height:1.45}
+.cluecol .a{font-size:.75rem;color:var(--muted)} .cluecol li.cur .a{color:#4a3d34}
+
+/* ---------- keyboard */
+.keyboard{margin:12px auto 0;max-width:640px;display:flex;flex-direction:column;gap:5px}
+.krow{display:flex;gap:4px;justify-content:center}
+.key{flex:1;min-width:0;height:42px;border:0;border-bottom:2px solid var(--keyb);border-radius:6px;background:var(--key);box-shadow:var(--shadow);font-size:1.15rem;cursor:pointer;padding:0;touch-action:manipulation;white-space:nowrap}
+.key:active{transform:translateY(1px);border-bottom-width:1px}
+.key.sign{background:var(--hl);color:#1a1512}
+.key.act{font-size:.85rem;flex:0 0 auto;padding:0 10px}
+.key.act.primary{background:var(--accent);color:var(--accent-ink);font-weight:600}
+.key.act[disabled]{opacity:.45;cursor:default}
+.key.del{flex:0 0 52px;font-size:1rem}
+.keyboard.native .krow:not(.ctrl){display:none}
+@media (max-width:899px){
+  .keyboard{position:sticky;bottom:0;background:var(--paper);padding:6px 0 calc(4px + var(--sab));z-index:4}
+}
+/* phones: six controls do not fit one row, so the submit button takes a row of its own */
+@media (max-width:520px){
+  .krow.ctrl{flex-wrap:wrap} .key.act.primary{flex-basis:100%;height:38px}
+  .top .sub{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:70vw}
+  .cluebar-text{font-size:.86rem;min-height:36px;padding:4px 8px;line-height:1.35}
+  .cluebar-text .adh{font-size:.72rem}
+  .playhead{margin:2px 0 6px} .label{font-size:.98rem} .tabs a{padding:4px 2px;font-size:.88rem}
+}
+/* short screens (most phones in portrait): shave the keyboard so the whole grid stays above it */
+@media (max-height:820px) and (max-width:899px){
+  .key{height:32px} .keyboard{gap:3px} .key.act.primary{height:34px}
+  .cluebar-text{min-height:32px}
+  .top .sub,.playhead .meta{display:none} .top{padding-bottom:6px} .tabs{padding:3px 8px}
+}
+@media (max-width:420px){
+  .krow{gap:3px} .key{height:38px;font-size:1.02rem} .key.act{font-size:.78rem;padding:0 7px}
+  .krow[data-row="uyir"] .key{font-size:.72rem} .krow[data-row="mei2"] .key{font-size:.92rem}
+  .key{overflow:hidden}
+}
+
+/* ---------- archive */
+.archlist{list-style:none;padding:0;margin:0 0 8px;display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:6px}
+.archlist li a{display:flex;justify-content:space-between;gap:6px;text-decoration:none;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:8px;padding:7px 10px;font-size:.9rem}
+.archlist li a .st{font-family:var(--lat)}
+.btn{border:1px solid var(--accent);background:var(--accent);color:var(--accent-ink);border-radius:8px;padding:8px 14px;cursor:pointer}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+
+/* ---------- result modal */
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.45);display:flex;align-items:flex-end;justify-content:center;z-index:20}
+.modal[hidden]{display:none}
+.sheet{position:relative;background:var(--card);color:var(--ink);width:100%;max-width:720px;max-height:92vh;overflow:auto;border-radius:16px 16px 0 0;padding:16px 16px calc(24px + var(--sab))}
+@media (min-width:720px){.modal{align-items:center}.sheet{border-radius:16px}}
+.close{position:absolute;top:8px;right:10px;border:0;background:transparent;font-size:1.2rem;cursor:pointer}
+.resstats{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0 10px}
+.resstats span{background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:4px 12px}
+.resbtns{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+.reswords .w{border-top:1px solid var(--line);padding:10px 0}
+.reswords .ans{font-weight:700;font-size:1.1rem}
+.reswords .ans.bad{color:var(--wrong)} .reswords .ans.good{color:var(--ok)}
+.reswords .typed{color:var(--muted);font-size:.85rem}
+.reswords .kural{margin:4px 0;line-height:1.6}
+.reswords mark{background:var(--hl);color:#1a1512;padding:0 3px;border-radius:3px}
+.reswords .src{font-size:.8rem;color:var(--muted)}
+.reswords details{margin-top:4px;font-size:.9rem}
+.reswords summary{cursor:pointer;color:var(--accent)}
+.reswords .gram{font-size:.85rem;background:var(--paper);border-left:3px solid var(--accent);padding:4px 8px;margin-top:4px}
+
+/* ---------- toast */
+.toast{position:fixed;left:50%;bottom:calc(90px + var(--sab));transform:translateX(-50%);background:var(--ink);color:var(--paper);padding:8px 14px;border-radius:999px;font-size:.9rem;z-index:30;box-shadow:0 2px 8px rgba(0,0,0,.3);max-width:90vw}
+.toast[hidden]{display:none}
+
+/* embedded in the Tirukkural app: the way back */
+.top .back{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;margin-right:6px;border-radius:10px;background:rgba(255,255,255,.16);color:var(--accent-ink,#fff);text-decoration:none;font-size:1.5rem;line-height:1;font-family:var(--lat)}
+.top .back:hover{background:rgba(255,255,255,.28)}

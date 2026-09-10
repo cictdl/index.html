@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#8f2f1c" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1b1612" media="(prefers-color-scheme: dark)">
+<meta name="description" content="குறள் குறுக்கெழுத்து — daily Tamil crossword from the Tirukkural. Every answer is a word from a kural; the clue is the kural with the word blanked out. Free, offline-first. Central Institute of Classical Tamil.">
+<title>குறள் குறுக்கெழுத்து · திருக்குறள்</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="icon" href="../assets/favicon.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">
+    <a class="back" href="../index.html#/practice" title="திருக்குறள் செயலிக்குத் திரும்பு">‹</a>
+    <img src="assets/icon.svg" alt="" width="34" height="34">
+    <div>
+      <h1>குறள் குறுக்கெழுத்து</h1>
+      <div class="sub">தினமும் ஒரு தமிழ்க் குறுக்கெழுத்து · Tirukkuṟaḷ crossword · CICT</div>
+    </div>
+  </div>
+  <div class="hdr-right">
+    <div class="streak" id="streak" title="தொடர் நாட்கள் · streak"></div>
+  </div>
+</header>
+
+<nav class="tabs" aria-label="Primary">
+  <a href="#/mini" data-view="mini">📅 இன்று</a>
+  <a href="#/weekly" data-view="weekly">🗓 வாரம்</a>
+  <a href="#/archive" data-view="archive">🗂 பழையவை</a>
+  <a href="#/about" data-view="about">ℹ️ பற்றி</a>
+</nav>
+
+<main id="main">
+
+<!-- ================= PLAY ================= -->
+<section id="view-play" class="view" hidden>
+  <div class="playhead">
+    <div>
+      <div class="label" id="label">—</div>
+      <div class="meta" id="pmeta"></div>
+    </div>
+    <div class="stats">
+      <span class="stat" id="timer" title="நேரம்">0:00</span>
+      <span class="stat" id="life" title="துணை (lifelines)">💡 2</span>
+    </div>
+  </div>
+
+  <div class="board">
+    <div class="left">
+      <div id="grid" class="grid" role="grid" aria-label="குறுக்கெழுத்துக் கட்டம்"></div>
+      <input id="kb-in" type="text" inputmode="none" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="Tamil typing input">
+    </div>
+
+    <div class="right" id="clues">
+      <div class="cluecol">
+        <h2>குறுக்காக <small>இடமிருந்து வலம்</small></h2>
+        <ol id="across"></ol>
+      </div>
+      <div class="cluecol">
+        <h2>நெடுக்காக <small>மேலிருந்து கீழ்</small></h2>
+        <ol id="down"></ol>
+      </div>
+    </div>
+  </div>
+
+  <div class="keyboard" id="keyboard">
+    <!-- the current clue rides with the sticky keyboard block, so it stays visible on a phone
+         while the grid scrolls behind it -->
+    <div class="cluebar" id="cluebar-wrap">
+      <button class="nav-btn" id="prev-word" aria-label="முந்தைய சொல்">◀</button>
+      <div id="cluebar" class="cluebar-text">கட்டத்தைத் தொட்டுத் தொடங்குங்கள்</div>
+      <button class="nav-btn" id="next-word" aria-label="அடுத்த சொல்">▶</button>
+    </div>
+    <div class="krow" data-row="uyir"></div>
+    <div class="krow" data-row="mei1"></div>
+    <div class="krow" data-row="mei2"></div>
+    <div class="krow" data-row="signs1"></div>
+    <div class="krow" data-row="signs2"></div>
+    <div class="krow ctrl">
+      <button class="key act" id="k-dir" title="திசை மாற்று (Enter)">⇄</button>
+      <button class="key act" id="k-check" title="தவறுகளைக் காட்டு">✓ சரிபார்</button>
+      <button class="key act" id="k-hint" title="ஒரு எழுத்தைக் காட்டு">💡 துணை</button>
+      <button class="key act" id="k-gram" title="இலக்கணக் குறிப்பு">இலக்கணம்</button>
+      <button class="key act" id="k-native" title="சாதனத் தட்டச்சுப் பலகை">⌨</button>
+      <button class="key act primary" id="k-submit">நிறைவு செய்</button>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ARCHIVE ================= -->
+<section id="view-archive" class="view" hidden>
+  <h2>பழைய கட்டங்கள்</h2>
+  <p class="muted">நாள்தோறும் ஒரு குட்டிக் கட்டம், வாரந்தோறும் ஒரு பெரிய கட்டம். எதையும் மீண்டும் விளையாடலாம்.</p>
+  <h3>குட்டிக் கட்டங்கள் (7×7)</h3>
+  <ol id="arch-mini" class="archlist"></ol>
+  <h3>வாரக் கட்டங்கள் (11×11)</h3>
+  <ol id="arch-weekly" class="archlist"></ol>
+  <p><button class="btn" id="btn-random">🎲 பயிற்சிக்கு ஏதேனும் ஒரு கட்டம்</button></p>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="view-about" class="view" hidden>
+  <h2>குறள் குறுக்கெழுத்து என்றால் என்ன?</h2>
+  <p>ஒவ்வொரு விடையும் ஒரு திருக்குறளில் உள்ள சொல். குறிப்பு (clue) என்பது அந்தச் சொல் நீக்கப்பட்ட குறளே. கட்டத்தை நிரப்பியதும் குறள் முழுமையும், அதன் பொருளும், ஒவ்வொரு சொல்லின் இலக்கணக் குறிப்பும் காட்டப்படும்.</p>
+  <p class="en">Every answer is a word from a Tirukkuṟaḷ couplet; the clue is that couplet with the word blanked out. On completion the full kural, its meaning and the word-level grammar note are revealed.</p>
+
+  <h3>எழுத்திடும் முறை · How to type</h3>
+  <ul>
+    <li><b>ஒரு கட்டம் = ஒரு எழுத்து.</b> க, கா, க், ஐ, ஃ ஒவ்வொன்றும் ஒரு கட்டம். One cell holds one Tamil letter (grapheme cluster): a bare consonant, a consonant with its vowel sign or pulli, or a vowel.</li>
+    <li><b>திரைப் பலகை:</b> முதலில் மெய் (க), பிறகு துணைக்குறி (◌ா) — கா. துணைக்குறி தட்டியதும் அடுத்த கட்டத்திற்கு நகரும். மெய்யுடன் நிறுத்த, அடுத்த எழுத்தைத் தட்டுங்கள்.</li>
+    <li><b>⌨ சாதனத் தட்டச்சு:</b> கணினியில் தமிழ் விசைப்பலகை (Tamil99, phonetic) அல்லது கைப்பேசியில் Gboard/Sellinam தட்டச்சும் நேரடியாகக் கட்டங்களில் விழும். ெ+ா போன்ற தனித்தனி விசைகள் தானாக ொ ஆகச் சேரும்.</li>
+    <li><b>Enter / ⇄</b> திசை மாற்றும்; <b>Tab</b> அடுத்த சொல்; <b>Backspace</b> அழிக்கும்; அம்புக் குறிகள் நகரும்.</li>
+    <li><b>💡 துணை:</b> ஒரு கட்டத்தில் ஒரு எழுத்தைக் காட்டும் (ஒரு கட்டத்திற்கு 2 முறை). <b>இலக்கணம்:</b> தேர்ந்த சொல்லின் இலக்கணக் குறிப்பைக் காட்டும். <b>✓ சரிபார்:</b> தவறான எழுத்துகளைச் சிவப்பில் காட்டும்.</li>
+  </ul>
+
+  <h3>கட்டக் கொள்கை · Cell policy</h3>
+  <ul>
+    <li>Unicode NFC-க்குப் பின் ஒரு grapheme cluster = ஒரு கட்டம். இரு பகுதி உயிர்க்குறிகள் (ெ ே ை ொ ோ ௌ) ஒருபோதும் பிரிக்கப்படுவதில்லை.</li>
+    <li>ஸ்ரீ = ஒரு கட்டம்; க்ஷ = இரு கட்டங்கள் (க் + ஷ). Zero-width எழுத்துகள் நீக்கப்படும்.</li>
+    <li>விடை ஒப்பீடு எழுத்துக்கு எழுத்து — க ≠ கா ≠ க்.</li>
+  </ul>
+
+  <h3>செயலியாக நிறுவ · Install as an app</h3>
+  <ul>
+    <li><b>Android / Chrome, Edge:</b> மேலே உள்ள <b>⬇ நிறுவு</b> பொத்தான், அல்லது உலாவி மெனுவில் <i>Install app / Add to Home screen</i>.</li>
+    <li><b>iPhone / iPad (Safari):</b> <b>பகிர்</b> ▸ <b>முகப்புத் திரையில் சேர்</b>.</li>
+    <li><b>கணினி (Chrome, Edge):</b> முகவரிப் பட்டையின் வலப்புறம் உள்ள நிறுவு ஐகான்.</li>
+    <li>நிறுவியதும் இரு கட்டத் தொகுப்புகளும் சாதனத்திலேயே சேமிக்கப்படும் — இணையம் இல்லாமலும் விளையாடலாம்; முன்னேற்றம் சாதனத்தில் மட்டுமே இருக்கும்.</li>
+  </ul>
+  <p class="muted" id="about-version"></p>
+
+  <h3>தரவு · Sources</h3>
+  <ul>
+    <li>திருக்குறள் மூலம், அதிகாரப் பெயர்கள்: CICT canonical text (kural-app data).</li>
+    <li>தமிழ்ப் பொருள்: Prof. P. Marudanayagam, <i>Tirukkural — Tamil critical commentary</i> (CICT, 2023).</li>
+    <li>English: Yogi Shuddhananda Bharati (CICT, 2024).</li>
+    <li>இலக்கணக் குறிப்பு: CICT word-level grammar layer for all 1330 kurals.</li>
+    <li>கட்டங்கள் <code>build_puzzles.py</code> மூலம் தானாக உருவாக்கப்பட்டவை; விடைகள் இப்போதைக்குச் சாதனத்திலேயே சரிபார்க்கப்படுகின்றன (போட்டி முறைக்குச் சேவையக ஒப்பீடு தேவை).</li>
+  </ul>
+  <p class="muted">Prototype · செம்மொழித் தமிழாய்வு மத்திய நிறுவனம் · Central Institute of Classical Tamil</p>
+</section>
+
+</main>
+
+<!-- ================= RESULT MODAL ================= -->
+<div id="modal" class="modal" hidden>
+  <div class="sheet" role="dialog" aria-modal="true" aria-labelledby="res-title">
+    <button class="close" id="res-close" aria-label="மூடு">✕</button>
+    <h2 id="res-title">முடிவு</h2>
+    <div class="resstats" id="res-stats"></div>
+    <div class="resbtns">
+      <button class="btn" id="res-share">📤 பகிர்</button>
+      <button class="btn ghost" id="res-next">🎲 மற்றொரு கட்டம்</button>
+    </div>
+    <div id="res-words" class="reswords"></div>
+  </div>
+</div>
+
+<div id="toast" class="toast" hidden></div>
+
+<script src="app.js"></script>
+</body>
+</html>

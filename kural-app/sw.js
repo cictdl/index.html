@@ -4,13 +4,14 @@
    data / audio / fonts: cache-first — they are content-addressed or immutable per build;
    audio also gets Range support so <audio> can seek inside a cached file;
    plus the daily-kural notification. */
-const VERSION = 'v5';
+const VERSION = 'v6';
 const SHELL = 'kural-shell-' + VERSION;
 const RT = 'kural-rt-v1';
 const PREFS = 'kural-prefs';
 const SHELL_URLS = ['./', './index.html', './app.js', './styles.css', './assets/fonts.css', './manifest.webmanifest',
   './assets/cict-logo.png', './assets/icon-192.png', './assets/icon-512.png', './assets/favicon.png', './assets/apple-touch-icon.png',
-  './data/meta.json', './data/glossary.json', './data/tags.json', './data/audio.json', './data/ch/001.json', './data/gr/001.json'];
+  './data/meta.json', './data/glossary.json', './data/tags.json', './data/audio.json', './data/ch/001.json', './data/gr/001.json',
+  './kattam/index.html', './kattam/app.js', './kattam/styles.css', './kattam/assets/icon.svg', './kattam/data/meta.json'];
 
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(SHELL).then(c => c.addAll(SHELL_URLS)).then(() => self.skipWaiting()));

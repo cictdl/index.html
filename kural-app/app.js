@@ -54,6 +54,7 @@ const STR = {
     aiNote: 'எளிய உரை: AI-உதவியுடன் உருவாக்கப்பட்ட வரைவு — CICT அறிஞர் சரிபார்ப்புக்கு உட்பட்டது.',
     grNote: 'இலக்கணக் குறிப்புகள் AI-உதவியுடன் உருவாக்கி இருமுறை சரிபார்க்கப்பட்ட வரைவு; நம்பகம் < 0.7 ஆனவை அறிஞர் மறுஆய்வுக்குரியவை.',
     report: 'பிழையைத் தெரிவி', reportHelp: 'உங்கள் அஞ்சல் செயலியில் முன்நிரப்பிய கடிதம் திறக்கும்; நீங்கள் அனுப்பும் வரை எதுவும் அனுப்பப்படாது.', rpStream: 'எந்தப் பகுதி', rpType: 'பிழை வகை', rpNote: 'என்ன தவறு?', rpFix: 'திருத்தம் (விருப்பம்)', rpEmail: 'மின்னஞ்சலில் அனுப்பு', rpShare: 'பகிர்', rpCopy: 'அறிக்கையை நகலெடு', rpOpened: 'அஞ்சல் செயலி திறக்கிறது…', rpReviewed: 'அறிக்கைகள் நிறுவனத்தில் சரிபார்க்கப்பட்ட பின்னரே பாடம் திருத்தப்படும்; திருத்தங்கள் “நூல் பற்றி” பக்கத்தில் பதிவாகும்.', rpTa: 'மூலம் (தமிழ்)', rpEnProse: 'English prose', rpOther: 'பிற', rpT_spelling: 'எழுத்துப் பிழை', rpT_text: 'வரி / சொல் தவறு', rpT_meaning: 'பொருள் / மொழிபெயர்ப்பு', rpT_grammar: 'இலக்கணக் குறிப்பு', rpT_metre: 'யாப்பு', rpT_ms: 'சுவடி வாசிப்பு', rpT_credit: 'மொழிபெயர்ப்பாளர் / பதிப்பு விவரம்', rpT_other: 'பிற', corrections: 'திருத்தங்கள்', reportIntro: 'பிழை கண்டால் அந்தக் குறளின் பக்கத்தில் ⚑ பொத்தானைத் தட்டுங்கள்; அறிக்கை மின்னஞ்சலாக நிறுவனத்தை அடையும்.',
+    kattam: 'குறள் குறுக்கெழுத்து', kattamSub: 'தினமும் ஒரு தமிழ்க் குறுக்கெழுத்து — விடைகள் அனைத்தும் குறள் சொற்கள்', kattamGo: 'விளையாடு',
     confidence: 'நம்பகம்', audiobook: 'ஒலிப் புத்தகம் (அதிகாரம் முழுதும்)', saveOffline: 'சேமி', saved: 'சேமிக்கப்பட்டது',
     installed: 'நிறுவுக', install: 'செயலியாக நிறுவு', calendar: 'நாட்காட்டியில் சேர் (.ics)',
     kotd: 'இன்றைய குறள்', more: 'மேலும்', stats: 'புள்ளிவிவரம்', otherKurals: 'இதே குறிப்புள்ள பிற குறள்கள்',
@@ -106,6 +107,7 @@ const STR = {
     aiNote: 'Simple prose: AI-assisted draft, pending CICT scholarly review.',
     grNote: 'Grammar notes are an AI-assisted, double-verified draft; entries with confidence < 0.7 await scholarly review.',
     report: 'Report an error', reportHelp: 'Your mail app opens with a pre-filled message; nothing is sent until you send it.', rpStream: 'Which part', rpType: 'Type of error', rpNote: 'What is wrong?', rpFix: 'Suggested correction (optional)', rpEmail: 'Send by email', rpShare: 'Share', rpCopy: 'Copy report', rpOpened: 'Opening your mail app…', rpReviewed: 'Reports are checked at the Institute before the text is corrected; corrections are listed on the About page.', rpTa: 'Tamil original', rpEnProse: 'English prose', rpOther: 'Other', rpT_spelling: 'Spelling or typo', rpT_text: 'Wrong line or word', rpT_meaning: 'Meaning or translation', rpT_grammar: 'Grammar note', rpT_metre: 'Metre', rpT_ms: 'Manuscript reading', rpT_credit: 'Credit or edition details', rpT_other: 'Other', corrections: 'Corrections', reportIntro: 'Found an error? Tap ⚑ on that kural’s page; the report reaches the Institute by email.',
+    kattam: 'Kural crossword', kattamSub: 'A daily Tamil crossword; every answer is a word from the Kural', kattamGo: 'Play',
     confidence: 'confidence', audiobook: 'Audiobook (whole chapter)', saveOffline: 'Save', saved: 'Saved',
     installed: 'Install', install: 'Install as app', calendar: 'Add to calendar (.ics)',
     kotd: 'Kural of the day', more: 'More', stats: 'Statistics', otherKurals: 'Other kurals with this tag',
@@ -1045,6 +1047,7 @@ async function viewPracticeIndex() {
   setTitle(t('practice'), 'யாப்பு · ஓதல் · மனப்பாடம்');
   const n = dailyN(); const k = await kural(n);
   render(`<div class="card"><h2>${t('daily')}</h2>${coupletHTML(k)}<div class="actions"><a class="btn primary" href="#/practice/${n}">🎵 ${t('start')}</a></div></div>
+  ${SINGLE ? '' : `<div class="card"><h2>🧩 ${t('kattam')}</h2><div class="muted">${t('kattamSub')}</div><div class="row" style="margin-top:8px"><a class="btn primary" href="kattam/index.html">🧩 ${t('kattamGo')}</a></div></div>`}
   <div class="card"><h2>${t('kural')}</h2><div class="row"><input type="text" inputmode="numeric" id="pn" placeholder="1–1330" style="max-width:140px"><button class="btn" id="pgo">→</button><a class="btn" href="#/practice/${1 + Math.floor(Math.random() * 1330)}">🎲 ${t('random')}</a></div></div>
   <div class="card"><h2>🧠 ${t('study')}</h2><div class="muted">spaced repetition</div>
     <div class="stat" style="margin-top:8px"><div><b>${srsDue().length}</b><span>${t('srsDue')}</span></div><div><b>${Object.keys(S.srs).length}</b><span>${t('study')}</span></div></div>
@@ -1262,6 +1265,7 @@ async function viewMore() {
     <a href="#/bookmarks"><span class="num">★</span><span class="tx">${t('bookmarks')} (${S.bookmarks.length})</span></a>
     <a href="#/grammar"><span class="num">📚</span><span class="tx">${t('grammarX')} — ${t('grammar')}</span></a>
     <a href="#/practice"><span class="num">🎵</span><span class="tx">${t('practice')} · ${t('memorised')} (${S.memorised.length})</span></a>
+    ${SINGLE ? '' : `<a href="kattam/index.html"><span class="num">🧩</span><span class="tx">${t('kattam')}</span></a>`}
     <a href="#/study"><span class="num">🧠</span><span class="tx">${t('study')} — spaced repetition (${srsDue().length} ${t('srsDue')})</span></a>
     <a href="#/offline"><span class="num">📥</span><span class="tx">${t('offline')} · ${t('storage')}</span></a>
     <a href="#/settings"><span class="num">⚙</span><span class="tx">${t('settings')}</span></a>
@@ -1380,7 +1384,7 @@ async function viewOffline() {
   await loadFontUrls();
   const ai = await audioInfo(); const m = D.meta;
   const est = navigator.storage && navigator.storage.estimate ? await navigator.storage.estimate() : null;
-  const textUrls = ['assets/fonts.css', ...FONT_URLS]; for (let i = 1; i <= 133; i++) textUrls.push(`data/ch/${pad(i, 3)}.json`, `data/gr/${pad(i, 3)}.json`);
+  const textUrls = ['assets/fonts.css', ...FONT_URLS, 'kattam/index.html', 'kattam/app.js', 'kattam/styles.css', 'kattam/assets/icon.svg', 'kattam/data/meta.json', 'kattam/data/mini.json', 'kattam/data/weekly.json']; for (let i = 1; i <= 133; i++) textUrls.push(`data/ch/${pad(i, 3)}.json`, `data/gr/${pad(i, 3)}.json`);
   ['translit', 'prose-ta', 'prose-en', ...m.langOrder, ...m.counts.proseLangs.filter(c => !['ta', 'en'].includes(c)).map(c => 'prose-' + c)].forEach(c => textUrls.push(`data/search/${c}.json`));
   const packs = Object.keys(ai.tts || {});
   const packUrls = p => Array.from({ length: 1330 }, (_, i) => `audio/tts/${p}/${pad(i + 1, 4)}.mp3`).slice(0, (ai.tts || {})[p] || 0);
