@@ -4,7 +4,7 @@
    data / audio / fonts: cache-first — they are content-addressed or immutable per build;
    audio also gets Range support so <audio> can seek inside a cached file;
    plus the daily-kural notification. */
-const VERSION = 'v4';
+const VERSION = 'v5';
 const SHELL = 'kural-shell-' + VERSION;
 const RT = 'kural-rt-v1';
 const PREFS = 'kural-prefs';
@@ -18,8 +18,8 @@ self.addEventListener('install', e => {
 // Generated data is cache-first under stable URLs, so a data repair that keeps the file names
 // (the Malayalam fix of 7 Sep 2026) has to evict the stale copies once. Bump DATA_REV whenever
 // data/ files change in place, and keep STALE_DATA pointing at the paths that changed.
-const DATA_REV = '2026-09-07-ml';
-const STALE_DATA = /\/data\/(ch\/|search\/ml\.json)/;
+const DATA_REV = '2026-09-09-text-repairs';
+const STALE_DATA = /\/data\/(ch\/|search\/(ml|mai|kok|sat)\.json|meta\.json)/;
 self.addEventListener('activate', e => {
   e.waitUntil((async () => {
     for (const k of await caches.keys()) if (k.startsWith('kural-shell-') && k !== SHELL) await caches.delete(k);

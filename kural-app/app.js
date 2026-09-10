@@ -53,6 +53,7 @@ const STR = {
     playingClip: 'ஒலிக்கிறது…', proseNA: 'இந்த மொழியில் எளிய உரை இன்னும் தயாராகவில்லை — மொழிபெயர்ப்பைப் பார்க்கவும்.',
     aiNote: 'எளிய உரை: AI-உதவியுடன் உருவாக்கப்பட்ட வரைவு — CICT அறிஞர் சரிபார்ப்புக்கு உட்பட்டது.',
     grNote: 'இலக்கணக் குறிப்புகள் AI-உதவியுடன் உருவாக்கி இருமுறை சரிபார்க்கப்பட்ட வரைவு; நம்பகம் < 0.7 ஆனவை அறிஞர் மறுஆய்வுக்குரியவை.',
+    report: 'பிழையைத் தெரிவி', reportHelp: 'உங்கள் அஞ்சல் செயலியில் முன்நிரப்பிய கடிதம் திறக்கும்; நீங்கள் அனுப்பும் வரை எதுவும் அனுப்பப்படாது.', rpStream: 'எந்தப் பகுதி', rpType: 'பிழை வகை', rpNote: 'என்ன தவறு?', rpFix: 'திருத்தம் (விருப்பம்)', rpEmail: 'மின்னஞ்சலில் அனுப்பு', rpShare: 'பகிர்', rpCopy: 'அறிக்கையை நகலெடு', rpOpened: 'அஞ்சல் செயலி திறக்கிறது…', rpReviewed: 'அறிக்கைகள் நிறுவனத்தில் சரிபார்க்கப்பட்ட பின்னரே பாடம் திருத்தப்படும்; திருத்தங்கள் “நூல் பற்றி” பக்கத்தில் பதிவாகும்.', rpTa: 'மூலம் (தமிழ்)', rpEnProse: 'English prose', rpOther: 'பிற', rpT_spelling: 'எழுத்துப் பிழை', rpT_text: 'வரி / சொல் தவறு', rpT_meaning: 'பொருள் / மொழிபெயர்ப்பு', rpT_grammar: 'இலக்கணக் குறிப்பு', rpT_metre: 'யாப்பு', rpT_ms: 'சுவடி வாசிப்பு', rpT_credit: 'மொழிபெயர்ப்பாளர் / பதிப்பு விவரம்', rpT_other: 'பிற', corrections: 'திருத்தங்கள்', reportIntro: 'பிழை கண்டால் அந்தக் குறளின் பக்கத்தில் ⚑ பொத்தானைத் தட்டுங்கள்; அறிக்கை மின்னஞ்சலாக நிறுவனத்தை அடையும்.',
     confidence: 'நம்பகம்', audiobook: 'ஒலிப் புத்தகம் (அதிகாரம் முழுதும்)', saveOffline: 'சேமி', saved: 'சேமிக்கப்பட்டது',
     installed: 'நிறுவுக', install: 'செயலியாக நிறுவு', calendar: 'நாட்காட்டியில் சேர் (.ics)',
     kotd: 'இன்றைய குறள்', more: 'மேலும்', stats: 'புள்ளிவிவரம்', otherKurals: 'இதே குறிப்புள்ள பிற குறள்கள்',
@@ -104,6 +105,7 @@ const STR = {
     playingClip: 'Playing…', proseNA: 'A simple-prose retelling is not yet available in this language — see the translation.',
     aiNote: 'Simple prose: AI-assisted draft, pending CICT scholarly review.',
     grNote: 'Grammar notes are an AI-assisted, double-verified draft; entries with confidence < 0.7 await scholarly review.',
+    report: 'Report an error', reportHelp: 'Your mail app opens with a pre-filled message; nothing is sent until you send it.', rpStream: 'Which part', rpType: 'Type of error', rpNote: 'What is wrong?', rpFix: 'Suggested correction (optional)', rpEmail: 'Send by email', rpShare: 'Share', rpCopy: 'Copy report', rpOpened: 'Opening your mail app…', rpReviewed: 'Reports are checked at the Institute before the text is corrected; corrections are listed on the About page.', rpTa: 'Tamil original', rpEnProse: 'English prose', rpOther: 'Other', rpT_spelling: 'Spelling or typo', rpT_text: 'Wrong line or word', rpT_meaning: 'Meaning or translation', rpT_grammar: 'Grammar note', rpT_metre: 'Metre', rpT_ms: 'Manuscript reading', rpT_credit: 'Credit or edition details', rpT_other: 'Other', corrections: 'Corrections', reportIntro: 'Found an error? Tap ⚑ on that kural’s page; the report reaches the Institute by email.',
     confidence: 'confidence', audiobook: 'Audiobook (whole chapter)', saveOffline: 'Save', saved: 'Saved',
     installed: 'Install', install: 'Install as app', calendar: 'Add to calendar (.ics)',
     kotd: 'Kural of the day', more: 'More', stats: 'Statistics', otherKurals: 'Other kurals with this tag',
@@ -458,7 +460,7 @@ async function viewKural(n) {
   const bm = S.bookmarks.includes(n);
   const trCards = S.langs.filter(c => c !== 'ta' && k.tr[c]).map(c => {
     const l = L(c); const [a, b] = k.tr[c];
-    return `<div class="card tr-card"><div class="lang"><span class="nm ${scriptClass(c)}">${esc(l.native)}</span><span class="kind">${esc(l.name)} · ${l.kind === 'verse' ? 'verse' : 'prose'}</span><span class="grow"></span><button class="btn small tts-tr" data-code="${c}" aria-label="play">🔊</button></div>
+    return `<div class="card tr-card"><div class="lang"><span class="nm ${scriptClass(c)}">${esc(l.native)}</span><span class="kind">${esc(l.name)} · ${l.kind === 'verse' ? 'verse' : 'prose'}</span><span class="grow"></span><button class="btn small rep-tr" data-code="${c}" title="${esc(t('report'))}" aria-label="${esc(t('report'))}">⚑</button><button class="btn small tts-tr" data-code="${c}" aria-label="play">🔊</button></div>
       <div class="tr-text ${scriptClass(c)} ${l.dir === 'rtl' ? 'rtl' : ''}"${dirAttr(c)}>${esc(a)}${b ? `<span class="l2">${esc(b)}</span>` : ''}</div>
       <div class="credit">${esc(l.credit)}</div></div>`;
   }).join('');
@@ -479,6 +481,7 @@ async function viewKural(n) {
       <button class="btn" id="k-share">⤴ ${t('share')}</button>
       <button class="btn" id="k-card">🖼 ${t('shareCard')}</button>
       <button class="btn" id="k-copy">⧉ ${t('copy')}</button>
+      <button class="btn" id="k-report">⚑ ${t('report')}</button>
     </div>
   </div>
   <h3 class="muted" style="margin:4px 4px">${t('translations')} <button class="btn small" id="k-langs">🌐 ${t('langs')}</button> <a class="btn small" href="#/compare/${n}">⇔ ${t('compare')}</a></h3>
@@ -497,8 +500,10 @@ async function viewKural(n) {
   $('#k-share').onclick = () => shareKural(k, cm);
   $('#k-card').onclick = e => shareCard(k, cm, e.currentTarget);
   $('#k-copy').onclick = () => { navigator.clipboard.writeText(kuralText(k, cm)).then(() => toast('✓')); };
+  $('#k-report').onclick = () => openReportSheet(k, cm, 'ta');
   $('#k-langs').onclick = openLangSheet;
   $$('.tts-tr').forEach(b => b.onclick = e => speakTranslation(k, b.dataset.code, e.currentTarget));
+  $$('.rep-tr').forEach(b => b.onclick = () => openReportSheet(k, cm, b.dataset.code));
   const renderProse = () => {
     const body = $('#prose-body'); if (!body) return;
     const p = S.proseTab; let txt = k.prose[p]; let note = '';
@@ -605,6 +610,58 @@ function shareKural(k, cm) {
   if (navigator.share) navigator.share({ title: `திருக்குறள் ${k.n}`, text }).catch(() => { });
   else navigator.clipboard.writeText(text).then(() => toast('✓ ' + t('copy')));
 }
+
+// ───────────────────────────── report an error (the correction loop) ─────────────────────────────
+// Nothing leaves the device by itself: the report is composed here and handed to the reader's own
+// mail app (or the share sheet / clipboard), so the app stays free of servers and tracking.
+const REPORT_TYPES = ['spelling', 'text', 'meaning', 'grammar', 'metre', 'ms', 'credit', 'other'];
+function reportStreams(k) {
+  const s = [['ta', t('rpTa')]];
+  for (const c of S.langs) if (c !== 'ta' && k.tr[c] && L(c)) s.push([c, `${L(c).native} · ${L(c).name}`]);
+  s.push(['ta_mv', 'மு. வரதராசனார் உரை'], ['tac', 'தமிழ் உரை · CICT'], ['en-prose', t('rpEnProse')],
+         ['grammar', t('grammar')], ['metre', t('metre')], ['manuscript', t('palmleaf')], ['other', t('rpOther')]);
+  return s;
+}
+function reportShownText(k, code) {
+  if (code === 'ta' || code === 'grammar' || code === 'metre' || code === 'other') return `${k.l1}\n${k.l2}`;
+  if (k.tr[code]) return k.tr[code].filter(Boolean).join('\n');
+  if (code === 'ta_mv') return k.prose.ta_mv || '';
+  if (code === 'tac') return k.prose.tac || '';
+  if (code === 'en-prose') return k.prose.en || '';
+  if (code === 'manuscript') { const m = D.ms && D.ms[String(k.n)]; return m ? `${m.scribal || ''}\n${m.ms || ''} ${m.doi || ''}`.trim() : ''; }
+  return '';
+}
+function buildReport(k, cm, code, type, note, fix) {
+  const label = (reportStreams(k).find(s => s[0] === code) || [code, code])[1];
+  const credit = L(code) ? L(code).credit : '';
+  const m = D.meta; const edition = IS_ANDROID_APP ? 'android' : SINGLE ? 'single-file' : 'web';
+  return ['திருக்குறள் · Tirukkural Multilingual — பிழை அறிக்கை / error report',
+    `குறள் / Kural: ${k.n} · அதிகாரம் ${cm.adhigaram} ${cm.name} (${cm.nameEn})`,
+    `பகுதி / Part: ${label}${credit ? ` — ${credit}` : ''}`,
+    `வகை / Type: ${t('rpT_' + type)}`,
+    '', 'காட்டப்பட்ட பாடம் / Text shown:', reportShownText(k, code) || '—',
+    '', 'தவறு / What is wrong:', note || '—',
+    '', 'திருத்தம் / Suggested correction:', fix || '—',
+    '', `App: ${edition} · build ${m.built} · v${m.version} · ui ${S.ui}`,
+    `Link: ${location.href.split('#')[0]}#/k/${k.n}`].join('\n');
+}
+function openReportSheet(k, cm, code) {
+  const streams = reportStreams(k); if (!streams.some(s => s[0] === code)) code = 'ta';
+  openSheet(`<h2>⚑ ${t('report')}</h2><div class="muted" style="font-size:.85rem">${t('reportHelp')}</div>
+    <div class="field"><label class="muted" for="rp-stream">${t('rpStream')}</label><select id="rp-stream">${streams.map(s => `<option value="${esc(s[0])}"${s[0] === code ? ' selected' : ''}>${esc(s[1])}</option>`).join('')}</select></div>
+    <div class="field"><label class="muted" for="rp-type">${t('rpType')}</label><select id="rp-type">${REPORT_TYPES.map(x => `<option value="${x}">${esc(t('rpT_' + x))}</option>`).join('')}</select></div>
+    <div class="field"><label class="muted" for="rp-note">${t('rpNote')}</label><textarea id="rp-note" rows="3"></textarea></div>
+    <div class="field"><label class="muted" for="rp-fix">${t('rpFix')}</label><textarea id="rp-fix" rows="2"></textarea></div>
+    <div class="row" style="margin-top:10px"><button class="btn primary" id="rp-email">✉ ${t('rpEmail')}</button>${(NATIVE_SHARE || navigator.share) ? `<button class="btn" id="rp-share">⤴ ${t('rpShare')}</button>` : ''}<button class="btn" id="rp-copy">⧉ ${t('rpCopy')}</button><span class="grow"></span><button class="btn small" onclick="closeSheet()">✕</button></div>
+    <div class="muted" style="font-size:.78rem;margin-top:8px">${t('rpReviewed')}</div>`);
+  const text = () => buildReport(k, cm, $('#rp-stream').value, $('#rp-type').value, $('#rp-note').value.trim(), $('#rp-fix').value.trim());
+  const subject = () => `[Tirukkural ${k.n}] ${$('#rp-stream').selectedOptions[0].textContent} — ${$('#rp-type').selectedOptions[0].textContent}`;
+  const to = () => (D.meta.credits && D.meta.credits.contact) || 'kannan.k@cict.in';
+  $('#rp-email').onclick = () => { location.href = `mailto:${to()}?subject=${encodeURIComponent(subject())}&body=${encodeURIComponent(text())}`; toast(t('rpOpened')); };
+  const sh = $('#rp-share'); if (sh) sh.onclick = () => { const body = text(); if (NATIVE_SHARE) { try { NATIVE_SHARE.text(subject(), body); return; } catch (e) { } } navigator.share({ title: subject(), text: body }).catch(() => { }); };
+  $('#rp-copy').onclick = () => navigator.clipboard.writeText(text()).then(() => toast('✓ ' + t('rpCopy')));
+  $('#rp-note').focus();
+}
 function toggleBookmark(n) {
   const i = S.bookmarks.indexOf(n); if (i >= 0) S.bookmarks.splice(i, 1); else S.bookmarks.push(n); saveS();
 }
@@ -640,12 +697,12 @@ function openSheet(html) {
   $('#sheet-back').onclick = closeSheet;
   document.addEventListener('keydown', sheetKeys, true);
   const sheet = $('#sheet-root .sheet');
-  (sheet.querySelector('button, a, select, input') || sheet).focus();
+  (sheet.querySelector('button, a, select, input, textarea') || sheet).focus();
 }
 function sheetKeys(e) {
   if (e.key === 'Escape') { e.stopPropagation(); closeSheet(); return; }
   if (e.key !== 'Tab') return;
-  const f = $$('#sheet-root button, #sheet-root a[href], #sheet-root select, #sheet-root input').filter(el => el.offsetParent !== null);
+  const f = $$('#sheet-root button, #sheet-root a[href], #sheet-root select, #sheet-root input, #sheet-root textarea').filter(el => el.offsetParent !== null);
   if (!f.length) return;
   const first = f[0], last = f[f.length - 1];
   if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
@@ -1344,12 +1401,14 @@ async function viewOffline() {
 }
 async function viewAbout() {
   const m = D.meta; setTitle(t('about'), 'CICT');
+  const fixes = (m.changelog || []).map(e => `<li><b>${esc(e.date)}</b> · ${esc(S.ui === 'ta' ? e.ta : e.en)}</li>`).join('');
   const langs = m.langOrder.map(c => `<tr><td class="${scriptClass(c)}"${dirAttr(c)}>${esc(L(c).native)}</td><td>${esc(L(c).name)}</td><td class="muted" style="font-size:.8rem">${esc(L(c).credit)} · ${L(c).coverage}/1330</td></tr>`).join('');
   render(`<div class="card"><h2>திருக்குறள் · Tirukkuṟaḷ — 22 மொழிகள்</h2>
     <p>${esc(m.credits.publisher)}</p>
     <p class="muted">All 1330 kurals with CICT's translations into the ${m.counts.scheduled} languages of the Eighth Schedule (plus English and Bhojpuri), three Tamil உரை and an English prose retelling, word-by-word இலக்கணக்குறிப்பு, a live யாப்பு scansion of every couplet, audio recitation, and metre-aware practice. Free · offline-first · ${esc(m.credits.licence)}.</p>
     <h3>Sources</h3><ul class="muted" style="font-size:.85rem;padding-left:18px"><li>${esc(m.credits.text)}</li><li>${esc(m.credits.grammar)}</li><li>${esc(m.credits.metre)}</li><li>${esc(m.credits.audio)}</li></ul>
     <div class="muted" style="font-size:.78rem">Build ${m.built} · v${m.version} · scan: ${m.scan.kural_venpa}/1330 குறள் வெண்பா, ${m.scan.reseg} re-segmented</div></div>
+  <div class="card"><h3>⚑ ${t('corrections')}</h3>${fixes ? `<ul class="muted" style="font-size:.85rem;padding-left:18px">${fixes}</ul>` : ''}<p class="muted" style="font-size:.85rem">${t('reportIntro')}</p></div>
   <div class="card"><h3>${t('translations')}</h3><div style="overflow-x:auto"><table class="gtable">${langs}</table></div></div>`);
 }
 

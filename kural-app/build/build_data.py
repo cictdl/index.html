@@ -22,7 +22,7 @@ Output → ../data/
 
 Run:  py build/build_data.py
 """
-import json, re, sys, os, time, hashlib
+import json, re, sys, os, time, hashlib, unicodedata
 from pathlib import Path
 from collections import defaultdict
 
@@ -137,11 +137,53 @@ def fix_ml(s):
     s = _ML_CHILLU_RE.sub(lambda m: _ML_CHILLU[m.group(1)], s)
     return re.sub("(?<!്)‍", "", s)  # a ZWJ not after a virama is a stray
 
-FIXUPS = {"ml": fix_ml}
+# Maithili writes every danda with the Latin letter l (l = ।, ll = ॥); the Konkani Kannada-script
+# stream has three of the same (I / II / ll). Neither stream contains any Latin word, so a bare
+# l/ll/I/II token can only be a danda.
+_DANDA_RE = re.compile(r"(?<![A-Za-z])(ll|II|l|I)(?![A-Za-z])")
+def fix_danda(s):
+    return _DANDA_RE.sub(lambda m: "\u0965" if len(m.group(1)) == 2 else "\u0964", s)
+# The Santali transcription marks vowel quality with a dot below. Most of the file carries it as
+# THAI CHARACTER PHINTHU (U+0E3A) and 791 more as a private-use character (U+F71A); 252 words occur
+# in the file spelled both ways, which is what identifies them as one mark. Normalise both to
+# COMBINING DOT BELOW.
+def fix_sat(s):
+    return s.replace("\u0e3a", "\u0323").replace("\uf71a", "\u0323")
+# Manipuri in Meetei Mayek ends a sentence with ꯫ (1,294 times); one line kept the Bengali ৷ of the
+# script it was transcribed from.
+def fix_mei(s):
+    return s.replace("\u09f7", "\uabeb")
+# A combining mark cannot follow a space — it renders on the space itself as a broken glyph. Attach
+# it to the letter before, keeping the word break where the edition put it. (33 lines: bho, sat, ml.)
+_ORPHAN_MARK_RE = re.compile(r"[ \t\u00a0]+([\u0300-\u036f\u0900-\u0d7f])")
+def fix_orphan_marks(s):
+    return _ORPHAN_MARK_RE.sub(lambda m: m.group(1) + " " if unicodedata.category(m.group(1)) in ("Mn", "Mc") else m.group(0), s)
+# Five Kashmiri (Nastaliq) lines and one Marathi line begin with the couplet's own number, left over
+# from the source table. Strip it only when the number is this kural's, so a numeral that belongs to
+# the text is never touched.
+_NUM_PREFIX_RE = re.compile(r"^[\s\ufeff]*(\d+)[\s\ufeff]*[\u06d4.]?[\s\ufeff]*")
+def strip_own_number(s, n):
+    m = _NUM_PREFIX_RE.match(s)
+    return s[m.end():] if m and int(m.group(1)) == n else s
+# One Marathi line (K1080) holds the Tamil பால் heading rather than a translation. A line in a
+# non-Tamil stream made only of Tamil letters, digits and punctuation is a leaked heading, not text.
+_TAMIL_ONLY_RE = re.compile(r"^[\u0B80-\u0BFF\s\d.,;:()\u2013\u2014-]+$")
+def drop_leaked_tamil(code, s):
+    return "" if code not in ("ta", "tac") and _TAMIL_ONLY_RE.match(s) and re.search(r"[\u0B80-\u0BFF]", s) else s
 
-def fix_text(code, s):
+FIXUPS = {"ml": fix_ml, "mai": fix_danda, "kok": fix_danda, "sat": fix_sat, "mei": fix_mei}
+
+def fix_text(code, s, n=0):
+    if not s:
+        return s
+    s = strip_own_number(s, n).replace("\t", " ")   # tabs reach the page as nothing
+    s = drop_leaked_tamil(code, s)
+    if not s:
+        return s
     f = FIXUPS.get(code)
-    return f(s) if f and s else s
+    if f:
+        s = f(s)
+    return fix_orphan_marks(s)
 
 def ser_verse(v):
     def ser_line(ln):
@@ -212,7 +254,7 @@ def main():
     tr = {}
     for code, *_ in LANGS:
         arr = texts.get(code, [])
-        tr[code] = {e["n"]: (fix_text(code, e.get("l1", "").strip()), fix_text(code, e.get("l2", "").strip())) for e in arr if e.get("l1", "").strip()}
+        tr[code] = {e["n"]: (fix_text(code, e.get("l1", "").strip(), e["n"]), fix_text(code, e.get("l2", "").strip(), e["n"])) for e in arr if e.get("l1", "").strip()}
 
     # optional prose retellings
     prose_extra = {}
@@ -355,16 +397,26 @@ def main():
             "audio": "Tamil audiobook per அதிகாரம் — CICT Tirukkural audio; per-kural recitation & commentary via on-device speech synthesis",
             "publisher": "செம்மொழித் தமிழாய்வு மத்திய நிறுவனம் · Central Institute of Classical Tamil, Chennai",
             "licence": "CC BY 4.0",
+            "contact": "kannan.k@cict.in",   # where in-app error reports are addressed
         },
         "manuscript": {"kurals": len(ms), "withImage": sum(1 for v in ms.values() if v.get("crop")),
                        "note": "CICT palm-leaf corpus, 133 specimens; images served by Zenodo IIIF (needs network), scribal readings bundled offline"},
         "scan": dict(stats),
+        # corrections shown on the About page; append an entry whenever a stream is repaired
+        "changelog": load(Path(__file__).resolve().parent / "changelog.json") if (Path(__file__).resolve().parent / "changelog.json").exists() else [],
     }
     dump(OUT / "meta.json", meta)
 
     size = sum(p.stat().st_size for p in OUT.rglob("*.json"))
     print(f"data bundle: {size/1e6:.1f} MB in {time.time()-t0:.1f}s → {OUT}")
     print("coverage:", {c: v["coverage"] for c, v in langs.items() if v["coverage"] < 1330} or "all 1330")
+    # text-integrity lint over the bundle just written — reports, never blocks (see lint_data.py)
+    try:
+        sys.path.insert(0, str(Path(__file__).resolve().parent))
+        from lint_data import run_lint
+        run_lint(OUT)
+    except Exception as e:
+        print("lint skipped:", e)
 
 if __name__ == "__main__":
     main()

@@ -235,3 +235,19 @@ AI-assisted draft awaiting review if it is not one of the published prose editio
 
 Text and data: CC BY 4.0 · செம்மொழித் தமிழாய்வு மத்திய நிறுவனம் · Central Institute of
 Classical Tamil, Chennai.
+
+
+## Correction loop
+
+Every kural page carries **⚑ Report an error** (also a ⚑ on each translation card). It composes a
+report — couplet, part, the text as shown, the reader's note and suggested fix, app build — and hands
+it to the reader's mail app (`credits.contact` in `data/meta.json`, set in `build_data.py`), the share
+sheet, or the clipboard. The app never transmits anything itself.
+
+`build/lint_data.py` runs at the end of every `build_data.py` and writes `build/lint_report.md`:
+wrong-script characters, private-use and bidi code points, joiners and vowel signs in impossible places,
+digits inside verse lines, empty or duplicated lines, unbalanced quotes, missing credits. It reports and
+never blocks (`--strict` makes error-severity findings fail the build). Known-source repairs are applied
+at build time by `FIXUPS` in `build_data.py` and recorded in `build/changelog.json`, which the About page
+shows under **Corrections**. When data files change in place, bump `DATA_REV` in `sw.js` so installed
+web copies evict their stale cache.
