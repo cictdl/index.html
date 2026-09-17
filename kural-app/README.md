@@ -121,7 +121,7 @@ Then open <http://localhost:8765>. A service worker must be able to register, so
   ten-question paper earns a bilingual **certificate** drawn on canvas (name, range, score,
   level, date, round, reference code, two signature rules) that shares or saves as a PNG — a
   memorisation certificate at the hard level, an achievement certificate at the other two. Alongside it: a self-assessed
-  **ஒப்புவிப்புப் பயிற்சி** drill (recite from the number, reveal, தெரியும் / மறந்தேன், the
+  **ஒப்புவித்தல் பயிற்சி** drill (recite from the number, reveal, தெரியும் / மறந்தேன், the
   known ones join the memorised list, the forgotten ones can be repeated), a chapter **board**
   colouring all 133 அதிகாரம் by best score, and a ten-question **worksheet** with answer key
   shown on the page and then shared or copied as text for printing. Nothing new to download:
