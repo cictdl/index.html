@@ -110,6 +110,24 @@ Then open <http://localhost:8765>. A service worker must be able to register, so
   - *தட்டு* — you tap one beat per அசை; scored against the true mātrā profile with a bar chart;
   - *ஓதிச் சரிபார்* — speech recognition (`ta-IN`) marks which words of your recitation matched;
   - *மனப்பாடம்* — progressive cloze with a "I know this" counter.
+- **🏆 மனப்பாடத் தேர்வு / Recitation test** (`#/test`) — the school-contest layer. Pick a
+  range (today's chapter, any அதிகாரம், the first 100, a பால், your memorised list, or kural
+  a–b) and a level, then answer ten auto-graded questions: fill the missing சீர் (one or two
+  blanks, four choices drawn from the same chapters and matched by metre class), which is the
+  next line, which அதிகாரம் (or, within one chapter, which number), and at the hard level type
+  the couplet from its number, judged on the letters with spacing and punctuation ignored (the
+  word diff is shown as feedback). A four-digit **சுற்று எண்** seeds the paper so a whole class
+  gets the same questions. A timer runs (paused while you read a linked kural); 80 % on a full
+  ten-question paper earns a bilingual **certificate** drawn on canvas (name, range, score,
+  level, date, round, reference code, two signature rules) that shares or saves as a PNG — a
+  memorisation certificate at the hard level, an achievement certificate at the other two. Alongside it: a self-assessed
+  **ஒப்புவிப்புப் பயிற்சி** drill (recite from the number, reveal, தெரியும் / மறந்தேன், the
+  known ones join the memorised list, the forgotten ones can be repeated), a chapter **board**
+  colouring all 133 அதிகாரம் by best score, and a ten-question **worksheet** with answer key
+  shown on the page and then shared or copied as text for printing. Nothing new to download:
+  blanks come from the printed lines (bare fragments are never blanked, and the four unscannable
+  kurals plus K408 are not sampled), distractors from the metre layer, and all results stay in
+  `localStorage`.
 - **மேலும் / More** — bookmarks, grammar explorer (tag → concordance), offline downloads,
   settings (interface language, per-language voice, rate, text size, theme), credits.
 
