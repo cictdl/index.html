@@ -110,6 +110,24 @@ Then open <http://localhost:8765>. A service worker must be able to register, so
   - *தட்டு* — you tap one beat per அசை; scored against the true mātrā profile with a bar chart;
   - *ஓதிச் சரிபார்* — speech recognition (`ta-IN`) marks which words of your recitation matched;
   - *மனப்பாடம்* — progressive cloze with a "I know this" counter.
+- **📘 வழிகாட்டும் பாடம் / Guided lesson** (`#/learn`, player at `#/learn/go`) — the path through
+  the tools below: a daily lesson of about a dozen one-screen steps. Review of yesterday's couplets,
+  then for each new couplet *meet and understand* (couplet, audio, meaning in the learner's chosen
+  language, an optional word panel) and *say it*; then, interleaved across the day's couplets,
+  *choose the meaning*, *fill two blanks* and *rebuild the couplet from tiles*; then *say the chapter
+  so far*. Three goals (memorise + meaning, contest, understanding only with transliteration and no
+  deck writes), any path built from the test's range specs (book, பால், chapter and kural lists,
+  shareable as a link), pace 1–5. Course position is **derived** from one 10-bit "introduced" mask
+  per chapter; the day's plan is **frozen** into `S.learn.cur.plan` (step codes such as `R101 L113
+  S113 M113 F113 B113 K12`), so Back, a reload or a settings change never shifts the step under the
+  cursor, and an answered step re-opens answered. New couplets get a card in the existing `S.srs`
+  deck due the next day; in-lesson reviews are auto-graded (fill below a 7-day interval, rebuild
+  above) through `learnGrade()`; path-taught due cards throttle new material (≤6 full pace, 7–14
+  one new, ≥15 a review lesson, never more than two in a row). The lesson never writes
+  `S.memorised`. "Days learned" never decreases and one missed day a week is forgiven. Nothing is
+  locked, nothing is timed, audio never gates a step, and the five couplets the test cannot blank
+  are taught with a self-marked recall instead. `dayNo()` (UTC, the deck) and `learnDay()` (local,
+  the habit) coexist on purpose and meet only in `learnGrade()`.
 - **🏆 மனப்பாடத் தேர்வு / Recitation test** (`#/test`) — the school-contest layer. Pick a
   range (today's chapter, any அதிகாரம், the first 100, a பால், your memorised list, or kural
   a–b) and a level, then answer ten auto-graded questions: fill the missing சீர் (one or two

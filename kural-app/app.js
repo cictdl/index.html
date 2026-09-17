@@ -28,6 +28,34 @@ function toast(msg, ms = 2200) {
 // ───────────────────────────── i18n (interface) ─────────────────────────────
 const STR = {
   ta: {
+    lnTitle: 'பாடம்', lnName: 'வழிகாட்டும் பாடம்', lnTag: 'நாளுக்கு 10 நிமிடம்', lnIntro: 'கேட்டு, பொருள் அறிந்து, சொல்லி, அமைத்துப் பார்க்கலாம்', lnStartShort: 'தொடங்கலாம்', lnBegin: 'தொடங்கலாம்',
+    lnFrGoal: 'எதற்காகப் படிக்கிறீர்கள்?', lnGoalM: 'மனப்பாடமும் பொருளும்', lnGoalC: 'போட்டிக்குத் தயாராக', lnGoalU: 'பொருள் புரிந்தால் போதும்', lnFrMl: 'பொருள் எந்த மொழியில் வேண்டும்?', lnFrTa: 'தமிழ் எழுத்துகளைப் படிக்க முடியுமா?', lnTaYes: 'முடியும்', lnTaNo: 'இன்னும் பழகுகிறேன்',
+    lnFrLater: 'மேலுள்ள மூன்று விடைகளையும் பின்னர் "என் வழி" பகுதியில் மாற்றலாம்.', lnMlTa: 'தமிழ் · மு.வ. உரை', lnLabTa: 'மு. வரதராசனார் உரை', lnLabEnProse: 'English prose meaning', lnLabTac: 'தமிழ் உரை · CICT',
+    lnToday: 'இன்றைய பாடம்', lnTodayStart: 'பாடத்தைத் தொடங்கலாம்', lnResume: 'தொடரலாம்', lnDoneToday: '✓ இன்றைய பாடம் நிறைவு', lnAnother: 'இன்னொரு பாடம் படிக்கலாம்', lnBuilding: 'இன்றைய பாடம் தயாராகிறது…',
+    lnRevShort: 'மீள்பார்வைப் பாடம்', lnCapShort: 'இன்றைக்கு இது போதும்; புதிய குறள்கள் நாளை', lnRevNow: 'இப்போது மீள்பார்வை செய்யலாம்', lnNothing: 'இப்போது மீள்பார்வைக்கு எதுவும் இல்லை.',
+    lnStepOf: 'படி {i}/{n}', lnChShort: 'அதி.', lnNext: 'தொடரலாம்', lnEnough: 'இன்றைக்கு இது போதும்', lnSkipStep: 'இந்தப் படியைக் கடந்து செல்லலாம்', lnMore: 'மேலும்', lnLess: 'சுருக்கலாம்',
+    lnRecapTitle: 'மீண்டும் வருக!', lnRecapSub: 'கடந்த முறை படித்த குறள்கள் இவை. விட்ட இடத்திலிருந்து தொடரலாம்.', lnRevHead: 'மீள்பார்வை · முன்பு படித்த குறள்',
+    lnLearnHead: 'குறளும் பொருளும்', lnLearnHint: 'முதலில் குறளை ஒருமுறை படியுங்கள் அல்லது கேளுங்கள்.', lnShowMeaning: 'பொருளைப் பார்க்கலாம்', lnHear: 'கேட்கலாம்', lnNoAudio: 'ஒலி வராவிட்டால் வரிகளை உரக்கப் படிக்கலாம்.',
+    lnMoreUrai: 'விரிவான உரை', lnWordsOpen: 'சொற்களைப் பார்க்கலாம்', lnSplitNote: 'பிரித்த வடிவம் பொருள் புரிய மட்டுமே; சொல்லும்போது அச்சிட்ட வடிவத்தையே சொல்லுங்கள்.', lnGlossEn: 'சொற்பொருள் ஆங்கிலத்தில் மட்டும் · word meanings in English only', lnWordsNone: 'சொற்பொருள் இப்போது கிடைக்கவில்லை.', lnWordsWhole: 'இக்குறளில் பிரித்துக் காட்ட வேண்டிய சொற்கள் இல்லை.',
+    lnKnowIt: 'இந்தக் குறள் எனக்குத் தெரியும் (நேராக அமைத்துப் பார்க்கலாம்)',
+    lnSayHead: 'சொல்லிப் பாருங்கள்', lnSay1: 'கேட்டு, உடன் சேர்ந்து சொல்லுங்கள்', lnSay2: 'இரண்டாம் அடியை மறைத்துச் சொல்லுங்கள்', lnSay3: 'பார்க்காமல் சொல்லுங்கள்', lnSaidIt: 'சொன்னேன்', lnHide: 'மறைக்கலாம்', lnShowLine: 'காட்டுங்கள்', lnWithBeat: 'தாளத்துடன் கேட்கலாம்', lnVoiceCheck: 'குரல்வழிச் சரிபார்க்கலாம்',
+    lnMeanQ: 'இந்தக் குறளின் பொருள் யாது?', lnWhichKural: 'இந்தப் பொருளுக்குரிய குறள் எது?', lnRight: '✓ சரி!', lnWrongMeaning: '✗ சரியான பொருள் மேலே ✓ குறியிடப்பட்டுள்ளது.', lnWrongKural: '✗ சரியான குறள் மேலே ✓ குறியிடப்பட்டுள்ளது.', lnWrongWord: '✗ சரியான விடை: {w}',
+    lnFillSeer: 'விடுபட்ட சீர்களை வரிசையாகத் தேர்ந்தெடுங்கள்', lnFillWord: 'விடுபட்ட சொற்களை வரிசையாகத் தேர்ந்தெடுங்கள்',
+    lnBuildHead: 'குறளை அமைத்துப் பாருங்கள்', lnBuildSeer: 'சீர்களைச் சரியான வரிசையில் தொடுங்கள்', lnBuildWord: 'சொற்களைச் சரியான வரிசையில் தொடுங்கள்', lnTileNo: 'இது அல்ல — இன்னொரு முறை முயலலாம்.', lnTileHelp: 'உதவி', lnTileHelped: 'உதவியுடன் அமைத்தீர்கள்; நாளை மீண்டும் முயலலாம்.', lnPrevOk: '{x} {i}: ✓ சரி', lnPrevMiss: '{x} {i}: சரியான விடை — {w}', lnTileHelpedMsg: 'உதவி: சரியான {x} "{w}" வைக்கப்பட்டது.', lnTileCount: '{a}/{b}', lnBuilt: '✓ குறள் அமைந்தது',
+    lnStartsWith: '"{w}…" எனத் தொடங்கும் குறள் {n}', lnIntroduced: 'குறள் {n} அறிமுகம் ✓ — நாளை மீள்பார்வையில் வரும்.', lnIntroducedU: 'குறள் {n} அறிமுகம் ✓', lnNoted: '✓ குறித்துக்கொண்டோம்',
+    lnRecallHead: 'மனத்திலிருந்து சொல்லுங்கள்', lnRecallHint: 'குறளை உரக்கச் சொல்லுங்கள்; பிறகு சரிபார்க்கலாம்.', lnShowKural: 'குறளைக் காட்டுங்கள்', lnRecallYes: '✓ சொல்ல முடிந்தது', lnRecallMore: 'இன்னும் பழகலாம்',
+    lnChainHead: 'முதலிலிருந்து வரிசையாக', lnChainHint: 'இந்த அதிகாரத்தில் படித்த குறள்களை முதலிலிருந்து வரிசையாக உரக்கச் சொல்லுங்கள். நேரம் இருந்தால் குறிப்பேட்டில் எழுதியும் பார்க்கலாம்.', lnChainShow: 'குறள்களைக் காட்டுங்கள்', lnChainShown: 'குறள்கள் காட்டப்பட்டுள்ளன.', lnChainDone: 'சொல்லிப் பார்த்தேன் ✓',
+    lnDoneSub: 'இன்று அறிமுகமான குறள்: {n} · மீள்பார்வை: {r}.', lnDoneTomorrow: 'அறிமுகமானவை நாளை மீள்பார்வையில் வரும்.', lnWeakLink: 'மேலும் பழகலாம்: குறள் {n}',
+    lnChDone: 'அதிகாரம் {c} · {name} — எல்லாக் குறள்களும் அறிமுகம்.', lnChTest: 'அதிகாரத் தேர்வை எழுதிப் பார்க்கலாம்', lnChTestNote: 'இரண்டு நாள் கழித்து எழுதினால் நினைவு இன்னும் உறுதியாகும்.', lnBackToLesson: 'பாடத்திற்குத் திரும்பலாம்', lnChAllMet: 'அதிகாரம் {c}-இன் குறள்கள் எல்லாம் முன்பே அறிமுகமாகிவிட்டன; மீள்பார்வையில் வரும்.', lnChDonePart: 'அதிகாரம் {c} · {name} — பட்டியலில் உள்ள {y} குறள்களும் அறிமுகம்.', lnListFull: 'பட்டியல் நிறைந்துள்ளது; "என் வழி" பகுதியில் ஓர் இடத்தை விடுவித்துச் சேர்க்கலாம்.', lnAfterCurrent: 'அதிகாரம் {c} நடப்புப் பாடம் முடிந்த பின் தொடங்கும்.', lnPathAlso: 'பட்டியலில் இவையும் உள்ளன',
+    lnNumDays: 'கற்ற நாட்கள்', lnNumRun: 'நாள் தொடர்ச்சி', lnNumSeen: 'படித்த குறள்கள்', lnNumFirm: 'நினைவில்', lnComeback: 'மீண்டும் வருக! விட்ட இடத்திலிருந்து தொடரலாம்.',
+    lnMyWay: 'என் வழி', lnWayGoal: 'நோக்கம்', lnWayPath: 'எதைப் படிக்கலாம்?', lnWayPace: 'ஒரு பாடத்தில் எத்தனை புதிய குறள்கள்?', lnWayLater: 'மாற்றம் அடுத்த பாடத்திலிருந்து செயல்படும்.',
+    lnPathBook: 'நூல் வரிசை', lnPathMine: 'என் பட்டியல்', lnPathSyl: 'பாடத்திட்டம்', lnInCh: 'அதிகார எண்கள் (எ.கா. 4, 8, 11, 40)', lnInNum: 'குறள் எண்கள் (எ.கா. 391-400, 43)', lnApplyList: 'இந்தப் பட்டியலைப் பயன்படுத்தலாம்', lnBadTokens: 'இவற்றைப் புரிந்துகொள்ள முடியவில்லை: {x}', lnListEmpty: 'அதிகார எண்களையோ குறள் எண்களையோ எழுதுங்கள்.',
+    lnShareList: 'இந்தப் பட்டியலைப் பகிரலாம்', lnUseList: 'இந்தப் பட்டியலைப் பயன்படுத்தலாமா?', lnUseYes: 'பயன்படுத்தலாம்', lnUseNo: 'வேண்டாம்',
+    lnContestDay: 'போட்டி நாள் (விருப்பம்)', lnContestToday: 'இன்று போட்டி நாள். வாழ்த்துகள்!', lnGoalLine: 'போட்டிக்கு இன்னும் உள்ள நாட்கள்: {N} · மீதமுள்ள குறள்கள்: {M}', lnGoalPace: 'ஒரு பாடத்திற்கு {p} வீதம் படித்தால் முடிக்கலாம்.', lnGoalMany: 'ஒரு நாளில் ஒன்றுக்கு மேற்பட்ட பாடங்கள் படிக்கலாம்.',
+    lnMapTitle: 'பாட வரைபடம்', lnMapRow: 'படித்தது {x}/{y} · நினைவில் {z}/{y}', lnMapRowU: 'படித்தது {x}/{y}', lnMapNow: 'இப்போது', lnMapStar: '★ தேர்வு', lnFromHere: 'இங்கிருந்து கற்கலாம்', lnMapRead: 'படிக்கலாம்', lnMapTest: 'தேர்வு',
+    lnRestart: 'புதிதாகத் தொடங்கலாம்', lnRestartArm: 'உறுதிசெய்ய மீண்டும் தொடுங்கள் (மனப்பாடப் பட்டியலும் தேர்வு முடிவுகளும் அப்படியே இருக்கும்)',
+    lnNotCached: 'இந்த அதிகாரம் இன்னும் இக்கருவியில் சேமிக்கப்படவில்லை. இணையம் கிடைக்கும்போது திறக்கலாம்.', lnCantOpen: 'இப்போது இந்தக் குறளைத் திறக்க முடியவில்லை.',
+    lnPathDone: 'இந்தப் பாதை நிறைவு. வாழ்த்துகள்! அடுத்த பாதையைத் தேர்ந்தெடுக்கலாம்.', lnPathEmpty: '"என் வழி" பகுதியில் படிக்க வேண்டிய பகுதியைத் தேர்ந்தெடுக்கலாம்.', lnChLink: 'பாடமாகப் படிக்கலாம்', lnNoSave: 'முன்னேற்றத்தைச் சேமிக்க இடமில்லை; பாடம் தொடரும்.',
     test: 'மனப்பாடத் தேர்வு', testShort: 'தேர்வு', testRun: 'தேர்வு', drillShort: 'பயிற்சி', boardShort: 'அதிகாரங்கள்', testPage: 'தேர்வுப் பக்கம்',
     testSub: 'பள்ளி ஒப்புவித்தல் போட்டிக்குத் தயாராகு — சீர் நிரப்பு, அடுத்த அடி, அதிகாரம், குறள் எண், நினைவிலிருந்து எழுது; மதிப்பெண், நேரம், சான்றிதழ்',
     testRange: 'பகுதி', testLevel: 'நிலை', lv1: 'எளிது', lv2: 'நடுத்தரம்', lv3: 'கடினம்', lv1a: 'எளிய', lv2a: 'நடுத்தர', lv3a: 'கடின',
@@ -104,6 +132,34 @@ const STR = {
     lineErr: 'இவ்வடி அலகிட முடியவில்லை', update: 'புதிய பதிப்பு உள்ளது — புதுப்பிக்க', ttsUnsupported: 'இந்த உலாவியில் பேச்சு ஒலி இல்லை',
   },
   en: {
+    lnTitle: 'Lesson', lnName: 'Guided lesson', lnTag: '10 minutes a day', lnIntro: 'hear it, understand it, say it, rebuild it', lnStartShort: 'Start', lnBegin: 'Start',
+    lnFrGoal: 'Why are you learning?', lnGoalM: 'Memorise and understand', lnGoalC: 'Prepare for a contest', lnGoalU: 'Understanding is enough', lnFrMl: 'Meanings in which language?', lnFrTa: 'Can you read Tamil script?', lnTaYes: 'Yes', lnTaNo: 'Still learning',
+    lnFrLater: 'You can change these three answers later under "My way".', lnMlTa: 'Tamil · Mu. Va. prose (தமிழ்)', lnLabTa: 'Tamil prose by Mu. Varadarajan', lnLabEnProse: 'English prose meaning', lnLabTac: 'CICT Tamil commentary',
+    lnToday: "Today's lesson", lnTodayStart: 'Start the lesson', lnResume: 'Continue', lnDoneToday: "✓ Today's lesson is done", lnAnother: 'Do another lesson', lnBuilding: "Preparing today's lesson…",
+    lnRevShort: 'Review lesson', lnCapShort: 'Enough new couplets for today; more tomorrow', lnRevNow: 'Review now', lnNothing: 'There is nothing to review right now.',
+    lnStepOf: 'Step {i}/{n}', lnChShort: 'Ch.', lnNext: 'Continue', lnEnough: 'Enough for today', lnSkipStep: 'Skip this step', lnMore: 'More', lnLess: 'Less',
+    lnRecapTitle: 'Welcome back!', lnRecapSub: 'These are the couplets from last time. Carry on from where you stopped.', lnRevHead: 'Review · a couplet you met before',
+    lnLearnHead: 'The couplet and its meaning', lnLearnHint: 'First read the couplet once, or listen to it.', lnShowMeaning: 'Show the meaning', lnHear: 'Listen', lnNoAudio: 'If there is no sound, read the lines aloud.',
+    lnMoreUrai: 'Fuller commentary', lnWordsOpen: 'Look at the words', lnSplitNote: 'The split form is only to help you understand; recite the printed form.', lnGlossEn: 'Word meanings are in English only', lnWordsNone: 'Word meanings are not available right now.', lnWordsWhole: 'No word in this couplet needs splitting.',
+    lnKnowIt: 'I already know this couplet (go straight to rebuilding it)',
+    lnSayHead: 'Say it', lnSay1: 'Listen and say it along', lnSay2: 'Hide the second line and say it', lnSay3: 'Say it without looking', lnSaidIt: 'Said it', lnHide: 'Hide', lnShowLine: 'Show', lnWithBeat: 'Listen with the beat', lnVoiceCheck: 'Check by voice',
+    lnMeanQ: 'What does this couplet mean?', lnWhichKural: 'Which couplet has this meaning?', lnRight: '✓ Right!', lnWrongMeaning: '✗ The right meaning is marked ✓ above.', lnWrongKural: '✗ The right couplet is marked ✓ above.', lnWrongWord: '✗ The answer: {w}',
+    lnFillSeer: 'Choose the missing feet in order', lnFillWord: 'Choose the missing words in order',
+    lnBuildHead: 'Rebuild the couplet', lnBuildSeer: 'Tap the feet in the right order', lnBuildWord: 'Tap the words in the right order', lnTileNo: 'Not this one — try again.', lnTileHelp: 'help', lnTileHelped: 'You rebuilt it with help; try it again tomorrow.', lnPrevOk: '{x} {i}: ✓ right', lnPrevMiss: '{x} {i}: the answer — {w}', lnTileHelpedMsg: 'Help: the correct {x} "{w}" was placed.', lnTileCount: '{a}/{b}', lnBuilt: '✓ The couplet is rebuilt',
+    lnStartsWith: 'Kural {n}, which begins "{w}…"', lnIntroduced: 'Kural {n} introduced ✓ — it returns in tomorrow’s review.', lnIntroducedU: 'Kural {n} introduced ✓', lnNoted: '✓ Noted',
+    lnRecallHead: 'Say it from memory', lnRecallHint: 'Say the couplet aloud, then check.', lnShowKural: 'Show the couplet', lnRecallYes: '✓ I could say it', lnRecallMore: 'More practice',
+    lnChainHead: 'From the beginning, in order', lnChainHint: 'Say the couplets you have met in this chapter aloud, from the first, in order. If you have time, write them in a notebook too.', lnChainShow: 'Show the couplets', lnChainShown: 'The couplets are shown.', lnChainDone: 'I said them ✓',
+    lnDoneSub: 'Introduced today: {n} · reviewed: {r}.', lnDoneTomorrow: 'The new ones return in tomorrow’s review.', lnWeakLink: 'More practice: Kural {n}',
+    lnChDone: 'Chapter {c} · {name} — every couplet introduced.', lnChTest: 'Try the chapter test', lnChTestNote: 'Taking it two days from now makes the memory firmer.', lnBackToLesson: 'Back to the lesson', lnChAllMet: 'Every couplet of chapter {c} has already been introduced; they return in reviews.', lnChDonePart: 'Chapter {c} · {name} — all {y} couplets on your list introduced.', lnListFull: 'The list is full; free a place under "My way" to add this chapter.', lnAfterCurrent: 'Chapter {c} starts after the current lesson.', lnPathAlso: 'Also on the list',
+    lnNumDays: 'lesson days', lnNumRun: 'in a row', lnNumSeen: 'met', lnNumFirm: 'remembered', lnComeback: 'Welcome back! Carry on from where you stopped.',
+    lnMyWay: 'My way', lnWayGoal: 'Goal', lnWayPath: 'What to learn', lnWayPace: 'New couplets per lesson', lnWayLater: 'Changes apply from the next lesson.',
+    lnPathBook: 'Book order', lnPathMine: 'My list', lnPathSyl: 'Syllabus', lnInCh: 'Chapter numbers (e.g. 4, 8, 11, 40)', lnInNum: 'Kural numbers (e.g. 391-400, 43)', lnApplyList: 'Use this list', lnBadTokens: 'Could not understand: {x}', lnListEmpty: 'Enter chapter numbers or kural numbers.',
+    lnShareList: 'Share this list', lnUseList: 'Use this list?', lnUseYes: 'Use it', lnUseNo: 'No',
+    lnContestDay: 'Contest day (optional)', lnContestToday: 'The contest is today. Good luck!', lnGoalLine: 'Days to the contest: {N} · couplets left: {M}', lnGoalPace: '{p} per lesson will finish in time.', lnGoalMany: 'You can do more than one lesson a day.',
+    lnMapTitle: 'Course map', lnMapRow: 'met {x}/{y} · remembered {z}/{y}', lnMapRowU: 'met {x}/{y}', lnMapNow: 'now', lnMapStar: '★ test', lnFromHere: 'Learn from here', lnMapRead: 'Read', lnMapTest: 'Test',
+    lnRestart: 'Start afresh', lnRestartArm: 'Tap again to confirm (your memorised list and test results stay)',
+    lnNotCached: 'This chapter is not on this device yet. Open it when you are online.', lnCantOpen: 'This couplet cannot be opened right now.',
+    lnPathDone: 'This path is complete. Well done! Choose the next one.', lnPathEmpty: 'Choose what to learn under "My way".', lnChLink: 'Learn as a lesson', lnNoSave: 'No room to save progress; the lesson continues.',
     test: 'Recitation test', testShort: 'Test', testRun: 'Test', drillShort: 'Drill', boardShort: 'Chapters', testPage: 'Test page',
     testSub: 'Prepare for a school recitation contest: fill the missing foot, next line, chapter, kural number, type from memory; with score, time and a certificate',
     testRange: 'Range', testLevel: 'Level', lv1: 'Easy', lv2: 'Standard', lv3: 'Hard', lv1a: 'easy', lv2a: 'standard', lv3a: 'hard',
@@ -186,9 +242,10 @@ const t = k => (STR[S.ui] && STR[S.ui][k]) || STR.en[k] || k;
 const DEFAULTS = {
   ui: 'ta', langs: ['en', 'hi'], showTranslit: true, showProse: true, fontScale: 1, theme: 'auto', notify: false,
   notifyTime: '07:00', voices: {}, rate: 1, bookmarks: [], memorised: [], lastKural: 1, proseTab: 'ta_mv',
-  tempo: 320, lastNotified: '', srs: {}, parallelLang: '', srsNew: 5, test: {}, testName: '', testLevel: 2, testSpec: '', testSeed: '',
+  tempo: 320, lastNotified: '', srs: {}, parallelLang: '', srsNew: 5, test: {}, testName: '', testLevel: 2, testSpec: '', testSeed: '', learn: null,
 };
 let S = Object.assign({}, DEFAULTS, JSON.parse(localStorage.getItem('kural.settings') || '{}'));
+if (S.learn) S.learn = Object.assign(learnDef(), S.learn);
 // சாலமன் பாப்பையா / மு. கருணாநிதி are no longer carried; move those readers to மு. வரதராசனார்.
 if (['ta_sp', 'ta_mk'].includes(S.proseTab)) S.proseTab = 'ta_mv';
 function saveS() { localStorage.setItem('kural.settings', JSON.stringify(S)); applyPrefs(); pushPrefsToSW(); pushWidgetPrefs(); }
@@ -388,7 +445,7 @@ async function route() {
       home: viewHome, browse: viewBrowse, ch: () => viewChapter(+p[1]), k: () => viewKural(+p[1]),
       compare: () => viewCompare(+p[1]),
       parallel: () => viewParallel(+p[1]),
-      study: viewStudy, test: () => viewTest(p[1], p[2], q),
+      study: viewStudy, test: () => viewTest(p[1], p[2], q), learn: () => p[1] === 'go' ? viewLearnGo() : viewLearn(q),
       search: () => viewSearch(q.get('q') || ''), practice: () => p[1] ? viewPractice(+p[1], p[2] || 'listen') : viewPracticeIndex(),
       more: viewMore, settings: viewSettings, about: viewAbout, daily: viewDaily, bookmarks: viewBookmarks,
       grammar: () => viewGrammar(q.get('type') || 'ilakkanam', q.get('tag') || ''), offline: viewOffline,
@@ -397,7 +454,7 @@ async function route() {
     };
     await (map[r] || viewHome)();
     setTab({ home: 'home', daily: 'home', browse: 'browse', ch: 'browse', k: 'browse', compare: 'browse',
-             parallel: 'browse', search: 'search', practice: 'practice', study: 'practice', occasions: 'home', verify: 'search', test: 'practice' }[r] || 'more');
+             parallel: 'browse', search: 'search', practice: 'practice', study: 'practice', occasions: 'home', verify: 'search', test: 'practice', learn: 'practice' }[r] || 'more');
   } catch (e) {
     console.error(e);
     render(`<div class="card"><h2>⚠️</h2><p>${esc(e.message)}</p><p class="muted">${navigator.onLine ? '' : t('offline.banner')}</p></div>`);
@@ -458,6 +515,7 @@ async function viewHome() {
   const oc = await occasions().catch(() => null);
   const occChips = oc ? oc.occasions.slice(0, 8).map(x => `<a class="chip" href="#/occasions/${esc(x.id)}">${x.icon} ${esc(occName(x))}</a>`).join('') + `<a class="chip sel" href="#/occasions">${t('occSee')} ›</a>` : '';
   render(`
+  ${learnCardHTML('top')}
   <section class="hero">
     <div class="label">${t('daily')} · ${todayKey()}</div>
     <div class="kural-head"><span class="n">${t('kural')} ${n}</span><a class="ch" href="#/ch/${cm.adhigaram}">${esc(cm.name)} · ${esc(cm.nameEn)}</a></div>
@@ -469,6 +527,7 @@ async function viewHome() {
       <a class="btn" href="#/practice/${n}">🎵 ${t('practice')}</a>
     </div>
   </section>
+  ${learnCardHTML('bottom')}
   ${occChips ? `<div class="card"><h2>🎯 ${t('occasions')}</h2><div class="muted" style="font-size:.85rem">${t('occasionsSub')}</div><div style="margin-top:6px">${occChips}</div></div>` : ''}
   <div class="two">
     <a class="card" href="#/k/${last}" style="text-decoration:none;color:inherit"><h2>${t('continue')}</h2><div class="muted">${t('kural')} ${last} · ${esc(chMeta(chOf(last)).name)}</div><div style="font-family:var(--ta-serif)">${esc(lk.l1)}<br>${esc(lk.l2)}</div></a>
@@ -500,7 +559,8 @@ async function viewChapter(n) {
   render(`<div class="card">
     <div class="row"><div class="grow"><h2 style="font-size:1.2rem">${esc(ch.name)} <span class="muted">· ${esc(ch.nameEn)}</span></h2><div class="muted">${esc(ch.pal)} › ${esc(ch.iyal)} · ${t('kural')} ${ch.start}–${ch.end} · <i>${esc(ch.transliteration)}</i></div></div></div>
     <div class="row" style="margin-top:8px"><a class="btn small" href="#/parallel/${n}">⇔ ${t('parallel')}</a>
-      <a class="btn small" href="#/practice/${ch.start}">🎵 ${t('practice')}</a></div>
+      <a class="btn small" href="#/practice/${ch.start}">🎵 ${t('practice')}</a>
+      <a class="btn small" href="#/learn" onclick="learnFromChapter(${n});return false">📘 ${t('lnChLink')}</a></div>
     ${hasBook ? `<div class="sep"></div><div class="muted" style="font-size:.8rem">🎧 ${t('audiobook')}</div><div class="player"><audio controls preload="none" src="audio/ch/${pad(n, 3)}.mp3"></audio><button class="btn small" id="save-book">💾 ${t('saveOffline')}</button></div>` : ''}
   </div>
   <div class="card list">${ch.kurals.map(k => kuralLinkRow(k, f)).join('')}</div>
@@ -918,7 +978,7 @@ function srsAdd(n) {
   if (!S.srs[n]) S.srs[n] = { due: dayNo(), ivl: 0, ease: 2.5, reps: 0, lapses: 0 };
   saveS();
 }
-function srsGrade(n, q) {                 // q: 0 again · 1 hard · 2 good · 3 easy
+function srsApply(n, q) {                 // q: 0 again · 1 hard · 2 good · 3 easy — mutation only, no save
   const c = S.srs[n] || { due: dayNo(), ivl: 0, ease: 2.5, reps: 0, lapses: 0 };
   if (q === 0) { c.ivl = 0; c.lapses++; c.ease = Math.max(1.3, c.ease - 0.2); }
   else {
@@ -928,8 +988,9 @@ function srsGrade(n, q) {                 // q: 0 again · 1 hard · 2 good · 3
     c.ease = Math.min(3.2, Math.max(1.3, c.ease + (q === 1 ? -0.15 : q === 3 ? 0.1 : 0)));
   }
   c.due = dayNo() + c.ivl;
-  S.srs[n] = c; saveS();
+  S.srs[n] = c;
 }
+function srsGrade(n, q) { srsApply(n, q); saveS(); }
 const srsDue = () => Object.keys(S.srs).map(Number).filter(n => S.srs[n].due <= dayNo()).sort((a, b) => a - b);
 
 async function viewStudy() {
@@ -1103,7 +1164,7 @@ async function viewSearch(q0) {
 async function viewPracticeIndex() {
   setTitle(t('practice'), 'யாப்பு · ஓதல் · மனப்பாடம்');
   const n = dailyN(); const k = await kural(n);
-  render(`<div class="card"><h2>${t('daily')}</h2>${coupletHTML(k)}<div class="actions"><a class="btn primary" href="#/practice/${n}">🎵 ${t('start')}</a></div></div>
+  render(`${learnCardHTML('any')}<div class="card"><h2>${t('daily')}</h2>${coupletHTML(k)}<div class="actions"><a class="btn primary" href="#/practice/${n}">🎵 ${t('start')}</a></div></div>
   <div class="card"><h2>🏆 ${t('test')}</h2><div class="muted">${t('testSub')}</div><div class="row" style="margin-top:8px"><a class="btn primary" href="#/test">🏆 ${t('test')}</a><a class="btn" href="#/test/board">📊 ${t('testBoard')}</a></div></div>
   ${SINGLE ? '' : `<div class="card"><h2>🧩 ${t('kattam')}</h2><div class="muted">${t('kattamSub')}</div><div class="row" style="margin-top:8px"><a class="btn primary" href="kattam/index.html">🧩 ${t('kattamGo')}</a></div></div>`}
   <div class="card"><h2>${t('kural')}</h2><div class="row"><input type="text" inputmode="numeric" id="pn" placeholder="1–1330" style="max-width:140px"><button class="btn" id="pgo">→</button><a class="btn" href="#/practice/${1 + Math.floor(Math.random() * 1330)}">🎲 ${t('random')}</a></div></div>
@@ -1545,6 +1606,7 @@ function finishTest() {
   rec.attempts++; rec.best = Math.max(rec.best, score); rec.last = { score, total, lv: TEST.lv, secs, date: todayKey(), seed: TEST.seed };
   if (passed) rec.passed = true;
   if (certOk && (!rec.cert || score >= rec.cert.score)) rec.cert = { score, total, lv: TEST.lv, secs, date: todayKey(), seed: TEST.seed, n: R.ns.length };
+  if (S.learn && S.learn.goal !== 'u') for (const q of qs) { const c = S.srs[q.k.n]; if (!q.ok && c && learnHas(q.k.n)) c.due = Math.min(c.due, Math.max(dayNo(), learnDay()) + 1); }
   S.test[R.key] = rec; saveS();
   TEST.done = { score, total, secs, passed, certOk, key: R.key };
   renderTestResult();
@@ -1557,11 +1619,12 @@ function renderTestResult() {
     <div class="t-prog"><i style="width:${pct}%"></i></div>
     <div class="${d.passed ? 't-pass' : 'muted'}">${d.certOk ? t('testPassed') : d.passed ? `${t('passedWord')} · ${t('certMin')}` : t('testFailed')}</div>
     <div class="stat" style="margin-top:8px"><div><b>${rec.best}</b><span>${t('testBest')}</span></div><div><b>${rec.attempts}</b><span>${t('testAttempts')}</span></div></div>
-    <div class="actions">${d.certOk ? `<button class="btn primary" id="t-cert">🏅 ${t('certificate')}</button>` : ''}<button class="btn ${d.certOk ? '' : 'primary'}" id="t-retry">↺ ${t('retry')}</button><a class="btn" href="#/test/drill/${R.key}">🃏 ${t('testDrill')}</a><button class="btn" id="t-share">📤 ${t('shareResult')}</button><a class="btn" href="#/test">📋 ${t('testPage')}</a></div>
+    <div class="actions">${d.certOk ? `<button class="btn primary" id="t-cert">🏅 ${t('certificate')}</button>` : ''}<button class="btn ${d.certOk ? '' : 'primary'}" id="t-retry">↺ ${t('retry')}</button><a class="btn" href="#/test/drill/${R.key}">🃏 ${t('testDrill')}</a><button class="btn" id="t-share">📤 ${t('shareResult')}</button>${S.learn ? `<button class="btn" id="t-learn">📘 ${t('lnBackToLesson')}</button>` : ''}<a class="btn" href="#/test">📋 ${t('testPage')}</a></div>
     <div id="t-certbox"></div></div>
   <div class="card list">${TEST.qs.map((q, i) => `<a href="#/k/${q.k.n}"><span class="num ${q.ok ? 't-ok' : 't-bad'}" aria-label="${q.ok ? t('correct') : t('wrong')}">${q.ok ? '✓' : '✗'}</span><span class="tx"><span class="l">${i + 1}. ${t(qLabel(q))} · ${t('kural')} ${q.k.n}</span><span class="tr">${esc(q.k.l1)} ${esc(q.k.l2)}</span></span></a>`).join('')}</div>`);
   const c = $('#t-cert'); if (c) c.onclick = () => testCertificate(d.key, $('#t-certbox'));
   $('#t-retry').onclick = () => { TEST.done = true; viewTestRun(R.key, TEST.lv, TEST.seed); };
+  const tl = $('#t-learn'); if (tl) tl.onclick = () => { location.hash = '#/learn'; };
   $('#t-share').onclick = () => shareText(t('test'), `🏆 ${t('test')} · ${R.nameTa}${S.ui === 'ta' ? '' : ' · ' + R.nameEn}\n${d.score}/${d.total} (${pct}%) · ${t('lv' + TEST.lv)}${TEST.seed ? ` · ${t('seedRound')} ${TEST.seed}` : ''} · ⏱ ${fmtSecs(d.secs)}\n— ${D.meta.title} · CICT · ${appUrl()}#/test`);
 }
 
@@ -1712,6 +1775,627 @@ async function worksheet(R, box) {
   } catch (e) { box.innerHTML = ''; toast(navigator.onLine ? '✕ ' + e.message : t('offline.banner')); }
 }
 
+// ───────────────────────────── வழிகாட்டும் பாடம் · guided lesson ─────────────────────────────
+// A lesson is a frozen, tiny plan over tools the app already has; the course itself is derived.
+// Course position is never stored: it is recomputed from the path (testRange specs) and ONE
+// 10-bit "introduced" mask per chapter, so changing path, pace or goal can never corrupt progress.
+// The day's lesson, however, is built once into S.learn.cur.plan (step codes = letter + kural
+// number; a lower-case letter is ungraded practice) so that Back, a reload, a settings change or
+// a flaky network can never shift the step under the cursor. Every step finishes after at most
+// one wrong answer: MCQs are answer-once with reveal, the tile rebuild helps itself after two
+// misses, audio never gates, self-report buttons are always enabled. Memory stays in S.srs,
+// mastery stays with the chapter test; the lesson only introduces, schedules and sequences.
+// It never writes S.memorised. There are no timers, so nothing runs while the learner is away.
+//
+// TWO DAY SYSTEMS COEXIST ON PURPOSE: dayNo() is the UTC day the SRS deck has always used;
+// learnDay() is the LOCAL calendar day (same expression as dailyN) used for the habit counters.
+// They meet in learnGrade() (write side: never due again the same local day, east of UTC) and in
+// learnDueDay() (read side: the same promise west of UTC). "Fixing" either creates an off-by-one.
+const LEARN_LISTS = [];   // syllabus / starter slot: {id, nameTa, nameEn, src:'source + year', specs:[...]}. Empty until CICT signs a list off.
+const LEARN_CAP = { few: 6, many: 15, rev: 10, dayNew: 6 };
+const LEARN_SPEC = /^(book|pal-[123]|iyal-[123]-\d{1,2}|ch-\d{1,3}|r-\d{1,4}-\d{1,4})$/;
+const LEARN = { tok: 0, busy: false, warned: false, rev: false, armed: 0, t: 0, wayOpen: false, open: false };
+const learnDay = (d = new Date()) => Math.floor(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()) / 864e5);
+const learnDueDay = () => Math.min(dayNo(), learnDay());
+function learnDef() { return { v: 1, goal: 'm', ta: 1, ml: 'ta', path: ['book'], pid: '', pace: 2, at: 0, td: 0, ch: {}, cur: null, last: null, days: 0, run: { n: 0, last: 0, g: 0 }, best: 0, nw: [0, 0], rvn: 0 }; }
+// One guarded write per lesson action. saveS() also pushes to the service worker and the widget
+// bridge; doing that fifteen times a lesson is waste, so it runs only at commit and on setup changes.
+function saveLearn() { try { localStorage.setItem('kural.settings', JSON.stringify(S)); } catch (e) { if (!LEARN.warned) { LEARN.warned = true; toast(t('lnNoSave'), 4000); } } }
+function learnSaveAll() { try { saveS(); } catch (e) { saveLearn(); } }     // a throwing setItem must never freeze a screen
+function learnGrade(n, q) { srsApply(n, q); const c = S.srs[n]; c.due = Math.max(dayNo(), learnDay()) + Math.max(c.ivl, 1); }
+const learnStillDue = n => !!S.srs[n] && S.srs[n].due <= learnDueDay();      // a card graded elsewhere since the plan was built is not graded again
+const learnOnGo = () => location.hash.startsWith('#/learn/go');
+window.addEventListener('storage', e => {   // another tab or the installed copy wrote the settings
+  if (e.key !== 'kural.settings' || !e.newValue) return;
+  try {
+    const live = $('#ln-step') ? S.learn : undefined;                         // a lesson on screen keeps its own state: its steps hold references into it
+    Object.assign(S, JSON.parse(e.newValue));
+    if (live !== undefined) S.learn = live; else if (S.learn) S.learn = Object.assign(learnDef(), S.learn);
+  } catch (err) { }
+});
+
+// ── the course, derived ──
+function learnQueue() {
+  const seen = new Set(), q = [];
+  for (const s of S.learn.path) { if (!LEARN_SPEC.test(s)) continue; const R = testRange(s); if (!R) continue; for (const n of R.ns) if (!seen.has(n)) { seen.add(n); q.push(n); } }
+  const at = S.learn.at; if (at) { const i = q.findIndex(n => chOf(n) === at); if (i > 0) return q.slice(i).concat(q.slice(0, i)); }
+  return q;
+}
+const learnHas = n => !!(((S.learn.ch[chOf(n)] || 0) >> ((n - 1) % 10)) & 1);
+const learnSet = n => { const c = chOf(n); S.learn.ch[c] = (S.learn.ch[c] || 0) | (1 << ((n - 1) % 10)); };
+const popc = m => { let c = 0; while (m) { c += m & 1; m >>= 1; } return c; };
+const learnFirm = n => !!(S.srs[n] && S.srs[n].ivl >= 7) || S.memorised.includes(n);
+const learnIntroduced = () => Object.keys(S.learn.ch).flatMap(cc => chNs(+cc)).filter(learnHas);
+function learnShares(queue) { const sh = {}; for (const n of queue) { const c = chOf(n); sh[c] = (sh[c] || 0) | (1 << ((n - 1) % 10)); } return sh; }
+const learnAid = () => S.learn.ta === 0;                       // script aid: transliteration everywhere, saying is skippable
+function learnPreset() { const en = S.ui === 'en'; const f = firstLang(); return { goal: en ? 'u' : 'm', ml: en ? f : 'ta', ta: en ? 0 : 1 }; }
+function learnCreate(p) { S.learn = Object.assign(learnDef(), p, { pace: p.goal === 'm' ? 2 : p.goal === 'c' ? 3 : 5 }); }
+
+// ── meaning, always in the language the learner chose, always labelled ──
+const learnStreams = () => [S.learn.ml, 'p-en', 'ta'].filter((v, i, a) => a.indexOf(v) === i);
+function learnText(k, code) { if (code === 'ta') return k.prose.ta_mv || ''; if (code === 'p-en') return k.prose.en || ''; const tr = k.tr[code]; return tr ? tr.filter(Boolean).join(' ') : ''; }
+const learnOneStream = ks => learnStreams().find(c => ks.every(k => learnText(k, c))) || 'ta';
+const learnLang = code => code === 'ta' ? 'ta' : code === 'p-en' ? 'en' : code;
+const learnLangName = c => L(c).native === L(c).name ? L(c).native : `${L(c).native} · ${L(c).name}`;
+const learnLabel = code => code === 'ta' ? t('lnLabTa') : code === 'p-en' ? t('lnLabEnProse') : (L(code) ? learnLangName(code) : code);
+function learnMeanHTML(k, code, clamp, open) {
+  code = code || learnOneStream([k]); const lang = learnLang(code); const rtl = L(lang) && L(lang).dir === 'rtl'; const cl = clamp && !open;
+  return `<div class="ln-mean ${cl ? 'clamp' : ''} ${scriptClass(lang)} ${rtl ? 'rtl' : ''}" lang="${esc(lang)}"${dirAttr(lang)}>${esc(learnText(k, code))}</div>${clamp ? `<button class="ln-more" aria-expanded="${!cl}">${t(cl ? 'lnMore' : 'lnLess')}</button>` : `<div class="ln-lab">${esc(learnLabel(code))}</div>`}`;
+}
+// testTokens + a transliteration per token when k.tl splits into the same number of words line by line
+function learnToks(k) {
+  const toks = testTokens(k); const per = [0, 1].map(li => ((k.tl || [])[li] || '').split(/\s+/).filter(Boolean));
+  const ok = [0, 1].every(li => per[li].length === toks.filter(x => x.li === li).length);
+  if (ok) { const at = [0, 0]; toks.forEach(x => { x.tl = per[x.li][at[x.li]++]; }); }
+  toks.aligned = ok; return toks;
+}
+const learnTl = k => (k.tl && k.tl[0]) ? `<div class="translit"><div class="tl1">${esc(k.tl[0])}</div><div class="tl2">&nbsp;&nbsp;&nbsp;${esc(k.tl[1] || '')}</div></div>` : '';
+// the transliteration with the blanked words struck out, so it cannot give the answers away
+function learnTlMasked(toks, hide) { if (!toks.aligned) return ''; const ln = li => toks.map((x, j) => x.li === li ? (hide.has(j) ? '___' : esc(x.tl)) : '').filter(Boolean).join(' '); return `<div class="translit"><div class="tl1">${ln(0)}</div><div class="tl2">&nbsp;&nbsp;&nbsp;${ln(1)}</div></div>`; }
+const learnShowTl = () => learnAid() || S.showTranslit;
+const learnCouplet = k => testCoupletHTML(k, testTokens(k), []) + (learnShowTl() ? learnTl(k) : '');
+const learnTlUnder = x => (learnAid() && x.tl) ? `<span class="ln-tl">${esc(x.tl)}</span>` : '';
+const learnCantBuild = k => !testable(k) || (learnAid() && !learnToks(k).aligned);
+const learnFirstWord = k => testable(k) ? stripPunct(k.l1.split(/\s+/)[0]) + (learnAid() && k.tl && k.tl[0] ? ` (${k.tl[0].split(/\s+/)[0]})` : '') : '';
+function learnSayLive(msg) { const el = $('#ln-fb'); if (!el) return; el.textContent = ''; requestAnimationFrame(() => { el.textContent = msg; }); }
+const learnArm = () => { LEARN.t = performance.now(); };                       // freshly painted choices ignore taps for a moment: a double tap must not answer twice
+const learnTooSoon = () => performance.now() - LEARN.t < 350;
+// Two blanks for the fill steps. The pool is the kural's own chapter and never holds a word of the couplet itself.
+function learnFill(k, cnt, rnd) {
+  const toks = learnToks(k); const own = new Set(toks.map(x => tWord(x.w)));
+  const idx = pick(toks.map((_, j) => j).filter(j => blankable(toks, j)), cnt, rnd).sort((a, b) => a - b);
+  const pool = D.ch[chOf(k.n)].kurals.filter(x => x.n !== k.n && testable(x)).flatMap(x => learnToks(x)).filter(w => !own.has(tWord(w.w)) && tWord(w.w).length >= 2);
+  const blanks = idx.map(j => {
+    const a = toks[j]; const aw = tWord(a.w);
+    let cand = pool.filter(w => a.cls ? w.cls === a.cls : Math.abs(tWord(w.w).length - aw.length) <= 2); if (cand.length < 3) cand = pool;
+    const seen = new Set([aw]); const others = [];
+    for (const w of shuffle(cand.slice(), rnd)) { const cw = tWord(w.w); if (seen.has(cw)) continue; seen.add(cw); others.push(w); if (others.length === 3) break; }
+    const opts = shuffle([a, ...others], rnd);
+    return { j, seer: !!a.cls, opts, ans: opts.indexOf(a) };
+  });
+  return { toks, blanks };
+}
+const learnRace = (p, ms) => Promise.race([p, new Promise((_, rej) => setTimeout(() => rej(new Error('timeout')), ms))]);   // a stalled fetch must not freeze a step
+async function learnLoadChapters(ns, ms) {   // the chapters that are in memory, or arrive within ms
+  const chs = [...new Set(ns.map(chOf))]; const ok = new Set(chs.filter(c => D.ch[c])); const need = chs.filter(c => !D.ch[c]);
+  if (need.length) await Promise.race([Promise.allSettled(need.map(c => chapter(c).then(() => ok.add(c)))), new Promise(r => setTimeout(r, ms))]);
+  return ok;
+}
+
+// ── building the day's lesson: everything that shapes the step list is decided here, once ──
+async function buildLesson(revOnly, tok) {
+  const Ls = S.learn, today = learnDay(), goal = Ls.goal; const stale = () => tok !== LEARN.tok || !learnOnGo();
+  const queue = learnQueue(); const first = revOnly ? 0 : (queue.find(n => !learnHas(n)) || 0);
+  const c = first ? chOf(first) : 0;
+  if (c) { try { await learnRace(chapter(c), 8000); } catch (e) { return { err: 'nc', c }; } grammar(c).catch(() => { }); }
+  if (stale()) return { err: 'stale' };
+  const byN = n => D.ch[chOf(n)].kurals[(n - 1) % 10];
+  const gap = Ls.last ? today - Math.min(Ls.last.d, today) : 0;
+  const byDue = (a, b) => S.srs[a].due - S.srs[b].due || a - b;
+  const dueAll = goal === 'u' ? [] : Object.keys(S.srs).map(Number).filter(learnStillDue);
+  const duePath = dueAll.filter(learnHas).sort(byDue), dueOther = dueAll.filter(n => !learnHas(n)).sort(byDue);   // only path-taught cards throttle
+  let nNew = Ls.pace, nRev = 4, cap = 0;
+  if (goal === 'u') nRev = 2;
+  else if (goal === 'c') nRev = 6;                                   // a contestant keeps learning until nothing is left; after that every lesson is revision anyway
+  else {
+    if (Ls.days === 0) nRev = 2;                                                                                  // the first lesson ever always teaches
+    else if (duePath.length >= LEARN_CAP.many && Ls.rvn < 2) { nNew = 0; nRev = LEARN_CAP.rev; }
+    else if (duePath.length > LEARN_CAP.few) { nNew = 1; nRev = 6; }
+    if (Ls.nw[0] === today && Ls.nw[1] >= LEARN_CAP.dayNew) { nNew = 0; nRev = Math.max(nRev, 6); cap = 1; }
+  }
+  if (!first) { nNew = 0; nRev = Math.max(nRev, LEARN_CAP.rev); }
+  const ns = [], fast = [];
+  if (nNew) {
+    const share = queue.filter(n => chOf(n) === c && !learnHas(n));       // this chapter's untaught path kurals, in path order
+    for (const n of share) {
+      if (goal !== 'u' && learnFirm(n)) { if (fast.length < 3) { fast.push(n); ns.push(n); } continue; }   // known already: meet it and rebuild it, no more
+      if (ns.length - fast.length >= nNew) break;
+      ns.push(n);
+    }
+    const left = share.filter(n => !ns.includes(n));
+    if (left.length === 1 && nNew >= 2 && !(goal !== 'u' && learnFirm(left[0]))) ns.push(left[0]);           // never leave a one-kural tail
+  }
+  let rv = [], picks = [];
+  if (goal !== 'u') {
+    const cand = [];
+    if (Ls.last && Ls.last.d < today) for (const n of Ls.last.ns) { if (cand.length >= 2) break; if (!ns.includes(n) && S.srs[n]) cand.push({ n, g: learnStillDue(n) }); }   // yesterday's couplets take the first TWO slots, graded only if the deck calls them due
+    for (const n of duePath.concat(dueOther)) if (!ns.includes(n) && !cand.some(x => x.n === n)) cand.push({ n, g: true });
+    let pool = cand.slice(0, 12);
+    if (!ns.length && pool.length < 4) {                                   // never a zero-step lesson: practise the youngest introduced couplets
+      const intro = learnIntroduced().filter(n => !pool.some(x => x.n === n)).sort((a, b) => ((S.srs[a] || {}).ivl || 0) - ((S.srs[b] || {}).ivl || 0) || a - b);
+      pool = pool.concat(intro.slice(0, 8).map(n => ({ n, g: false })));
+    }
+    const okCh = await learnLoadChapters(pool.map(x => x.n), 2500);
+    if (stale()) return { err: 'stale' };
+    rv = pool.filter(x => okCh.has(chOf(x.n))).slice(0, nRev);              // a review whose chapter is not on the device is dropped HERE and stays due
+  } else {
+    const intro = learnIntroduced().filter(n => !ns.includes(n));         // from the masks, not from what happens to be in memory
+    const pref = (Ls.last ? Ls.last.ns : []).filter(n => learnHas(n) && !ns.includes(n));
+    const cands = [...new Set(pref.concat(shuffle(intro, mulberry32(fnv1a('learn|' + today + '|p')))))].slice(0, ns.length ? 6 : 12);
+    const okCh = await learnLoadChapters(cands, 2500);
+    if (stale()) return { err: 'stale' };
+    picks = cands.filter(n => okCh.has(chOf(n))).slice(0, ns.length ? 2 : 8);
+  }
+  const form = x => { const k = byN(x.n); const ivl = (S.srs[x.n] || {}).ivl || 0; const f = learnCantBuild(k) ? 'Q' : (ivl >= 7 && gap < 7) ? 'T' : 'R'; return (x.g ? f : f.toLowerCase()) + x.n; };
+  const plan = [];
+  if (gap >= 3 && Ls.last && Ls.last.ns.length) plan.push('Z0');
+  if (goal === 'u') {
+    picks.forEach(n => plan.push('P' + n));
+    for (let i = 0; i < ns.length; i += 2) { const pair = ns.slice(i, i + 2); pair.forEach(n => plan.push('L' + n)); pair.forEach(n => plan.push('M' + n)); }   // meet two, then tell them apart
+    if (ns.length >= 2) ns.slice(0, 2).forEach(n => plan.push('X' + n));
+  } else {
+    const codes = rv.map(form); const slow = ns.filter(n => !fast.includes(n));
+    plan.push(...codes.slice(0, 2));                                        // a short retrieval of yesterday, then straight to the new couplet
+    ns.forEach(n => { plan.push('L' + n); if (!fast.includes(n)) plan.push('S' + n); });
+    slow.forEach(n => plan.push('M' + n));
+    slow.filter(n => !learnCantBuild(byN(n)) && learnToks(byN(n)).some((_, j, a) => blankable(a, j))).forEach(n => plan.push('F' + n));
+    plan.push(...codes.slice(2));                                           // the rest of the reviews are the spacer before the rebuild
+    ns.forEach(n => plan.push((learnCantBuild(byN(n)) ? 'C' : 'B') + n));
+    if (c && ns.length && chNs(c).filter(n => learnHas(n) || ns.includes(n)).length >= 2) plan.push('K' + c);
+  }
+  if (!plan.length || (plan.length === 1 && plan[0] === 'Z0')) return { err: 'empty' };
+  if (S.learn !== Ls) return { err: 'stale' };                        // another tab rewrote the settings while this was building
+  Ls.cur = { d: today, c, k: ns.length ? 'new' : 'rev', plan, i: 0, a: null, seed: (today * 31 + c) & 0xffff, nw: [], rc: 0, weak: [], cap };
+  saveLearn();
+  return { ok: true };
+}
+
+// ── the player: one hash for the whole lesson, the step lives in S.learn.cur.i ──
+function learnEnter(rev) { LEARN.rev = !!rev; if (location.hash.startsWith('#/learn') && !learnOnGo()) location.replace('#/learn/go'); else location.hash = '#/learn/go'; }   // from the hub the player REPLACES the hub entry, so finishing never leaves two identical entries behind
+async function viewLearnGo() {
+  await meta();
+  if (!S.learn) { location.replace('#/learn'); return; }
+  const my = ++LEARN.tok; const today = learnDay(); let cur = S.learn.cur;
+  const wasRev = !!(cur && cur.k === 'rev' && !cur.c);            // an untouched review-only lesson is rebuilt as one (offline, the next chapter may not be there)
+  if (cur && ((cur.i === 0 && !cur.a) || today - Math.min(cur.d, today) > 7)) cur = S.learn.cur = null;   // nothing answered yet, or too old to mean anything
+  setTitle(t('lnTitle'), t('lnName'));
+  if (!cur) {
+    render(`<div class="card muted">⏳ ${t('lnBuilding')}</div>`);
+    const r = await buildLesson(LEARN.rev || wasRev, my); LEARN.rev = false;
+    if (my !== LEARN.tok || !learnOnGo()) return;                        // the learner left while it was building: render nothing over the new view
+    if (!r.ok || !S.learn.cur) { location.replace('#/learn' + (r.err === 'nc' ? '?nc=' + r.c : r.err === 'empty' ? '?e=1' : '')); return; }
+    cur = S.learn.cur;
+  }
+  render(`<div class="card ln" aria-live="off"><div class="row"><span class="chip sel" id="ln-count"></span><span class="muted" id="ln-kind"></span></div>
+    <div class="t-prog"><i id="ln-bar"></i></div><div id="ln-step"></div><div id="ln-fb" class="ln-sr" role="status" aria-live="polite"></div>
+    <div class="ln-foot"><button class="ln-link" id="ln-enough" hidden>${t('lnEnough')}</button></div></div>`);
+  $('#ln-enough').onclick = () => { if (LEARN.busy) return; LEARN.busy = true; commitLesson(); };
+  goStep();
+}
+function learnAdvance() { const cur = S.learn && S.learn.cur; if (!cur) { LEARN.busy = false; location.replace('#/learn'); return; } cur.i++; cur.a = null; saveLearn(); goStep(); }
+function learnNextHTML(label, hidden) { return `<div class="actions ln-actions"><button class="btn primary" id="ln-next" ${hidden ? 'hidden' : ''}>${label || t('lnNext')} →</button></div>`; }
+function learnWireNext(before) { const b = $('#ln-next'); if (b) b.onclick = () => { if (LEARN.busy) return; LEARN.busy = true; if (before) before(); learnAdvance(); }; }
+function learnWireMore(host, onToggle) { $$('.ln-more', host).forEach(b => b.onclick = () => { const m = b.previousElementSibling; const open = m.classList.toggle('clamp') === false; b.setAttribute('aria-expanded', open); b.textContent = open ? t('lnLess') : t('lnMore'); if (onToggle) onToggle(open); }); }
+function learnSettle(sel) { const h = $('#ln-step .ln-h'); if (h) h.focus({ preventScroll: true }); const el = sel && $(sel); if (el) el.scrollIntoView({ block: 'start' }); else window.scrollTo(0, 0); }   // F, B and T open on the part that is tapped, not on a screen of cue text
+function learnAnswered(el) { el = el || $('#ln-res'); if (!el) return; el.focus({ preventScroll: true }); const nx = $('#ln-next'); (nx || el).scrollIntoView({ block: 'nearest' }); const en = $('#ln-enough'), cur = S.learn.cur; if (en && cur) en.hidden = !(cur.nw.length >= 1 || cur.rc >= 3); }
+async function goStep() {
+  const my = ++LEARN.tok; const cur = S.learn && S.learn.cur; const host = $('#ln-step'); if (!cur || !host) return;
+  TTS.stop(); closeSheet(); LEARN.open = false;                 // step swaps fire no hashchange, so audio and sheets are closed here
+  if (cur.i >= cur.plan.length) return commitLesson();
+  const code = cur.plan[cur.i], K = code[0].toUpperCase(), graded = code[0] === K, n = +code.slice(1);
+  setTitle(t('lnTitle'), `${cur.c ? t('lnChShort') + ' ' + cur.c + ' · ' : ''}${fmt(t('lnStepOf'), { i: cur.i + 1, n: cur.plan.length })}`);
+  $('#ln-count').textContent = `${cur.i + 1} / ${cur.plan.length}`;
+  $('#ln-kind').textContent = cur.cap ? t('lnCapShort') : cur.k === 'rev' ? t('lnRevShort') : '';
+  $('#ln-bar').style.width = Math.round(100 * cur.i / cur.plan.length) + '%';
+  $('#ln-enough').hidden = !(cur.nw.length >= 1 || cur.rc >= 3);
+  let k = null, recap = [];
+  try {
+    if (K === 'K') await learnRace(chapter(n), 6000);
+    else if (K === 'Z') recap = (await Promise.allSettled((S.learn.last ? S.learn.last.ns : []).slice(0, 3).map(kural))).filter(r => r.status === 'fulfilled').map(r => r.value);
+    else { k = await learnRace(kural(n), 6000); if ((K === 'M' || K === 'X') && cur.c) await learnRace(chapter(cur.c), 4000).catch(() => { }); }   // today's other couplets are distractors: the same set on every render
+  } catch (e) { if (my !== LEARN.tok || !$('#ln-step')) return; host.innerHTML = `<h2 class="ln-h" tabindex="-1">${t('lnCantOpen')}</h2>${learnNextHTML()}`; learnWireNext(); learnSettle(''); learnSayLive(t('lnCantOpen')); LEARN.busy = false; return; }   // grades nothing, removes nothing
+  if (my !== LEARN.tok || !$('#ln-step') || !learnOnGo()) return;
+  const run = { Z: stepRecap, L: stepLearn, S: stepSay, M: stepMeaning, P: stepMeaning, X: stepWhich, F: stepFill, R: stepFill, B: stepBank, T: stepBank, C: stepRecall, Q: stepRecall, K: stepChain }[K];
+  if (!run) { host.innerHTML = `<h2 class="ln-h" tabindex="-1">${t('lnCantOpen')}</h2>${learnNextHTML()}`; learnWireNext(); learnSettle(''); learnSayLive(t('lnCantOpen')); LEARN.busy = false; return; }   // a step letter from a newer version
+  run(host, K === 'Z' ? recap : k, n, K, graded);
+  learnWireMore(host, o => { LEARN.open = o; }); learnSettle('FRBT'.includes(K) && !(cur.a && (cur.a.e !== undefined || (cur.a.p && K !== 'F' && K !== 'R'))) ? '#ln-step .ln-focus' : '');
+  LEARN.busy = false;                                            // the latch opens only once the new step is on screen, so a double tap cannot skip one
+}
+const learnRevChip = K => 'RTQP'.includes(K) ? `<div class="ln-lab">${t('lnRevHead')}</div>` : '';
+const learnAudioHTML = () => `<div class="row"><button class="btn" id="ln-hear">🔊 ${t('lnHear')}</button></div><div class="ln-hint">${t('lnNoAudio')}</div>`;
+const learnWireAudio = k => { const b = $('#ln-hear'); if (b) b.onclick = e => reciteKural(k, e.currentTarget); };
+const learnHead = (k, n, focus) => `<div class="kural-head ${focus ? 'ln-focus' : ''}"><span class="n">${t('kural')} ${n}</span><span class="ch">${esc(chName(chMeta(chOf(n))))}</span></div>`;
+
+function stepRecap(host, ks) {
+  host.innerHTML = `<h2 class="ln-h" tabindex="-1">${t('lnRecapTitle')}</h2><div class="muted">${t('lnRecapSub')}</div>
+    ${ks.map(k => `<div class="ln-block">${learnHead(k, k.n)}${learnCouplet(k)}${learnMeanHTML(k, null, false)}<div class="row"><button class="btn ln-hearn" data-n="${k.n}">🔊 ${t('lnHear')}</button></div></div>`).join('')}
+    <div class="ln-hint">${t('lnNoAudio')}</div>${learnNextHTML()}`;
+  $$('.ln-hearn', host).forEach(b => b.onclick = e => reciteKural(ks.find(k => k.n === +b.dataset.n), e.currentTarget));
+  learnWireNext();
+}
+function stepLearn(host, k, n) {
+  const cur = S.learn.cur, ml = S.learn.ml, shown = !!(cur.a && cur.a.r); const code = learnOneStream([k]);
+  const extra = code === 'ta' ? (k.prose.tac ? `<details class="ln-det"><summary>${t('lnMoreUrai')}</summary><div class="ln-mean">${esc(k.prose.tac)}</div><div class="ln-lab">${t('lnLabTac')}</div></details>` : '')
+    : (code !== 'p-en' && k.prose.en ? `<details class="ln-det"><summary>${t('lnLabEnProse')}</summary><div class="ln-mean" lang="en">${esc(k.prose.en)}</div></details>` : '');
+  const canSkip = S.learn.goal !== 'u' && cur.plan.indexOf('B' + n) > cur.i && !(cur.to || []).includes(n) && cur.plan.indexOf('S' + n) > cur.i;
+  host.innerHTML = `<h2 class="ln-h" tabindex="-1">${t('lnLearnHead')}</h2>${learnHead(k, n)}${learnCouplet(k)}${learnAudioHTML()}
+    <div class="muted" id="ln-inst">${t('lnLearnHint')}</div>
+    <div id="ln-mbox" ${shown ? '' : 'hidden'}>${learnMeanHTML(k, code)}${extra}
+      <details class="ln-det" id="ln-words"><summary>${t('lnWordsOpen')}</summary><div id="ln-wbody" class="muted">…</div></details></div>
+    <div class="actions ln-actions"><button class="btn primary" id="ln-show" ${shown ? 'hidden' : ''}>${t('lnShowMeaning')}</button><button class="btn primary" id="ln-next" ${shown ? '' : 'hidden'}>${t('lnNext')} →</button></div>
+    ${canSkip ? `<button class="ln-link" id="ln-know">${t('lnKnowIt')}</button>` : ''}`;
+  learnWireAudio(k); learnWireNext();
+  $('#ln-show').onclick = () => { cur.a = { r: 1 }; saveLearn(); $('#ln-mbox').hidden = false; $('#ln-show').hidden = true; $('#ln-next').hidden = false; $('#ln-inst').hidden = true; learnSayLive(learnText(k, code)); $('#ln-next').focus({ preventScroll: true }); };
+  const kn = $('#ln-know'); if (kn) kn.onclick = () => {           // test-out: straight to the rebuild, which still has to be passed
+    if (LEARN.busy) return; LEARN.busy = true;
+    cur.plan = cur.plan.filter((c, j) => j <= cur.i || !(/^[SMF]/.test(c) && +c.slice(1) === n)); cur.to = (cur.to || []).concat(n); learnAdvance();
+  };
+  $('#ln-words').ontoggle = async e => {
+    if (!e.currentTarget.open || e.currentTarget.dataset.done) return; e.currentTarget.dataset.done = 1; const body = $('#ln-wbody');
+    try {
+      const gr = (await grammar(chOf(n))).kurals[String(n)]; if (!$('#ln-wbody')) return; const words = gr.words;
+      const clean = s => String(s || '').replace(/\s*[(\[][^)\]]*[)\]]/g, '').trim();
+      let rows;
+      if (ml === 'ta') rows = words.map((w, i) => ({ i, a: w.w, b: w.c.map(c => c.s).join(' + ') })).filter(r => tWord(r.b) !== tWord(r.a) && r.b[0] === r.a[0]);   // பதம் பிரித்தல் only; a fragment whose first letter belongs to the previous word is left to the word sheet
+      else rows = words.map((w, i) => ({ i, w, a: w.w, b: w.c.map(c => clean(c.gloss)).filter(Boolean).join(' + ') })).filter(r => r.b && r.w.c.some(c => ['பெயர்', 'வினை', 'உரி'].includes(c.cat)) && r.w.c.every(c => (c.conf || 0) >= 0.7)).slice(0, 4);
+      body.classList.remove('muted');
+      body.innerHTML = (rows.length ? rows.map(r => `<div class="ln-wrow"><b>${esc(r.a)}</b><span ${ml === 'ta' ? '' : 'lang="en"'}>${esc(r.b)}</span><button class="btn small ln-wbtn" data-i="${r.i}" aria-label="${esc(r.a)} · ${esc(t('grammar'))}">📚</button></div>`).join('') : `<div class="muted">${t(ml === 'ta' ? 'lnWordsWhole' : 'lnWordsNone')}</div>`)
+        + `<div class="ln-lab">${ml === 'ta' ? t('lnSplitNote') : t('lnGlossEn')}</div>`;
+      $$('.ln-wbtn', body).forEach(b => b.onclick = () => openWordSheet(k, words[+b.dataset.i], gr, +b.dataset.i));
+    } catch (err) { if (body) body.textContent = t('lnWordsNone'); }
+  };
+}
+function stepSay(host, k, n) {
+  const toks = testTokens(k); const seer = toks.every(x => x.cls);
+  const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+  const task = (i, label, hide) => `<div class="ln-say"><div class="ln-sayt">${i}. ${label}</div><div class="row">${hide ? `<button class="btn ln-hide" data-h="${hide}">🙈 ${t('lnHide')}</button>` : `<button class="btn ln-hearb">🔊 ${t('lnHear')}</button>`}<button class="btn ln-said" aria-pressed="false">${t('lnSaidIt')}</button></div></div>`;
+  host.innerHTML = `<h2 class="ln-h" tabindex="-1">${t('lnSayHead')}</h2>${learnHead(k, n)}<div id="ln-saybox" data-h="0">${learnCouplet(k)}</div><div class="ln-lab">${t(seer ? 'seer' : 'wordOne')} · ${toks.length}</div>
+    ${task(1, t('lnSay1'), 0)}${task(2, t('lnSay2'), 1)}${task(3, t('lnSay3'), 2)}
+    <div class="ln-hint">${t('lnNoAudio')}</div>
+    <div class="row ln-links"><a class="ln-link" href="#/practice/${n}/listen">🎵 ${t('lnWithBeat')}</a>${SR ? `<a class="ln-link" href="#/practice/${n}/recite">🎤 ${t('lnVoiceCheck')}</a>` : ''}</div>
+    ${learnNextHTML(learnAid() ? t('lnSkipStep') : '')}`;
+  const box = $('#ln-saybox');
+  $$('.ln-hearb', host).forEach(b => b.onclick = e => reciteKural(k, e.currentTarget));
+  $$('.ln-hide', host).forEach(b => b.onclick = () => { const on = box.dataset.h !== b.dataset.h; box.dataset.h = on ? b.dataset.h : '0'; $$('.ln-hide', host).forEach(x => { x.textContent = (x === b && on) ? '👁 ' + t('lnShowLine') : '🙈 ' + t('lnHide'); }); });   // the label carries the state
+  $$('.ln-said', host).forEach(b => b.onclick = () => { const on = b.getAttribute('aria-pressed') !== 'true'; b.setAttribute('aria-pressed', on); b.classList.toggle('on', on); b.textContent = (on ? '✓ ' : '') + t('lnSaidIt'); });
+  learnWireNext();                                               // enabled from the first frame: a silent room never blocks
+}
+// answer-once multiple choice with the right answer revealed; the answered state lives in cur.a.p
+function learnMCQ(host, o) {
+  const cur = S.learn.cur;
+  host.innerHTML = `${o.chip || ''}<h2 class="ln-h" tabindex="-1">${o.head}</h2>${o.promptHTML}<div class="t-opts t-lines ln-opts">${o.opts.map((h, i) => `<button class="btn t-opt ln-opt" data-o="${i}">${h}</button>`).join('')}</div><div id="ln-res" tabindex="-1"></div>`;
+  learnArm();
+  const show = (pickI, fresh) => {
+    $$('.ln-opt', host).forEach(b => { const i = +b.dataset.o; b.disabled = true; if (i === o.ans) { b.classList.add('ok'); b.insertAdjacentHTML('afterbegin', '<b>✓ </b>'); b.setAttribute('aria-label', `${t('correct')}: ${b.textContent}`); } else if (i === pickI) { b.classList.add('bad'); b.insertAdjacentHTML('afterbegin', '<b>✗ </b>'); } });
+    const ok = pickI === o.ans;
+    $('#ln-res').innerHTML = `<div class="t-fb ${ok ? 'ok' : 'bad'}"><b>${ok ? t('lnRight') : o.wrongLead}</b>${o.after || ''}${learnNextHTML()}</div>`;
+    if (fresh) { cur.a = { p: [pickI] }; if (o.onDone) o.onDone(ok); saveLearn(); learnAnswered(); }
+    learnWireNext();
+  };
+  const a = cur.a && cur.a.p ? cur.a.p[0] : undefined;
+  if (a !== undefined) show(a, false); else $$('.ln-opt', host).forEach(b => b.onclick = () => { if (learnTooSoon()) return; show(+b.dataset.o, true); });
+}
+const learnTodayNew = cur => cur.plan.filter(c => c[0] === 'L').map(c => +c.slice(1));
+const learnLastOwn = (cur, n) => !cur.plan.some((c, j) => j > cur.i && /^[BCX]/.test(c) && +c.slice(1) === n);   // the commit point comes from the frozen plan, not from the live goal
+function stepMeaning(host, k, n, K) {
+  const cur = S.learn.cur; const rnd = mulberry32(fnv1a(`learn|${cur.seed}|${cur.i}`));
+  const mates = D.ch[chOf(n)].kurals.filter(x => x.n !== n);
+  const others = K === 'P' ? [] : learnTodayNew(cur).filter(x => x !== n && D.ch[chOf(x)]).map(x => D.ch[chOf(x)].kurals[(x - 1) % 10]).slice(0, 2);   // today's other couplet is the distractor that matters
+  const pool = others.concat(shuffle(mates.filter(x => !others.includes(x)), rnd));
+  const code = learnOneStream([k, ...pool.slice(0, 2)]); const seen = new Set([learnText(k, code)]); const wrong = [];
+  for (const x of pool) { const tx = learnText(x, code); if (!tx || seen.has(tx)) continue; seen.add(tx); wrong.push(tx); if (wrong.length === 2) break; }
+  const m = mcqOpts(learnText(k, code), wrong, rnd); const lang = learnLang(code); const rtl = L(lang) && L(lang).dir === 'rtl';
+  const isCommit = K === 'M' && !cur.plan.some((c, j) => /^[BC]/.test(c) && +c.slice(1) === n) && learnLastOwn(cur, n);
+  learnMCQ(host, {
+    chip: learnRevChip(K), head: t('lnMeanQ'), promptHTML: `${learnHead(k, n)}<div class="ln-compact">${learnCouplet(k)}</div><div class="ln-lab">${esc(learnLabel(code))}</div>`,
+    opts: m.opts.map(tx => `<span class="${scriptClass(lang)} ${rtl ? 'rtl' : ''}" lang="${esc(lang)}"${dirAttr(lang)}>${esc(tx)}</span>`), ans: m.ans, wrongLead: t('lnWrongMeaning'),   // the whole meaning: Tamil is verb-final, a clipped option loses the part that tells two meanings apart
+    after: isCommit ? `<div class="ln-ok">${fmt(t('lnIntroducedU'), { n })}</div>` : '',
+    onDone: () => { if (isCommit) learnCommit(n); if (K === 'P') cur.rc++; },
+  });
+}
+function stepWhich(host, k, n) {
+  const cur = S.learn.cur; const rnd = mulberry32(fnv1a(`learn|${cur.seed}|${cur.i}`)); const code = learnOneStream([k]); const mine = learnText(k, code);
+  const ns = learnTodayNew(cur).filter(x => D.ch[chOf(x)] && (x === n || learnText(D.ch[chOf(x)].kurals[(x - 1) % 10], code) !== mine));   // two couplets with one translation cannot be told apart by it
+  let others = shuffle(ns.filter(x => x !== n), rnd).slice(0, 2);
+  if (others.length < 2) others = others.concat(shuffle(D.ch[chOf(n)].kurals.filter(x => x.n !== n && !others.includes(x.n) && learnText(x, code) !== mine).map(x => x.n), rnd)).slice(0, 2);   // top up from the chapter
+  const m = mcqOpts(n, others, rnd);
+  const opt = x => { const kk = D.ch[chOf(x)].kurals[(x - 1) % 10]; return `<span class="ln-mini">${esc(kk.l1)}<br>${esc(kk.l2)}</span>${kk.tl && kk.tl[0] ? `<span class="ln-tl">${esc(kk.tl[0])} ${esc(kk.tl[1] || '')}</span>` : ''}`; };
+  learnMCQ(host, {
+    head: t('lnWhichKural'), promptHTML: learnMeanHTML(k, code), opts: m.opts.map(opt), ans: m.ans, wrongLead: t('lnWrongKural'),
+    after: `<div class="ln-ok">${fmt(t('lnIntroducedU'), { n })}</div>`, onDone: () => learnCommit(n),
+  });
+}
+// two blanks, answered one after the other; R grades the card, r and F do not
+function stepFill(host, k, n, K, graded) {
+  const cur = S.learn.cur; const rnd = mulberry32(fnv1a(`learn|${cur.seed}|${cur.i}`));
+  const { toks, blanks } = learnFill(k, 2, rnd);
+  if (!blanks.length) return stepRecall(host, k, n, K === 'F' ? 'C' : 'Q', graded);
+  const given = cur.a && cur.a.p ? cur.a.p.slice() : []; const done = given.length >= blanks.length; const at = given.length;
+  const slot = (x, j) => { const bi = blanks.findIndex(b => b.j === j); if (bi < 0) return `<span class="tw">${esc(x.w)}</span>`;
+    if (bi < at) { const ok = given[bi] === blanks[bi].ans; return `<span class="tw blank shown ${ok ? '' : 'miss'}">${ok ? '✓ ' : '→ '}${esc(stripPunct(x.w))}${esc(tPunct(x.w))}</span>`; }   // the text of the kural never carries a cross
+    return `<span class="tw blank ${bi === at ? 'cur' : ''}" role="img" aria-label="${esc(t(blanks[bi].seer ? 'seer' : 'wordOne'))} ${bi + 1}"><i>${bi + 1}</i>${esc(tPunct(x.w))}</span>`; };
+  const lines = [0, 1].map(li => toks.map((x, j) => x.li === li ? slot(x, j) : '').filter(Boolean).join(' '));
+  const right = given.filter((g, i) => g === blanks[i].ans).length; const hide = new Set(done ? [] : blanks.slice(at).map(b => b.j));
+  host.innerHTML = `${learnRevChip(K)}<h2 class="ln-h" tabindex="-1">${t(blanks.every(b => b.seer) ? 'lnFillSeer' : 'lnFillWord')}</h2>${learnHead(k, n, true)}
+    ${K === 'F' ? learnMeanHTML(k, null, true, LEARN.open) : ''}
+    <div class="couplet test-c"><div class="line l1">${lines[0]}</div><div class="line l2">${lines[1]}</div></div>${learnAid() ? learnTlMasked(toks, hide) : ''}
+    ${done ? `<div class="t-fb ${right === blanks.length ? 'ok' : 'bad'}" id="ln-res" tabindex="-1"><b>${right === blanks.length ? t('lnRight') : fmt(t('lnWrongWord'), { w: blanks.filter((b, i) => given[i] !== b.ans).map(b => stripPunct(toks[b.j].w)).join(' · ') })}</b>
+        <div class="row" style="margin-top:6px"><button class="btn" id="ln-hear">🔊 ${t('lnHear')}</button><a class="btn" href="#/k/${n}">📖 ${t('kural')} ${n}</a></div>${learnNextHTML()}</div>`
+      : `${at > 0 ? `<div class="ln-prev ${given[at - 1] === blanks[at - 1].ans ? 'ok' : ''}">${given[at - 1] === blanks[at - 1].ans ? fmt(t('lnPrevOk'), { x: t(blanks[at - 1].seer ? 'seer' : 'wordOne'), i: at }) : fmt(t('lnPrevMiss'), { x: t(blanks[at - 1].seer ? 'seer' : 'wordOne'), i: at, w: stripPunct(toks[blanks[at - 1].j].w) })}</div>` : ''}<div class="ln-lab">${t(blanks[at].seer ? 'seer' : 'wordOne')} ${at + 1}</div><div class="t-opts t-lines ln-opts">${blanks[at].opts.map((w, oi) => `<button class="btn t-opt ln-opt" data-o="${oi}">${esc(stripPunct(w.w))}${learnTlUnder(w)}</button>`).join('')}</div>`}`;
+  if (done) { learnWireAudio(k); learnWireNext(); return; }
+  learnArm();
+  $$('.ln-opt', host).forEach(b => b.onclick = () => {
+    if (LEARN.busy || learnTooSoon()) return; LEARN.busy = true;
+    const oi = +b.dataset.o; given.push(oi); cur.a = { p: given }; const hit = oi === blanks[at].ans;
+    if (given.length >= blanks.length) {                          // the grade and the answered state go out in ONE write, so a reload cannot regrade
+      const ok = given.filter((g, i) => g === blanks[i].ans).length;
+      if (K === 'R') { cur.rc++; if (graded && learnStillDue(n)) learnGrade(n, ok === blanks.length ? 2 : ok > 0 ? 1 : 0); }
+    }
+    saveLearn(); LEARN.busy = false; stepFill(host, k, n, K, graded); learnWireMore(host, o => { LEARN.open = o; });
+    if ($('#ln-res')) learnAnswered(); else { learnSayLive(`${hit ? '✓' : '✗ ' + t('answerWas') + ':'} ${stripPunct(toks[blanks[at].j].w)}`); const f = $('.ln-opt', host); if (f) f.focus({ preventScroll: true }); }
+  });
+}
+// the lesson's real test: rebuild the whole couplet from tiles. Guessing costs more than remembering, yet nobody gets stuck.
+function stepBank(host, k, n, K, graded) {
+  const cur = S.learn.cur, goalC = S.learn.goal === 'c'; const rnd = mulberry32(fnv1a(`learn|${cur.seed}|${cur.i}`));
+  const toks = learnToks(k); const own = new Set(toks.map(x => tWord(x.w))); const seer = toks.every(x => x.cls);
+  const pre = toks.map((x, j) => !blankable(toks, j) || (goalC && j === 0));
+  const need = toks.map((_, j) => j).filter(j => !pre[j]);
+  const extra = toks.length <= 7 ? shuffle(D.ch[chOf(n)].kurals.filter(x => x.n !== n && testable(x)).flatMap(x => learnToks(x)).filter(w => !own.has(tWord(w.w)) && tWord(w.w).length >= 3), rnd).filter((w, i, a) => a.findIndex(y => tWord(y.w) === tWord(w.w)) === i).slice(0, 2) : [];
+  const tiles = shuffle(need.map(j => ({ x: toks[j], used: false })).concat(extra.map(x => ({ x, used: false }))), rnd);
+  const st = { pos: 0, e: 0, miss: 0, help: false, bad: -1, msg: '', filled: {}, lastI: -1, lastT: 0 }; const t0 = performance.now();
+  const finish = fresh => {
+    const a = cur.a; const q = (a.h || a.e >= 4) ? 0 : a.e >= 2 ? 1 : 2;
+    if (fresh) {
+      if (K === 'T') { cur.rc++; if (graded && learnStillDue(n)) learnGrade(n, q); } else learnCommit(n, q, (cur.to || []).includes(n));
+      if (a.e >= 3 && !cur.weak.includes(n) && cur.weak.length < 3) cur.weak.push(n);
+      saveLearn();
+    }
+    host.innerHTML = `${learnRevChip(K)}<h2 class="ln-h" tabindex="-1">${t('lnBuildHead')}</h2>${learnHead(k, n)}${learnCouplet(k)}
+      <div class="t-fb ok" id="ln-res" tabindex="-1"><b>${K === 'B' ? fmt(t('lnIntroduced'), { n }) : t('lnBuilt')}</b>${a.h ? `<div class="muted">${t('lnTileHelped')}</div>` : ''}
+        <div class="row" style="margin-top:6px"><button class="btn" id="ln-hear">🔊 ${t('lnHear')}</button><a class="btn" href="#/k/${n}">📖 ${t('kural')} ${n}</a></div>${learnNextHTML()}</div>`;
+    learnWireAudio(k); learnWireNext();
+    if (fresh) learnAnswered();
+  };
+  if (cur.a && cur.a.e !== undefined) return finish(false);
+  const paint = focusI => {
+    // an empty slot holds its own word, invisibly: empty and filled slots are exactly as wide, so nothing re-wraps and the bank never moves
+    const slot = (x, j) => pre[j] ? `<span class="ln-slot pre">${esc(x.w)}</span>`
+      : st.filled[j] ? `<span class="ln-slot ${st.filled[j] === 2 ? 'help' : 'ok'}">${esc(stripPunct(x.w))}${esc(tPunct(x.w))}${st.filled[j] === 2 ? `<i>${t('lnTileHelp')}</i>` : ''}</span>`
+        : `<span class="ln-slot ${need[st.pos] === j ? 'cur' : ''}" role="img" aria-label="${esc(t(x.cls ? 'seer' : 'wordOne'))} ${need.indexOf(j) + 1}"><span class="ln-ghost" aria-hidden="true">${esc(stripPunct(x.w))}${esc(tPunct(x.w))}</span></span>`;
+    const lines = [0, 1].map(li => toks.map((x, j) => x.li === li ? slot(x, j) : '').filter(Boolean).join(' '));
+    const cue = goalC ? `${learnHead(k, n, true)}<details class="ln-det" ${LEARN.open ? 'open' : ''}><summary>${t('prose')}</summary>${learnMeanHTML(k)}</details>` : `${learnHead(k, n, true)}${learnMeanHTML(k, null, true, LEARN.open)}`;
+    host.innerHTML = `${learnRevChip(K)}<h2 class="ln-h" tabindex="-1">${t('lnBuildHead')}</h2>${cue}
+      <div class="ln-slots"><div class="ln-sl l1">${lines[0]}</div><div class="ln-sl l2">${lines[1]}</div></div>
+      <div class="ln-lab">${t(seer ? 'lnBuildSeer' : 'lnBuildWord')} · ${fmt(t('lnTileCount'), { a: st.pos, b: need.length })}</div>
+      <div class="ln-hint ln-tilemsg" id="ln-tilemsg">${esc(st.msg)}</div>
+      <div class="ln-bank">${tiles.map((tl, i) => `<button class="ln-tile ${st.bad === i ? 'bad' : ''} ${tl.used ? 'used' : ''}" data-i="${i}" ${tl.used ? 'disabled aria-hidden="true" tabindex="-1"' : ''}>${esc(stripPunct(tl.x.w))}${learnTlUnder(tl.x)}</button>`).join('')}</div>`;   // used tiles keep their place, so the bank never moves under the finger
+    learnWireMore(host, o => { LEARN.open = o; });
+    const det = $('.ln-det', host); if (det) det.ontoggle = () => { LEARN.open = det.open; };
+    $$('.ln-tile:not(.used)', host).forEach(b => b.onclick = () => tap(+b.dataset.i));
+    if (focusI !== undefined) { const order = tiles.map((_, x) => (focusI + x) % tiles.length).filter(x => !tiles[x].used); const f = order.length && $(`.ln-tile[data-i="${order[0]}"]`, host); if (f) f.focus({ preventScroll: true }); }   // the tapped tile if it is still there, else the next one along
+  };
+  const place = (j, how, i) => { st.filled[j] = how; st.pos++; st.miss = 0; if (i === undefined || tWord(tiles[i].x.w) !== tWord(toks[j].w) || tiles[i].used) i = tiles.findIndex(tl => !tl.used && tWord(tl.x.w) === tWord(toks[j].w)); if (i >= 0) tiles[i].used = true; };
+  const tap = i => {
+    const now = performance.now();                                // only a repeat tap on the SAME tile is a double tap; a fast tap on another tile is a learner who knows the couplet
+    if (tiles[i].used || now - t0 < 350 || (i === st.lastI && now - st.lastT < 350)) return; st.lastI = i; st.lastT = now;
+    const j = need[st.pos]; const word = stripPunct(toks[j].w); const label = t(toks[j].cls ? 'seer' : 'wordOne');
+    if (tWord(tiles[i].x.w) === tWord(toks[j].w)) { place(j, 1, i); st.bad = -1; st.msg = ''; learnSayLive(`${word} ✓ ${fmt(t('lnTileCount'), { a: st.pos, b: need.length })}`); }
+    else {
+      st.e++; st.miss++; st.bad = i;
+      if (st.miss >= 2) { st.help = true; place(j, 2); st.bad = -1; st.msg = fmt(t('lnTileHelpedMsg'), { w: word, x: label }); learnSayLive(`${st.msg} · ${fmt(t('lnTileCount'), { a: st.pos, b: need.length })}`); }
+      else { st.msg = t('lnTileNo'); learnSayLive(st.msg); }
+    }
+    if (st.pos >= need.length) { cur.a = { e: st.e, h: st.help ? 1 : 0 }; return finish(true); }
+    paint(i);
+  };
+  if (!need.length) { cur.a = { e: 0, h: 0 }; return finish(true); }
+  paint();
+}
+function learnCommit(n, q, testedOut) {                          // the kural's last own step: mask bit + first card, kept even if the lesson is abandoned
+  const Ls = S.learn, cur = Ls.cur; if (!cur || cur.nw.includes(n)) return;
+  learnSet(n);
+  if (Ls.goal !== 'u') { const c = S.srs[n]; if (!c) learnGrade(n, testedOut && q === 2 ? 2 : 1); else if (learnStillDue(n)) learnGrade(n, q === undefined ? 1 : q); }
+  cur.nw.push(n); const d = learnDay(); if (Ls.nw[0] !== d) Ls.nw = [d, 0]; Ls.nw[1]++;
+}
+// self-marked recall, only where the rebuild cannot run (five untestable kurals, unaligned transliteration)
+function stepRecall(host, k, n, K, graded) {
+  const cur = S.learn.cur; const isNew = K === 'C'; const first = learnFirstWord(k);
+  const a = cur.a && cur.a.p ? cur.a.p[0] : undefined;
+  const result = () => `<div class="t-fb ok" id="ln-res" tabindex="-1"><b>${isNew ? fmt(t('lnIntroduced'), { n }) : t('lnNoted')}</b>${learnNextHTML()}</div>`;
+  host.innerHTML = `${learnRevChip(K)}<h2 class="ln-h" tabindex="-1">${t('lnRecallHead')}</h2>${learnHead(k, n)}${learnMeanHTML(k, null, true)}
+    ${first ? `<div class="ln-lab">${fmt(t('lnStartsWith'), { w: first, n })}</div>` : ''}
+    <div class="muted" id="ln-rhint">${t('lnRecallHint')}</div>
+    <div id="ln-ans" ${a === undefined ? 'hidden' : ''}>${learnCouplet(k)}<div class="row"><button class="btn" id="ln-hear">🔊 ${t('lnHear')}</button></div></div>
+    <div id="ln-rbox">${a !== undefined ? result() : `<div class="actions ln-actions"><button class="btn primary" id="ln-reveal">👁 ${t('lnShowKural')}</button>${learnAid() ? `<button class="btn" id="ln-pass">${t('lnSkipStep')}</button>` : ''}</div>`}</div>`;
+  learnWireAudio(k);
+  const mark = v => {                                             // v: 1 could say it · 0 more practice · -1 skipped
+    if (LEARN.busy) return; LEARN.busy = true; cur.a = { p: [v] };
+    if (isNew) { learnCommit(n, 1); if (v === 0 && !cur.weak.includes(n) && cur.weak.length < 3) cur.weak.push(n); }
+    else { cur.rc++; if (v >= 0 && graded && learnStillDue(n)) learnGrade(n, v === 1 ? 2 : 1); }     // never q0, never a cross: this is self-report. A skipped review stays due.
+    saveLearn(); LEARN.busy = false; $('#ln-rbox').innerHTML = result(); learnWireNext(); learnAnswered();
+  };
+  if (a !== undefined) return learnWireNext();
+  $('#ln-reveal').onclick = () => { $('#ln-ans').hidden = false; $('#ln-rhint').hidden = true;
+    $('#ln-rbox').innerHTML = `<div class="actions ln-actions"><button class="btn primary" id="ln-yes">${t('lnRecallYes')}</button><button class="btn" id="ln-more2">${t('lnRecallMore')}</button></div>`;
+    $('#ln-yes').onclick = () => mark(1); $('#ln-more2').onclick = () => mark(0); $('#ln-more2').scrollIntoView({ block: 'nearest' }); $('#ln-yes').focus({ preventScroll: true }); };
+  const ps = $('#ln-pass'); if (ps) ps.onclick = () => mark(-1);
+}
+function stepChain(host, k0, c) {
+  const cm = chMeta(c); const ks = D.ch[c].kurals.filter(k => learnHas(k.n)).slice(0, 10);
+  host.innerHTML = `<h2 class="ln-h" tabindex="-1">${t('lnChainHead')}</h2><div class="kural-head"><span class="ch">${t('adhigaram')} ${c} · ${esc(chName(cm))}</span></div>
+    <div class="muted">${t('lnChainHint')}</div>
+    <ul class="ln-chain">${ks.map(k => `<li><b>${k.n}</b>${learnFirstWord(k) ? ` · ${esc(learnFirstWord(k))} …` : ''}<div class="ln-chainfull" hidden>${esc(k.l1)}<br>${esc(k.l2)}${learnAid() && k.tl && k.tl[0] ? `<span class="ln-tl">${esc(k.tl[0])} ${esc(k.tl[1] || '')}</span>` : ''}</div></li>`).join('')}</ul>
+    <div class="actions ln-actions"><button class="btn" id="ln-cshow">👁 ${t('lnChainShow')}</button><button class="btn primary" id="ln-next">${learnAid() ? t('lnSkipStep') : t('lnChainDone')} →</button></div>`;
+  $('#ln-cshow').onclick = () => { $$('.ln-chainfull', host).forEach(e => { e.hidden = false; }); $('#ln-next').focus({ preventScroll: true }); $('#ln-cshow').hidden = true; learnSayLive(t('lnChainShown')); };
+  learnWireNext();
+}
+function commitLesson() {
+  const Ls = S.learn, cur = Ls && Ls.cur;
+  if (cur) {                                                       // a second tap finds nothing to commit
+    const d = learnDay(); const did = cur.nw.length + cur.rc > 0;
+    if (did) {
+      const r = Ls.run;
+      if (r.last > d) r.last = d;                                  // the clock was ahead once; do not freeze the run on it
+      else if (r.last !== d) {
+        Ls.days++;
+        if (d - r.last === 1) r.n++;
+        else if (d - r.last === 2 && d - r.g >= 7) { r.n++; r.g = d - 1; }   // one missed day a week is forgiven, silently
+        else r.n = 1;
+        Ls.best = Math.max(Ls.best, r.n); r.last = d;
+      }
+      Ls.rvn = cur.k === 'rev' ? Ls.rvn + 1 : 0;
+      const same = Ls.last && Ls.last.d === d;
+      Ls.last = { d, c: cur.c || (same ? Ls.last.c : 0), k: cur.k, ns: [...new Set((same ? Ls.last.ns : []).concat(cur.nw))].slice(-8), nn: (same ? (Ls.last.nn || 0) : 0) + cur.nw.length, nr: (same ? Ls.last.nr : 0) + cur.rc, weak: [...new Set((same ? Ls.last.weak : []).concat(cur.weak))].slice(-3) };
+    }
+    if (Ls.at) { const left = learnQueue().some(n => chOf(n) === Ls.at && !learnHas(n)); if (!left) Ls.at = 0; }
+    Ls.cur = null; learnSaveAll();
+    const nx = learnQueue().find(n => !learnHas(n)); if (nx) { chapter(chOf(nx)).catch(() => { }); grammar(chOf(nx)).catch(() => { }); }   // tomorrow's chapter, while the network is here
+  }
+  LEARN.busy = false;
+  if (location.hash.split('?')[0] === '#/learn') route(); else location.replace('#/learn');   // an identical hash fires no hashchange, so render the hub directly
+}
+
+// ── the hub: today, numbers, my way, the map. It renders from S and D.meta alone. ──
+function learnNumbers() {
+  const Ls = S.learn; let seen = 0, firm = 0;
+  for (const cc of Object.keys(Ls.ch)) { seen += popc(Ls.ch[cc]); if (Ls.goal !== 'u') firm += chNs(+cc).filter(n => learnHas(n) && learnFirm(n)).length; }
+  const d = learnDay(); const gapRun = d - Ls.run.last; const alive = Ls.run.n > 1 && (gapRun <= 1 || (gapRun === 2 && d - Ls.run.g >= 7));
+  return `<div class="stat ln-stat"><div><b>${Ls.days}</b><span>${t('lnNumDays')}</span></div>${alive ? `<div><b>${Ls.run.n}</b><span>${t('lnNumRun')}</span></div>` : ''}<div><b>${seen}</b><span>${t('lnNumSeen')}</span></div>${Ls.goal !== 'u' ? `<div><b>${firm}</b><span>${t('lnNumFirm')}</span></div>` : ''}</div>`;
+}
+function learnTestSpec(c, share) {                                  // never test a child on kurals the path did not teach
+  if (share === 1023) return 'ch-' + c; const cm = chMeta(c); const idx = []; for (let i = 0; i < 10; i++) if (share >> i & 1) idx.push(i);
+  if (idx.length >= 2 && idx[idx.length - 1] - idx[0] === idx.length - 1) return `r-${cm.start + idx[0]}-${cm.start + idx[idx.length - 1]}`;
+  return '';
+}
+function learnCardHTML(slot) {                                      // Home, Practice, Daily: no awaits, so they cannot break offline
+  if (!D.meta) return '';
+  const Ls = S.learn, d = learnDay();
+  const card = (body, top) => (slot === 'any' || (slot === 'top') === top) ? `<div class="card ln-card">${body}</div>` : '';
+  if (!Ls) return card(`<div class="row"><div class="grow"><b>📘 ${t('lnName')}</b><div class="muted">${t('lnTag')}</div></div><a class="btn" href="#/learn">${t('lnStartShort')}</a></div>`, false);
+  if (Ls.cur && (Ls.cur.i > 0 || Ls.cur.a)) return card(`<div class="row"><div class="grow"><b>📘 ${t('lnToday')}</b><div class="muted">${fmt(t('lnStepOf'), { i: Ls.cur.i + 1, n: Ls.cur.plan.length })}</div></div><a class="btn primary" href="#/learn/go">${t('lnResume')}</a></div>`, true);
+  if (Ls.last && Ls.last.d === d) return card(`<div class="row"><div class="grow"><b>${t('lnDoneToday')}</b></div><a class="btn" href="#/learn">📘 ${t('lnTitle')}</a></div>`, false);
+  const nx = learnQueue().find(n => !learnHas(n));
+  return card(`<div class="row"><div class="grow"><b>📘 ${t('lnToday')}</b><div class="muted">${nx ? `${t('lnChShort')} ${chOf(nx)} · ${esc(chName(chMeta(chOf(nx))))}` : t('lnRevShort')}</div></div><a class="btn primary" href="#/learn/go">${t('lnTodayStart')}</a></div>`, true);
+}
+function learnFromChapter(c) {                                      // "learn as a lesson" on #/ch/N: that chapter, or an honest word about why not
+  if (!S.learn) learnCreate(learnPreset());
+  const Ls = S.learn; const untaught = () => learnQueue().some(n => chOf(n) === c && !learnHas(n));
+  if (!untaught()) {
+    const allMet = chNs(c).every(learnHas);
+    if (!allMet && Ls.path.length < 40) { Ls.path = Ls.path.concat('ch-' + c); Ls.pid = ''; }   // outside the path: it joins the path
+    if (!untaught()) { learnSaveAll(); toast(allMet ? fmt(t('lnChAllMet'), { c }) : t('lnListFull'), 4000); location.hash = '#/learn'; return; }
+  }
+  if (Ls.cur && (Ls.cur.i > 0 || Ls.cur.a) && Ls.cur.c !== c) toast(fmt(t('lnAfterCurrent'), { c }), 4000);   // the frozen lesson finishes first
+  Ls.at = c; if (Ls.cur && Ls.cur.i === 0 && !Ls.cur.a) Ls.cur = null; learnSaveAll(); location.hash = '#/learn/go';
+}
+function learnParsePath(chTxt, numTxt) {
+  const specs = [], bad = [];
+  String(chTxt || '').split(/[\s,;]+/).filter(Boolean).forEach(tk => { const v = +tk; if (/^\d+$/.test(tk) && v >= 1 && v <= 133) specs.push('ch-' + v); else bad.push(tk); });
+  String(numTxt || '').split(/[\s,;]+/).filter(Boolean).forEach(tk => { const m = tk.match(/^(\d+)(?:[-–](\d+))?$/); const a = m && +m[1], b = m && +(m[2] || m[1]); if (m && a >= 1 && b >= 1 && a <= 1330 && b <= 1330) specs.push(`r-${Math.min(a, b)}-${Math.max(a, b)}`); else bad.push(tk); });
+  return { specs: [...new Set(specs)].slice(0, 40), bad };
+}
+async function viewLearn(q, keep) {
+  await meta(); setTitle(t('lnTitle'), t('lnName'));
+  const d = learnDay(); const chip = (on, attrs, label) => `<button class="chip ${on ? 'sel' : ''}" aria-pressed="${on}" ${attrs}>${label}</button>`;
+  const group = (id, label, chips) => `<div class="ln-q" id="${id}">${label}</div><div class="chips t-chips" role="group" aria-labelledby="${id}">${chips}</div>`;
+  const mlTa = () => t('lnMlTa');
+  // a shared list is shown and confirmed before anything is written
+  const shared = q && q.get('path') ? q.get('path').split(',').filter(s => LEARN_SPEC.test(s) && testRange(s)).slice(0, 40) : null;
+  if (shared && shared.length) {
+    const g = ['m', 'c', 'u'].includes(q.get('goal')) ? q.get('goal') : ''; const tdS = q.get('td') || ''; const tdD = /^\d{8}$/.test(tdS) ? learnDay(new Date(+tdS.slice(0, 4), +tdS.slice(4, 6) - 1, +tdS.slice(6, 8))) : 0;
+    render(`<div class="card"><h2>📘 ${t('lnUseList')}</h2><div class="list">${shared.map(s => `<div class="item"><span class="tx">${esc(testRange(s).name)}</span></div>`).join('')}</div>
+      <div class="actions"><button class="btn primary" id="ln-useyes">${t('lnUseYes')}</button><a class="btn" href="#/learn">${t('lnUseNo')}</a></div></div>`);
+    $('#ln-useyes').onclick = () => { if (!S.learn) learnCreate(learnPreset()); S.learn.path = shared; S.learn.pid = ''; S.learn.at = 0; if (g) S.learn.goal = g; if (tdD > d) S.learn.td = tdD; if (S.learn.cur && S.learn.cur.i === 0 && !S.learn.cur.a) S.learn.cur = null; learnSaveAll(); location.replace('#/learn'); };
+    return;
+  }
+  if (!S.learn) {                                                   // first run: the button first, three preselected answers under it; a child taps once
+    const p = learnPreset(); const f = firstLang();
+    render(`<div class="card"><h2>📘 ${t('lnName')}</h2><div class="muted">${t('lnTag')} · ${t('lnIntro')}</div>
+      <div class="actions"><button class="btn primary" id="ln-begin">📘 ${t('lnBegin')}</button></div>
+      ${group('ln-g1', t('lnFrGoal'), [['m', t('lnGoalM')], ['c', t('lnGoalC')], ['u', t('lnGoalU')]].map(([v, l]) => chip(p.goal === v, `data-k="goal" data-v="${v}"`, l)).join(''))}
+      ${group('ln-g2', t('lnFrMl'), chip(p.ml === 'ta', 'data-k="ml" data-v="ta"', mlTa()) + (f !== 'ta' && L(f) ? chip(p.ml === f, `data-k="ml" data-v="${f}"`, esc(learnLangName(f))) : ''))}
+      ${group('ln-g3', t('lnFrTa'), chip(p.ta === 1, 'data-k="ta" data-v="1"', t('lnTaYes')) + chip(p.ta === 0, 'data-k="ta" data-v="0"', t('lnTaNo')))}
+      <div class="muted" style="font-size:.8rem;margin-top:8px">${t('lnFrLater')}</div></div>`);
+    $$('#main [data-k]').forEach(b => b.onclick = () => { const kx = b.dataset.k; p[kx] = kx === 'ta' ? +b.dataset.v : b.dataset.v; $$(`#main [data-k="${kx}"]`).forEach(x => { const on = x === b; x.classList.toggle('sel', on); x.setAttribute('aria-pressed', on); }); });   // toggled in place: no re-render, no lost focus, no jump to the top
+    $('#ln-begin').onclick = () => { learnCreate(p); learnSaveAll(); learnEnter(); };
+    return;
+  }
+  const Ls = S.learn; const queue = learnQueue(); const shares = learnShares(queue); const nx = queue.find(n => !learnHas(n)); const nowCh = nx ? chOf(nx) : 0;
+  const gap = Ls.last ? d - Math.min(Ls.last.d, d) : 0; const nc = q && +q.get('nc'); const emptyMsg = q && q.get('e') ? `<div class="ln-note" role="status">${t('lnNothing')}</div>` : '';
+  const canReview = learnIntroduced().length > 0 || (Ls.goal !== 'u' && Object.keys(S.srs).length > 0);
+  let today;
+  if (Ls.cur && (Ls.cur.i > 0 || Ls.cur.a)) today = `<h2>📘 ${t('lnToday')}</h2><div class="muted">${fmt(t('lnStepOf'), { i: Ls.cur.i + 1, n: Ls.cur.plan.length })}</div><div class="actions"><button class="btn primary ln-go">${t('lnResume')} →</button></div>`;
+  else if (nc) today = `<h2>📘 ${t('lnToday')}</h2><div>${t('lnNotCached')}</div><div class="actions">${canReview ? `<button class="btn primary ln-go" data-rev="1">${t('lnRevNow')}</button>` : ''}<a class="btn ${canReview ? '' : 'primary'}" href="#/offline">📥 ${t('offline')}</a></div>`;
+  else if (Ls.last && Ls.last.d === d) {
+    let rows = ''; try { rows = (await Promise.all(Ls.last.ns.map(kural))).map(k => kuralLinkRow(k)).join(''); } catch (e) { rows = ''; }
+    const c = Ls.last.c; const chDone = c && Ls.goal !== 'u' && shares[c] && (Ls.ch[c] & shares[c]) === shares[c] && Ls.last.ns.some(n => chOf(n) === c); const spec = chDone ? learnTestSpec(c, shares[c]) : '';
+    today = `<h2 class="ln-h" tabindex="-1">${t('lnDoneToday')}</h2><div>${fmt(t('lnDoneSub'), { n: Ls.last.nn === undefined ? Ls.last.ns.length : Ls.last.nn, r: Ls.last.nr })}${Ls.last.ns.length && Ls.goal !== 'u' ? ' ' + t('lnDoneTomorrow') : ''}</div>
+      ${rows ? `<div class="list">${rows}</div>` : ''}
+      ${Ls.last.weak.length ? `<div class="row ln-rowact" style="padding-left:0">${Ls.last.weak.map(n => `<a class="btn" href="#/practice/${n}/memorise">🙈 ${fmt(t('lnWeakLink'), { n })}</a>`).join('')}</div>` : ''}
+      ${chDone ? `<div class="ln-ok">${fmt(t(shares[c] === 1023 ? 'lnChDone' : 'lnChDonePart'), { c, name: esc(chName(chMeta(c))), y: popc(shares[c]) })}</div>${spec ? `<div class="row"><a class="ln-link" href="#/test/run/${spec}?lv=${Ls.goal === 'c' ? (S.testLevel || 2) : 1}">🏆 ${t('lnChTest')}</a></div><div class="muted" style="font-size:.8rem">${t('lnChTestNote')}</div>` : ''}` : ''}
+      <div class="actions ln-actions"><a class="btn primary" href="#/">${t('tab.home')}</a><button class="btn ln-go">${t('lnAnother')}</button></div>`;
+  } else if (!nx && !Object.keys(Ls.ch).length) today = `<h2>📘 ${t('lnToday')}</h2><div>${t('lnPathEmpty')}</div>`;
+  else if (!nx) today = `<h2>📘 ${t('lnPathDone')}</h2>${canReview ? `<div class="actions"><button class="btn primary ln-go">${t('lnRevNow')}</button></div>` : ''}`;
+  else today = `<h2>📘 ${t('lnToday')}</h2>${gap >= 3 ? `<div>${t('lnComeback')}</div>` : ''}<div class="muted">${t('lnChShort')} ${nowCh} · ${esc(chName(chMeta(nowCh)))}</div><div class="actions"><button class="btn primary ln-go">${t('lnTodayStart')} →</button></div>`;
+  const contestHTML = () => { if (!(Ls.goal === 'c' && Ls.td >= d)) return ''; const N = Ls.td - d, M = queue.filter(n => !learnHas(n)).length, pz = Math.ceil(M / Math.max(1, N)); return `<div class="card"><b>${N === 0 ? t('lnContestToday') : fmt(t('lnGoalLine'), { N, M })}</b>${N > 0 && M > 0 ? `<div class="muted">${pz <= 5 ? fmt(t('lnGoalPace'), { p: Math.max(1, pz) }) : t('lnGoalMany')}</div>` : ''}</div>`; };
+  const contest = `<div id="ln-contest">${contestHTML()}</div>`;
+  const langs = ['ta'].concat(D.meta.langOrder.filter(c => c !== 'ta' && c !== 'tac' && L(c)));
+  const pathKind = Ls.path.length === 1 && ['book', 'pal-1', 'pal-2', 'pal-3'].includes(Ls.path[0]) ? Ls.path[0] : 'mine';
+  const tdVal = Ls.td ? new Date(Ls.td * 864e5).toISOString().slice(0, 10) : '';
+  const way = `<details class="card ln-way" ${LEARN.wayOpen ? 'open' : ''}><summary><b>⚙ ${t('lnMyWay')}</b></summary>
+    ${group('ln-w1', t('lnWayGoal'), [['m', t('lnGoalM')], ['c', t('lnGoalC')], ['u', t('lnGoalU')]].map(([v, l]) => chip(Ls.goal === v, `data-wg="${v}"`, l)).join(''))}
+    <label class="ln-q" for="ln-ml">${t('lnFrMl')}</label><select id="ln-ml" style="width:100%">${langs.map(c => `<option value="${c}" ${Ls.ml === c ? 'selected' : ''}>${c === 'ta' ? mlTa() : esc(learnLangName(c))}</option>`).join('')}</select>
+    ${group('ln-w2', t('lnFrTa'), chip(Ls.ta === 1, 'data-wt="1"', t('lnTaYes')) + chip(Ls.ta === 0, 'data-wt="0"', t('lnTaNo')))}
+    ${group('ln-w3', t('lnWayPath'), chip(pathKind === 'book', 'data-wp="book"', t('lnPathBook')) + D.meta.pals.map((p, i) => chip(pathKind === 'pal-' + (i + 1), `data-wp="pal-${i + 1}"`, esc(S.ui === 'ta' ? p.name : p.name + ' · ' + p.nameEn))).join('') + chip(pathKind === 'mine', 'data-wp="mine"', t('lnPathMine')))}
+    ${LEARN_LISTS.length ? group('ln-w4', t('lnPathSyl'), LEARN_LISTS.map(x => chip(Ls.pid === x.id, `data-wl="${esc(x.id)}"`, esc(S.ui === 'ta' ? x.nameTa : x.nameEn))).join('')) : ''}
+    <div id="ln-mine" ${pathKind === 'mine' ? '' : 'hidden'}><label class="muted" for="ln-inch">${t('lnInCh')}</label><input type="text" inputmode="numeric" id="ln-inch" aria-describedby="ln-bad" style="width:100%" value="${esc(Ls.path.filter(s => /^ch-/.test(s)).map(s => s.slice(3)).join(', '))}">
+      <label class="muted" for="ln-innum">${t('lnInNum')}</label><input type="text" id="ln-innum" aria-describedby="ln-bad" style="width:100%" value="${esc(Ls.path.filter(s => /^r-/.test(s)).map(s => { const m = s.split('-'); return m[1] === m[2] ? m[1] : m[1] + '-' + m[2]; }).join(', '))}">
+      ${Ls.path.some(s => !/^(ch|r)-/.test(s)) ? `<div class="muted" style="font-size:.85rem">${t('lnPathAlso')}: ${Ls.path.filter(s => !/^(ch|r)-/.test(s)).map(s => esc(testRange(s).name)).join(', ')}</div>` : ''}
+      <div class="row" style="margin-top:6px"><button class="btn" id="ln-apply">${t('lnApplyList')}</button><button class="btn" id="ln-share">📤 ${t('lnShareList')}</button></div><div class="muted" id="ln-bad" role="alert"></div></div>
+    ${group('ln-w5', t('lnWayPace'), [1, 2, 3].concat(Ls.goal === 'm' ? [] : [5]).map(v => chip(Ls.pace === v, `data-wn="${v}"`, String(v))).join(''))}
+    ${Ls.goal === 'c' ? `<label class="ln-q" for="ln-td">${t('lnContestDay')}</label><input type="date" id="ln-td" value="${tdVal}">` : ''}
+    <div class="muted" style="font-size:.8rem;margin-top:8px">${t('lnWayLater')}</div>
+    <div class="row" style="margin-top:10px"><button class="btn" id="ln-restart">${t('lnRestart')}</button></div><div class="ln-sr" role="status" id="ln-rs"></div></details>`;
+  const map = `<div class="card"><h2>🗺 ${t('lnMapTitle')}</h2>${D.meta.pals.map(p => { const chs = p.iyals.flatMap(iy => iy.chapters).filter(c => shares[c]); if (!chs.length) return '';
+    return `<details class="ln-pal" ${chs.includes(nowCh) || (!nowCh && p.num === 1) ? 'open' : ''}><summary><b>${esc(p.name)}</b> <span class="muted">· ${esc(p.nameEn)} · ${chs.reduce((s, c) => s + popc((Ls.ch[c] || 0) & shares[c]), 0)}/${chs.reduce((s, c) => s + popc(shares[c]), 0)}</span></summary>
+      ${p.iyals.map(iy => { const cs = iy.chapters.filter(c => shares[c]); return cs.length ? `<div class="muted ln-iyal">${esc(iy.name)} · ${esc(iy.nameEn)}</div>${cs.map(c => { const y = popc(shares[c]), x = popc((Ls.ch[c] || 0) & shares[c]); const z = chNs(c).filter(n => (shares[c] >> ((n - 1) % 10) & 1) && learnHas(n) && learnFirm(n)).length; const star = S.test && S.test['ch-' + c] && S.test['ch-' + c].passed;
+        return `<button class="ln-row" data-c="${c}" aria-expanded="false" ${c === nowCh ? 'aria-current="true"' : ''}><span class="ln-rn">${c}</span><span class="ln-rt">${esc(chName(chMeta(c)))}<span class="muted"> — ${fmt(t(Ls.goal === 'u' ? 'lnMapRowU' : 'lnMapRow'), { x, y, z })}${star ? ' · ' + t('lnMapStar') : ''}${c === nowCh ? ' · ' + t('lnMapNow') : ''}</span></span></button><div class="ln-rowact" id="ln-ra-${c}" hidden></div>`; }).join('')}` : ''; }).join('')}</details>`; }).join('')}</div>`;
+  render(`<div class="card">${today}${emptyMsg}</div>${learnNumbers()}${contest}${way}${map}`);
+  if (keep) { window.scrollTo(0, keep.y); const f = keep.sel && $(keep.sel); if (f) f.focus({ preventScroll: true }); } else { const hd = $('#main .ln-h'); if (hd) hd.focus({ preventScroll: true }); }
+  $$('.ln-go').forEach(b => b.onclick = () => learnEnter(b.dataset.rev));
+  // chips re-render the hub (pace and the contest date depend on the goal, the map on the path) but keep the scroll position and the focus
+  const change = (fn, sel) => { fn(); if (Ls.cur && Ls.cur.i === 0 && !Ls.cur.a) Ls.cur = null; LEARN.wayOpen = true; learnSaveAll(); viewLearn(null, { y: window.scrollY, sel }); };
+  $('.ln-way').ontoggle = e => { LEARN.wayOpen = e.currentTarget.open; };
+  $$('[data-wg]').forEach(b => b.onclick = () => change(() => { Ls.goal = b.dataset.wg; if (Ls.goal === 'm' && Ls.pace > 3) Ls.pace = 2; }, `[data-wg="${b.dataset.wg}"]`));
+  $$('[data-wt]').forEach(b => b.onclick = () => change(() => { Ls.ta = +b.dataset.wt; }, `[data-wt="${b.dataset.wt}"]`));
+  $$('[data-wn]').forEach(b => b.onclick = () => change(() => { Ls.pace = +b.dataset.wn; }, `[data-wn="${b.dataset.wn}"]`));
+  $$('[data-wp]').forEach(b => b.onclick = () => { if (b.dataset.wp === 'mine') { $('#ln-mine').hidden = false; $$('[data-wp]').forEach(x => { const on = x === b; x.classList.toggle('sel', on); x.setAttribute('aria-pressed', on); }); $('#ln-inch').focus(); } else change(() => { Ls.path = [b.dataset.wp]; Ls.pid = ''; Ls.at = 0; }, `[data-wp="${b.dataset.wp}"]`); });
+  $$('[data-wl]').forEach(b => b.onclick = () => change(() => { const x = LEARN_LISTS.find(y => y.id === b.dataset.wl); if (x) { Ls.path = x.specs.filter(s => LEARN_SPEC.test(s)).slice(0, 40); Ls.pid = x.id; Ls.at = 0; } }, `[data-wl="${b.dataset.wl}"]`));
+  // the select and the date save in place: re-rendering them mid-keystroke would make them unusable from a keyboard
+  $('#ln-ml').onchange = e => { Ls.ml = e.target.value; learnSaveAll(); };
+  const tdEl = $('#ln-td'); if (tdEl) tdEl.onchange = () => { const v = tdEl.value; Ls.td = v ? learnDay(new Date(+v.slice(0, 4), +v.slice(5, 7) - 1, +v.slice(8, 10))) : 0; learnSaveAll(); $('#ln-contest').innerHTML = contestHTML(); };
+  $('#ln-apply').onclick = () => { const r = learnParsePath($('#ln-inch').value, $('#ln-innum').value); if (r.bad.length) $('#ln-bad').textContent = fmt(t('lnBadTokens'), { x: r.bad.join(', ') }); if (!r.specs.length && !(pathKind === 'mine' && Ls.path.some(s => !/^(ch|r)-/.test(s)))) { if (!r.bad.length) $('#ln-bad').textContent = t('lnListEmpty'); return; } const msg = r.bad.length ? fmt(t('lnBadTokens'), { x: r.bad.join(', ') }) : ''; const keepSpecs = pathKind === 'mine' ? Ls.path.filter(s => !/^(ch|r)-/.test(s)) : []; change(() => { Ls.path = keepSpecs.concat(r.specs).slice(0, 40); Ls.pid = ''; Ls.at = 0; }, '#ln-apply'); if (msg) { const bd = $('#ln-bad'); if (bd) bd.textContent = msg; } };
+  $('#ln-share').onclick = () => { const r = learnParsePath($('#ln-inch').value, $('#ln-innum').value); if (!r.specs.length) { $('#ln-bad').textContent = t('lnListEmpty'); return; } const tdq = Ls.goal === 'c' && Ls.td ? '&td=' + new Date(Ls.td * 864e5).toISOString().slice(0, 10).replace(/-/g, '') : ''; shareText(t('lnName'), `${t('lnName')} · ${r.specs.map(s => testRange(s).name).join(', ')}\n${appUrl()}#/learn?path=${r.specs.join(',')}&goal=${Ls.goal}${tdq}`); };
+  $('#ln-restart').onclick = e => { const b = e.currentTarget; if (LEARN.armed && Date.now() - LEARN.armed < 6000) { LEARN.armed = 0; S.learn = null; learnSaveAll(); viewLearn(); } else { LEARN.armed = Date.now(); b.textContent = t('lnRestartArm'); $('#ln-rs').textContent = t('lnRestartArm'); } };
+  $$('.ln-row').forEach(b => b.onclick = () => {
+    const c = +b.dataset.c; const box = $('#ln-ra-' + c); const open = box.hidden; box.hidden = !open; b.setAttribute('aria-expanded', open); if (!open) return;
+    const spec = Ls.goal === 'u' ? '' : learnTestSpec(c, shares[c]);
+    box.innerHTML = `<button class="btn" data-from="${c}">📘 ${t('lnFromHere')}</button><a class="btn" href="#/ch/${c}">📖 ${t('lnMapRead')}</a>${spec ? `<a class="btn" href="#/test/run/${spec}?lv=${S.testLevel || 2}">🏆 ${t('lnMapTest')}</a>` : ''}`;
+    $('[data-from]', box).onclick = () => { Ls.at = c; if (Ls.cur && Ls.cur.i === 0 && !Ls.cur.a) Ls.cur = null; learnSaveAll(); toast(t('lnWayLater')); viewLearn(null, { y: window.scrollY, sel: `.ln-row[data-c="${c}"]` }); };
+  });
+}
+
 // ───────────────────────────── daily + notifications ─────────────────────────────
 async function viewDaily() {
   const n = dailyN(); const k = await kural(n); const cm = chMeta(chOf(n));
@@ -1728,7 +2412,7 @@ async function viewDaily() {
     ${canPin ? `<div class="row" style="margin-top:8px"><button class="btn ${placed ? '' : 'primary'}" id="w-pin">＋ ${t('widgetAdd')}</button></div>` : ''}
     <div class="muted" style="font-size:.8rem;margin-top:8px">${t('widgetHow')}</div>
     ${placed ? `<div class="muted" style="font-size:.8rem;margin-top:4px">${t('widgetOem')}</div>` : ''}</div>`;
-  render(`<div class="card"><div class="kural-head"><span class="n">${t('kural')} ${n}</span><a class="ch" href="#/ch/${cm.adhigaram}">${esc(cm.name)}</a></div>${coupletHTML(k)}
+  render(`${learnCardHTML('any')}<div class="card"><div class="kural-head"><span class="n">${t('kural')} ${n}</span><a class="ch" href="#/ch/${cm.adhigaram}">${esc(cm.name)}</a></div>${coupletHTML(k)}
     ${S.langs.filter(c => k.tr[c]).map(c => `<div class="tr-text ${scriptClass(c)} ${L(c).dir === 'rtl' ? 'rtl' : ''}" style="font-size:1rem;margin-top:6px"${dirAttr(c)}>${esc(k.tr[c][0])}<span class="l2">${esc(k.tr[c][1] || '')}</span></div>`).join('')}
     <div class="actions"><button class="btn primary" id="d-recite">🔊 ${t('recite')}</button><a class="btn" href="#/k/${n}">📖</a><a class="btn" href="#/practice/${n}">🎵</a></div></div>
   <div class="card"><h2>🔔 ${t('notify')}</h2>
@@ -1811,6 +2495,7 @@ async function viewMore() {
     <a href="#/daily"><span class="num">🔔</span><span class="tx">${t('daily')} · ${t('notify')}</span></a>
     <a href="#/bookmarks"><span class="num">★</span><span class="tx">${t('bookmarks')} (${S.bookmarks.length})</span></a>
     <a href="#/grammar"><span class="num">📚</span><span class="tx">${t('grammarX')} — ${t('grammar')}</span></a>
+    <a href="#/learn"><span class="num">📘</span><span class="tx">${t('lnName')} — ${t('lnTag')}</span></a>
     <a href="#/test"><span class="num">🏆</span><span class="tx">${t('test')} — ${t('testDrill')} · ${t('certificate')}</span></a>
     <a href="#/practice"><span class="num">🎵</span><span class="tx">${t('practice')} · ${t('memorised')} (${S.memorised.length})</span></a>
     ${SINGLE ? '' : `<a href="kattam/index.html"><span class="num">🧩</span><span class="tx">${t('kattam')}</span></a>`}

@@ -571,3 +571,86 @@ details summary{cursor:pointer;color:var(--accent);font-weight:700}
 }
 :root[data-theme="dark"]{--ok:#6fcf97;--bad:#ff8a80}
 :root[data-theme="dark"] .t-opt.ok,:root[data-theme="dark"] .t-opt.bad,:root[data-theme="dark"] .t-tile.b3,:root[data-theme="dark"] .t-tile.b3 span{color:#1f1b16}
+
+/* ── வழிகாட்டும் பாடம் · guided lesson ── */
+html{scroll-padding-top:calc(3.75rem + 12px + var(--sat, env(safe-area-inset-top)));scroll-padding-bottom:calc(76px + var(--sab, env(safe-area-inset-bottom)))}   /* scrollIntoView clears the sticky bar (which grows with the status-bar inset and the font) and the fixed tab bar */
+.ln-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.ln-h{margin:10px 0 6px;font-size:1.05rem;color:var(--accent)}
+.ln-h:focus,#ln-res:focus,.t-fb:focus{outline:none}
+.ln .btn,.ln-way .btn,.ln-rowact .btn{min-height:44px}
+.ln .btn.playing{background:var(--accent);color:#fff}
+.ln-card{padding:10px 14px}
+.ln-card .btn{min-height:40px;display:inline-flex;align-items:center}
+.ln-note{margin-top:8px;padding:8px 10px;border-radius:8px;background:var(--chip);color:var(--chip-ink)}
+.ln-mean{font-size:1rem;line-height:1.6;margin-top:8px;overflow-wrap:anywhere;text-align:start}
+.ln-mean.clamp{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.ln-more,.ln-link{background:none;border:0;padding:8px 0;min-height:40px;font:inherit;font-size:.85rem;color:var(--accent);text-decoration:underline;cursor:pointer;display:inline-block}
+.ln-foot{text-align:center;margin-top:6px}
+.ln-lab{font-size:.75rem;color:var(--muted);margin:2px 0 6px}
+.ln-hint{font-size:.8rem;color:var(--muted);margin:4px 0}
+.ln-tilemsg{min-height:1.5em;color:var(--ink)}
+.ln-ok{color:var(--ok);font-weight:700;margin-top:6px}
+.t-fb .ln-ok{color:var(--ink)}
+.ln-q{display:block;font-weight:700;font-size:.9rem;margin:12px 0 4px}
+.ln-det{margin-top:8px}
+.ln-det summary{min-height:40px;display:flex;align-items:center;font-size:.95rem}
+.ln-det summary::before,.ln-way summary::before,.ln-pal summary::before{content:'▸';display:inline-block;width:1.1em;color:var(--muted)}
+.ln-det[open]>summary::before,.ln-way[open]>summary::before,.ln-pal[open]>summary::before{content:'▾'}
+.ln-det summary::-webkit-details-marker,.ln-way summary::-webkit-details-marker,.ln-pal summary::-webkit-details-marker{display:none}
+.ln-block{border-top:1px solid var(--line);padding-top:8px;margin-top:8px}
+.ln-wrow{display:flex;gap:8px;align-items:center;padding:6px 0;border-bottom:1px solid var(--line)}
+.ln-wrow b{font-family:var(--ta-serif);min-width:34%}
+.ln-wrow span{flex:1;overflow-wrap:anywhere}
+.ln-wbtn{min-height:40px;min-width:40px}
+.ln-say{border:1px solid var(--line);border-radius:10px;padding:8px 10px;margin:8px 0}
+.ln-sayt{font-size:.92rem;margin-bottom:6px}
+.ln-said.on{background:var(--ok);color:#fff;border-color:transparent}
+#ln-saybox[data-h="1"] .l2 .tw,#ln-saybox[data-h="2"] .tw{visibility:hidden}
+#ln-saybox[data-h="1"] .tl2,#ln-saybox[data-h="2"] .translit{visibility:hidden}
+.ln-links{gap:14px}
+.ln-opts .btn{white-space:normal;overflow-wrap:anywhere;text-align:start;line-height:1.5;padding:10px 12px}
+.ln-opts .btn span{display:block}
+.ln-opts .btn.t-opt{font-family:inherit;font-size:.98rem}
+.ln-opts .btn.t-opt .ta,.ln-mini{font-family:var(--ta-serif)}
+.ln-tl{display:block;font-size:.72rem;color:var(--muted);font-style:italic;font-family:system-ui,sans-serif}
+.t-opt.ok .ln-tl,.t-opt.bad .ln-tl{color:inherit}
+/* after an answer the ✓ option is what teaches: full opacity, ink on the card colour, the state in the border and the glyph */
+.ln-opts .t-opt.ok:disabled,.ln-opts .t-opt.bad:disabled{opacity:1;background:var(--card);color:var(--ink)}
+.ln-opts .t-opt.ok:disabled{border:2px solid var(--ok)}
+.ln-opts .t-opt.bad:disabled{border:2px dashed var(--bad)}
+.ln-prev{font-size:.9rem;margin:6px 0 2px;padding:6px 10px;border-radius:8px;background:var(--chip);color:var(--chip-ink);border-left:3px dashed var(--muted)}
+.ln-prev.ok{border-left:3px solid var(--ok)}
+.ln-compact .couplet{font-size:1.12rem;line-height:1.6}
+.test-c .blank.cur{outline:2px solid var(--accent);outline-offset:1px}
+.test-c .blank.miss{border-bottom:2px dashed var(--muted);color:var(--ink)}
+.ln-slots{font-family:var(--ta-serif);font-size:1.2rem;line-height:1.75;margin:6px 0}
+.ln-sl.l2{padding-left:1.2em}
+.ln-slot{position:relative;display:inline-block;margin:0 3px 4px 0;padding:0 .3em;border-bottom:2px solid var(--line);color:var(--muted);text-align:center;box-sizing:border-box}
+.ln-ghost{visibility:hidden}
+.ln-slot.pre{border-bottom-color:transparent;color:var(--ink)}
+.ln-slot.ok{border-bottom-color:var(--ok);color:var(--ink)}
+.ln-slot.help{border-bottom:2px dashed var(--gold);color:var(--ink)}
+.ln-slot.help i{position:absolute;left:0;right:0;top:-1.05em;font-style:normal;font-size:.5em;line-height:1;color:var(--muted);font-family:var(--ta);white-space:nowrap}   /* out of flow: a helped slot is no wider than an empty one */
+.ln-slot.cur{border-bottom-color:var(--accent);background:var(--sel);border-radius:6px 6px 0 0}
+.ln-bank{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0}
+.ln-tile{position:relative;min-height:44px;padding:8px 14px;border:1px solid var(--line);border-radius:10px;background:var(--chip);color:var(--chip-ink);font:inherit;font-family:var(--ta-serif);font-size:1.05rem;cursor:pointer;overflow-wrap:anywhere;text-align:center}
+.ln-tile.used{visibility:hidden}                                       /* the place is kept, so no tile ever moves under the finger */
+.ln-tile.bad{border:2px dashed var(--bad);padding:7px 13px}
+.ln-tile.bad::after{content:'✗';position:absolute;top:-9px;right:-6px;width:20px;height:20px;line-height:20px;border-radius:50%;background:var(--bad);color:#fff;font-size:.75rem;font-family:system-ui,sans-serif}
+.ln-chain{list-style:none;padding-left:0;margin:8px 0;font-family:var(--ta-serif);font-size:1.05rem;line-height:1.7}
+.ln-chain li{padding:4px 0;border-bottom:1px solid var(--line)}
+.ln-chainfull{color:var(--muted);font-size:.95rem}
+.ln-actions{padding-bottom:calc(8px + var(--sab, env(safe-area-inset-bottom)))}
+.ln-stat{margin:0 0 12px}
+.ln-way summary,.ln-pal summary{cursor:pointer;min-height:44px;display:flex;align-items:center;gap:6px;color:inherit;font-weight:400}
+.ln-way input[type=text],.ln-way input[type=date],.ln-way select{min-height:40px;margin:4px 0 8px}
+.ln-iyal{margin:10px 0 4px;font-size:.85rem}
+.ln-row{display:flex;gap:10px;align-items:flex-start;width:100%;min-height:44px;padding:8px 6px;border:0;border-bottom:1px solid var(--line);background:none;color:inherit;font:inherit;text-align:start;cursor:pointer}
+.ln-row[aria-current="true"]{background:var(--sel);border-radius:8px;font-weight:700}
+.ln-rn{min-width:2.2em;color:var(--muted);font-variant-numeric:tabular-nums}
+.ln-rt{flex:1;overflow-wrap:anywhere}
+.ln-rowact{display:flex;flex-wrap:wrap;gap:6px;padding:6px 6px 10px 2.8em}
+.ln-rowact[hidden]{display:none}
+@media (prefers-color-scheme:dark){ :root:not([data-theme="light"]) .ln-said.on,:root:not([data-theme="light"]) .ln-tile.bad::after{color:#1f1b16} }
+:root[data-theme="dark"] .ln-said.on,:root[data-theme="dark"] .ln-tile.bad::after{color:#1f1b16}
+@media (prefers-reduced-motion:reduce){ .t-prog i{transition:none} }
