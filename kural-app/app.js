@@ -77,6 +77,7 @@ const STR = {
     kattam: 'குறள் குறுக்கெழுத்து', kattamSub: 'தினமும் ஒரு தமிழ்க் குறுக்கெழுத்து — விடைகள் அனைத்தும் குறள் சொற்கள்', kattamGo: 'விளையாடு',
     occasions: 'நிகழ்வுக்கு ஒரு குறள்', occasionsSub: 'திருமணம், தொடக்க விழா, பிரியாவிடை, அஞ்சலி, பள்ளிக் கூட்டம் — பேச்சுக்கும் அழைப்பிதழுக்கும் பொருத்தமான குறள்கள்', occAll: 'எல்லா நிகழ்வுகளும்', occSee: 'மேலும் நிகழ்வுகள்', occCurated: 'செம்மொழித் தமிழாய்வு மத்திய நிறுவனம் தேர்ந்தெடுத்தவை · வேறு குறள் பொருத்தம் எனில் அக்குறளின் பக்கத்தில் ⚑ வழியாகத் தெரிவிக்கலாம்', occShare: 'உரையாகப் பகிர்', occCard: 'அட்டை', occOpen: 'திற',
     verify: 'மேற்கோளைச் சரிபார்', verifySub: 'பேச்சிலோ செய்தித்தாளிலோ சுவரொட்டியிலோ கண்ட குறள் மேற்கோளை ஒட்டுங்கள் — மூலப் பாடத்தைக் கண்டறிந்து, மாறுபடும் ஒவ்வொரு சொல்லையும் காட்டும்', verifyPh: 'குறளையோ அதன் மொழிபெயர்ப்பையோ இங்கே ஒட்டுங்கள்…', verifyBtn: 'சரிபார்', verifyPaste: 'ஒட்டு', verifyQuoted: 'மேற்கோள் காட்டியது', verifyCanon: 'மூலப் பாடம்', verifyScore: 'பொருத்தம்', verifyExact: 'மேற்கோள் சரியானது ✓', verifyDiff: 'சொற்கள் மாறுபடுகின்றன', verifyNone: 'பொருத்தமான குறள் கிடைக்கவில்லை — ஒரு வரியை மட்டும் ஒட்டிப் பாருங்கள்', verifyOthers: 'வேறு சாத்தியங்கள்', verifyCopy: 'மூலப் பாடத்தை நகலெடு', verifyLegend: 'சிவப்பு = மேற்கோளில் மாறிய/கூடுதல் சொல் · பச்சை = விடுபட்ட சொல்',
+    widgetTitle: 'முகப்புத் திரையில் இன்றைய குறள்', widgetSub: 'செயலியைத் திறக்காமலே நாள்தோறும் ஒரு குறள் — நீங்கள் முதலில் தேர்ந்த மொழிபெயர்ப்புடன்', widgetAdd: 'விட்ஜெட்டைச் சேர்', widgetAsked: 'முகப்புத் திரையில் சேர்ப்பதை உறுதிப்படுத்துங்கள்', widgetOn: 'விட்ஜெட் முகப்புத் திரையில் உள்ளது ✓', widgetHow: 'முகப்புத் திரையின் காலி இடத்தை அழுத்திப் பிடித்து → விட்ஜெட்டுகள் → Tirukkural Multilingual', widgetOem: 'சில தொலைபேசிகளில் (Xiaomi, Oppo, Vivo, realme) விட்ஜெட் நாள்தோறும் மாற, இச்செயலிக்கு Autostart அனுமதி தேவைப்படலாம்; மின்கலக் கட்டுப்பாட்டையும் நீக்குங்கள்',
     confidence: 'நம்பகம்', audiobook: 'ஒலிப் புத்தகம் (அதிகாரம் முழுதும்)', saveOffline: 'சேமி', saved: 'சேமிக்கப்பட்டது',
     installed: 'நிறுவுக', install: 'செயலியாக நிறுவு', calendar: 'நாட்காட்டியில் சேர் (.ics)',
     kotd: 'இன்றைய குறள்', more: 'மேலும்', stats: 'புள்ளிவிவரம்', otherKurals: 'இதே குறிப்புள்ள பிற குறள்கள்',
@@ -152,6 +153,7 @@ const STR = {
     kattam: 'Kural crossword', kattamSub: 'A daily Tamil crossword; every answer is a word from the Kural', kattamGo: 'Play',
     occasions: 'A Kural for the occasion', occasionsSub: 'Weddings, inaugurations, farewells, condolences, school assemblies: couplets that fit the moment, for a speech or an invitation', occAll: 'All occasions', occSee: 'More occasions', occCurated: 'Chosen at the Central Institute of Classical Tamil · if another couplet fits better, say so with ⚑ on its page', occShare: 'Share as text', occCard: 'Card', occOpen: 'Open',
     verify: 'Verify a quotation', verifySub: 'Paste a Kural quotation from a speech, a newspaper or a poster: the app finds the couplet and marks every word that differs', verifyPh: 'Paste the couplet, in Tamil or in a translation…', verifyBtn: 'Check', verifyPaste: 'Paste', verifyQuoted: 'As quoted', verifyCanon: 'Canonical text', verifyScore: 'match', verifyExact: 'The quotation is exact ✓', verifyDiff: 'words differ', verifyNone: 'No couplet matched; try pasting one line only', verifyOthers: 'Other possibilities', verifyCopy: 'Copy canonical text', verifyLegend: 'red = changed or extra in the quotation · green = missing from it',
+    widgetTitle: 'Today’s kural on your home screen', widgetSub: 'A new couplet every day without opening the app, with the translation that is first in your list', widgetAdd: 'Add the widget', widgetAsked: 'Confirm adding it to your home screen', widgetOn: 'The widget is on your home screen ✓', widgetHow: 'Touch and hold an empty part of the home screen → Widgets → Tirukkural Multilingual', widgetOem: 'On some phones (Xiaomi, Oppo, Vivo, realme) the widget changes each day only if this app is allowed to autostart and is not battery-restricted',
     confidence: 'confidence', audiobook: 'Audiobook (whole chapter)', saveOffline: 'Save', saved: 'Saved',
     installed: 'Install', install: 'Install as app', calendar: 'Add to calendar (.ics)',
     kotd: 'Kural of the day', more: 'More', stats: 'Statistics', otherKurals: 'Other kurals with this tag',
@@ -189,7 +191,7 @@ const DEFAULTS = {
 let S = Object.assign({}, DEFAULTS, JSON.parse(localStorage.getItem('kural.settings') || '{}'));
 // சாலமன் பாப்பையா / மு. கருணாநிதி are no longer carried; move those readers to மு. வரதராசனார்.
 if (['ta_sp', 'ta_mk'].includes(S.proseTab)) S.proseTab = 'ta_mv';
-function saveS() { localStorage.setItem('kural.settings', JSON.stringify(S)); applyPrefs(); pushPrefsToSW(); }
+function saveS() { localStorage.setItem('kural.settings', JSON.stringify(S)); applyPrefs(); pushPrefsToSW(); pushWidgetPrefs(); }
 function applyPrefs() {
   document.documentElement.style.setProperty('--fs', (S.fontScale || 1) + 'rem');
   if (S.theme === 'auto') document.documentElement.removeAttribute('data-theme');
@@ -272,6 +274,11 @@ const todayKey = () => { const d = new Date(); return `${d.getFullYear()}-${pad(
 const NATIVE_TTS = typeof AndroidTTS !== 'undefined' ? AndroidTTS : null;
 const NATIVE_SHARE = typeof AndroidShare !== 'undefined' ? AndroidShare : null;
 const NATIVE_NOTIFY = typeof AndroidNotify !== 'undefined' ? AndroidNotify : null;
+// The Android home-screen widget shows the daily kural with the reader's first translation;
+// tell the shell which one that is. Older shells have no such method, browsers no bridge.
+function pushWidgetPrefs() {
+  try { if (typeof AndroidNotify !== 'undefined' && typeof AndroidNotify.widgetPrefs === 'function') AndroidNotify.widgetPrefs(firstLang()); } catch (e) { }
+}
 const IS_ANDROID_APP = !!NATIVE_TTS;
 
 const TTS = {
@@ -1710,6 +1717,17 @@ async function viewDaily() {
   const n = dailyN(); const k = await kural(n); const cm = chMeta(chOf(n));
   setTitle(t('daily'), todayKey());
   const perm = ('Notification' in window) ? Notification.permission : 'unsupported';
+  // Android app only: offer the home-screen widget. Launchers that cannot place it on request get the manual route.
+  // (a device with no home screen for widgets - ChromeOS, a TV - gets no card at all)
+  let wb = NATIVE_NOTIFY && typeof NATIVE_NOTIFY.canPinWidget === 'function' ? NATIVE_NOTIFY : null;
+  let canPin = false, placed = 0;
+  if (wb) { try { if (typeof wb.canHostWidget === 'function' && !wb.canHostWidget()) wb = null; else { canPin = !!wb.canPinWidget(); placed = +wb.widgetCount() || 0; } } catch (e) { } }
+  // The manual route is always shown: some launchers accept a placement request and then do nothing.
+  const widgetCard = !wb ? '' : `<div class="card"><h2>📱 ${t('widgetTitle')}</h2><div class="muted">${t('widgetSub')}</div>
+    ${placed ? `<div style="margin-top:6px;color:var(--ok)">${t('widgetOn')}</div>` : ''}
+    ${canPin ? `<div class="row" style="margin-top:8px"><button class="btn ${placed ? '' : 'primary'}" id="w-pin">＋ ${t('widgetAdd')}</button></div>` : ''}
+    <div class="muted" style="font-size:.8rem;margin-top:8px">${t('widgetHow')}</div>
+    ${placed ? `<div class="muted" style="font-size:.8rem;margin-top:4px">${t('widgetOem')}</div>` : ''}</div>`;
   render(`<div class="card"><div class="kural-head"><span class="n">${t('kural')} ${n}</span><a class="ch" href="#/ch/${cm.adhigaram}">${esc(cm.name)}</a></div>${coupletHTML(k)}
     ${S.langs.filter(c => k.tr[c]).map(c => `<div class="tr-text ${scriptClass(c)} ${L(c).dir === 'rtl' ? 'rtl' : ''}" style="font-size:1rem;margin-top:6px"${dirAttr(c)}>${esc(k.tr[c][0])}<span class="l2">${esc(k.tr[c][1] || '')}</span></div>`).join('')}
     <div class="actions"><button class="btn primary" id="d-recite">🔊 ${t('recite')}</button><a class="btn" href="#/k/${n}">📖</a><a class="btn" href="#/practice/${n}">🎵</a></div></div>
@@ -1717,7 +1735,22 @@ async function viewDaily() {
     <div class="toggle"><label for="nt">${t('notify')}</label><input type="checkbox" class="switch" id="nt" ${S.notify ? 'checked' : ''} ${perm === 'unsupported' ? 'disabled' : ''}></div>
     <div class="toggle"><label for="ntime">${t('notifyTime')}</label><input type="time" id="ntime" value="${S.notifyTime}" style="max-width:140px"></div>
     <div class="muted" style="font-size:.8rem;margin-top:6px">${t('notifyHelp')} ${perm === 'denied' ? '⚠ Notifications are blocked in browser settings.' : ''}</div>
-    <div class="row" style="margin-top:8px"><button class="btn" id="ics">📅 ${t('calendar')}</button><button class="btn" id="test-n" ${perm !== 'granted' ? 'disabled' : ''}>🔔 test</button></div></div>`);
+    <div class="row" style="margin-top:8px"><button class="btn" id="ics">📅 ${t('calendar')}</button><button class="btn" id="test-n" ${perm !== 'granted' ? 'disabled' : ''}>🔔 test</button></div></div>${widgetCard}`);
+  // The launcher confirms in its own sheet and tells the page nothing, so watch the count for
+  // half a minute and redraw the card when the widget lands - otherwise the button still looks
+  // untouched and a second tap places a duplicate.
+  if ($('#w-pin')) $('#w-pin').onclick = e => {
+    let ok = false; try { ok = !!wb.pinWidget(); } catch (err) { }
+    toast(ok ? t('widgetAsked') : t('widgetHow'), 3000);
+    if (!ok) return;
+    const btn = e.currentTarget; btn.disabled = true;
+    const before = placed; let tries = 0;
+    const timer = setInterval(() => {
+      let now = before; try { now = +wb.widgetCount() || 0; } catch (err) { }
+      const here = location.hash.startsWith('#/daily');
+      if (now > before || ++tries >= 30 || !here) { clearInterval(timer); if (here) viewDaily(); }
+    }, 1000);
+  };
   $('#d-recite').onclick = e => reciteKural(k, e.currentTarget);
   $('#nt').onchange = async e => { await setNotify(e.target.checked); viewDaily(); };
   $('#ntime').onchange = e => { S.notifyTime = e.target.value || '07:00'; saveS(); };
@@ -2096,6 +2129,7 @@ async function boot() {
   }
   await route();
   pushPrefsToSW();
+  pushWidgetPrefs();
   showDailyNotification(false); setInterval(() => showDailyNotification(false), 60000);
   if (location.hash.startsWith('#/k/')) S.lastKural = +location.hash.split('/')[2] || S.lastKural;
 }

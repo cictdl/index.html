@@ -159,9 +159,14 @@ secure. **More › Install** shows a real install button where the browser offer
 Add-to-Home-Screen instruction on iOS (which never fires `beforeinstallprompt`), and
 “Installed ✓” once running standalone.
 
-`screenshots` is deliberately absent: it wants genuine device captures, and pointing the
-manifest at files that do not exist would 404. Add real 1080×1920 narrow and 1440×900 wide
-captures before store submission.
+`screenshots` carries five genuine phone captures (`assets/screens/`, 720×1280, `form_factor:
+"narrow"`, 255 KB in all after palette reduction), so Chrome's install dialog shows the app
+before it is installed: the daily kural, translations, a tapped word's grammar, search in any
+script, and the recitation test. They are taken with the DevTools-protocol driver in
+`kural-android/tools/shots.py` from `tools/shots/spec-manifest.json` (a pinned clock keeps the
+daily kural the same on every run) and are not precached by the service worker — they matter
+only at install time, online. The Android build leaves the folder out (`build_assets.py`).
+Wide (desktop) captures have not been added.
 
 ### Keyboard
 
@@ -178,7 +183,14 @@ sync get the same notification the next time the app is opened after the chosen 
 
 The kural of the day is `((daysSinceEpoch × 1103) mod 1330) + 1` — deterministic, so every
 device shows the same kural without a server, and the sequence walks the whole book before
-repeating (1103 is coprime with 1330).
+repeating (1103 is coprime with 1330). "Day" is the reader's local calendar day.
+
+In the Android app the same page offers the **home-screen widget**. `pushWidgetPrefs()` tells
+the shell which translation is first in the reader's list (on every settings save and once at
+start-up), and the card's button asks the launcher to place the widget, then watches
+`AndroidNotify.widgetCount()` so the card can confirm it and a second tap cannot add a
+duplicate. All of it is feature-detected: in a browser, in the single-file edition and in
+older shells there is no bridge, no card and no call.
 
 ---
 

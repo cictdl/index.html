@@ -4,7 +4,7 @@
    data / audio / fonts: cache-first — they are content-addressed or immutable per build;
    audio also gets Range support so <audio> can seek inside a cached file;
    plus the daily-kural notification. */
-const VERSION = 'v7';
+const VERSION = 'v8';
 const SHELL = 'kural-shell-' + VERSION;
 const RT = 'kural-rt-v1';
 const PREFS = 'kural-prefs';
