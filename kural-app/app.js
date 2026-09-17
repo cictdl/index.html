@@ -37,7 +37,7 @@ const STR = {
     lnRecapTitle: 'மீண்டும் வருக!', lnRecapSub: 'கடந்த முறை படித்த குறள்கள் இவை. விட்ட இடத்திலிருந்து தொடரலாம்.', lnRevHead: 'மீள்பார்வை · முன்பு படித்த குறள்',
     lnLearnHead: 'குறளும் பொருளும்', lnLearnHint: 'முதலில் குறளை ஒருமுறை படியுங்கள் அல்லது கேளுங்கள்.', lnShowMeaning: 'பொருளைப் பார்க்கலாம்', lnHear: 'கேட்கலாம்', lnNoAudio: 'ஒலி வராவிட்டால் வரிகளை உரக்கப் படிக்கலாம்.',
     lnMoreUrai: 'விரிவான உரை', lnWordsOpen: 'சொற்களைப் பார்க்கலாம்', lnSplitNote: 'பிரித்த வடிவம் பொருள் புரிய மட்டுமே; சொல்லும்போது அச்சிட்ட வடிவத்தையே சொல்லுங்கள்.', lnGlossEn: 'சொற்பொருள் ஆங்கிலத்தில் மட்டும் · word meanings in English only', lnWordsNone: 'சொற்பொருள் இப்போது கிடைக்கவில்லை.', lnWordsWhole: 'இக்குறளில் பிரித்துக் காட்ட வேண்டிய சொற்கள் இல்லை.',
-    lnKnowIt: 'இந்தக் குறள் எனக்குத் தெரியும் (நேராக அமைத்துப் பார்க்கலாம்)',
+    lnKnowIt: 'இந்தக் குறள் எனக்குத் தெரியும் (பயிற்சிகளைத் தவிர்த்து, பின்னர் அமைத்துப் பார்க்கலாம்)',
     lnSayHead: 'சொல்லிப் பாருங்கள்', lnSay1: 'கேட்டு, உடன் சேர்ந்து சொல்லுங்கள்', lnSay2: 'இரண்டாம் அடியை மறைத்துச் சொல்லுங்கள்', lnSay3: 'பார்க்காமல் சொல்லுங்கள்', lnSaidIt: 'சொன்னேன்', lnHide: 'மறைக்கலாம்', lnShowLine: 'காட்டுங்கள்', lnWithBeat: 'தாளத்துடன் கேட்கலாம்', lnVoiceCheck: 'குரல்வழிச் சரிபார்க்கலாம்',
     lnMeanQ: 'இந்தக் குறளின் பொருள் யாது?', lnWhichKural: 'இந்தப் பொருளுக்குரிய குறள் எது?', lnRight: '✓ சரி!', lnWrongMeaning: '✗ சரியான பொருள் மேலே ✓ குறியிடப்பட்டுள்ளது.', lnWrongKural: '✗ சரியான குறள் மேலே ✓ குறியிடப்பட்டுள்ளது.', lnWrongWord: '✗ சரியான விடை: {w}',
     lnFillSeer: 'விடுபட்ட சீர்களை வரிசையாகத் தேர்ந்தெடுங்கள்', lnFillWord: 'விடுபட்ட சொற்களை வரிசையாகத் தேர்ந்தெடுங்கள்',
@@ -141,7 +141,7 @@ const STR = {
     lnRecapTitle: 'Welcome back!', lnRecapSub: 'These are the couplets from last time. Carry on from where you stopped.', lnRevHead: 'Review · a couplet you met before',
     lnLearnHead: 'The couplet and its meaning', lnLearnHint: 'First read the couplet once, or listen to it.', lnShowMeaning: 'Show the meaning', lnHear: 'Listen', lnNoAudio: 'If there is no sound, read the lines aloud.',
     lnMoreUrai: 'Fuller commentary', lnWordsOpen: 'Look at the words', lnSplitNote: 'The split form is only to help you understand; recite the printed form.', lnGlossEn: 'Word meanings are in English only', lnWordsNone: 'Word meanings are not available right now.', lnWordsWhole: 'No word in this couplet needs splitting.',
-    lnKnowIt: 'I already know this couplet (go straight to rebuilding it)',
+    lnKnowIt: 'I already know this couplet (skip its practice; rebuild it later in the lesson)',
     lnSayHead: 'Say it', lnSay1: 'Listen and say it along', lnSay2: 'Hide the second line and say it', lnSay3: 'Say it without looking', lnSaidIt: 'Said it', lnHide: 'Hide', lnShowLine: 'Show', lnWithBeat: 'Listen with the beat', lnVoiceCheck: 'Check by voice',
     lnMeanQ: 'What does this couplet mean?', lnWhichKural: 'Which couplet has this meaning?', lnRight: '✓ Right!', lnWrongMeaning: '✗ The right meaning is marked ✓ above.', lnWrongKural: '✗ The right couplet is marked ✓ above.', lnWrongWord: '✗ The answer: {w}',
     lnFillSeer: 'Choose the missing feet in order', lnFillWord: 'Choose the missing words in order',
@@ -2036,7 +2036,7 @@ function stepLearn(host, k, n) {
     ${canSkip ? `<button class="ln-link" id="ln-know">${t('lnKnowIt')}</button>` : ''}`;
   learnWireAudio(k); learnWireNext();
   $('#ln-show').onclick = () => { cur.a = { r: 1 }; saveLearn(); $('#ln-mbox').hidden = false; $('#ln-show').hidden = true; $('#ln-next').hidden = false; $('#ln-inst').hidden = true; learnSayLive(learnText(k, code)); $('#ln-next').focus({ preventScroll: true }); };
-  const kn = $('#ln-know'); if (kn) kn.onclick = () => {           // test-out: straight to the rebuild, which still has to be passed
+  const kn = $('#ln-know'); if (kn) kn.onclick = () => {           // test-out: its practice steps are dropped; the rebuild stays where it is and still has to be passed
     if (LEARN.busy) return; LEARN.busy = true;
     cur.plan = cur.plan.filter((c, j) => j <= cur.i || !(/^[SMF]/.test(c) && +c.slice(1) === n)); cur.to = (cur.to || []).concat(n); learnAdvance();
   };
