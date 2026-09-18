@@ -4,13 +4,13 @@
    data / audio / fonts: cache-first — they are content-addressed or immutable per build;
    audio also gets Range support so <audio> can seek inside a cached file;
    plus the daily-kural notification. */
-const VERSION = 'v9';
+const VERSION = 'v10';
 const SHELL = 'kural-shell-' + VERSION;
 const RT = 'kural-rt-v1';
 const PREFS = 'kural-prefs';
 const SHELL_URLS = ['./', './index.html', './app.js', './styles.css', './assets/fonts.css', './manifest.webmanifest',
   './assets/cict-logo.png', './assets/icon-192.png', './assets/icon-512.png', './assets/favicon.png', './assets/apple-touch-icon.png',
-  './data/meta.json', './data/glossary.json', './data/tags.json', './data/audio.json', './data/ch/001.json', './data/gr/001.json',
+  './data/meta.json', './data/glossary.json', './data/tags.json', './data/ex.json', './data/audio.json', './data/ch/001.json', './data/gr/001.json',
   './kattam/index.html', './kattam/app.js', './kattam/styles.css', './kattam/assets/icon.svg', './kattam/data/meta.json'];
 
 self.addEventListener('install', e => {
@@ -19,8 +19,8 @@ self.addEventListener('install', e => {
 // Generated data is cache-first under stable URLs, so a data repair that keeps the file names
 // (the Malayalam fix of 7 Sep 2026) has to evict the stale copies once. Bump DATA_REV whenever
 // data/ files change in place, and keep STALE_DATA pointing at the paths that changed.
-const DATA_REV = '2026-09-09-text-repairs';
-const STALE_DATA = /\/data\/(ch\/|search\/(ml|mai|kok|sat)\.json|meta\.json)/;
+const DATA_REV = '2026-09-18-exam-bank';
+const STALE_DATA = new RegExp('^' + new URL('./data/', self.registration.scope).pathname.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '(ch/|gr/|ex\\.json$|search/(ml|mai|kok|sat)\\.json$|meta\\.json$)');   // anchored: the crossword's kattam/data/meta.json is not ours
 self.addEventListener('activate', e => {
   e.waitUntil((async () => {
     for (const k of await caches.keys()) if (k.startsWith('kural-shell-') && k !== SHELL) await caches.delete(k);

@@ -146,6 +146,32 @@ Then open <http://localhost:8765>. A service worker must be able to register, so
   blanks come from the printed lines (bare fragments are never blanked, and the four unscannable
   kurals plus K408 are not sampled), distractors from the metre layer, and all results stay in
   `localStorage`.
+- **📝 தேர்வுப் பயிற்சி / Exam practice** (`#/exam`, player at `#/exam/go`) — the questions
+  Tamil papers set on the Kural, drawn from CICT's own layers: சொல் வகை, பெயர்ச்சொல் வகை,
+  எச்சம், வினைமுற்று · வினையாலணையும் பெயர் · தொழிற்பெயர் (MCQ, then "tap it in the couplet"
+  once the tag is known), திணை · பால் · எண் · இடம் (one row per question), வேற்றுமை (from a
+  visible ending only), தொகைநிலைத் தொடர், பிரித்து எழுதுக (the பதம் பிரித்தல் form, never the
+  morpheme parse), மோனை · எதுகை (recomputed from the printed letters by the school rule, not
+  taken from the scanner, whose இன மோனை pairs every hard consonant), அசை · வாய்பாடு ·
+  ஈற்றுச்சீர், தளை, a full அலகிட்டு வாய்பாடு table, the அணி triad (உவமை · எடுத்துக்காட்டு
+  உவமை · உருவகம்) and an optional English word-meaning deck. Every eligible item is decided at
+  build time by `build/build_exam.py` into `data/ex.json`: a word a verifier questioned or
+  annotated never becomes a question, levels 1–3 use only tags at confidence ≥ 0.80 (0.70 at
+  the "all" level, labelled as such), every distractor is checked against every value the same
+  word form carries anywhere in the book, metre items come only from couplets whose scansion
+  re-derives by rule (அளபெடை, ஆய்தம், ஐகாரக் குறுக்கம்-sensitive feet and unelided
+  குற்றியலுகரம் are left out), and 39 couplets with suspect spelling are excluded outright.
+  Noun-kind, participle, finite-verb and case questions always show their whole textbook set in
+  the same order, so neither the number nor the mix of options gives the answer away; an option
+  that is defensible for that word (a soft-boundary noun kind, the positive of a negative
+  participle, a case the data also gives that ending) is marked ◐ when picked — no credit, no
+  penalty, with a note saying why. Each answer card shows the confidence, the draft definition
+  and a ⚑ that, once the report is actually sent, withdraws that question on the device and
+  uncounts the answer. Mastery is a
+  per-tag Leitner box that moves at most once a day and counts wrong picks against the tag
+  picked, so always guessing the commonest answer never masters it. Read-only toward the
+  rest: it never writes the review deck, the memorised list, the lesson or the test. Levels are
+  a provisional guide (≈ classes 6–7 · 8–9 · 10–12) awaiting the CICT teacher panel.
 - **மேலும் / More** — bookmarks, grammar explorer (tag → concordance), offline downloads,
   settings (interface language, per-language voice, rate, text size, theme), credits.
 
@@ -219,6 +245,7 @@ py build/lint_js.py               # structural check of app.js / sw.js — gate 
 py build/build_data.py            # → data/  (31.6 MB; ~2 s)
 py build/make_icons.py            # → assets/icon-*.png
 py build/fetch_fonts.py           # → assets/fonts/ + assets/fonts.css  (43 files, 1.07 MB)
+py build/build_exam.py            # → data/ex.json, the exam-practice bank (asserts every gate; --audit → build/exam_audit.tsv)
 py build/make_single_file.py      # → Tirukkural-22-Languages.html (7.9 MB)
 ```
 

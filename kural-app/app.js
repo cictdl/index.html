@@ -28,6 +28,56 @@ function toast(msg, ms = 2200) {
 // ───────────────────────────── i18n (interface) ─────────────────────────────
 const STR = {
   ta: {
+    exTitle: 'தேர்வுப் பயிற்சி', exSub: 'இலக்கணம் · புணர்ச்சி · யாப்பு · அணி', exCardSub: 'இலக்கணக் குறிப்பு · பிரித்து எழுதுக · அலகிடுதல் · மோனை எதுகை — குறள்களிலிருந்தே', exOpen: 'தொடங்கலாம்',
+    exLevel: 'நிலை', exPickLv: 'எந்த நிலையிலிருந்து தொடங்கலாம்?', exLv1: 'நிலை 1', exLv2: 'நிலை 2',
+    exLv3: 'நிலை 3', exLv0: 'எல்லாம் · போட்டி / பெரியவர்', exLvHint: 'தோராயப் பரிந்துரை: நிலை 1 ≈ வகுப்பு 6–7 · நிலை 2 ≈ 8–9 · நிலை 3 ≈ 10–12. இது CICT ஆசிரியர் குழுவின் ஒப்புதலுக்குக் காத்திருக்கும் தற்காலிகப் பிரிவு; பாடத்திட்டத்துடன் இன்னும் ஒப்பிடப்படவில்லை.', exSrc: 'எந்தக் குறள்களிலிருந்து?',
+    exSrcMine: 'நான் படித்தவை', exSrcToday: 'இன்றைய பாடம்', exSrcBook: 'முழு நூல்', exSrcCh: 'அதிகாரம்',
+    exSrcMemo: 'மனப்பாடம்', exStart: 'கலவைச் சுற்றைத் தொடங்கலாம்', exResume: 'தொடரலாம் · {i}/{n}', exMissBtn: 'பிழைத்தவற்றை மீண்டும் ({n})',
+    exStats: 'பயிற்சி நாள்கள்: {d} · விடையளித்தவை: {q} · சரி: {p}%', exTopics: 'பயிற்சிப் பகுதிகள்', exGrpGram: 'இலக்கணம்', exGrpWord: 'சொல்',
+    exGrpMetre: 'யாப்பு · தொடை', exGrpAni: 'அணி', exMastered: 'கைவந்தவை {a}/{b}', exItems: 'வினாக்கள்: {n}',
+    exPractise: 'பயிற்சி செய்யலாம்', exFewData: 'இந்த நிலையில் இதற்குப் போதுமான உறுதியான வினாக்கள் இல்லை', exSl: 'சொல்லறிவு · ஆங்கிலப் பொருள்', exSlSub: 'பொருள் ஆங்கிலத்தில் மட்டும் உள்ளது; தமிழ்ப் பொருள் இன்னும் தரவில் இல்லை.',
+    exSlOpt: 'விருப்பப் பயிற்சி', exKnown: 'ஆங்கிலப் பொருள் அறிந்த சொற்கள்: {n} / {t}', exHonestT: 'இந்த வினாக்கள் எப்படி அமைக்கப்பட்டன', exHonest1: 'இலக்கணக் குறிப்புகள் AI-உதவியுடன் உருவாக்கப்பட்டு இருமுறை சரிபார்க்கப்பட்ட வரைவு. நம்பகம் குறைந்தவையும், சரிபார்ப்பாளர் ஐயம் தெரிவித்த சொற்களும் வினாக்களாக வருவதில்லை; சரிபார்ப்பில் திருத்தப்பட்ட சொற்களுக்கு அக்குறிப்பு காட்டப்படும்.',
+    exHonest2: 'யாப்பு வினாக்கள் கணினி விதிப்படி அலகிட்டவை; ஐயமான சீர்கள் விலக்கப்பட்டன.', exTextbook: 'பாடநூல் விடை வேறுபட்டால் பாடநூலையே பின்பற்றுங்கள்; ⚑ மூலம் எங்களுக்குத் தெரிவிக்கலாம்.', exConfLegend: 'நம்பகம்: உயர் ≥ 0.90 · நல்ல 0.80–0.89 · நடுத்தரம் 0.70–0.79 (“எல்லாம்” நிலையில் மட்டும்) · அணிக்கு நம்பக மதிப்பு இல்லை', exTermsLink: '📘 சொல் விளக்கங்கள்',
+    exExplorer: '🔎 இலக்கணத் தொகுப்பு', exNoSave: 'இக்கருவியில் சேமிக்க இடமில்லை; பயிற்சி முன்னேற்றம் சேமிக்கப்படாமல் போகலாம்.', exNoBank: 'தேர்வுப் பயிற்சித் தரவைத் திறக்க முடியவில்லை. இணையம் கிடைக்கும்போது மீண்டும் முயலலாம்.', exExamLabel: 'தேர்வு வினா: {x}',
+    exEnough: 'இப்போதைக்குப் போதும்', exNext: 'தொடரலாம் →', exFinish: 'முடிவைப் பார்க்கலாம் →', exCheck: 'சரிபார்க்கலாம்',
+    exI_mcq: 'சரியான விடையைத் தேர்ந்தெடுங்கள்.', exI_rows: 'ஒவ்வொரு வரியிலும் ஒன்றைத் தேர்ந்தெடுத்து, சரிபார்க்கலாம்.', exI_pr: 'சேர்ந்துள்ள சொற்களைச் சரியாகப் பிரித்துக் காட்டும் விடையைத் தேர்ந்தெடுங்கள்.', exI_al: 'ஒவ்வொரு சீருக்கும் வாய்பாட்டைத் தேர்ந்தெடுங்கள்.',
+    exWrong: '✗ இது அல்ல — CICT குறிப்பின்படி விடை: {x}', exRowsVerdict: '{a}/{b} சரி', exRowsHint: 'ஒவ்வொரு வரியிலும் ஒன்றைத் தேர்ந்தெடுத்த பிறகு சரிபார்க்கலாம்.', exYourPick: 'நீங்கள் தேர்ந்தது',
+    exL_vm: 'இலக்கணக் குறிப்பு தருக', exQ_find2: 'இக்குறளில் {x} ஆக வரும் இரண்டு சொற்களையும் தொட்டுக் காட்டுங்கள்.', exTgNote: 'வேற்றுமை உருபு மறைந்து வந்த தொகை இது; எந்த வேற்றுமை என்பது இவ்வினாவில் கேட்கப்படவில்லை.', exAlVerdict: '✗ {k}/7 சீர்கள் சரி — முழு அலகீடு கீழே.',
+    exRowsWrong: '✗ முழுமையாகச் சரியில்லை — சரியான விடை: {x}', exFindWrong: '✗ முழுமையாகச் சரியில்லை — சரியான சொற்கள் குறிக்கப்பட்டுள்ளன.', exWrongRule: '✗ இது அல்ல — விதிப்படி விடை: {x}', exAnchor: 'முதல் சீர்',
+    exDraft: 'வரைவு', exFewK: 'இக்குறளில் வினாக்கள் குறைவு', gxOtherVet: 'சரிபார்க்க வேண்டியவை', exPart: '◐ கணக்கில் சேர்க்கவில்லை — CICT குறிப்பின்படி விடை: {x}',
+    exPartSuper: '«{p}» சரியே; ஆனால் முழுமையான இலக்கணக் குறிப்பு «{x}».', exPartAlt: 'CICT குறிப்பு இதை «{x}» எனக் கொள்கிறது. «{p}», «{x}» ஆகிய இரண்டுக்கும் இடையிலான எல்லையைத் தரவு எப்போதும் ஒரே மாதிரிக் குறிப்பதில்லை; அதனால் இந்த விடை பிழையாகக் கணக்கிடப்படவில்லை.', exFindHint: 'குறைந்தது ஒரு சொல்லைத் தொட்ட பிறகு சரிபார்க்கலாம்.', exCict: 'CICT குறிப்பு',
+    exConfHi: 'உயர் நம்பகம்', exConfGood: 'நல்ல நம்பகம்', exConfMid: 'நடுத்தர நம்பகம் · வரைவு', exConfParts: 'சொற்களின் நம்பகம் (தொகைக்குத் தனி நம்பக எண் இல்லை)',
+    exConfNone: 'நம்பக மதிப்பு இல்லை — அறிஞர் சரிபார்ப்புக்கு உட்பட்டது', exMetreConf: 'விதிவழிக் கணிப்பு · யாப்பு நம்பகம் {c} · வெண்டளை விதிப்படி சரிபார்க்கப்பட்டது', exRhymeConf: 'எழுத்து ஒப்புமை விதிப்படி கணினி கண்டது', exDef: 'விளக்கம் · வரைவு',
+    exMore: 'விளக்கம்', exWord: '📚 சொல் விவரம்', exKural: '📖 குறள் {n}', exListen: '🔊 கேட்கலாம்',
+    exReport: '⚑ விடை தவறு எனத் தோன்றினால் தெரிவிக்கலாம்', exVoided: 'இந்த வினா இனி இக்கருவியில் வராது; இந்த விடை கணக்கில் சேரவில்லை.', exVoidItem: '⚑ கணக்கில் இல்லை', exCorrNote: 'இச்சொல்லின் குறிப்பு சரிபார்ப்பில் திருத்தப்பட்டது; விவரம் “சொல் விவரம்” பகுதியில்.',
+    exSkip: 'இந்த வினா இப்போது கிடைக்கவில்லை; அடுத்ததற்குச் செல்லலாம்.', exBuilding: '⏳ வினாக்கள் தயாராகின்றன…', exNoItems: 'இப்பகுதியில் இப்போது வினாக்கள் அமையவில்லை. வேறு பகுதியைத் தேர்ந்தெடுக்கலாம்.', exNotCached: 'இந்த அதிகாரங்களின் தரவு இக்கருவியில் இன்னும் இல்லை. இணையம் கிடைக்கும்போது திறக்கலாம், அல்லது “இணையமின்றி” பக்கத்தில் முழு நூலையும் சேமிக்கலாம்.',
+    exFallback: 'நீங்கள் படித்த குறள்களில் போதுமான வினாக்கள் இல்லை; முழு நூலிலிருந்து எடுக்கப்பட்டன.', exShort: 'இப்பகுதியிலிருந்து அமைந்த வினாக்கள்: {n}', exReplaced: 'முந்தைய சுற்றில் விடையளித்தவை சேமிக்கப்பட்டன.', exNeutralLegend: 'மங்கலாக உள்ள சொற்கள் கணக்கில் இல்லை: அவற்றின் குறிப்பு இன்னும் உறுதியாகவில்லை.',
+    exNeutralRhyme: 'மங்கலாக உள்ள சீர்கள் ஐயத்துக்குரியவை (இன எழுத்து, உயிர் வேறுபாடு, நீள வேறுபாடு); இப்பயிற்சியில் கணக்கில் இல்லை.', exOffTile: '(கணக்கில் இல்லை)', exFindCount: 'தொட வேண்டியவை: {k}', exFound: '✓ கண்டீர்கள்',
+    exMissed: 'விடுபட்டது', exNotThis: 'இது அல்ல', exRowThinai: 'திணை', exRowPaal: 'பால்',
+    exRowEN: 'எண்', exRowIdam: 'இடம்', exAsaiSeg: 'அசை {i}: {s}', exNer: 'நேர்',
+    exNirai: 'நிரை', exAlProg: 'சீர் {i}/7', exAlCols: 'சீர்|அசை|வாய்பாடு', exAlDone: 'இக்குறள் «{x}» என்னும் வாய்பாட்டில் முடிகிறது.',
+    exPaa: 'பா: குறள் வெண்பா', exSplitNote: 'தேர்வில் பிரித்த வடிவத்தை எழுதலாம்; குறளை ஓதும்போது அச்சிட்ட வடிவத்தையே சொல்லுங்கள்.', exTail: 'இறுதியில் உள்ள {c} அடுத்த சொல் «{nx}» வல்லினத்தில் தொடங்குவதால் மிகுந்தது; பிரிக்கும்போது அதை விடலாம்.', exUrupu: 'உருபு: {u}',
+    exVtNote: 'வேற்றுமை அதன் உருபைக் கொண்டு அறியப்படுகிறது.', exTgNoNum: 'வேற்றுமை எண் தரவில் குறிக்கப்படவில்லை', exTgCase: '{x} வேற்றுமைத் தொகை', exTgPanbu: 'பண்புத் தொகை: “மை” விகுதியும் “ஆகிய / ஆன” உருபும் மறைந்து வருவது.',
+    exAnNote: 'CICT அணிக் குறிப்பு · வரைவு', exAnMore: 'தரவு குறிக்கும் அணி இது; இக்குறளில் வேறு அணியும் இருக்கலாம்.', exAnEka: 'ஒரு பகுதியை மட்டும் உருவகம் செய்து மற்றதை உருவகம் செய்யாமல் விடுவது ஏகதேச உருவக அணி; பாடநூல் அப்படிக் குறிப்பிட்டால் அதையே பின்பற்றுங்கள்.', exPvSix: 'பொருள், இடம், காலம், சினை, பண்பு, தொழில் — ஆறு வகை',
+    exTpAgree: 'உயர்திணை → ஆண்பால் / பெண்பால் / பலர்பால்; அஃறிணை → ஒன்றன்பால் / பலவின்பால்', exR_asai: 'நேர் = தனிக்குறில் அல்லது தனிநெடில் (ஒற்றுடனும்); நிரை = குறிலிணை அல்லது குறில்நெடில் (ஒற்றுடனும்).', exR_final: 'குற்றியலுகரத்தில் முடியும் ஈற்றுச்சீர் ஓரசையாகக் கொள்ளப்படும்: நேர்பு → காசு, நிரைபு → பிறப்பு; நேர் → நாள், நிரை → மலர்.', exR_th: '{a} ({cls}) முன் {asai} → {x}',
+    exR_tp: 'விகுதி -{v} → {x}', exR_tpDem: 'சுட்டுப்பெயர் {w} → {x}', exR_monai: 'மோனை: சீர்களின் முதல் எழுத்து ஒன்றி வருவது (உயிர் இன வரிசை: அ ஆ ஐ ஔ · இ ஈ எ ஏ · உ ஊ ஒ ஓ).', exR_etukai: 'எதுகை: முதல் எழுத்து அளவொத்து நிற்க, இரண்டாம் எழுத்து ஒன்றி வருவது.',
+    exAdiEtukai: 'அடி எதுகை: «{a}» – «{b}»', exThB: '(முதல் அடியின் இறுதிச் சீரும் இரண்டாம் அடியின் முதல் சீரும்)', exAdi1: 'முதல்', exAdi2: 'இரண்டாம்',
+    exRpNote: 'தேர்வுப் பயிற்சி · {d} · «{w}» · செயலியின் விடை: {x} · நான் தேர்ந்தெடுத்தது: {y}', exT_sv: 'சொல் வகை', exT_pv: 'பெயர்ச்சொல் வகை', exT_pr: 'பிரித்து எழுதுக',
+    exT_td: 'மோனை · எதுகை', exT_ec: 'எச்சம்', exT_tp: 'திணை · பால் · எண் · இடம்', exT_vt: 'வேற்றுமை',
+    exT_sr: 'சீர்: அசை · வாய்பாடு', exT_th: 'தளை', exT_vm: 'வினைமுற்று · வினையாலணையும் பெயர் · தொழிற்பெயர்', exT_tg: 'தொகைநிலைத் தொடர்',
+    exT_an: 'அணி', exT_al: 'அலகிட்டு வாய்பாடு தருக', exT_sl: 'சொல்லறிவு', exL_sv: 'சொல் வகை அறிக',
+    exL_pv: 'பெயர்ச்சொல் வகை அறிக', exL_pr: 'பிரித்து எழுதுக', exL_td_m: 'மோனைச் சொற்களை எடுத்து எழுதுக', exL_td_e: 'எதுகைச் சொற்களை எடுத்து எழுதுக',
+    exL_ec: 'இலக்கணக் குறிப்பு தருக', exL_find: 'எடுத்து எழுதுக', exL_tp: 'திணை, பால், எண், இடம் கூறுக', exL_vt: 'வேற்றுமை உருபைக் கண்டு வேற்றுமையைக் குறிப்பிடுக',
+    exL_sr: 'அலகிடுக', exL_th: 'தளை கண்டறிக', exL_tg: 'இலக்கணக் குறிப்பு தருக', exL_an: 'அணியைக் குறிப்பிடுக',
+    exL_al: 'அலகிட்டு வாய்பாடு தருக', exQ_sv: '«{w}» — இது எவ்வகைச் சொல்?', exQ_pv: '«{w}» — இது எவ்வகைப் பெயர்ச்சொல்?', exQ_pr: '«{stem}» — சரியான பிரிப்பு எது?',
+    exQ_td_m: '{adi} அடியில், முதல் சீர் «{w}» உடன் மோனையாக வரும் சீர்களைத் தொடுங்கள்.', exQ_td_e: '{adi} அடியில், முதல் சீர் «{w}» உடன் எதுகையாக வரும் சீர்களைத் தொடுங்கள்.', exQ_ec: '«{w}» — இதன் இலக்கணக் குறிப்பு எது?', exQ_find: 'இக்குறளில் {x} எது? தொட்டுக் காட்டுங்கள்.',
+    exQ_tp: '«{w}» — இச்சொல்லின் திணை, பால், எண், இடம் எவை?', exQ_vt: '«{w}» — இச்சொல்லில் வந்துள்ள வேற்றுமை எது?', exQ_srA: '«{s}» — ஒவ்வோர் அசையும் நேரா, நிரையா?', exQ_srN: '«{s}» — இச்சீரின் வாய்பாடு எது?',
+    exQ_srF: 'ஈற்றுச்சீர் «{s}» — இதன் வாய்பாடு எது?', exQ_th: '«{a}» — «{b}» : இவ்விரு சீர்களுக்கும் இடையிலான தளை எது?', exQ_tg: '«{w}» — இது எவ்வகைத் தொகைநிலைத் தொடர்?', exQ_an: 'உவமை, எடுத்துக்காட்டு உவமை, உருவகம் — இவற்றுள் இக்குறளில் பயின்று வருவது எது?',
+    exQ_sl: '«{w}» — இக்குறளில் இச்சொல்லின் பொருள் எது?', exResT: 'சுற்றின் முடிவு', exScore: '{a}/{b} சரி · {p}%', exVoidN: 'கணக்கில் இல்லை: {n}',
+    exMoved: 'முன்னேறியவை: {up} · மீண்டும் பழக வேண்டியவை: {dn}', exAgain: 'இன்னொரு சுற்று', exHub: 'தேர்வுப் பயிற்சிப் பக்கம்', exTermsT: 'சொல் விளக்கங்கள்',
+    exTermsNote: 'இவ்விளக்கங்கள் வரைவு; CICT ஆசிரியர் குழு சரிபார்த்து வருகிறது.', exOnKural: '📝 இக்குறளில் தேர்வுப் பயிற்சி', gxT_ilakkanam: 'இலக்கணக் குறிப்பு', gxT_category: 'சொல் வகை',
+    gxT_vetrumai: 'வேற்றுமை', gxT_togai: 'தொகைநிலைத் தொடர்', gxT_ani: 'அணி', gxT_todar: 'அடைமொழி · அடுக்குத்தொடர்',
+    gxOther: 'பிற குறிப்புகள் (அணி அல்லாதவை / சரிபார்க்க வேண்டியவை)', gxPractise: '📝 இக்குறிப்பைப் பயிற்சி செய்யலாம்',
     lnTitle: 'பாடம்', lnName: 'வழிகாட்டும் பாடம்', lnTag: 'நாளுக்கு 10 நிமிடம்', lnIntro: 'கேட்டு, பொருள் அறிந்து, சொல்லி, அமைத்துப் பார்க்கலாம்', lnStartShort: 'தொடங்கலாம்', lnBegin: 'தொடங்கலாம்',
     lnFrGoal: 'எதற்காகப் படிக்கிறீர்கள்?', lnGoalM: 'மனப்பாடமும் பொருளும்', lnGoalC: 'போட்டிக்குத் தயாராக', lnGoalU: 'பொருள் புரிந்தால் போதும்', lnFrMl: 'பொருள் எந்த மொழியில் வேண்டும்?', lnFrTa: 'தமிழ் எழுத்துகளைப் படிக்க முடியுமா?', lnTaYes: 'முடியும்', lnTaNo: 'இன்னும் பழகுகிறேன்',
     lnFrLater: 'மேலுள்ள மூன்று விடைகளையும் பின்னர் "என் வழி" பகுதியில் மாற்றலாம்.', lnMlTa: 'தமிழ் · மு.வ. உரை', lnLabTa: 'மு. வரதராசனார் உரை', lnLabEnProse: 'English prose meaning', lnLabTac: 'தமிழ் உரை · CICT',
@@ -132,6 +182,56 @@ const STR = {
     lineErr: 'இவ்வடி அலகிட முடியவில்லை', update: 'புதிய பதிப்பு உள்ளது — புதுப்பிக்க', ttsUnsupported: 'இந்த உலாவியில் பேச்சு ஒலி இல்லை',
   },
   en: {
+    exTitle: 'Exam practice', exSub: 'Grammar · sandhi · metre · figures of speech', exCardSub: 'Grammar notes · word splitting · scansion · rhyme — from the couplets themselves', exOpen: 'Open',
+    exLevel: 'Level', exPickLv: 'Which level would you like to start at?', exLv1: 'Level 1', exLv2: 'Level 2',
+    exLv3: 'Level 3', exLv0: 'All · contests / adults', exLvHint: 'Rough guide: Level 1 ≈ classes 6–7 · Level 2 ≈ 8–9 · Level 3 ≈ 10–12. This grouping is provisional, awaiting the CICT teacher panel, and has not yet been matched to any syllabus.', exSrc: 'From which couplets?',
+    exSrcMine: 'Ones I have studied', exSrcToday: 'Today’s lesson', exSrcBook: 'The whole book', exSrcCh: 'Chapter',
+    exSrcMemo: 'Memorised', exStart: 'Start a mixed round', exResume: 'Continue · {i}/{n}', exMissBtn: 'Redo my mistakes ({n})',
+    exStats: 'Practice days: {d} · answered: {q} · right: {p}%', exTopics: 'Topics', exGrpGram: 'Grammar', exGrpWord: 'Words',
+    exGrpMetre: 'Metre · rhyme', exGrpAni: 'Figures of speech', exMastered: 'Mastered {a}/{b}', exItems: 'questions: {n}',
+    exPractise: 'Practise', exFewData: 'Not enough confident questions for this at this level', exSl: 'Word meanings (English)', exSlSub: 'Meanings are in English only; the data has no Tamil meanings yet.',
+    exSlOpt: 'Optional', exKnown: 'Words whose English meaning you know: {n} / {t}', exHonestT: 'How these questions are made', exHonest1: 'The grammar notes are an AI-assisted, double-verified draft. Low-confidence tags and words a reviewer questioned never become questions; words corrected during review are marked as such.',
+    exHonest2: 'Metre questions come from rule-based scansion; doubtful feet are left out.', exTextbook: 'If your textbook’s answer differs, follow the textbook, and tell us with ⚑.', exConfLegend: 'Confidence: high ≥ 0.90 · good 0.80–0.89 · moderate 0.70–0.79 (level “All” only) · figures of speech carry no score', exTermsLink: '📘 Terms used',
+    exExplorer: '🔎 Grammar explorer', exNoSave: 'No storage space left on this device; practice progress may not be saved.', exNoBank: 'The exam-practice data could not be opened. Please try again when online.', exExamLabel: 'Exam wording: {x}',
+    exEnough: 'Enough for now', exNext: 'Next →', exFinish: 'See the result →', exCheck: 'Check',
+    exI_mcq: 'Choose the right answer.', exI_rows: 'Choose one in each row, then check.', exI_pr: 'Choose the answer that splits the joined words correctly.', exI_al: 'Choose the pattern for each foot.',
+    exWrong: '✗ Not this one — per the CICT note, the answer is: {x}', exRowsVerdict: '{a}/{b} right', exRowsHint: 'Choose one in every row first, then check.', exYourPick: 'your choice',
+    exL_vm: 'Give the grammatical note', exQ_find2: 'Tap the two words in this couplet that are a {x}.', exTgNote: 'A case compound: the case ending is hidden here. Which case it is, is not asked in this question.', exAlVerdict: '✗ {k} of 7 feet right — the full scansion is below.',
+    exRowsWrong: '✗ Not all right — the answer is: {x}', exFindWrong: '✗ Not quite — the right words are marked.', exWrongRule: '✗ Not this one — by the rule, the answer is: {x}', exAnchor: 'first foot',
+    exDraft: 'draft', exFewK: 'too few questions here', gxOtherVet: 'To be checked', exPart: '◐ Not counted either way — per the CICT note, the answer is: {x}',
+    exPartSuper: '«{p}» is right, but the complete grammatical note is «{x}».', exPartAlt: 'The CICT note reads it as «{x}». The data does not always draw the line between «{p}» and «{x}» the same way, so this answer is not counted as wrong.', exFindHint: 'Tap at least one word first, then check.', exCict: 'CICT note',
+    exConfHi: 'high confidence', exConfGood: 'good confidence', exConfMid: 'moderate confidence · draft', exConfParts: 'Confidence of the parts (the compound has no score of its own)',
+    exConfNone: 'No confidence score — subject to scholarly review', exMetreConf: 'Rule-based scansion · metre confidence {c} · checked against the veṇṭaḷai rule', exRhymeConf: 'Found by a letter-matching rule', exDef: 'Definition · draft',
+    exMore: 'Explanation', exWord: '📚 Word details', exKural: '📖 Kural {n}', exListen: '🔊 Listen',
+    exReport: '⚑ Report if this answer looks wrong', exVoided: 'This question will not come back on this device, and this answer is not counted.', exVoidItem: '⚑ not counted', exCorrNote: 'This word’s note was corrected during verification; see Word details.',
+    exSkip: 'This question is not available now; let’s go to the next.', exBuilding: '⏳ Preparing questions…', exNoItems: 'No questions could be made from this selection. Please pick another.', exNotCached: 'These chapters are not on this device yet. Open them when you are online, or save the whole book on the Offline page.',
+    exFallback: 'Not enough questions in the couplets you have studied, so they come from the whole book.', exShort: 'Questions available from this selection: {n}', exReplaced: 'Your answers from the previous round were saved.', exNeutralLegend: 'Greyed-out words don’t count: their notes are not yet certain.',
+    exNeutralRhyme: 'Greyed-out feet are borderline cases (related letters, a different vowel or length); they don’t count in this drill.', exOffTile: '(not counted)', exFindCount: 'To find: {k}', exFound: '✓ found',
+    exMissed: 'missed', exNotThis: 'not this one', exRowThinai: 'Class (tiṇai)', exRowPaal: 'Gender (pāl)',
+    exRowEN: 'Number', exRowIdam: 'Person', exAsaiSeg: 'Unit {i}: {s}', exNer: 'nēr',
+    exNirai: 'nirai', exAlProg: 'Foot {i}/7', exAlCols: 'Foot|Units|Pattern', exAlDone: 'This couplet ends in the foot pattern «{x}».',
+    exPaa: 'Metre: kuṟaḷ veṇpā', exSplitNote: 'In the exam, write the split form; when reciting, say the printed form.', exTail: 'The final {c} was added because the next word «{nx}» begins with a hard consonant (vallinam mikutal); leave it out when splitting.', exUrupu: 'Case ending: {u}',
+    exVtNote: 'A case is recognised by its ending.', exTgNoNum: 'The data does not record the case number', exTgCase: 'Case compound of the {x} case', exTgPanbu: 'Quality compound: the -mai suffix and the linking “ākiya / āṉa” are both dropped.',
+    exAnNote: 'CICT note on the figure · draft', exAnMore: 'This is the figure the data records; the couplet may use others too.', exAnEka: 'When one part is turned into a metaphor and the matching part is stated plainly, not as a metaphor, it is ēkatēca uruvakam; if your textbook says so, follow it.', exPvSix: 'Thing, place, time, part, quality, action — six kinds',
+    exTpAgree: 'uyartiṇai → āṇpāl / peṇpāl / palarpāl; aḵṟiṇai → oṉṟaṉpāl / palaviṉpāl', exR_asai: 'nēr = a lone short or long syllable (with any following consonant); nirai = two shorts, or a short then a long (with any following consonant).', exR_final: 'A last foot ending in a short u counts as one unit: nērpu → kācu, niraipu → piṟappu; nēr → nāḷ, nirai → malar.', exR_th: '{a} ({cls}) before {asai} → {x}',
+    exR_tp: 'Ending -{v} → {x}', exR_tpDem: 'Demonstrative pronoun {w} → {x}', exR_monai: 'mōṉai: feet whose first letters match (vowel sets: a ā ai au · i ī e ē · u ū o ō).', exR_etukai: 'etukai: the first letters are of equal length and the second letters match.',
+    exAdiEtukai: 'Line-initial rhyme (aṭi etukai): «{a}» – «{b}»', exThB: '(last foot of line 1 and first foot of line 2)', exAdi1: '1', exAdi2: '2',
+    exRpNote: 'Exam practice · {d} · «{w}» · app’s answer: {x} · my choice: {y}', exT_sv: 'Word class', exT_pv: 'Kinds of noun', exT_pr: 'Split the word',
+    exT_td: 'Rhyme: mōṉai · etukai', exT_ec: 'Participles', exT_tp: 'Class · gender · number · person', exT_vt: 'Case',
+    exT_sr: 'A foot: units and pattern', exT_th: 'Linkage (taḷai)', exT_vm: 'Finite verbs, participial and verbal nouns', exT_tg: 'Compounds (tokai)',
+    exT_an: 'Figures of speech', exT_al: 'Scan and give the patterns', exT_sl: 'Word meanings', exL_sv: 'Identify the word class',
+    exL_pv: 'Identify the kind of noun', exL_pr: 'Split and write', exL_td_m: 'Pick out the mōṉai words', exL_td_e: 'Pick out the etukai words',
+    exL_ec: 'Give the grammatical note', exL_find: 'Pick it out', exL_tp: 'State the class, gender, number and person', exL_vt: 'Find the case ending and name the case',
+    exL_sr: 'Scan', exL_th: 'Find the linkage', exL_tg: 'Give the grammatical note', exL_an: 'Name the figure of speech',
+    exL_al: 'Scan and give the patterns', exQ_sv: 'What kind of word is «{w}»?', exQ_pv: 'What kind of noun is «{w}»?', exQ_pr: 'Which is the right split of «{stem}»?',
+    exQ_td_m: 'In line {adi}, tap the feet that alliterate (mōṉai) with the first foot «{w}».', exQ_td_e: 'In line {adi}, tap the feet that rhyme (etukai) with the first foot «{w}».', exQ_ec: 'What is the grammatical note for «{w}»?', exQ_find: 'Which word in this couplet is a {x}? Tap it.',
+    exQ_tp: 'What are the class, gender, number and person of «{w}»?', exQ_vt: 'Which case does «{w}» carry?', exQ_srA: 'In «{s}», is each unit nēr or nirai?', exQ_srN: 'What is the pattern (vāypāṭu) of the foot «{s}»?',
+    exQ_srF: 'The last foot «{s}» — what is its pattern?', exQ_th: 'Which taḷai links «{a}» and «{b}»?', exQ_tg: 'What kind of compound is «{w}»?', exQ_an: 'Simile, illustrative simile or metaphor — which of these is used in this couplet?',
+    exQ_sl: 'What does «{w}» mean in this couplet?', exResT: 'Round result', exScore: '{a}/{b} right · {p}%', exVoidN: 'Not counted: {n}',
+    exMoved: 'Moved up: {up} · to practise again: {dn}', exAgain: 'Another round', exHub: 'Exam practice home', exTermsT: 'Terms used in exam practice',
+    exTermsNote: 'These definitions are drafts under review by the CICT teacher panel.', exOnKural: '📝 Exam practice on this couplet', gxT_ilakkanam: 'Grammatical note', gxT_category: 'Word class',
+    gxT_vetrumai: 'Case', gxT_togai: 'Compounds', gxT_ani: 'Figures of speech', gxT_todar: 'Modifiers & repetition',
+    gxOther: 'Other notes (not figures of speech / to be checked)', gxPractise: '📝 Practise this',
     lnTitle: 'Lesson', lnName: 'Guided lesson', lnTag: '10 minutes a day', lnIntro: 'hear it, understand it, say it, rebuild it', lnStartShort: 'Start', lnBegin: 'Start',
     lnFrGoal: 'Why are you learning?', lnGoalM: 'Memorise and understand', lnGoalC: 'Prepare for a contest', lnGoalU: 'Understanding is enough', lnFrMl: 'Meanings in which language?', lnFrTa: 'Can you read Tamil script?', lnTaYes: 'Yes', lnTaNo: 'Still learning',
     lnFrLater: 'You can change these three answers later under "My way".', lnMlTa: 'Tamil · Mu. Va. prose (தமிழ்)', lnLabTa: 'Tamil prose by Mu. Varadarajan', lnLabEnProse: 'English prose meaning', lnLabTac: 'CICT Tamil commentary',
@@ -242,10 +342,11 @@ const t = k => (STR[S.ui] && STR[S.ui][k]) || STR.en[k] || k;
 const DEFAULTS = {
   ui: 'ta', langs: ['en', 'hi'], showTranslit: true, showProse: true, fontScale: 1, theme: 'auto', notify: false,
   notifyTime: '07:00', voices: {}, rate: 1, bookmarks: [], memorised: [], lastKural: 1, proseTab: 'ta_mv',
-  tempo: 320, lastNotified: '', srs: {}, parallelLang: '', srsNew: 5, test: {}, testName: '', testLevel: 2, testSpec: '', testSeed: '', learn: null,
+  tempo: 320, lastNotified: '', srs: {}, parallelLang: '', srsNew: 5, test: {}, testName: '', testLevel: 2, testSpec: '', testSeed: '', learn: null, ex: null,
 };
 let S = Object.assign({}, DEFAULTS, JSON.parse(localStorage.getItem('kural.settings') || '{}'));
 if (S.learn) S.learn = Object.assign(learnDef(), S.learn);
+if (S.ex) S.ex = exNorm(S.ex);
 // சாலமன் பாப்பையா / மு. கருணாநிதி are no longer carried; move those readers to மு. வரதராசனார்.
 if (['ta_sp', 'ta_mk'].includes(S.proseTab)) S.proseTab = 'ta_mv';
 function saveS() { localStorage.setItem('kural.settings', JSON.stringify(S)); applyPrefs(); pushPrefsToSW(); pushWidgetPrefs(); }
@@ -451,10 +552,11 @@ async function route() {
       grammar: () => viewGrammar(q.get('type') || 'ilakkanam', q.get('tag') || ''), offline: viewOffline,
       occasions: () => viewOccasions(p[1] || ''),
       verify: () => viewVerify(q.get('q') || ''),
+      exam: () => viewExam(p[1] || '', q),
     };
     await (map[r] || viewHome)();
     setTab({ home: 'home', daily: 'home', browse: 'browse', ch: 'browse', k: 'browse', compare: 'browse',
-             parallel: 'browse', search: 'search', practice: 'practice', study: 'practice', occasions: 'home', verify: 'search', test: 'practice', learn: 'practice' }[r] || 'more');
+             parallel: 'browse', search: 'search', practice: 'practice', study: 'practice', occasions: 'home', verify: 'search', test: 'practice', learn: 'practice', exam: 'practice' }[r] || 'more');
   } catch (e) {
     console.error(e);
     render(`<div class="card"><h2>⚠️</h2><p>${esc(e.message)}</p><p class="muted">${navigator.onLine ? '' : t('offline.banner')}</p></div>`);
@@ -607,7 +709,7 @@ async function viewKural(n) {
   ${trCards || `<div class="card muted">${t('chooseLangs')}</div>`}
   ${S.showProse ? `<div class="card"><h2>${t('prose')}</h2><div class="tabs-inline" id="prose-tabs">${proseTabs.map(p => `<button data-p="${p[0]}" class="${p[0] === S.proseTab ? 'on' : ''} ${scriptClass(p[0].startsWith('ta') ? 'ta' : p[0])}">${esc(p[1])}</button>`).join('')}</div><div id="prose-body"></div></div>` : ''}
   <div class="card"><h2>${t('metre')}</h2>${scanHTML(k.yappu)}<div class="row" style="margin-top:8px"><a class="btn small" href="#/practice/${n}">🎵 ${t('practice')}</a></div></div>
-  <div class="card"><h2>${t('grammar')}</h2><div id="wordtable" class="wordtable"><span class="muted">…</span></div><div class="ai-note">${t('grNote')}</div></div>
+  <div class="card"><h2>${t('grammar')}</h2><div id="wordtable" class="wordtable"><span class="muted">…</span></div><div class="ai-note">${t('grNote')}</div><div id="ex-k"></div></div>
   <div class="card" id="ms-card"><h2>🌿 ${t('palmleaf')}</h2><div id="ms-body"><span class="muted">…</span></div></div>`);
 
   // wiring
@@ -661,6 +763,7 @@ async function viewKural(n) {
       if (idx < 0) { const tx = stripPunct(btn.textContent); idx = words.findIndex(w => stripPunct(w.w) === tx); }
       if (idx >= 0) { $$('.couplet .w').forEach(x => x.classList.toggle('on', x === btn)); open(idx); } else toast('—');
     });
+    exKuralBtn(n);
   } catch (e) { const wt = $('#wordtable'); if (wt) wt.innerHTML = `<span class="muted">${esc(e.message)}</span>`; }
   renderManuscript(n);
 }
@@ -749,7 +852,7 @@ function reportShownText(k, code) {
   if (code === 'manuscript') { const m = D.ms && D.ms[String(k.n)]; return m ? `${m.scribal || ''}\n${m.ms || ''} ${m.doi || ''}`.trim() : ''; }
   return '';
 }
-function buildReport(k, cm, code, type, note, fix) {
+function buildReport(k, cm, code, type, note, fix, extra) {
   const label = (reportStreams(k).find(s => s[0] === code) || [code, code])[1];
   const credit = L(code) ? L(code).credit : '';
   const m = D.meta; const edition = IS_ANDROID_APP ? 'android' : SINGLE ? 'single-file' : 'web';
@@ -760,10 +863,11 @@ function buildReport(k, cm, code, type, note, fix) {
     '', 'காட்டப்பட்ட பாடம் / Text shown:', reportShownText(k, code) || '—',
     '', 'தவறு / What is wrong:', note || '—',
     '', 'திருத்தம் / Suggested correction:', fix || '—',
+    ...(extra ? ['', extra] : []),
     '', `App: ${edition} · build ${m.built} · v${m.version} · ui ${S.ui}`,
     `Link: ${appUrl()}#/k/${k.n}`].join('\n');
 }
-function openReportSheet(k, cm, code) {
+function openReportSheet(k, cm, code, pre) {
   const streams = reportStreams(k); if (!streams.some(s => s[0] === code)) code = 'ta';
   openSheet(`<h2>⚑ ${t('report')}</h2><div class="muted" style="font-size:.85rem">${t('reportHelp')}</div>
     <div class="field"><label class="muted" for="rp-stream">${t('rpStream')}</label><select id="rp-stream">${streams.map(s => `<option value="${esc(s[0])}"${s[0] === code ? ' selected' : ''}>${esc(s[1])}</option>`).join('')}</select></div>
@@ -772,13 +876,15 @@ function openReportSheet(k, cm, code) {
     <div class="field"><label class="muted" for="rp-fix">${t('rpFix')}</label><textarea id="rp-fix" rows="2"></textarea></div>
     <div class="row" style="margin-top:10px"><button class="btn primary" id="rp-email">✉ ${t('rpEmail')}</button>${(NATIVE_SHARE || navigator.share) ? `<button class="btn" id="rp-share">⤴ ${t('rpShare')}</button>` : ''}<button class="btn" id="rp-copy">⧉ ${t('rpCopy')}</button><span class="grow"></span><button class="btn small" onclick="closeSheet()">✕</button></div>
     <div class="muted" style="font-size:.78rem;margin-top:8px">${t('rpReviewed')}</div>`);
-  const text = () => buildReport(k, cm, $('#rp-stream').value, $('#rp-type').value, $('#rp-note').value.trim(), $('#rp-fix').value.trim());
+  if (pre) { if (pre.type) $('#rp-type').value = pre.type; if (pre.note) $('#rp-note').value = pre.note; }
+  const sent = () => { if (pre && pre.onSent) pre.onSent(); };
+  const text = () => buildReport(k, cm, $('#rp-stream').value, $('#rp-type').value, $('#rp-note').value.trim(), $('#rp-fix').value.trim(), pre && pre.extra);
   const subject = () => `[Tirukkural ${k.n}] ${$('#rp-stream').selectedOptions[0].textContent} — ${$('#rp-type').selectedOptions[0].textContent}`;
   const to = () => (D.meta.credits && D.meta.credits.contact) || 'kannan.k@cict.in';
-  $('#rp-email').onclick = () => { location.href = `mailto:${to()}?subject=${encodeURIComponent(subject())}&body=${encodeURIComponent(text())}`; toast(t('rpOpened')); };
-  const sh = $('#rp-share'); if (sh) sh.onclick = () => { const body = text(); if (NATIVE_SHARE) { try { NATIVE_SHARE.text(subject(), body); return; } catch (e) { } } navigator.share({ title: subject(), text: body }).catch(() => { }); };
-  $('#rp-copy').onclick = () => navigator.clipboard.writeText(text()).then(() => toast('✓ ' + t('rpCopy')));
-  $('#rp-note').focus();
+  $('#rp-email').onclick = () => { location.href = `mailto:${to()}?subject=${encodeURIComponent(subject())}&body=${encodeURIComponent(text())}`; toast(t('rpOpened')); sent(); };
+  const sh = $('#rp-share'); if (sh) sh.onclick = () => { const body = text(); if (NATIVE_SHARE) { try { NATIVE_SHARE.text(subject(), body); sent(); return; } catch (e) { } } navigator.share({ title: subject(), text: body }).then(sent).catch(() => { }); };
+  $('#rp-copy').onclick = () => navigator.clipboard.writeText(text()).then(() => { toast('✓ ' + t('rpCopy')); sent(); });
+  (pre ? $('#rp-type') : $('#rp-note')).focus();
 }
 function toggleBookmark(n) {
   const i = S.bookmarks.indexOf(n); if (i >= 0) S.bookmarks.splice(i, 1); else S.bookmarks.push(n); saveS();
@@ -1166,6 +1272,7 @@ async function viewPracticeIndex() {
   const n = dailyN(); const k = await kural(n);
   render(`${learnCardHTML('any')}<div class="card"><h2>${t('daily')}</h2>${coupletHTML(k)}<div class="actions"><a class="btn primary" href="#/practice/${n}">🎵 ${t('start')}</a></div></div>
   <div class="card"><h2>🏆 ${t('test')}</h2><div class="muted">${t('testSub')}</div><div class="row" style="margin-top:8px"><a class="btn primary" href="#/test">🏆 ${t('test')}</a><a class="btn" href="#/test/board">📊 ${t('testBoard')}</a></div></div>
+  <div class="card"><h2>📝 ${t('exTitle')}</h2><div class="muted">${t('exCardSub')}</div>${S.ex ? `<div class="muted" style="margin-top:4px">${fmt(t('exStats'), { d: S.ex.hist.days, q: S.ex.hist.q, p: S.ex.hist.q ? Math.round(100 * S.ex.hist.r / S.ex.hist.q) : 0 })}</div>` : ''}<div class="row" style="margin-top:8px"><a class="btn primary" href="#/exam">📝 ${S.ex && S.ex.cur && exToday() - S.ex.cur.d <= 7 && (!EX.bank || S.ex.cur.rev === EX.bank.rev) ? fmt(t('exResume'), { i: Math.min(S.ex.cur.i + 1, S.ex.cur.ids.length), n: S.ex.cur.ids.length }) : t('exOpen')}</a></div></div>
   ${SINGLE ? '' : `<div class="card"><h2>🧩 ${t('kattam')}</h2><div class="muted">${t('kattamSub')}</div><div class="row" style="margin-top:8px"><a class="btn primary" href="kattam/index.html">🧩 ${t('kattamGo')}</a></div></div>`}
   <div class="card"><h2>${t('kural')}</h2><div class="row"><input type="text" inputmode="numeric" id="pn" placeholder="1–1330" style="max-width:140px"><button class="btn" id="pgo">→</button><a class="btn" href="#/practice/${1 + Math.floor(Math.random() * 1330)}">🎲 ${t('random')}</a></div></div>
   <div class="card"><h2>🧠 ${t('study')}</h2><div class="muted">spaced repetition</div>
@@ -1809,8 +1916,10 @@ window.addEventListener('storage', e => {   // another tab or the installed copy
   if (e.key !== 'kural.settings' || !e.newValue) return;
   try {
     const live = $('#ln-step') ? S.learn : undefined;                         // a lesson on screen keeps its own state: its steps hold references into it
+    const liveE = exOnGo() ? S.ex : undefined;
     Object.assign(S, JSON.parse(e.newValue));
     if (live !== undefined) S.learn = live; else if (S.learn) S.learn = Object.assign(learnDef(), S.learn);
+    if (liveE !== undefined) S.ex = liveE; else if (S.ex) S.ex = exNorm(S.ex);
   } catch (err) { }
 });
 
@@ -2396,6 +2505,995 @@ async function viewLearn(q, keep) {
   });
 }
 
+// ───────────────────────────── தேர்வுப் பயிற்சி · exam practice ─────────────────────────────
+// School-exam analysis drills (grammar, sandhi, metre, rhyme, அணி) over data/ex.json, which
+// build/build_exam.py writes. Every eligibility decision is made at build time; this block only
+// samples, renders and grades. Each item is re-resolved against the loaded ch/gr files before it
+// is shown (exItem, the stale guard) and is skipped, never graded, on any mismatch. Mastery is a
+// day-close Leitner per skill with false alarms (exMark). The module is read-only toward S.srs,
+// S.memorised, S.learn and S.test: a grammar answer is not evidence of recall.
+const EX = { tok: 0, busy: false, t: 0, warned: false, start: null, bank: null, bankP: null, day: 0, note: '', gloss: null };
+const EX_N = 10, EX_FLOOR = 30, EX_SKILL_MIN = 20;
+const EX_TOPICS = [{ t: 'sv', g: 'gram', lv: 1 }, { t: 'pv', g: 'gram', lv: 1 }, { t: 'pr', g: 'word', lv: 1 }, { t: 'td', g: 'metre', lv: 1 },
+  { t: 'ec', g: 'gram', lv: 2 }, { t: 'tp', g: 'gram', lv: 2 }, { t: 'vt', g: 'gram', lv: 2 }, { t: 'sr', g: 'metre', lv: 2 }, { t: 'th', g: 'metre', lv: 2 },
+  { t: 'vm', g: 'gram', lv: 3 }, { t: 'tg', g: 'gram', lv: 3 }, { t: 'an', g: 'ani', lv: 3 }, { t: 'al', g: 'metre', lv: 3 }, { t: 'sl', g: 'word', lv: 0 }];   // editable, pending CICT sign-off
+const EX_GROUPS = [['exGrpGram', ['sv', 'pv', 'ec', 'vm', 'tp', 'vt', 'tg']], ['exGrpWord', ['pr']], ['exGrpMetre', ['td', 'sr', 'th', 'al']], ['exGrpAni', ['an']]];
+const EX_ORD = { 1: ['முதல்', 'nominative'], 2: ['இரண்டாம்', 'accusative'], 3: ['மூன்றாம்', 'instrumental'], 4: ['நான்காம்', 'dative'], 5: ['ஐந்தாம்', 'ablative'], 6: ['ஆறாம்', 'genitive'], 7: ['ஏழாம்', 'locative'], 8: ['எட்டாம்', 'vocative'] };
+const EXN = {
+  cat: { 'பெயர்': ['பெயர்ச்சொல்', 'noun'], 'வினை': ['வினைச்சொல்', 'verb'], 'இடை': ['இடைச்சொல்', 'particle'], 'உரி': ['உரிச்சொல்', 'qualifier'] },
+  pv: { 'பொருட்பெயர்': ['பொருட்பெயர்', 'noun of thing'], 'இடப்பெயர்': ['இடப்பெயர்', 'noun of place'], 'காலப்பெயர்': ['காலப்பெயர்', 'noun of time'], 'சினைப்பெயர்': ['சினைப்பெயர்', 'noun of part'], 'பண்புப்பெயர்': ['பண்புப்பெயர்', 'noun of quality'], 'தொழிற்பெயர்': ['தொழிற்பெயர்', 'noun of action'] },
+  ec: { 'பெயரெச்சம்': ['பெயரெச்சம்', 'adjectival participle'], 'வினையெச்சம்': ['வினையெச்சம்', 'adverbial participle'], 'எதிர்மறைபெயரெச்சம்': ['எதிர்மறைப் பெயரெச்சம்', 'negative adjectival participle'], 'எதிர்மறைவினையெச்சம்': ['எதிர்மறை வினையெச்சம்', 'negative adverbial participle'] },
+  vm: { 'தெரிநிலைவினைமுற்று': ['தெரிநிலை வினைமுற்று', 'finite verb (tense shown)'], 'குறிப்புவினைமுற்று': ['குறிப்பு வினைமுற்று', 'finite verb (tense implied)'], 'எதிர்மறைவினைமுற்று': ['எதிர்மறை வினைமுற்று', 'negative finite verb'], 'வியங்கோள்வினைமுற்று': ['வியங்கோள் வினைமுற்று', 'optative'], 'வினையாலணையும்பெயர்': ['வினையாலணையும் பெயர்', 'participial noun'], 'தொழிற்பெயர்': ['தொழிற்பெயர்', 'verbal noun'] },
+  ti: { 'உயர்திணை': ['உயர்திணை', 'rational class'], 'அஃறிணை': ['அஃறிணை', 'non-rational class'] },
+  pa: { 'ஆண்பால்': ['ஆண்பால்', 'masculine'], 'பெண்பால்': ['பெண்பால்', 'feminine'], 'பலர்பால்': ['பலர்பால்', 'rational plural'], 'ஒன்றன்பால்': ['ஒன்றன்பால்', 'neuter singular'], 'பலவின்பால்': ['பலவின்பால்', 'neuter plural'] },
+  en: { 'ஒருமை': ['ஒருமை', 'singular'], 'பன்மை': ['பன்மை', 'plural'] },
+  id: { 'தன்மை': ['தன்மை', 'first person'], 'முன்னிலை': ['முன்னிலை', 'second person'], 'படர்க்கை': ['படர்க்கை', 'third person'] },
+  vt: Object.fromEntries([2, 3, 4, 5, 6, 7].map(n => [n, [EX_ORD[n][0] + ' வேற்றுமை', EX_ORD[n][1]]])),
+  tg: { 'வேற்றுமைத்தொகை': ['வேற்றுமைத் தொகை', 'case compound'], 'வினைத்தொகை': ['வினைத் தொகை', 'verbal compound'], 'பண்புத்தொகை': ['பண்புத் தொகை', 'quality compound'], 'உவமைத்தொகை': ['உவமைத் தொகை', 'simile compound'], 'உம்மைத்தொகை': ['உம்மைத் தொகை', 'conjunctive compound'], 'அன்மொழித்தொகை': ['அன்மொழித் தொகை', 'exocentric compound'] },
+  an: { 'உவமை': ['உவமை அணி', 'simile'], 'எடுத்துக்காட்டுவமை': ['எடுத்துக்காட்டு உவமை அணி', 'illustrative simile'], 'உருவகம்': ['உருவக அணி', 'metaphor'] },
+  vp: { 'தேமா': ['தேமா', 'tēmā'], 'புளிமா': ['புளிமா', 'puḷimā'], 'கூவிளம்': ['கூவிளம்', 'kūviḷam'], 'கருவிளம்': ['கருவிளம்', 'karuviḷam'], 'தேமாங்காய்': ['தேமாங்காய்', 'tēmāṅkāy'], 'புளிமாங்காய்': ['புளிமாங்காய்', 'puḷimāṅkāy'], 'கூவிளங்காய்': ['கூவிளங்காய்', 'kūviḷaṅkāy'], 'கருவிளங்காய்': ['கருவிளங்காய்', 'karuviḷaṅkāy'] },
+  fn: { 'நாள்': ['நாள்', 'nāḷ'], 'மலர்': ['மலர்', 'malar'], 'காசு': ['காசு', 'kācu'], 'பிறப்பு': ['பிறப்பு', 'piṟappu'] },
+  th: { 'இயற்சீர் வெண்டளை': ['இயற்சீர் வெண்டளை', 'iyaṟcīr veṇṭaḷai'], 'வெண்சீர் வெண்டளை': ['வெண்சீர் வெண்டளை', 'veṇcīr veṇṭaḷai'], 'நேரொன்றிய ஆசிரியத்தளை': ['நேரொன்றிய ஆசிரியத்தளை', 'nēroṉṟiya āciriyattaḷai'], 'நிரையொன்றிய ஆசிரியத்தளை': ['நிரையொன்றிய ஆசிரியத்தளை', 'niraiyoṉṟiya āciriyattaḷai'], 'கலித்தளை': ['கலித்தளை', 'kalittaḷai'] },
+};
+const EX_DEF = {
+  'வேற்றுமைத்தொகை': { ta: 'வேற்றுமை உருபு மறைந்து வரும் தொகைநிலைத் தொடர் வேற்றுமைத் தொகை (எ.கா. தமிழ்கற்றான் = தமிழைக் கற்றான் — இரண்டாம் வேற்றுமைத் தொகை).', en: 'Case compound: a compound in which the case ending is dropped (e.g. tamiḻkaṟṟāṉ = tamiḻaik kaṟṟāṉ, “he learnt Tamil” — accusative).' },   // EX-COPY-17
+  'உவமை': { ta: 'போல, அன்ன, அனைய, ஒப்ப முதலிய உவம உருபு வெளிப்படையாக வந்து, ஒன்றை மற்றொன்றோடு ஒப்பிடுவது உவமை அணி.', en: 'Simile: one thing is compared with another through an explicit word of comparison such as pōla, aṉṉa, aṉaiya or oppa.' },
+  'எடுத்துக்காட்டுவமை': { ta: 'உவமையும் பொருளும் தனித்தனி வாக்கியங்களாக வர, இடையே உவம உருபு மறைந்து வருவது எடுத்துக்காட்டு உவமை அணி.', en: 'Illustrative simile: the comparison and the point compared are stated as two separate sentences, with no word of comparison between them.' },
+  'உருவகம்': { ta: 'உவமையையும் பொருளையும் வேறுபாடின்றி ஒன்றாக்கி, பொருளையே உவமையாகக் கூறுவது உருவக அணி.', en: 'Metaphor: the thing and what it is compared to are fused, so the thing is spoken of as the other.' },
+  'பண்புத்தொகை': { ta: 'பண்புப் பெயருக்கும் அது தழுவும் பெயருக்கும் இடையே “மை” விகுதியும் “ஆகிய, ஆன” என்னும் உருபும் மறைந்து வருவது பண்புத் தொகை (எ.கா. செந்தாமரை = செம்மையான தாமரை).', en: 'Quality compound: the -mai suffix and the linking ākiya/āṉa between a quality and the noun it qualifies are dropped (e.g. centāmarai = cemmaiyāṉa tāmarai, “red lotus”).' },
+  'வினையாலணையும்பெயர்': { ta: 'வினைமுற்று, வினையைச் செய்தவரைக் குறிக்கும் பெயராக நின்று வேற்றுமை ஏற்பது வினையாலணையும் பெயர் (எ.கா. “சென்றானைக் கண்டேன்” — சென்றானை).', en: 'Participial noun: a finite-verb form used as a noun for the doer, able to take case endings (e.g. ceṉṟāṉai in “ceṉṟāṉaik kaṇṭēṉ”, “I saw the one who went”).' },
+};
+const VET_MEAN = { 2: ['செயப்படுபொருள்', 'object'], 3: ['கருவி · கருத்தா · உடனிகழ்ச்சி', 'instrument, agent, association'], 4: ['கொடை · நோக்கம் (பொருட்டு)', 'giving, purpose'], 5: ['நீங்கல் · ஒப்பு · எல்லை · ஏது', 'separation, comparison, limit, cause'], 6: ['உடைமை', 'possession'], 7: ['இடம்', 'location'] };
+const ANI_CANON = { 'உருவகம': 'உருவகம்', 'வினாஅணி': 'வினா', 'வினா-விடை': 'வினா', 'இயைபு/ஒலிநயம': 'இயைபு/ஒலிநயம்' };
+const ANI_OTHER = new Set(['இயைபு/ஒலிநயம்', 'இயைபு', 'ஒலிநயம்', 'அன்மொழித்தொகை', 'உவமைத்தொகை', 'உம்மைத்தொகை', 'அடுக்குத்தொடர்', 'எண்ணு', 'குறிப்பு', 'வேற்றுமை அணி/முரண்', 'வஞ்சப்புகழ்ச்சி/முரண்']);
+const VET_CANON = { '3 · கருவி': '3 · கருவி/உடன்', '3 · உடன்': '3 · கருவி/உடன்', '5 · ஒப்பு': '5 · நீங்கல்/ஒப்பு' };
+const VET_OTHER = new Set(['4 · கருவி/உடன்']);
+const EX_VP = { NN: 'தேமா', IN: 'புளிமா', NI: 'கூவிளம்', II: 'கருவிளம்', NNN: 'தேமாங்காய்', INN: 'புளிமாங்காய்', NIN: 'கூவிளங்காய்', IIN: 'கருவிளங்காய்' };
+const EX_BOX = [0, 1, 2, 4, 7, 15];
+const EX_SUPER = { 'எதிர்மறைவினையெச்சம்': 'வினையெச்சம்', 'எதிர்மறைபெயரெச்சம்': 'பெயரெச்சம்' };   // right, but not the complete note
+
+function exDef() {   // hoisted declaration, literals only (no TDZ at boot)
+  return { v: 1, lv: null, src: 'mine', sk: {}, w: {}, miss: [], rec: [], off: [], cur: null, last: null, hist: { n: 0, q: 0, r: 0, days: 0, last: 0 } };
+}
+const exToday = () => EX.day || learnDay();
+const exOnGo = () => location.hash.startsWith('#/exam/go');
+const exF = (key, obj) => fmt(t(key), obj || {});
+const exE = (key, obj) => { const o = {}; for (const k in obj || {}) o[k] = esc(obj[k]); return exF(key, o); };   // escaped values, trusted template
+const exTa = s => (String(s || '').normalize('NFC').match(/[஀-௿]+/g) || []).join('');
+const exGra = s => exTa(s).match(/[ஃஅ-ஹ][ா-்ௗ]*/g) || [];
+const exGlen = s => (String(s).match(/[஀-௿][ா-்ௗ]*|./gu) || []).length;
+const exBits = m => { const o = []; for (let i = 0; m >> i; i++) if ((m >> i) & 1) o.push(i); return o; };
+const exPop = m => exBits(m).length;
+const exFp = s => fnv1a(tWord(s)) & 0xffff;
+const exCf = x => Math.round((x || 0) * 100);
+const exBase = c => String(c).replace(/^s[an]:/, 'sr:');
+const exK = n => { const c = D.ch[chOf(n)]; return c ? c.kurals[(n - 1) % 10] : null; };
+const exG = n => { const g = D.gr[chOf(n)]; return g && g.kurals ? g.kurals[String(n)] || null : null; };
+const exToks = k => [...k.l1.split(/\s+/), ...k.l2.split(/\s+/)].filter(Boolean);
+const exWordOf = (g, w) => stripPunct(g.words[w].w);
+const exSl = gl => String(gl || '').replace(/\(.*?\)|\[.*?\]/g, '').replace(/\s+/g, ' ').replace(/^[\s,;]+|[\s,;]+$/g, '');
+function exLabel(type, raw) {
+  if (type === 'ilakkanam') type = ['pv', 'ec', 'vm'].find(s => EXN[s][raw]) || '';
+  else if (type === 'category') type = 'cat';
+  else if (type === 'togai') type = 'tg';
+  else if (type === 'vetrumai') {
+    const m = /^(\d) · (.+)$/.exec(String(raw)); const o = m && EX_ORD[m[1]];
+    if (!o || VET_OTHER.has(raw)) return String(raw);
+    return `${o[0]} வேற்றுமை · ${m[2]}${S.ui === 'en' ? ' · ' + o[1] : ''}`;
+  }
+  const e = EXN[type] && EXN[type][raw];
+  if (!e) return String(raw);
+  return S.ui === 'en' && e[1] ? `${e[0]} · ${e[1]}` : e[0];
+}
+function exDefn(raw) {
+  const d = EX_DEF[raw] || (EX.gloss && EX.gloss.terms && EX.gloss.terms[raw]);
+  return d ? (S.ui === 'ta' ? d.ta : d.en) : '';
+}
+function exSave() { try { localStorage.setItem('kural.settings', JSON.stringify(S)); } catch (e) { if (!EX.warned) { EX.warned = true; toast(t('exNoSave'), 4000); } } }
+function exSaveAll() { try { saveS(); } catch (e) { exSave(); } }
+function exEnsure() { if (!S.ex) S.ex = exDef(); return S.ex; }
+function exNorm(o) {   // ST-11: a stored ex with a missing or wrong-typed field must not break the Practice tab
+  const x = Object.assign(exDef(), o && typeof o === 'object' ? o : {});
+  const obj = v => !!v && typeof v === 'object' && !Array.isArray(v);
+  if (!obj(x.sk)) x.sk = {}; if (!obj(x.w)) x.w = {};
+  for (const k of ['miss', 'rec', 'off']) if (!Array.isArray(x[k])) x[k] = [];
+  if (!obj(x.hist)) x.hist = exDef().hist; else for (const k of ['n', 'q', 'r', 'days', 'last']) if (typeof x.hist[k] !== 'number') x.hist[k] = 0;
+  if (x.cur && !(Array.isArray(x.cur.ids) && typeof x.cur.i === 'number' && Array.isArray(x.cur.a) && x.cur.b0 && typeof x.cur.b0 === 'object')) x.cur = null;
+  if (x.last && !(Array.isArray(x.last.items) && Array.isArray(x.last.up) && Array.isArray(x.last.dn))) x.last = null;
+  if (![null, 0, 1, 2, 3].includes(x.lv)) x.lv = null;
+  if (typeof x.src !== 'string') x.src = 'mine';
+  return x;
+}
+
+// ── mastery: day-close Leitner with false alarms ──
+function exClose(tp, today) {
+  if (tp[1] < today && tp[3] + tp[4] > 0) {
+    const acc = tp[2] / (tp[3] + tp[4]);
+    if (tp[3] > 0 && acc >= 0.8) tp[0] = Math.min(5, tp[0] + 1); else if (acc < 0.5) tp[0] = Math.max(0, tp[0] - 1);
+    tp[2] = tp[3] = tp[4] = 0; tp[1] = today;
+  }
+  return tp;
+}
+function exEff(x, today) {   // x: a skill name or a tuple; today's provisional progress counts
+  const tp = typeof x === 'string' ? (S.ex && S.ex.sk[x]) : x;
+  if (!tp) return 0;
+  return exClose(tp.slice(), (today || exToday()) + 1)[0];
+}
+function exMark(skill, kind) {
+  const today = exToday(); const sk = exEnsure().sk;
+  const tp = exClose(sk[skill] || [0, today, 0, 0, 0, 0, 0], today); tp[1] = today;
+  if (kind === 'hit') { tp[3]++; tp[2]++; tp[5]++; tp[6]++; } else if (kind === 'miss') { tp[3]++; tp[5]++; } else tp[4]++;
+  sk[skill] = tp;
+}
+function exDue(skill) { const tp = S.ex && S.ex.sk[skill]; if (!tp) return true; return exToday() - tp[1] >= EX_BOX[exEff(skill)]; }
+const exWeak = skill => { const tp = S.ex && S.ex.sk[skill]; return !!tp && exEff(skill) < 2; };
+function exWord(form, ok) {
+  const today = exToday(); const w = exEnsure().w; const r = w[form] || [0, today, 0];
+  if (r[1] < today) { if (r[2] === 1) r[0]++; else if (r[2] === -1) r[0] = 0; r[2] = 0; r[1] = today; }
+  if (ok) { if (r[2] === 0) r[2] = 1; } else r[2] = -1;
+  w[form] = r;
+}
+const exWordEff = form => { const r = S.ex && S.ex.w[form]; if (!r) return 0; return r[2] === -1 ? 0 : r[0] + (r[2] === 1 ? 1 : 0); };
+
+// ── the bank ──
+async function exBank() {
+  if (EX.bank) return EX.bank;
+  if (!EX.bankP) EX.bankP = getJSON('data/ex.json').then(j => (EX.bank = exIndex(j))).catch(e => { console.warn('ex.json', e); EX.bankP = null; return null; });
+  return EX.bankP;
+}
+function exIndex(j) {
+  const s = j.sets, I = j.items, doff = new Set(j.doff || []);
+  const B = { rev: j.rev, sets: s, off: new Set((j.off || []).map(exBase)), doff, corr: new Set(j.corr || []), row: {}, mt: {}, E: [], fd: {}, byN: new Map(), cnt: { 70: {}, 80: {} }, skc: { 70: {}, 80: {} }, tsk: {} };
+  const add = (c, tp, n, sk, cf, x) => {
+    const e = { c, t: tp, n, sk, cf, x }; B.E.push(e);
+    (B.byN.get(n) || B.byN.set(n, []).get(n)).push(e);
+    (B.tsk[tp] ||= new Set()).add(sk);
+    for (const th of [70, 80]) if (cf >= th) { B.cnt[th][tp] = (B.cnt[th][tp] || 0) + 1; B.skc[th][sk] = (B.skc[th][sk] || 0) + 1; }
+  };
+  const W = (d, f) => { if (doff.has(d)) return; (I[d] || []).forEach(f); };
+  W('sv', r => { const c = `sv:${r[0]}.${r[1]}.${r[2]}`; B.row[c] = r; add(c, 'sv', r[0], 'cat:' + s.cat[r[3]], r[4]); });
+  W('pv', r => { const c = `pv:${r[0]}.${r[1]}.${r[2]}`; B.row[c] = r; add(c, 'pv', r[0], 'ilk:' + s.pv[r[3]], r[4]); });
+  W('ec', r => { const c = `ec:${r[0]}.${r[1]}.${r[2]}`; B.row[c] = r; add(c, 'ec', r[0], 'ilk:' + s.ec[r[3]], r[4], 'e' + r[3]); });
+  W('vm', r => { const c = `vm:${r[0]}.${r[1]}.${r[2]}`; B.row[c] = r; add(c, 'vm', r[0], 'ilk:' + s.vm[r[3]], r[4], 'v' + r[3]); });
+  W('fd', r => { const c = `fd:${r[0]}.${r[1]}${r[2]}`; B.row[c] = r; (B.fd[r[1] + r[2]] ||= []).push({ c, t: r[1] === 'e' ? 'ec' : 'vm', n: r[0], sk: 'ilk:' + (r[1] === 'e' ? s.ec : s.vm)[r[2]], cf: r[3] }); });
+  W('tp', r => { const c = `tp:${r[0]}.${r[1]}.${r[2]}`; B.row[c] = r; add(c, 'tp', r[0], 'pa:' + s.pa[r[4]], r[7]); });
+  W('vt', r => { const c = `vt:${r[0]}.${r[1]}`; B.row[c] = r; add(c, 'vt', r[0], 'vt:' + s.vt[r[2]], r[3]); });
+  W('tg', r => { const c = `tg:${r[0]}.${r[1]}`; B.row[c] = r; add(c, 'tg', r[0], 'tg:' + s.tg[r[2]], r[3]); });
+  W('pr', r => { const c = `pr:${r[0]}.${r[1]}`; B.row[c] = r; add(c, 'pr', r[0], 'pr', r[2]); });
+  W('an', r => { const c = `an:${r[0]}`; B.row[c] = r; add(c, 'an', r[0], 'an:' + s.an[r[1]], 100); });
+  W('sl', r => { const c = `sl:${r[0]}.${r[1]}.${r[2]}`; B.row[c] = r; add(c, 'sl', r[0], 'sl', r[3]); });
+  W('td', r => { if (doff.has('td_' + r[2])) return; const c = `td:${r[0]}.${r[1]}.${r[2]}`; B.row[c] = r; add(c, 'td', r[0], 'td:' + r[2], 100); });
+  (I.mt || []).forEach(r => {
+    const n = r[0]; B.mt[n] = r; const ai = r[3];
+    if (!(doff.has('sa') && doff.has('sn'))) for (let i = 0; i < 6; i++) if (!((ai >> i) & 1)) add(`sr:${n}.${i}`, 'sr', n, 'vp:' + s.vp[+r[1][i]], 100);
+    if (!doff.has('sf') && !((ai >> 6) & 1)) add(`sf:${n}`, 'sr', n, 'fn:' + s.fn[+r[1][6]], 100);
+    if (!doff.has('th')) for (let j = 0; j < 6; j++) add(`th:${n}.${j}`, 'th', n, 'th:' + s.th[+r[2][j]], 100);
+    if (!doff.has('al') && ai === 0) add(`al:${n}`, 'al', n, 'fn:' + s.fn[+r[1][6]], 100);
+  });
+  return B;
+}
+const exThr = lv => lv === 0 ? 70 : 80;
+function exTopicsAt(lv) { return EX_TOPICS.filter(x => x.t !== 'sl' && (lv === 0 || lv == null || x.lv <= lv)); }
+function exTopicStats(topic, lv) {
+  const B = EX.bank, thr = exThr(lv); const n = (B && B.cnt[thr][topic]) || 0;
+  const sks = [...((B && B.tsk[topic]) || [])].filter(sk => (B.skc[thr][sk] || 0) >= EX_SKILL_MIN);
+  const effs = sks.map(sk => exEff(sk));
+  return { n, b: sks.length, a: effs.filter(e => e >= 4).length, bar: effs.length ? effs.reduce((p, e) => p + e / 5, 0) / effs.length : 0 };
+}
+function exMineSet() {
+  const set = new Set([...(S.learn && S.learn.ch ? learnIntroduced() : []), ...Object.keys(S.srs).map(Number), ...S.memorised]);
+  return [...set].filter(n => n >= 1 && n <= 1330).sort((a, b) => a - b);
+}
+const exTodayOk = () => !!(S.learn && S.learn.last && S.learn.last.d === learnDay() && S.learn.last.ns && S.learn.last.ns.length);
+function exSources(src) {
+  let ns = [], fallback = false; const s = String(src || 'mine'); let m;
+  if (s === 'mine') ns = exMineSet();
+  else if (s === 'today') ns = exTodayOk() ? S.learn.last.ns.slice() : [];
+  else if ((m = /^k-(\d+)$/.exec(s))) ns = +m[1] >= 1 && +m[1] <= 1330 ? [+m[1]] : [];
+  else if (s === 'miss') ns = [...new Set(S.ex.miss.map(c => +c.split(':')[1].split('.')[0]))];
+  else { const R = testRange(s); ns = R ? R.ns.slice() : []; }
+  if (!s.startsWith('k-')) ns = ns.filter(n => !(S.srs[n] && S.srs[n].due <= learnDueDay()));   // a pending recall review is never spoiled
+  return { ns, name: s, fallback };
+}
+async function exLoad(chs, needGr, ms) {   // loaded keys 'c12' / 'g12', within ms
+  const ok = new Set(); const jobs = [];
+  for (const c of chs) {
+    if (D.ch[c]) ok.add('c' + c); else jobs.push(chapter(c).then(() => ok.add('c' + c)));
+    if (needGr.has(c)) { if (D.gr[c]) ok.add('g' + c); else jobs.push(grammar(c).then(() => ok.add('g' + c))); }
+  }
+  if (jobs.length) await Promise.race([Promise.allSettled(jobs), new Promise(r => setTimeout(r, ms))]);
+  return ok;
+}
+const exNeedGr = code => !/^(sa|sn|sf|th|al|td):/.test(code);
+
+// ── session composition ──
+async function exBuild(start, tok) {
+  const B = EX.bank; const X = S.ex; const lv = X.lv; const thr = exThr(lv); const today = exToday();
+  const stale = () => tok !== EX.tok || !exOnGo();
+  const t0 = start.t || ''; let src = start.src || X.src || 'mine';
+  if (src === 'today' && !exTodayOk()) src = 'mine';
+  let topics = t0 === 'sl' ? ['sl'] : exTopicsAt(lv).map(x => x.t);
+  if (t0 && t0 !== 'sl') topics = topics.filter(x => x === t0);
+  if (!t0 && (S.ui === 'en' || lv === 0)) topics.push('sl');
+  topics = topics.filter(x => (B.cnt[thr][x] || 0) >= EX_FLOOR);
+  if (!topics.length && src !== 'miss') return { err: 'none' };
+  const offB = new Set(X.off.map(exBase));
+  const recent = new Map(); X.rec.forEach(([c, d]) => { if (today - d < 7) recent.set(exBase(c), d); });
+  const tset = new Set(src === 'miss' ? [...EX_TOPICS.map(x => x.t), 'sl'] : topics);
+  const okE = (e, NS, useRec) => tset.has(e.t) && NS.has(e.n) && e.cf >= thr && !offB.has(exBase(e.c)) && !B.off.has(exBase(e.c)) && (!start.sk || e.sk === start.sk) && (!useRec || !recent.has(exBase(e.c)));
+  let S0 = exSources(src); let NS = new Set(S0.ns); EX.note = '';
+  const pool = useRec => B.E.filter(e => okE(e, NS, useRec));
+  let cand = src === 'miss' ? [] : pool(true);
+  if (src !== 'miss' && cand.length < 10) cand = pool(false);
+  if (src === 'mine' && cand.length < 20) { NS = new Set(exSources('book').ns); cand = pool(true); if (cand.length < 10) cand = pool(false); EX.note = t('exFallback'); }
+  if (src !== 'miss' && cand.length < 3) return { err: 'none' };
+  const seed = fnv1a(`ex|${today}|${lv}|${t0}|${src}|${X.hist.n}`); const rnd = mulberry32(seed);
+  const ids = [], used = new Set(), perK = new Map(), perT = new Map(), chs = new Set(), facts = new Set();
+  const factsOf = c => { const d = c.split(':')[0]; const p = c.slice(d.length + 1).split('.'); const n = +p[0];   // ST-5
+    if (['sa', 'sn', 'sf', 'th', 'al', 'sr'].includes(d)) return ['m' + n];
+    if (d === 'fd') { const r = B.row[c]; return r ? exBits(r[4]).map(j => `w${n}.${j}`) : []; }
+    if (d === 'td') return [`t${n}.${p[1]}`]; if (d === 'an') return ['a' + n];
+    return [`w${n}.${p[1]}`]; };
+  const isK = src.startsWith('k-'); const mixed = !t0;
+  const caps = { al: 1, th: 2, an: 2, sl: 2 };
+  const fits = (c, tp, n) => {
+    if (used.has(exBase(c)) || factsOf(c).some(f => facts.has(f))) return false;
+    if (!isK && (perK.get(n) || 0) >= 2) return false;
+    if (mixed && (perT.get(tp) || 0) >= 3) return false;
+    if (mixed && caps[tp] !== undefined && (perT.get(tp) || 0) >= caps[tp]) return false;
+    if (chs.size >= 6 && !chs.has(chOf(n))) return false;
+    return true;
+  };
+  const take = (c, tp, n) => { ids.push(c); used.add(exBase(c)); factsOf(c).forEach(f => facts.add(f)); perK.set(n, (perK.get(n) || 0) + 1); perT.set(tp, (perT.get(tp) || 0) + 1); chs.add(chOf(n)); };
+  const form = e => {   // mode switches, frozen into the code here
+    if (e.c.startsWith('sr:')) { const sa = exEff(e.sk) < 2; return (sa && !B.doff.has('sa')) || B.doff.has('sn') ? 'sa:' + e.c.slice(3) : 'sn:' + e.c.slice(3); }
+    if (e.x && exEff(e.sk) >= 3) {
+      const fds = (B.fd[e.x] || []).filter(f => NS.has(f.n) && f.cf >= thr && !offB.has(f.c) && !B.off.has(f.c) && !recent.has(f.c) && fits(f.c, e.t, f.n));
+      if (fds.length) { const f = fds[Math.floor(rnd() * fds.length)]; return { c: f.c, n: f.n }; }
+    }
+    return e.c;
+  };
+  // 1. earlier mistakes
+  const missV = X.miss.filter(c => { const e = exEntry(c); if (!e || !tset.has(e.t) || e.cf < thr || offB.has(exBase(c)) || B.off.has(exBase(c))) return false; if (S.srs[e.n] && S.srs[e.n].due <= learnDueDay() && !isK) return false; if (src === 'miss') return true; const d = recent.get(exBase(c)); return (d === undefined || d < today) && NS.has(e.n); });
+  for (const c of (src === 'miss' ? missV : missV.slice(-3))) { const e = exEntry(c); if (ids.length < EX_N && fits(c, e.t, e.n)) take(c, e.t, e.n); }
+  // 2. weighted topics → skills → items
+  const bySk = {}; for (const e of cand) ((bySk[e.t] ||= {})[e.sk] ||= []).push(e);
+  const wpick = (arr, wf) => { const ws = arr.map(wf); const tot = ws.reduce((a, b) => a + b, 0); if (tot <= 0) return null; let r = rnd() * tot; for (let i = 0; i < arr.length; i++) { r -= ws[i]; if (r <= 0) return arr[i]; } return arr[arr.length - 1]; };
+  let guard = 0;
+  while (src !== 'miss' && ids.length < EX_N && guard++ < 400) {
+    const tl = Object.keys(bySk).filter(tp => Object.values(bySk[tp]).some(a => a.some(e => fits(e.c, e.t, e.n))));
+    if (!tl.length) break;
+    const skOf = tp => Object.keys(bySk[tp]).filter(sk => bySk[tp][sk].some(e => fits(e.c, e.t, e.n)));
+    const tp = wpick(tl, x => { const sks = skOf(x); return 1 + sks.filter(exDue).length + 0.5 * sks.filter(exWeak).length; });
+    const sk = wpick(skOf(tp), x => (6 - exEff(x)) * (exDue(x) ? 2 : 1));
+    const e = wpick(bySk[tp][sk].filter(x => fits(x.c, x.t, x.n)), x => (D.ch[chOf(x.n)] && (!exNeedGr(x.c) || D.gr[chOf(x.n)])) ? 2 : 1);
+    if (!e) continue;
+    const f = form(e);
+    if (typeof f === 'string') take(f, e.t, e.n); else take(f.c, e.t, f.n);
+  }
+  if (!ids.length) return { err: 'none' };
+  // 3. order: no two neighbours share a topic where avoidable; al second to last
+  const topicOf = c => (exEntry(c) || {}).t || c.split(':')[0];
+  const rest = ids.filter(c => !c.startsWith('al:')); const al = ids.filter(c => c.startsWith('al:'));
+  const ord = []; while (rest.length) { const last = ord.length ? topicOf(ord[ord.length - 1]) : ''; let i = rest.findIndex(c => topicOf(c) !== last); if (i < 0) i = 0; ord.push(rest.splice(i, 1)[0]); }
+  if (al.length) ord.splice(Math.max(0, ord.length - 1), 0, ...al);
+  // 4. load, then the stale guard on every item
+  const nOf = c => exEntry(c).n;
+  const chl = [...new Set(ord.map(c => chOf(nOf(c))))]; const needGr = new Set(ord.filter(exNeedGr).map(c => chOf(nOf(c))));
+  const got = await exLoad(chl, needGr, 2500);
+  if (stale()) return { err: 'stale' };
+  const fin = ord.filter(c => { const ch = chOf(nOf(c)); return got.has('c' + ch) && (!exNeedGr(c) || got.has('g' + ch)) && exItem(c, 0, seed); });
+  if (fin.length < (src === 'miss' ? 1 : 3)) return { err: got.size < chl.length + needGr.size ? 'nc' : 'none' };
+  if (fin.length < EX_N && !EX.note && src !== 'miss') EX.note = fmt(t('exShort'), { n: fin.length });
+  const b0 = {}; fin.forEach(c => { const e = exEntry(c); if (e && e.sk) b0[e.sk] = exEff(e.sk); });
+  return { key: exKey(lv, t0, start.src || X.src || 'mine', start.sk), d: today, rev: B.rev, lv, t: t0, src, sk: start.sk || '', seed, ids: fin, i: 0, a: [], b0 };   // ST-3: exGo installs it
+}
+const exKey = (lv, tp, src, sk) => `${lv}|${tp || ''}|${src || ''}|${sk || ''}`;
+function exEntry(code) {   // {t, n, sk, cf} for any code, including the frozen forms
+  const B = EX.bank; if (!B) return null;
+  const d = code.split(':')[0]; const rest = code.slice(d.length + 1); const n = +rest.split('.')[0];
+  if (d === 'fd') { const r = B.row[code]; if (!r) return null; return { t: r[1] === 'e' ? 'ec' : 'vm', n, sk: 'ilk:' + (r[1] === 'e' ? B.sets.ec : B.sets.vm)[r[2]], cf: r[3] }; }
+  if (d === 'sa' || d === 'sn') { const r = B.mt[n]; const s = +rest.split('.')[1]; if (!r || !(s >= 0 && s < 6)) return null; return { t: 'sr', n, sk: 'vp:' + B.sets.vp[+r[1][s]], cf: 100 }; }
+  const e = (B.byN.get(n) || []).find(x => x.c === code);
+  return e || null;
+}
+
+// ── the stale guard + option generation ──
+function exItem(code, i = 0, seed) {
+  const B = EX.bank; if (!B || !code) return null;
+  const X = exEnsure(); const base = exBase(code);
+  if (B.off.has(base) || X.off.some(c => exBase(c) === base)) return null;
+  const d = code.split(':')[0]; const parts = code.slice(d.length + 1).split('.'); const n = +parts[0];
+  if (B.doff.has(d)) return null;
+  const k = exK(n); if (!k) return null;
+  const rnd = mulberry32(fnv1a((seed !== undefined ? seed : (X.cur ? X.cur.seed : 0)) + '|' + i));
+  const s = B.sets; const toks = exToks(k);
+  const ent = exEntry(code); if (!ent) return null;
+  const it = { code, d, n, k, i, eng: 'mcq', cf: null, conf: 'word', t: ent.t };
+  const sub = (pool, cnt) => pick(pool, Math.min(cnt, pool.length), rnd);
+  // pv, ec and vm show their whole closed set in textbook order, whatever the key: with only the safe distractors the
+  // number and mix of options gave the answer away. An option that is not provably wrong for this form (a soft-boundary
+  // twin, the positive of a negative key, a tag the form carries elsewhere) is marked part: picking it is neither right nor wrong.
+  const full = (set, type, keyI, allow, skp) => { it.opts = set.map((v, j) => ({ v, lab: exLabel(type, v), sk: skp + v, part: j !== keyI && !allow.includes(j) ? 1 : 0 })); it.ans = keyI; };
+  const mcq = (set, type, keyI, others, skp) => { const idx = [keyI, ...others].sort((a, b) => a - b); it.opts = idx.map(j => ({ v: set[j], lab: exLabel(type, set[j]), sk: skp ? skp + set[j] : null })); it.ans = idx.indexOf(keyI); };
+  if (['sv', 'pv', 'ec', 'vm', 'tp', 'sl'].includes(d)) {
+    const r = B.row[code]; const g = exG(n); if (!r || !g || !g.words || g.words.length !== toks.length) return null;
+    const w = +parts[1], ci = +parts[2]; const wd = g.words[w]; const c = wd && wd.c[ci]; if (!c) return null;
+    const cf = d === 'tp' ? r[7] : r[d === 'sl' ? 3 : 4], fp = d === 'tp' ? r[8] : r[d === 'sl' ? 4 : 5];
+    if (exCf(c.conf) !== cf || exFp(c.s) !== fp || tWord(wd.w) !== tWord(toks[w])) return null;
+    Object.assign(it, { g, w, c, cf, word: d === 'sl' && wd.c.length > 1 ? stripPunct(c.s) : stripPunct(wd.w), mark: w, rpType: 'grammar', skill: null });
+    if (d === 'sv') { if (c.cat !== s.cat[r[3]]) return null; mcq(s.cat, 'cat', r[3], [0, 1, 2, 3].filter(j => j !== r[3]), 'cat:'); it.key = s.cat[r[3]]; }
+    else if (d === 'pv' || d === 'ec') { const set = s[d]; if (c.ilk !== set[r[3]]) return null; full(set, d, r[3], exBits(r[6]), 'ilk:'); it.key = set[r[3]]; }
+    else if (d === 'vm') { if (c.ilk !== s.vm[r[3]]) return null; full(s.vm, 'vm', r[3], exBits(r[6] | (r[4] >= 80 ? r[7] : 0)), 'ilk:'); it.key = s.vm[r[3]]; }
+    else if (d === 'tp') {
+      const f = c.feat || {}; if (f.thinai !== s.ti[r[3]] || f.paal !== s.pa[r[4]] || f.eN !== s.en[r[5]] || (f.idam && f.idam !== s.id[r[6]])) return null;
+      it.eng = 'rows'; it.vik = r[9]; it.key = s.pa[r[4]];
+      const row = (h, set, type, keyI, skp, skOk) => ({ h, ans: keyI, opts: set.map(v => ({ v, lab: exLabel(type, v), sk: skp && skOk(v) ? skp + v : null })) });
+      it.rows = [row(t('exRowThinai'), s.ti, 'ti', r[3], 'ti:', () => true), row(t('exRowPaal'), s.pa, 'pa', r[4], 'pa:', v => v !== 'பலவின்பால்'), row(t('exRowEN'), s.en, 'en', r[5], 'en:', () => true), row(t('exRowIdam'), s.id, 'id', r[6], '', () => false)];
+    } else {   // sl
+      const gl = exSl(c.gloss); if (!gl) return null;
+      const dis = r[5].map(p => { const pn = Math.floor(p / 100), pw = Math.floor(p / 10) % 10, pc = p % 10; if (chOf(pn) !== chOf(n)) return ''; const pg = exG(pn); const pcx = pg && pg.words[pw] && pg.words[pw].c[pc]; return pcx ? exSl(pcx.gloss) : ''; });
+      if (dis.some(x => !x) || new Set([gl, ...dis]).size !== 4) return null;
+      it.opts = shuffle([gl, ...dis], rnd).map(v => ({ v, lab: v, sk: null, en: 1 })); it.ans = it.opts.findIndex(o => o.v === gl);
+      it.form = tWord(c.s).replace(/[கசடதபற]்$/, ''); it.key = gl; it.rpType = 'meaning';
+    }
+  } else if (['vt', 'tg', 'pr'].includes(d)) {
+    const r = B.row[code]; const g = exG(n); if (!r || !g || !g.words || g.words.length !== toks.length) return null;
+    const w = +parts[1]; const wd = g.words[w]; if (!wd || tWord(wd.w) !== tWord(toks[w])) return null;
+    const cf = d === 'pr' ? r[2] : r[3], fp = d === 'pr' ? r[3] : r[4];
+    if (exFp(wd.w) !== fp || exCf(Math.min(...wd.c.map(x => x.conf || 0))) !== cf) return null;
+    Object.assign(it, { g, w, c: wd.c[0], cf, word: stripPunct(wd.w), mark: w, rpType: 'grammar' });
+    if (d === 'vt') {
+      const num = s.vt[r[2]], urw = s.urw[r[5]];
+      if (!wd.c.some(x => x.vet && x.vet.number === num) || !tWord(wd.w).endsWith(urw)) return null;
+      mcq(s.vt, 'vt', r[2], sub(exBits(r[6]), 3), 'vt:'); it.key = num; it.ur = s.ur[r[5]]; it.urw = urw; it.endHi = urw;
+    } else if (d === 'tg') {
+      if (wd.togai !== s.tg[r[2]] || wd.c.length !== 2) return null;
+      mcq(s.tg, 'tg', r[2], sub([0, 1, 2, 3, 4].filter(j => j !== r[2]), 3), 'tg:'); it.key = s.tg[r[2]]; it.caseNo = r[5]; it.conf = 'parts';
+    } else {
+      if (wd.c.length !== 2 || tWord(wd.c[0].s) !== r[4] || tWord(wd.c[1].s) !== r[5]) return null;
+      const ans = `${r[4]} + ${r[5]}`; const ds = r[7].slice(0, 2); if (ds.length < 2 || new Set([ans, ...ds]).size !== 3) return null;
+      it.opts = shuffle([ans, ...ds], rnd).map((v, j) => ({ v, lab: v, sk: v === ans ? 'pr' : null })); it.ans = it.opts.findIndex(o => o.v === ans);
+      Object.assign(it, { key: ans, A: r[4], B: r[5], stem: r[6], tail: r[8], nx: r[9], skill: 'pr' });
+    }
+  } else if (d === 'an') {
+    const r = B.row[code]; const g = exG(n); if (!r || !g) return null;
+    const nm = new Set((g.ani || []).map(a => ANI_CANON[a.name] || a.name)); if (nm.size !== 1 || !nm.has(s.an[r[1]])) return null;
+    mcq(s.an, 'an', r[1], [0, 1, 2].filter(j => j !== r[1]), 'an:'); Object.assign(it, { g, key: s.an[r[1]], anMark: r[2], note: (g.ani[0] || {}).note || '', conf: 'none', rpType: 'grammar' });
+  } else if (d === 'fd') {
+    const r = B.row[code]; const g = exG(n); if (!r || !g || !g.words || g.words.length !== toks.length) return null;
+    const X_ = (r[1] === 'e' ? s.ec : s.vm)[r[2]]; const tg = g.words.map((wd, j) => wd.c.some(x => x.ilk === X_) ? j : -1).filter(j => j >= 0);
+    if (tg.reduce((m, j) => m | (1 << j), 0) !== r[4] || exCf(Math.min(...tg.map(j => Math.min(...g.words[j].c.map(x => x.conf || 0))))) !== r[3]) return null;
+    Object.assign(it, { g, eng: 'find', cf: r[3], key: X_, set: r[1] === 'e' ? 'ec' : 'vm', tgt: new Set(tg), off: new Set(exBits(r[5])), skill: 'ilk:' + X_, rpType: 'grammar' });
+    it.tiles = toks.map((w, j) => ({ w, li: j < k.l1.split(/\s+/).filter(Boolean).length ? 0 : 1, j }));
+  } else if (d === 'td') {
+    const r = B.row[code]; const li = +parts[1]; const line = li ? k.l2 : k.l1; const lt = line.split(/\s+/).filter(Boolean);
+    if (!r || r[2] !== parts[2] || exFp(line) !== r[5] || (r[3] | r[4]) >> lt.length || (r[3] & 1) || (r[4] & 1)) return null;
+    Object.assign(it, { eng: 'find', li, kind: r[2], tgt: new Set(exBits(r[3])), off: new Set(exBits(r[4])), skill: 'td:' + r[2], conf: 'rhyme', rpType: 'metre', key: '' });
+    it.tiles = lt.map((w, j) => ({ w, li, j }));
+  } else if (['sa', 'sn', 'sf', 'th', 'al'].includes(d)) {
+    const M = exMetre(n); if (!M) return null;
+    Object.assign(it, { M, conf: 'metre', cf: B.mt[n][4], rpType: 'metre' });
+    const nameOpts = (s_, fin) => { if (fin) return { set: s.fn, type: 'fn', idx: [0, 1, 2, 3], keyI: s.fn.indexOf(M.fin), skp: 'fn:' }; const kv = s.vp.indexOf(M.names[s_]); const lo = kv < 4 ? [0, 1, 2, 3] : [4, 5, 6, 7], hi = kv < 4 ? [4, 5, 6, 7] : [0, 1, 2, 3]; return { set: s.vp, type: 'vp', idx: [kv, ...sub(lo.filter(j => j !== kv), 1), ...sub(hi, 2)].sort((a, b) => a - b), keyI: kv, skp: 'vp:' }; };
+    const asOpts = o => ({ opts: o.idx.map(j => ({ v: o.set[j], lab: exLabel(o.type, o.set[j]), sk: o.skp + o.set[j] })), ans: o.idx.indexOf(o.keyI) });
+    if (d === 'sa' || d === 'sn' || d === 'sf') {
+      const f = d === 'sf' ? 6 : +parts[1]; if (!(f >= 0 && f <= 6) || ((B.mt[n][3] >> f) & 1)) return null;
+      Object.assign(it, { foot: f, mark: f, word: stripPunct(M.S[f].w), key: d === 'sf' ? M.fin : M.names[f] });
+      if (d === 'sa') {
+        it.eng = 'rows'; it.skill = 'vp:' + M.names[f];
+        it.rows = exSegs(M.S[f]).map((sg, j) => ({ h: exF('exAsaiSeg', { i: j + 1, s: sg }), ans: M.pats[f][j] === 'N' ? 0 : 1, opts: [{ v: 'N', lab: t('exNer'), sk: null }, { v: 'I', lab: t('exNirai'), sk: null }] }));
+      } else Object.assign(it, asOpts(nameOpts(f, d === 'sf')));
+    } else if (d === 'th') {
+      const j = +parts[1]; if (!(j >= 0 && j < 6)) return null;
+      const kt = s.th.indexOf(M.th[j]); const cls = exCls(M.pats[j]); const near = { 'மா': 2, 'விளம்': 3, 'காய்': 4 }[cls];
+      if (kt < 0 || kt > 1 || !near) return null;
+      const idx = [kt, 1 - kt, near, ...sub([2, 3, 4].filter(x => x !== near), 1)].sort((a, b) => a - b);
+      it.opts = idx.map(x => ({ v: s.th[x], lab: exLabel('th', s.th[x]), sk: 'th:' + s.th[x] })); it.ans = idx.indexOf(kt);
+      Object.assign(it, { j, key: M.th[j], mark: [j, j + 1], cls });
+    } else {
+      if (B.mt[n][3] !== 0) return null;
+      it.eng = 'table'; it.key = M.fin;
+      it.feet = M.S.map((sr, f) => { const o = asOpts(nameOpts(f, f === 6)); return { w: stripPunct(sr.w), opts: o.opts, ans: o.ans, name: f === 6 ? M.fin : M.names[f], sk: (f === 6 ? 'fn:' : 'vp:') + (f === 6 ? M.fin : M.names[f]) }; });
+    }
+  } else return null;
+  exDecorate(it);
+  return it;
+}
+function exSegs(seer) { return seer.asai.map(a => a.u.map(u => u[1]).join('')); }
+function exSegHTML(seer) { return esc(exSegs(seer).join('/')); }   // neutral: letters only, no colour, no title
+function exCls(pat) { if (pat.length === 2) return pat[1] === 'N' ? 'மா' : 'விளம்'; if (pat.length === 3 && pat[2] === 'N') return 'காய்'; return ''; }
+function exThalai(prev, nextFirst) { const c = exCls(prev); if ((c === 'மா' && nextFirst === 'I') || (c === 'விளம்' && nextFirst === 'N')) return 'இயற்சீர் வெண்டளை'; if (c === 'காய்' && nextFirst === 'N') return 'வெண்சீர் வெண்டளை'; return ''; }
+function exEetru(seer) {
+  const a = seer.asai.map(x => x.k); const w = exTa(seer.w);
+  if (a.length === 2 && /[கசடதபற]ு$/.test(w) && seer.asai[1].u.length === 1) return a[0] === 'N' ? 'காசு' : 'பிறப்பு';
+  if (a.length === 1) return a[0] === 'N' ? 'நாள்' : 'மலர்';
+  return '';
+}
+function exMetre(n) {   // recompute names, final and linkages from ch yappu; null on any disagreement with the bank
+  const B = EX.bank, r = B && B.mt[n], k = exK(n); if (!r || !k || !k.yappu) return null;
+  const y = k.yappu, L_ = y.lines || [];
+  if (L_.length !== 2 || L_.some(l => l.err || !l.seers) || L_[0].seers.length !== 4 || L_[1].seers.length !== 3 || exCf(y.conf) !== r[4]) return null;
+  const S_ = [...L_[0].seers, ...L_[1].seers]; const toks = exToks(k);
+  if (toks.length !== 7 || S_.some((sr, i) => tWord(sr.w) !== tWord(toks[i]) || exSegs(sr).join('') !== exTa(sr.w))) return null;
+  const pats = S_.map(sr => sr.asai.map(a => a.k).join(''));
+  const names = pats.slice(0, 6).map(p => EX_VP[p] || '');
+  if (names.some((nm, i) => !nm || nm !== B.sets.vp[+r[1][i]] || nm !== S_[i].name)) return null;
+  const fin = B.sets.fn[+r[1][6]]; if (y.eetru !== fin || exEetru(S_[6]) !== fin) return null;
+  const th = [L_[0].thalai[0], L_[0].thalai[1], L_[0].thalai[2], (y.boundary || [])[0], L_[1].thalai[0], L_[1].thalai[1]];
+  if (th.some((x, j) => x !== B.sets.th[+r[2][j]] || exThalai(pats[j], pats[j + 1][0]) !== x)) return null;
+  return { S: S_, pats, names, fin, th, y };
+}
+const exAsaiTxt = (M, f) => (f === 6 && (M.fin === 'காசு' || M.fin === 'பிறப்பு')) ? (M.pats[6][0] === 'N' ? 'நேர்பு' : 'நிரைபு') : M.pats[f].split('').map(x => x === 'N' ? 'நேர்' : 'நிரை').join(' ');
+const exFootRow = (M, f) => `${f === 6 ? esc(stripPunct(M.S[6].w)) : exSegHTML(M.S[f])} — ${exAsaiTxt(M, f)} — ${esc(exLabel(f === 6 ? 'fn' : 'vp', f === 6 ? M.fin : M.names[f]))}`;
+// the letters of the first / second grapheme, and the rhyme rules (same as build_exam.py)
+const EX_SIGNV = { '': 'அ', 'ா': 'ஆ', 'ி': 'இ', 'ீ': 'ஈ', 'ு': 'உ', 'ூ': 'ஊ', 'ெ': 'எ', 'ே': 'ஏ', 'ை': 'ஐ', 'ொ': 'ஒ', 'ோ': 'ஓ', 'ௌ': 'ஔ', '்': '' };
+const exCV = g => /^[அ-ஔ]/.test(g) ? ['', g[0]] : [g[0], EX_SIGNV[g.slice(1)] ?? '?'];
+const EX_GRP = ['அஆஐஔ', 'இஈஎஏ', 'உஊஒஓ'];
+const exSameGrp = (a, b) => a !== '?' && b !== '?' && (a === b || EX_GRP.some(s_ => s_.includes(a) && s_.includes(b)));
+const exLong = v => 'ஆஈஊஏஐஓஔ'.includes(v) && v !== '';
+function exRhyme(kind, a, b) {
+  const ga = exGra(a), gb = exGra(b);
+  if (kind === 'm') { if (!ga.length || !gb.length) return 'D'; const [c1, v1] = exCV(ga[0]), [c2, v2] = exCV(gb[0]); if (c1 === c2 && exSameGrp(v1, v2)) return 'T'; if (c1 !== c2 && ['மவ', 'தச', 'ஞந'].some(p => p.includes(c1) && p.includes(c2)) && exSameGrp(v1, v2)) return 'D'; return 'N'; }
+  if (ga.length < 2 || gb.length < 2) return 'D';
+  const c1 = exCV(ga[1])[0], c2 = exCV(gb[1])[0];
+  if (ga[1] === gb[1]) return exLong(exCV(ga[0])[1]) === exLong(exCV(gb[0])[1]) ? 'T' : 'D';
+  if (c1 === c2 || ['ணன', 'ரற', 'லளழ'].some(p => p.includes(c1) && p.includes(c2))) return 'D';
+  return 'N';
+}
+// titles, stems, labels and the report fields of an item
+function exDecorate(it) {
+  const B = EX.bank, d = it.d;
+  it.tt = t('exT_' + it.t);
+  const labKey = d === 'td' ? 'exL_td_' + it.kind : d === 'fd' ? 'exL_find' : ['sa', 'sn', 'sf'].includes(d) ? 'exL_sr' : d === 'sl' ? 'exT_sl' : 'exL_' + d;
+  it.lab = t(labKey); it.labTa = (STR.ta && STR.ta[labKey]) || '';
+  it.ins = t(it.eng === 'rows' ? 'exI_rows' : d === 'pr' ? 'exI_pr' : d === 'al' ? 'exI_al' : 'exI_mcq');
+  if (['sv', 'pv', 'ec', 'vm', 'tp', 'vt', 'tg', 'sl'].includes(d)) it.q = exE('exQ_' + (d === 'vm' ? 'ec' : d), { w: it.word });
+  else if (d === 'pr') it.q = exE('exQ_pr', { stem: it.stem });
+  else if (d === 'an') it.q = esc(t('exQ_an'));
+  else if (d === 'fd') { it.q = exE(it.tgt.size > 1 ? 'exQ_find2' : 'exQ_find', { x: exLabel(it.set, it.key) }); it.ins = it.off.size ? t('exNeutralLegend') : ''; }
+  else if (d === 'td') { it.word = stripPunct(it.tiles[0].w); it.q = exE('exQ_td_' + it.kind, { adi: t(it.li ? 'exAdi2' : 'exAdi1'), w: it.word }); it.ins = it.off.size ? t('exNeutralRhyme') : ''; }
+  else if (d === 'sa') it.q = exE('exQ_srA', { s: it.word });
+  else if (d === 'sn') it.q = exE('exQ_srN', { s: it.word });
+  else if (d === 'sf') it.q = exE('exQ_srF', { s: it.word });
+  else if (d === 'th') { const S_ = it.M.S; it.q = exE('exQ_th', { a: stripPunct(S_[it.j].w), b: stripPunct(S_[it.j + 1].w) }) + (it.j === 3 ? ' ' + esc(t('exThB')) : ''); it.word = `${stripPunct(S_[it.j].w)} — ${stripPunct(S_[it.j + 1].w)}`; }
+  else if (d === 'al') it.q = esc(t('exT_al'));
+  it.keyLab = d === 'tp' ? [it.rows[0], it.rows[1], it.rows[2], it.rows[3]].map(r => r.opts[r.ans].lab.split(' · ')[0]).join(' · ')
+    : d === 'sa' ? it.rows.map(r => r.opts[r.ans].lab).join(' ') : d === 'td' || d === 'fd' ? [...it.tgt].map(j => `«${stripPunct(it.tiles[j].w)}»`).join(', ')
+      : d === 'al' ? exLabel('fn', it.key) : it.opts ? it.opts[it.ans].lab : '';
+  it.short = `${it.tt} · ${d === 'an' || d === 'al' || d === 'fd' ? t('kural') + ' ' + it.n : '«' + (it.word || '') + '»'}`;
+  it.corr = it.w !== undefined && B.corr.has(`${it.n}.${it.w}`);
+  if (!it.skill && it.opts && it.opts[it.ans]) it.skill = it.opts[it.ans].sk;
+}
+
+// ── rendering helpers ──
+function exCoupletHTML(k, markIdx, endHi) {
+  const marks = new Set([].concat(markIdx === undefined || markIdx === null ? [] : markIdx)); let j = 0;
+  const lines = [k.l1, k.l2].map((ln, li) => `<div class="line l${li + 1}">${ln.split(/\s+/).filter(Boolean).map(w => {
+    const my = j++; let h = esc(w);
+    if (marks.has(my) && endHi) { const p = tPunct(w), core = p ? w.slice(0, -p.length) : w; if (core.endsWith(endHi)) { const cut = exEndCut(core, endHi); h = `${esc(core.slice(0, cut))}<b class="ex-end">${esc(core.slice(cut))}</b>${esc(p)}`; } }
+    return `<span class="ex-tk" data-j="${my}">${marks.has(my) ? `<mark class="ex-mark">${h}</mark>` : h}</span>`;
+  }).join(' ')}</div>`).join('');
+  return `<div class="couplet ex-couplet">${lines}</div>${S.showTranslit ? learnTl(k) : ''}`;
+}
+function exConfHTML(it) {
+  if (it.conf === 'none') return `<div class="ex-conf muted">${t('exConfNone')}</div>`;
+  if (it.conf === 'metre') return `<div class="ex-conf muted">${exE('exMetreConf', { c: (it.cf / 100).toFixed(2) })}</div>`;
+  if (it.conf === 'rhyme') return `<div class="ex-conf muted">${t('exRhymeConf')}</div>`;
+  const c = it.cf; const band = it.conf === 'parts' ? t('exConfParts') + (c < 80 ? ' · ' + t('exConfMid') : '') : c >= 90 ? t('exConfHi') : c >= 80 ? t('exConfGood') : t('exConfMid');
+  return `<div class="ex-conf"><span class="conf"><i style="width:${c}%"></i></span> ${(c / 100).toFixed(2)} · ${esc(band)}</div>`;
+}
+const exDefLine = (raw, ty) => { const x = exDefn(raw); return x ? `<div class="gloss-tip"><b>${esc(exLabel(ty || exTypeOf(raw), raw))}</b> — ${esc(x)} <span class="muted">(${t('exDef')})</span></div>` : ''; };
+function exTypeOf(raw) { for (const ty of ['cat', 'pv', 'ec', 'vm', 'tg', 'an']) if (EXN[ty][raw]) return ty; return ''; }
+function exSay(msg) { const el = $('#ex-fb'); if (!el) return; el.textContent = ''; requestAnimationFrame(() => { el.textContent = msg; }); }
+function exArm() { EX.t = performance.now(); }
+function exTooSoon() { return performance.now() - EX.t < 350; }
+
+// ── views ──
+async function viewExam(sub, q) {
+  const h0 = location.hash;
+  EX.gloss = EX.gloss || await glossary().catch(() => ({ terms: {} }));
+  if (location.hash !== h0) return;   // the learner moved on while the glossary loaded
+  if (sub === 'go') return exGo();
+  if (sub === 'done') return exDone();
+  if (sub === 'terms') return exTerms();
+  return exHub();
+}
+function exLevelPicker(onPick) {
+  const lvs = [1, 2, 3, 0];
+  const km = EX.start && /^k-(\d+)$/.exec(EX.start.src || ''); const few = l => km && exCountK(+km[1], l) < 3;   // ST-2: a level with too few items for this couplet is not offered
+  const html = `<div class="card ex"><h2 class="ex-h" tabindex="-1">📝 ${t('exPickLv')}</h2><div class="row ex-lvs" role="group" aria-label="${esc(t('exLevel'))}">${lvs.map(l => `<button class="btn ex-lvb" data-lv="${l}" ${few(l) ? 'disabled' : ''}>${t('exLv' + l)}${few(l) ? ` · ${t('exFewK')}` : ''}</button>`).join('')}</div><div class="muted" style="margin-top:8px">${t('exLvHint')}</div></div>`;
+  render(html);
+  $$('.ex-lvb').forEach(b => b.onclick = () => { exEnsure().lv = +b.dataset.lv; exSaveAll(); onPick(); });
+  const h = $('.ex-h'); if (h) h.focus({ preventScroll: true });
+}
+async function exHub() {
+  setTitle(t('exTitle'), t('exSub'));
+  const B = await exBank();
+  if (!B) { render(`<div class="card"><h2>📝 ${t('exTitle')}</h2><p>${t('exNoBank')}</p></div>`); return; }
+  if (!location.hash.startsWith('#/exam') || exOnGo()) return;
+  const X = exEnsure();
+  if (X.lv == null) { exLevelPicker(() => exHub()); return; }
+  exWarm();
+  const lv = X.lv, thr = exThr(lv); const mine = exMineSet(); const todayOk = exTodayOk();
+  let src = X.src || 'mine'; if ((src === 'mine' && !mine.length) || (src === 'today' && !todayOk) || (src === 'memo' && !S.memorised.length)) src = 'book';
+  const chN = (/^ch-(\d+)$/.exec(src) || [])[1] || chOf(S.lastKural || 1);
+  const chip = (on, attrs, label) => `<button class="chip ex-chip ${on ? 'sel' : ''}" aria-pressed="${on}" ${attrs}>${label}</button>`;
+  const cur = X.cur && X.cur.rev === B.rev && exToday() - X.cur.d <= 7 ? X.cur : null;
+  const h = X.hist; const pct = h.q ? Math.round(100 * h.r / h.q) : 0;
+  const topicBtn = tp => {
+    const T = EX_TOPICS.find(x => x.t === tp); if (lv !== 0 && T.lv > lv) return '';
+    const st = exTopicStats(tp, lv); const few = st.n < EX_FLOOR;
+    const lab = tp === 'td' ? `${t('exL_td_m')} · ${t('exL_td_e')}` : tp === 'sr' ? t('exL_sr') : t('exL_' + tp);
+    return `<button class="ex-topic" data-t="${tp}" ${few ? 'disabled' : ''}><span class="ex-tt">${t('exT_' + tp)}</span><span class="muted">${esc(lab)}</span>${few ? `<span class="muted">${t('exFewData')}</span>` : `<span class="ex-tm">${exE('exMastered', { a: st.a, b: st.b })} <span class="ex-bar"><i style="width:${Math.round(st.bar * 100)}%"></i></span> ${exE('exItems', { n: st.n })}</span>`}</button>`;
+  };
+  const slN = B.cnt[thr].sl || 0; const slT = (EX.bank.E.filter(e => e.t === 'sl' && e.cf >= thr)).length; const known = Object.keys(X.w).filter(f => exWordEff(f) >= 3).length;
+  render(`<div class="card ex">
+    <h2>📝 ${t('exTitle')}</h2>
+    <div class="ex-q" id="exh-lv">${t('exLevel')}</div><div class="row" role="group" aria-labelledby="exh-lv">${[1, 2, 3, 0].map(l => chip(l === lv, `data-lv="${l}"`, t('exLv' + l))).join('')}</div>
+    <div class="muted ex-hint">${t('exLvHint')}</div>
+    <div class="ex-q" id="exh-src">${t('exSrc')}</div><div class="row" role="group" aria-labelledby="exh-src">
+      ${mine.length ? chip(src === 'mine', 'data-src="mine"', `${t('exSrcMine')} (${mine.length})`) : ''}${todayOk ? chip(src === 'today', 'data-src="today"', t('exSrcToday')) : ''}
+      ${chip(src === 'book', 'data-src="book"', t('exSrcBook'))}${chip(src.startsWith('ch-'), 'data-src="ch"', t('exSrcCh'))}${S.memorised.length ? chip(src === 'memo', 'data-src="memo"', t('exSrcMemo')) : ''}</div>
+    <div class="row ex-chrow" ${src.startsWith('ch-') ? '' : 'hidden'}><select id="exh-ch" aria-label="${esc(t('exSrcCh'))}">${D.meta.chapters.map((c, i) => `<option value="${i + 1}" ${+chN === i + 1 ? 'selected' : ''}>${i + 1} · ${esc(c.name)}</option>`).join('')}</select></div>
+    <div class="actions"><button class="btn primary" id="exh-go">${cur ? exE('exResume', { i: Math.min(cur.i + 1, cur.ids.length), n: cur.ids.length }) : t('exStart')}</button>
+      ${exMissN() ? `<button class="btn" id="exh-miss">${exE('exMissBtn', { n: exMissN() })}</button>` : ''}</div>
+    <div class="muted">${exE('exStats', { d: h.days, q: h.q, p: pct })}</div></div>
+  <div class="card ex"><h2>${t('exTopics')}</h2>${EX_GROUPS.map(([g, tps]) => { const body = tps.map(topicBtn).join(''); return body ? `<h3>${t(g)}</h3><div class="ex-topics">${body}</div>` : ''; }).join('')}</div>
+  <div class="card ex"><h2>${t('exSl')} ${S.ui === 'ta' ? `<span class="chip">${t('exSlOpt')}</span>` : ''}</h2><div class="muted">${t('exSlSub')}</div>
+    <div style="margin:6px 0">${exE('exKnown', { n: known, t: slT })}</div>
+    <button class="btn" id="exh-sl" ${slN < EX_FLOOR ? 'disabled' : ''}>${t('exPractise')}</button></div>
+  <div class="card ex"><h2>${t('exHonestT')}</h2><p class="muted">${t('exHonest1')}</p><p class="muted">${t('exHonest2')}</p><p class="muted">${t('exTextbook')}</p><div class="ai-note">${t('exConfLegend')}</div>
+    <div class="row" style="margin-top:8px"><a class="btn" href="#/exam/terms">${t('exTermsLink')}</a><a class="btn" href="#/grammar">${t('exExplorer')}</a></div></div>`);
+  const go = st => { EX.start = st; location.hash = '#/exam/go'; };
+  const again = sel => { const y = window.scrollY; exHub().then(() => { window.scrollTo(0, y); const b = $(sel); if (b) b.focus({ preventScroll: true }); }); };   // UX-4
+  $$('[data-lv]').forEach(b => b.onclick = () => { exEnsure().lv = +b.dataset.lv; exSaveAll(); again(`[data-lv="${b.dataset.lv}"]`); });   // ST-6: the live S.ex
+  $$('[data-src]').forEach(b => b.onclick = () => { exEnsure().src = b.dataset.src === 'ch' ? 'ch-' + $('#exh-ch').value : b.dataset.src; exSaveAll(); again(b.dataset.src === 'ch' ? '#exh-ch' : `[data-src="${b.dataset.src}"]`); });
+  $('#exh-ch').onchange = e => { exEnsure().src = 'ch-' + e.target.value; exSaveAll(); };
+  $('#exh-go').onclick = () => { if (cur) { EX.start = null; location.hash = '#/exam/go'; } else go({ t: '', src }); };
+  const mb = $('#exh-miss'); if (mb) mb.onclick = () => go({ t: '', src: 'miss' });
+  $$('.ex-topic').forEach(b => b.onclick = () => go({ t: b.dataset.t, src }));
+  $('#exh-sl').onclick = () => go({ t: 'sl', src });
+}
+function exMissN() {   // ST-8: the same test exBuild applies to a mistakes round
+  const B = EX.bank, X = S.ex; if (!B || !X) return 0; const thr = exThr(X.lv); const offB = new Set(X.off.map(exBase));
+  return X.miss.filter(c => { const e = exEntry(c); return e && e.cf >= thr && !offB.has(exBase(c)) && !B.off.has(exBase(c)) && !(S.srs[e.n] && S.srs[e.n].due <= learnDueDay()); }).length;
+}
+function exWarm() {
+  if (SINGLE || IS_ANDROID_APP || !hasCaches() || EX.warming) return;
+  const tag = EX.bank ? EX.bank.rev : '1';
+  try { if (localStorage.getItem('kural.warmed.gr') === tag) return; } catch (e) { return; }
+  EX.warming = true;   // INT-3: one warm-up per page load
+  setTimeout(async () => {
+    try { const u = []; for (let i = 1; i <= 133; i++) u.push(`data/gr/${pad(i, 3)}.json`); await cacheUrls(u);
+      let all = true; for (const x of u) if (!(await caches.match(x, { ignoreSearch: true }))) { all = false; break; }
+      if (all) localStorage.setItem('kural.warmed.gr', tag); } catch (e) { }   // INT-2: a partial or evicted cache warms again next time
+    EX.warming = false; }, 3000);
+}
+async function exGo() {
+  const my = ++EX.tok; setTitle(t('exTitle'), t('exSub'));
+  const B = await exBank(); if (my !== EX.tok || !exOnGo()) return;
+  if (!B) { render(`<div class="card"><h2>📝 ${t('exTitle')}</h2><p>${t('exNoBank')}</p></div>`); return; }
+  const X = exEnsure(); let cur = X.cur; const st = EX.start;
+  const valid = cur && cur.rev === B.rev && exToday() - cur.d <= 7 && cur.ids && cur.ids.length;
+  const match = st && cur && exKey(X.lv, st.t, st.src || X.src || 'mine', st.sk) === cur.key;
+  if (valid && (!st || match)) { EX.start = null; await exLoad([...new Set(cur.ids.map(c => chOf((exEntry(c) || { n: 1 }).n)))], new Set(cur.ids.filter(exNeedGr).map(c => chOf((exEntry(c) || { n: 1 }).n))), 4000); if (my !== EX.tok || !exOnGo()) return; return exPlayer(); }
+  if (!st) { location.replace('#/exam'); return; }
+  if (X.lv == null) { exLevelPicker(() => exGo()); return; }
+  render(`<div class="card ex muted">${t('exBuilding')}</div>`);
+  let r; try { r = await exBuild(st, my); } catch (e) { console.error(e); r = { err: 'none' }; }
+  if (my !== EX.tok || !exOnGo()) return;   // ST-3: a stale or failed build leaves the old round resumable
+  if (r && !r.err) {
+    const X2 = exEnsure(), old = X2.cur;
+    if (old && old.a && old.a.some(a => a && (a.ok !== undefined || a.void || (a.p && a.p.length)))) { exCommit(true); toast(t('exReplaced')); }   // a different unfinished round: keep what was answered
+    X2.cur = r; exSave();
+  }
+  if (!r || r.err) {
+    EX.start = null;
+    render(`<div class="card ex"><h2 class="ex-h" tabindex="-1">📝 ${t('exTitle')}</h2><p>${r && r.err === 'nc' ? `${t('exNotCached')} <a href="#/offline">${t('offline')}</a>` : t('exNoItems')}</p><div class="row"><a class="btn" href="#/exam">${t('exHub')}</a></div></div>`);
+    return;
+  }
+  EX.start = null; exPlayer();
+}
+function exPlayer() {
+  render(`<div class="card ex" aria-live="off">
+    <div class="ex-head"><span class="chip" id="ex-count"></span> <b id="ex-tt"></b> <span class="chip ex-lab" id="ex-lab"></span></div>
+    <div class="t-prog"><i id="ex-bar"></i></div>
+    <div id="ex-note" class="muted" ${EX.note ? '' : 'hidden'}>${esc(EX.note)}</div>
+    <div id="ex-step"></div>
+    <div id="ex-fb" class="ln-sr" role="status" aria-live="polite"></div>
+    <div class="ln-foot"><button class="ln-link" id="ex-enough" hidden>${t('exEnough')}</button></div></div>`);
+  EX.note = ''; EX.busy = false;
+  $('#ex-enough').onclick = () => { if (EX.busy) return; EX.busy = true; exCommit(); };
+  exStep();
+}
+function exStep() {
+  const X = S.ex, cur = X && X.cur, host = $('#ex-step'); if (!cur || !host) return;
+  TTS.stop(); closeSheet();
+  if (cur.i >= cur.ids.length) { exCommit(); return; }
+  const code = cur.ids[cur.i]; const it = exItem(code, cur.i);
+  $('#ex-count').textContent = `${cur.i + 1}/${cur.ids.length}`;
+  $('#ex-bar').style.width = Math.round(100 * cur.i / cur.ids.length) + '%';
+  $('#ex-enough').hidden = cur.i < 1;
+  if (!it) {
+    if (!cur.a[cur.i]) cur.a[cur.i] = { skip: 1 };   // ST-1: an answered or voided record stays as it was
+    $('#ex-tt').textContent = ''; $('#ex-lab').textContent = '';
+    host.innerHTML = `<h2 class="ex-h" tabindex="-1">${t('exSkip')}</h2><div id="ex-res" tabindex="-1"><div class="actions"><button class="btn primary" id="ex-next">${t(cur.i + 1 >= cur.ids.length ? 'exFinish' : 'exNext')}</button></div></div>`;
+    exWireNext(); exSettle(); EX.busy = false; return;   // UX-8: the focused heading already says it
+  }
+  $('#ex-tt').textContent = it.tt; $('#ex-lab').textContent = fmt(t('exExamLabel'), { x: S.ui === 'en' && it.labTa && it.labTa !== it.lab ? `${it.labTa} (${it.lab})` : it.lab });
+  const a = cur.a[cur.i];
+  ({ mcq: exMCQ, rows: exRows, find: exFind, table: exTable })[it.eng](it, host, a);
+  exSettle(); EX.busy = false;
+}
+function exSettle() { const h = $('#ex-step .ex-h'); if (h) h.focus({ preventScroll: true }); window.scrollTo(0, 0); }
+function exBody(it) {
+  const mark = it.d === 'an' || it.d === 'fd' || it.d === 'td' || it.d === 'al' || it.d === 'sa' ? null : it.mark;
+  const cp = it.eng === 'find' ? '' : exCoupletHTML(it.k, it.d === 'sa' ? it.mark : mark, null);
+  const pre = it.d === 'sl' ? `<div class="chip ex-lab">${t('lnGlossEn')}</div>` : it.d === 'sn' || it.d === 'sf' ? `<div class="ex-foot">${esc(it.word)}</div>` : '';
+  return `<h2 class="ex-h" tabindex="-1">${it.q}</h2>${pre}${cp}${it.ins ? `<div class="muted ex-ins">${esc(it.ins)}</div>` : ''}`;
+}
+function exWireNext() {
+  const b = $('#ex-next'); if (!b) return;
+  b.onclick = () => { if (EX.busy || exTooSoon()) return; EX.busy = true; const cur = S.ex.cur; if (!cur) { EX.busy = false; return; } cur.i++; exSave(); exStep(); };
+}
+function exFinished(it) {
+  const res = $('#ex-res'); if (!res) return;
+  res.focus({ preventScroll: true }); const nx = $('#ex-next');
+  if (it.d === 'al') res.scrollIntoView({ block: 'start' }); else if (nx) nx.scrollIntoView({ block: 'nearest' });   // UX-7
+}
+// MCQ engine
+function exMCQ(it, host, a) {
+  const lines = ['pr', 'sl', 'an', 'vm'].includes(it.d) || it.opts.some(o => exGlen(o.lab) > 14);
+  host.innerHTML = `${exBody(it)}<div class="t-opts ${lines ? 't-lines' : ''} ex-opts">${it.opts.map((o, i) => `<button class="btn t-opt ex-opt" data-o="${i}" ${o.en ? 'lang="en"' : ''}>${esc(o.lab)}</button>`).join('')}</div><div id="ex-res" tabindex="-1"></div>`;
+  const show = (p, fresh) => {
+    let ok = p === it.ans;
+    if (fresh) ok = exAnswer(it, p);
+    const neu = !ok && !!(it.opts[p] && it.opts[p].part);
+    $$('.ex-opt', host).forEach(b => { const i = +b.dataset.o; b.disabled = true; const lab = it.opts[i].lab;
+      if (i === it.ans) { b.classList.add('ok'); b.insertAdjacentHTML('afterbegin', '<b>✓ </b>'); b.setAttribute('aria-label', `${lab} — ✓ ${t('answerWas')}`); }
+      else if (i === p && neu) { b.classList.add('part'); b.insertAdjacentHTML('afterbegin', '<b>◐ </b>'); b.setAttribute('aria-label', `${lab} — ◐ ${t('exYourPick')}`); }
+      else if (i === p) { b.classList.add('bad'); b.insertAdjacentHTML('afterbegin', '<b>✗ </b>'); b.setAttribute('aria-label', `${lab} — ✗ ${t('exYourPick')}`); } });
+    exShowRes(it, { ok, p, neu });
+    if (fresh) exFinished(it);
+  };
+  if (a && a.ok !== undefined) show(a.p, false);
+  else { exArm(); $$('.ex-opt', host).forEach(b => b.onclick = () => { if (exTooSoon() || (S.ex.cur.a[S.ex.cur.i] || {}).ok !== undefined) return; show(+b.dataset.o, true); }); }
+}
+// rows engine (tp, sa)
+function exRows(it, host, a) {
+  const pickd = it.rows.map(() => -1);
+  host.innerHTML = `${exBody(it)}${it.d === 'sa' ? `<div class="ex-foot">${esc(it.word)}</div>` : ''}${it.rows.map((r, ri) => `<div class="ex-row"><div class="ex-q" id="exr-h${ri}">${esc(r.h)}</div><div class="row" role="group" aria-labelledby="exr-h${ri}">${r.opts.map((o, oi) => `<button class="chip ex-chip" aria-pressed="false" data-r="${ri}" data-o="${oi}">${esc(o.lab)}</button>`).join('')}<span class="ex-rv" id="exr-v${ri}"></span></div></div>`).join('')}
+    <div class="actions"><button class="btn primary" id="ex-check" aria-disabled="true">${t('exCheck')}</button></div><div class="muted ex-hintv" id="ex-hintv" aria-hidden="true"></div><div id="ex-res" tabindex="-1"></div>`;
+  const chk = $('#ex-check');
+  const done = (p, fresh) => {
+    let ok = p.every((x, ri) => x === it.rows[ri].ans);
+    if (fresh) ok = exAnswer(it, p);
+    $$('.ex-chip', host).forEach(b => { const ri = +b.dataset.r, oi = +b.dataset.o; b.disabled = true; b.setAttribute('aria-pressed', p[ri] === oi);
+      if (oi === it.rows[ri].ans) { b.classList.add('ok'); b.setAttribute('aria-label', `${it.rows[ri].opts[oi].lab} — ✓`); } else if (p[ri] === oi) { b.classList.add('bad'); b.setAttribute('aria-label', `${it.rows[ri].opts[oi].lab} — ✗ ${t('exYourPick')}`); } });
+    it.rows.forEach((r, ri) => { const el = $('#exr-v' + ri); if (el) el.textContent = p[ri] === r.ans ? '✓' : `→ ${r.opts[r.ans].lab}`; });
+    chk.hidden = true;
+    exShowRes(it, { ok, p, part: `${p.filter((x, ri) => x === it.rows[ri].ans).length}/${it.rows.length}` });
+    if (fresh) exFinished(it);
+  };
+  if (a && a.ok !== undefined) { done(a.p, false); return; }
+  exArm();
+  $$('.ex-chip', host).forEach(b => b.onclick = () => {
+    if (exTooSoon()) return; const ri = +b.dataset.r, oi = +b.dataset.o; pickd[ri] = oi;
+    $$(`.ex-chip[data-r="${ri}"]`, host).forEach(x => { const on = +x.dataset.o === oi; x.classList.toggle('sel', on); x.setAttribute('aria-pressed', on); });
+    chk.setAttribute('aria-disabled', pickd.includes(-1) ? 'true' : 'false');
+  });
+  chk.onclick = () => { if (pickd.includes(-1)) { exSay(t('exRowsHint')); $('#ex-hintv').textContent = t('exRowsHint'); return; } if ((S.ex.cur.a[S.ex.cur.i] || {}).ok !== undefined) return; done(pickd.slice(), true); };
+}
+// find engine (fd, td)
+function exFind(it, host, a) {
+  const pressed = new Set();
+  const tile = x => { const anchor = it.d === 'td' && x.j === 0; const off = anchor || it.off.has(x.j);
+    return `<button class="ex-w ${anchor ? 'ex-anchor' : it.off.has(x.j) ? 'ex-off' : ''}" data-j="${x.j}" ${anchor ? '' : 'aria-pressed="false"'} ${off ? 'disabled' : ''}>${esc(x.w)}${anchor ? `<span class="ex-tag">${t('exAnchor')}</span>` : off ? `<span class="ln-sr"> ${t('exOffTile')}</span>` : ''}</button>`; };   // UX-9
+  const lines = [0, 1].map(li => it.tiles.filter(x => x.li === li)).filter(l => l.length);
+  host.innerHTML = `${exBody(it)}<div class="chip ex-lab">${exE('exFindCount', { k: it.tgt.size })}</div>
+    <div class="ex-find">${lines.map(l => `<div class="ex-line">${l.map(tile).join('')}</div>`).join('')}</div>
+    ${S.showTranslit ? learnTl(it.k) : ''}
+    <div class="actions"><button class="btn primary" id="ex-check" aria-disabled="true">${t('exCheck')}</button></div><div class="muted ex-hintv" id="ex-hintv" aria-hidden="true"></div><div id="ex-res" tabindex="-1"></div>`;
+  const chk = $('#ex-check');
+  const done = (p, fresh) => {
+    const ps = new Set(p); let ok = ps.size === it.tgt.size && [...ps].every(j => it.tgt.has(j));
+    if (fresh) ok = exAnswer(it, [...ps].sort((x, y) => x - y));
+    $$('.ex-w', host).forEach(b => { const j = +b.dataset.j; b.disabled = true; if (!b.classList.contains('ex-anchor')) b.setAttribute('aria-pressed', ps.has(j));
+      const tg = it.tgt.has(j), pr = ps.has(j);
+      if (tg && pr) { b.classList.add('ok'); b.insertAdjacentHTML('beforeend', `<span class="ex-tag">${t('exFound')}</span>`); }
+      else if (pr) { b.classList.add('bad'); b.insertAdjacentHTML('beforeend', `<span class="ex-tag">✗ ${t('exNotThis')}</span>`); }
+      else if (tg) { b.classList.add('miss'); b.insertAdjacentHTML('beforeend', `<span class="ex-tag">${t('exMissed')}</span>`); } });
+    chk.hidden = true;
+    exShowRes(it, { ok, p: [...ps] });
+    if (fresh) exFinished(it);
+  };
+  if (a && a.ok !== undefined) { done(a.p, false); return; }
+  exArm();
+  $$('.ex-w:not([disabled])', host).forEach(b => b.onclick = () => { if (exTooSoon()) return; const j = +b.dataset.j; if (pressed.has(j)) pressed.delete(j); else pressed.add(j); b.classList.toggle('sel', pressed.has(j)); b.setAttribute('aria-pressed', pressed.has(j)); chk.setAttribute('aria-disabled', pressed.size ? 'false' : 'true'); });
+  chk.onclick = () => { if (!pressed.size) { exSay(t('exFindHint')); $('#ex-hintv').textContent = t('exFindHint'); return; } if ((S.ex.cur.a[S.ex.cur.i] || {}).ok !== undefined) return; done([...pressed], true); };
+}
+// table engine (al)
+function exTable(it, host, a) {
+  const cols = t('exAlCols').split('|');
+  const p = (a && a.p) ? a.p.slice() : [];
+  const row = f => { const ft = it.feet[f]; const got = p[f]; const ok = got === ft.ans;
+    return `<tr class="${got === undefined ? '' : ok ? 'ok' : 'bad'}"><td data-h="${esc(cols[0])}">${f + 1}. ${esc(ft.w)}</td><td data-h="${esc(cols[2])}">${got === undefined ? '—' : `${ok ? '✓' : '✗'} ${esc(ft.opts[got].lab)}${ok ? '' : ` → ${esc(ft.opts[ft.ans].lab)}`}`}</td></tr>`; };
+  const paint = () => {
+    const f = p.length;
+    host.innerHTML = `${exBody(it)}<table class="ex-al"><thead><tr><th>${esc(cols[0])}</th><th>${esc(cols[2])}</th></tr></thead><tbody>${it.feet.map((_, i) => row(i)).join('')}</tbody></table>
+      ${f < 7 ? `<div class="ex-q" id="ex-alh">${esc(t('exAlProg').replace('{i}', f + 1))}: «${esc(it.feet[f].w)}»</div><div class="t-opts ex-opts" role="group" aria-labelledby="ex-alh">${it.feet[f].opts.map((o, i) => `<button class="btn t-opt ex-opt" data-o="${i}">${esc(o.lab)}</button>`).join('')}</div>` : ''}
+      <div id="ex-res" tabindex="-1"></div>`;
+    if (f >= 7) { const nOk = p.filter((x, i) => x === it.feet[i].ans).length; exShowRes(it, { ok: nOk === 7, p, part: `${nOk}/7` }); return; }
+    exArm();
+    $$('.ex-opt', host).forEach(b => b.onclick = () => {
+      if (exTooSoon() || EX.busy) return; const pk = +b.dataset.o; const fi = p.length; p.push(pk);
+      const ok = exFootAnswer(it, fi, pk); paint();
+      const ft = it.feet[fi];
+      if (fi < 6) { exSay(`${fmt(t('exAlProg'), { i: fi + 1 })}: ${ok ? '✓' : '✗ → ' + ft.opts[ft.ans].lab}`); const nb = $('.ex-opt', host); if (nb) nb.focus({ preventScroll: true }); }
+      else exFinished(it);
+    });
+  };
+  paint();
+}
+// grading: one exSave per graded answer, carrying a[i] with the previous tuples
+function exPrevSnap(a, cur) {
+  return sk => { if (!sk) return; if (!(sk in a.prev)) a.prev[sk] = S.ex.sk[sk] ? S.ex.sk[sk].slice() : null; if (!(sk in cur.b0)) cur.b0[sk] = exEff(sk); };
+}
+function exAnswer(it, pick) {
+  const X = S.ex, cur = X.cur, i = cur.i;
+  const a = { p: pick, ok: 0, part: '', prev: {}, void: 0, skip: 0, lb: it.short, t: it.t };
+  const snap = exPrevSnap(a, cur); const mark = (sk, kind) => { if (!sk) return; snap(sk); exMark(sk, kind); };
+  let ok = false;
+  if (it.eng === 'mcq') {
+    ok = pick === it.ans;
+    if (it.d === 'sl') { const f = it.form; a.prev['w:' + f] = X.w[f] ? X.w[f].slice() : null; exWord(f, ok); }
+    else if (!ok && it.opts[pick] && it.opts[pick].part) a.neu = 1;   // arguable: no credit, no penalty, nothing to redo
+    else { mark(it.opts[it.ans].sk, ok ? 'hit' : 'miss'); if (!ok) mark(it.opts[pick].sk, 'fa'); }
+  } else if (it.eng === 'rows') {
+    let n = 0;
+    it.rows.forEach((r, ri) => { const rok = pick[ri] === r.ans; n += rok; if (!it.skill) { mark(r.opts[r.ans].sk, rok ? 'hit' : 'miss'); if (!rok) mark(r.opts[pick[ri]].sk, 'fa'); } });
+    ok = n === it.rows.length; a.part = `${n}/${it.rows.length}`;
+    if (it.skill) mark(it.skill, ok ? 'hit' : 'miss');
+  } else if (it.eng === 'find') {
+    ok = pick.length === it.tgt.size && pick.every(j => it.tgt.has(j));
+    mark(it.skill, ok ? 'hit' : 'miss');
+  }
+  a.ok = ok ? 1 : 0; cur.a[i] = a;
+  exQueue(it.code, ok || !!a.neu); exSave();
+  return ok;
+}
+function exFootAnswer(it, fi, pk) {
+  const X = S.ex, cur = X.cur, i = cur.i;
+  const a = cur.a[i] && cur.a[i].p ? cur.a[i] : (cur.a[i] = { p: [], prev: {}, void: 0, skip: 0, lb: it.short, t: it.t });
+  const snap = exPrevSnap(a, cur); const ft = it.feet[fi]; const ok = pk === ft.ans;
+  a.p[fi] = pk; snap(ft.sk); exMark(ft.sk, ok ? 'hit' : 'miss');
+  if (!ok && ft.opts[pk].sk) { snap(ft.opts[pk].sk); exMark(ft.opts[pk].sk, 'fa'); }
+  if (fi === 6) { const n = a.p.filter((x, j) => x === it.feet[j].ans).length; a.ok = n === 7 ? 1 : 0; a.part = `${n}/7`; exQueue(it.code, n === 7); }
+  exSave();
+  return ok;
+}
+function exQueue(code, ok) {
+  const X = S.ex; const today = exToday();
+  X.rec.push([code, today]); if (X.rec.length > 150) X.rec.splice(0, X.rec.length - 150);
+  X.miss = X.miss.filter(c => c !== code);
+  if (!ok) { X.miss.push(code); if (X.miss.length > 30) X.miss.splice(0, X.miss.length - 30); }
+}
+// the feedback card
+function exShowRes(it, res) {
+  const el = $('#ex-res'); if (!el) return;
+  el.innerHTML = exFeedback(it, res);
+  exArm(); exWireNext();   // UX-1
+  const rp = $('#ex-rp'); if (rp) rp.onclick = () => exReport(it);
+  const ws = $('#ex-ws'); if (ws) ws.onclick = () => openWordSheet(it.k, it.g.words[it.w], it.g, it.w);
+  const ls = $('#ex-say'); if (ls) ls.onclick = e => reciteKural(it.k, e.currentTarget);
+  if (it.d === 'an' && it.anMark >= 0) { const tk = $(`.ex-couplet .ex-tk[data-j="${it.anMark}"]`); if (tk && !tk.querySelector('mark')) tk.innerHTML = `<mark class="ex-mark">${tk.innerHTML}</mark>`; }
+}
+function exFeedback(it, res) {
+  const cur = S.ex.cur; const a = cur && cur.a[cur.i]; const voided = a && a.void;
+  const last = cur && cur.i + 1 >= cur.ids.length;
+  if (res.neu === undefined && a && a.neu) res.neu = true;
+  const nOk = res.part ? +res.part.split('/')[0] : 0;
+  const verdict = voided ? t('exVoided') : res.ok ? t('lnRight') : res.neu ? exF('exPart', { x: it.keyLab })
+    : it.d === 'al' ? exF('exAlVerdict', { k: nOk })                                  // EX-COPY-07: never 'not this one' beside a right last foot
+      : it.eng === 'find' ? t('exFindWrong') : it.eng === 'rows' && nOk > 0 ? exF('exRowsWrong', { x: it.keyLab })
+        : exF(EX_METRE_D.has(it.d) ? 'exWrongRule' : 'exWrong', { x: it.keyLab });   // EX-COPY-09: metre and rhyme answers come from the rule
+  const part = res.part && !res.ok && it.d !== 'al' ? ` <span class="muted">${exE('exRowsVerdict', { a: res.part.split('/')[0], b: res.part.split('/')[1] })}</span>` : '';
+  const d = it.d; const x = [];
+  let ans = `«${esc(it.word || '')}» – ${esc(it.keyLab)}`;
+  if (d === 'ec' && it.key === 'எதிர்மறைபெயரெச்சம்' && /ா$/.test(tWord(it.c.s))) ans = `«${esc(it.word)}» – ஈறுகெட்ட எதிர்மறைப் பெயரெச்சம்${S.ui === 'en' ? ' · negative adjectival participle, final vowel dropped' : ''}`;
+  if (d === 'tp') ans = `«${esc(it.word)}» – ${esc(it.keyLab)}`;
+  if (d === 'an') ans = `${t('kural')} ${it.n} – ${esc(it.keyLab)}`;
+  if (d === 'pr') ans = `${esc(it.stem)} = ${esc(it.A)} + ${esc(it.B)}`;
+  if (d === 'fd') ans = `${esc(it.keyLab)} – ${esc(exLabel(it.set, it.key))}`;
+  if (d === 'td') ans = `«${esc(it.word)}» – ${esc(it.keyLab)}`;
+  if (['sa', 'sn', 'sf'].includes(d)) ans = exFootRow(it.M, it.foot);
+  if (d === 'th') ans = `«${esc(it.word)}» – ${esc(exLabel('th', it.key))}`;
+  if (d === 'al') ans = `<table class="ex-al ex-model"><thead><tr>${t('exAlCols').split('|').map(h => `<th>${esc(h)}</th>`).join('')}</tr></thead><tbody>${it.M.S.map((sr, f) => `<tr><td>${f === 6 ? esc(stripPunct(sr.w)) : exSegHTML(sr)}</td><td>${exAsaiTxt(it.M, f)}</td><td>${esc(exLabel(f === 6 ? 'fn' : 'vp', f === 6 ? it.M.fin : it.M.names[f]))}</td></tr>`).join('')}</tbody></table>`;
+  // per-drill extras inside "விளக்கம்"
+  if (['sv', 'pv', 'ec', 'vm', 'tg', 'fd'].includes(d)) x.push(exDefLine(it.key, { sv: 'cat', fd: it.set }[d] || d));
+  if (d === 'vm' && !res.ok && it.opts[res.p]) x.push(exDefLine(it.opts[res.p].v, 'vm'));
+  const whyPart = res.neu && it.opts[res.p] ? exE(EX_SUPER[it.key] === it.opts[res.p].v ? 'exPartSuper' : 'exPartAlt', { p: it.opts[res.p].lab, x: it.keyLab }) : '';
+  if (d === 'pv') x.push(`<div>${t('exPvSix')}</div>`);
+  if (d === 'tp') { const f = it.rows; const vals = `${f[0].opts[f[0].ans].lab.split(' · ')[0]} · ${f[1].opts[f[1].ans].lab.split(' · ')[0]} · ${f[2].opts[f[2].ans].lab.split(' · ')[0]} · ${f[3].opts[f[3].ans].lab.split(' · ')[0]}`; x.push(`<div>${it.vik ? exE('exR_tp', { v: it.vik === 'அது' ? 'து' : it.vik, x: vals }) : exE('exR_tpDem', { w: it.word, x: vals })}</div><div class="muted">${t('exTpAgree')}</div>`); }
+  if (d === 'vt') x.push(`<div>${exE('exUrupu', { u: it.ur })} · ${exCoupletWordEnd(it)}</div><div>${esc(exLabel('vt', it.key))}: ${esc(VET_MEAN[it.key][S.ui === 'ta' ? 0 : 1])}</div><div class="muted">${t('exVtNote')}</div>`);
+  if (d === 'tg') { if (it.key === 'வேற்றுமைத்தொகை') x.push(`<div>${t('exTgNote')}</div>`); if (it.key === 'பண்புத்தொகை') x.push(`<div>${t('exTgPanbu')}</div>`); }
+  if (d === 'pr') { if (it.tail) x.push(`<div>${exE('exTail', { c: it.tail, nx: it.nx })}</div>`); x.push(`<div class="muted">${t('exSplitNote')}</div>`); }
+  if (d === 'td') {
+    const toks = it.tiles.map(q => stripPunct(q.w)); const g = q => (exGra(q)[it.kind === 'm' ? 0 : 1] || '');
+    x.push(`<div>${t(it.kind === 'm' ? 'exR_monai' : 'exR_etukai')}</div>`);
+    x.push(`<div>${[...it.tgt].map(j => `«${esc(toks[0])}» – «${esc(toks[j])}» · ${esc(g(toks[0]))}/${esc(g(toks[j]))}`).join('<br>')}</div>`);
+    const a0 = stripPunct(it.k.l1.split(/\s+/)[0]), b0 = stripPunct(it.k.l2.split(/\s+/)[0]);
+    if (exRhyme('e', a0, b0) === 'T') x.push(`<div class="muted">${exE('exAdiEtukai', { a: a0, b: b0 })}</div>`);
+  }
+  if (['sa', 'sn', 'sf', 'al'].includes(d)) x.push(`<div>${t(d === 'sf' ? 'exR_final' : 'exR_asai')}</div>`);
+  if (d === 'al') x.push(`<div>${t('exPaa')}</div><div>${exE('exAlDone', { x: exLabel('fn', it.M.fin) })}</div><div>${t('exR_final')}</div>`);
+  if (d === 'th') { const j = it.j, M = it.M; const nx = exSegs(M.S[j + 1])[0]; x.push(`<div>${exE('exR_th', { a: exLabel('vp', M.names[j]), cls: it.cls, asai: `${M.pats[j + 1][0] === 'N' ? t('exNer') : t('exNirai')} (${nx})`, x: exLabel('th', it.key) })}</div><div class="muted">${esc(stripPunct(M.S[j].w))}: ${esc(exLabel('vp', M.names[j]))} · ${esc(stripPunct(M.S[j + 1].w))}: ${esc(j + 1 === 6 ? exLabel('fn', M.fin) : exLabel('vp', M.names[j + 1]))}</div>`); }
+  if (d === 'an') { if (it.note) x.push(`<div class="gloss-tip"><b>${t('exAnNote')}</b>: ${esc(it.note)}</div>`); ['உவமை', 'எடுத்துக்காட்டுவமை', 'உருவகம்'].forEach(v => x.push(exDefLine(v))); if (it.key === 'உருவகம்') x.push(`<div class="muted">${t('exAnEka')}</div>`); x.push(`<div class="muted">${t('exAnMore')}</div>`); }
+  if (d === 'sl') x.push(`<div class="muted">${t('exSlSub')}</div>`);
+  if (it.corr) x.push(`<div class="ai-note">${t('exCorrNote')}</div>`);
+  const links = `<div class="row ex-links">${it.g && it.w !== undefined && d !== 'fd' && d !== 'an' ? `<button class="btn small" id="ex-ws">${t('exWord')}</button>` : ''}<a class="btn small" href="#/k/${it.n}">${exE('exKural', { n: it.n })}</a><button class="btn small" id="ex-say">${t('exListen')}</button></div>`;
+  return `<div class="t-fb ${voided || res.neu ? '' : res.ok ? 'ok' : 'bad'}"><b class="ex-verdict">${esc(verdict)}</b>${part}
+    <div class="ex-ansl">${ans}</div>${whyPart ? `<div class="ex-part">${whyPart}</div>` : ''}${exConfHTML(it)}
+    <div class="row ex-btns"><button class="btn primary" id="ex-next">${t(last ? 'exFinish' : 'exNext')}</button>${voided ? '' : `<button class="btn" id="ex-rp">${t('exReport')}</button>`}</div>
+    <details class="ex-more" ${innerWidth >= 420 ? 'open' : ''}><summary>${t('exMore')}</summary>${x.join('')}${links}</details></div>`;
+}
+const exEndCut = (w, end) => { let cut = w.length - end.length; if (/^[\u0BBE-\u0BCD\u0BD7]/.test(end) && cut > 0) cut--; return cut; };   // EX-COPY-02: take the consonant that carries the sign
+function exCoupletWordEnd(it) { const w = it.word || ''; if (!w.endsWith(it.urw)) return `«${esc(w)}»`; const cut = exEndCut(w, it.urw); return `«${esc(w.slice(0, cut))}<b>${esc(w.slice(cut))}</b>»`; }
+// ⚑: void only when the report is actually sent
+function exReport(it) {
+  const cur = S.ex.cur; if (!cur) return; const i = cur.i; const a = cur.a[i]; if (!a || a.void) return;
+  const cm = chMeta(chOf(it.n));
+  const pickLab = it.opts && typeof a.p === 'number' && it.opts[a.p] ? it.opts[a.p].lab : Array.isArray(a.p) && it.rows ? a.p.map((x, ri) => it.rows[ri].opts[x] ? it.rows[ri].opts[x].lab : '').join(' · ') : Array.isArray(a.p) && it.tiles ? a.p.map(j => it.tiles[j] ? stripPunct(it.tiles[j].w) : '').join(', ') : Array.isArray(a.p) && it.feet ? a.p.map((x, f) => it.feet[f].opts[x].lab).join(' · ') : '';
+  const stream = EX_METRE_D.has(it.d) ? 'metre' : 'grammar';
+  openReportSheet(it.k, cm, stream, {
+    type: it.rpType || stream, note: fmt(t('exRpNote'), { d: it.tt, w: it.word || `${t('kural')} ${it.n}`, x: it.keyLab, y: pickLab }),
+    extra: `exam item ${it.code} · bank ${EX.bank.rev} · conf ${it.cf === null || it.conf === 'none' ? '-' : (it.cf / 100).toFixed(2)}`,
+    onSent: () => exVoid(i, it.code),
+  });
+}
+const EX_METRE_D = new Set(['sa', 'sn', 'sf', 'th', 'al', 'td']);
+function exVoid(i, code) {
+  const X = S.ex, cur = X && X.cur; if (!cur || cur.ids[i] !== code) return;
+  const a = cur.a[i]; if (!a || a.void) return;
+  for (const [k, v] of Object.entries(a.prev || {})) {
+    if (k.startsWith('w:')) { if (v) X.w[k.slice(2)] = v; else delete X.w[k.slice(2)]; }
+    else if (v) X.sk[k] = v; else delete X.sk[k];
+  }
+  a.void = 1; X.miss = X.miss.filter(c => c !== code);
+  if (!X.off.includes(code)) { X.off.push(code); if (X.off.length > 300) X.off.splice(0, X.off.length - 300); }
+  exSave();
+  if (cur.i === i && exOnGo()) { const v = $('#ex-res .ex-verdict'); if (v) v.textContent = t('exVoided'); const rp = $('#ex-rp'); if (rp) { rp.disabled = true; rp.textContent = '⚑ ✓'; } const nx = $('#ex-next'); if (nx) sheetOpener = nx; const fb = $('#ex-res .t-fb'); if (fb) fb.classList.remove('ok', 'bad'); }
+}
+function exCommit(silent) {
+  const X = S.ex, cur = X && X.cur; EX.busy = false; if (!cur) { if (!silent) location.replace('#/exam'); return; }
+  const today = exToday(); const items = []; let q = 0, r = 0, vd = 0;
+  cur.ids.forEach((c, i) => { const a = cur.a[i]; if (!a || a.skip || (a.ok === undefined && !a.void && !(a.p && a.p.length))) return;
+    if (a.ok === undefined && !a.void) { a.ok = 0; a.part = `${a.p.filter((x, f) => x !== undefined).length}/7`; exQueue(c, false); }   // ST-10
+    if (a.void) { vd++; items.push([c, -1, a.lb || c, a.t || '']); return; } q++; r += a.ok; items.push([c, a.neu ? 2 : a.ok, a.lb || c, a.t || '']); });
+  const up = [], dn = []; for (const [sk, b] of Object.entries(cur.b0 || {})) { const e = exEff(sk); if (e > b) up.push(sk); else if (e < b) dn.push(sk); }
+  X.last = { d: today, lv: cur.lv, t: cur.t, src: cur.src, sk: cur.sk || '', n: q, ok: r, vd, items, up, dn };
+  X.hist.n++; X.hist.q += q; X.hist.r += r; if (X.hist.last !== today) { X.hist.days++; X.hist.last = today; }
+  X.cur = null; exSaveAll();
+  if (!silent) location.replace('#/exam/done');
+}
+function exSkillLabel(sk) {
+  const [p, v] = [sk.slice(0, sk.indexOf(':')), sk.slice(sk.indexOf(':') + 1)];
+  if (p === 'cat') return exLabel('cat', v); if (p === 'ilk') return exLabel('ilakkanam', v); if (p === 'vt') return exLabel('vt', +v);
+  if (['ti', 'pa', 'en', 'tg', 'an', 'vp', 'fn', 'th'].includes(p)) return exLabel(p, v);
+  if (p === 'td') return t('exL_td_' + v); return sk === 'pr' ? t('exT_pr') : sk;
+}
+async function exDone() {
+  setTitle(t('exResT'), t('exTitle'));
+  await exBank(); if (!location.hash.startsWith('#/exam/done')) return;
+  const X = exEnsure(); const L_ = X.last;
+  if (!L_) { location.replace('#/exam'); return; }
+  const pct = L_.n ? Math.round(100 * L_.ok / L_.n) : 0; const tps = {};
+  L_.items.forEach(([, ok, , tp]) => { if (!tp || ok === -1 || ok === 2) return; const o = tps[tp] || (tps[tp] = [0, 0]); o[ok ? 0 : 1]++; });
+  render(`<div class="card ex"><h2 class="ex-h" tabindex="-1">${t('exResT')}</h2>
+    <div class="ex-score">${exE('exScore', { a: L_.ok, b: L_.n, p: pct })}</div>${L_.vd ? `<div class="muted">${exE('exVoidN', { n: L_.vd })}</div>` : ''}
+    <div class="muted">${fmt(t('exMoved'), { up: L_.up.map(exSkillLabel).map(esc).join(', ') || '—', dn: L_.dn.map(exSkillLabel).map(esc).join(', ') || '—' })}</div>
+    <div class="row" style="margin-top:6px">${Object.entries(tps).map(([tp, [a, b]]) => `<span class="chip">${esc(t('exT_' + tp))} ✓${a} ✗${b}</span>`).join('')}</div>
+    <ul class="ex-list">${L_.items.map(([c, ok, lb]) => { const n = +c.split(':')[1].split('.')[0]; return `<li><span class="ex-st">${ok === -1 ? t('exVoidItem') : ok === 2 ? '◐' : ok ? '✓' : '✗'}</span> <a href="#/k/${n}">${esc(lb)}</a></li>`; }).join('')}</ul>
+    <div class="actions">${exMissN() ? `<button class="btn" id="exd-miss">${exE('exMissBtn', { n: exMissN() })}</button>` : ''}<button class="btn primary" id="exd-again">${t('exAgain')}</button><a class="btn" href="#/exam">${t('exHub')}</a></div></div>`);
+  const mb = $('#exd-miss'); if (mb) mb.onclick = () => { EX.start = { t: '', src: 'miss' }; location.replace('#/exam/go'); };
+  $('#exd-again').onclick = () => { EX.start = { t: L_.t || '', src: L_.src, sk: L_.sk || '' }; location.replace('#/exam/go'); };   // ST-7
+  const h = $('.ex-h'); if (h) h.focus({ preventScroll: true });
+}
+async function exTerms() {
+  setTitle(t('exTermsT'), t('exTitle'));
+  const groups = [['sv', 'cat', ['பெயர்', 'வினை', 'இடை', 'உரி'], 'category'], ['pv', 'pv', null, 'ilakkanam'], ['ec', 'ec', null, 'ilakkanam'], ['vm', 'vm', null, 'ilakkanam'], ['tg', 'tg', ['வேற்றுமைத்தொகை', 'வினைத்தொகை', 'பண்புத்தொகை', 'உவமைத்தொகை', 'உம்மைத்தொகை'], 'togai'], ['an', 'an', null, 'ani']];
+  const d = x => { const e = EX_DEF[x] || (EX.gloss.terms || {})[x]; return e ? `<div class="gloss-tip">${esc(e.ta)} <span class="muted">(${t('exDef')})</span><br><i lang="en">${esc(e.en)}</i> <span class="muted">(${t('exDraft')})</span></div>` : ''; };
+  render(`<div class="card ex"><h2 class="ex-h" tabindex="-1">${t('exTermsT')}</h2><div class="ai-note">${t('exTermsNote')}</div></div>${groups.map(([tp, ty, list, gx]) => `<div class="card ex"><h3>${t('exT_' + tp)}</h3>${(list || Object.keys(EXN[ty])).map(x => `<div class="ex-term"><a class="ex-tlink" href="#/grammar?type=${gx}&tag=${encodeURIComponent(x)}">${esc(exLabel(ty, x))}</a>${d(x)}</div>`).join('')}</div>`).join('')}
+  <div class="card ex"><h3>${t('exT_vt')}</h3>${[2, 3, 4, 5, 7].map(n => `<div class="ex-term"><b>${esc(exLabel('vt', n))}</b> — ${esc(VET_MEAN[n][0])} <i lang="en">(${esc(VET_MEAN[n][1])})</i></div>`).join('')}</div>
+  <div class="card ex"><h3>${t('exT_sr')}</h3><div>${t('exR_asai')}</div><div>${t('exR_final')}</div><h3>${t('exT_td')}</h3><div>${t('exR_monai')}</div><div>${t('exR_etukai')}</div></div>`);
+}
+// entry point on the kural page: shown only when there are at least 3 items there at this level
+async function exKuralBtn(n) {
+  const B = await exBank(); const box = $('#ex-k'); if (!B || !box || (location.hash.split('?')[0].split('/')[2] || '') !== String(n)) return;
+  const lv = S.ex ? S.ex.lv : null;
+  if ((lv == null ? Math.max(...[1, 2, 3, 0].map(l => exCountK(n, l))) : exCountK(n, lv)) < 3) return;   // ST-2
+  box.innerHTML = `<button class="btn" id="ex-kgo">${t('exOnKural')}</button>`;
+  $('#ex-kgo').onclick = () => { EX.start = { t: '', src: 'k-' + n }; location.hash = '#/exam/go'; };
+}
+function exCountK(n, lv) {   // items a k-N round can use at level lv
+  const B = EX.bank; if (!B) return 0; const thr = exThr(lv); const tps = new Set(exTopicsAt(lv).map(x => x.t));
+  return (B.byN.get(n) || []).filter(e => tps.has(e.t) && e.cf >= thr && (B.cnt[thr][e.t] || 0) >= EX_FLOOR).length;
+}
+// grammar explorer: the practise button on a tag page
+function exTagTopic(type, tag) {
+  const B = EX.bank; if (!B) return null;
+  const lv = S.ex ? S.ex.lv : null; const thr = exThr(lv);
+  let cands = [];
+  if (type === 'ilakkanam') cands = ['pv', 'ec', 'vm'].map(tp => [tp, 'ilk:' + tag]);
+  else if (type === 'category') cands = [['sv', 'cat:' + tag]];
+  else if (type === 'togai') cands = [['tg', 'tg:' + tag]];
+  else if (type === 'ani') cands = [['an', 'an:' + tag]];
+  else if (type === 'vetrumai') { const m = /^(\d) ·/.exec(tag); if (m) cands = [['vt', 'vt:' + m[1]]]; }
+  for (const [tp, sk] of cands) {
+    const T = EX_TOPICS.find(x => x.t === tp); if (lv != null && lv !== 0 && T.lv > lv) continue;
+    if ((B.cnt[thr][tp] || 0) < EX_FLOOR) continue;
+    const n = B.E.filter(e => e.t === tp && e.sk === sk && e.cf >= thr).length;
+    if (n >= 10) return { t: tp, sk };
+  }
+  return null;
+}
+
+// ── console self-test (spec §8 test 5) ──
+async function exSelfTest(n = 2000) {
+  const fails = []; const B = await exBank(); if (!B) return { fails: ['no bank'] };
+  const saved = { ex: S.ex, ui: S.ui };
+  S.ex = Object.assign(exDef(), { lv: 0, off: [] });
+  try {
+    await Promise.all(Array.from({ length: 133 }, (_, i) => Promise.all([chapter(i + 1), grammar(i + 1)])));
+    const F = {}; const fa = (f, k, v) => { ((F[f] ||= {})[k] ||= new Set()).add(v); };
+    for (let c = 1; c <= 133; c++) for (const [kn, g] of Object.entries(D.gr[c].kurals)) for (const w of g.words) {
+      const tok = tWord(w.w);
+      for (const x of w.c) { const f = tWord(x.s); fa(f, 'cat', x.cat); fa(f, 'ilk', x.ilk); for (const kk of ['thinai', 'paal', 'eN']) if (x.feat && x.feat[kk]) fa(f, kk, x.feat[kk]); if (x.vet && typeof x.vet.number === 'number') fa(tok, 'vet', x.vet.number); }
+      if (w.togai && w.c.length >= 2) fa(tok, 'togai', w.togai);
+      void kn;
+    }
+    const carries = (f, k, v) => !!(F[f] && F[f][k] && F[f][k].has(v));
+    const SIB = { 'வினையெச்சம்': ['எதிர்மறைவினையெச்சம்'], 'எதிர்மறைவினையெச்சம்': ['வினையெச்சம்'], 'பெயரெச்சம்': ['எதிர்மறைபெயரெச்சம்'], 'எதிர்மறைபெயரெச்சம்': ['பெயரெச்சம்'], 'தெரிநிலைவினைமுற்று': ['குறிப்புவினைமுற்று', 'எதிர்மறைவினைமுற்று', 'வினையாலணையும்பெயர்'], 'குறிப்புவினைமுற்று': ['தெரிநிலைவினைமுற்று', 'எதிர்மறைவினைமுற்று', 'வினையாலணையும்பெயர்'], 'எதிர்மறைவினைமுற்று': ['தெரிநிலைவினைமுற்று', 'குறிப்புவினைமுற்று', 'வினையாலணையும்பெயர்'], 'வினையாலணையும்பெயர்': ['தெரிநிலைவினைமுற்று', 'குறிப்புவினைமுற்று', 'எதிர்மறைவினைமுற்று', 'தொழிற்பெயர்'], 'தொழிற்பெயர்': ['வினையாலணையும்பெயர்', 'வியங்கோள்வினைமுற்று'], 'வியங்கோள்வினைமுற்று': ['தொழிற்பெயர்'] };
+    const all = [];
+    for (const e of B.E) { if (e.c.startsWith('sr:')) { all.push('sa:' + e.c.slice(3), 'sn:' + e.c.slice(3)); } else all.push(e.c); }
+    for (const arr of Object.values(B.fd)) arr.forEach(f => all.push(f.c));
+    const rnd = mulberry32(12345); const codes = Array.from({ length: n }, () => all[Math.floor(rnd() * all.length)]);
+    const rawKey = /\b(?:ex|gx)[A-Z][A-Za-z_]*\b/;
+    let i = 0;
+    for (const code of codes) {
+      i++; const it = exItem(code, i, 777);
+      if (!it) { fails.push(code + ': unresolved'); continue; }
+      const d = it.d;
+      if (it.opts) {
+        const labs = it.opts.map(o => o.lab); if (new Set(labs).size !== labs.length) fails.push(code + ': duplicate options');
+        if (it.opts.filter((o, j) => j === it.ans).length !== 1 || it.ans < 0) fails.push(code + ': key not once');
+        const cnt = it.opts.length; const want = d === 'an' || d === 'pr' ? [3] : ['th', 'sn', 'sf', 'sv', 'vt', 'sl', 'ec'].includes(d) ? [4] : d === 'pv' || d === 'vm' ? [6] : [3, 4];
+        if (it.opts[it.ans].part) fails.push(code + ': key marked part');
+        if (['pv', 'ec', 'vm'].includes(d) && !it.opts.some((o, j) => j !== it.ans && !o.part)) fails.push(code + ': no scored distractor');
+        if (!want.includes(cnt)) fails.push(`${code}: ${cnt} options`);
+        const f = it.c ? tWord(it.c.s) : ''; const tok = it.g && it.w !== undefined ? tWord(it.g.words[it.w].w) : '';
+        it.opts.forEach((o, j) => { if (j === it.ans || o.part) return;
+          if (d === 'sv' && carries(f, 'cat', o.v)) fails.push(code + ': distractor carried ' + o.v);
+          if (['pv', 'ec', 'vm'].includes(d) && carries(f, 'ilk', o.v)) fails.push(code + ': distractor carried ' + o.v);
+          if (d === 'vt' && carries(tok, 'vet', o.v)) fails.push(code + ': distractor carried ' + o.v);
+          if (d === 'tg' && carries(tok, 'togai', o.v)) fails.push(code + ': distractor carried ' + o.v); });
+      }
+      if (it.rows) { const f = it.c ? tWord(it.c.s) : ''; if (d === 'tp') [['thinai', 0], ['paal', 1], ['eN', 2]].forEach(([k, ri]) => it.rows[ri].opts.forEach((o, j) => { if (j !== it.rows[ri].ans && carries(f, k, o.v)) fails.push(code + ': row carried ' + o.v); })); if (d === 'tp' && (it.rows[0].opts.length !== 2 || it.rows[1].opts.length !== 5 || it.rows[2].opts.length !== 2 || it.rows[3].opts.length !== 3)) fails.push(code + ': tp rows'); }
+      if (d === 'fd') { const X_ = it.key; for (const j of it.tgt) { const wd = it.g.words[j]; if (exCf(Math.min(...wd.c.map(x => x.conf))) < 70) fails.push(code + ': target conf'); }
+        it.g.words.forEach((wd, j) => { if (it.tgt.has(j) || it.off.has(j)) return; if (wd.c.some(x => [X_, ...(SIB[X_] || [])].some(v => carries(tWord(x.s), 'ilk', v) || x.ilk === v))) fails.push(code + ': tappable carries ' + X_); }); }
+      if (it.feet) it.feet.forEach((ft, f) => { if (ft.opts.length !== 4 || new Set(ft.opts.map(o => o.lab)).size !== 4 || !(ft.ans >= 0)) fails.push(`${code}: foot ${f} options`); });
+      if (it.M) { it.M.S.slice(0, 6).forEach((sr, j) => { if (EX_VP[it.M.pats[j]] !== it.M.names[j]) fails.push(code + ': metre name'); }); }
+      for (const ui of ['ta', 'en']) {
+        S.ui = ui; const it2 = exItem(code, i, 777); const div = document.createElement('div');
+        div.innerHTML = exBody(it2) + (it2.opts || []).map(o => o.lab).join(' ') + exFeedback(it2, { ok: false, p: it2.ans !== undefined ? (it2.ans + 1) % Math.max(1, (it2.opts || [1]).length) : [], part: '1/2' }) + exFeedback(it2, { ok: true, p: it2.ans });
+        const m = rawKey.exec(div.textContent); if (m) fails.push(`${code} [${ui}]: raw key ${m[0]}`);
+      }
+      S.ui = saved.ui;
+    }
+    return { fails: [...new Set(fails)].slice(0, 200), n: codes.length };
+  } finally { S.ex = saved.ex; S.ui = saved.ui; }
+}
+
 // ───────────────────────────── daily + notifications ─────────────────────────────
 async function viewDaily() {
   const n = dailyN(); const k = await kural(n); const cm = chMeta(chOf(n));
@@ -2659,19 +3757,28 @@ async function viewBookmarks() {
   render(`<div class="card list">${ks.length ? ks.map(k => kuralLinkRow(k, f)).join('') : `<div class="muted">${t('noBookmarks')}</div>`}</div>`);
 }
 async function viewGrammar(type, tag) {
-  const tg = await tags(); const g = await glossary().catch(() => ({ terms: {} }));
+  const tg = await tags(); const g = await glossary().catch(() => ({ terms: {} })); EX.gloss = EX.gloss || g;
   setTitle(t('grammarX'), t('grammar'));
   const types = Object.keys(tg);
-  const tabs = `<div class="tabs-inline">${types.map(ty => `<a href="#/grammar?type=${ty}"><button class="${ty === type ? 'on' : ''}">${ty}</button></a>`).join('')}</div>`;
+  const tabs = `<div class="tabs-inline gx-tabs">${types.map(ty => `<a class="chip ${ty === type ? 'sel' : ''}" href="#/grammar?type=${ty}" ${ty === type ? 'aria-current="page"' : ''}>${esc(t('gxT_' + ty))}</a>`).join('')}</div>`;
+  const canon = x => type === 'ani' ? (ANI_CANON[x] || x) : type === 'vetrumai' ? (VET_CANON[x] || x) : x;
+  const other = x => type === 'ani' ? ANI_OTHER.has(x) : type === 'vetrumai' ? VET_OTHER.has(x) : false;
+  const merged = {}; for (const [k, arr] of Object.entries(tg[type] || {})) { const c = canon(k); const set = merged[c] || (merged[c] = new Set()); arr.forEach(n => set.add(n)); }
+  const defOf = x => g.terms[x] || g.terms[String(x).replace(/^\d · /, '')];
   if (!tag) {
-    render(`<div class="card">${tabs}<div>${Object.entries(tg[type] || {}).map(([tgk, arr]) => `<a class="chip" href="#/grammar?type=${type}&tag=${encodeURIComponent(tgk)}" title="${esc((g.terms[tgk] || {})[S.ui] || '')}">${esc(tgk)} <small>${arr.length}</small></a>`).join('')}</div></div>`);
+    const chip = ([k, set]) => `<a class="chip" href="#/grammar?type=${type}&tag=${encodeURIComponent(k)}" title="${esc((defOf(k) || {})[S.ui] || '')}">${esc(exLabel(type, k))} <small>${set.size}</small></a>`;
+    const ent = Object.entries(merged).sort((a, b) => b[1].size - a[1].size);
+    const main = ent.filter(([k]) => !other(k)), oth = ent.filter(([k]) => other(k));
+    render(`<div class="card">${tabs}<div>${main.map(chip).join('')}</div>${oth.length ? `<div class="gx-other"><div class="muted">${t(type === 'vetrumai' ? 'gxOtherVet' : 'gxOther')}</div>${oth.map(chip).join('')}</div>` : ''}</div>`);
     return;
   }
-  const nums = (tg[type] || {})[tag] || [];
-  const def = g.terms[tag];
-  render(`<div class="card">${tabs}<h2>${esc(tag)} <span class="muted">· ${nums.length} ${t('kural')}</span></h2>${def ? `<div class="gloss-tip">${esc(def.ta)}<br><i>${esc(def.en)}</i></div>` : ''}</div><div class="card list" id="gl"><div class="muted">…</div></div>`);
-  const ta = await sindex('ta'); const f = firstLang();
-  $('#gl').innerHTML = nums.slice(0, 400).map(n => `<a href="#/k/${n}"><span class="num">${n}</span><span class="tx"><span class="l">${esc(ta[n - 1][1])} ${esc(ta[n - 1][2])}</span></span></a>`).join('') + (nums.length > 400 ? `<div class="muted">… +${nums.length - 400}</div>` : '');
+  const ctag = canon(tag); const nums = [...(merged[ctag] || [])].sort((a, b) => a - b);
+  const def = defOf(ctag);
+  const pr = (await exBank()) ? exTagTopic(type, ctag) : null;
+  render(`<div class="card">${tabs}<h2>${esc(exLabel(type, ctag))} <span class="muted">· ${nums.length} ${t('kural')}</span></h2>${def ? `<div class="gloss-tip">${esc(def.ta)}<br><i>${esc(def.en)}</i></div>` : ''}${pr ? `<div class="row" style="margin-top:8px"><button class="btn" id="gx-pr">${t('gxPractise')}</button></div>` : ''}</div><div class="card list" id="gl"><div class="muted">…</div></div>`);
+  if (pr) $('#gx-pr').onclick = () => { EX.start = { t: pr.t, sk: pr.sk, src: 'book' }; location.hash = '#/exam/go'; };
+  const ta = await sindex('ta'); const gl = $('#gl'); if (!gl) return;
+  gl.innerHTML = nums.slice(0, 400).map(n => `<a href="#/k/${n}"><span class="num">${n}</span><span class="tx"><span class="l">${esc(ta[n - 1][1])} ${esc(ta[n - 1][2])}</span></span></a>`).join('') + (nums.length > 400 ? `<div class="muted">… +${nums.length - 400}</div>` : '');
 }
 async function viewSettings() {
   setTitle(t('settings'), '');
@@ -2741,7 +3848,7 @@ async function viewOffline() {
   await loadFontUrls();
   const ai = await audioInfo(); const m = D.meta;
   const est = navigator.storage && navigator.storage.estimate ? await navigator.storage.estimate() : null;
-  const textUrls = ['assets/fonts.css', ...FONT_URLS, 'kattam/index.html', 'kattam/app.js', 'kattam/styles.css', 'kattam/assets/icon.svg', 'kattam/data/meta.json', 'kattam/data/mini.json', 'kattam/data/weekly.json', 'data/occasions.json']; for (let i = 1; i <= 133; i++) textUrls.push(`data/ch/${pad(i, 3)}.json`, `data/gr/${pad(i, 3)}.json`);
+  const textUrls = ['assets/fonts.css', ...FONT_URLS, 'kattam/index.html', 'kattam/app.js', 'kattam/styles.css', 'kattam/assets/icon.svg', 'kattam/data/meta.json', 'kattam/data/mini.json', 'kattam/data/weekly.json', 'data/occasions.json', 'data/ex.json']; for (let i = 1; i <= 133; i++) textUrls.push(`data/ch/${pad(i, 3)}.json`, `data/gr/${pad(i, 3)}.json`);
   ['translit', 'prose-ta', 'prose-en', ...m.langOrder, ...m.counts.proseLangs.filter(c => !['ta', 'en'].includes(c)).map(c => 'prose-' + c)].forEach(c => textUrls.push(`data/search/${c}.json`));
   const packs = Object.keys(ai.tts || {});
   const packUrls = p => Array.from({ length: 1330 }, (_, i) => `audio/tts/${p}/${pad(i + 1, 4)}.mp3`).slice(0, (ai.tts || {})[p] || 0);

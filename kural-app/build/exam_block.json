@@ -1,0 +1,29 @@
+{
+ "drills": [],
+ "items": [
+  "an:1023",
+  "an:1240",
+  "an:1266",
+  "an:543",
+  "ec:191.2.0",
+  "ec:192.3.0",
+  "sv:1031.3.0",
+  "sv:621.6.0",
+  "tg:61.4",
+  "tg:931.5"
+ ],
+ "kurals": [
+  208,
+  412,
+  934,
+  1117
+ ],
+ "_why": {
+  "208": "printed text garbled: 'அஇஉறைந் தற்று' for 'அடியுறைந் தற்று'",
+  "412/934/1117": "text defects reported in review",
+  "an:543 an:1023 an:1240 an:1266": "உருவகம் key doubtful (personification or no metaphor) — CICT to rule",
+  "sv:1031.3.0": "அதனால் is taught as a connective (இடைச்சொல்), not a noun",
+  "tg:931.5": "மீன்விழுங்கி: the fish is the subject, not a 2nd-case object",
+  "review r1": "vm:176.2.0 நின்றான் is a participial noun here; ec 191/192/195/197 பயனில/நயனில are nouns; tg:61.4 மக்கட்பேறு carries a wrong case tag in gr (4 for 2); 331/621 are சீர்-cut fragments"
+ }
+}

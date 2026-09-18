@@ -655,3 +655,80 @@ html{scroll-padding-top:calc(3.75rem + 12px + var(--sat, env(safe-area-inset-top
 @media (prefers-color-scheme:dark){ :root:not([data-theme="light"]) .ln-said.on,:root:not([data-theme="light"]) .ln-tile.bad::after{color:#1f1b16} }
 :root[data-theme="dark"] .ln-said.on,:root[data-theme="dark"] .ln-tile.bad::after{color:#1f1b16}
 @media (prefers-reduced-motion:reduce){ .t-prog i{transition:none} }
+/* ── தேர்வுப் பயிற்சி · exam practice ── */
+.ex .btn,.ex .chip,.ex-chip,.ex-w,.ex-topic,.gx-tabs a.chip{min-height:44px;min-width:44px}
+.ex .chip{display:inline-flex;align-items:center;justify-content:center}
+.ex-chip{padding:8px 14px;font-size:.95rem;white-space:normal;overflow-wrap:anywhere;text-align:center}
+.ex-chip.sel,.ex-chip[aria-pressed="true"],.ex-w.sel{background:var(--accent);color:var(--card);border-color:transparent}
+.ex-head{display:flex;flex-wrap:wrap;align-items:center;gap:6px}
+.ex-head .chip{min-height:0;min-width:0}
+.ex-lab{white-space:normal;overflow-wrap:anywhere;max-width:100%}
+.ex-h{margin:10px 0 6px;font-size:1.05rem;color:var(--accent);overflow-wrap:anywhere}
+.ex-h:focus,#ex-res:focus{outline:none}
+#ex-enough{min-height:44px;min-width:44px}
+.ex-q{display:block;font-weight:700;font-size:.9rem;margin:12px 0 4px}
+.ex-hint,.ex-ins{margin:4px 0}
+.ex-couplet{font-size:1.25rem}
+.ex-couplet .line{gap:0 .4em}
+.ex-mark{background:var(--sel);color:inherit;text-decoration:underline 2px var(--gold);text-underline-offset:3px;border-radius:3px;padding:0 2px}
+.ex-end{text-decoration:underline 2px var(--accent)}
+.ex-foot{font-family:var(--ta-serif);font-size:1.3rem;margin:6px 0;overflow-wrap:anywhere}
+.ex-opts .btn{white-space:normal;overflow-wrap:anywhere;text-align:start;line-height:1.45}
+.ex .t-opt.ok:disabled,.ex .t-opt.bad:disabled{opacity:1;background:var(--card);color:var(--ink)}
+.ex .t-opt.ok:disabled{border:2px solid var(--ok)}
+.ex .t-opt.bad:disabled{border:2px dashed var(--bad)}
+.ex-row{margin:4px 0}
+.ex-row .row{gap:6px}
+.ex-rv{font-size:.9rem;color:var(--ink);font-weight:700}
+.ex-chip.ok:disabled{opacity:1;background:var(--card);color:var(--ink);border:2px solid var(--ok)}
+.ex-chip.bad:disabled{opacity:1;background:var(--card);color:var(--ink);border:2px dashed var(--bad)}
+.ex-chip:disabled:not(.ok):not(.bad){opacity:.55}
+.ex-find{margin:8px 0;font-family:var(--ta-serif)}
+.ex-line{display:flex;flex-wrap:wrap;gap:6px;margin:4px 0;padding-left:0}
+.ex-w{position:relative;display:inline-flex;flex-direction:column;align-items:center;justify-content:center;padding:6px 12px;border:1px solid var(--line);border-radius:10px;background:var(--chip);color:var(--ink);font:inherit;font-family:var(--ta-serif);font-size:1.1rem;cursor:pointer;overflow-wrap:anywhere;max-width:100%}
+.ex-w:disabled{cursor:default}
+.ex-w.ex-off{border:1px dashed var(--muted);color:var(--muted);background:var(--card)}   /* no opacity: the dashed border must keep 3:1 */
+.ex-w.ex-anchor{border:2px solid var(--gold);background:var(--sel);opacity:1}
+.ex-w.ok{border:2px solid var(--ok);background:var(--card);color:var(--ink);opacity:1}
+.ex-w.bad{border:2px dashed var(--bad);background:var(--card);color:var(--ink);opacity:1}
+.ex-opts .t-opt.part:disabled{opacity:1;background:var(--card);color:var(--ink);border:2px dashed var(--muted)}   /* ◐ arguable pick */
+.ex-part{margin:6px 0;padding:6px 10px;border-left:3px dashed var(--muted);background:var(--chip);color:var(--chip-ink);border-radius:6px}
+.ex [aria-disabled="true"]{opacity:.62}   /* UX-2: looks unavailable until every row is chosen */
+.ex-hintv{min-height:1.2em;margin-top:4px}
+.ex-w.ex-anchor{border-style:double;border-width:3px}   /* UX-9: not colour alone */
+.ex-tlink{font-weight:700;display:inline-block;padding:6px 0;min-height:32px}
+#ex-kgo,.card a.btn[href="#/exam"]{min-height:44px;display:inline-flex;align-items:center}   /* UX-10 */
+.ex .btn.primary{color:var(--card)}
+@media (prefers-color-scheme:dark){ :root:not([data-theme="light"]) .btn.primary{color:var(--card)} }
+:root[data-theme="dark"] .btn.primary{color:var(--card)}   /* UX-3 app-wide: white on the dark-theme accent was 2.6:1 */
+.ex-w.miss{border:2px dotted var(--ink);background:var(--card);color:var(--ink);opacity:1}   /* gold was 2.7:1 on white */
+.ex-tag{display:block;font-family:var(--ta);font-size:.72rem;color:var(--muted)}
+@media (hover:hover){ .ex-w:not(:disabled):hover{border-color:var(--gold)} }
+.ex-al{width:100%;border-collapse:collapse;margin:8px 0;font-size:.95rem}
+.ex-al th,.ex-al td{border-bottom:1px solid var(--line);padding:6px;text-align:start;overflow-wrap:anywhere}
+.ex-al tr.ok td:last-child{border-left:3px solid var(--ok)}
+.ex-al tr.bad td:last-child{border-left:3px dashed var(--bad)}
+@media (max-width:419px){ .ex-al:not(.ex-model) thead{display:none} .ex-al:not(.ex-model) tr{display:block;border-bottom:1px solid var(--line);padding:4px 0} .ex-al:not(.ex-model) td{display:block;border:0;padding:2px 6px} .ex-al:not(.ex-model) td::before{content:attr(data-h) ": ";color:var(--muted);font-size:.8rem} .ex-model{font-size:.85rem} }
+.ex-ansl{margin:6px 0;font-family:var(--ta-serif);overflow-wrap:anywhere}
+.ex-conf{font-size:.82rem;margin:4px 0}
+.ex-btns{margin-top:8px}
+.ex-more{margin-top:8px}
+.ex-more summary{min-height:44px;display:flex;align-items:center;cursor:pointer;color:var(--accent)}
+.ex-more>div,.ex-links{margin:6px 0;overflow-wrap:anywhere}
+.ex-topics{display:flex;flex-direction:column;gap:6px}
+.ex-topic{display:flex;flex-direction:column;align-items:flex-start;gap:2px;width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--ink);font:inherit;text-align:start;cursor:pointer}
+.ex-topic:disabled{cursor:default;opacity:.6}
+.ex-tt{font-weight:700;color:var(--accent)}
+.ex-tm{font-size:.82rem;display:flex;flex-wrap:wrap;align-items:center;gap:6px}
+.ex-bar{display:inline-block;width:80px;height:6px;border-radius:3px;background:var(--line);overflow:hidden}
+.ex-bar i{display:block;height:100%;background:var(--ok)}
+.ex-score{font-size:1.4rem;font-weight:700;color:var(--accent)}
+.ex-list{list-style:none;padding:0;margin:8px 0}
+.ex-list li{padding:6px 0;border-bottom:1px solid var(--line);overflow-wrap:anywhere}
+.ex-st{display:inline-block;min-width:1.4em;font-weight:700}
+.ex-term{margin:8px 0;overflow-wrap:anywhere}
+.ex select{max-width:100%;min-height:44px}
+.gx-tabs a.chip{display:inline-flex;align-items:center;padding:4px 12px}
+.gx-tabs a.chip.sel{color:var(--card)}
+.gx-other{margin-top:10px;}
+@media (prefers-reduced-motion:reduce){ .ex *{transition:none} }
