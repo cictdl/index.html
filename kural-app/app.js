@@ -556,15 +556,15 @@ async function viewChapter(n) {
   const ch = await chapter(n); const ai = await audioInfo(); const f = firstLang();
   setTitle(`${t('adhigaram')} ${n} · ${ch.name}`, `${ch.nameEn} · ${ch.pal} › ${ch.iyal}`);
   const hasBook = ai.chapters.includes(n);
-  render(`<div class="card">
+  render(`<div class="nav-pn pn-top">${n > 1 ? `<a class="btn" href="#/ch/${n - 1}">${t('prev')}</a>` : '<span></span>'}${n < 133 ? `<a class="btn" href="#/ch/${n + 1}">${t('next')}</a>` : ''}</div>
+  <div class="card">
     <div class="row"><div class="grow"><h2 style="font-size:1.2rem">${esc(ch.name)} <span class="muted">· ${esc(ch.nameEn)}</span></h2><div class="muted">${esc(ch.pal)} › ${esc(ch.iyal)} · ${t('kural')} ${ch.start}–${ch.end} · <i>${esc(ch.transliteration)}</i></div></div></div>
     <div class="row" style="margin-top:8px"><a class="btn small" href="#/parallel/${n}">⇔ ${t('parallel')}</a>
       <a class="btn small" href="#/practice/${ch.start}">🎵 ${t('practice')}</a>
       <a class="btn small" href="#/learn" onclick="learnFromChapter(${n});return false">📘 ${t('lnChLink')}</a></div>
     ${hasBook ? `<div class="sep"></div><div class="muted" style="font-size:.8rem">🎧 ${t('audiobook')}</div><div class="player"><audio controls preload="none" src="audio/ch/${pad(n, 3)}.mp3"></audio><button class="btn small" id="save-book">💾 ${t('saveOffline')}</button></div>` : ''}
   </div>
-  <div class="card list">${ch.kurals.map(k => kuralLinkRow(k, f)).join('')}</div>
-  <div class="nav-pn">${n > 1 ? `<a class="btn" href="#/ch/${n - 1}">${t('prev')}</a>` : '<span></span>'}${n < 133 ? `<a class="btn" href="#/ch/${n + 1}">${t('next')}</a>` : ''}</div>`);
+  <div class="card list">${ch.kurals.map(k => kuralLinkRow(k, f)).join('')}</div>`);
   const sb = $('#save-book');
   if (sb) sb.onclick = async () => { sb.disabled = true; await cacheUrls([`audio/ch/${pad(n, 3)}.mp3`]); sb.textContent = '✓ ' + t('saved'); };
 }
@@ -586,7 +586,8 @@ async function viewKural(n) {
   const proseTabs = [['ta_mv', 'மு. வரதராசனார்'], ['tac', 'தமிழ் உரை · CICT'], ['en', 'English']];
   for (const c of S.langs) if (!['ta', 'en', 'tac'].includes(c) && L(c)) proseTabs.push([c, L(c).native]);
   if (!proseTabs.some(p => p[0] === S.proseTab)) S.proseTab = 'ta_mv';
-  render(`<div class="card">
+  render(`<div class="nav-pn pn-top">${n > 1 ? `<a class="btn" href="#/k/${n - 1}">${t('prev')}</a>` : '<span></span>'}${n < 1330 ? `<a class="btn" href="#/k/${n + 1}">${t('next')}</a>` : ''}</div>
+  <div class="card">
     <div class="kural-head"><span class="n">${t('kural')} ${n}</span><a class="ch" href="#/ch/${cm.adhigaram}">${t('adhigaram')} ${cm.adhigaram} · ${esc(cm.name)}</a><span class="pill">${esc(cm.pal || D.meta.pals[cm.palNum - 1].name)} · ${esc(D.meta.pals[cm.palNum - 1].iyals.find(i => i.num === cm.iyalNum).name)}</span></div>
     ${coupletHTML(k)}
     <div class="muted" style="font-size:.78rem">☝ ${t('tapword')}</div>
@@ -607,8 +608,7 @@ async function viewKural(n) {
   ${S.showProse ? `<div class="card"><h2>${t('prose')}</h2><div class="tabs-inline" id="prose-tabs">${proseTabs.map(p => `<button data-p="${p[0]}" class="${p[0] === S.proseTab ? 'on' : ''} ${scriptClass(p[0].startsWith('ta') ? 'ta' : p[0])}">${esc(p[1])}</button>`).join('')}</div><div id="prose-body"></div></div>` : ''}
   <div class="card"><h2>${t('metre')}</h2>${scanHTML(k.yappu)}<div class="row" style="margin-top:8px"><a class="btn small" href="#/practice/${n}">🎵 ${t('practice')}</a></div></div>
   <div class="card"><h2>${t('grammar')}</h2><div id="wordtable" class="wordtable"><span class="muted">…</span></div><div class="ai-note">${t('grNote')}</div></div>
-  <div class="card" id="ms-card"><h2>🌿 ${t('palmleaf')}</h2><div id="ms-body"><span class="muted">…</span></div></div>
-  <div class="nav-pn">${n > 1 ? `<a class="btn" href="#/k/${n - 1}">${t('prev')}</a>` : '<span></span>'}${n < 1330 ? `<a class="btn" href="#/k/${n + 1}">${t('next')}</a>` : ''}</div>`);
+  <div class="card" id="ms-card"><h2>🌿 ${t('palmleaf')}</h2><div id="ms-body"><span class="muted">…</span></div></div>`);
 
   // wiring
   $('#k-recite').onclick = e => reciteKural(k, e.currentTarget);
@@ -905,14 +905,14 @@ async function viewCompare(n) {
            : `<div class="muted">— ${esc(t('proseNA'))}</div>`}
       <div class="credit">${esc(L(c).credit)}</div></div>`;
   };
-  render(`<div class="card">
+  render(`<div class="nav-pn pn-top">${n > 1 ? `<a class="btn" href="#/compare/${n - 1}">${t('prev')}</a>` : '<span></span>'}${n < 1330 ? `<a class="btn" href="#/compare/${n + 1}">${t('next')}</a>` : ''}</div>
+  <div class="card">
     <div class="kural-head"><span class="n">${t('kural')} ${n}</span><a class="ch" href="#/k/${n}">${esc(cm.name)} · ${esc(cm.nameEn)}</a></div>
     ${coupletHTML(k)}
     <div class="actions"><button class="btn primary" id="c-recite">🔊 ${t('recite')}</button><a class="btn" href="#/k/${n}">📖 ${t('more')}</a><button class="btn" id="c-all">▶ ${t('playAll')}</button><button class="btn" id="c-stop">■ ${t('stop')}</button></div>
     <div class="muted" style="font-size:.78rem">${esc(D.meta.credits.publisher)}</div>
   </div>
-  <div class="cmp-grid">${groups.map(g => g.codes.map(cell).join('')).join('')}</div>
-  <div class="nav-pn">${n > 1 ? `<a class="btn" href="#/compare/${n - 1}">${t('prev')}</a>` : '<span></span>'}${n < 1330 ? `<a class="btn" href="#/compare/${n + 1}">${t('next')}</a>` : ''}</div>`);
+  <div class="cmp-grid">${groups.map(g => g.codes.map(cell).join('')).join('')}</div>`);
   $('#c-recite').onclick = e => reciteKural(k, e.currentTarget);
   $('#c-stop').onclick = () => { queueStop = true; TTS.stop(); };
   $('#c-all').onclick = async e => {
@@ -943,7 +943,8 @@ async function viewParallel(n) {
   setTitle(`${t('parallel')} · ${ch.name}`, `${t('adhigaram')} ${n} · ${ch.nameEn}`);
   const opts = m.langOrder.filter(c => c !== 'ta')
     .map(c => `<option value="${c}" ${c === pick ? 'selected' : ''}>${esc(L(c).native)}${L(c).name === L(c).native ? '' : ' — ' + esc(L(c).name)}</option>`).join('');
-  render(`<div class="card">
+  render(`<div class="nav-pn pn-top">${n > 1 ? `<a class="btn" href="#/parallel/${n - 1}">${t('prev')}</a>` : '<span></span>'}${n < 133 ? `<a class="btn" href="#/parallel/${n + 1}">${t('next')}</a>` : ''}</div>
+  <div class="card">
       <div class="row"><div class="grow"><h2 style="font-size:1.1rem">${esc(ch.name)} <span class="muted">· ${esc(ch.nameEn)}</span></h2>
       <div class="muted">${t('parallelHelp')}</div></div><a class="btn small" href="#/ch/${n}">☰</a></div>
       <div class="row" style="margin-top:8px"><span class="chip sel">தமிழ்</span><span class="muted">↔</span>
@@ -961,8 +962,7 @@ async function viewParallel(n) {
           <div class="par-p"><button class="btn small par-play" data-n="${k.n}" aria-label="play ${k.n}">🔊</button></div>
         </div>`; }).join('')}
     </div>
-    <div class="muted" style="font-size:.75rem;margin:0 4px 10px">${esc(L(pick).credit)}</div>
-    <div class="nav-pn">${n > 1 ? `<a class="btn" href="#/parallel/${n - 1}">${t('prev')}</a>` : '<span></span>'}${n < 133 ? `<a class="btn" href="#/parallel/${n + 1}">${t('next')}</a>` : ''}</div>`);
+    <div class="muted" style="font-size:.75rem;margin:0 4px 10px">${esc(L(pick).credit)}</div>`);
   $('#par-lang').onchange = e => { S.parallelLang = e.target.value; saveS(); viewParallel(n); };
   $$('.par-play').forEach(b => b.onclick = e => {
     const k = ch.kurals.find(x => x.n === +b.dataset.n);
@@ -1197,14 +1197,14 @@ async function viewPractice(n, mode) {
   const seers = []; y.lines.forEach((ln, li) => ln.seers.forEach(s => seers.push({ ...s, li })));
   const asais = []; seers.forEach((s, gi) => s.asai.forEach(a => asais.push({ gi, k: a.k, m: matra(a) })));
   const modes = [['listen', t('listen')], ['tap', t('tap')], ['recite', t('reciteCheck')], ['memorise', t('memorise')]];
-  render(`<div class="card">
+  render(`<div class="nav-pn pn-top">${n > 1 ? `<a class="btn" href="#/practice/${n - 1}/${mode}">${t('prev')}</a>` : '<span></span>'}<a class="btn" href="#/k/${n}">📖</a>${n < 1330 ? `<a class="btn" href="#/practice/${n + 1}/${mode}">${t('next')}</a>` : ''}</div>
+  <div class="card">
     <div class="kural-head"><span class="n">${t('kural')} ${n}</span><a class="ch" href="#/k/${n}">${esc(cm.name)}</a></div>
     <div id="cloze">${coupletHTML(k, { cls: 'cloze' })}</div>
     <div class="tabs-inline">${modes.map(([m, l]) => `<a href="#/practice/${n}/${m}"><button class="${m === mode ? 'on' : ''}">${l}</button></a>`).join('')}</div>
     <div id="pr-body"></div>
   </div>
-  <div class="card"><h2>${t('metre')}</h2><div id="scan">${scanHTML(y, { beats: true })}</div></div>
-  <div class="nav-pn">${n > 1 ? `<a class="btn" href="#/practice/${n - 1}/${mode}">${t('prev')}</a>` : '<span></span>'}<a class="btn" href="#/k/${n}">📖</a>${n < 1330 ? `<a class="btn" href="#/practice/${n + 1}/${mode}">${t('next')}</a>` : ''}</div>`);
+  <div class="card"><h2>${t('metre')}</h2><div id="scan">${scanHTML(y, { beats: true })}</div></div>`);
   const body = $('#pr-body');
   const hl = gi => { $$('#scan .seer').forEach(el => el.classList.toggle('cur', +el.dataset.gi === gi)); };
   const beatEls = () => $$('#scan .beat');
