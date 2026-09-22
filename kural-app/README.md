@@ -174,6 +174,15 @@ Then open <http://localhost:8765>. A service worker must be able to register, so
   a provisional guide (≈ classes 6–7 · 8–9 · 10–12) awaiting the CICT teacher panel.
 - **மேலும் / More** — bookmarks, grammar explorer (tag → concordance), offline downloads,
   settings (interface language, per-language voice, rate, text size, theme), credits.
+- **இடைமுக மொழி / Interface language** — தமிழ், English or हिन्दी, chosen from the button at the
+  top right or in settings. The Hindi interface (`STR.hi` plus the `HI` table in `app.js`)
+  covers every screen string, the grammar option names and glossary definitions, the
+  occasions and the பால் / இயல் / அதிகாரம் titles; anything missing falls back to English.
+  Tamil text that is being studied stays in Tamil script. Choosing Hindi turns on the Hindi
+  translation and puts it first. The certificate and the bilingual share texts stay
+  Tamil + English. `py build/check_str.py` fails if any key is missing in any of the three
+  languages. The Hindi was machine-drafted to a fixed terminology list and still needs review
+  by a Hindi-speaking teacher.
 
 ### Offline
 

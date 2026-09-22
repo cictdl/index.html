@@ -732,3 +732,7 @@ html{scroll-padding-top:calc(3.75rem + 12px + var(--sat, env(safe-area-inset-top
 .gx-tabs a.chip.sel{color:var(--card)}
 .gx-other{margin-top:10px;}
 @media (prefers-reduced-motion:reduce){ .ex *{transition:none} }
+
+/* ── हिन्दी interface ── */
+html[lang="hi"] body{font-family:var(--dv),var(--ta),var(--lat)}   /* Devanagari first; Tamil couplets keep their own font classes */
+.ui-langs .btn{min-height:44px;min-width:96px}
