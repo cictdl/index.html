@@ -28,6 +28,34 @@ function toast(msg, ms = 2200) {
 // ───────────────────────────── i18n (interface) ─────────────────────────────
 const STR = {
   ta: {
+    meanWeakLangs: "இந்த மொழிகளில் பொருள் தேடல் இன்னும் வலுவில்லை — அங்கே சொல் தேடலைப் பயன்படுத்துக: {l}",
+    meanWeakScript: "இந்த எழுத்தில் பொருள் தேடல் வலுவில்லை; 🔤 சொல் தேடல் நம்பகமானது.",
+    meanTab: "💡 பொருள்",
+    wordTab: "🔤 சொல்",
+    meanPh: "ஒரு கருத்தை உங்கள் சொற்களில் எழுதுக — எந்த மொழியிலும்",
+    meanIntro: "குறளின் சொற்கள் தெரியாவிட்டாலும், நீங்கள் சொல்ல வரும் கருத்தைச் சொல்லும் குறள்களைக் கண்டுபிடிக்கலாம் — 22 மொழிகளில் எதில் எழுதினாலும். ஒவ்வொரு விடையுடனும் பொருந்திய உரை அல்லது மொழிபெயர்ப்பு வரி காட்டப்படும்.",
+    meanDl: "📥 பொருள் தேடலைப் பதிவிறக்குக ({mb} MB)",
+    meanDlNote: "ஒருமுறை மட்டும் — அதன் பின் இணையம் இல்லாமலும் இயங்கும். மொழி மாதிரி உங்கள் கருவியிலேயே ஓடுகிறது; நீங்கள் தேடுவது எங்கும் அனுப்பப்படுவதில்லை. Wi-Fi-இல் பதிவிறக்குவது நல்லது.",
+    meanDling: "பதிவிறக்கம் {p}% ({a}/{b} MB)",
+    meanCheck: "சரிபார்க்கிறது…",
+    meanPrep: "பொருள் மாதிரியைத் தயார் செய்கிறது… (முதல் முறை சில விநாடிகள்)",
+    meanOffline: "பதிவிறக்க இணையம் தேவை.",
+    meanFail: "பதிவிறக்கம் முடியவில்லை: {e}. மீண்டும் முயல்க.",
+    meanErr: "பொருள் தேடல் இந்தக் கருவியில் இயங்கவில்லை: {e}",
+    meanUnavail: "பொருள் தேடல் இணைய / Android பதிப்பில் மட்டும் (ஒற்றைக் கோப்புப் பதிப்பில் இல்லை).",
+    meanReady: "✓ பதிவிறக்கப்பட்டது · {mb} MB",
+    meanRemove: "🗑 நீக்குக",
+    meanUpdate: "புதுப்பிப்பு உள்ளது ({mb} MB)",
+    meanTry: "எடுத்துக்காட்டுகள்:",
+    meanEx: "துன்பத்தில் கைவிடாத நண்பன்|கோபத்தை அடக்குவது எப்படி|பிறர் செய்த உதவியை மறக்கக் கூடாது|a leader who listens to advice",
+    meanNone: "பொருந்தும் குறள் எதுவும் இல்லை — வேறு சொற்களில் முயல்க.",
+    meanHonest: "முன்னோட்டம்: பொருள் தேடல் உங்கள் கேள்விக்கு மிக அருகிலுள்ள குறள்களை எப்போதும் காட்டும் — குறள் அதைப் பற்றிப் பேசாவிட்டாலும். ஆகவே ஒவ்வொரு விடையிலும் பொருந்திய வரியைப் படித்து முடிவு செய்க. 170 சோதனைக் கேள்விகளில் 83%-க்குப் பொருத்தமான குறள் முதல் பத்தில் வந்தது (சொல் தேடல்: 46%). CICT ஆசிரியர் குழுவின் சோதனைக்குக் காத்திருக்கிறது.",
+    meanVerse: "மூலம்",
+    meanMv: "மு. வ. உரை",
+    meanTac: "தமிழ் உரை",
+    meanEnP: "ஆங்கில உரைநடை",
+    meanWordsNone: "சொல் தேடலில் கிடைக்கவில்லை — 💡 பொருள் தேடலில் முயல்க.",
+    meanTime: "{n} குறள் · {ms} ms · உங்கள் கருவியில்",
     uiLang: "இடைமுக மொழி",
     exTitle: 'தேர்வுப் பயிற்சி', exSub: 'இலக்கணம் · புணர்ச்சி · யாப்பு · அணி', exCardSub: 'இலக்கணக் குறிப்பு · பிரித்து எழுதுக · அலகிடுதல் · மோனை எதுகை — குறள்களிலிருந்தே', exOpen: 'தொடங்கலாம்',
     exLevel: 'நிலை', exPickLv: 'எந்த நிலையிலிருந்து தொடங்கலாம்?', exLv1: 'நிலை 1', exLv2: 'நிலை 2',
@@ -183,6 +211,34 @@ const STR = {
     lineErr: 'இவ்வடி அலகிட முடியவில்லை', update: 'புதிய பதிப்பு உள்ளது — புதுப்பிக்க', ttsUnsupported: 'இந்த உலாவியில் பேச்சு ஒலி இல்லை',
   },
   en: {
+    meanWeakLangs: "Still weak in these languages — use word search for them: {l}",
+    meanWeakScript: "Meaning search is weak for this script; 🔤 word search is more reliable.",
+    meanTab: "💡 Meaning",
+    wordTab: "🔤 Words",
+    meanPh: "Describe an idea in your own words — any language",
+    meanIntro: "Find kurals that say what you mean even when you don't know their words — type in any of the 22 languages. Each result shows the commentary or translation line that matched.",
+    meanDl: "📥 Download meaning search ({mb} MB)",
+    meanDlNote: "One time only — after that it works without internet. The language model runs on your device; what you search for is never sent anywhere. Best downloaded on Wi-Fi.",
+    meanDling: "Downloading {p}% ({a}/{b} MB)",
+    meanCheck: "Checking…",
+    meanPrep: "Preparing the meaning model… (a few seconds the first time)",
+    meanOffline: "The download needs an internet connection.",
+    meanFail: "The download did not finish: {e}. Please try again.",
+    meanErr: "Meaning search could not run on this device: {e}",
+    meanUnavail: "Meaning search is available in the web and Android editions (not in the single-file edition).",
+    meanReady: "✓ Downloaded · {mb} MB",
+    meanRemove: "🗑 Remove",
+    meanUpdate: "Update available ({mb} MB)",
+    meanTry: "Try:",
+    meanEx: "a friend who stands by you in hard times|how to control anger|never forget a kindness|கல்வியின் பெருமை",
+    meanNone: "Nothing found — try other words.",
+    meanHonest: "Preview: meaning search always shows the kurals nearest to your question — even when the Kural does not speak about it. Read the matched line under each result and judge for yourself. On 170 test questions a fitting kural was in the top ten for 83% (keyword search: 46%). Awaiting testing by the CICT teacher panel.",
+    meanVerse: "verse",
+    meanMv: "Mu. Va. commentary",
+    meanTac: "Tamil commentary",
+    meanEnP: "English prose",
+    meanWordsNone: "No word matches — try 💡 meaning search.",
+    meanTime: "{n} kurals · {ms} ms · on your device",
     uiLang: "Interface language",
     exTitle: 'Exam practice', exSub: 'Grammar · sandhi · metre · figures of speech', exCardSub: 'Grammar notes · word splitting · scansion · rhyme — from the couplets themselves', exOpen: 'Open',
     exLevel: 'Level', exPickLv: 'Which level would you like to start at?', exLv1: 'Level 1', exLv2: 'Level 2',
@@ -338,6 +394,34 @@ const STR = {
     lineErr: 'This line could not be scanned', update: 'A new version is available — refresh', ttsUnsupported: 'Speech output is not available in this browser',
   },
   hi: {
+    meanWeakLangs: "इन भाषाओं में अर्थ-खोज अभी कमज़ोर है — इनके लिए शब्द-खोज इस्तेमाल करें: {l}",
+    meanWeakScript: "इस लिपि में अर्थ-खोज कमज़ोर है; 🔤 शब्द-खोज अधिक भरोसेमंद है।",
+    meanTab: "💡 अर्थ",
+    wordTab: "🔤 शब्द",
+    meanPh: "कोई विचार अपने शब्दों में लिखिए — किसी भी भाषा में",
+    meanIntro: "कुरल के शब्द न पता हों, तब भी वे कुरल खोजिए जो आपकी बात कहते हैं — 22 भाषाओं में से किसी में भी लिखिए। हर परिणाम के साथ वह व्याख्या या अनुवाद-पंक्ति दिखती है जिससे मेल हुआ।",
+    meanDl: "📥 अर्थ-खोज डाउनलोड करें ({mb} MB)",
+    meanDlNote: "सिर्फ़ एक बार — उसके बाद बिना इंटरनेट के चलता है। भाषा-मॉडल आपके ही डिवाइस पर चलता है; आप जो खोजते हैं वह कहीं नहीं भेजा जाता। Wi-Fi पर डाउनलोड करना बेहतर है।",
+    meanDling: "डाउनलोड हो रहा है {p}% ({a}/{b} MB)",
+    meanCheck: "जाँच हो रही है…",
+    meanPrep: "अर्थ-मॉडल तैयार हो रहा है… (पहली बार कुछ सेकंड)",
+    meanOffline: "डाउनलोड के लिए इंटरनेट चाहिए।",
+    meanFail: "डाउनलोड पूरा नहीं हुआ: {e}। फिर से कोशिश करें।",
+    meanErr: "अर्थ-खोज इस डिवाइस पर नहीं चल सकी: {e}",
+    meanUnavail: "अर्थ-खोज वेब और Android संस्करण में उपलब्ध है (एकल-फ़ाइल संस्करण में नहीं)।",
+    meanReady: "✓ डाउनलोड हो चुका · {mb} MB",
+    meanRemove: "🗑 हटाएँ",
+    meanUpdate: "अपडेट उपलब्ध ({mb} MB)",
+    meanTry: "उदाहरण:",
+    meanEx: "मुश्किल समय में साथ देने वाला मित्र|क्रोध पर काबू कैसे पाएँ|किसी के उपकार को न भूलना|a leader who listens to advice",
+    meanNone: "कुछ नहीं मिला — दूसरे शब्दों में कोशिश करें।",
+    meanHonest: "पूर्वावलोकन: अर्थ-खोज आपके प्रश्न के सबसे निकट के कुरल हमेशा दिखाती है — तब भी जब कुरल उस विषय पर कुछ नहीं कहता। इसलिए हर परिणाम के नीचे मेल खाने वाली पंक्ति पढ़कर स्वयं निर्णय करें। 170 परीक्षण-प्रश्नों में से 83% में उपयुक्त कुरल पहले दस में आया (कीवर्ड खोज: 46%)। CICT शिक्षक-मंडल की जाँच की प्रतीक्षा है।",
+    meanVerse: "मूल",
+    meanMv: "मु. व. व्याख्या",
+    meanTac: "तमिल व्याख्या",
+    meanEnP: "अंग्रेज़ी गद्य",
+    meanWordsNone: "शब्द-खोज में कुछ नहीं मिला — 💡 अर्थ-खोज आज़माइए।",
+    meanTime: "{n} कुरल · {ms} ms · आपके डिवाइस पर",
     exTitle: "परीक्षा अभ्यास",
     exSub: "व्याकरण · संधि · छंद · अलंकार",
     exCardSub: "व्याकरणिक टिप्पणी · शब्द-विच्छेद · छंद-विश्लेषण · अनुप्रास — सीधे कुरलों से",
@@ -1202,7 +1286,7 @@ async function route() {
       compare: () => viewCompare(+p[1]),
       parallel: () => viewParallel(+p[1]),
       study: viewStudy, test: () => viewTest(p[1], p[2], q), learn: () => p[1] === 'go' ? viewLearnGo() : viewLearn(q),
-      search: () => viewSearch(q.get('q') || ''), practice: () => p[1] ? viewPractice(+p[1], p[2] || 'listen') : viewPracticeIndex(),
+      search: () => viewSearch(q.get('q') || '', q.get('m') || ''), practice: () => p[1] ? viewPractice(+p[1], p[2] || 'listen') : viewPracticeIndex(),
       more: viewMore, settings: viewSettings, about: viewAbout, daily: viewDaily, bookmarks: viewBookmarks,
       grammar: () => viewGrammar(q.get('type') || 'ilakkanam', q.get('tag') || ''), offline: viewOffline,
       occasions: () => viewOccasions(p[1] || ''),
@@ -1879,9 +1963,10 @@ function streamTag(c) {
 
 // ───────────────────────────── search ─────────────────────────────
 let searchTimer;
-async function viewSearch(q0) {
+async function viewSearch(q0, mode0) {
+  if (mode0 === 'meaning') return viewMeaning(q0);
   setTitle(t('search'), 'தேடல் · 22 மொழிகள்');
-  render(`<div class="search-box"><input type="search" id="q" placeholder="${esc(t('searchPh'))}" value="${esc(q0)}" autocomplete="off" enterkeyhint="search"></div>
+  render(`${searchModes('w', q0)}<div class="search-box"><input type="search" id="q" placeholder="${esc(t('searchPh'))}" value="${esc(q0)}" autocomplete="off" enterkeyhint="search"></div>
     <div class="row" id="lang-filter"></div><div class="row" style="margin:2px 4px"><a class="chip" id="verify-link" href="#/verify">✔ ${t('verify')}</a></div><div id="results"></div>`);
   const input = $('#q'); input.focus();
   const m = D.meta;
@@ -1890,7 +1975,7 @@ async function viewSearch(q0) {
     + ['ta', ...S.langs.filter(c => c !== 'ta')].map(c => `<button class="chip ${scriptClass(c)}" data-f="${c}">${esc(L(c).native)}</button>`).join('');
   $$('#lang-filter .chip').forEach(b => b.onclick = () => { filter = b.dataset.f; $$('#lang-filter .chip').forEach(x => x.classList.toggle('sel', x === b)); run(); });
   const run = async () => {
-    const q = input.value.trim(); location.replace('#/search?q=' + encodeURIComponent(q));
+    const q = input.value.trim(); location.replace('#/search?q=' + encodeURIComponent(q)); const mw = $('#sm-m'); if (mw) mw.href = '#/search?q=' + encodeURIComponent(q) + '&m=meaning';
     const vl = $('#verify-link'); if (vl) vl.href = '#/verify?q=' + encodeURIComponent(q);
     const res = $('#results'); if (!res) return;
     if (!q) { res.innerHTML = ''; return; }
@@ -1913,7 +1998,7 @@ async function viewSearch(q0) {
     }
     const ta = await sindex('ta');
     const ns = [...hits.keys()].sort((x, y) => x - y);
-    if (!ns.length) { res.innerHTML = `<div class="card muted">${t('noresults')}</div>`; return; }
+    if (!ns.length) { res.innerHTML = `<div class="card muted">${t('noresults')}${meanOK() ? `<div style="margin-top:8px"><a class="btn" href="#/search?q=${encodeURIComponent(q)}&m=meaning">${t('meanWordsNone')}</a></div>` : ''}</div>`; return; }
     const snippet = (s, at) => { const raw = s; const i = norm(raw).indexOf(norm(q)); if (i < 0) return esc(raw); const st = Math.max(0, i - 40); return (st ? '…' : '') + esc(raw.slice(st, i)) + '<mark>' + esc(raw.slice(i, i + q.length)) + '</mark>' + esc(raw.slice(i + q.length, i + q.length + 80)); };
     const scanned = Object.keys(idx).length;
     res.innerHTML = `<div class="muted" style="margin:4px">${ns.length} ${t('results')} · <span title="${esc(t('scannedHelp'))}">${scanned} ${t('scanned')}</span>${filter === 'auto' && scanned < 8 ? ` · <a href="#" id="widen">${t('searchAll')}</a>` : ''}</div><div class="card list">` + ns.slice(0, 150).map(n => {
@@ -1927,6 +2012,185 @@ async function viewSearch(q0) {
   input.oninput = () => { clearTimeout(searchTimer); searchTimer = setTimeout(run, 250); };
   input.onkeydown = e => { if (e.key === 'Enter') run(); };
   if (q0) run();
+}
+
+// ───────────────────────────── பொருள் தேடல் · search by meaning ─────────────────────────────
+// The reader's question is encoded on the device by a vocabulary-pruned multilingual-e5-small (ONNX int8, run
+// by onnxruntime-web); ~42,500 passage vectors (verse, மு.வ., தமிழ் உரை, English prose and every translation) were
+// computed by build/build_meaning.py with the same model and tokenizer. The pack (~105 MB) is downloaded once
+// on request into its own Cache Storage bucket — read directly, so it works in the Android WebView too, which
+// has no service worker. Nothing the reader types leaves the device.
+const MEAN_CACHE = 'kural-meaning-v1';
+const MEAN_BASE = IS_ANDROID_APP ? 'https://cictdl.github.io/index.html/kural-app/meaning/' : new URL('meaning/', location.href).href;
+const MEAN = { eng: null, loading: null };
+const meanOK = () => !SINGLE && hasCaches() && typeof WebAssembly === 'object' && !!(window.crypto && crypto.subtle);
+const meanKey = (f, man) => MEAN_BASE + f + '?v=' + man.files[f].sha;
+const meanMB = b => (b / 1e6).toFixed(0);
+async function meanLocal() {   // the installed manifest, if every file it names is in the cache
+  if (!meanOK()) return null;
+  try {
+    const c = await caches.open(MEAN_CACHE); const r = await c.match(MEAN_BASE + 'meaning.json'); if (!r) return null;
+    const man = await r.json();
+    for (const f of Object.keys(man.files)) if (!(await c.match(meanKey(f, man)))) return null;
+    return man;
+  } catch { return null; }
+}
+async function meanRemote() { try { const r = await fetch(MEAN_BASE + 'meaning.json', { cache: 'no-cache' }); return r.ok ? await r.json() : null; } catch { return null; } }
+const meanSize = man => Object.values(man.files).reduce((s, f) => s + f.bytes, 0);
+async function meanMissing(man) { const c = await caches.open(MEAN_CACHE); const out = []; for (const f of Object.keys(man.files)) if (!(await c.match(meanKey(f, man)))) out.push(f); return out; }
+async function sha16(buf) { return [...new Uint8Array(await crypto.subtle.digest('SHA-256', buf))].slice(0, 8).map(b => b.toString(16).padStart(2, '0')).join(''); }
+async function meanDownload(man, onProgress) {
+  const c = await caches.open(MEAN_CACHE); const need = await meanMissing(man);
+  const total = need.reduce((s, f) => s + man.files[f].bytes, 0); let got = 0;
+  for (const f of need) {
+    const r = await fetch(MEAN_BASE + f + '?v=' + man.files[f].sha, { cache: 'no-cache' });
+    if (!r.ok) throw new Error(`${f}: HTTP ${r.status}`);
+    const rd = r.body.getReader(); const parts = [];
+    for (;;) { const { done, value } = await rd.read(); if (done) break; parts.push(value); got += value.length; onProgress(got, total); }
+    const buf = await new Blob(parts).arrayBuffer();
+    if ((await sha16(buf)) !== man.files[f].sha) throw new Error(`${f}: checksum`);
+    await c.put(meanKey(f, man), new Response(buf, { headers: { 'Content-Type': 'application/octet-stream' } }));
+  }
+  await c.put(MEAN_BASE + 'meaning.json', new Response(JSON.stringify(man), { headers: { 'Content-Type': 'application/json' } }));
+  const keep = new Set(Object.keys(man.files).map(f => meanKey(f, man)).concat(MEAN_BASE + 'meaning.json'));
+  for (const req of await c.keys()) if (!keep.has(req.url)) await c.delete(req);   // older versions of changed files
+  MEAN.eng = null; MEAN.loading = null;
+}
+async function meanRemove() { MEAN.eng = null; MEAN.loading = null; try { await caches.delete(MEAN_CACHE); } catch { } }
+function meanEngine() {
+  return MEAN.loading || (MEAN.loading = (async () => {
+    const man = await meanLocal(); if (!man) throw new Error('not downloaded');
+    const c = await caches.open(MEAN_CACHE);
+    const get = async f => { const r = await c.match(meanKey(f, man)); if (!r) throw new Error('missing ' + f); return r; };
+    const ort = await import('./vendor/ort.wasm.bundle.min.js');
+    ort.env.wasm.numThreads = 1; ort.env.wasm.proxy = false;
+    ort.env.wasm.wasmBinary = await (await get('ort-wasm-simd-threaded.wasm')).arrayBuffer();
+    const { Tokenizer } = await import('./vendor/tokenizers.min.js');
+    const tok = new Tokenizer(await (await get('tokenizer.json')).json(), await (await get('tokenizer_config.json')).json());
+    const sess = await ort.InferenceSession.create(new Uint8Array(await (await get('model.onnx')).arrayBuffer()), { executionProviders: ['wasm'], graphOptimizationLevel: 'all' });
+    const N = man.count, Dm = man.dim;
+    const M = new Int8Array(await (await get('vectors.bin')).arrayBuffer());
+    const ub = await (await get('units.bin')).arrayBuffer();
+    const U = new Uint8Array(ub, 0, N * 3), SC = new Float32Array(ub.slice(N * 3));
+    if (M.length !== N * Dm || SC.length !== N) throw new Error('pack size');
+    return (MEAN.eng = { man, ort, tok, sess, M, U, SC, N, Dm });
+  })().catch(e => { MEAN.loading = null; throw e; }));
+}
+async function meanEncode(E, q) {
+  const ids = E.tok.encode(E.man.prefix.query + q).ids.slice(0, 512); const L = ids.length;
+  const T = a => new E.ort.Tensor('int64', BigInt64Array.from(a, x => BigInt(x)), [1, L]);
+  const out = await E.sess.run({ input_ids: T(ids), attention_mask: T(ids.map(() => 1)), token_type_ids: T(ids.map(() => 0)) });
+  const h = out.last_hidden_state.data, v = new Float32Array(E.Dm);
+  for (let i = 0; i < L; i++) for (let d = 0; d < E.Dm; d++) v[d] += h[i * E.Dm + d];
+  let nn = 0; for (let d = 0; d < E.Dm; d++) { v[d] /= L; nn += v[d] * v[d]; } nn = Math.sqrt(nn) || 1;
+  for (let d = 0; d < E.Dm; d++) v[d] /= nn;
+  return v;
+}
+// each kural is scored by the mean of its five best passages (of ~32: verse, commentaries, translations): a kural that
+// really says the idea matches in many of its versions, a stray phrase in one translation does not carry it.
+// On build/meaning_eval.json this lifts hit@10 from 78% (best passage alone) to 83%, MRR 0.56 → 0.67.
+const MEAN_K = 5;
+function meanRank(E, v, k = 20) {
+  const { M, SC, U, N, Dm } = E; const K = MEAN_K;
+  const top = new Float32Array(1331 * K).fill(-9), at = new Int32Array(1331 * K).fill(-1);
+  for (let i = 0, o = 0; i < N; i++, o += Dm) {
+    let d = 0; for (let j = 0; j < Dm; j++) d += v[j] * M[o + j]; d *= SC[i];
+    const b = (U[i * 3] | (U[i * 3 + 1] << 8)) * K;
+    if (d <= top[b + K - 1]) continue;
+    let p = K - 1; while (p > 0 && top[b + p - 1] < d) { top[b + p] = top[b + p - 1]; at[b + p] = at[b + p - 1]; p--; }
+    top[b + p] = d; at[b + p] = i;
+  }
+  const out = [];
+  for (let n = 1; n <= 1330; n++) {
+    let s = 0, c = 0; for (let p = 0; p < K; p++) if (at[n * K + p] >= 0) { s += top[n * K + p]; c++; }
+    if (c) out.push({ n, score: s / K, ev: Array.from({ length: Math.min(3, c) }, (_, p) => ({ st: E.man.streams[U[at[n * K + p] * 3 + 2]], score: top[n * K + p] })) });
+  }
+  return out.sort((a, b) => b.score - a.score).slice(0, k);
+}
+const meanStreamName = st => st === 'ta' ? t('meanVerse') : st === 'ta_mv' ? t('meanMv') : st === 'tac' ? t('meanTac') : st === 'en_p' ? t('meanEnP') : (L(st) ? L(st).native : st);
+const meanText = (k, st) => st === 'ta' ? `${k.l1} ${k.l2}` : st === 'ta_mv' ? (k.prose || {}).ta_mv || '' : st === 'tac' ? ((k.prose || {}).tac || (k.tr.tac || []).join(' ')) : st === 'en_p' ? (k.prose || {}).en || '' : (k.tr[st] || []).filter(Boolean).join(' ');
+const meanStreamLang = st => st === 'ta' || st === 'ta_mv' || st === 'tac' ? 'ta' : st === 'en_p' ? 'en' : st;
+// No per-result strength label: on build/meaning_eval.json neither the absolute score (real questions 0.80–0.90,
+// off-topic ones such as cricket scores or phone prices 0.76–0.83) nor how far the top kural stands out from the
+// rest separates a real answer from a nearest-but-unrelated one. So results are ranked, each shows the line that
+// matched, and the note says plainly that the nearest kurals are shown even when the Kural does not address the
+// question. Only a score under MEAN_FLOOR (gibberish) returns "nothing found".
+const MEAN_FLOOR = 0.78;
+// languages whose own translation finds its kural through the others less than 45% of the time (build_meaning.py xlingual)
+const meanWeak = man => Object.entries((man && man.xlingual) || {}).filter(([c, v]) => v < 0.45 && L(c) && c !== 'ta').map(([c]) => c);
+const meanWeakHTML = man => { const w = meanWeak(man); return w.length ? `<div class="muted" style="font-size:.8rem;margin-top:6px">${fmt(t('meanWeakLangs'), { l: w.map(c => esc(L(c).native)).join(', ') })}</div>` : ''; };
+const meanWeakScript = q => /[ꯀ-꯿᱐-᱿؀-ۿ]/.test(q);   // Meetei Mayek, Ol Chiki, Perso-Arabic
+
+function searchModes(on, q) {
+  const qs = q ? '?q=' + encodeURIComponent(q) : '';
+  return `<div class="tabs-inline s-modes" role="tablist"><a href="#/search${qs}" id="sm-w" role="tab" aria-selected="${on === 'w'}"><button class="${on === 'w' ? 'on' : ''}">${t('wordTab')}</button></a><a href="#/search${qs ? qs + '&' : '?'}m=meaning" id="sm-m" role="tab" aria-selected="${on === 'm'}"><button class="${on === 'm' ? 'on' : ''}">${t('meanTab')}</button></a></div>`;
+}
+async function viewMeaning(q0) {
+  setTitle(t('search'), 'பொருள் தேடல் · 22 மொழிகள்');
+  const exHTML = () => `<div class="muted" style="margin-top:8px">${t('meanTry')} ${t('meanEx').split('|').map(x => `<a class="chip mean-ex" href="#" data-q="${esc(x)}">${esc(x)}</a>`).join(' ')}</div>`;
+  render(`${searchModes('m', q0)}<div class="search-box"><input type="search" id="q" placeholder="${esc(t('meanPh'))}" value="${esc(q0)}" autocomplete="off" enterkeyhint="search"></div>
+    <div id="mean-pack"></div><div id="results"></div>`);
+  const input = $('#q'), res = $('#results'), pack = $('#mean-pack');
+  const mw = () => { const w = $('#sm-w'); if (w) w.href = '#/search?q=' + encodeURIComponent(input.value.trim()); };
+  if (!meanOK()) { pack.innerHTML = `<div class="card muted">${t('meanUnavail')}</div>`; return; }
+  let man = await meanLocal();
+  const showPack = async () => {
+    if (man) {
+      pack.innerHTML = `<div class="card"><div class="mean-intro" ${input.value.trim() ? 'hidden' : ''}><div class="muted">${t('meanIntro')}</div>${exHTML()}${meanWeakHTML(man)}</div>
+        <div class="row" style="align-items:center"><span class="muted" style="font-size:.8rem">${fmt(t('meanReady'), { mb: meanMB(meanSize(man)) })}</span><span id="mean-upd"></span><button class="btn" id="mean-rm" style="margin-left:auto">${t('meanRemove')}</button></div></div>`;
+      $('#mean-rm').onclick = async () => { await meanRemove(); man = null; res.innerHTML = ''; showPack(); };
+      if (navigator.onLine) meanRemote().then(async rm => {
+        if (!rm || rm.rev === man.rev && rm.revision === man.revision) return;
+        const need = (await meanMissing(rm)).reduce((s, f) => s + rm.files[f].bytes, 0); const u = $('#mean-upd'); if (!u || !need) return;
+        u.innerHTML = `<button class="btn" id="mean-up">${fmt(t('meanUpdate'), { mb: Math.max(1, Math.round(need / 1e6)) })}</button>`;
+        $('#mean-up').onclick = () => startDl(rm);
+      });
+      return;
+    }
+    pack.innerHTML = `<div class="card"><h2>${t('meanTab')}</h2><p>${t('meanIntro')}</p><div id="mean-dl-row" class="muted">${t('meanCheck')}</div></div>`;
+    const rm = navigator.onLine ? await meanRemote() : null; const row = $('#mean-dl-row'); if (!row) return;
+    if (!rm) { row.textContent = t('meanOffline'); return; }
+    row.innerHTML = `<button class="btn primary" id="mean-dl">${fmt(t('meanDl'), { mb: meanMB(meanSize(rm)) })}</button><div class="muted" style="font-size:.8rem;margin-top:6px">${t('meanDlNote')}</div>${meanWeakHTML(rm)}`;
+    $('#mean-dl').onclick = () => startDl(rm);
+  };
+  const startDl = async rm => {
+    pack.innerHTML = `<div class="card"><div id="mean-p-t" class="muted">${fmt(t('meanDling'), { p: 0, a: 0, b: meanMB(meanSize(rm)) })}</div><progress id="mean-p" max="1" value="0" style="width:100%"></progress></div>`;
+    try {
+      await meanDownload(rm, (a, b) => { const p = $('#mean-p'); if (p) { p.value = a / b; $('#mean-p-t').textContent = fmt(t('meanDling'), { p: Math.floor(100 * a / b), a: meanMB(a), b: meanMB(b) }); } });
+      man = await meanLocal(); await showPack(); if (input.value.trim()) run();
+    } catch (e) { pack.innerHTML = `<div class="card"><div class="mean-warn">${esc(fmt(t('meanFail'), { e: e.message }))}</div></div>`; man = null; setTimeout(showPack, 4000); }
+  };
+  let seq = 0;
+  const run = async () => {
+    const q = input.value.trim(); location.replace('#/search?q=' + encodeURIComponent(q) + '&m=meaning'); mw();
+    const intro = $('#mean-pack .mean-intro'); if (intro) intro.hidden = !!q;   // the explanation only while the box is empty
+    if (!q) { res.innerHTML = ''; return; }
+    if (/^\d+$/.test(q) && +q >= 1 && +q <= 1330) { location.hash = '#/k/' + (+q); return; }
+    if (!man) return;
+    const my = ++seq;
+    if (!MEAN.eng) res.innerHTML = `<div class="card muted">${t('meanPrep')}</div>`;
+    let E; try { E = await meanEngine(); } catch (e) { res.innerHTML = `<div class="card mean-warn">${esc(fmt(t('meanErr'), { e: e.message }))}</div>`; return; }
+    const t0 = performance.now(); const v = await meanEncode(E, q); const hits = meanRank(E, v, 20); const ms = Math.round(performance.now() - t0);
+    if (my !== seq) return;
+    const shown = hits.filter(h => h.score >= MEAN_FLOOR);
+    if (!shown.length) { res.innerHTML = `<div class="card muted">${t('meanNone')}</div>`; return; }
+    const ks = await Promise.all(shown.map(h => kural(h.n)));
+    if (my !== seq) return;
+    const mine = firstLang();
+    res.innerHTML = `<div class="muted" style="margin:4px">${fmt(t('meanTime'), { n: shown.length, ms })}</div>${meanWeakScript(q) ? `<div class="card mean-warn">${t('meanWeakScript')}</div>` : ''}<div class="card list">` + shown.map((h, i) => {
+      const k = ks[i]; const top = h.ev[0];   // evidence: the best passage, plus a second one when it is nearly as close
+      const ev = h.ev.filter((e, j) => j === 0 || e.score >= top.score - 0.02).slice(0, 2);
+      const mineLine = !ev.some(e => e.st === mine) && k.tr[mine] ? `<span class="tr ${scriptClass(mine)}"${dirAttr(mine)}><span class="lang-tag">${esc(L(mine).short)}</span>${esc(k.tr[mine].filter(Boolean).join(' '))}</span>` : '';
+      return `<a href="#/k/${h.n}" class="result mean-r"><span class="num">${h.n}</span><span class="tx"><span class="l">${esc(k.l1)} ${esc(k.l2)}</span>
+        ${ev.map(e => { const lg = meanStreamLang(e.st); return `<span class="tr mean-ev ${scriptClass(lg)}"${dirAttr(lg)}><span class="lang-tag">${esc(meanStreamName(e.st))}</span>${esc(meanText(k, e.st))}</span>`; }).join('')}${mineLine}</span></a>`;
+    }).join('') + `</div><div class="muted" style="font-size:.78rem;margin:8px 4px">${t('meanHonest')}</div>`;
+  };
+  view().addEventListener('click', e => { const a = e.target.closest && e.target.closest('.mean-ex'); if (a) { e.preventDefault(); input.value = a.dataset.q; run(); } });
+  input.onkeydown = e => { if (e.key === 'Enter') { clearTimeout(searchTimer); run(); } };
+  input.oninput = () => { clearTimeout(searchTimer); searchTimer = setTimeout(run, 700); mw(); };
+  await showPack();
+  input.focus();
+  if (q0 && man) run();
 }
 
 // ───────────────────────────── practice (யாப்பு) ─────────────────────────────

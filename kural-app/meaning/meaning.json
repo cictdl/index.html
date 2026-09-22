@@ -1,0 +1,106 @@
+{
+ "model": "Xenova/multilingual-e5-small",
+ "revision": "761b726dd34fb83930e26aab4e9ac3899aa1fa78",
+ "license": "MIT (intfloat/multilingual-e5-small)",
+ "dim": 384,
+ "count": 42558,
+ "streams": [
+  "ta",
+  "ta_mv",
+  "tac",
+  "en_p",
+  "en",
+  "ena",
+  "enm",
+  "as",
+  "bn",
+  "brx",
+  "doi",
+  "gu",
+  "hi",
+  "kn",
+  "ks",
+  "ksn",
+  "kok",
+  "gom",
+  "mai",
+  "ml",
+  "mni",
+  "mei",
+  "mr",
+  "ne",
+  "or",
+  "pa",
+  "sa",
+  "sat",
+  "sd",
+  "te",
+  "ur",
+  "bho"
+ ],
+ "xlingual": {
+  "ta": 0.513,
+  "ta_mv": 0.927,
+  "tac": 0.913,
+  "en_p": 0.94,
+  "en": 0.9,
+  "ena": 0.927,
+  "enm": 0.887,
+  "as": 0.773,
+  "bn": 0.973,
+  "brx": 0.02,
+  "doi": 0.747,
+  "gu": 0.787,
+  "hi": 1.0,
+  "kn": 0.7,
+  "ks": 0.267,
+  "ksn": 0.033,
+  "kok": 0.253,
+  "gom": 0.427,
+  "mai": 0.993,
+  "ml": 0.567,
+  "mni": 0.033,
+  "mei": 0.047,
+  "mr": 0.767,
+  "ne": 0.807,
+  "or": 0.64,
+  "pa": 0.793,
+  "sa": 0.68,
+  "sat": 0.093,
+  "sd": 0.693,
+  "te": 0.84,
+  "ur": 0.407,
+  "bho": 0.96
+ },
+ "prefix": {
+  "query": "query: ",
+  "passage": "passage: "
+ },
+ "rev": "be91ae9853cf192577ac1a63be1920cf",
+ "files": {
+  "model.onnx": {
+   "bytes": 77354585,
+   "sha": "5ba0d7d3161fd4ba"
+  },
+  "tokenizer.json": {
+   "bytes": 5213519,
+   "sha": "4e0c423a03cad53b"
+  },
+  "tokenizer_config.json": {
+   "bytes": 390,
+   "sha": "985fd3ac64d73529"
+  },
+  "vectors.bin": {
+   "bytes": 16342272,
+   "sha": "be91ae9853cf1925"
+  },
+  "units.bin": {
+   "bytes": 297906,
+   "sha": "77ac1a63be1920cf"
+  },
+  "ort-wasm-simd-threaded.wasm": {
+   "bytes": 11905541,
+   "sha": "45eaee27761ad883"
+  }
+ }
+}

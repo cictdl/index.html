@@ -736,3 +736,11 @@ html{scroll-padding-top:calc(3.75rem + 12px + var(--sat, env(safe-area-inset-top
 /* ── हिन्दी interface ── */
 html[lang="hi"] body{font-family:var(--dv),var(--ta),var(--lat)}   /* Devanagari first; Tamil couplets keep their own font classes */
 .ui-langs .btn{min-height:44px;min-width:96px}
+
+/* ── பொருள் தேடல் · search by meaning ── */
+.s-modes{margin:0 0 6px}
+.mean-r .mean-ev{border-left:3px solid var(--accent);padding-left:6px}
+.mean-ex{cursor:pointer}
+.mean-intro{margin-bottom:8px}
+.mean-intro[hidden]{display:none}
+.mean-warn{color:var(--bad)}

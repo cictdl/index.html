@@ -86,6 +86,34 @@ Then open <http://localhost:8765>. A service worker must be able to register, so
   widens it, and any language can be pinned explicitly. Latin diacritics fold, so `Pakavaṉ`
   finds `Pakavan` — but Indic combining marks (Tamil புள்ளி, viramas, every vowel sign) are
   left intact, since folding those would change the word. A bare number jumps to that kural.
+- **💡 பொருள் தேடல் / Search by meaning** (`#/search?m=meaning`) — type an idea in your own
+  words, in any language ("a friend who stands by you in hard times", "கோபத்தை அடக்குவது
+  எப்படி", "किसी के उपकार को न भूलना"), and get the kurals that say it even when no word is
+  shared. Each result shows the verse, the one or two passages that matched (with their stream)
+  and the reader's own translation.
+  · **How:** `build/build_meaning.py` embeds 42,558 passages (verse, மு.வ., தமிழ் உரை, English
+    prose, every translation) with intfloat/multilingual-e5-small (MIT; ONNX int8 by Xenova,
+    pinned revision). The vocabulary is pruned from 250,002 to 143,387 pieces (scripts nobody
+    types here); the build asserts identical tokenisation on every passage and identical
+    vectors. On the phone only the question is encoded, by onnxruntime-web 1.23.2 (WASM, one
+    thread) and tokenizers.js — both in `vendor/`, ~105 KB. A kural scores the mean of its five
+    best passages, so a stray phrase in one translation can't carry it. ~40 ms a question.
+  · **Pack:** `meaning/` (model 77 MB, runtime 12 MB, vectors 16 MB, tokenizer 5 MB = 111 MB),
+    downloaded once on request into its own Cache Storage bucket (`kural-meaning-v1`),
+    sha-checked, read directly (so it works in the Android WebView, which has no service
+    worker; the web service worker ignores `meaning/`). The Android app fetches it from
+    cictdl.github.io; it is never in the APK. Nothing the reader types leaves the device.
+  · **Honesty:** on 170 machine-drafted test questions (`build/meaning_eval.json` → `.md`; ta 55 ·
+    en 55 · hi 40 · 9 more languages 20) a fitting kural is in the top ten for **83%**, against
+    **46%** for a fair keyword ranking (the app's own phrase search: 0%). No per-result
+    "strength" is shown: neither the raw score nor the margin separates a real answer from the
+    nearest unrelated one, so the page says the nearest kurals are always shown and to judge
+    by the matched line. Leave-one-language-out retrieval (`build/meaning_xlingual.json`)
+    finds Bodo, Manipuri, Santali, Kashmiri, Konkani and Urdu weak; the page names them and
+    points to word search. Marked preview until CICT teachers write their own test set.
+  · After any `data/ch` change: `py build/build_meaning.py embed` then `eval` (and `xlingual`,
+    then `pack`), and publish the changed `meaning/vectors.bin`, `units.bin`, `meaning.json`;
+    installed copies offer the update and fetch only changed files.
 - **⇔ இணை வாசிப்பு / Parallel reading** (`#/parallel/:chapter`) — the two-stream reading view
   from §7.1: Tamil in one column, any one of the 30 streams in the other, for a whole
   அதிகாரம் at a time, with a picker and a per-couplet 🔊 that reads the Tamil then the

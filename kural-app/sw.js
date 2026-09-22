@@ -4,7 +4,7 @@
    data / audio / fonts: cache-first — they are content-addressed or immutable per build;
    audio also gets Range support so <audio> can seek inside a cached file;
    plus the daily-kural notification. */
-const VERSION = 'v11';
+const VERSION = 'v12';
 const SHELL = 'kural-shell-' + VERSION;
 const RT = 'kural-rt-v1';
 const PREFS = 'kural-prefs';
@@ -55,6 +55,7 @@ async function rangeResponse(req, full) {
 self.addEventListener('fetch', e => {
   const req = e.request; if (req.method !== 'GET') return;
   const url = new URL(req.url);
+  if (/\/meaning\//.test(url.pathname)) return;   // the meaning pack (~110 MB) has its own cache, managed by the page
   if (req.mode === 'navigate' || isShell(url)) {
     e.respondWith((async () => {
       try {

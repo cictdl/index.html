@@ -1,0 +1,1543 @@
+{
+ "note": "Machine-drafted evaluation set for the 'search the Tirukkural by meaning' feature (Claude, 22 Sep 2026). kind=theme: relevant = any kural in the listed chapters; kind=kural: relevant = the listed kural(s). Judgements were checked against prose.ta_mv / prose.en but the set is PROVISIONAL until CICT teachers write their own.",
+ "queries": [
+  {
+   "q": "why should an educated person still bow before God",
+   "lang": "en",
+   "kind": "theme",
+   "chapters": [
+    1
+   ],
+   "kurals": []
+  },
+  {
+   "q": "why should I bother doing good every day",
+   "lang": "en",
+   "kind": "theme",
+   "chapters": [
+    4
+   ],
+   "kurals": []
+  },
+  {
+   "q": "welcoming visitors warmly into your home",
+   "lang": "en",
+   "kind": "theme",
+   "chapters": [
+    9
+   ],
+   "kurals": []
+  },
+  {
+   "q": "why should we not speak harshly",
+   "lang": "en",
+   "kind": "theme",
+   "chapters": [
+    10
+   ],
+   "kurals": []
+  },
+  {
+   "q": "never forgetting someone who helped you",
+   "lang": "en",
+   "kind": "theme",
+   "chapters": [
+    11
+   ],
+   "kurals": []
+  },
+  {
+   "q": "patience with people who insult you",
+   "lang": "en",
+   "kind": "theme",
+   "chapters": [
+    16
+   ],
+   "kurals": []
+  },
+  {
+   "q": "wanting to grab what belongs to others",
+   "lang": "en",
+   "kind": "theme",
+   "chapters": [
+    18
+   ],
+   "kurals": []
+  },
+  {
+   "q": "people who talk a lot without saying anything useful",
+   "lang": "en",
+   "kind": "theme",
+   "chapters": [
+    20
+   ],
+   "kurals": []
+  },
+  {
+   "q": "reasons to stop eating meat",
+   "lang": "en",
+   "kind": "theme",
+   "chapters": [
+    26
+   ],
+   "kurals": []
+  },
+  {
+   "q": "people who pretend to be holy but live badly",
+   "lang": "en",
+   "kind": "theme",
+   "chapters": [
+    28
+   ],
+   "kurals": []
+  },
+  {
+   "q": "is lying ever acceptable",
+   "lang": "en",
+   "kind": "theme",
+   "chapters": [
+    30
+   ],
+   "kurals": []
+  },
+  {
+   "q": "repaying cruelty with kindness",
+   "lang": "en",
+   "kind": "theme",
+   "chapters": [
+    32,
+    16
+   ],
+   "kurals": []
+  },
+  {
+   "q": "life is short and nothing lasts",
+   "lang": "en",
+   "kind": "theme",
+   "chapters": [
+    34
+   ],
+   "kurals": []
+  },
+  {
+   "q": "can hard work beat destiny",
+   "lang": "en",
+   "kind": "theme",
+   "chapters": [
+    38,
+    62
+   ],
+   "kurals": []
+  },
+  {
+   "q": "what makes a good leader",
+   "lang": "en",
+   "kind": "theme",
+   "chapters": [
+    39
+   ],
+   "kurals": []
+  },
+  {
+   "q": "what happens to people who never study",
+   "lang": "en",
+   "kind": "theme",
+   "chapters": [
+    41
+   ],
+   "kurals": []
+  },
+  {
+   "q": "the value of learning from wise elders by listening",
+   "lang": "en",
+   "kind": "theme",
+   "chapters": [
+    42
+   ],
+   "kurals": []
+  },
+  {
+   "q": "a leader surrounding himself with wise advisors",
+   "lang": "en",
+   "kind": "theme",
+   "chapters": [
+    45
+   ],
+   "kurals": []
+  },
+  {
+   "q": "the influence of the company you keep",
+   "lang": "en",
+   "kind": "theme",
+   "chapters": [
+    46
+   ],
+   "kurals": []
+  },
+  {
+   "q": "how to test someone before trusting them",
+   "lang": "en",
+   "kind": "theme",
+   "chapters": [
+    51
+   ],
+   "kurals": []
+  },
+  {
+   "q": "the danger of getting careless when things are going well",
+   "lang": "en",
+   "kind": "theme",
+   "chapters": [
+    54
+   ],
+   "kurals": []
+  },
+  {
+   "q": "a ruler who oppresses his people",
+   "lang": "en",
+   "kind": "theme",
+   "chapters": [
+    56
+   ],
+   "kurals": []
+  },
+  {
+   "q": "how should a ruler treat spies",
+   "lang": "en",
+   "kind": "theme",
+   "chapters": [
+    59
+   ],
+   "kurals": []
+  },
+  {
+   "q": "staying cheerful when troubles come",
+   "lang": "en",
+   "kind": "theme",
+   "chapters": [
+    63
+   ],
+   "kurals": []
+  },
+  {
+   "q": "qualities of a diplomat sent to another country",
+   "lang": "en",
+   "kind": "theme",
+   "chapters": [
+    69
+   ],
+   "kurals": []
+  },
+  {
+   "q": "fear of speaking in front of an audience",
+   "lang": "en",
+   "kind": "theme",
+   "chapters": [
+    73
+   ],
+   "kurals": []
+  },
+  {
+   "q": "a friend who stands by you when things go wrong",
+   "lang": "en",
+   "kind": "theme",
+   "chapters": [
+    79
+   ],
+   "kurals": []
+  },
+  {
+   "q": "people who act friendly but are secretly enemies",
+   "lang": "en",
+   "kind": "theme",
+   "chapters": [
+    83
+   ],
+   "kurals": []
+  },
+  {
+   "q": "the evils of drinking alcohol",
+   "lang": "en",
+   "kind": "theme",
+   "chapters": [
+    93
+   ],
+   "kurals": []
+  },
+  {
+   "q": "choosing death over dishonour",
+   "lang": "en",
+   "kind": "theme",
+   "chapters": [
+    97
+   ],
+   "kurals": []
+  },
+  {
+   "q": "rich people who never spend or share",
+   "lang": "en",
+   "kind": "theme",
+   "chapters": [
+    101
+   ],
+   "kurals": []
+  },
+  {
+   "q": "falling in love at first sight",
+   "lang": "en",
+   "kind": "theme",
+   "chapters": [
+    109
+   ],
+   "kurals": []
+  },
+  {
+   "q": "when the whole village gossips about a love affair",
+   "lang": "en",
+   "kind": "theme",
+   "chapters": [
+    115
+   ],
+   "kurals": []
+  },
+  {
+   "q": "dreaming of a lover who is far away",
+   "lang": "en",
+   "kind": "theme",
+   "chapters": [
+    122
+   ],
+   "kurals": []
+  },
+  {
+   "q": "why small quarrels make love sweeter",
+   "lang": "en",
+   "kind": "theme",
+   "chapters": [
+    133
+   ],
+   "kurals": []
+  },
+  {
+   "q": "மழை பெய்யாவிட்டால் உலகம் என்ன ஆகும்",
+   "lang": "ta",
+   "kind": "theme",
+   "chapters": [
+    2
+   ],
+   "kurals": []
+  },
+  {
+   "q": "உலக ஆசைகளைத் துறந்த பெரியோர்களின் மேன்மை",
+   "lang": "ta",
+   "kind": "theme",
+   "chapters": [
+    3
+   ],
+   "kurals": []
+  },
+  {
+   "q": "குடும்பம் நடத்துபவர் யாருக்கெல்லாம் உதவ வேண்டும்",
+   "lang": "ta",
+   "kind": "theme",
+   "chapters": [
+    5
+   ],
+   "kurals": []
+  },
+  {
+   "q": "நீதிபதி ஒருபக்கம் சாயாமல் இருக்க வேண்டும்",
+   "lang": "ta",
+   "kind": "theme",
+   "chapters": [
+    12
+   ],
+   "kurals": []
+  },
+  {
+   "q": "நல்ல நடத்தை ஏன் உயிரை விட முக்கியம்",
+   "lang": "ta",
+   "kind": "theme",
+   "chapters": [
+    14
+   ],
+   "kurals": []
+  },
+  {
+   "q": "ஒருவர் இல்லாதபோது அவரைப் பற்றிக் குறை பேசுவது",
+   "lang": "ta",
+   "kind": "theme",
+   "chapters": [
+    19
+   ],
+   "kurals": []
+  },
+  {
+   "q": "ஊருக்கு உதவும் பணக்காரர் எப்படி இருக்க வேண்டும்",
+   "lang": "ta",
+   "kind": "theme",
+   "chapters": [
+    22
+   ],
+   "kurals": []
+  },
+  {
+   "q": "இறந்த பிறகும் பெயர் நிலைக்க என்ன செய்ய வேண்டும்",
+   "lang": "ta",
+   "kind": "theme",
+   "chapters": [
+    24
+   ],
+   "kurals": []
+  },
+  {
+   "q": "உடல் வருத்தத்தைத் தாங்கிப் பிற உயிருக்குத் தீங்கு செய்யாமல் இருப்பது",
+   "lang": "ta",
+   "kind": "theme",
+   "chapters": [
+    27
+   ],
+   "kurals": []
+  },
+  {
+   "q": "பிறர் பொருளை ஏமாற்றி எடுக்க நினைப்பது",
+   "lang": "ta",
+   "kind": "theme",
+   "chapters": [
+    29
+   ],
+   "kurals": []
+  },
+  {
+   "q": "கோபத்தைக் கட்டுப்படுத்துவது எப்படி",
+   "lang": "ta",
+   "kind": "theme",
+   "chapters": [
+    31
+   ],
+   "kurals": []
+  },
+  {
+   "q": "எந்த உயிரையும் கொல்லக் கூடாது என்பது ஏன்",
+   "lang": "ta",
+   "kind": "theme",
+   "chapters": [
+    33
+   ],
+   "kurals": []
+  },
+  {
+   "q": "ஆசைகளை விட்டு விலகுவதால் கிடைக்கும் விடுதலை",
+   "lang": "ta",
+   "kind": "theme",
+   "chapters": [
+    35,
+    37
+   ],
+   "kurals": []
+  },
+  {
+   "q": "படிப்பு ஏன் வாழ்க்கைக்கு அவசியம்",
+   "lang": "ta",
+   "kind": "theme",
+   "chapters": [
+    40
+   ],
+   "kurals": []
+  },
+  {
+   "q": "தவறுகள் வருவதற்கு முன்பே தடுத்துக்கொள்வது",
+   "lang": "ta",
+   "kind": "theme",
+   "chapters": [
+    44
+   ],
+   "kurals": []
+  },
+  {
+   "q": "ஒரு காரியம் தொடங்கும் முன் நன்கு யோசிப்பது",
+   "lang": "ta",
+   "kind": "theme",
+   "chapters": [
+    47
+   ],
+   "kurals": []
+  },
+  {
+   "q": "ஒருவரிடம் பொறுப்பு கொடுக்கும் முன் அவர் திறமையை ஆராய்வது",
+   "lang": "ta",
+   "kind": "theme",
+   "chapters": [
+    52,
+    51
+   ],
+   "kurals": []
+  },
+  {
+   "q": "மக்களை நேர்மையாக ஆளும் அரசன்",
+   "lang": "ta",
+   "kind": "theme",
+   "chapters": [
+    55
+   ],
+   "kurals": []
+  },
+  {
+   "q": "மக்களை அச்சுறுத்தி ஆளும் தலைவரின் கதி",
+   "lang": "ta",
+   "kind": "theme",
+   "chapters": [
+    57,
+    56
+   ],
+   "kurals": []
+  },
+  {
+   "q": "சோம்பேறித்தனத்தால் வரும் கேடு",
+   "lang": "ta",
+   "kind": "theme",
+   "chapters": [
+    61
+   ],
+   "kurals": []
+  },
+  {
+   "q": "எடுத்த காரியத்தில் மன உறுதியோடு இருப்பது",
+   "lang": "ta",
+   "kind": "theme",
+   "chapters": [
+    67
+   ],
+   "kurals": []
+  },
+  {
+   "q": "மேலதிகாரிகளிடம் எப்படி நடந்துகொள்வது",
+   "lang": "ta",
+   "kind": "theme",
+   "chapters": [
+    70
+   ],
+   "kurals": []
+  },
+  {
+   "q": "கூட்டத்தின் தன்மை அறிந்து பேசுவது",
+   "lang": "ta",
+   "kind": "theme",
+   "chapters": [
+    72
+   ],
+   "kurals": []
+  },
+  {
+   "q": "பணம் சம்பாதிப்பது ஏன் முக்கியம்",
+   "lang": "ta",
+   "kind": "theme",
+   "chapters": [
+    76
+   ],
+   "kurals": []
+  },
+  {
+   "q": "நண்பனைத் தேர்ந்தெடுக்கும் முன் சோதிப்பது",
+   "lang": "ta",
+   "kind": "theme",
+   "chapters": [
+    80
+   ],
+   "kurals": []
+  },
+  {
+   "q": "கெட்ட நண்பர்களை விட்டு விலகுவது",
+   "lang": "ta",
+   "kind": "theme",
+   "chapters": [
+    82
+   ],
+   "kurals": []
+  },
+  {
+   "q": "கூடவே இருந்து குழி பறிப்பவர்கள்",
+   "lang": "ta",
+   "kind": "theme",
+   "chapters": [
+    89
+   ],
+   "kurals": []
+  },
+  {
+   "q": "எல்லாரிடமும் மரியாதையாகவும் இனிமையாகவும் பழகுவது",
+   "lang": "ta",
+   "kind": "theme",
+   "chapters": [
+    100
+   ],
+   "kurals": []
+  },
+  {
+   "q": "விவசாயியின் உழைப்பின் பெருமை",
+   "lang": "ta",
+   "kind": "theme",
+   "chapters": [
+    104
+   ],
+   "kurals": []
+  },
+  {
+   "q": "காதலியின் அழகை வர்ணிப்பது",
+   "lang": "ta",
+   "kind": "theme",
+   "chapters": [
+    112
+   ],
+   "kurals": []
+  },
+  {
+   "q": "காதலனை நினைத்து உடல் மெலிந்து வாடுவது",
+   "lang": "ta",
+   "kind": "theme",
+   "chapters": [
+    117,
+    124
+   ],
+   "kurals": []
+  },
+  {
+   "q": "மாலை நேரம் வந்தால் பிரிவு வலி அதிகரிப்பது",
+   "lang": "ta",
+   "kind": "theme",
+   "chapters": [
+    123
+   ],
+   "kurals": []
+  },
+  {
+   "q": "வெளியூர் சென்ற கணவர் எப்போது திரும்புவார் என்று காத்திருப்பது",
+   "lang": "ta",
+   "kind": "theme",
+   "chapters": [
+    127
+   ],
+   "kurals": []
+  },
+  {
+   "q": "காதலனிடம் ஓடும் மனதைக் கடிந்துகொள்வது",
+   "lang": "ta",
+   "kind": "theme",
+   "chapters": [
+    130,
+    125
+   ],
+   "kurals": []
+  },
+  {
+   "q": "காதலர்களுக்குள் நடக்கும் செல்லச் சண்டை",
+   "lang": "ta",
+   "kind": "theme",
+   "chapters": [
+    131,
+    132
+   ],
+   "kurals": []
+  },
+  {
+   "q": "अच्छी पत्नी के गुण क्या हैं",
+   "lang": "hi",
+   "kind": "theme",
+   "chapters": [
+    6
+   ],
+   "kurals": []
+  },
+  {
+   "q": "दूसरे की पत्नी पर बुरी नज़र डालना",
+   "lang": "hi",
+   "kind": "theme",
+   "chapters": [
+    15
+   ],
+   "kurals": []
+  },
+  {
+   "q": "दूसरों की तरक्की देखकर जलन करना",
+   "lang": "hi",
+   "kind": "theme",
+   "chapters": [
+    17
+   ],
+   "kurals": []
+  },
+  {
+   "q": "बुरे काम से डरना क्यों ज़रूरी है",
+   "lang": "hi",
+   "kind": "theme",
+   "chapters": [
+    21
+   ],
+   "kurals": []
+  },
+  {
+   "q": "गरीबों और भूखों को दान देना",
+   "lang": "hi",
+   "kind": "theme",
+   "chapters": [
+    23
+   ],
+   "kurals": []
+  },
+  {
+   "q": "सब जीवों पर दया करना",
+   "lang": "hi",
+   "kind": "theme",
+   "chapters": [
+    25
+   ],
+   "kurals": []
+  },
+  {
+   "q": "इच्छाएँ ही सारे दुखों की जड़ हैं",
+   "lang": "hi",
+   "kind": "theme",
+   "chapters": [
+    37
+   ],
+   "kurals": []
+  },
+  {
+   "q": "सच्ची बुद्धिमानी क्या है",
+   "lang": "hi",
+   "kind": "theme",
+   "chapters": [
+    43
+   ],
+   "kurals": []
+  },
+  {
+   "q": "अपनी ताकत पहचानकर ही लड़ाई मोल लेना",
+   "lang": "hi",
+   "kind": "theme",
+   "chapters": [
+    48
+   ],
+   "kurals": []
+  },
+  {
+   "q": "दूसरों की गलतियों को दया की नज़र से देखना",
+   "lang": "hi",
+   "kind": "theme",
+   "chapters": [
+    58
+   ],
+   "kurals": []
+  },
+  {
+   "q": "जोश और उत्साह ही असली दौलत है",
+   "lang": "hi",
+   "kind": "theme",
+   "chapters": [
+    60
+   ],
+   "kurals": []
+  },
+  {
+   "q": "मंत्री में क्या योग्यता होनी चाहिए",
+   "lang": "hi",
+   "kind": "theme",
+   "chapters": [
+    64
+   ],
+   "kurals": []
+  },
+  {
+   "q": "गलत तरीके से धन कमाना",
+   "lang": "hi",
+   "kind": "theme",
+   "chapters": [
+    66
+   ],
+   "kurals": []
+  },
+  {
+   "q": "एक अच्छे देश की पहचान",
+   "lang": "hi",
+   "kind": "theme",
+   "chapters": [
+    74
+   ],
+   "kurals": []
+  },
+  {
+   "q": "एक अच्छी सेना की पहचान",
+   "lang": "hi",
+   "kind": "theme",
+   "chapters": [
+    77
+   ],
+   "kurals": []
+  },
+  {
+   "q": "मूर्ख व्यक्ति के लक्षण",
+   "lang": "hi",
+   "kind": "theme",
+   "chapters": [
+    84
+   ],
+   "kurals": []
+  },
+  {
+   "q": "आपसी वैर और झगड़े से होने वाले नुकसान",
+   "lang": "hi",
+   "kind": "theme",
+   "chapters": [
+    86
+   ],
+   "kurals": []
+  },
+  {
+   "q": "महान लोगों का अपमान करने का परिणाम",
+   "lang": "hi",
+   "kind": "theme",
+   "chapters": [
+    90
+   ],
+   "kurals": []
+  },
+  {
+   "q": "जुआ खेलने के नुकसान",
+   "lang": "hi",
+   "kind": "theme",
+   "chapters": [
+    94
+   ],
+   "kurals": []
+  },
+  {
+   "q": "सच्चा बड़प्पन क्या है",
+   "lang": "hi",
+   "kind": "theme",
+   "chapters": [
+    98
+   ],
+   "kurals": []
+  },
+  {
+   "q": "गलत काम करने में शर्म महसूस करना",
+   "lang": "hi",
+   "kind": "theme",
+   "chapters": [
+    102
+   ],
+   "kurals": []
+  },
+  {
+   "q": "नीच लोगों का स्वभाव",
+   "lang": "hi",
+   "kind": "theme",
+   "chapters": [
+    108
+   ],
+   "kurals": []
+  },
+  {
+   "q": "विरह में चेहरे का रंग फीका पड़ जाना",
+   "lang": "hi",
+   "kind": "theme",
+   "chapters": [
+    119
+   ],
+   "kurals": []
+  },
+  {
+   "q": "बिछड़े प्रेमी से फिर मिलने की तड़प",
+   "lang": "hi",
+   "kind": "theme",
+   "chapters": [
+    129
+   ],
+   "kurals": []
+  },
+  {
+   "q": "प्रेम में झूठी नाराज़गी दिखाना",
+   "lang": "hi",
+   "kind": "theme",
+   "chapters": [
+    132
+   ],
+   "kurals": []
+  },
+  {
+   "q": "സ്നേഹമില്ലാത്ത ജീവിതത്തിന് എന്ത് അർത്ഥം",
+   "lang": "ml",
+   "kind": "theme",
+   "chapters": [
+    8
+   ],
+   "kurals": []
+  },
+  {
+   "q": "പ്രിയപ്പെട്ടവൻ ദൂരെ പോകുമ്പോഴുള്ള സഹിക്കാനാവാത്ത വേദന",
+   "lang": "ml",
+   "kind": "theme",
+   "chapters": [
+    116
+   ],
+   "kurals": []
+  },
+  {
+   "q": "మనసును, మాటను అదుపులో ఉంచుకోవడం ఎందుకు ముఖ్యం",
+   "lang": "te",
+   "kind": "theme",
+   "chapters": [
+    13
+   ],
+   "kurals": []
+  },
+  {
+   "q": "కష్టపడి పనిచేస్తే ఏదైనా సాధించవచ్చు",
+   "lang": "te",
+   "kind": "theme",
+   "chapters": [
+    62
+   ],
+   "kurals": []
+  },
+  {
+   "q": "ಸೋಮಾರಿತನದಿಂದ ಆಗುವ ಹಾನಿ",
+   "lang": "kn",
+   "kind": "theme",
+   "chapters": [
+    61
+   ],
+   "kurals": []
+  },
+  {
+   "q": "ರೈತನ ದುಡಿಮೆಯ ಮಹತ್ವ ಏನು",
+   "lang": "kn",
+   "kind": "theme",
+   "chapters": [
+    104
+   ],
+   "kurals": []
+  },
+  {
+   "q": "খারাপ সঙ্গ কেন এড়িয়ে চলা উচিত",
+   "lang": "bn",
+   "kind": "theme",
+   "chapters": [
+    46
+   ],
+   "kurals": []
+  },
+  {
+   "q": "সব প্রাণীর প্রতি দয়া দেখানো",
+   "lang": "bn",
+   "kind": "theme",
+   "chapters": [
+    25
+   ],
+   "kurals": []
+  },
+  {
+   "q": "राग आवरणे का आवश्यक आहे",
+   "lang": "mr",
+   "kind": "theme",
+   "chapters": [
+    31
+   ],
+   "kurals": []
+  },
+  {
+   "q": "चेहऱ्यावरून समोरच्याच्या मनातले ओळखणे",
+   "lang": "mr",
+   "kind": "theme",
+   "chapters": [
+    71
+   ],
+   "kurals": []
+  },
+  {
+   "q": "આ જીવન ક્ષણભંગુર છે, કશું કાયમ નથી",
+   "lang": "gu",
+   "kind": "theme",
+   "chapters": [
+    34
+   ],
+   "kurals": []
+  },
+  {
+   "q": "ਜ਼ਿੰਦਗੀ ਵਿੱਚ ਪੜ੍ਹਾਈ ਦੀ ਅਹਿਮੀਅਤ",
+   "lang": "pa",
+   "kind": "theme",
+   "chapters": [
+    40
+   ],
+   "kurals": []
+  },
+  {
+   "q": "ମଦ ପିଇବାର କୁଫଳ କଣ",
+   "lang": "or",
+   "kind": "theme",
+   "chapters": [
+    93
+   ],
+   "kurals": []
+  },
+  {
+   "q": "مصیبت میں ساتھ دینے والا سچا دوست",
+   "lang": "ur",
+   "kind": "theme",
+   "chapters": [
+    79
+   ],
+   "kurals": []
+  },
+  {
+   "q": "محبت میں چھوٹی موٹی ناراضگی کا مزہ",
+   "lang": "ur",
+   "kind": "theme",
+   "chapters": [
+    133
+   ],
+   "kurals": []
+  },
+  {
+   "q": "every script has its opening sound, and all creation has its source in the Lord",
+   "lang": "en",
+   "kind": "kural",
+   "chapters": [],
+   "kurals": [
+    1
+   ]
+  },
+  {
+   "q": "water falling from the sky keeps the whole world alive, like a divine nectar",
+   "lang": "en",
+   "kind": "kural",
+   "chapters": [],
+   "kurals": [
+    11
+   ]
+  },
+  {
+   "q": "only people who never heard their own baby babble think music is the sweetest sound",
+   "lang": "en",
+   "kind": "kural",
+   "chapters": [],
+   "kurals": [
+    66
+   ]
+  },
+  {
+   "q": "caring people would give even their own body for others while cold people keep everything",
+   "lang": "en",
+   "kind": "kural",
+   "chapters": [],
+   "kurals": [
+    72
+   ]
+  },
+  {
+   "q": "help given at the moment of need, however little, outweighs the whole earth",
+   "lang": "en",
+   "kind": "kural",
+   "chapters": [],
+   "kurals": [
+    102
+   ]
+  },
+  {
+   "q": "physical injuries heal with time but the hurt caused by cruel words never goes away",
+   "lang": "en",
+   "kind": "kural",
+   "chapters": [],
+   "kurals": [
+    129
+   ]
+  },
+  {
+   "q": "put up with those who mock you, just as land supports people who tear into it",
+   "lang": "en",
+   "kind": "kural",
+   "chapters": [],
+   "kurals": [
+    151
+   ]
+  },
+  {
+   "q": "wrongdoing should scare us more than a blaze because it only breeds more harm",
+   "lang": "en",
+   "kind": "kural",
+   "chapters": [],
+   "kurals": [
+    202
+   ]
+  },
+  {
+   "q": "the best revenge on someone who wronged you is to do them good so they feel embarrassed",
+   "lang": "en",
+   "kind": "kural",
+   "chapters": [],
+   "kurals": [
+    314
+   ]
+  },
+  {
+   "q": "harm you cause others comes back to you before the day is over",
+   "lang": "en",
+   "kind": "kural",
+   "chapters": [],
+   "kurals": [
+    319
+   ]
+  },
+  {
+   "q": "a person here just a day ago can be gone now; such is this world",
+   "lang": "en",
+   "kind": "kural",
+   "chapters": [],
+   "kurals": [
+    336
+   ]
+  },
+  {
+   "q": "study thoroughly and then live up to what you studied",
+   "lang": "en",
+   "kind": "kural",
+   "chapters": [],
+   "kurals": [
+    391
+   ]
+  },
+  {
+   "q": "the more you read, the more your understanding keeps rising like a spring",
+   "lang": "en",
+   "kind": "kural",
+   "chapters": [],
+   "kurals": [
+    396
+   ]
+  },
+  {
+   "q": "whoever says something, judge its truth yourself instead of trusting the speaker",
+   "lang": "en",
+   "kind": "kural",
+   "chapters": [],
+   "kurals": [
+    423
+   ]
+  },
+  {
+   "q": "decide only after careful thought; thinking it over after starting is a mistake",
+   "lang": "en",
+   "kind": "kural",
+   "chapters": [],
+   "kurals": [
+    467
+   ]
+  },
+  {
+   "q": "never give up saying a task is too hard; persistent effort brings success",
+   "lang": "en",
+   "kind": "kural",
+   "chapters": [],
+   "kurals": [
+    611
+   ]
+  },
+  {
+   "q": "when hardship arrives, smile at it, nothing defeats it better",
+   "lang": "en",
+   "kind": "kural",
+   "chapters": [],
+   "kurals": [
+    621
+   ]
+  },
+  {
+   "q": "companions are meant to correct you when you go wrong, not just to share laughs",
+   "lang": "en",
+   "kind": "kural",
+   "chapters": [],
+   "kurals": [
+    784
+   ]
+  },
+  {
+   "q": "do not bet even if you can win; the winnings are a trap that swallows you",
+   "lang": "en",
+   "kind": "kural",
+   "chapters": [],
+   "kurals": [
+    931
+   ]
+  },
+  {
+   "q": "a lovers' tiff makes romance sweet, and making up afterwards makes it sweeter",
+   "lang": "en",
+   "kind": "kural",
+   "chapters": [],
+   "kurals": [
+    1330
+   ]
+  },
+  {
+   "q": "இறைவனை வணங்காவிட்டால் படிப்பால் என்ன பயன்",
+   "lang": "ta",
+   "kind": "kural",
+   "chapters": [],
+   "kurals": [
+    2
+   ]
+  },
+  {
+   "q": "உள்ளம் தூய்மையாக இருப்பதே உண்மையான நன்னெறி, மற்றவை வெறும் ஆடம்பரம்",
+   "lang": "ta",
+   "kind": "kural",
+   "chapters": [],
+   "kurals": [
+    34
+   ]
+  },
+  {
+   "q": "பிள்ளையை அறிவாளி என்று பிறர் சொல்லக் கேட்கும் அம்மாவின் பெருமகிழ்ச்சி",
+   "lang": "ta",
+   "kind": "kural",
+   "chapters": [],
+   "kurals": [
+    69
+   ]
+  },
+  {
+   "q": "உள்ளத்தில் உள்ள பாசத்தை மறைக்க முடியாது, கண்ணீர் காட்டிக்கொடுத்துவிடும்",
+   "lang": "ta",
+   "kind": "kural",
+   "chapters": [],
+   "kurals": [
+    71
+   ]
+  },
+  {
+   "q": "நல்ல வார்த்தைகள் இருக்கும்போது கடுமையாகப் பேசுவது பழுத்ததை விட்டுப் பிஞ்சைச் சாப்பிடுவது போல",
+   "lang": "ta",
+   "kind": "kural",
+   "chapters": [],
+   "kurals": [
+    100
+   ]
+  },
+  {
+   "q": "சிறிய உதவியையும் பெரிதாக மதிப்பவர்களே அதன் அருமை தெரிந்தவர்கள்",
+   "lang": "ta",
+   "kind": "kural",
+   "chapters": [],
+   "kurals": [
+    104
+   ]
+  },
+  {
+   "q": "எந்தத் தவறுக்கும் விமோசனம் உண்டு, ஆனால் பெற்ற உதவியை மறந்தவனுக்குக் கடைத்தேற்றம் இல்லை",
+   "lang": "ta",
+   "kind": "kural",
+   "chapters": [],
+   "kurals": [
+    110
+   ]
+  },
+  {
+   "q": "வேறு எதில் கவனம் தவறினாலும் வாயைக் கட்டுப்படுத்தத் தவறக்கூடாது",
+   "lang": "ta",
+   "kind": "kural",
+   "chapters": [],
+   "kurals": [
+    127
+   ]
+  },
+  {
+   "q": "பழிவாங்குவோருக்கு ஒரு நாள் மகிழ்ச்சி, மன்னித்து விடுபவருக்கு என்றும் பெருமை",
+   "lang": "ta",
+   "kind": "kural",
+   "chapters": [],
+   "kurals": [
+    156
+   ]
+  },
+  {
+   "q": "பிறர் தவறுகளைப் பார்ப்பது போல் நம் தவறுகளையும் பார்த்தால் துன்பம் வருமா",
+   "lang": "ta",
+   "kind": "kural",
+   "chapters": [],
+   "kurals": [
+    190
+   ]
+  },
+  {
+   "q": "யாருக்கும் சிறிதும் கெடுதல் தராத பேச்சுதான் உண்மை",
+   "lang": "ta",
+   "kind": "kural",
+   "chapters": [],
+   "kurals": [
+    291
+   ]
+  },
+  {
+   "q": "எப்போதும் உண்மையே பேசினால் வேறு எந்த நல்லொழுக்கமும் செய்ய வேண்டியதில்லை",
+   "lang": "ta",
+   "kind": "kural",
+   "chapters": [],
+   "kurals": [
+    297
+   ]
+  },
+  {
+   "q": "கணிதமும் வாசிப்பும் வாழ்க்கைக்கு இரு பார்வைகள் போன்றவை",
+   "lang": "ta",
+   "kind": "kural",
+   "chapters": [],
+   "kurals": [
+    392
+   ]
+  },
+  {
+   "q": "அழியாத உண்மையான சொத்து படிப்பறிவு மட்டுமே",
+   "lang": "ta",
+   "kind": "kural",
+   "chapters": [],
+   "kurals": [
+    400
+   ]
+  },
+  {
+   "q": "பிரச்சனை வருவதற்கு முன்பே தடுக்காதவர் வாழ்க்கை நெருப்பில் விழுந்த வைக்கோல் போல எரிந்துபோகும்",
+   "lang": "ta",
+   "kind": "kural",
+   "chapters": [],
+   "kurals": [
+    435
+   ]
+  },
+  {
+   "q": "ஒருவர் பெரியவரா சிறியவரா என்பதை அவர் செய்யும் செயல்களே காட்டும்",
+   "lang": "ta",
+   "kind": "kural",
+   "chapters": [],
+   "kurals": [
+    505
+   ]
+  },
+  {
+   "q": "பறவை கூட்டத்தை அழைத்து உண்பது போல உறவினர்களோடு பகிர்ந்து வாழ்பவரிடமே செல்வம் சேரும்",
+   "lang": "ta",
+   "kind": "kural",
+   "chapters": [],
+   "kurals": [
+    527
+   ]
+  },
+  {
+   "q": "வாக்குறுதி கொடுப்பது சுலபம், அதை நிறைவேற்றுவதுதான் கஷ்டம்",
+   "lang": "ta",
+   "kind": "kural",
+   "chapters": [],
+   "kurals": [
+    664
+   ]
+  },
+  {
+   "q": "ஆடை நழுவும்போது கை தானாகப் பிடிப்பது போல் துன்பத்தில் உடனே உதவுபவனே நண்பன்",
+   "lang": "ta",
+   "kind": "kural",
+   "chapters": [],
+   "kurals": [
+    788
+   ]
+  },
+  {
+   "q": "மனிதர்கள் அனைவரும் பிறக்கும்போது ஒன்றுதான், மேன்மை அவரவர் செயலால் அமையும்",
+   "lang": "ta",
+   "kind": "kural",
+   "chapters": [],
+   "kurals": [
+    972
+   ]
+  },
+  {
+   "q": "सच्चा सुख वही है जो धर्म के रास्ते पर चलकर मिले",
+   "lang": "hi",
+   "kind": "kural",
+   "chapters": [],
+   "kurals": [
+    39
+   ]
+  },
+  {
+   "q": "जिसके दिल में ममता नहीं, वह चलती-फिरती लाश है",
+   "lang": "hi",
+   "kind": "kural",
+   "chapters": [],
+   "kurals": [
+    80
+   ]
+  },
+  {
+   "q": "बिना किसी स्वार्थ के, पहले कुछ पाए बिना की गई भलाई अनमोल है",
+   "lang": "hi",
+   "kind": "kural",
+   "chapters": [],
+   "kurals": [
+    101
+   ]
+  },
+  {
+   "q": "खुद पर काबू रखने वाला ऊँचा उठता है, बेकाबू इंसान बर्बाद हो जाता है",
+   "lang": "hi",
+   "kind": "kural",
+   "chapters": [],
+   "kurals": [
+    121
+   ]
+  },
+  {
+   "q": "अच्छा चरित्र जान से भी ज़्यादा संभालकर रखना चाहिए",
+   "lang": "hi",
+   "kind": "kural",
+   "chapters": [],
+   "kurals": [
+    131
+   ]
+  },
+  {
+   "q": "कोई हमारे साथ बुरा करे तब भी बदले में बुरा नहीं करना चाहिए",
+   "lang": "hi",
+   "kind": "kural",
+   "chapters": [],
+   "kurals": [
+    157
+   ]
+  },
+  {
+   "q": "भूखे गरीबों का पेट भरना ही धन को सुरक्षित रखने की सबसे अच्छी जगह है",
+   "lang": "hi",
+   "kind": "kural",
+   "chapters": [],
+   "kurals": [
+    226
+   ]
+  },
+  {
+   "q": "जो किसी जानवर को न मारता है न खाता है, उसका सब जीव आदर करते हैं",
+   "lang": "hi",
+   "kind": "kural",
+   "chapters": [],
+   "kurals": [
+    260
+   ]
+  },
+  {
+   "q": "कानों से सुनकर पाया गया ज्ञान सब खज़ानों में श्रेष्ठ है",
+   "lang": "hi",
+   "kind": "kural",
+   "chapters": [],
+   "kurals": [
+    411
+   ]
+  },
+  {
+   "q": "पढ़े-लिखे न हों तो भी ज्ञानियों की बातें सुनें, मुसीबत में वह सहारा बनेगी",
+   "lang": "hi",
+   "kind": "kural",
+   "chapters": [],
+   "kurals": [
+    414
+   ]
+  },
+  {
+   "q": "काम शुरू करने से पहले अपनी, विरोधी की और साथियों की ताकत तौल लो",
+   "lang": "hi",
+   "kind": "kural",
+   "chapters": [],
+   "kurals": [
+    471
+   ]
+  },
+  {
+   "q": "सही समय और सही जगह चुनें तो दुनिया जीतना भी संभव है",
+   "lang": "hi",
+   "kind": "kural",
+   "chapters": [],
+   "kurals": [
+    484
+   ]
+  },
+  {
+   "q": "इंसान की ऊँचाई उसके हौसले जितनी ही होती है",
+   "lang": "hi",
+   "kind": "kural",
+   "chapters": [],
+   "kurals": [
+    595
+   ]
+  },
+  {
+   "q": "भाग्य साथ न दे तब भी मेहनत अपना फल ज़रूर देती है",
+   "lang": "hi",
+   "kind": "kural",
+   "chapters": [],
+   "kurals": [
+    619
+   ]
+  },
+  {
+   "q": "खेती करके जीने वाले ही सच में जीते हैं, बाकी सब दूसरों के पीछे चलते हैं",
+   "lang": "hi",
+   "kind": "kural",
+   "chapters": [],
+   "kurals": [
+    1033
+   ]
+  },
+  {
+   "q": "വിദ്യ നേടിയവന് എല്ലാ നാടും സ്വന്തം നാടാണ്, പിന്നെ എന്തിന് പഠിക്കാതിരിക്കണം",
+   "lang": "ml",
+   "kind": "kural",
+   "chapters": [],
+   "kurals": [
+    397
+   ]
+  },
+  {
+   "q": "సంకల్పంలో దృఢంగా ఉంటే అనుకున్నది అనుకున్నట్లే సాధించవచ్చు",
+   "lang": "te",
+   "kind": "kural",
+   "chapters": [],
+   "kurals": [
+    666
+   ]
+  },
+  {
+   "q": "ಅವಮಾನವನ್ನು ಸಹಿಸುವುದು ಒಳ್ಳೆಯದು, ಅದನ್ನು ಮರೆತುಬಿಡುವುದು ಇನ್ನೂ ಒಳ್ಳೆಯದು",
+   "lang": "kn",
+   "kind": "kural",
+   "chapters": [],
+   "kurals": [
+    152
+   ]
+  },
+  {
+   "q": "যত কাজই থাকুক, শেষ পর্যন্ত সবাইকে কৃষকের উপর নির্ভর করতে হয়",
+   "lang": "bn",
+   "kind": "kural",
+   "chapters": [],
+   "kurals": [
+    1031
+   ]
+  },
+  {
+   "q": "نیک لوگوں کی دوستی اچھی کتاب کی طرح ہے، جتنا پڑھو اتنا مزہ آتا ہے",
+   "lang": "ur",
+   "kind": "kural",
+   "chapters": [],
+   "kurals": [
+    783
+   ]
+  }
+ ]
+}
