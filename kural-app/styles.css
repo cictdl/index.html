@@ -749,6 +749,7 @@ html[lang="hi"] body{font-family:var(--dv),var(--ta),var(--lat)}   /* Devanagari
 .malai-lines{display:block;font-family:var(--ta-serif);font-size:1.15rem;line-height:1.9;margin:4px 0}
 .malai-lines .ml:nth-child(even){padding-left:1.2em}
 .malai-gloss{margin-top:8px;font-size:.95rem;line-height:1.6;color:var(--ink)}
+.malai-gloss-tag{display:inline-block;margin-right:6px;font-size:.72rem;letter-spacing:.02em;color:var(--accent);background:var(--chip);border-radius:6px;padding:1px 7px;vertical-align:1px}
 
 /* ── படக் கூடம் · card studio ── */
 .card-preview{text-align:center}
