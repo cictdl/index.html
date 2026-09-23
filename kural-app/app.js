@@ -28,7 +28,7 @@ function toast(msg, ms = 2200) {
 // ───────────────────────────── i18n (interface) ─────────────────────────────
 const STR = {
   ta: {
-    cards: "🖼️ படங்கள்",
+    cards: "படங்கள்",
     cardsSub: "பகிரக் கூடிய குறள் படம் — எந்த மொழியிலும்",
     cardSource: "எதைப் பகிர",
     cardToday: "இன்றைய குறள்",
@@ -233,7 +233,7 @@ const STR = {
     lineErr: 'இவ்வடி அலகிட முடியவில்லை', update: 'புதிய பதிப்பு உள்ளது — புதுப்பிக்க', ttsUnsupported: 'இந்த உலாவியில் பேச்சு ஒலி இல்லை',
   },
   en: {
-    cards: "🖼️ Cards",
+    cards: "Cards",
     cardsSub: "A kural image to share — in any language",
     cardSource: "What to share",
     cardToday: "Kural of the day",
@@ -438,7 +438,7 @@ const STR = {
     lineErr: 'This line could not be scanned', update: 'A new version is available — refresh', ttsUnsupported: 'Speech output is not available in this browser',
   },
   hi: {
-    cards: "🖼️ कार्ड",
+    cards: "कार्ड",
     cardsSub: "साझा करने योग्य कुरल चित्र — किसी भी भाषा में",
     cardSource: "क्या साझा करें",
     cardToday: "आज का कुरल",
@@ -2284,6 +2284,7 @@ async function cardDraw(cv, o) {
   const x = cv.getContext('2d');
   const B = cardBlocks(o);
   await cardFonts(B);
+  if (o.qr) await new Promise(r => { const q = cardQr(); if (q.complete) r(); else { q.onload = r; q.onerror = r; } });
   const g = x.createLinearGradient(0, 0, W, H); g.addColorStop(0, T.bg[0]); g.addColorStop(1, T.bg[1]);
   x.fillStyle = g; x.fillRect(0, 0, W, H);
   x.fillStyle = T.accent; x.fillRect(0, 0, W, 18);
@@ -2369,7 +2370,7 @@ async function viewCards(q) {
   const C = Object.assign({ theme: 'olai', size: 'sq', translit: true, chapter: true, qr: true, langs: null }, JSON.parse(localStorage.getItem('kural.card') || '{}'));
   if (occ) C.theme = C.theme === 'olai' ? 'vizha' : C.theme;
   if (!C.langs) C.langs = uiLangs().filter(c => c !== 'ta').slice(0, 1);
-  setTitle(t('cards'), t('cardsSub'));
+  setTitle('🖼️ ' + t('cards'), t('cardsSub'));
   const chip = (on, attr, label) => `<button class="chip ${on ? 'sel' : ''}" ${attr}>${label}</button>`;
   const codes = ['ta', ...D.meta.langOrder.filter(c => c !== 'ta')];
   const dup = {}; codes.forEach(c => { dup[L(c).native] = (dup[L(c).native] || 0) + 1; });   // three streams are all called "English"
