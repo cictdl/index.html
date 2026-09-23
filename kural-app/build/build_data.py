@@ -406,12 +406,28 @@ def main():
         "changelog": load(Path(__file__).resolve().parent / "changelog.json") if (Path(__file__).resolve().parent / "changelog.json").exists() else [],
     }
     dump(OUT / "meta.json", meta)
+    # திருவள்ளுவமாலை — the 55 tribute verses (build/valluvamalai.json) → data/valluvamalai.json, each scanned for metre
+    tvm_src = Path(__file__).resolve().parent / "valluvamalai.json"
+    if tvm_src.exists():
+        tvm = load(tvm_src); vs = tvm["verses"]
+        assert [v["n"] for v in vs] == list(range(1, 56)) and all(len(v["lines"]) in (2, 4) for v in vs)
+        assert not any(re.search(r"[^\u0b80-\u0bff\s.,;:!?'\"()\-]", l) for v in vs for l in v["lines"]), "non-Tamil character in a garland verse"
+        scanned = 0
+        for v in vs:
+            v["kind"] = "kural" if len(v["lines"]) == 2 else "venba"
+            try:
+                v["yappu"] = ser_verse(yappu.scan_verse_best(v["lines"])); scanned += 1
+            except Exception as e:
+                v["yappu"] = None; print(f"  valluvamalai {v['n']}: scan skipped ({e})")
+        dump(OUT / "valluvamalai.json", tvm)
+        print(f"valluvamalai: {len(vs)} verses, {scanned} scanned")
     # நிகழ்வுக்கு ஒரு குறள் — curated occasions (build/occasions.json) → data/occasions.json
     occ_src = Path(__file__).resolve().parent / "occasions.json"
     if occ_src.exists():
         occ = load(occ_src); seen = set()
         for o in occ["occasions"]:
             assert o["id"] not in seen and all(1 <= n <= 1330 for n in o["kurals"]) and len(set(o["kurals"])) == len(o["kurals"]), o["id"]
+            assert all(1 <= n <= 55 for n in o.get("malai", [])), o["id"]
             seen.add(o["id"])
         dump(OUT / "occasions.json", occ)
         print(f"occasions: {len(occ['occasions'])} with {sum(len(o['kurals']) for o in occ['occasions'])} couplet slots")

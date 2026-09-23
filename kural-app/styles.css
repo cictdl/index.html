@@ -744,3 +744,8 @@ html[lang="hi"] body{font-family:var(--dv),var(--ta),var(--lat)}   /* Devanagari
 .mean-intro{margin-bottom:8px}
 .mean-intro[hidden]{display:none}
 .mean-warn{color:var(--bad)}
+
+/* திருவள்ளுவமாலை */
+.malai-lines{display:block;font-family:var(--ta-serif);font-size:1.15rem;line-height:1.9;margin:4px 0}
+.malai-lines .ml:nth-child(even){padding-left:1.2em}
+.malai-gloss{margin-top:8px;font-size:.95rem;line-height:1.6;color:var(--ink)}
