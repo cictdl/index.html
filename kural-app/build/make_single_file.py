@@ -177,6 +177,8 @@ def main():
                         f'<link rel="icon" href="{icon}" type="image/png">')
     html = re.sub(r'\n<link rel="apple-touch-icon"[^>]*>', "", html)
     html = html.replace('src="assets/cict-logo.png"', f'src="{logo}"')
+    # the card studio's QR, referenced from app.js rather than from the markup
+    js = js.replace("im.src = 'assets/qr-app.png'", "im.src = " + repr(data_uri(ROOT / "assets" / "qr-app.png", "image/png")))
     html = html.replace(
         '<script src="app.js" defer></script>',
         '<script type="application/octet-stream" id="kural-payload">' + b64 + "</script>\n"

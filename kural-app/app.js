@@ -28,6 +28,27 @@ function toast(msg, ms = 2200) {
 // ───────────────────────────── i18n (interface) ─────────────────────────────
 const STR = {
   ta: {
+    cards: "🖼️ படங்கள்",
+    cardsSub: "பகிரக் கூடிய குறள் படம் — எந்த மொழியிலும்",
+    cardSource: "எதைப் பகிர",
+    cardToday: "இன்றைய குறள்",
+    cardPick: "குறள் எண்",
+    cardOcc: "நிகழ்வு",
+    cardTheme: "வடிவம்",
+    cardOlai: "ஓலை",
+    cardIravu: "இரவு",
+    cardVizha: "விழா",
+    cardSize: "அளவு",
+    cardSq: "சதுரம்",
+    cardSt: "நிலை",
+    cardShow: "காட்ட",
+    cardTranslit: "ஒலிபெயர்ப்பு",
+    cardChapter: "அதிகாரம்",
+    cardQr: "QR + இணைப்பு",
+    cardLangs: "மொழிகள் (2 வரை)",
+    cardSave: "⬇ சேமி",
+    cardNext: "🎲 அடுத்த குறள்",
+    cardMade: "சேமிக்கப்பட்டது",
     meanWeakLangs: "இந்த மொழிகளில் பொருள் தேடல் இன்னும் வலுவில்லை — அங்கே சொல் தேடலைப் பயன்படுத்துக: {l}",
     meanWeakScript: "இந்த எழுத்தில் பொருள் தேடல் வலுவில்லை; 🔤 சொல் தேடல் நம்பகமானது.",
     meanTab: "💡 பொருள்",
@@ -212,6 +233,27 @@ const STR = {
     lineErr: 'இவ்வடி அலகிட முடியவில்லை', update: 'புதிய பதிப்பு உள்ளது — புதுப்பிக்க', ttsUnsupported: 'இந்த உலாவியில் பேச்சு ஒலி இல்லை',
   },
   en: {
+    cards: "🖼️ Cards",
+    cardsSub: "A kural image to share — in any language",
+    cardSource: "What to share",
+    cardToday: "Kural of the day",
+    cardPick: "Kural number",
+    cardOcc: "Occasion",
+    cardTheme: "Design",
+    cardOlai: "Palm",
+    cardIravu: "Night",
+    cardVizha: "Festive",
+    cardSize: "Size",
+    cardSq: "Square",
+    cardSt: "Status",
+    cardShow: "Show",
+    cardTranslit: "Transliteration",
+    cardChapter: "Chapter",
+    cardQr: "QR + link",
+    cardLangs: "Languages (up to 2)",
+    cardSave: "⬇ Save",
+    cardNext: "🎲 Another kural",
+    cardMade: "Saved",
     meanWeakLangs: "Still weak in these languages — use word search for them: {l}",
     meanWeakScript: "Meaning search is weak for this script; 🔤 word search is more reliable.",
     meanTab: "💡 Meaning",
@@ -396,6 +438,27 @@ const STR = {
     lineErr: 'This line could not be scanned', update: 'A new version is available — refresh', ttsUnsupported: 'Speech output is not available in this browser',
   },
   hi: {
+    cards: "🖼️ कार्ड",
+    cardsSub: "साझा करने योग्य कुरल चित्र — किसी भी भाषा में",
+    cardSource: "क्या साझा करें",
+    cardToday: "आज का कुरल",
+    cardPick: "कुरल संख्या",
+    cardOcc: "अवसर",
+    cardTheme: "डिज़ाइन",
+    cardOlai: "ताड़",
+    cardIravu: "रात",
+    cardVizha: "उत्सव",
+    cardSize: "आकार",
+    cardSq: "वर्ग",
+    cardSt: "स्टेटस",
+    cardShow: "दिखाएँ",
+    cardTranslit: "लिप्यंतरण",
+    cardChapter: "अध्याय",
+    cardQr: "QR + लिंक",
+    cardLangs: "भाषाएँ (2 तक)",
+    cardSave: "⬇ सेव",
+    cardNext: "🎲 दूसरा कुरल",
+    cardMade: "सेव हो गया",
     meanWeakLangs: "इन भाषाओं में अर्थ-खोज अभी कमज़ोर है — इनके लिए शब्द-खोज इस्तेमाल करें: {l}",
     meanWeakScript: "इस लिपि में अर्थ-खोज कमज़ोर है; 🔤 शब्द-खोज अधिक भरोसेमंद है।",
     meanTab: "💡 अर्थ",
@@ -1303,6 +1366,7 @@ async function route() {
       more: viewMore, settings: viewSettings, about: viewAbout, daily: viewDaily, bookmarks: viewBookmarks,
       grammar: () => viewGrammar(q.get('type') || 'ilakkanam', q.get('tag') || ''), offline: viewOffline,
       occasions: () => viewOccasions(p[1] || ''),
+      cards: () => viewCards(q),
       verify: () => viewVerify(q.get('q') || ''),
       malai: () => viewMalai(+p[1] || 0),
       exam: () => viewExam(p[1] || '', q),
@@ -1458,7 +1522,7 @@ async function viewKural(n) {
       <a class="btn" href="#/practice/${n}">🎵 ${t('practice')}</a>
       <button class="btn" id="k-study">${S.srs[n] ? '✓ ' + t('srsIn') : '🧠 ' + t('srsAdd')}</button>
       <button class="btn" id="k-share">⤴ ${t('share')}</button>
-      <button class="btn" id="k-card">🖼 ${t('shareCard')}</button>
+      <button class="btn" id="k-card">🖼️ ${t('shareCard')}</button>
       <button class="btn" id="k-copy">⧉ ${t('copy')}</button>
       <button class="btn" id="k-report">⚑ ${t('report')}</button>
     </div>
@@ -1899,76 +1963,19 @@ async function viewStudy() {
 }
 
 // ── shareable image card ─────────────────────────────────────────────────────
-async function shareCard(k, cm, btn) {
+// One tap from a kural or an occasion: the card studio's renderer with whatever the reader last chose there.
+async function shareCard(k, cm, btn, occ) {
   const old = btn.textContent; btn.textContent = '⏳'; btn.disabled = true;
   try {
-    if (document.fonts && document.fonts.ready) await document.fonts.ready;
-    const W = 1080, H = 1080;
-    const cv = document.createElement('canvas'); cv.width = W; cv.height = H;
-    const x = cv.getContext('2d');
-    const g = x.createLinearGradient(0, 0, W, H); g.addColorStop(0, '#faf7f2'); g.addColorStop(1, '#f0e6d4');
-    x.fillStyle = g; x.fillRect(0, 0, W, H);
-    x.fillStyle = '#8f2f1c'; x.fillRect(0, 0, W, 16);
-    x.fillStyle = '#c8961e'; x.fillRect(0, 16, W, 5);
-    x.textAlign = 'center';
-    const wrap = (text, font, maxW) => {
-      x.font = font; const words = String(text).split(/\s+/); const lines = []; let cur = '';
-      for (const w of words) {
-        const tst = cur ? cur + ' ' + w : w;
-        if (x.measureText(tst).width > maxW && cur) { lines.push(cur); cur = w; } else cur = tst;
-      }
-      if (cur) lines.push(cur);
-      return lines;
-    };
-    let y = 170;
-    x.fillStyle = '#8f2f1c'; x.font = '700 44px "Noto Sans Tamil",sans-serif';
-    x.fillText('குறள் ' + k.n, W / 2, y); y += 50;
-    x.fillStyle = '#6f6459'; x.font = '400 28px "Noto Sans Tamil",sans-serif';
-    x.fillText(cm.name + ' · ' + enN(cm.name, cm.nameEn), W / 2, y); y += 90;
-    const VF = '500 54px "Noto Serif Tamil","Noto Sans Tamil",serif';
-    x.fillStyle = '#332a1e';
-    for (const ln of [k.l1, k.l2]) {
-      for (const seg of wrap(ln, VF, W - 150)) { x.font = VF; x.fillText(seg, W / 2, y); y += 74; }
-    }
-    const f = firstLang(); const tr = k.tr[f];
-    if (tr) {
-      y += 20;
-      x.strokeStyle = '#d9cdb8'; x.lineWidth = 2;
-      x.beginPath(); x.moveTo(W / 2 - 110, y); x.lineTo(W / 2 + 110, y); x.stroke();
-      y += 56; x.fillStyle = '#4a3b2a';
-      const fam = L(f).script === 'Tamil' ? '"Noto Sans Tamil"'
-        : L(f).script === 'Latin' ? 'system-ui'
-        : '"Noto Sans ' + L(f).script + '"';
-      const TF = '400 36px ' + fam + ',system-ui,sans-serif';
-      for (const seg of wrap(tr.filter(Boolean).join(' '), TF, W - 190).slice(0, 5)) { x.font = TF; x.fillText(seg, W / 2, y); y += 52; }
-      x.fillStyle = '#6f6459'; x.font = '400 22px system-ui,sans-serif';
-      x.fillText(L(f).name, W / 2, y + 12);
-    }
-    const logo = $('.top .logo');
-    if (logo && logo.complete && logo.naturalWidth) { try { x.drawImage(logo, W / 2 - 34, H - 210, 68, 68); } catch (e) { } }
-    x.fillStyle = '#8f2f1c'; x.font = '700 28px "Noto Sans Tamil",sans-serif';
-    x.fillText('திருக்குறள் — 22 மொழிகள்', W / 2, H - 108);
-    x.fillStyle = '#6f6459'; x.font = '400 22px system-ui,sans-serif';
-    x.fillText('செம்மொழித் தமிழாய்வு மத்திய நிறுவனம் · Central Institute of Classical Tamil', W / 2, H - 66);
-    if (NATIVE_SHARE) {
-      // hand the PNG to the Android share sheet as base64 — no blob URLs in the WebView
-      const b64 = cv.toDataURL('image/png').split(',')[1];
-      try { NATIVE_SHARE.png('kural-' + k.n + '.png', b64, kuralText(k, cm)); btn.textContent = old; btn.disabled = false; return; } catch (e) { }
-    }
-    const blob = await new Promise(res => cv.toBlob(res, 'image/png'));
-    const file = new File([blob], 'kural-' + k.n + '.png', { type: 'image/png' });
-    if (navigator.canShare && navigator.canShare({ files: [file] })) {
-      await navigator.share({ files: [file], title: 'திருக்குறள் ' + k.n, text: kuralText(k, cm) });
-    } else {
-      const a = document.createElement('a');
-      a.href = URL.createObjectURL(blob); a.download = file.name; a.click();
-      setTimeout(() => URL.revokeObjectURL(a.href), 5000);
-      toast('✓');
-    }
+    const C = Object.assign({ theme: occ ? 'vizha' : 'olai', size: 'sq', translit: true, chapter: true, qr: true, langs: null }, JSON.parse(localStorage.getItem('kural.card') || '{}'));
+    const o = { k, occ: occ || null, theme: occ && C.theme === 'olai' ? 'vizha' : C.theme, size: C.size, translit: C.translit, chapter: C.chapter, qr: C.qr, langs: (C.langs && C.langs.length ? C.langs : uiLangs().filter(c => c !== 'ta').slice(0, 1)) };
+    const cv = document.createElement('canvas');
+    await cardDraw(cv, o);
+    await cardShare(cv, o, btn);
   } catch (e) { toast('✕ ' + e.message); }
   btn.textContent = old; btn.disabled = false;
+  void cm;
 }
-
 // Short label for a search stream: 'ta' → த, 'translit' → Aa, 'prose-ta' → த·உரை
 function streamTag(c) {
   if (c === 'translit') return 'Aa';
@@ -2207,6 +2214,214 @@ async function viewMeaning(q0) {
   await showPack();
   input.focus();
   if (q0 && man) run();
+}
+
+// ───────────────────────────── படக் கூடம் · card studio ─────────────────────────────
+// One kural as a picture, for WhatsApp and the notice board: the verse, an optional transliteration and up to
+// two translations in their own scripts, on three grounds and in two sizes, with the app's QR. Everything is
+// drawn on a canvas from the same self-hosted fonts the app reads with, so a card made offline looks the same.
+const CARD_SIZES = { sq: [1080, 1080], st: [1080, 1920] };
+const CARD_THEMES = {
+  olai: { bg: ['#faf7f2', '#efe4d0'], ink: '#332a1e', sub: '#6f6459', accent: '#8f2f1c', gold: '#c8961e', rule: '#d9cdb8', qrbg: '#ffffff' },
+  iravu: { bg: ['#261e17', '#14100c'], ink: '#f4ece0', sub: '#b3a693', accent: '#e28a6c', gold: '#e2b65a', rule: '#4b3f33', qrbg: '#f4ece0' },
+  vizha: { bg: ['#fff7e6', '#ffe6bd'], ink: '#3a2a12', sub: '#7a6340', accent: '#b8442a', gold: '#c07f12', rule: '#e6cfa3', qrbg: '#ffffff' },
+};
+const cardFam = (() => {   // the font stack the app itself uses for that script, read from the stylesheet
+  const cache = {};
+  return code => {
+    const cls = scriptClass(code);
+    if (cache[cls]) return cache[cls];
+    const el = document.createElement('span'); el.className = cls;
+    el.style.cssText = 'position:absolute;left:-9999px;visibility:hidden'; document.body.appendChild(el);
+    const f = getComputedStyle(el).fontFamily || 'sans-serif'; el.remove();
+    return (cache[cls] = f);
+  };
+})();
+const CARD_SERIF = '"Noto Serif Tamil","Noto Sans Tamil",serif';
+let cardQrImg = null;
+function cardQr() {
+  if (cardQrImg) return cardQrImg;
+  const im = new Image(); im.src = 'assets/qr-app.png'; return (cardQrImg = im);
+}
+// every face this card needs, at the sizes it needs them, before the first measureText
+async function cardFonts(blocks) {
+  if (!document.fonts || !document.fonts.load) return;
+  const jobs = [];
+  for (const b of blocks) if (b.s) jobs.push(document.fonts.load(`${b.bold ? 700 : 400} ${Math.round(b.size)}px ${b.fam}`, b.s.slice(0, 120)).catch(() => { }));
+  await Promise.all(jobs);
+  if (document.fonts.ready) await document.fonts.ready;
+}
+function cardBlocks(o) {
+  const T = CARD_THEMES[o.theme] || CARD_THEMES.olai;
+  const k = o.k, cm = chMeta(chOf(k.n)); const B = [];
+  if (o.occ) B.push({ s: `${o.occ.icon} ${occName(o.occ)}`, fam: cardFam(S.ui === 'ta' ? 'ta' : S.ui), size: 44, bold: true, col: T.accent, gap: 0 });
+  B.push({ s: `${t('kural')} ${k.n}${o.chapter ? ' · ' + cm.name : ''}`, fam: cardFam('ta'), size: 34, col: T.sub, gap: o.occ ? 16 : 0 });
+  B.push({ s: k.l1, fam: CARD_SERIF, size: 60, col: T.ink, gap: 44, lh: 1.42, verse: true });
+  B.push({ s: k.l2, fam: CARD_SERIF, size: 60, col: T.ink, gap: 8, lh: 1.42, verse: true });
+  if (o.translit && k.tl) B.push({ s: k.tl.filter(Boolean).join(' '), fam: 'system-ui,sans-serif', size: 30, col: T.sub, italic: true, gap: 28, lh: 1.4 });
+  for (const c of o.langs) {
+    const tr = (k.tr[c] || []).filter(Boolean).join(' ');
+    if (!tr) continue;
+    B.push({ rule: true, gap: 34 });
+    B.push({ s: tr, fam: cardFam(c), size: 38, col: T.ink, gap: 32, lh: 1.55, rtl: L(c).dir === 'rtl' });
+    B.push({ s: L(c).native === L(c).name ? L(c).name : `${L(c).native} · ${L(c).name}`, fam: 'system-ui,sans-serif', size: 24, col: T.sub, gap: 12 });
+  }
+  return B;
+}
+function cardWrap(x, s, maxW) {
+  const words = String(s).split(/\s+/); const lines = []; let cur = '';
+  for (const w of words) {
+    const tst = cur ? cur + ' ' + w : w;
+    if (x.measureText(tst).width > maxW && cur) { lines.push(cur); cur = w; } else cur = tst;
+  }
+  if (cur) lines.push(cur);
+  return lines;
+}
+async function cardDraw(cv, o) {
+  const [W, H] = CARD_SIZES[o.size] || CARD_SIZES.sq;
+  const T = CARD_THEMES[o.theme] || CARD_THEMES.olai;
+  cv.width = W; cv.height = H;
+  const x = cv.getContext('2d');
+  const B = cardBlocks(o);
+  await cardFonts(B);
+  const g = x.createLinearGradient(0, 0, W, H); g.addColorStop(0, T.bg[0]); g.addColorStop(1, T.bg[1]);
+  x.fillStyle = g; x.fillRect(0, 0, W, H);
+  x.fillStyle = T.accent; x.fillRect(0, 0, W, 18);
+  x.fillStyle = T.gold; x.fillRect(0, 18, W, 6);
+  if (o.theme === 'vizha') { x.fillStyle = T.gold; x.globalAlpha = 0.16; x.beginPath(); x.arc(W, H, 420, 0, 7); x.fill(); x.beginPath(); x.arc(0, 0, 300, 0, 7); x.fill(); x.globalAlpha = 1; }
+  x.textAlign = 'center';
+  const maxW = W - 150;
+  const top = 120, bottom = H - (o.qr ? 368 : 196);
+  // lay out at a scale that fits; long translations in two languages shrink rather than spill
+  let scale = o.size === 'st' ? 1.28 : 1, lines = [], total = 0;   // the tall card starts bigger and the fit loop pulls it back
+  for (let step = 0; step < 9; step++) {
+    lines = []; total = 0;
+    for (const b of B) {
+      if (b.rule) { lines.push({ rule: true, gap: b.gap * scale }); total += b.gap * scale + 2; continue; }
+      let size = b.size * scale;
+      x.direction = b.rtl ? 'rtl' : 'ltr';
+      const setFont = () => { x.font = `${b.italic ? 'italic ' : ''}${b.bold ? 700 : 400} ${size}px ${b.fam}`; };
+      setFont();
+      if (b.verse) { const floor = 46 * scale; while (size > floor && x.measureText(b.s).width > maxW) { size -= 2; setFont(); } }
+      const lh = size * (b.lh || 1.3);
+      const ls = cardWrap(x, b.s, maxW);
+      lines.push({ ls, size, lh, col: b.col, fam: b.fam, italic: b.italic, bold: b.bold, gap: b.gap * scale, rtl: b.rtl });
+      total += b.gap * scale + ls.length * lh;
+    }
+    if (total <= bottom - top || scale <= 0.62) break;
+    scale = Math.max(0.62, scale * Math.sqrt((bottom - top) / total));
+  }
+  let y = top + Math.max(0, (bottom - top - total) / 2);
+  for (const l of lines) {
+    y += l.gap;
+    if (l.rule) { x.strokeStyle = T.rule; x.lineWidth = 2; x.beginPath(); x.moveTo(W / 2 - 110, y); x.lineTo(W / 2 + 110, y); x.stroke(); y += 2; continue; }
+    x.fillStyle = l.col; x.direction = l.rtl ? 'rtl' : 'ltr';
+    x.font = `${l.italic ? 'italic ' : ''}${l.bold ? 700 : 400} ${l.size}px ${l.fam}`;
+    for (const s of l.ls) { y += l.lh * 0.78; x.fillText(s, W / 2, y); y += l.lh * 0.22; }
+  }
+  x.direction = 'ltr';
+  // footer: the mark, and the way back to the app
+  const logo = $('.top .logo');
+  const fy = H - (o.qr ? 318 : 136);
+  if (logo && logo.complete && logo.naturalWidth) { try { x.drawImage(logo, W / 2 - 30, fy - 46, 60, 60); } catch (e) { } }
+  x.fillStyle = T.accent; x.font = `700 28px ${cardFam('ta')}`;
+  x.fillText('திருக்குறள் — 22 மொழிகள்', W / 2, fy + 42);
+  x.fillStyle = T.sub; x.font = '400 21px system-ui,sans-serif';
+  x.fillText('செம்மொழித் தமிழாய்வு மத்திய நிறுவனம் · Central Institute of Classical Tamil', W / 2, fy + 78);
+  if (o.qr) {
+    const q = cardQr(), S0 = 128, qx = W / 2 - S0 / 2, qy = fy + 108;
+    if (q.complete && q.naturalWidth) { x.fillStyle = T.qrbg; x.fillRect(qx - 10, qy - 10, S0 + 20, S0 + 20); x.drawImage(q, qx, qy, S0, S0); }
+    x.fillStyle = T.sub; x.font = '400 20px system-ui,sans-serif';
+    x.fillText('cictdl.github.io/index.html/kural-app', W / 2, qy + S0 + 34);
+  }
+  return cv;
+}
+function cardCaption(o) {
+  const k = o.k, cm = chMeta(chOf(k.n));
+  const head = o.occ ? `${o.occ.icon} ${occName(o.occ)}\n` : '';
+  return `${head}${kuralText(k, cm)}\nhttps://cictdl.github.io/index.html/kural-app/`;
+}
+async function cardShare(cv, o, btn) {
+  const name = `kural-${o.k.n}${o.size === 'st' ? '-status' : ''}.png`;
+  const cap = cardCaption(o);
+  if (NATIVE_SHARE) {
+    try { NATIVE_SHARE.png(name, cv.toDataURL('image/png').split(',')[1], cap); return; } catch (e) { }
+  }
+  const blob = await new Promise(res => cv.toBlob(res, 'image/png'));
+  const file = new File([blob], name, { type: 'image/png' });
+  if (navigator.canShare && navigator.canShare({ files: [file] })) {
+    try { await navigator.share({ files: [file], text: cap }); return; } catch (e) { if (e && e.name === 'AbortError') return; }
+  }
+  cardSave(cv, name);
+  void btn;
+}
+function cardSave(cv, name) {
+  const a = document.createElement('a'); a.href = cv.toDataURL('image/png'); a.download = name; a.click();
+  toast('✓ ' + t('cardMade'));
+}
+
+async function viewCards(q) {
+  const oc = await occasions().catch(() => null);
+  const occId = q.get('occ') || '';
+  const occ = occId && oc ? oc.occasions.find(o => o.id === occId) : null;
+  let n = +q.get('n') || (occ ? occ.kurals[0] : dailyN());
+  if (!(n >= 1 && n <= 1330)) n = dailyN();
+  const C = Object.assign({ theme: 'olai', size: 'sq', translit: true, chapter: true, qr: true, langs: null }, JSON.parse(localStorage.getItem('kural.card') || '{}'));
+  if (occ) C.theme = C.theme === 'olai' ? 'vizha' : C.theme;
+  if (!C.langs) C.langs = uiLangs().filter(c => c !== 'ta').slice(0, 1);
+  setTitle(t('cards'), t('cardsSub'));
+  const chip = (on, attr, label) => `<button class="chip ${on ? 'sel' : ''}" ${attr}>${label}</button>`;
+  const codes = ['ta', ...D.meta.langOrder.filter(c => c !== 'ta')];
+  const dup = {}; codes.forEach(c => { dup[L(c).native] = (dup[L(c).native] || 0) + 1; });   // three streams are all called "English"
+  const langChips = codes.map(c =>
+    `<button class="chip ${C.langs.includes(c) ? 'sel' : ''} ${scriptClass(c)}" data-lang="${c}" title="${esc(L(c).name)}">${esc(dup[L(c).native] > 1 ? L(c).name : L(c).native)}</button>`).join('');
+  render(`<div class="card">
+    <div class="row" style="align-items:center;gap:8px"><b>${t('cardSource')}</b>
+      ${occ ? `<span class="chip sel">${occ.icon} ${esc(occName(occ))}</span>` : ''}
+      <input type="text" inputmode="numeric" id="c-n" value="${n}" style="max-width:96px" aria-label="${esc(t('cardPick'))}">
+      <button class="btn" id="c-today">${t('cardToday')}</button>
+      <button class="btn" id="c-next">${t('cardNext')}</button>
+      ${oc ? `<a class="btn" href="#/occasions">${t('cardOcc')}</a>` : ''}</div>
+    <div class="row" style="margin-top:8px"><b style="align-self:center">${t('cardTheme')}</b>
+      ${chip(C.theme === 'olai', 'data-th="olai"', t('cardOlai'))}${chip(C.theme === 'iravu', 'data-th="iravu"', t('cardIravu'))}${chip(C.theme === 'vizha', 'data-th="vizha"', t('cardVizha'))}
+      <b style="align-self:center;margin-left:8px">${t('cardSize')}</b>
+      ${chip(C.size === 'sq', 'data-sz="sq"', t('cardSq'))}${chip(C.size === 'st', 'data-sz="st"', t('cardSt'))}</div>
+    <div class="row" style="margin-top:8px"><b style="align-self:center">${t('cardShow')}</b>
+      ${chip(C.translit, 'data-tg="translit"', t('cardTranslit'))}${chip(C.chapter, 'data-tg="chapter"', t('cardChapter'))}${chip(C.qr, 'data-tg="qr"', t('cardQr'))}</div>
+    <div class="muted" style="margin-top:10px;font-size:.85rem">${t('cardLangs')}</div>
+    <div class="row card-langs">${langChips}</div>
+  </div>
+  <div class="card card-preview"><canvas id="c-cv" role="img" aria-label="${esc(t('cards'))}"></canvas>
+    <div class="row" style="margin-top:10px"><button class="btn primary" id="c-share">${t('shareCard')}</button><button class="btn" id="c-save">${t('cardSave')}</button></div>
+  </div>`);
+  const cv = $('#c-cv');
+  const opts = async () => ({ k: await kural(n), occ, theme: C.theme, size: C.size, translit: C.translit, chapter: C.chapter, qr: C.qr, langs: C.langs });
+  let busy = null;
+  const draw = async () => {
+    localStorage.setItem('kural.card', JSON.stringify(C));
+    const o = await opts();
+    busy = cardDraw(cv, o);
+    await busy;
+    cv.classList.toggle('st', C.size === 'st');
+  };
+  const rewire = () => {
+    $$('[data-th]').forEach(b => b.onclick = () => { C.theme = b.dataset.th; $$('[data-th]').forEach(z => z.classList.toggle('sel', z === b)); draw(); });
+    $$('[data-sz]').forEach(b => b.onclick = () => { C.size = b.dataset.sz; $$('[data-sz]').forEach(z => z.classList.toggle('sel', z === b)); draw(); });
+    $$('[data-tg]').forEach(b => b.onclick = () => { C[b.dataset.tg] = !C[b.dataset.tg]; b.classList.toggle('sel', C[b.dataset.tg]); draw(); });
+    $$('[data-lang]').forEach(b => b.onclick = () => {
+      const c = b.dataset.lang; const i = C.langs.indexOf(c);
+      if (i >= 0) C.langs.splice(i, 1); else { C.langs.push(c); if (C.langs.length > 2) C.langs.shift(); }
+      $$('[data-lang]').forEach(z => z.classList.toggle('sel', C.langs.includes(z.dataset.lang)));
+      draw();
+    });
+  };
+  rewire();
+  $('#c-n').onchange = () => { const v = +$('#c-n').value; if (v >= 1 && v <= 1330) { n = v; draw(); } };
+  $('#c-today').onclick = () => { n = dailyN(); $('#c-n').value = n; draw(); };
+  $('#c-next').onclick = () => { n = occ ? occ.kurals[(occ.kurals.indexOf(n) + 1) % occ.kurals.length] : 1 + Math.floor(Math.random() * 1330); $('#c-n').value = n; draw(); };
+  $('#c-share').onclick = async e => { const b = e.currentTarget; b.disabled = true; await busy; await cardShare(cv, await opts(), b); b.disabled = false; };
+  $('#c-save').onclick = async () => { await busy; cardSave(cv, `kural-${n}.png`); };
+  await draw();
 }
 
 // ───────────────────────────── practice (யாப்பு) ─────────────────────────────
@@ -4456,7 +4671,7 @@ async function viewDaily() {
     ${placed ? `<div class="muted" style="font-size:.8rem;margin-top:4px">${t('widgetOem')}</div>` : ''}</div>`;
   render(`${learnCardHTML('any')}<div class="card"><div class="kural-head"><span class="n">${t('kural')} ${n}</span><a class="ch" href="#/ch/${cm.adhigaram}">${esc(cm.name)}</a></div>${coupletHTML(k)}
     ${uiLangs().filter(c => k.tr[c]).map(c => `<div class="tr-text ${scriptClass(c)} ${L(c).dir === 'rtl' ? 'rtl' : ''}" style="font-size:1rem;margin-top:6px"${dirAttr(c)}>${esc(k.tr[c][0])}<span class="l2">${esc(k.tr[c][1] || '')}</span></div>`).join('')}
-    <div class="actions"><button class="btn primary" id="d-recite">🔊 ${t('recite')}</button><a class="btn" href="#/k/${n}">📖</a><a class="btn" href="#/practice/${n}">🎵</a></div></div>
+    <div class="actions"><button class="btn primary" id="d-recite">🔊 ${t('recite')}</button><a class="btn" href="#/k/${n}">📖</a><a class="btn" href="#/practice/${n}">🎵</a><a class="btn" href="#/cards?n=${n}">🖼️</a></div></div>
   <div class="card"><h2>🔔 ${t('notify')}</h2>
     <div class="toggle"><label for="nt">${t('notify')}</label><input type="checkbox" class="switch" id="nt" ${S.notify ? 'checked' : ''} ${perm === 'unsupported' ? 'disabled' : ''}></div>
     <div class="toggle"><label for="ntime">${t('notifyTime')}</label><input type="time" id="ntime" value="${S.notifyTime}" style="max-width:140px"></div>
@@ -4542,6 +4757,7 @@ async function viewMore() {
     <a href="#/practice"><span class="num">🎵</span><span class="tx">${t('practice')} · ${t('memorised')} (${S.memorised.length})</span></a>
     ${SINGLE ? '' : `<a href="kattam/index.html"><span class="num">🧩</span><span class="tx">${t('kattam')}</span></a>`}
     <a href="#/occasions"><span class="num">🎯</span><span class="tx">${t('occasions')}</span></a>
+    <a href="#/cards"><span class="num">🖼️</span><span class="tx">${t('cards')} — ${t('cardsSub')}</span></a>
     <a href="#/verify"><span class="num">✔</span><span class="tx">${t('verify')}</span></a>
     <a href="#/malai"><span class="num">🌺</span><span class="tx">${t('malai')}</span></a>
     <a href="#/study"><span class="num">🧠</span><span class="tx">${t('study')} — spaced repetition (${srsDue().length} ${t('srsDue')})</span></a>
@@ -4599,13 +4815,13 @@ async function viewOccasions(id) {
       <div class="kural-head"><span class="n">${t('kural')} ${k.n}</span><a class="ch" href="#/ch/${cm.adhigaram}">${esc(cm.name)} · ${esc(enN(cm.name, cm.nameEn))}</a></div>
       <a href="#/k/${k.n}" style="text-decoration:none;color:inherit">${coupletHTML(k)}</a>
       ${tr ? `<div class="tr-text ${scriptClass(f)} ${L(f).dir === 'rtl' ? 'rtl' : ''}" style="font-size:1rem;margin-top:6px"${dirAttr(f)}>${esc(tr[0])}${tr[1] ? `<span class="l2">${esc(tr[1])}</span>` : ''}</div><div class="credit">${esc(L(f).credit)}</div>` : ''}
-      <div class="actions"><button class="btn primary occ-share" type="button">⤴ ${t('occShare')}</button><button class="btn occ-card" type="button">🖼 ${t('occCard')}</button><a class="btn" href="#/k/${k.n}">📖 ${t('occOpen')}</a></div></div>`;
+      <div class="actions"><button class="btn primary occ-share" type="button">⤴ ${t('occShare')}</button><button class="btn occ-card" type="button">🖼️ ${t('occCard')}</button><a class="btn" href="#/k/${k.n}">📖 ${t('occOpen')}</a></div></div>`;
   }).join('') + (mvs.length ? `<h3 class="muted" style="margin:10px 4px 4px">🌺 ${t('malaiFrom')}</h3>` + mvs.map(v => malaiCard(v, { open: true })).join('') : '') + `<div class="row" style="margin:8px 4px"><a class="btn" href="#/occasions">‹ ${t('occAll')}</a></div><div class="card muted" style="font-size:.85rem">${t('occCurated')}</div>`);
   if (mvs.length) wireMalai(mvs);
   $$('.occ-k').forEach(card => {
     const k = ks.find(x => x.n === +card.dataset.n); const cm = chMeta(chOf(k.n));
     card.querySelector('.occ-share').onclick = () => shareKural(k, cm);
-    card.querySelector('.occ-card').onclick = e => shareCard(k, cm, e.currentTarget);
+    card.querySelector('.occ-card').onclick = e => shareCard(k, cm, e.currentTarget, o);
   });
 }
 

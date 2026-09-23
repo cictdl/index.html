@@ -86,6 +86,19 @@ Then open <http://localhost:8765>. A service worker must be able to register, so
   widens it, and any language can be pinned explicitly. Latin diacritics fold, so `Pakavaṉ`
   finds `Pakavan` — but Indic combining marks (Tamil புள்ளி, viramas, every vowel sign) are
   left intact, since folding those would change the word. A bare number jumps to that kural.
+- **🖼️ படக் கூடம் / Card studio** (`#/cards`) — one kural as a picture to send on WhatsApp or pin to a
+  notice board: the couplet, an optional transliteration and up to two translations in their own
+  scripts, on three grounds (ஓலை · இரவு · விழா) in square (1080×1080) or status (1080×1920), with
+  CICT's mark, the app's QR and the link. Drawn on a canvas from the app's own self-hosted fonts —
+  `cardFam()` reads the stack the page itself uses for that script and `cardFonts()` loads exactly
+  those faces before the first `measureText`, so a card made offline in Meitei Mayek or Nastaliq
+  looks like the app does; RTL text is drawn with `ctx.direction`. The layout measures, then shrinks
+  to fit (an அடி that would wrap drops to 46 px first, so the couplet keeps its two lines). Opened
+  from More, from the daily kural, and one-tap from a kural page or an occasion (an occasion card
+  carries its name and turns festive) — `shareCard()` reuses this renderer with whatever was last
+  chosen in the studio. Sharing goes through the Android share sheet (`NATIVE_SHARE.png`), the Web
+  Share API, or a download. `assets/qr-app.png` is generated once by `qrcode` and inlined into the
+  single-file edition.
 - **💡 பொருள் தேடல் / Search by meaning** (`#/search?m=meaning`) — type an idea in your own
   words, in any language ("a friend who stands by you in hard times", "கோபத்தை அடக்குவது
   எப்படி", "किसी के उपकार को न भूलना"), and get the kurals that say it even when no word is
