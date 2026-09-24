@@ -236,6 +236,7 @@ input[type=range]{width:100%}
 .w.hl{background:var(--sel)}
 
 .translit{color:var(--muted);font-style:italic;font-size:.9rem;font-family:var(--lat)}
+.brahmi{margin-top:6px;font-family:"Noto Sans Brahmi",sans-serif;font-size:1.05rem;line-height:1.75;color:var(--ink);letter-spacing:.02em}
 
 .actions{display:flex;gap:6px;flex-wrap:wrap;margin:10px 0 4px}
 

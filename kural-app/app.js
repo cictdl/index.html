@@ -28,6 +28,8 @@ function toast(msg, ms = 2200) {
 // ───────────────────────────── i18n (interface) ─────────────────────────────
 const STR = {
   ta: {
+    brahmi: "தமிழி (தமிழ்ப் பிராமி)",
+    brahmiNote: "இன்றைய எழுத்துக்கூட்டலைத் தமிழி எழுத்துகளில் எழுத்துக்கு எழுத்து மாற்றியது — கல்வெட்டு மறுவாக்கம் அன்று. ஆய்தம் விசர்க்கக் குறியால் காட்டப்படுகிறது.",
     cards: "படங்கள்",
     cardsSub: "பகிரக் கூடிய குறள் படம் — எந்த மொழியிலும்",
     cardSource: "எதைப் பகிர",
@@ -233,6 +235,8 @@ const STR = {
     lineErr: 'இவ்வடி அலகிட முடியவில்லை', update: 'புதிய பதிப்பு உள்ளது — புதுப்பிக்க', ttsUnsupported: 'இந்த உலாவியில் பேச்சு ஒலி இல்லை',
   },
   en: {
+    brahmi: "Tamil-Brahmi (தமிழி)",
+    brahmiNote: "Today's spelling written letter for letter in Tamil-Brahmi characters — not an epigraphic reconstruction. The āytam is shown with the visarga sign.",
     cards: "Cards",
     cardsSub: "A kural image to share — in any language",
     cardSource: "What to share",
@@ -438,6 +442,8 @@ const STR = {
     lineErr: 'This line could not be scanned', update: 'A new version is available — refresh', ttsUnsupported: 'Speech output is not available in this browser',
   },
   hi: {
+    brahmi: "तमिऴी (तमिल-ब्राह्मी)",
+    brahmiNote: "आज की वर्तनी अक्षरशः तमिल-ब्राह्मी लिपि में — शिलालेखीय पुनर्रचना नहीं। आय्दम को विसर्ग चिह्न से दिखाया गया है।",
     cards: "कार्ड",
     cardsSub: "साझा करने योग्य कुरल चित्र — किसी भी भाषा में",
     cardSource: "क्या साझा करें",
@@ -1155,7 +1161,7 @@ const hiGloss = x => HI.gloss[x] || HI.gloss[String(x).replace(/^\d · /, '')] |
 
 // ───────────────────────────── settings ─────────────────────────────
 const DEFAULTS = {
-  ui: 'ta', langs: ['en', 'hi'], showTranslit: true, showProse: true, fontScale: 1, theme: 'auto', notify: false,
+  ui: 'ta', langs: ['en', 'hi'], showTranslit: true, showBrahmi: false, showProse: true, fontScale: 1, theme: 'auto', notify: false,
   notifyTime: '07:00', voices: {}, rate: 1, bookmarks: [], memorised: [], lastKural: 1, proseTab: 'ta_mv',
   tempo: 320, lastNotified: '', srs: {}, parallelLang: '', srsNew: 5, test: {}, testName: '', testLevel: 2, testSpec: '', testSeed: '', learn: null, ex: null,
 };
@@ -1193,6 +1199,9 @@ const SRC = window.__KURAL_SRC || {
 };
 const SINGLE = !!window.__KURAL_SRC;
 async function getJSON(url) { return SRC.json(url); }
+// தமிழி: the couplets in Tamil-Brahmi (build/build_brahmi.py → data/brahmi.json), shown under the verse when the reader asks
+async function brahmi() { return D.br || (D.br = await getJSON('data/brahmi.json')); }
+const brahmiHTML = k => { const b = S.showBrahmi && D.br && k && D.br.k[String(k.n)]; return b ? `<div class="brahmi" lang="und-Brah" title="${esc(t('brahmi'))}">${esc(b[0])}<br>${esc(b[1])}</div>` : ''; };
 async function meta() { return D.meta || (D.meta = await getJSON('data/meta.json')); }
 async function chapter(n) { return D.ch[n] || (D.ch[n] = await getJSON(`data/ch/${pad(n, 3)}.json`)); }
 async function grammar(n) { return D.gr[n] || (D.gr[n] = await getJSON(`data/gr/${pad(n, 3)}.json`)); }
@@ -1347,6 +1356,7 @@ function setTab(name) {
 function render(html) { const v = view(); v.innerHTML = html; v.scrollTop = 0; window.scrollTo(0, 0); }
 let pendingRoute = 0;
 async function route() {
+  if (S.showBrahmi && !D.br) { try { await brahmi(); } catch (e) { } }   // the Brahmi text is fetched only for readers who turned it on
   const my = ++pendingRoute;
   const h = location.hash.slice(1) || '/';
   const [path, qs] = h.split('?');
@@ -1396,7 +1406,7 @@ function coupletHTML(k, opts = {}) {
     return `<div class="line l${li + 1}">${toks.map((w, ti) => `<button class="w" data-li="${li}" data-ti="${ti}" type="button">${esc(w)}</button>`).join('')}</div>`;
   }).join('');
   const tl = (S.showTranslit && k.tl && k.tl[0]) ? `<div class="translit">${esc(k.tl[0])}<br>&nbsp;&nbsp;&nbsp;${esc(k.tl[1] || '')}</div>` : '';
-  return `<div class="couplet ${opts.cls || ''}">${lines}</div>${tl}`;
+  return `<div class="couplet ${opts.cls || ''}">${lines}</div>${tl}${brahmiHTML(k)}`;
 }
 
 function asaiSegHTML(seer) {
@@ -2712,7 +2722,7 @@ function testCoupletHTML(k, toks, blanks, reveal) {
   });
   return `<div class="couplet test-c"><div class="line l1">${lines[0].join(' ')}</div><div class="line l2">${lines[1].join(' ')}</div></div>`;
 }
-const translitHTML = k => (S.showTranslit && k.tl && k.tl[0]) ? `<div class="translit">${esc(k.tl[0])}<br>&nbsp;&nbsp;&nbsp;${esc(k.tl[1] || '')}</div>` : '';
+const translitHTML = k => ((S.showTranslit && k.tl && k.tl[0]) ? `<div class="translit">${esc(k.tl[0])}<br>&nbsp;&nbsp;&nbsp;${esc(k.tl[1] || '')}</div>` : '') + brahmiHTML(k);
 const qLabel = q => q.kind === 'fill' ? (q.blanks.every(b => b.seer) ? (q.blanks.length > 1 ? 'qFill2' : 'qFill') : (q.blanks.length > 1 ? 'qFill2W' : 'qFillW'))
   : q.kind === 'next' ? 'qNext' : q.kind === 'num' ? 'qNum' : q.kind === 'ch' ? 'qCh' : 'qType';
 
@@ -5006,6 +5016,7 @@ async function viewSettings() {
   <div class="card">
     <div class="toggle"><label>UI</label><select id="s-ui" style="max-width:50%"><option value="ta" ${S.ui === 'ta' ? 'selected' : ''}>தமிழ்</option><option value="en" ${S.ui === 'en' ? 'selected' : ''}>English</option><option value="hi" ${S.ui === 'hi' ? 'selected' : ''}>हिन्दी</option></select></div>
     <div class="toggle"><label for="s-tl">${t('translit')}</label><input type="checkbox" class="switch" id="s-tl" ${S.showTranslit ? 'checked' : ''}></div>
+    <div class="toggle"><label for="s-br">${t('brahmi')}<br><span class="muted" style="font-size:.75rem">${t('brahmiNote')}</span></label><input type="checkbox" class="switch" id="s-br" ${S.showBrahmi ? 'checked' : ''}></div>
     <div class="toggle"><label for="s-pr">${t('showProse')}</label><input type="checkbox" class="switch" id="s-pr" ${S.showProse ? 'checked' : ''}></div>
     <div class="toggle"><label>${t('fontSize')}</label><input type="range" id="s-fs" min="0.85" max="1.4" step="0.05" value="${S.fontScale}" style="max-width:50%"></div>
     <div class="toggle"><label>${t('theme')}</label><select id="s-th" style="max-width:50%"><option value="auto" ${S.theme === 'auto' ? 'selected' : ''}>${t('auto')}</option><option value="light" ${S.theme === 'light' ? 'selected' : ''}>${t('light')}</option><option value="dark" ${S.theme === 'dark' ? 'selected' : ''}>${t('dark')}</option></select></div>
@@ -5016,6 +5027,7 @@ async function viewSettings() {
   $('#s-langs').onclick = openLangSheet;
   $('#s-ui').onchange = e => { setUi(e.target.value); viewSettings(); };
   $('#s-tl').onchange = e => { S.showTranslit = e.target.checked; saveS(); };
+  $('#s-br').onchange = async e => { S.showBrahmi = e.target.checked; saveS(); if (S.showBrahmi) { try { await brahmi(); } catch (err) { toast('✕ ' + err.message); } } };
   $('#s-pr').onchange = e => { S.showProse = e.target.checked; saveS(); };
   $('#s-fs').oninput = e => { S.fontScale = +e.target.value; saveS(); };
   $('#s-th').onchange = e => { S.theme = e.target.value; saveS(); };
@@ -5064,7 +5076,7 @@ async function viewOffline() {
   await loadFontUrls();
   const ai = await audioInfo(); const m = D.meta;
   const est = navigator.storage && navigator.storage.estimate ? await navigator.storage.estimate() : null;
-  const textUrls = ['assets/fonts.css', ...FONT_URLS, 'kattam/index.html', 'kattam/app.js', 'kattam/styles.css', 'kattam/assets/icon.svg', 'kattam/data/meta.json', 'kattam/data/mini.json', 'kattam/data/weekly.json', 'data/occasions.json', 'data/ex.json', 'data/valluvamalai.json']; for (let i = 1; i <= 133; i++) textUrls.push(`data/ch/${pad(i, 3)}.json`, `data/gr/${pad(i, 3)}.json`);
+  const textUrls = ['assets/fonts.css', ...FONT_URLS, 'kattam/index.html', 'kattam/app.js', 'kattam/styles.css', 'kattam/assets/icon.svg', 'kattam/data/meta.json', 'kattam/data/mini.json', 'kattam/data/weekly.json', 'data/occasions.json', 'data/ex.json', 'data/brahmi.json', 'data/valluvamalai.json']; for (let i = 1; i <= 133; i++) textUrls.push(`data/ch/${pad(i, 3)}.json`, `data/gr/${pad(i, 3)}.json`);
   ['translit', 'prose-ta', 'prose-en', ...m.langOrder, ...m.counts.proseLangs.filter(c => !['ta', 'en'].includes(c)).map(c => 'prose-' + c)].forEach(c => textUrls.push(`data/search/${c}.json`));
   const packs = Object.keys(ai.tts || {});
   const packUrls = p => Array.from({ length: 1330 }, (_, i) => `audio/tts/${p}/${pad(i + 1, 4)}.mp3`).slice(0, (ai.tts || {})[p] || 0);

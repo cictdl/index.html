@@ -33,6 +33,7 @@ FAMILIES = [
     ("Noto Sans Meetei Mayek", "wght@400"),         # mei
     ("Noto Naskh Arabic", "wght@400"),              # ur, ksn fallback
     ("Noto Nastaliq Urdu", "wght@400"),             # ur, ksn preferred
+    ("Noto Sans Brahmi", "wght@400"),               # தமிழி — the couplets in Tamil-Brahmi (data/brahmi.json)
 ]
 
 def get(url):
