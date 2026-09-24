@@ -89,12 +89,13 @@ Then open <http://localhost:8765>. A service worker must be able to register, so
 - **தமிழி / Tamil-Brahmi** — a settings switch shows every couplet a second time in Tamil-Brahmi
   characters (the Unicode Brahmi block), under the verse. `build/build_brahmi.py` writes
   `data/brahmi.json` (313 KB, fetched only when the switch is on; in the offline text pack) by a
-  lossless letter-for-letter mapping that the build round-trips back to the exact Tamil: short
-  எ/ஒ as the long letter plus the virama (𑀏𑁆, 𑁂𑁆), the puḷḷi as U+11046, the Old Tamil ழ ற ன
-  letters, ள as LLA, the āytam as the visarga (a placeholder for a scholar's decision), the
-  closing full stop dropped. `--old-tamil` switches to the Unicode 11 short-e/o letters and
-  Old Tamil virama (U+11070–11074) instead. The face is self-hosted Noto Sans Brahmi (OFL), which
-  covers both conventions. The settings row says plainly that this is today's spelling in Brahmi
+  lossless letter-for-letter mapping that the build round-trips back to the exact Tamil: the
+  Unicode 11 Old Tamil short எ/ஒ letters and signs (U+11071–11074), the Old Tamil virama
+  (U+11070) for the puḷḷi, the Old Tamil ழ ற ன letters, ள as LLA, the āytam as the visarga (a
+  placeholder for a scholar's decision), the closing full stop dropped. `--e-virama` writes the
+  older convention instead (short e/o as the long letter plus U+11046); it is kept for interchange
+  only, because Chromium's shaper rejects "vowel sign + virama" and draws a dotted circle — the
+  build measured it. The face is self-hosted Noto Sans Brahmi (OFL), which covers both. The settings row says plainly that this is today's spelling in Brahmi
   letters, not an epigraphic reconstruction — the early inscriptions did not mark vowels and the
   puḷḷi as modern Tamil does. Vatteluttu is not yet in Unicode, so the same cannot be done for it
   without a custom font.

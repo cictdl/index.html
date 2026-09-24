@@ -1,21 +1,22 @@
 # -*- coding: utf-8 -*-
 """build_brahmi.py — the 1,330 couplets in தமிழி (Tamil-Brahmi, Unicode Brahmi block) → data/brahmi.json
 
-  py build/build_brahmi.py            # write data/brahmi.json + build/brahmi_review.txt, run the checks
-  py build/build_brahmi.py --old-tamil   # use the Unicode 11 Old Tamil short-e/o letters and virama instead
+  py build/build_brahmi.py             # write data/brahmi.json + build/brahmi_review.txt + the review text, run the checks
+  py build/build_brahmi.py --e-virama  # the older convention instead: short e/o as the long letter + virama
 
-Convention (default = the one in the sample the institute supplied, which is what older converters and most
-fonts support):
-  short எ / ஒ  →  BRAHMI LETTER E / O  +  BRAHMI VIRAMA          (𑀏𑁆, 𑀑𑁆)
-  short ெ / ொ  →  VOWEL SIGN E / O  +  VIRAMA                     (𑁂𑁆, 𑁄𑁆)
+Convention (default = the Old Tamil characters Unicode 11 added for exactly this script):
+  short எ / ஒ  →  BRAHMI LETTER OLD TAMIL SHORT E / O   (U+11071, U+11072)
+  short ெ / ொ  →  BRAHMI VOWEL SIGN OLD TAMIL SHORT E / O   (U+11073, U+11074)
   long  ஏ / ஓ, ே / ோ  →  the plain letter / sign
-  puḷḷi ்  →  BRAHMI VIRAMA U+11046
+  puḷḷi ்  →  BRAHMI SIGN OLD TAMIL VIRAMA U+11070
   ழ ற ன  →  the OLD TAMIL letters LLLA / RRA / NNNA (U+11035–11037); ள → BRAHMI LETTER LLA
   ஃ  →  BRAHMI SIGN VISARGA (a placeholder: Tamil-Brahmi inscriptions do not attest the āytam — SCHOLAR DECISION)
   numbers  →  Brahmi digits (positional, U+11066…); Brahmi's own additive number signs cannot write 1330
-  the closing full stop is dropped, as in the sample; a question mark is kept
-With --old-tamil the short vowels use U+11071–11074 and the puḷḷi U+11070 (the encoding Unicode added for exactly
-this purpose); fewer fonts cover those code points.
+  the closing full stop is dropped; a question mark is kept
+--e-virama writes short e/o as the long letter or sign plus BRAHMI VIRAMA (𑀏𑁆, 𑁂𑁆) and the puḷḷi as U+11046 — the
+convention of older converters. Measured in Chromium with Noto Sans Brahmi: "vowel sign + virama" is rejected by
+the shaping engine and drawn with a dotted circle, so that convention is kept only for interchange with tools that
+expect it, never for display.
 
 This is a modern letter-for-letter spelling in Brahmi characters, not an epigraphic reconstruction: Tamil-Brahmi
 inscriptions of the early centuries did not mark vowels or the puḷḷi the way modern Tamil does, and the app says so.
@@ -25,7 +26,7 @@ import json, re, sys, unicodedata as ud
 from pathlib import Path
 sys.stdout.reconfigure(encoding="utf-8")
 APP = Path(__file__).resolve().parents[1]
-OLD = "--old-tamil" in sys.argv
+OLD = "--e-virama" not in sys.argv
 B = lambda name: ud.lookup("BRAHMI " + name)
 VIRAMA = B("SIGN OLD TAMIL VIRAMA") if OLD else B("VIRAMA")
 SHORT = "" if OLD else B("VIRAMA")   # what turns a long e/o into the short one in the default convention
@@ -74,7 +75,7 @@ def main():
             if back != want: bad.append(k["n"])
             review.append(f"{k['n']}\n{k['l1']}\n{k['l2']}\n{l1}\n{l2}\n")
     assert not bad, f"round trip failed for {bad[:10]}"
-    meta = {"script": "Tamil-Brahmi (தமிழி), Unicode Brahmi block", "convention": "old-tamil" if OLD else "e-plus-virama",
+    meta = {"script": "Tamil-Brahmi (தமிழி), Unicode Brahmi block", "convention": "unicode11-old-tamil" if OLD else "e-plus-virama",
             "note_ta": "தமிழி எழுத்துகளில் இன்றைய எழுத்துக்கூட்டலின் நேர்மாற்றம் — கல்வெட்டு மறுவாக்கம் அன்று. ஆய்தம் விசர்க்கக் குறியால் காட்டப்படுகிறது.",
             "note_en": "A letter-for-letter rendering of today's spelling in Tamil-Brahmi characters, not an epigraphic reconstruction: the early inscriptions did not mark vowels and the puḷḷi as modern Tamil does. The āytam is shown with the visarga sign.",
             "aytam": "visarga (placeholder, for scholarly decision)", "count": len(rows)}
