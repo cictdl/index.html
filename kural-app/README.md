@@ -95,7 +95,12 @@ Then open <http://localhost:8765>. A service worker must be able to register, so
   placeholder for a scholar's decision), the closing full stop dropped. `--e-virama` writes the
   older convention instead (short e/o as the long letter plus U+11046); it is kept for interchange
   only, because Chromium's shaper rejects "vowel sign + virama" and draws a dotted circle — the
-  build measured it. The face is self-hosted Noto Sans Brahmi (OFL), which covers both. The settings row says plainly that this is today's spelling in Brahmi
+  build measured it. The face is self-hosted Noto Sans Brahmi v2.004 (OFL), which covers both.
+  Outside the app the Old Tamil code points need a font built for Unicode 11 or later; an older
+  Noto Sans Brahmi installed system-wide shows boxes for them (Windows' Segoe UI Historic is
+  fine). `build/Tirukkural-Tamil-Brahmi.pdf` (from `build/brahmi_print.html`, printed by
+  headless Chromium with the bundled font) reads the same everywhere; the current font is kept
+  at `build/NotoSansBrahmi-v2.004-Regular.ttf` for installing. The settings row says plainly that this is today's spelling in Brahmi
   letters, not an epigraphic reconstruction — the early inscriptions did not mark vowels and the
   puḷḷi as modern Tamil does. Vatteluttu is not yet in Unicode, so the same cannot be done for it
   without a custom font.
