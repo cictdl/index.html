@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1f4e5f" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121a1e" media="(prefers-color-scheme: dark)">
+<meta name="description" content="குறள் பாலம் · Kural Bridge — read a Thirukkural couplet in your own language and build it again in Tamil, word by word. 22 languages, free, offline. Central Institute of Classical Tamil.">
+<title>குறள் பாலம் · Kural Bridge</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="குறள் பாலம்">
+<link rel="stylesheet" href="assets/fonts.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="#/">
+    <img src="assets/icon.svg" alt="" width="36" height="36">
+    <span><b lang="ta">குறள் பாலம்</b><small id="brand-sub">Kural Bridge</small></span>
+  </a>
+  <div class="top-right">
+    <button class="pill-btn" id="btn-install" hidden>⬇ <span data-t="install">Install</span></button>
+    <span class="score" id="score" title=""></span>
+  </div>
+</header>
+<main id="app" aria-live="polite"></main>
+<footer class="foot">
+  <span lang="ta">செம்மொழித் தமிழாய்வு மத்திய நிறுவனம்</span> · Central Institute of Classical Tamil, Chennai ·
+  <a href="#/about" data-t="about">About</a>
+</footer>
+<div class="toast" id="toast" role="status" hidden></div>
+<script src="app.js" defer></script>
+</body>
+</html>

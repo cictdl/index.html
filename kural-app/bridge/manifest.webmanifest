@@ -1,0 +1,27 @@
+{
+  "name": "குறள் பாலம் · Kural Bridge",
+  "short_name": "குறள் பாலம்",
+  "description": "Read a Thirukkural couplet in your own language and build it again in Tamil, word by word. 22 languages, free, offline. Central Institute of Classical Tamil.",
+  "id": "./",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f6f3ee",
+  "theme_color": "#1f4e5f",
+  "lang": "ta",
+  "dir": "ltr",
+  "categories": ["education", "games", "books"],
+  "icons": [
+    { "src": "assets/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "assets/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "assets/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "assets/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "இன்றைய குறள் · Today's kural", "short_name": "இன்று", "url": "./index.html#/play/daily",
+      "icons": [{ "src": "assets/icon-192.png", "sizes": "192x192", "type": "image/png" }] },
+    { "name": "அதிகாரங்கள் · Chapters", "short_name": "அதிகாரம்", "url": "./index.html#/chapters",
+      "icons": [{ "src": "assets/icon-192.png", "sizes": "192x192", "type": "image/png" }] }
+  ]
+}
