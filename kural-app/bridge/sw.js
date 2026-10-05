@@ -2,7 +2,7 @@
    shell: network first, the cached copy when offline, so a deploy lands on the next open;
    data and fonts: cache first, kept as they are fetched (the language a player chooses, the
    chapters played) — bump VERSION when build/build_data.py is run again. */
-const VERSION = 'v1';
+const VERSION = 'v2';
 const SHELL = 'kb-shell-' + VERSION;
 const DATA = 'kb-data-' + VERSION;
 const SHELL_URLS = ['./', './index.html', './app.js', './styles.css', './manifest.webmanifest', './assets/fonts.css',
